@@ -1,0 +1,123 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Alerts   Custom Monitors   Port Monitor
+Port Monitor
+Last updated
+Jun 2, 2025
+Table of contents
+Overview
+How to create a Port Monitor
+List of Monitor Variables
+Overview
+
+Port Monitors allow you to define Port data from a target endpoint for triggering an alert and creating a ticket. Port Monitors can be applied on Windows, macOS, and Linux endpoints.  
+
+How to create a Port Monitor
+
+Navigate to  Endpoints > Alerts > Monitors.
+
+Click Add Monitor.
+
+Provide a Name for the new monitor. Optionally you can provide a Description of your new monitor.
+
+Select the Type as Port from the drop-down.
+
+Select the Family and Severity.
+
+To enable the Mapper functionality, you need to turn on the toggle. To learn more about the Mapper functionality review this documentation.
+
+Under the Condition section:
+Port Type: Select the port type from the drop down menu.
+Port Number: Enter the port number that should be monitored.
+State: Select the state of the port that should be checked.
+
+Retry: This allows you to define the consecutive retries attempted before triggering an alert.
+
+Verify Duration: Enter a value for the frequency that the port status is checked.
+Unit: Select the duration unit to be used for the trigger. Units can be defined as minutes, hours, or days.
+You can also select a custom Automation Task to be executed when the condition was met on the endpoint
+
+Note: System will reflect only selective Automation tasks that do not need parameters. Refer these OOTB tasks which needs parameters. All Custom Scripts created will be available for selection.
+
+Under the Ticket Resolution section you can define if the ticket should be updated as Resolved once the following criteria is met:
+
+Use same frequency as above: This allows you to use the same frequency as defined in the condition section.
+Port Type: Select the port type from the drop down menu.
+Port Number: Enter the port number that should be monitored.
+State: Select the state of the port that should be checked.
+Retry: This allows you to define the consecutive retries attempted before triggering an alert.
+Define new verification frequency: This allows you to use a new frequency for the condition resolution. 
+Port Type: Select the port type from the drop down menu.
+Port Number: Enter the port number that should be monitored.
+State: Select the state of the port that should be checked.
+Retry: This allows you to define the consecutive retries attempted before triggering an alert.
+Verify Duration: Enter a value for the frequency that the port status is checked.
+Unit: Select the duration unit to be used for the trigger. Units can be defined as minutes, hours, or days.
+
+Under the Resources section you can select the target endpoints on which the alerts should be triggered. You can select specific machines, Sites, or a Dynamic or a Static group. Refer to the Dynamic Group documentation for more information.
+
+Click Save to create and apply the monitor to the targets.
+
+Note: Monitors will be triggered based on the configuration set/defined.
+
+List of Monitor Variables
+
+Here is a list of variables which you can use as per your requirement when creating your own customized ticket template:
+
+Monitor Type	Variable Name	Supported OS Type	Sample Data/Values	Variable Definition
+Generic
+ 	ObservedDate	
+
+Windows, MAC, Linux
+
+	
+
+"2020-09-02T15:35:42.969926103Z"
+
+	Time stamp when the issue was observed
+ 	MonitorDesc	Windows, MAC, Linux	Add local palmtech account and add it to the local administrators group	Description added on the portal while creating a monitor
+ 	MonitorName	Windows, MAC, Linux	Local PalmTech Account with Local Admin	Name of the monitor
+ 	MonitorSummary	Windows, MAC, Linux	(Run PowerShell script every 1 minute(s) AND Run PowerShell script every 1 minute(s))	Summary information for the monitor
+Port
+ 	Port	Windows, MAC & Linux	 tcp	Port type to be monitored
+ 	PortNumber	Windows, MAC & Linux	3389	Port number to be configured
+ 	PortState	Windows, MAC & Linux	LISTENING	Current Port state
+ 	PortStatus	Windows, MAC & Linux	found	Current Port state
+ 	PortVerify	Windows, MAC & Linux	24	Verify port status after configured time period
+ 	Status	Windows, MAC & Linux	Success	Current status of the Port
+Performance Counter Monitor Process Monitor
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Service Monitor
+Process Monitor
+Event Monitor
+CPU Monitor
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

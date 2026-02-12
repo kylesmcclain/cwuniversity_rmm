@@ -1,0 +1,67 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Devices Page
+Devices Page
+Last updated
+Mar 2, 2023
+Table of contents
+Overview
+View More ConnectWise RMM Articles
+Overview
+
+Effectively managing and monitoring resources can be costly and time-consuming, requiring effort to execute repetitive tasks such as deploying and maintaining software. ConnectWise RMM improves automation and resource management and simplifies remote monitoring.
+
+See the sections below for more details about using device management to access features and benefits including a modern UI and real-time data updates. Visit Tasks Overview for information about leveraging automation via tasks.
+
+View More ConnectWise RMM Articles
+Cloud Devices
+Custom Fields
+Devices (Preview) Page
+Asio Discovery Tool
+Devices Overview
+Device Details Screen
+Device Groups
+Device Groups Dynamic Attributes
+Device Groups Management
+HyperV and VMware Virtualization
+HyperV and VMware Power Actions
+Virtualization FAQs
+Other Devices Page
+ConnectWise RMM Site Map Cloud Devices
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Devices Overview
+The information on the Device list provides a high-level view of all sites or filtered sites and includes easy-to-view details for applicable endpoint...
+Device Details Screen
+Custom Fields
+Custom Fields are additional data points you can create in the ConnectWise Asio® platform to record information not collected by the agent or unavaila...
+Device Groups
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

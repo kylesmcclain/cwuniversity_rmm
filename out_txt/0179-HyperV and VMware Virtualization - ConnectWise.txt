@@ -1,0 +1,96 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Devices Page   HyperV and VMware Virtualization
+HyperV and VMware Virtualization
+Last updated
+Sep 30, 2024
+Table of contents
+Overview
+Changes in the Devices Page
+Device Details Summary Tab
+Device Details - Virtual Machines Tab
+Virtual Machine Performance
+Overview
+
+Our new virtualization features allow you to quickly find which servers and computers are virtual, either HyperV or VMware, and from there we have added data and information about these devices that will be useful to you.
+
+Important: Make sure that VMware Tools are installed and running if you are using a VMware host. If the tools are not installed, the virtualization data will not be correct.
+
+Changes in the Devices Page
+
+From Endpoints > Devices we have created a new device type in Accusearch called ‘vmware-esxi’. This isolates the list of machines to only vmware hosts.
+
+Under Device Type, we now display if a device is Virtual.
+
+Device Details Summary Tab
+
+We have added a host designation in the Type row in Machine Specs.
+
+We have added a new row, labeled CPUs under Machine Specs. This shows how many CPUs the device is hosting.
+
+For virtual machines with the RMM agent installed, you can navigate to the details of its host with one click from the summary tab.
+
+For host machines, user can gather cluster configuration details in the Virtual Infrastructure card in the Summary tab, such as nodes in the virtual machine count, cluster name, and LUN information.
+
+You can find the status of the cluster shared volume(s) in the Storage card in the host Summary tab as well.
+
+Under the Virtual infrastructure card, you can find information such as VMs, the cluster name, the cluster nodes, as well as more information. 
+
+Note: For VMware only: You can select different Datastores to drill down and find more specific information regarding that datastore.
+
+If there are multiple LUN Disks, you can choose a different LUN disk from the dropdown menu.
+
+Device Details - Virtual Machines Tab
+
+We have added a Virtual Machines tab in the Device Details . This supplies a full summary of hosted vm's including memory, cpu, disk, IP, checkpoints, OS, replication status, and integration service status data. From this tab, you can navigate to the details of any virtual machines with an RMM agent installed.
+
+If any machine in the table has multiple IP Addresses (with valid MAC Addresses), they are available by clicking the dropdown in the respective row. Clicking the Agent Name column header will toggle machine names between the agent name and the host name of the VM.
+
+Note: This tab is not available if the machine is not hosting any virtual machines.
+
+Note: The first line in this table is always the host.
+
+Important: Some information in this table will be vary depending on weather it is HyperV and VMware machine. The previous table is displaying HyperV information, the following table is an example of VMware information.
+
+ 
+
+Virtual Machine Performance
+
+For host machines, you can open the performance graphic tool from the right toolbar. This allows you to compare both memory and CPU consumption against any of its virtual machines with an RMM agent installed. This is accessible regardless of what tab is in view in the host details.
+
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Virtualization FAQs
+HyperV and VMware Power Actions
+Devices Overview
+The information on the Device list provides a high-level view of all sites or filtered sites and includes easy-to-view details for applicable endpoint...
+Device Details Screen
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

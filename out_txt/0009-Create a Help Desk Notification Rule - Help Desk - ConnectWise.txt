@@ -1,0 +1,69 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Expert Services   Help Desk   Activating Help Desk   Create a Help Desk Notification Rule - Help Desk
+Create a Help Desk Notification Rule - Help Desk
+Last updated
+Nov 15, 2023
+Table of contents
+Overview
+Simple Inquiry
+Overview
+
+Once your site is set up, create a notification template to provide the Help Desk with instructions on how to contact your team if required for ticket inquiries. Technicians may occasionally need additional information not included in site documentation or may need to escalate an issue outside of scope. Notification rules determine who to contact and when. One or more Help Desk notifications can be configured, but only one can be assigned to each site. When activating a site on the Help Desk, you can use an existing rule or create a new one.
+
+To create a new Help Desk notification:
+
+Go to RMM Setup > Notification Rules > New > Help Desk.
+Enter a notification Name and select the Notification Time Zone. For best service, this should match the time zone of the site.
+Begin assigning an escalation protocol for specific time slots covering all hours and all days of the week.
+The Help Desk Service will call up to two numbers to escalate (Help Desk Service will call the first number for each contact if there are two contacts listed; Help Desk Service will call both numbers if there is one contact listed). The Help Desk Service will attempt to leave voicemails if possible if there is no answer.
+
+MSP Escalation determines how the Help Desk will notify you in the event a ticket needs to be escalated to your team.
+
+Note: Do not list more than two phone numbers in the Phone Contact List.
+
+For more specific details on how and when the Help Desk will escalate issues back to partners, see MSP Ticket Assignments and Escalations.
+
+Simple Inquiry
+
+In some cases, all that prevents the Help Desk from resolving an issue is a small piece of missing information, such as a license key or a path to a drive. In these cases, check the box and specify who the Help Desk should call before escalating a ticket. When using this feature, the Help Desk technician will place the client on hold while they attempt to contact you for the missing information. Use of a phone number that reaches multiple individuals such as a hunt group or a Google Voice number increases the likelihood the technician will successfully obtain the information they need to resolve the issue.
+
+If you choose not to opt-in to this feature, a ticket will be generated and assigned to you when information is missing and you can either resolve the issue yourself or provide the necessary information and assign the ticket back to the Help Desk for follow-up and resolution.
+
+After all time slots are assigned, click Save.
+Select Help Desk Product Options - Help Desk Provide Help Desk Information - Help Desk
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Select Help Desk Product Options - Help Desk
+Provide Help Desk Information - Help Desk
+Add Required Documentation and Credentials - Help Desk
+Confirm Completion and Set Client Expectations - Help Desk
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

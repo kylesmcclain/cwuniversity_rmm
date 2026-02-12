@@ -1,0 +1,79 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Expert Services   ConnectWise Network Operations Center - NOC   Changes to NOC Proactive Remediation
+Changes to NOC Proactive Remediation
+Last updated
+Jul 18, 2023
+Table of contents
+Overview
+Overview
+
+For Elite partners with sites/servers set to NOC Access Level 3, the NOC proactively implements solutions for a number of issues that previously required partner approval. Refer to the table below for a specific list of activities and applicable conditions.
+
+Activity	Conditions (if any)
+1	Install hotfixes as part of troubleshooting steps	 
+2	Configure page file setting/Move pagefile to another drive	 
+3	Disconnecting Idle Sessions on Terminal Servers	 
+4	Windows Disk Defrag on Servers	 
+5	Updating third-party applications	 
+6	Hardware Driver updates	The NOC will perform this for branded Servers wherein the driver updates are readily available. For assembled or customized Servers, the MSP must perform this activity.
+7	Configure Spam Filter	 
+8	Restart management services on VMware	 
+9	Reboot Host VM	Before rebooting the host, if the NOC finds VMs that are not managed by ConnectWise, the NOC will seek approval from the MSP.
+10	Purge VMware Logs	 
+11	Installation of VMware Patches as part of troubleshooting activity	 
+12	Update/Change SharePoint Farm credentials when the account credentials expire/get disabled	The NOC will share the credentials with the MSP if we reset/change the account credentials
+13	SQL (database) LDF file shrink	 
+14	Opening ports / Changing firewall configuration as a part of troubleshooting	The NOC can perform this action if it is a part of agent troubleshooting (agent not communicating with the Data Center). The NOC can also open the standard ports that applications need like Exchange/BB etc. For anything else, the NOC will seek approval.
+15	Install Hotfix for Symantec Backup Exec (Symantec LivUpdate)	 
+16	Symantec Backup - Logon account changes from user to local or local to user	 
+17	Symantec Backup - Storage device configuration changes	 
+18	Symantec Backup - Selection list modification. (Invalid Directory)  	 
+19	Excluding Symantec files from AV scan	 
+20	Re-register Symantec/VSS dlls and binaries	 
+21	Vsphere Installation other than probe machine	 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ConnectWise Network Operations Center - NOC Enabling Automatic Credentials for Servers and Desktops
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+NOC Access Levels
+NOC Service Statement of Work
+Setting NOC Access Levels
+Enabling Automatic Credentials for Servers and Desktops
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

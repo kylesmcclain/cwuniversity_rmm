@@ -1,0 +1,220 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Agents   Agent Repair Utility
+Agent Repair Utility
+Last updated
+Oct 15, 2025
+Table of contents
+Overview
+Download the Agent Repair Utility
+About Agent Repair Utility
+Limitations of Agent Repair Utility
+Overview
+
+In ConnectWise RMM™, the agent can malfunction for various reasons, such as:
+
+An offline device during a critical rollout.
+Failure to auto-update to the correct version.
+Interruptions during installation or uninstallation.
+
+These issues create challenges for technicians trying to use remote access to identify and resolve them.
+
+Additionally, all troubleshooting is currently a manual process, which is time-consuming and may significantly impact the end user. Agent Repair Utility is a standalone executable supported with command-line prompts. When executed on an endpoint, it helps identify the agent's malfunctioning components and repairs them.
+
+Note:  As of today, this utility works only on Windows machines across different versions. This utility requires Admin privileges.
+
+Download the Agent Repair Utility
+
+The Utility is available for download from the Download Agent section.
+
+Navigate to the Endpoints > Devices page. 
+Click Manage in the toolbar.
+Select Download Agent from the drop-down.
+
+Locate Agent Repair Utility.
+
+Click Download .exe.
+After downloading, copy the file to the affected endpoint. The utility needs to be run under Admin privileges.
+
+Note: You don't need to select the Company and Site to download the utility.
+
+Alternatively, you can also download the utility from Clients > Companies > Select a Company > Agents tab.
+
+About Agent Repair Utility
+
+Feature
+
+	
+
+Command Line Input
+
+	
+
+Purpose
+
+	
+
+Sample Output
+
+
+
+
+Usage of the utility
+
+	
+
+platform-watchdog.exe
+
+-help
+
+	
+
+View the supported command line parameters
+
+	
+
+
+
+
+ 
+
+	
+
+platform-watchdog.exe
+
+-action=healthcheck -display=yes
+
+	
+
+Checks the health of the agent. If no command is passed in the console, the utility executes this command by default.
+
+	
+
+
+
+
+ 
+
+	
+
+platform-watchdog.exe
+
+-action=restore -display=yes
+
+	
+
+Restores the agent.
+
+Display=Yes shows the log on the console. 
+
+Note: Display=No will capture the logs in the backend but not display them on the console.
+
+	
+
+
+
+
+ 
+
+	
+
+platform-watchdog.exe
+
+-action=healthcheckandrestore -display=yes
+
+	
+
+Checks the health and restores the agent to a healthy state when applicable. 
+
+Note: The utility will not perform the restore option if the agent is healthy.
+
+	
+
+
+
+
+ 
+
+	
+
+platform-watchdog.exe
+
+-action=uninstall -display=yes
+
+	
+
+This command uninstalls the agent from the machine.
+
+	
+
+NA
+
+
+
+
+ 
+
+	
+
+platform-watchdog.exe
+
+-action=autoupdatecleanup -display=yes
+
+	
+
+Performs cleanup of existing auto-update files locally.
+
+	
+
+Limitations of Agent Repair Utility
+
+The following are some of the limitations of this utility:
+
+If Agent communication URLs are corrupted or missing, the utility shows the agent as healthy.
+In the Uninstall action, the ITSPlatform registry does not get cleaned up. (ITSPlatform registry entry)
+In some of the scenarios, if the configuration file is corrupted, the utility still shows as healthy.
+ScreenConnect® repair is not a part of this utility.
+
+Note: We are in the process of improving the utility with additional checks in the upcoming phases. Some endpoints with a different scenario may not get fixed.
+
+ 
+
+Switching the device type for an Endpoint Agent Reports Overview
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Asio Agent Requirements
+The article includes the currently supported operating systems for agent installations.
+Uninstalling an Agent
+This guide includes the steps required to uninstall an agent from a desktop or server in RMM or Asio via the Devices page.
+Cloud Services
+Agent Tamper Protection
+Agents on Windows devices utilize tamper protection to restrict users from stopping the agent core services.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

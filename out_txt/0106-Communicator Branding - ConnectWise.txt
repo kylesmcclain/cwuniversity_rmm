@@ -1,0 +1,72 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Communicator User Guide   Communicator Branding
+Communicator Branding
+Last updated
+Sep 29, 2025
+Table of contents
+Overview
+Mouse Over Description
+Taskbar Icon Setting
+Communicator Icon Requirements
+Overview
+
+Under the branding section of your communicator policy, there are features that you can select to enable. Navigate to one of the following locations to view and enable these settings.
+
+Endpoints > Packages > Select Required Policy > Edit
+
+Endpoints > Devices  > Select required endpoint > Settings > Devices > Communicator > Edit > Save
+Mouse Over Description
+This setting allows you to enter the custom text to be reflected as you Mouse Over Description Text.
+If the menu is set to Default, then the default description will be shown.
+
+Taskbar Icon Setting
+This setting allows you to select the custom image to be reflected as a Communicator desktop icon.
+If the menu is set to Default, then the default icon will be shown.
+Communicator Icon Requirements
+Communicator Supported file type: bmp or ICO or PNG file
+Communicator Supported file size: 32x32 pixels
+Communicator depth: 32 bit
+
+Note: For a better visual experience, the below DPI resolutions are recommended for image files:
+
+16x16, 8bit, 72DPI (Recommended)
+16x16, 8bit, 96DPI
+16x16, 8bit, 144DPI
+16x16, 8bit, 300DPI
+Communicator Assignment Communicator Configuration
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Communicator Configuration
+Communicator Assignment
+Communicator Default Menus
+Communicator Customization
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

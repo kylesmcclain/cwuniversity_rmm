@@ -1,0 +1,1535 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Agents   Download and Install Agents   macOS Agent Overview
+macOS Agent Overview
+Last updated
+Oct 15, 2025
+Table of contents
+Overview
+Download and Install macOS Agent
+Supported Mac 64-bit* OS X versions 
+Hardware Requirement 
+Operating System Compatibility 
+Mac Agent Installation Firewall Settings
+Feature Comparison
+Installer 
+Availability
+Agent Update
+Asset Collection
+System State
+Device Management
+Monitoring / Alerting
+Communicator
+Patching
+Custom Scripts
+Gateway
+ScreenConnect
+Virtualization
+Other Devices
+Integration
+Migration / Switch
+Custom Fields
+RMM Scanning Tool
+Mac Patch Management 
+ScreenConnect
+Mac Scripts
+Overview
+
+Every macOS device must have the agent installed for it to report back to the Asio™ platform (ITSupport Portal) with monitoring information. The macOS Agents can be downloaded from the Asio platform and installed on your device.
+
+Once your company and site have been set up, please check the agent prerequisites and compatibility information available in Prerequisites.
+
+Download and Install macOS Agent
+
+Please refer to Download and Install macOS Agent for detailed setup information.
+
+Supported Mac 64-bit* OS X versions 
+
+The macOS agent version 3.1.1 and above is a native agent, supported on both Apple silicon and Intel-based macOS devices.
+
+Hardware Requirement 
+CPU: Pentium 4 or Apple silicon or comparable processor.
+RAM: 2 GB and above.
+Disk Storage: 1.5 GB on the drive where the agent will be installed.
+
+Disk storage for auto-updating agents: An additional 2 GB of storage should always be available on the machine for the agent to get auto-updated.
+
+Note: Not meeting the above requirements may result in failure of agent installation/auto-update.
+
+Operating System Compatibility 
+
+OS Name
+
+	
+
+Release Name
+
+	
+
+ConnectWise Agent Compatibility
+
+
+
+
+Mac OS X 10.0
+
+	
+
+Cheetah
+
+	
+
+Untested
+
+
+
+
+Mac OS X 10.1
+
+	
+
+Puma
+
+	
+
+Untested
+
+
+
+
+Mac OS X 10.2
+
+	
+
+Jaguar
+
+	
+
+Untested
+
+
+
+
+Mac OS X 10.3
+
+	
+
+Panther
+
+	
+
+Untested
+
+
+
+
+Mac OS X 10.4
+
+	
+
+Tiger
+
+	
+
+Untested
+
+
+
+
+Mac OS X 10.5.8
+
+	
+
+Leopard
+
+	
+
+Untested
+
+
+
+
+Mac OS X 10.6.8
+
+	
+
+Snow Leopard
+
+	
+
+Untested
+
+
+
+
+Mac OS X 10.7.5
+
+	
+
+Lion
+
+	
+
+Untested
+
+
+
+
+Mac OS X 10.8
+
+	
+
+Mountain Lion
+
+	
+
+Untested
+
+
+
+
+Mac OS X 10.9
+
+	
+
+Mavericks
+
+	
+
+Untested
+
+
+
+
+Mac OS X 10.10.5
+
+	
+
+Yosemite
+
+	
+
+Untested
+
+
+
+
+Mac OS X 10.11
+
+	
+
+El Capitan
+
+	
+
+Untested
+
+
+
+
+MacOS 10.12
+
+	
+
+Sierra
+
+	
+
+Untested
+
+
+
+
+MacOS 10.13
+
+	
+
+High Sierra
+
+	
+
+Verified
+
+
+
+
+MacOS 10.14
+
+	
+
+Mojave
+
+	
+
+Verified
+
+
+
+
+MacOS 10.15
+
+	
+
+Catalina
+
+	
+
+Verified
+
+
+
+
+MacOS 11
+
+	
+
+Big Sur
+
+	
+
+Verified
+
+
+
+
+MacOS 12
+
+	
+
+Monterey
+
+	
+
+Verified
+
+
+
+
+MacOS 13
+
+	
+
+Ventura
+
+	
+
+Verified
+
+
+
+
+MacOS 14
+
+	
+
+Sonoma
+
+	
+
+Verified
+
+
+
+
+MacOS 15
+
+	
+
+Sequoia
+
+	
+
+Verified
+
+
+
+
+MacOS 26
+
+	
+
+Tahoe
+
+	
+
+Verified
+
+*32-bit versions are not supported. To find out what version you are running, see How to tell if your Intel-based Mac has a 32-bit or 64-bit processor on the Mac Support website.
+
+Note: Our Macintosh desktop agent is an Apple-certified agent setup, digitally signed for Macintosh 64-bit systems running the OS X versions listed above. As mentioned above, 32-bit versions are not supported.
+
+Mac Agent Installation Firewall Settings
+
+Review the Firewall Settings page for all URLs that should be open or allowed.
+
+Feature Comparison
+Installer 
+
+Functionality / Feature
+
+	
+
+Windows
+
+	
+
+Linux
+
+	
+
+macOS
+
+
+
+
+Barebone / Platform agent
+
+	
+
+Yes
+
+	
+
+Yes
+
+	
+
+Yes
+
+
+
+
+Installation - GUI based
+
+	
+
+Yes
+
+	
+
+No
+
+	
+
+Yes
+
+
+
+
+Installation - silent-based
+
+	
+
+Yes
+
+	
+
+Yes
+
+	
+
+Yes
+
+
+
+
+Deploy using a parameter to install as a desktop
+
+	
+
+Yes
+
+	
+
+No
+
+	
+
+No
+
+Availability
+
+Functionality / Feature
+
+	
+
+Windows
+
+	
+
+Linux
+
+	
+
+macOS
+
+
+
+
+Report heartbeat at periodic intervals
+
+	
+
+Yes
+
+	
+
+Yes
+
+	
+
+Yes
+
+Agent Update
+
+Functionality / Feature
+
+	
+
+Windows
+
+	
+
+Linux
+
+	
+
+macOS
+
+
+
+
+Auto update
+
+	
+
+Yes
+
+	
+
+Yes
+
+	
+
+Yes
+
+
+
+
+Agent tamper protection
+
+	
+
+Yes
+
+	
+
+No
+
+	
+
+No
+
+Asset Collection
+
+Functionality / Feature
+
+	
+
+Windows
+
+	
+
+Linux
+
+	
+
+macOS
+
+
+
+
+Hardware information
+
+	
+
+Yes
+
+	
+
+Yes
+
+	
+
+Yes
+
+
+
+
+OS information
+
+	
+
+Yes
+
+	
+
+Yes
+
+	
+
+Yes
+
+
+
+
+TPM chip 
+
+	
+
+Yes
+
+	
+
+No
+
+	
+
+No
+
+
+
+
+Chassis type
+
+	
+
+Yes
+
+	
+
+No
+
+	
+
+No
+
+
+
+
+Network info
+
+	
+
+Yes
+
+	
+
+Yes
+
+	
+
+Yes
+
+
+
+
+Software information
+
+	
+
+Yes
+
+	
+
+Yes
+
+	
+
+Yes
+
+System State
+
+Functionality / Feature
+
+	
+
+Windows
+
+	
+
+Linux
+
+	
+
+macOS
+
+
+
+
+Last logged on User
+
+	
+
+Yes
+
+	
+
+Yes
+
+	
+
+Yes
+
+
+
+
+System last rebooted
+
+	
+
+Yes
+
+	
+
+Yes
+
+	
+
+Yes
+
+Device Management
+
+Functionality / Feature
+
+	
+
+Windows
+
+	
+
+Linux
+
+	
+
+macOS
+
+
+
+
+Device Group
+
+	
+
+Yes
+
+	
+
+Yes
+
+	
+
+Yes
+
+Monitoring / Alerting
+
+Functionality / Feature
+
+	
+
+Windows
+
+	
+
+Linux
+
+	
+
+macOS
+
+
+
+
+CPU / Memory / Storage info
+
+	
+
+Yes
+
+	
+
+Yes
+
+	
+
+Yes
+
+
+
+
+Performance counter monitor
+
+	
+
+Yes
+
+	
+
+No
+
+	
+
+No
+
+
+
+
+Storage / Disk 
+
+	
+
+Yes
+
+	
+
+Yes
+
+	
+
+Yes
+
+
+
+
+Installed software / applications
+
+	
+
+Yes
+
+	
+
+Yes
+
+	
+
+Yes
+
+
+
+
+Process
+
+	
+
+Yes
+
+	
+
+Yes
+
+	
+
+Yes
+
+
+
+
+Services / daemon
+
+	
+
+Yes
+
+	
+
+Yes
+
+	
+
+Yes
+
+
+
+
+S.M.A.R.T
+
+	
+
+Yes
+
+	
+
+No
+
+	
+
+No
+
+
+
+
+Event log (Windows)
+
+	
+
+Yes
+
+	
+
+No
+
+	
+
+No
+
+
+
+
+ICMP monitor
+
+	
+
+Yes
+
+	
+
+Yes
+
+	
+
+Yes
+
+
+
+
+Port monitor
+
+	
+
+Yes
+
+	
+
+Yes
+
+	
+
+Yes
+
+
+
+
+File system monitor
+
+	
+
+Yes
+
+	
+
+Yes
+
+	
+
+Yes
+
+
+
+
+Registry monitor
+
+	
+
+Yes
+
+	
+
+No
+
+	
+
+No
+
+
+
+
+Endpoint Protection
+
+	
+
+Yes
+
+	
+
+No
+
+	
+
+Yes
+
+
+
+
+Suspension
+
+	
+
+Yes
+
+	
+
+Yes
+
+	
+
+Yes
+
+Communicator
+
+Functionality / Feature
+
+	
+
+Windows
+
+	
+
+Linux
+
+	
+
+macOS
+
+
+
+
+Configure menu/tasks/send messages
+
+	
+
+No
+
+	
+
+No
+
+	
+
+No
+
+
+
+
+Communicator tray
+
+	
+
+Yes
+
+	
+
+No
+
+	
+
+Yes
+
+Patching
+
+Functionality / Feature
+
+	
+
+Windows
+
+	
+
+Linux
+
+	
+
+macOS
+
+
+
+
+Patch Assessment and Deployment
+
+	
+
+Yes
+
+	
+
+No
+
+	
+
+Yes
+
+
+
+
+Third-party patching
+
+	
+
+Yes
+
+	
+
+No
+
+	
+
+Yes
+
+Custom Scripts
+
+Run scripts and view the output and allows you to create a script monitor
+
+Functionality / Feature
+
+	
+
+Windows
+
+	
+
+Linux
+
+	
+
+macOS
+
+
+
+
+Powershell /Batch
+
+	
+
+Yes
+
+	
+
+No
+
+	
+
+No
+
+
+
+
+Bash 
+
+	
+
+No
+
+	
+
+Yes
+
+	
+
+Yes
+
+
+
+
+Pre-defined scripts
+
+	
+
+Yes
+
+	
+
+Yes
+
+	
+
+Yes
+
+
+
+
+System-Defined Variable Support
+
+	
+
+Yes
+
+	
+
+Yes
+
+	
+
+Yes
+
+Gateway
+
+Functionality / Feature
+
+	
+
+Windows
+
+	
+
+Linux
+
+	
+
+macOS
+
+
+
+
+Gateway cache
+
+	
+
+Yes
+
+	
+
+No
+
+	
+
+No
+
+ScreenConnect
+
+Functionality / Feature
+
+	
+
+Windows
+
+	
+
+Linux
+
+	
+
+macOS
+
+
+
+
+Remote assistance
+
+	
+
+Yes
+
+	
+
+Yes
+
+	
+
+Yes
+
+
+
+
+CAM - Connectwise Access management
+
+	
+
+Yes
+
+	
+
+No 
+
+	
+
+No
+
+Virtualization
+
+Functionality / Feature
+
+	
+
+Windows
+
+	
+
+Linux
+
+	
+
+macOS
+
+
+
+
+VMware monitoring
+
+	
+
+Yes
+
+	
+
+No
+
+	
+
+No
+
+
+
+
+Hyper - V monitoring
+
+	
+
+Yes
+
+	
+
+No
+
+	
+
+No
+
+Other Devices
+
+Functionality / Feature
+
+	
+
+Windows
+
+	
+
+Linux
+
+	
+
+macOS
+
+
+
+
+SNMP devices
+
+	
+
+Yes
+
+	
+
+No
+
+	
+
+No
+
+Integration
+
+Functionality / Feature
+
+	
+
+Windows
+
+	
+
+Linux
+
+	
+
+macOS
+
+
+
+
+Auvik - Network monitoring
+
+	
+
+Yes
+
+	
+
+No
+
+	
+
+No
+
+
+
+
+Webroot
+
+	
+
+Yes
+
+	
+
+No
+
+	
+
+Yes
+
+Migration / Switch
+
+Functionality / Feature
+
+	
+
+Windows
+
+	
+
+Linux
+
+	
+
+macOS
+
+
+
+
+Switch Endpoint type from Desktop to Server or vice versa
+
+	
+
+Yes
+
+	
+
+No
+
+	
+
+No
+
+
+
+
+Move or Assign Endpoint from one client/site to another client /site 
+
+	
+
+Yes
+
+	
+
+Yes
+
+	
+
+Yes
+
+Custom Fields
+<tr">
+
+Functionality / Feature
+
+	
+
+Windows
+
+	
+
+Linux
+
+	
+
+macOS
+
+
+
+
+Ability to create custom fields
+
+	
+
+Yes
+
+	
+
+Yes
+
+	
+
+Yes
+
+RMM Scanning Tool
+
+The RMM Scanning Tool allows you to:
+
+Perform on-demand RMM desktop and server (where applicable) agent deployments to Windows, Mac, and Linux machines under your management.
+Set up a schedule to scan and deploy agents to newly discovered systems on a network.
+Update resources with agents installed to the latest agent version.
+
+Refer to Deploying Agents to Mac and Linux Resources using the RMM Scanning Tool for more information.
+
+Mac Patch Management 
+
+Mac Patch Assessment occurs every Wednesday and Friday at 10:30 am (local time) to collect details of missing and installed patches. Mac Desktop Patch Deployment occurs on the day(s) and timeframe designated by a respective machine's assigned patch policy. Review the Policies and Packages documentation for more information.
+
+ScreenConnect
+
+To enable control for your macOS endpoints, review the ScreenConnect Integration with ConnectWise RMM Documentation.
+
+Note: Refer to the ConnectWise remote access guide for manual assignment of permissions on a macOS endpoint.
+
+Mac Scripts
+
+macOS-compatible tasks are listed in detail in Available Tasks. Review the Tasks documentation for adding macOS details to scripts.
+
+ 
+
+Linux Server Agent Overview Windows OS Agent Overview
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Windows OS Agent Overview
+Asio Platform Agent Deployment using Group Policy Object (GPO)
+Installing Asio Agents using MS Intune
+Linux Server Agent Overview
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

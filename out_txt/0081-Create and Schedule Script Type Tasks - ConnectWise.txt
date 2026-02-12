@@ -1,0 +1,102 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Automation   Tasks   Create and Schedule Script Type Tasks
+Create and Schedule Script Type Tasks
+Last updated
+Feb 6, 2026
+Table of contents
+Overview
+Creating a Script Type Task
+Scheduling Script Type Tasks
+Overview
+
+Tasks are a customizable, intuitive automation tool that enables you to reactively and proactively address issues on managed devices in your ecosystem.
+
+Creating a Script Type Task
+
+From the left navigation menu, go to Automation > Tasks.
+
+Click Add and select the type of script you want to create.
+
+Bash Script
+
+Batch Script
+
+Powershell Script
+
+A new screen appears.
+
+Fill out the following information:
+Name
+Description (optional)
+Category (optional)
+Add your script in the form on the right of the screen.
+Set the expected time of script execution (in seconds). The default is 300 seconds. 
+Click Save or click Save & Run if you want the task to run immediately.
+Scheduling Script Type Tasks
+To schedule your task, go to your recently saved task and click on it. Click Schedule in the summary card on the right-hand side.
+You can choose one of three options for your task:
+Run Now: Allows you to run the script task immediately after clicking Run.
+Next Agent Check In: Stops your task once a certain criteria is met.
+Schedule: Allows you to set a start day, time, and if the task is recurring.
+
+Note: If you would like to run the task just once, select Run Now. If you select Run Now, you have the option to set a cancel date for the task if attempts to run keep failing.
+
+Note: There is an option to select all resources.
+
+Set the start date for the task.
+Select the appropriate trigger. To view more information about triggers, review the Details for Scheduled Task Triggers documentation.
+Select Recurrence  to choose how often you want the task to run.
+Select the Start Date for the recurrence.
+Select the number of times you want the task to repeat.
+You can set the task cadence to hourly, daily, weekly, or monthly.
+You can set the Task End Date or select 'Never' as the value.
+As you can see, the task is scheduled to run every week, on Tuesdays and Fridays.
+
+You can also remove the recurrence by clicking Remove Recurrence.
+
+Click Select Targets and select the endpoints that the task should run on.
+
+
+ 
+Select either Companies, Sites, Device Groups or Devices
+Click Run to save and run your schedule.
+The task should now appear under Scheduled Tasks.
+Available Tasks Create Suspension for Monitors and Alerts in Script Editor
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Running RMM Tasks
+How to run a task, create a custom script, or configure a task for the next agent check-in.
+Available Tasks
+RMM Task Reporting
+Creating Tasks Using the Script Editor
+How to use Script Editor to create, customize, or edit scripts using parameters and system variables. The script editor supports native scripting lang...
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

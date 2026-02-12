@@ -1,0 +1,75 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Automation   Tasks   FAQ and Error Reporting
+FAQ and Error Reporting
+Last updated
+May 16, 2024
+Table of contents
+Overview
+Frequently Asked Questions
+Why am I receiving an error for STZ type of tasks?
+What does Deactivation for Next Agent Check-in do?
+Error Reporting
+Timezone Not Found Error
+Overview
+
+The purpose of this article is to provide you with answers to the most frequently asked questions about ConnectWise RMM Automation as well as any information about Error Reporting. 
+
+Frequently Asked Questions
+Why am I receiving an error for STZ type of tasks?
+
+Whenever you try to schedule an STZ type of task from the tasking page with a time trigger, the selected time should be in the future for the same time zone that has been selected, or the task will fail during creation.
+
+What does Deactivation for Next Agent Check-in do?
+
+Deactivation provides an option to cancel a task that has been scheduled to run using Next Agent Check-in regularity only. Deactivation of task is done once user clicks delete/deactivate button on the schedule page.
+
+Note: Task instance cannot be cancelled after it has started executing on a device. The goal is to allow the user to kill a task instance before execution on a device.
+
+Error Reporting
+Timezone Not Found Error
+
+Even if an endpoint with no time zone location info is chosen for a task, that task will not fail. The Task will be created successfully for the remaining unaffected endpoints. A new error "Time zone not found" will be shown for these failed endpoints under Scheduled Tasks > History.
+
+The error will also be shown on Devices  > Automation tab.
+
+When the Next agent check in task fails for offline machine, we get the following error:
+
+Creating Tasks Using the Script Editor Predefined System Variables
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Create and Schedule Script Type Tasks
+Create and schedule a script task.
+Running RMM Tasks
+How to run a task, create a custom script, or configure a task for the next agent check-in.
+Available Tasks
+RMM Task Reporting
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

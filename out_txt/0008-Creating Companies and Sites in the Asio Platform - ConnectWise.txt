@@ -1,0 +1,644 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Getting Started with ConnectWise RMM   Creating Companies and Sites in the Asio Platform
+Creating Companies and Sites in the Asio Platform
+Last updated
+Oct 16, 2025
+Table of contents
+Overview 
+Requirements
+Client Management Permissions
+Company List 
+Video: How to Create a Company and a Site
+Add Company 
+Create a Site
+Add Site
+Edit a Site
+Delete a Site
+Enable your Sites for RMM
+Package to Site Assignment 
+What's Next?
+Overview 
+
+This article is intended to help ConnectWise Asio® and RMM Primary Admins create companies and sites in Clients > Companies.
+
+Important: We recommend deploying agents to your internal organization first and following the steps below to create a Company and Site for your internal testing.
+
+Requirements
+Access to the Asio platform with ConnectWise SSO.
+Client Management permissions. By default the Primary and Super Admin, Technician, and Manager roles retain all Client Management permissions.
+Resource assignments or site access. Resource assignments automatically grant the user permission to view. For more information, refer to Resource Assignment for the Asio platform.
+Client Management Permissions
+
+Application roles are assigned in ConnectWise Home and can be customized for granular access to client management permissions. Refer to Application Roles for more information about assigning and customizing application roles.
+
+Application Role >
+
+	
+
+Super Admin
+
+	
+
+Manager
+
+	
+
+Technician
+
+	
+
+Office Staff
+
+	
+
+Sales
+
+	
+
+Client Site Manager
+
+	
+
+PSA powered by Asio Admin
+
+
+
+
+Company Management
+
+
+
+
+Create Company
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+ON
+
+
+
+
+Create Site
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+ON
+
+
+
+
+Delete Company
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+ON
+
+
+
+
+Delete Site
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+ON
+
+
+
+
+Edit Company
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+ON
+
+
+
+
+Edit Company Finance
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+OFF
+
+	
+
+OFF
+
+	
+
+OFF
+
+
+
+
+Edit Site
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+ON
+
+
+
+
+Import Companies & Sites
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+ON
+
+
+
+
+View Company Finance
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+OFF
+
+	
+
+OFF
+
+	
+
+ON
+
+
+
+
+Contact Management
+
+
+
+
+Create Contact
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+OFF
+
+	
+
+ON
+
+	
+
+ON
+
+
+
+
+Delete Contact
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+OFF
+
+	
+
+ON
+
+	
+
+ON
+
+
+
+
+Edit Contact
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+OFF
+
+	
+
+ON
+
+	
+
+ON
+
+
+
+
+Import Contacts
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+OFF
+
+	
+
+ON
+
+	
+
+ON
+
+Company List 
+
+Navigate to Clients > Companies to locate this screen in the Asio platform.
+
+You can create, edit, view, or delete your companies from this page. Refer to Companies and Sites for a full description of the fields on this page. 
+
+Video: How to Create a Company and a Site
+
+Add Company 
+
+Note: When a user creates a company and site, it is auto-assigned to the user who created it.
+
+Sign in to the Asio platform.
+Navigate to Clients > Companies.
+Click Add Company.
+
+
+When you open a form to add a company, site, or contact, you can select from Central Peek, Side Peek, Bottom Peek, or Full Page to change the location of the form on your screen. Click the Peek option at the top of the form to select your preference from the drop-down.
+
+
+Enter the Company Name and Primary Site details to create a primary site.
+
+
+Note: Create a unique company ID, site name, and primary site ID. The primary site name you create is the primary office location. 
+
+Enter the Primary Site Details to create a primary site with the address and contact information for the company.
+
+Click Save.
+
+Your new company now appears in the list under Company List with the primary site in the Site List.
+
+Create a Site
+
+After you've created your primary company and primary site, you can add additional sites on the Company Details > Site List.
+
+Add Site
+Click a parent company to navigate to the Company Details page.
+Click the Add Site button located in the header of the Site List.
+
+Enter the site details in the required fields.
+
+Click Save.
+
+Your new site is then listed on the Company Details page.
+Edit a Site
+
+To edit the name or contact details of the site:
+
+Navigate to the Company Details page and select the checkbox of the site you want to edit.
+Click Actions > Edit Site.
+Edit the details of the site.
+Click Save.
+Delete a Site
+
+Note: You cannot delete a primary site.
+
+Navigate to the Company Details page and select the checkbox of the site you want to delete.
+Click Actions > Delete Site.
+
+Click Confirm to delete. When a site is deleted, the respective managed endpoints associated with the site will also be uninstalled. If a user or technician wants to remove selective endpoints, they can use the Agent Management section to remove the Agents.
+Enable your Sites for RMM
+
+After you have created your company and site, you can now enable the site with RMM. Site Configuration Settings are site-level settings that can be enabled via policies. Follow the steps below to set up the policy and assign it to your site, for more details refer to RMM Site Configuration Policy and proceed to Install Agents.
+
+This policy is required to enable the RMM Services on a particular site. To create an RMM Site Configuration policy, 
+
+Navigate to Endpoints > Policies & Packages > Policies.
+Click Add Policy.
+When the new policy page loads, In the Left section of the page, you should see the below fields.
+Change the Category field from Devices to Sites. 
+
+
+In the Type dropdown, select RMM Site Configuration and give your policy a Name of your choice.
+
+
+Under the settings for your RMM Site Configuration policy, enable and disable the configurations and settings you require.
+
+To enable RMM for a site via this policy, update the Enable RMM Services toggle to the Enabled state. 
+
+On enabling RMM for a site, you will get the option to enable NOC Services for RMM. You can choose to enable the NOC Services or keep it disabled.
+
+Note: RMM NOC Services are paid add-ons. If you enable these services, they will be charged to you in your monthly invoice. For details on NOC Services, please review the NOC Services documentation.
+
+Another key field for enabling RMM on a site is the Notification Rule. This rule defines how ConnectWise RMM and NOC will communicate with the partner.
+Click Save.
+Package to Site Assignment 
+Assign a package to Site(s): Each Policy included in a Site Assigned Package will be automatically inherited by all Devices under the Site, including ones added in the future.
+Navigate to Endpoints > Policies & Packages > Assignment > Sites tab
+Check the box for each selected Site
+Click Assign Package
+Click the Name of the Package
+Click Assign
+Remove a package from a Site(s): Removing a package from a Site will revert all Devices under the Site that are not assigned an Override to their inherited values.
+Navigate to Endpoints > Packages > Sites tab
+Check the box for each selected Site
+Click Remove Assignment
+Click OK
+
+Important: A site can only be assigned one (1) package. Assigning a second package to a site will replace the site's current package.
+
+What's Next?
+
+Set up your policies and packages by referring to the steps in Setting up your Policies and Packages.
+
+Configuring Reboot Schedules Devices Overview
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Creating Users
+Creating Notification Rules
+Create Client Sites
+Installing Asio Agents
+This article provides information and instructions about how to download and install an agent on your device.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

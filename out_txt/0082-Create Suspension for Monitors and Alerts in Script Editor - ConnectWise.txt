@@ -1,0 +1,109 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Automation   Tasks   Create Suspension for Monitors and Alerts in Script Editor
+Create Suspension for Monitors and Alerts in Script Editor
+Last updated
+Dec 9, 2025
+Table of contents
+Overview
+Navigation Path
+How to Suspend Alerts and Monitors
+Overview
+
+The Intelligent Alerts system provides out-of-the-box monitoring conditions that trigger a ticket on the endpoints when specific issues are detected. Furthermore, you have the option to develop your own custom alert monitors by using the various monitor templates provided. These monitors employ these templates to trigger alerts when issues are discovered based on various data collected from the endpoint. Alerts are created in almost real-time to inform you of any problems detected. 
+
+ 
+
+Nonetheless, with both Intelligent Alerts and Custom Monitors, there may be instances where you want to temporarily halt the system from producing alerts during maintenance and testing intervals.
+
+ 
+
+This capability is now accessible from the Script Editor screen, allowing you to pause custom monitor alerts or intelligent alerts for a designated time period. This article provides comprehensive information on how to suspend alerts and monitors from the Script Editor screen.
+
+ 
+
+Note: 
+
+Suspensions created with the Script Editor only affect the specific endpoints that the script targets. This ensures that alert suppression is limited and does not impact unrelated devices.
+
+After a suspension is applied, it cannot be canceled or changed. Please double-check the duration and selection before saving the script.
+
+Suspensions created with the Script Editor will not appear on the Suspensions page; they are limited to the context of the script execution.
+
+Navigation Path
+
+ Navigate to Automation > Tasks > Add > Script Editor in the Asio portal to access the Create Suspension feature. 
+
+How to Suspend Alerts and Monitors
+
+To create a suspension for alerts and monitors, follow these steps:
+
+Log in to Asio.
+Navigate to the Script Editor from Automation > Tasks > Add > Script Editor.
+
+Refer to this documentation to learn how to create a script for applying the suspension.
+In the Add Function section, select Create Suspension.
+
+In the flyout, enter a meaningful name for the suspension and a description.
+Select the duration for which you want to apply the suspension to the script.
+
+Next, select the Alert Type from the drop-down. You can select Monitors or Intelligent Alerts only, or you can select both types.
+
+Click Select to select the Monitors and/or Intelligent Alerts that you want to suspend.
+
+When you click Select in the Suspended Monitors section, you see the following options, allowing you to select specific custom monitors or custom monitor types.
+
+
+
+Note: You can select either the specific custom monitors or the custom monitor types and not both at a time.
+
+Click Save Selection to save the selected options.
+Similarly, when you click Select in the Suspended Alerts section, you see the following options, allowing you to select specific Intelligent Alerts or Intelligent Alert Families.
+
+
+
+Note: You can select either the specific Intelligent Alerts or Intelligent Alert Families and not both at a time.
+
+Click Save Selection to save the selected options for Alerts. The selected options are shown below:
+
+Click Save in the main flyout.
+
+Click Save and Run to save and run the script. Refer to this documentation for more details on running and scheduling the script.
+Create and Schedule Script Type Tasks Create Ticket Using the Script Editor
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Create and Schedule Script Type Tasks
+Create and schedule a script task.
+Running RMM Tasks
+How to run a task, create a custom script, or configure a task for the next agent check-in.
+Available Tasks
+RMM Task Reporting
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

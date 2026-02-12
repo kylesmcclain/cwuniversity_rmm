@@ -1,0 +1,98 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Getting Started with ConnectWise RMM   RMM Five Best Practices
+RMM Five Best Practices
+Last updated
+Apr 9, 2024
+Table of contents
+Overview
+1. Let RMM Work for You
+Business Case
+2. Don't Get Sloppy, Make a Copy
+Business Case
+3. Patch Exceptionally
+Business Case
+4. Tip the Scales in Your Favor
+Business Case
+5. Lock it Down
+Business Case
+Overview
+
+The path to success is in implementing the following best practice behaviors in conjunction with the 3 ConnectWise Business Beliefs when working in ConnectWise RMM®.
+
+1. Let RMM Work for You
+
+Unleash the power of RMM to work for you. With the robust monitoring capabilities of ConnectWise RMM, you can monitor a wide range of conditions to be made aware of nearly anything immediately. Even if there is not a built-in monitor condition for it within RMM, you can employ industry-standard scripting languages like PowerShell and Bash within an RMM monitor. There are also many tasks that are included with RMM out of the box. You can leverage these tasks and run them on demand, you can run them on a schedule, and even tie them to a monitor for automated remediation. With RMM’s Script Editor, you can also create your own scripts, both proprietary to RMM, and industry standards like PowerShell, Command Prompt, and Bash.
+
+Business Case
+
+TampaTech TSP has developed a specialty in call center clients. Several of their call center clients are using the same software, which is prevalent in the industry. Their technicians are becoming proficient in resolving tickets related to this software. While proficiency is good, being proactive would be even better. Anuj has started looking into the most frequently occurring tickets and has identified a condition that occurs on affected computers when the ticket-causing issue happens. With a little bit of trial and error, he was able to create a monitor within ConnectWise RMM to identify the problem before it caused an interruption for the end user. Now, a technician can take action and prevent the problem before it even happens.
+
+2. Don't Get Sloppy, Make a Copy
+
+Often, we can face writer’s block when trying to create a script or monitor from scratch. Yes, you know how to solve the problem, but coming up with the ordered steps to put in a script can be a bit daunting. The same can be said of RMM’s powerful monitoring engine. With so many options available to you, creating the correct monitor or script can be intimidating. Fear not, creators of automation, in RMM you can duplicate a script or monitor that you have already created and edit the duplicate to suit your needs. You’ll be up and running with your solution much faster than if you tried to write it from scratch. 
+
+Business Case
+
+Anuj wrote a script to install proprietary call center client software on the workstations of his call center clients. The script  saves his technicians time that would otherwise be spent installing the same application over and over. However, there is a new application that needs to be installed on hundreds of their managed computers. Rather than creating a completely new script, Anuj locates the script he wrote to install the proprietary call center client software and clicks the Duplicate button in the Actions column. From there he needs only to give the new script a name and tweak it to his new desired purpose. By doing this, he is up and running with the new application install script much faster than if he had tried to write the new script from scratch.
+
+3. Patch Exceptionally
+
+Having a unique patching policy for each client would be unsustainable, especially as your practice grows. Instead, set up a few patching policies that apply to the majority of your clients. Then create individual policies for any exceptions to the broad-stroke policies that you have in place.
+
+Business Case
+
+TampaTech TSP has just converted a prospect to a client. However, this client had a bad experience with feature updates at the hands of their previous service provider. TampaTech normally deploys approved feature updates as part of their patching policies. To accommodate this new client, they can create a policy that does not install feature updates. In this way, they can keep their existing practice of installing approved feature updates for the majority of their clients but exclude this one client from said feature updates via the exception policy they have created. 
+
+4. Tip the Scales in Your Favor
+
+Knowing how to use RMM to fix an issue is great!  Applying that fix to each computer individually, not so much. Use the power of delivering scalable solutions via Site or Device Groups to reach many devices at once and save your technicians countless hours.
+
+Business Case
+
+Word of mouth has spread, and now TampaTech TSP has several call center clients. Anuj has written a script to keep the proprietary call center client software updated. Their growth has been strong and there are many more clients in their RMM instance. He’s finding it time-consuming to schedule the application update script individually on each call center client. By creating a custom field to indicate that they are a call center client, and then creating a Device Group containing the devices for each of the call center clients, Anuj can deliver the update script to all call center clients in one action, rather than having to repeat it for every call center client.
+
+5. Lock it Down
+
+Make the most of ConnectWise RMM's integration with Asio by accessing risk assessment, vulnerability management, as well as endpoint detection and response. Boost security by enabling Single Sign-On (SSO) and Multi-Factor Authentication (MFA). For enhanced protection, utilize randomized passwords for endpoints.
+
+Business Case
+
+TampaTech TSP has grown exponentially with the addition of several new call center clients. With this growth they have an eye on security, wanting to ensure that their own infrastructure remains intact, as well as ensuring that their managed devices are safe from unwanted connections. Enabling SSO and MFA will protect from unwanted intrusions, while utilizing randomized passwords will prevent their managed devices from unauthorized connections.
+
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Creating Users
+Creating Notification Rules
+Create Client Sites
+Installing Asio Agents
+This article provides information and instructions about how to download and install an agent on your device.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

@@ -1,0 +1,101 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   ConnectWise RMM Release Notes   RMM Release Notes Archive   ConnectWise RMM Update for August 2023
+ConnectWise RMM Update for August 2023
+Last updated
+Feb 8, 2024
+Table of contents
+Overview
+Announcements
+App Updates Retirement
+ConnectWise PSA - Integration via policies EA
+What's new in ConnectWise RMM?
+August 31st, 2023
+August 28th, 2023
+August 21st, 2023
+August 18th, 2023
+Legacy Portal
+August 16th, 2023
+Automation
+August 10th, 2023
+Third-Party Patching
+August 4th, 2023
+Third-Party Patching
+August 1st, 2023
+Patching
+
+ 
+
+Overview
+
+This page provides information on the latest enhancements and features for ConnectWise RMM.
+
+Announcements
+App Updates Retirement
+
+We will be retiring Application Updates option from Automation > Tasks > Application Updates on October 15th. We recommend moving to the new and improved Third-Party Patching via policies to avoid third-party applications becoming out-of-date.
+
+Partner Impact:
+
+You won’t be able to create new Third-Party Patching tasks via Tasking.
+
+Existing tasks will remain active until further notice.
+
+ConnectWise PSA - Integration via policies EA
+
+We are excited to announce that we will be adding an option for you to enable the ConnectWise PSA sync configurations that helps to define Tickets, Configuration items, and Notifications using policies. These policies can be included in your packages and applied to the sites using the package assignment option.
+
+There will be no migration performed for the existing configuration, but the policies will be in effect if they are assigned or applied to a site. You will initially have a toggle button to either enable or disable the policies based configuration and continue using the old method for now.
+
+We will stop supporting the older configuration method by December 15th.
+
+For more information, review the following articles:
+
+ConnectWise PSA - Policy Integration
+
+ConnectWise PSA - Policy Integration - FAQ
+
+What's new in ConnectWise RMM?
+August 31st, 2023
+August 28th, 2023
+August 21st, 2023
+August 18th, 2023
+August 16th, 2023
+August 10th, 2023
+August 4th, 2023
+August 1st, 2023
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ConnectWise RMM Update for January 2023
+ConnectWise RMM Update for February 2023
+ConnectWise RMM Update for March 2023
+ConnectWise RMM Update for April 2023
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

@@ -1,0 +1,85 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Expert Services   Help Desk   Activating Help Desk   Select Help Desk Product Options - Help Desk
+Select Help Desk Product Options - Help Desk
+Last updated
+Mar 27, 2025
+Table of contents
+Overview
+Help Desk Chat
+Overview
+
+Begin your Help Desk setup by providing basic product selections. The RMM Site Configuration Policy must be created and applied to the site for the site to appear in the list prior to activation. Refer to Setting up your Policies and Packages - ConnectWise for information about RMM Site Configuration Policy.
+
+Note: You must have an agent deployed at the site to enable the Help Desk.
+
+Setup > RMM > Sites Using RMM > [site name] > Product Options.
+Under Help Desk Options:
+First-time partners opting in should check I'm interested! Tell me how to get started. Note this feature is only available once. An overview page opens. Select a Help Desk contact who will be activating client sites and will be the initial point of contact. (You can add users to this list in Admin > Manage Users.) Click Continue with Help Desk activation to return to the Product Options page.
+
+After first-time users supply a Help Desk contact, that contact will receive a follow-up email with links to training and the Help Desk Success Checklist.
+
+Note: At least one individual from a partner must complete the Help Desk certification.
+
+Help Desk contact: (defaults to the individual selected when interest originally expressed) View or update the main point of contact for the Help Desk at your organization. (Add users to this list in Admin > Manage Users in the ITSupport Portal.) This contact is a global setting; making edits will change the contact for all sites in the portal.
+Coverage: Select the extent of Help Desk support you want for the site. This option will be locked after initial product selection but can be changed after activation is complete. Thereafter, coverage can be changed only twice every 90 days to ensure proper billing and support. (See Scope of Service for more complete details.)
+COVERAGE TYPE	DESCRIPTION
+No Coverage	Help Desk Service is not enabled for this site
+RMM Help Desk Service + US Voice and US Chat Interactions - 24x7	24x7 Coverage Typically used by single-shift workers who need extra support during off hours such as nights, weekends, and holidays. All phone and chat interactions are routed to the U.S.-based Help Desk Service delivery team. Email and non-user interaction tickets are routed and managed through any Help Desk Service location.
+RMM Help Desk Service + US Voice and US Chat Interactions - After Hours and Weekends	5:00 PM to 9:00 AM Coverage Typically used by MSPs who provide daytime support and use Help Desk Service to deliver extended support on nights, weekends, and holidays. All phone and chat interactions are routed to the U.S.-based Help Desk Service delivery team. Email and non-user interaction tickets are routed and managed through any Help Desk Service location.
+RMM Help Desk Service + US Voice and US Chat Interactions - Business Hours	8:00 AM to 6:00 PM Coverage Provides support during normal business hours. All phone and chat interactions are routed to the U.S.-based Help Desk Service delivery team. Email and non-user interaction tickets are routed and managed through any Help Desk Service location.
+RMM Help Desk Service - 24x7	24x7 Coverage Typically used by single-shift workers who need extra support during off hours such as nights, weekends, and holidays. All interactions are routed to any Help Desk Service delivery team.
+RMM Help Desk Service - After Hours and Weekends	5:00 PM to 9:00 AM Coverage Typically used by MSPs who provide daytime support and use Help Desk Service to deliver extended support on nights, weekends, and holidays. All interactions are routed to any Help Desk Service delivery team.
+RMM Help Desk Service - Business Hours	8:00 AM to 6:00 PM Coverage Provides support during normal business hours. All interactions are routed to any Help Desk Service delivery team.
+RMM Help Desk Service + US Voice Interactions - 24x7	24x7 Coverage Typically used by single-shift workers who need extra support during off hours such as nights, weekends, and holidays. All phone interactions are routed to the U.S.-based Help Desk Service delivery team. Chat, email, and non-user interaction tickets are routed and managed through any Help Desk Service location.
+RMM Help Desk Service + US Voice Interactions - Business Hours	8:00 AM to 6:00 PM Coverage Provides support during normal business hours. All phone interactions are routed to the U.S.-based Help Desk Service delivery team. Chat, email, and non-user interaction tickets are routed and managed through any Help Desk Service location.
+RMM Help Desk Service + US Voice Interactions - After Hours and Weekends	5:00 PM to 9:00 AM Coverage Typically used by MSPs who provide daytime support and use Help Desk Service to deliver extended support on nights, weekends, and holidays. All phone interactions are routed to the U.S.-based Help Desk Service delivery team. Chat, email, and non-user interaction tickets are routed and managed through any Help Desk Service location.
+Desired Start Date: Specify the date you would like the site to begin receiving Help Desk support. Please note this date is contingent on activation process completion. At least two weeks from the current date is recommended.
+Anticipated Number of Seats: Enter an estimated number of seats requiring Help Desk support at the client site within 30 days from the start date.
+
+Help Desk Chat
+
+Help Desk Chat provides quick and easy Help Desk support. To allow your clients to initiate a chat with the Help Desk from a desktop or taskbar shortcut, select this option and configure the appropriate settings, including where to deploy and how to appropriately brand.
+
+After all Help Desk product options are completed, click Save.
+
+ 
+
+After selecting all your Help Desk product options, you will receive an automated activation email from notify@itsupport247.net confirming site setup.
+
+Activating Help Desk Create a Help Desk Notification Rule - Help Desk
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Create a Help Desk Notification Rule - Help Desk
+Provide Help Desk Information - Help Desk
+Add Required Documentation and Credentials - Help Desk
+Confirm Completion and Set Client Expectations - Help Desk
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

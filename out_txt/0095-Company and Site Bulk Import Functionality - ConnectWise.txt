@@ -1,0 +1,90 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Client Management   Companies and Sites   Company and Site Bulk Import Functionality
+Company and Site Bulk Import Functionality
+Last updated
+Sep 30, 2024
+Table of contents
+Overview
+Download the CSV template
+Fill out the data for the CSV file
+Upload your CSV file to the Asio Platform
+Overview
+
+Our bulk import feature allows you to create companies and their sites in bulk using a CSV file.  The template of this CSV can be downloaded from the Asio Platform.
+
+Note:  You must be migrated to SSO and CES to use this feature.
+
+Download the CSV template
+Log in to your Asio platform.
+In the left navigation bar, select Clients > Companies.
+Click the download button to download the CSV Template (pre-populated with headers).
+
+Fill out the data for the CSV file
+Add the five required fields:
+Company Name
+Company ID
+Site Name
+Site ID
+Country
+
+Note:
+
+Special characters cannot be used as part of the Company Name, Company ID, Site Name, or Site ID fields. These fields are strictly alphanumeric.
+Commas cannot be used in any of the fields.
+The maximum characters allowed for the Company Name is 50, for the Company ID is 30, for the Site Name is 50, for the Site ID is 30, and for the Address Name/Line is 50 characters
+State, Country, and Phone Country codes are Alpha-2 codes, which are the two-letter country codes defined in ISO 3166.
+Email, social media, and phone number types are also pre-defined.
+If you want to create more than one site for the same company, the same company name needs to be mentioned against different site names in the Company Name field (as shown below for "Ibotta").
+Make sure that the company record does not exist already. If the company record already exists, the bulk import will fail with an error, "Invalid CSV.”
+
+Upload your CSV file to the Asio Platform
+Click Actions > Bulk Upload CSV.
+
+Click the plus button to upload the CSV file. 
+
+Click Upload to submit the file. Once the file is submitted, the data is validated, and the records are created.
+
+Successfully validated records will be created; if any records fail, a Response file with the reasons for failure will be created. You can download the response file and correct the errors.
+To upload the failed records (after correcting the errors), ensure the data is in the CSV template format and follow the steps above to upload the CSV.
+
+ 
+
+ 
+
+Companies and Sites Contact Management
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Contact Management
+Command for Networks
+Secure Information Store
+Tech Advantage
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

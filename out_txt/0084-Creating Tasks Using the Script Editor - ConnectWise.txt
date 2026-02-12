@@ -1,0 +1,335 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Automation   Tasks   Creating Tasks Using the Script Editor
+Creating Tasks Using the Script Editor
+Last updated
+Feb 9, 2026
+Table of contents
+Overview
+Adding a Script Editor Script
+Add Note
+Enable/Disable Script Step
+GoTo Section and Add Section Divider
+Editing a Script Editor Script
+Adding a New Line in a PowerShell Script
+Using System Variables in a Script
+System Variables
+Adding Script Parameters
+Deleting or Updating a Parameter from the Script
+Adding Custom Field to Script
+Example
+Using an IF condition with a Pre-defined Variable in a Script
+Overview
+
+The Script Editor is available from the Automation > Tasks menu using either the Add button > Script Editor or by selecting the Edit/Pencil Action shown in the Task Grid to the left of a selected Script.
+
+The Script Editor allows you to:
+
+Create and Edit Automation using a Modern UI with drag and drop ability to easily reorganize your Script as needed
+Use the already built-in 220+ Tasks to solve your customer's IT problems
+Run native Scripting languages like PowerShell and Bash scripts
+Use If Then Else Logic to check Task results and make decisions within your Script
+Scripts can be edited at any time to correct or enhance your Automation
+
+Note: One of the major benefits of the script editor is that you can edit a script without having to duplicate it.
+
+Adding a Script Editor Script
+
+Navigate to Automation > Tasks > Add > Script Editor.
+
+The New Script page opens.
+ 
+
+Enter the following information:
+
+Name
+
+Description (optional)
+
+Category (optional)
+
+Note: If you do not select a category it defaults to custom. You can pick from a preset category or create a new category for your instance of the Asio™ platform (ITSupport Portal).
+
+You can add a category by typing the category name in the category input box.
+
+This category will start to appear on future script creation as a dropdown option.
+
+​
+
+Click Add Row or Add Logic.
+
+If you click Add Row it adds a script row. You can search for tasks that you want to use in the script.
+
+Select the first task you want to use in the script. You can also select PowerShell Script here. 
+ 
+
+
+
+Note: Some tasks may require additional information such as a token for installation, or require you to select which versions of a particular software you want included in the task.
+
+If you want to add another row to your script, click Add Row again.
+
+Also note that you can now select multiple OS from the Operating System field as shown below:
+
+
+
+Remember that you need to select at least one operating system before proceeding. If you attempt to proceed without selecting an operating system, the system displays an error message.
+
+When you select an existing row, two options are visible: Delete and Duplicate. You can either delete the selected row or duplicate the selected row.
+
+
+
+A variety of information can be edited once the initial script layout is created.
+
+If you want to move the scripts around, click the three vertical dots to the top left of a script.
+ 
+
+If you want to collapse the script information, click the caret icon at the top left of a script.
+
+You can select Continue on Failure. This continues executing the script if a failure occurs. If you choose not to have this selected, the script will exit upon failure message and the script will fail to run moving forward.
+
+If you click Add Logic, a new If / Then logic will be created.
+ 
+
+
+
+
+
+First select if you want the If / Then to be built around the Output or Status.
+
+For Output you have the option to choose between Contains or Does not contain.
+
+If you choose Output, enter
+
+For Status you can chose between Success or Failure.
+
+If you want, you can add a second condition by clicking Add Condition.
+
+By clicking the ""  icon in the right corner, you can further edit a script. You can edit it in any of the following ways:
+
+Add Row Before	This adds a Script Row before the one selected.
+Add Row After	This adds a Script Row after the one selected.
+Add If / Then Before	This will add a new If / Then statement before the one selected.
+Add If / Then After	This will add a new If / Then statement after the one selected.
+Add If / Then / Else Before	This will add a new If / Then / Else statement before the one selected.
+Add If / Then / Else After	This will add a new If / Then / Else statement after the one selected.
+Delete	This deletes the script row or logic.
+
+You can continue to add logic and rows up to three nested layers.
+
+Click Save when you have finished your script.
+
+Add Note
+
+You can add a note for every step in the Script Editor flow, as shown below:
+
+To add a note:
+
+Click the Add note here edit icon at the top of the step:
+
+
+Write the note and click the tick icon to save the note.
+
+
+The saved note appears at the top of the step as shown here:
+
+
+Enable/Disable Script Step
+
+You can enable or disable steps in the Script Editor.
+
+Note: The disabled steps are not executed when the script is run.
+
+To enable/disable script steps:
+
+You can click the three dots at the top of the script step:
+
+
+Turn on the toggle to enable/disable the script step:
+
+
+The script is greyed out (disabled) as shown here:
+
+
+To enable the script again, click the three dots and from the drop-down, click the toggle as shown here:
+
+
+You can also enable/disable script steps by selecting the step checkbox. The button to enable/disable appears at the top of the step after you select the step:
+
+
+GoTo Section and Add Section Divider
+
+Using the Add Section Divider and GoTo functions, you can use conditional logic to directly jump to labeled sections in the Script Editor, enabling smarter and more flexible script execution.
+
+Important: You need to create section divider(s) first before using the GoTo function.
+
+To add a section divider and a goto function to a script:
+
+Click Add Section Divider in the Script Editor.
+
+Click the edit icon  to give the section a meaningful name.
+
+Click the tick mark to save the section name.
+
+The section divider is created as shown below.
+Now, consider the script that has already been created, where you want to add the GoTo function.
+
+Click the function drop-down to select the GoTo Section as shown below:
+
+Select the section where you want to jump and click Done.
+
+As you can see, the first step after completion takes you to the Test 2 section. You can also see in purple that the section Test 2 shows an incoming jump from step 1.
+
+Editing a Script Editor Script
+
+One of the major benefits of our new script editor is that you can edit a script without having to duplicate it.
+
+Navigate to Automation > Tasks and search for the script you wish to edit.
+
+Under the Actions column, click the pencil icon.
+
+You can now edit the script.
+
+Adding a New Line in a PowerShell Script
+
+Adding `n at the end of a command in a PowerShell script helps add a new line.
+
+Note: Add `n inside the double-quoted string.
+
+The output looks like the following:
+
+Using System Variables in a Script
+
+The following is the list of system variables that can be used in a script:
+
+System Variables
+Variable Name	Type	Description
+%name%	string	Script Name
+%description%	string	Script Description
+%output%	string	Output of the run task function
+%status%	string	Status of the run task function
+%companyname%	string	Company Name
+%companyuniqueid%	string	Company Unique ID
+%sitename%	string	Site Name
+%primarysiteid%	string	Primary Site ID
+
+Note: The change pertaining to the variables %companyname%, %companyuniqueid%, %sitename%, and %primarysiteid% is coming soon.
+
+Following is an example of a system variable used in a script:
+
+The status of a script that is run is stored in the system variable %status% that can be used further when defining the script.
+
+Adding Script Parameters
+
+You can add Script Parameters and define them when scheduling the Script, similar to what you can do when scheduling an Action.
+
+Navigate to Automation > Tasks.
+Click Add > Script Editor.
+On the New Script page, enter a name, description, and select a category.
+Click Add Parameter.
+
+
+
+
+Select the parameters you want to add.
+
+Note: If a user creates a parameter with a space, the following rules apply:
+
+An underscore is automatically added to the parameter name for the system to recognize it.
+When calling the variable, the user needs to use @variable_name@ by putting an underscore in between, even if the user defined it without an underscore. For e.g. parameter Demo 1 can be called using @Demo_1@.
+The character limit for script parameters is 1000 characters.
+Select your script logic (see the To add a Script Editor Script: section of this document.)
+Click Save. You will be redirected to the Tasks page.
+Locate the script you just created and in the right-hand information card, click Schedule.
+
+
+
+Define the value for each Script Parameter.
+
+Select the start date, time and event of the trigger, and recurrence (if any)
+
+Click Run.
+
+Note: You will be directly navigated to the Scheduled Tasks page by clicking on the Save and Run button
+
+Important: When a script with parameters is scheduled to occur in the future, certain changes to the scheduled script's parameters will cause the script's scheduled execution to fail. These actions include deleting or updating a parameter from the script.
+
+Deleting or Updating a Parameter from the Script
+From the Automation > Tasks page, locate the script you want to update the parameters for and in the right-hand information card, click Schedule.
+Clear the parameter you wish to change. You also have the option to click Clear all, to delete all of the parameter information.
+Click Run when you are finished.
+You will receive a confirmation pop-up each time you add, update, or delete a parameter.
+Adding Custom Field to Script
+
+You can define Custom Fields and add them to the Script by following the steps below:
+
+Define Custom Fields from Settings > Custom Fields. Review the Custom Fields documentation for more information.
+Navigate to Automation > Tasks > Add > Script Editor.
+The New Script page opens.
+Click Add Row.
+In the Add Function section, select the Set Custom Field option.
+The Set Custom Field dialog box will appear:
+
+
+You can select the defined Custom Field from the dropdown, edit the Custom Field variable value and click Save.
+Example
+Click Add icon to add a new script editor task.
+Add the mandatory information in the New Script page.
+Click Add Function and select custom field from the dropdown provided in Add Function section.
+Select custom field OS version and click Ok.
+
+
+Add a new function below the custom field and select PowerShell script BitLocker_Status
+
+
+Add one more function for the script log to display the output. 
+Log output into the custom field OS version from the above PowerShell script, and then log the output using the script log function on the tasks page.
+
+
+Using an IF condition with a Pre-defined Variable in a Script
+
+When working with Boolean custom fields in scripts, avoid comparing the field/predefined variable directly to string values like TRUE or FALSE(e.g., Custom fields of the type Flag). This leads to incorrect evaluations because Boolean fields are not string types.
+
+Recommended Approaches:
+
+Define a script parameter of type Boolean (e.g., isActiveParam) and assign it a value (TRUE or FALSE) in the script configuration. Compare the Boolean custom field directly with this parameter.
+Define a custom field of the type drop-down (having values as TRUE and FALSE), and then compare the field/predefined variable with this custom field.
+Use the "Custom Field" field from the If logic section to directly compare with the pre-defined variable.
+Create Ticket Using the Script Editor FAQ and Error Reporting
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Create and Schedule Script Type Tasks
+Create and schedule a script task.
+Running RMM Tasks
+How to run a task, create a custom script, or configure a task for the next agent check-in.
+Available Tasks
+RMM Task Reporting
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

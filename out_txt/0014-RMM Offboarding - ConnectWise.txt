@@ -1,0 +1,123 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Getting Started with ConnectWise RMM   RMM Offboarding
+RMM Offboarding
+Last updated
+Dec 18, 2024
+Table of contents
+Overview
+Offboarding
+Users
+Uninstall
+Passwords
+ScreenConnect
+Delete Sites and Company
+Overview
+
+Follow this guide for best practices concerning offboarding your clients in ConnectWise RMM™.
+
+Important: Before you start any offboarding process, the first step should be to discuss it with your Account Manager as they can assist you with ongoing contract needs.
+
+Offboarding
+
+Understand that all the services below are provided to your client. The following services must be uninstalled and disabled:
+
+Backups
+SentinelOne (S1)
+AV/Webroot
+Screenconnect® (SC) instance
+Delete any devices sessions for that site
+Delete users for that site
+Network Monitoring and Management
+Policies/Packages applied 
+Note: Remove Package applied to the site. If the package is not removed, any software that is installed via Policy is reinstalled.
+Patch policies
+Remote Access (SC)
+S1
+Webroot
+ConnectWise SIEM™
+Check integrations
+Network Assessment Tool
+Navigate to Settings > Account Administration > Products & Services > Network Assessment Tool.
+ Note: The Network Assessment Tool is billed monthly. It does not matter when you disable it. It is still billed for the duration of the month.
+Users
+
+Ensure that you disabled or deleted any users associated with the client's site. This includes the following:
+
+Technicians
+Client Site Managers - Managed from ConnectWise Home. Client Site Managers must follow the steps below:
+Navigate to ConnectWise Home > User Profile > Update Home Profile. For more information, see the ConnectWise Home—User Profile documentation.
+Click Close Account and select the Would you like to close your account? checkbox.
+Enter your password in the Confirm Password field.
+Click Save.
+Client End Users - Managed from ConnectWise Home.
+Navigate to User & Application Settings > Users > Select User(s) > Open ... More Options > Select Delete User.
+Uninstall
+
+The following services must be uninstalled:
+
+Backups 
+Note: The BDR team should review all backups you want to install before removing them to ensure that your data is intact.
+S1 - Disable the S1 Policy
+Navigate to Clients > Companies > Select Company > Select Site > Settings > Select Policy > Edit the Policy > Disable SentinelOne.
+S1 - Disable the S1 portal
+Ensure the site is deleted in the S1 portal.
+SIEM - Uninstall Agents
+Note: If you use RMM to deploy third-party tools like Threatlocker or Cisco Umbrella, ensure that the agents are uninstalled. Disable any scripts or tasks that may be running on the site so that applications do not reinstall. 
+Network Monitoring & Management - For more information, check out the Networking Monitoring Getting Started Guide documentation.
+Navigate to Endpoints > Devices > Manage > Network Probe.
+Passwords
+
+Delete the site's passwords after providing them to the client or the new Managed Service Provider (MSP).
+
+AV - Delete the Webroot Policy for the site
+Navigate to Clients > Companies > Select Company > Select Site > Settings > Select Policy > Edit the Policy > Disable Webroot.
+RMM Agents
+Navigate to Clients > Companies > Select Company > Select Site > Agents > Agent Management > Select Endpoint > Uninstall Agents.
+ScreenConnect
+Sign in to your ScreenConnect instance and confirm all ScreenConnect agents are uninstalled. 
+Note: ScreenConnect should uninstall on its own.
+Delete Sites and Company
+
+To delete a site, navigate to Clients > Companies > Select Site > Actions > Delete Site.
+
+To delete a company, navigate to Clients > Companies > Select Company > Actions > Delete Company.
+
+Note: Remove the RMM Agent before you delete the site/company. Remove the RMM Agent only after you have removed all of the other software that was installed via the RMM agent.
+
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Creating Users
+Creating Notification Rules
+Create Client Sites
+Installing Asio Agents
+This article provides information and instructions about how to download and install an agent on your device.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

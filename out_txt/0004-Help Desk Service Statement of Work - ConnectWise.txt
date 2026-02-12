@@ -1,0 +1,564 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Expert Services   Help Desk   Help Desk Service Statement of Work
+Help Desk Service Statement of Work
+Last updated
+May 16, 2025
+Table of contents
+1. Overview
+2. Service Description
+3. Help Desk Service Options
+Coverage Hours
+Holiday Coverage
+Location of Services
+4. In Scope Services
+Interactions with End Clients:
+Scope of Service for End Client Interactions:
+MSP Interactions
+Scope of service for MSP initiated tasks:
+Priority Connect Service Help Desk (optional add-on Service)
+5. Out of Scope Services
+6. MSP Responsibilities
+7. Service Level Objectives:
+8. How MSPs/Partners contact Help Desk Services
+9. Additional Resources
+10. Email Spam Filter Information
+11. Revision History
+1. Overview
+
+This Statement of Work (“SOW”) for Help Desk Services has been entered into pursuant to the Schedule of Software and Services ("Schedule") between your organization (“You,” “Your” “MSP” or “Client”) and ConnectWise and the terms of the then current Master Agreement and the applicable Addendum(s) located at www.connectwise.com/legal (collectively the "Agreement"). Such terms are incorporated by reference as if fully set forth herein.
+
+The scope of Help Desk Services may change and we may update this document from time to time. It is your responsibility to check this SOW periodically for changes.
+
+2. Service Description
+
+ConnectWise’s Help Desk Services is a white labeled Tier 1 and Tier 2 Help Desk Services which allows End Clients to obtain help desk service offering. This SOW defines what is in scope, what is not in scope and MSP responsibilities. MSP acknowledges and agrees that anything not specifically set forth herein as in scope is deemed out of scope. “End Client” or “End Client site” shall mean any entity for whom MSP provides one or more elements of Help Desk Services.
+
+3. Help Desk Service Options
+
+MSPs have the option to select the hours Help Desk Services is to be available for the End Clients.
+
+Coverage Hours
+
+The hours below are noted by End Client hours managed through the ConnectWise Asio™ platform (ITSupport Portal): (Hours are Site Time)
+
+24x7: 24 hours a day, 7 days a week coverage
+
+After Hours and Weekends: 5:00 PM to 9:00 AM coverage, 24 hours Saturday and Sunday
+
+Business Hours: 8:00 AM to 6:00 PM Monday through Friday
+
+Holiday Coverage
+
+During major holidays Help Desk Services will operate with reduced staffing. Please know that reduced capacity will be in place for the following holidays or their observed dates:
+
+New Year's Day
+
+U.S. Memorial Day
+
+U.S. Independence Day
+
+U.S. Labor Day
+
+U.S. Thanksgiving & day after U.S. Thanksgiving
+
+Christmas Eve & Day (December 24th and December 25th)
+
+Location of Services
+
+Help Desk Services is provided from locations North America, Europe, and the Philippines. MSPs have the option to subscribe for an additional fee to the following service levels:
+
+US Voice: Telephone interactions are routed to the North America-based Help Desk Service delivery team. Chats are routed to any ConnectWise location.
+
+US Voice and Chat: Telephone and Chat interactions will be routed to the North America-based Help Desk Services delivery team.
+
+For MSPs using ConnectWise RMM, this service was branded as Help Desk Services Premier prior to 3/6/2023.
+
+Help Desk Services delivery team will utilize resources from any location to perform services that are not telephone or chat interactions. Additionally, Help Desk Services delivery team may utilize technicians from any location for all interactions in the event of unusual interaction volume.
+
+4. In Scope Services
+
+ConnectWise will make commercially reasonable efforts to provide the following Services to Production Versions of Operating Systems and Applications:
+
+Operating system (OS) versions currently supported by Microsoft and Apple macOS current and two previous versions. 
+
+Microsoft Office Suites current generally available version and at the discretion of ConnectWise one previous version
+
+Email Clients: Microsoft Office 365 Outlook, Microsoft Windows Mail App, Google Workspace and Mac Mail
+
+Browsers: Chromium based, Microsoft Edge, Firefox and Safari
+
+Thin Client & Virtual Desktop Interface (VDI): Help Desk Services supports sites using a thin client by connecting to the server and remote controlling the end client’s RDS/TS session. In such cases, the ConnectWise Remote Monitoring and Management (RMM) server agent must be installed on the server first. In the cases where the remote virtual desktops are being delivered as virtual machines, the ConnectWise RMM desktop agent must also be installed on those virtual machines.
+
+AWS (Amazon Web Services) Workspaces. An RMM agent is required to be installed on each workspace (virtual machine). Help Desk Services technicians can reset/restart workspaces from the AWS management portal if accounts to access the portal and appropriate permissions are provided.
+
+Azure Virtual Machines. An RMM agent is required to be installed on each workspace (virtual machine). Help Desk Services technicians can reset/restart workspaces from the Azure Virtual Machines management portal if accounts to access the portal and appropriate permissions are provided.
+
+Help Desk Services will assist end clients with the restoration of files and folders owned/created by the same end client using ConnectWise Continuity Backup solution or Microsoft Previous Versions when enabled.
+
+Reinstallation of Citrix Workspace Application (Citrix Receiver) on Client workstations.
+
+Patching scheduling for client end points based on Alerts can be assigned to Help Desk Services. Help Desk Services will attempt to schedule the patching event 3 times; on the 4th attempt, the ticket will be escalated to the MSP.
+
+Interactions with End Clients:
+Inbound telephone interactions into Help Desk Services designated phone numbers
+Inbound chat interactions from the chat client accessed through the installed RMM agent
+Inbound email interactions into the Help Desk Services designated email aliases
+Outbound callbacks requested through tickets opened through Help Desk Services ticketing service
+Outbound callbacks requested by the end client via ConnectWise Virtual Assistant/email/phone/chat
+Scope of Service for End Client Interactions:
+Email or application crashed or not functioning properly
+Printing issues
+ODBC connectivity issues only with appropriate documentation
+File and folder permission changes
+Files and folder administrative actions
+Isolate and troubleshoot general hardware failures
+Computer performance incidents
+Scanning and removal of viruses/malware from individual workstation with supported ConnectWise software and services
+For non-commercial networks (i.e. home networks), Help Desk Services will attempt to isolate network issues and direct the client to power-cycle attached devices (i.e. a local router)
+For commercial / business / client sites, Help Desk Services will attempt to isolate network issues and direct the client to power-cycle access points and / or other attached devices (i.e. a local router). Help Desk Services will perform power-cycle activities only with detailed, documented instructions and documented MSP approval. Documentation must list applications, application credentials, and precise instructions used to perform the power-cycle activities.
+Install new applications when licensing and authorization are provided / purchased by the MSP.
+OS upgrades for desktops. Documented approval by MSPs required due to risks associated with the upgrade.
+Firmware updates for hardware. Documented approval by MSPs required due to risks associated with the upgrade.
+Support for Home PC and/or VPN issues with ScreenConnect with documented MSP approval
+MSP Interactions
+
+MSPs may request work by opening a ticket with Help Desk Services. Help Desk Services will schedule MSP interaction requests based on resource availability. Work will typically be performed after hours when the End Client workstation is not in use. MSP acknowledges and agrees that the work may be completed by ConnectWise’s resources from any location. You further acknowledge and agree that the work may require ConnectWise resources from any location to call or email your customer.
+
+Scope of service for MSP initiated tasks:
+Mailbox and distribution list creation
+Password resets and unlocking of domain accounts
+File and folder permission changes
+Microsoft Outlook profile set-up activity
+For users that have a workstation with an agent installed and/or a user that has an RDS access to a server that has an agent installed, single mobile device email setup and configurations along with email, contact, and calendar synchronization
+Troubleshooting Office 365 restoration include emails, calendars, OneDrive files and folders, SharePoint Sites and data, and Microsoft Teams data for those MSPs using ConnectWise Continuity Backup for SaaS
+Google Workspace restoration include Gmail, Google Drive, Calendar, and Google Sites for those MSPs using ConnectWise Continuity Backup for SaaS
+Single user create, update, or delete activity
+Single PC setup
+Single Office 365 account maintenance
+Single endpoint protection scan with supported ConnectWise software and services
+Single endpoint performance scan
+
+MSPs may initiate requests for work to multiple endpoints for a single site. An MSP request for the same action involving more than 5 endpoints per day (per site) is considered a project that will be escalated back to the MSP. MSPs may also opt to use ConnectWise's Project Assistant Service to fulfill these requests for an additional fee.
+
+Priority Connect Service Help Desk (optional add-on Service)
+
+Provided that MSP specifically purchases the Priority Connect Service Help Desk option, MSP shall be entitled to the following additional Services:
+
+Priority Access: MSP can establish a priority promotion system for MSP’s end clients within ConnectWise Help Desk Services for specific named contacts provided by the MSP. 
+MSP will be required to provide unique contact records to Help Desk Services Partner team. To initiate the process, please contact Help Desk Services Partner Support, contact information in section 8. The MSP’s designated end client contacts will require the following minimum information, Company/Site name, first name, last name, unique primary, other and mobile telephone numbers, and unique email address. Priority Connect service depends on ConnectWise’s ability to match the client to the unique data provided by MSP. Please do not send personally identifiable information unencrypted. 
+The number of end client contacts will not exceed the number of units paid for monthly. 
+The fees payable for the Priority Connect Service Help Desk do not contribute and shall not be counted against MSP’s Monthly Minimum Commitment associated with any agreements with ConnectWise or its predecessors.
+
+Priority Connect calling, opening a chat session, or sending an email to Help Desk Services will be prioritized to the next available, appropriately assigned, Help Desk Services technician. 
+
+5. Out of Scope Services
+Services to Clients and/or Sites not created and set up in Asio and enabled for Help Desk Services.
+Services to end users not uploaded as contacts on Asio or not synced to Asio from PSA.
+Help Desk Services does not change network configurations, including firewalls, nor does it provide support for troubleshooting or power-cycling network gear found in server rooms, data centers, or other computer/networking space.
+Fix database corruption issues.
+Help Desk Services will not perform any virtualizations, policy changes on a ConnectWise Continuity Backup.
+Help Desk Services will not perform services on non-ConnectWise backup and restoration products.
+End Client Training – example teaching clients how to use PowerPoint.
+Unless otherwise approved and documented by the MSP, downloading and installing Third-Party applications
+Contacting Third-Party vendors for support.
+Help Desk Services will not install any solution unless the licenses are provided. To reduce the risk of fraud, under no circumstance will Help Desk Services engage in financial transactions and or the procurement of licenses on MSP’s behalf.
+Support for Mobile Device Management Solutions.
+Citrix Server Applications are not part of Help Desk Services standard offering.
+IT Based Projects support – All MSP IT based projects that result in Help Desk Services contact will be escalated to the MSP. MSPs are required to coordinate with Help Desk Services if there is an expectation of calls/emails/chat/tickets following an MSP-initiated IT project.
+Hardware-related issues (hard disk, memory, power supply, etc.). All hardware and/or equipment issues will be escalated to the MSP for remediation.
+Issues detected with the ConnectWise’s platform. The ConnectWise Product Support Team will work directly with the MSP on these issues.
+Internet service provider (ISP) outages.
+Hardware, software, or ISP vendor ticketing and management.
+On-site support at MSP and/or end client locations for hardware and physical connectivity issues.
+Priority Connect Service Help Desk unless you have specifically paid for the Priority Connect Service Help Desk.
+Anything not specifically identified as in scope.
+6. MSP Responsibilities
+
+The following items are the MSP’s responsibility and the MSP agrees to comply and timely complete all such items:
+
+Register, review Help Desk Service best practices
+Review and promptly complete the Activating Help Desk Services steps in ConnectWise University
+Review and set up security best practices and follow the following steps to provide Help Desk Services access to MFA protected end points: Custom Passwords and Properties
+ConnectWise Help Desk Services require the Partner’s Companies, Sites and End Users to be created on Asio or synced from PSA to Asio. Company and Site mapping must be completed and End Users must be synced or uploaded to Asio.
+End Client Sites must be enrolled in Help Desk Services. A service level and hours of coverage must be selected through the Asio portal under the site profile.
+RMM Agent must be installed at the endpoint before ConnectWise will provide services. ConnectWise can install an RMM agent if one is not detected at ConnectWise’s then current rates.
+A supported Windows or Apple OS must be installed at the endpoint (both physical/virtual); support for out of service OS will be provided on a best effort basis
+In order to provide service the Help Desk technician must be able to recognize the unique telephone number calling and/or unique email address for Chat. This is done by the data the MSP provides through the Contact upload process through the Asio Portal. Contact sync may be available through PSA sync. ConnectWise will not provide the Help Desk services to unrecognized contacts of MSP. MSP may approve the creation of a contact by responding to SMS or consenting to the ConnectWise Help Desk service to provide services to unrecognized end users. If MSP enables the Help Desk Service to add end users without approval the MSP is solely responsible for information that may be shared by individuals that are not associated with the MSP.
+It is the MSP’s responsibility to ensure that the documentation has the appropriate information for access and instructions for escalation.
+When asked, MSPs are responsible to update documentation within 21 days from the time of the request.
+MSP must provide necessary credentials for Help Desk Services backup access, such as SBM UI credentials and encryption passphrases. Credentials should be added in the Asio Platform in the following locations:
+Store Credentials - For Recover for Continuity or Recover for Backup: BDR Home > Setup > Store Credentials
+For any other backup products: RMM Setup > Sites Using RMM > [site name] > Network Info > Backup
+Maintain up-to-date client notification details and ensure technician availability for Help Desk Services escalations. (under RMM Setup > Notification Rules)
+On Help Desk Services notification template on the Asio portal, ensure that a mobile phone number to enable automated approval via SMS messages.
+7. Service Level Objectives:
+
+ConnectWise endeavors to provide the following service levels:
+
+Speed of Answer Target: 70% of telephone calls and chats answered in 1 minute or less
+70% of email and PSA tickets are answered in 2 hours or less
+Interaction Handle Time for in Scope Services Target: 25 Minutes
+Resolution Rate for in Scope Services Target: 75% of interactions resolved without the need of escalation to the MSP
+Client initiated requests completed by 6:00 AM (local machine time zone) the day following the request. For sites subscribed to Business Hours support, projects will be completed by the next business day rather than the next calendar day
+PSA and e-mail tickets will be worked in accordance with Client service level and published SLO. Help Desk Services will not call Client during non-business hours unless explicitly requested in the ticket and calls to the Client will be scheduled for the next business day.
+8. How MSPs/Partners contact Help Desk Services
+
+MSPs should not call or chat directly with ConnectWise Help Desk Services technicians. ConnectWise prioritizes incoming real time interactions, calls and chats ahead of interactions generated through other methods. Calling Help Desk Services and asking technicians or managers to open and start work on tickets is not supported.
+
+The following are the options available to the MSP/Partner for changing the prioritization or checking the status of a ticket:
+
+Chat via the Asio Platform using the support option, available US business days, 8:00AM-8:00PM ET
+Call our Help Desk Services partner Support 24x7 telephone numbers at:
+US and Canada: 855-342-8432
+Toll: 628-210-7510
+Partner questions regarding usage of ConnectWise products and product support are supported by contacting Product Support through ConnectWise Home.
+For non-urgent requests for open interactions, MSP/Partners may email our dedicated Help Desk Services client support address at ExpertServicesHelpDesk@ConnectWise.com.
+MSP/Partners may provide the following number and email address to their end users (end clients) to contact Help Desk Services:
+US: +1 866 520-6414
+AU: +611800950754
+UK: +44 13 4453-5341
+Taiwan: +886 801491168
+India: 000 800 082 0045
+France: +33 801 84 14 18
+Netherlands: +318 0002 28288
+Toll: +1 724 -720-9076
+Email: helpdesk@ITSupport247.net
+9. Additional Resources
+
+MSP Ticket Assignments and Escalations. Learn how and in what cases Help Desk Services may need to escalate issues to Client.
+
+Client Requests and Callbacks. Learn how Help Desk Services will interact with end clients to resolve issues.
+
+The ConnectWise University. View Help Desk Services training videos in the ConnectWise University to help with the Client activation process.
+
+IT Glue integration instructions
+
+IP Listing to enable Integrated Services including Help Desk Services
+
+10. Email Spam Filter Information
+
+When creating a new Help Desk Service ticket from an incoming email, an email will be filtered out and a ticket will NOT be created if it meets any of the following criteria:
+
+Condition
+
+	
+
+Phrase
+
+
+
+
+From begins with:
+
+	
+
+postmaster@
+
+
+
+
+From contains:
+
+	
+
+@email.microsoft365.com
+
+
+
+
+From contains:
+
+	
+
+no_reply@
+
+
+
+
+From contains:
+
+	
+
+do-not-reply@
+
+
+
+
+From contains:
+
+	
+
+no-reply@
+
+
+
+
+From contains:
+
+	
+
+noreply@
+
+
+
+
+From contains:
+
+	
+
+DO-NOT-REPLY@
+
+
+
+
+From contains:
+
+	
+
+MAILER-DAEMON@
+
+
+
+
+From contains:
+
+	
+
+@google.com
+
+
+
+
+From contains:
+
+	
+
+E-mail Security Team
+
+
+
+
+Subject contains:
+
+	
+
+Your message couldn’t be delivered
+
+
+
+
+Body contains:
+
+	
+
+Out of Office
+
+
+
+
+Subject contains:
+
+	
+
+Out of Office
+
+
+
+
+Subject contains:
+
+	
+
+Email Count to Low
+
+
+
+
+From contains:
+
+	
+
+@ringcentral.com
+
+
+
+
+From contains:
+
+	
+
+@mail.adobe.com
+
+
+
+
+From contains:
+
+	
+
+vmware.com
+
+
+
+
+From contains:
+
+	
+
+info@
+
+
+
+
+From contains:
+
+	
+
+@microsoft.com
+
+
+
+
+Subject contains:
+
+	
+
+Undelivered Mail Returned to Sender
+
+
+
+
+Subject contains:
+
+	
+
+Delivery Status Notification
+
+11. Revision History
+Date Published	Section	Revision Description	Notes
+11/1/2023	MSP Responsibility	Clarified Help Desk Service policy for non-recognized contacts	Per the August 2023 release notes, due to security best practices, Help Desk Service can not support contacts that we are not able to validate and that are provided as contacts by MSPs
+11/1/2023	Section 10	Email Filters/Blocks	Per Partner’s Feedback we are adding what Email filters Help Desk uses to prevent SPAM or systematic loops between Help Desk Service systems and the Partner’s systems
+11/1/2021	 	Reformatted and Simplified Structure of document Major changes	Added MSP Responsibilities
+2/1/2022	All	Client vs. MSP	To improve readability and remove confusion, renamed Client to MSP throughout entire document.
+
+Now: Partner = MSP, Partner’s Client = End Client
+2/1/2022	3	Added CW Holidays and Clarified	After Hour Service level includes CW Holidays. Added what holidays are observed
+2/1/2022	3	Help Desk Service location can perform work under Help Desk Premier Service Level	Our Global Help Desk can perform work under Help Desk Premier when there is no End Client Interaction. Our Global Help Desk Can be called to assist with Help Desk Premier Interactions during severe and unusual call/chat volume.
+2/1/2022	4	In Scope Services Changes	Added Azure Virtual Machines to in scope items
+2/1/2022	8	How do MSPs contact Help Desk?	Clarified in section 8 is for MSPs
+2/1/2022	6	MFA setup	Added in MFA setup process as part of for MSP responsibilities
+2/1/2022	4	End User Personal PC	Clarified that helping end users access work end points through their personal PCs is in scope with MSP approval
+2/1/2022	4	OS Upgrades	OS Upgrades are in scope only with MSP approval due to risks associated with the task
+4/1/2022	In Scope Service	Power-Cycling Devices	Clarified what type of devices on what networks help desk can perform a power cycle
+4/1/2022	In Scope Service	Mobile Device Email/Calendar setup	Clarified that the user must have at least one device with an agent installed
+4/1/2022	In Scope Service	ODBC Issues	Clarified ODBC scope of service – Bullet #3. Work is limited to ODBC issues
+4/1/2022	Partner Chat	Hours of agent availability for Partner Availability Chat	
+
+Partner initiated chats for HD through the Asio Platform hours are limited from 8:00AM to 8:00PM Mon-Fri.
+
+Phone is 24x7
+
+
+8/22/2022	In Scope Service	Updated Apple MacOS version	Apple no longer publishes a list of supported MAC OS versions. ConnectWise will support the OS versions listed within the In Scope Service Section.
+8/22/2022	SLO	Added email and ticket SLO	SLO section now includes tickets opened and received by Help Desk through email or through the PSA sync.
+8/22/2022	International Phone Numbers	Fixed format and added countries	Fixed the format for international numbers and added call in numbers for end users from Taiwan, India, France, and Netherlands
+3/6/2023	4	New Mac OS Version	In preparation for Ventura, adding the new OS and removing Catalina
+3/6/2023	SoS End Client	ODBC	Added that documentation must be provided for ODBC work. ODBC connectivity issues only with appropriate documentation
+3/6/2023	SLO	Scheduled Call Back	Per partner feedback,  Help Desk Services will not call back end clients following a PSA or Email initiated ticket until the next business day. Overwhelming feedback shows that Clients do not want to be called at night or on a weekend unless the ticket instructs Help Desk Services to do so
+3/6/2023	n/a	Partner Resources	
+
+Added IT Glue Integration
+
+Added IP List to enable services
+
+
+3/6/2023	Location of Services	Stronger/More Clear Language	Based on Partner feedback, we consolidated the description of where services are offered and what is meant by each service offered in one section vs defining services and interactions in separate sections. Help Desk Services levels refer to client direct interaction with technicians through Chat and Voice. None of our Help Desk Services limit all transactions to specific geographical locations.
+3/6/2023	MSP Responsibilities	Updating Documentation	Added time expectations relating to updating documentation for MSP.
+6/12/2023	Multiple Sections	Grammar, Naming Conventions and VDI Support Clarification	VID – Previous statement clarified to include VDI being in scope as long as agent is installed on the server and the End Client calling/chatting with help desk is recognized as a valid user
+6/12/2023	How to Contact Help Desk	New Numbers	Additional phone numbers for AU and Taiwan.
+6/12/2023	How to Contact Help Desk	Support for ConnectWise Products	Clarified that Help Desk Partner Line is not able to provide ConnectWise product support. Those inquiries should be routed to the ConnectWise Product Support Team
+
+
+8/1/2023
+
+	
+
+Location of Services
+
+	
+
+Clarification
+
+	
+
+Further clarified that Telephone (Voice) and Live Chat Sessions are the interactions that can be excluded from our US Based Technician Team
+
+
+
+
+8/1/2023
+
+	
+
+VIP Service Help
+
+	
+
+Addition to In Scope Services
+
+	
+
+Added new Service Offering Terms for VIP Help Desk Service
+
+
+4/1/2024	VIP Service	Renamed Service	Due to partner feedback, VIP service has been renamed to Priority Connect 
+4/1/2024	Hours of Coverage	After Hours: Added 24h coverage for Saturday and Sunday	Description of After Hours service did not include Saturday and Sunday specific coverage
+4/1/2024	MSP Responsibility	Clarified Help Desk Service policy for non recognized contacts	Per the August 2023 release notes, due to security best practices, Help Desk Service cannot support contacts that we are not able to validate and that are provided as contacts by MSPs
+4/1/2024	Section 10	Email Filters/Blocks	Per Partner’s Feedback we are adding what Email filters the help desk uses to prevent SPAM or systematic loops between the Help Desk Service systems and the Partner’s systems
+4/1/2024	Location of Service	Chat with US Voice Service Level	Clarified that US Voice service offering has Chat as a service and Chat is offered from any ConnectWise Location
+4/1/2024	Hyperlinks	Doc Center to ConnectWise University	Updated all links within SOW that referenced Doc Center to new links within ConnectWise University 
+4/1/2024	Service Level Objectives	Updated email response time 	From: 70% of email and PSA tickets are answered in 12 hours or less
+To: 70% of email and PSA tickets are answered in 2  hours or less
+3/17/2025	Out of Scope Services and MSP’s Responsibilities	Help Desk Service for Sites and End Users not in Asio Portal	
+
+For security best practices: Clarified that both the Site and End User must be a record on Asio and enabled for Help Desk Service for the Help Desk Technician to provide services.
+
+If the end user is not found MSP must approve the addition of the end user. MSP is liable for services rendered and PII captured for clients that may not be part of MSPs clients
+
+Help Desk Best Practices Client Requests and Callbacks
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Client Requests and Callbacks
+MSP Ticket Assignments and Escalations
+Help Desk Activation Checklist
+Help Desk Best Practices
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

@@ -1,0 +1,154 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Agents   Download and Install Agents   Asio Platform Agent Deployment using Group Policy Object (GPO)
+Asio Platform Agent Deployment using Group Policy Object (GPO)
+Last updated
+Nov 26, 2025
+Table of contents
+Important Prerequisites Before Creating a GPO for Asio Platform Agent Deployment
+Creating a Share Folder for MSI Distribution
+Creating and Applying Group policy
+System Level Configuration
+User Level Configuration
+References for Troubleshooting
+Important Prerequisites Before Creating a GPO for Asio Platform Agent Deployment
+Windows Installer version 2.0 is required on end points/systems.
+Pick a method for performing the agent installation:
+System Level: The agent will be installed when the system reboots. In this method, the system or domain computers will need to be added to the Security Settings in GPO.
+User Level: The agent will be installed when the user logs into the system. In this
+scenario, the user or domain users will need to be added to the Security Settings in GPO.
+The domain computer and/or domain users must have Read privileges (or higher) for the shared folder in which the agent MSI resides. If the domain computers and/or domain users are not part of the share security, add them and grant Read privileges.
+The shared folder in which the agent MSI resides must be accessible via UNC path.
+The user should have admin rights. If the user does not have admin rights, the GPO should be executed when the system reboots or the GPO should elevate admin privileges. This is required since the agent setup accesses the HKLM Registry and the SCM (Service Control Manager) to create agent services. A normal user does not have Write access to HKLM and to SCM.
+Depending on the partner’s agent setup request, the agent MSI setup can be either Silent or GUI.
+Do not advertise or publish the MSI, since it does not have any User Interface or selective features.
+The Asio platform agent cannot be uninstalled using GPO. The agent can be uninstalled from Add/Remove Programs or from the ITSupport Portal. The uninstall option is not available via GPO, to avoid accidental removal or un-installation of the agent via GPO.
+
+Note:
+
+When installing Asio platform agents via GPO, the file name must remain exactly the same. Otherwise, changing the file name after download will cause the installation to fail.
+To learn more about downloading and installing Agents on your device, refer to the Download and Install Agents documentation.
+Creating a Share Folder for MSI Distribution
+
+Create a shared folder at a specific location with all the necessary permissions. Read and Read & Write permissions should be granted for:
+
+Administrator
+Domain computers
+Domain users
+Everyone
+
+Note: Read rights are sufficient for the agent deployment to work. Download the MSI and keep it in a shared folder. Ensure this shared folder is accessible via UNC path.
+
+Creating and Applying Group policy
+
+To create and apply group policy:
+
+Go to Administrative Tools and click Group Policy Management.
+
+Access the Group Policy Management console using the RUN option by typing GPMC.MSC.
+
+Right-click the domain and click Create a GPOin this domain, and Link it here.
+
+Enter the policy name and click OK.
+
+View the policy listed under Group Policy Objects. Right-click the policy and click Edit.
+
+The Group Policy Management Editor window opens.
+
+System Level Configuration
+
+Policies can be created with unique conditions that apply to users with System Level or User Level access. To create a policy for users with System Level access, follow these steps:
+
+Navigate to Computer Configuration > Policies > Software Settings > Software installation.
+Right-click Software installation and select New > Package.
+
+Assign the setup file to the policy in the resulting pop-up window. Go to the share location and click the setup file.
+
+Note: You must locate the setup file via UNC (Universal Naming Convention) path for e.g. (\\tpdc12\dist\PatchRedesign-G).
+
+Select the setup file and click Open. The Deploy Software window will pop up. Select the Assigned radio button and click OK.
+
+View the policy to be deployed under Computer Configuration. Close the Group Policy Management Editor window.
+
+Click the policy you created under Group Policy Management and assign the appropriate computer group to the security filtering. You can also assign domain computers. Whenever a computer is joined into the particular group or domain, the policy is applied and the Asio platform Agent deploys when startup/logon occurs with that machine.
+
+Note: It takes up to 30 minutes for the policy to be applied to the end points / systems after creating the GPO Policy.
+
+Use the command gpupdate.exe /force on the end points / systems to apply the policy immediately. After execution of the GPUPDATE Force command, a Reboot message appears.
+Reboot the machine. After reboot, an Installing RMM Agent message appears.
+Note that RMMSetup.exe is running under the System Account at the same time in the Task Manager.
+
+User Level Configuration
+
+Policies can be created with unique conditions that apply to users with System Level or User Level access. To create a policy for users with User Level access, follow these steps:
+
+Go to User Configuration > Policies > Software Settings > Software installation.
+Right-click Software installation and click New > Package.
+
+Assign the setup file to the policy in the resulting pop-up window. Go to the share location and click the setup file.
+
+Note: You must locate the setup file via UNC (Universal Naming Convention) path for e.g. (\\tpdc12\dist\PatchRedesign-G).
+
+ 
+
+Click Open on the setup file to open the Deploy Software window. Select Assigned and click OK.
+
+Right-click the package and go to Properties after the policy is assigned.
+
+Click the Deployment tab under Properties. Under Deployment Options, select: Uninstall this application when it falls out of the scope of management and Install this application at logon. Click Apply, then click OK.
+
+View the policy to be deployed under User configuration. Close the Group Policy Management Editor window.
+
+Click the policy created under group policy management and assign the appropriate User group to the security filtering, or assign Domain User, Domain Admins. With that assignment, whenever a user with appropriate rights (either from Domain Users, Domain Admin, or by the defined / assigned group) logs on to any machine, the Asio platform agent will be deployed.
+
+Note: The agent is system-level software and requires admin privileges.
+
+References for Troubleshooting
+
+These links provide additional information that may help resolve issues :
+
+Active Directory – Group Policy Installation Failed Error 1274 – Server Fault
+How to Enable Microsoft Installer logging and Verbose logging to gather additional troubleshooting Information
+
+How to enable Windows Installer logging
+
+Windows Administration Your Guide to Group Policy Troubleshooting
+
+ 
+
+Agent for Linux 32/64 bit ARM device Installing Asio Agents using MS Intune
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Windows OS Agent Overview
+Installing Asio Agents using MS Intune
+macOS Agent Overview
+Linux Server Agent Overview
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

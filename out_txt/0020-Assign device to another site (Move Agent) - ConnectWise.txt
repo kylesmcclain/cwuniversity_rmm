@@ -1,0 +1,108 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Agents   Agent Management   Assign device to another site (Move Agent)
+Assign device to another site (Move Agent)
+Last updated
+Nov 14, 2025
+Table of contents
+Overview
+Assigning a device to another site
+Assigning a device to another site from the Companies page
+Overview
+
+In the event you need to reclassify your managed Windows desktops and servers under a new company or physically move them to a new site, such as a business merger, employee relocation, or other asset migration, you also need to transfer RMM agents from one site to another in the Asio™ platform (ITSupport Portal) to ensure agent configurations, portal data, and reports properly update. This document outlines how to move RMM agents between sites in the Asio platform.
+
+Assigning a device to another site
+
+To move an endpoint from one site to another site under the MSP, the user needs to follow the steps below:
+
+Navigate to Endpoints > Devices. 
+Use the search, sort, and filter features to locate the devices that you need to re-purpose or move to another site. 
+Select the rows with the devices that need to be moved. 
+Note: An unlimited number of devices can be selected. However, it takes more time for the action to be completed by the system. Once the action is confirmed, devices will start reflecting under the new site within 15 minutes. However, the device also needs to be reconfigured based on the new site and it could take between 30-45 minutes for the entire reconfiguration to be complete. 
+From the Action Bar, select the Manage Menu. In the list of options under the Manage Menu, select Assign a device to another site.
+
+The Assign Devices To Another Site window will open.
+
+
+ 
+Select the company and destination site where you want the devices to be moved. The drop-down menu lists all available sites. You can also type to search for your site.
+You will see a list of the devices that you have selected. If any devices were incorrectly selected, you can uncheck the row to remove the device from the list of devices to be moved. 
+
+If the device has additional functionality or if the permissions do not allow you to take action on the device, then that device will be automatically unselected. For information on any additional functionality or responsibility on an endpoint, there is an Icon that will appear to the left of the device name. You can hover over the icon to know more about the status. 
+
+ This icon means that there is a dependent functionality that needs to be removed before this device can be moved. For more details on the dependent functionalities and how they impact your move action, please click on the icon. 
+
+Once the data is reviewed and confirmed, click Move Devices to trigger the action. You will receive a confirmation message.
+
+Click Confirm and the request will be created and the process to assign the devices will be initiated.
+
+After the action is confirmed, devices should start reflecting under the new site within 15 minutes, but since the device also needs to be reconfigured based on the new site, it could take between 30-45 minutes for the entire reconfiguration to complete.
+
+Assigning a device to another site from the Companies page
+
+You can also move a device from the companies page by following these steps.
+
+Navigate to Clients > Companies > select a Company.
+Switch to the Agent tab and select Agent Management.
+
+Select the device you want to assign to another site. 
+Click Assign to Another Site.
+The Assign Devices To Another Site window will open.
+
+
+ 
+Select the company and destination site where you want the devices to be moved. The drop-down menu lists all available sites. You can also type to search for your site.
+You will see a list of the devices that you have selected. If any devices were incorrectly selected, you can uncheck the row to remove the device from the list of devices to be moved. 
+
+If the device has additional functionality or if the permissions do not allow you to take action on the device, then that device will be automatically unselected. For information on any additional functionality or responsibility on an endpoint, there is an Icon that will appear to the left of the device name. You can hover over the icon to know more about the status. 
+
+ This icon means that there is a dependent functionality that needs to be removed before this device can be moved. For more details on the dependent functionalities and their impact on your move action, please click the icon. 
+
+Once the data is reviewed and confirmed, click Move Devices to trigger the action. You will receive a confirmation message.
+
+Click Confirm and the request will be created and the process to assign the devices will be initiated.
+
+After the action is confirmed, devices should start reflecting under the new site within 15 minutes, but since the device also needs to be reconfigured based on the new site, it could take between 30-45 minutes for the entire reconfiguration to complete.
+
+Once the device is moved successfully, you can also check the audit logs for the same in Centralised Audit Trail.
+
+
+
+Agent Management Changing Proxy Settings
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Changing Proxy Settings
+Switching the device type for an Endpoint
+Golden Image Support
+Asio Agent Requirements
+The article includes the currently supported operating systems for agent installations.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

@@ -1,0 +1,87 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Communicator User Guide   Communicator Ticketing
+Communicator Ticketing
+Last updated
+Dec 2, 2025
+Table of contents
+Overview
+Ticket Distribution
+Creating a Ticket
+Overview
+
+Your end-users can send a ticket from the Communicator if this option is enabled in the Policy. Navigate to one of the following locations to view and enable these settings.
+
+Endpoints > Packages > Select Required Policy > Edit
+
+Endpoints > Devices > Select required endpoint > Settings > Devices > Communicator > Edit > Save
+Ticket Distribution
+
+Depending on how your policy is set up, your tickets will be sent to different locations:
+
+If the Policy is configured to send tickets to Partner, the ticket will be assigned to you.
+If the Policy is configured to send tickets to the Helpdesk, the ticket will be assigned to the Helpdesk.
+
+Creating a Ticket
+
+Once Create Ticket is enabled in the Policy, the option to create a ticket is in the Communicator tray.
+
+When a user creates a ticket, they can click the tab button to fill out the ticket details.
+
+When entering a phone number, we support different formats and some special characters.
+
+Phone numbers can only contain numbers and the following special characters: "-", "." and "()"
+When the ticket is submitted, the following formats should will work:
+2124567890
+212-456-7890
+(212)456-7890
+(212)-456-7890
+212.456.7890
+
+An Error message is shown if you enter an invalid phone number (Non-numeric and unacceptable special characters ** values), You will not be able to submit the ticket until these are corrected.
+
+The sent tickets will be displayed to the partner in the following locations:
+
+Endpoints > Devices > Device Details > Tickets
+Service Delivery > Tickets (Legacy)
+Your PSA System (if you have set up this integration)
+The Help Desk System (if the ticketing is configured to be sent to the HD)
+
+ 
+
+Communicator Scripting ConnectWise RMM Release Notes
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Communicator Configuration
+Communicator Assignment
+Communicator Default Menus
+Communicator Branding
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

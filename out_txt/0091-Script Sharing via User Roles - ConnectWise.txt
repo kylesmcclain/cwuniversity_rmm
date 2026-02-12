@@ -1,0 +1,262 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Automation   Tasks   Script Sharing via User Roles
+Script Sharing via User Roles
+Last updated
+Sep 25, 2025
+Table of contents
+Overview
+Permissions Overview
+Sharing Modes
+Managing Script Access
+How Permissions Work Together
+Script Permissions Matrix
+Script Visibility
+Script Permissions Migration
+How to Share a Script
+Example of Role-Based Sharing of a Script
+Best Practices
+Overview
+
+This article explains the Script Sharing via User Roles feature. This feature allows for precise control over who can view, edit, delete, and share scripts in the Script Editor. It ensures that scripts are managed securely and are accessible only to the appropriate users based on their roles and permissions.
+
+Note: This feature is only applicable for scripts created using a Script Editor.
+
+Permissions Overview
+
+Each script supports four types of permissions:
+
+Create - Create script.
+View – See script details.
+Update – Modify script content.
+Delete – Remove the script.
+
+For each permission except Create, you can assign access using four permission levels:
+
+My Access – You can act on scripts you created.
+Shared Access – You can act on scripts shared with Everyone.
+Role-Based Access – You can act on scripts shared with your role.
+Full Access – You can act on all scripts, regardless of ownership or sharing mode.
+
+Permissions in the old domain Automation looked like the following:
+
+But now, these options appear as checkboxes under each permission type in ConnectWise Home, as shown here in the new domain Tasking Content Management.
+
+Permissions for Delete and Update:
+
+Permissions for Update and View:
+
+Note: 
+
+Post release, the old domain, Automation, will be removed, and the new domain, Tasking Content Management, will be applicable.
+Permission migration will happen from the old domain to the new domain with no impact on current functions. 
+Sharing Modes
+
+Scripts can be shared in one of the following modes:
+
+Only Me – Only the creator can access the script.
+Specific Roles – The script is shared with selected roles.
+Everyone – The script is shared with all users.
+
+Important: Sharing mode defines who is eligible to access the script, but your permissions determine what actions you can actually perform, such as viewing, editing, or deleting the script.
+
+Managing Script Access
+
+The Manage Access permission controls the Share Script button visibility. If you have the Manage Access permission, you can:
+
+Change the sharing mode of a script to Only Me, Specific Roles, or Everyone
+
+The Share Script button is visible once you have the Manage Access permission:
+
+Note: If you do not have the Manage Access permission, you can view, update, or delete scripts based on your assigned permissions, but you cannot change how they are shared.
+
+How Permissions Work Together
+
+Your ability to interact with a script depends on:
+
+The permission type you have (Create, View, Update, Delete).
+The sharing mode of the script.
+Whether you are the creator, part of the shared role, or have Full Access.
+Script Permissions Matrix
+Permission Type	Permission Level	Sharing Modes	What You Can Do
+View	Full Access	Any (Only Me, Specific Roles, Everyone)	View all scripts regardless of mode
+View	Role-Based Access	Specific Roles	View scripts if you have the assigned role
+View	My Access	Only Me	View scripts you created
+View	Shared	Everyone	View scripts shared with everyone
+Update	Full Access	Any (Only Me, Specific Roles, Everyone)	Edit any script
+Update	Role-Based Access	Specific Roles	Edit scripts if you have the assigned role
+Update	My Access	Only Me	Edit the scripts you created
+Update	Shared	Everyone	Edit scripts shared with everyone
+Delete	Full Access	Any (Only Me, Specific Roles, Everyone)	Delete any script
+Delete	Role-Based Access	Specific Roles	Delete scripts if you have the assigned role
+Delete	My Access	Only Me	Delete scripts you created
+Delete	Shared	Everyone	Delete scripts shared with everyone
+
+ 
+
+Script Visibility
+
+For this feature, post release:
+
+You continue to see the same number of tasks/scripts as before.
+Your access is preserved and aligned with your current role and permissions.
+Script Permissions Migration
+
+Current permissions apply where the old domain was applicable. New permissions apply after the feature is enabled in the new Tasking Content Management domain. The following table shows the migration of permissions from the old to the new domain.
+
+Current Permissions
+
+	
+
+New Permissions
+
+
+
+
+Limited + View
+
+	
+
+View > My Access + Limited
+
+
+
+
+View
+
+	
+
+View > My Access + View > Shared Access
+
+
+
+
+Limited + Update
+
+	
+
+Update > My Access + Limited
+
+
+
+
+Update
+
+	
+
+Update > My Access + Update > Shared Access
+
+
+
+
+Limited + Delete
+
+	
+
+Delete > My Access + Limited
+
+
+
+
+Delete
+
+	
+
+Delete > My Access + Delete > Shared Access
+
+
+
+
+Limited
+
+	
+
+Limited
+
+
+
+
+Create
+
+	
+
+Create
+
+ 
+
+For example, if the current permission was View, then the new permission is My Access and Shared Access under View.
+
+How to Share a Script
+
+If you have the Manage Access permission, follow these steps to share a script:
+
+Open the Script Editor and select the script you want to share.
+Click the Share Script button as highlighted here:
+
+
+Choose a Sharing Mode:
+Only Me
+Specific Roles
+Everyone
+
+If you select Only Me, only you can access the script. You see the following text on the screen:
+
+If you select Specific Roles, use the drop-down to choose one or more roles as shown here:
+
+Note: Primary Super Admin and Super Admin always have full access, so they are greyed out and cannot be changed.
+
+If you select Everyone, all users can access the script. You see the following text on the screen:
+
+Click Save to apply the sharing settings.
+Example of Role-Based Sharing of a Script
+
+Consider the role of a Manager who did not have access to a script before.
+
+The Primary Super Admin can share a script with specific roles if required. Here, the Primary Super Admin is sharing the script with all the Manager roles.
+
+And thus the script is visible to all the Manager roles:
+
+Note: The Manager role did not have edit or delete access for a script, hence those options are not visible to the Manager role here.
+
+Best Practices
+Use Role-Based Sharing to collaborate within teams.
+Use Only Me for sensitive or in-progress scripts.
+Grant Manage Access only to trusted users who need to control script visibility.
+Script Functions Using a Custom Field in a PowerShell Script
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Create and Schedule Script Type Tasks
+Create and schedule a script task.
+Running RMM Tasks
+How to run a task, create a custom script, or configure a task for the next agent check-in.
+Available Tasks
+RMM Task Reporting
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

@@ -1,0 +1,399 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Automation   Tasks   Predefined System Variables
+Predefined System Variables
+Last updated
+Jul 8, 2025
+Table of contents
+No headers
+
+Following is the list of predefined system variables that can be used in a script:
+
+Parent	Sub-Group	Field Name	Description
+Asset	 	AgentInstalledUtc	Stores the date and time when the Agent was installed on the endpoint.
+ 	Baseboard	
+
+hardwareUuid
+
+	Unique identifier for the hardware.
+ 	 	installDate	Date when the baseboard was installed.
+ 	 	manufacturer	Name of the baseboard manufacturer.
+ 	 	Model	Model number of the baseboard.
+ 	 	Name	Name of the baseboard.
+ 	 	Product	Product name of the baseboard.
+ 	 	SerialNumber	Serial number of the baseboard.
+ 	 	Version	Version of the baseboard.
+ 	Bios	Manufacturer	Name of the BIOS manufacturer.
+ 	 	Product	Product name of the BIOS.
+ 	 	SerialNumber	Serial number of the BIOS.
+ 	 	SmbiosVersion	Version of the System Management BIOS (SMBIOS).
+ 	 	Version	Version of the BIOS.
+ 	System	ChassisTypes	Indicates the physical form factor of the device.
+ 	 	Domain	Specifies the domain or workgroup the system is a part of.
+ 	 	DomainRole	Defines the role of the system within a domain environment.
+ 	 	HypervisorName	Identifies the hypervisor if the system is running as a virtual machine.
+ 	 	Model	Represents the model name or number of the device.
+ 	 	Product	Specifies the product name or identifier of the system.
+ 	 	SerialName	Provides the serial number assigned to the system.
+ 	 	SystemName	Displays the name assigned to the system.
+ 	 	TimeZone	Indicates the system's configured time zone.
+ 	 	TimeZoneDescription	Gives a descriptive label of the configured time zone.
+ 	 	TimeZoneLocation	Specifies the geographical location associated with the time zone.
+Bluetooth	Devices	Address	Address of the device.
+ 	 	Connected	Connection status of the device.
+ 	 	DeviceClass	Class of the device.
+ 	 	DeviceName	Name of the device.
+ 	 	EdrsSupported	Indicates if Enhanced Data Rate (EDR) is supported.
+ 	 	EscoSupported	Indicates if Extended Synchronous Connection-Oriented (eSCO) is supported.
+ 	 	Favorite	Indicates if the device is marked as a favorite.
+ 	 	FirmwareVersion	Firmware version of the device.
+ 	 	MajorType	Major type of the device.
+ 	 	Manufacturer	Name of the device manufacturer.
+ 	 	MinorType	Minor type of the device.
+ 	 	Paired	Indicates if the device is paired.
+ 	 	ProductId	Product ID of the device.
+ 	 	Services	Services provided by the device.
+ 	 	Type	Type of the device.
+ 	 	VendorId	Vendor ID of the device.
+ 	Hardware	Address	Address of the hardware.
+ 	 	CmpItDevType	Type of the IT device.
+ 	 	CompstClass	Class of the component.
+ 	 	Discoverable	Indicates if the hardware is discoverable.
+ 	 	FirmwareVersion	Firmware version of the hardware.
+ 	 	HciRev	HCI revision number.
+ 	 	HciVer	HCI version number.
+ 	 	LmpSubVer	LMP subversion number.
+ 	 	LmpVer	LMP version number.
+ 	 	MajorDeviceClass	Major class of the device.
+ 	 	MajorDeviceType	Major type of the device.
+ 	 	Manufacturer	Name of the hardware manufacturer.
+ 	 	MinorDeviceClass Name	Minor class of the device.
+ 	 	Power	Power status of the hardware.
+ 	 	Productid	Product ID of the hardware.
+ 	 	ServiceClass	Service class of the hardware.
+ 	 	Vendorld	Vendor ID of the hardware.
+ 	 	Version	Version of the hardware.
+ 	Services	AuthRequired	Indicates if authentication is required.
+ 	 	FldFileBrws	Field file browser.
+ 	 	Fidaccitem	Field access item.
+ 	 	OthrPimitemsAccept	Indicates if other PIM items are accepted.
+ 	 	ReceiveltemAction	Action to receive item.
+ 	 	ServiceName	Name of the service.
+ 	 	State	State of the service.
+ 	 	StateOthritemsAccept	State of other items acceptance.
+ 	 	Version	Version of the service.
+ 	CardReaders	Productid	Product ID of the card reader.
+ 	 	Revision	Revision number of the card reader.
+ 	 	Vendorld	Vendor ID of the card reader.
+ 	Clientid	 	Unique identifier for the client.
+ 	CreateTimeUtc	 	Creation time in UTC.
+ 	CreatedBy	 	Name of the creator.
+ 	Diagnostic	LastRunOn	Last run date and time.
+ 	 	Result	Result of the diagnostic test.
+ 	 	TestName	Name of the diagnostic test.
+ 	DiscBurning	BurSupport	Indicates if burning support is available.
+ 	 	Cache	Cache size.
+ 	 	CdWrite	Indicates if CD writing is supported.
+ 	 	DvdWrite	Indicates if DVD writing is supported.
+ 	 	FirmwareRevision	Firmware revision number.
+ 	 	Interconnect	Type of interconnect.
+ 	 	Media	Type of media.
+ 	 	ModelName	Model name of the disc burner.
+ 	 	ReadDvd	Indicates if DVD reading is supported.
+ 	 	WriteStrtgy	Writing strategy.
+ 	Drives	BayName	Name of the drive bay.
+ 	 	Description	Description of the drive.
+ 	 	Detachable	Indicates if the drive is detachable.
+ 	 	DiskBsdname	BSD name of the disk.
+ 	 	DiskRevision	Revision number of the disk.
+ 	 	InterfaceType	Type of interface.
+ 	 	LinkSpeed	Link speed.
+ 	 	LogicalName	Logical name of the drive.
+ 	 	Manufacturer	Name of the drive manufacturer.
+ 	 	MediaType	Type of media.
+ 	 	MediumType	Type of medium.
+ 	 	Model	Model number of the drive.
+ 	 	NLinkSpeed	Negotiated link speed.
+ 	 	NativeCmdQ	Indicates if native command queuing is supported.
+ 	 	NumberOfPartitions	Number of partitions.
+ 	 	PartMapType	Partition map type.
+ 	 	Partitions	List of partitions.
+ 	 	Product	Product name of the drive.
+ 	 	QueueDepth	Queue depth.
+ 	 	RemovableMedia	Indicates if the media is removable.
+ 	 	RotationRate	Rotation rate of the drive.
+ 	 	SerialNumber	Serial number of the drive.
+ 	 	SizeBytes	Size of the drive in bytes.
+ 	 	SmartStatus	SMART status of the drive.
+ 	PartitionData	Description	Description of the partition.
+ 	 	FileSystem	File system type.
+ 	 	Label	Label of the partition.
+ 	 	MountPoint	Mount point of the partition.
+ 	 	Name	Name of the partition.
+ 	 	SizeBytes	Size of the partition in bytes.
+ 	 	Writable	Indicates if the partition is writable.
+ 	Firewall	Logging	Indicates if logging is enabled.
+ 	 	Mode	Mode of the firewall.
+ 	 	StealthMode	Indicates if stealth mode is enabled.
+ 	GraphicCards	ChipsetModel	Model of the chipset.
+ 	 	DisDeviceId	Device ID of the display.
+ 	 	DispRevisionId	Revision ID of the display.
+ 	 	DisplayArray	Array of displays.
+ 	 	DisplayBus	Bus type of the display.
+ 	 	DisplayType	Type of display.
+ 	 	EfiDrvVer	EFI driver version.
+ 	 	PciLanWidth	PCI lane width.
+ 	 	RomVer	ROM version.
+ 	 	VRam	Video RAM size.
+ 	 	Vendor	Vendor name
+ 	Ethernet	BroadCom	Indicates if BroadCom is supported.
+ 	 	
+
+BsdName
+
+	BSD name of the Ethernet.
+ 	 	Bus	Bus type.
+ 	 	DeviceId	Device ID of the Ethernet.
+ 	 	EthrnetVendorId	Vendor ID of the Ethernet.
+ 	 	FirmwareVersion	Firmware version of the Ethernet.
+ 	 	KextName	Kernel extension name.
+ 	 	LinkWidth	Link width.
+ 	 	Location	Location of the Ethernet.
+ 	 	Name	Name of the Ethernet.
+ 	 	RevisionId	Revision ID of the Ethernet component.
+ 	 	SubSysId	Subsystem ID of the Ethernet component.
+ 	 	SubsysVendorId	Subsystem vendor ID of the Ethernet component.
+ 	 	Type	Type of the Ethernet component.
+ 	 	Version	Version of the Ethernet component.
+ 	Firewall	Logging	Indicates if logging is enabled.
+ 	 	Mode	Mode of the firewall.
+ 	 	StealthMode	Indicates if stealth mode is enabled.
+ 	FriendlyName	 	User-friendly name.
+ 	InstalledSoftwares	AppStore	Indicates if the software is from the App Store.
+ 	 	GetInfoString	Information string.
+ 	 	InstallDate	Installation date.
+ 	 	InstalledSizeBytes	Installed size in bytes.
+ 	 	Intel64Bit	Indicates if the software is 64-bit.
+ 	 	Kind	Kind of software.
+ 	 	LastAccessDateTime	Last access date and time.
+ 	 	Location	Location of the software.
+ 	 	Name	Name of the software.
+ 	 	Publisher	Publisher of the software.
+ 	 	UserName	User name associated with the software.
+ 	 	Version	Version of the software.
+ 	Keyboards	Description	Description of the keyboard.
+ 	 	DeviceId	Device ID of the keyboard.
+ 	 	Name	Name of the keyboard.
+ 	Locations	ActiveLoc	Active location.
+ 	 	LocType	Type of location.
+ 	 	LocationServices - DevType	Device type for location services.
+ 	 	LocationServices - DialOnDemand	Indicates if dial on demand is enabled.
+ 	 	LocationServices - DisctFastSwitch	Indicates if disconnect fast switch is enabled.
+ 	 	LocationServices - HrdMacAddr	Hardware MAC address.
+ 	 	LocationServices - IdleDisctTimer	Idle disconnect timer.
+ 	 	LocationServices - IdleDistconnect	Indicates if idle disconnect is enabled.
+ 	 	LocationServices - IdleRemTime	Idle reminder time.
+ 	 	LocationServices - IdleReminder	Indicates if idle reminder is enabled.
+ 	 	LocationServices - IeeeJoinMdFallBk	IEEE join mode fallback.
+ 	 	LocationServices - IeeeName	IEEE name.
+ 	 	LocationServices - IeeePowerEnbld	Indicates if IEEE power is enabled.
+ 	 	LocationServices - IeeeRemJoinNw	IEEE remote join network.
+ 	 	LocationServices - IpcpCmprVj	IPCP compression VJ.
+ 	 	LocationServices - Ipv4CnfMethod	IPv4 configuration method.
+ 	 	LocationServices - Ipv6CnfMethod	IPv6 configuration method.
+ 	 	LocationServices - LcpEchoEndbld	LCP echo enabled.
+ 	 	LocationServices - LcpEchoFailure	LCP echo failure count.
+ 	 	LocationServices - LcpEchoInterval	LCP echo interval.
+ 	 	LocationServices -LocBsdName	BSD name for location.
+ 	 	LocationServices - LocDevName	Device name for location.
+ 	 	LocationServices - LogFile	Log file location.
+ 	 	LocationServices - LogOutDisct	Indicates if logout disconnect is enabled.
+ 	 	LocationServices - PppAscpenabled	PPP ASCII enabled.
+ 	 	LocationServices - ProxyExcPlist	Proxy exclusion list.
+ 	 	LocationServices - ProxyFtpmode	Proxy FTP mode.
+ 	 	LocationServices - RedialCount	Redial count.
+ 	 	LocationServices - RedialEnabled	Indicates if redial is enabled.
+ 	 	LocationServices - RedialInterval	Redial interval.
+ 	 	LocationServices - SleepDisct	Indicates if sleep disconnect is enabled.
+ 	 	LocationServices - UseTermScript	Indicates if terminal script is used.
+ 	 	LocationServices - VerboseLog	Indicates if verbose logging is enabled.
+ 	Logical Volume	Capacity	Capacity of the logical volume.
+ 	 	Description	Description of the logical volume.
+ 	 	Disize	Size of the logical volume.
+ 	 	FreeSpaceBytes	Free space in bytes.
+ 	 	Name	Name of the logical volume.
+ 	 	UsedSpaceBytes	Used space in bytes.
+ 	Monitors	Builtin	Indicates if the monitor is built-in.
+ 	 	
+
+ConnType
+
+	Connection type of the monitor.
+ 	 	DeviceId	Device ID of the monitor.
+ 	 	MainDisplay	Indicates if it is the main display.
+ 	 	Manufacturer	Manufacturer of the monitor.
+ 	 	Mirror	Indicates if the monitor is mirrored.
+ 	 	Name	Name of the monitor.
+ 	 	Online	Indicates if the monitor is online.
+ 	 	PixelDepth	Pixel depth of the monitor.
+ 	 	Resolurion	Resolution of the monitor.
+ 	 	ScreenHeight	Screen height of the monitor.
+ 	 	ScreenWidth	Screen width of the monitor.
+ 	Mouse	Buttons	Number of buttons on the mouse.
+ 	 	Deviceld	Device ID of the mouse.
+ 	 	Devicelnterface	Device interface of the mouse.
+ 	 	Manufacturer	Manufacturer of the mouse.
+ 	 	Name	Name of the mouse.
+ 	 	PointingType	Type of pointing device.
+ 	Name	 	 
+ 	Networks	Defaultipgateway	Default IP gateway.
+ 	 	Defaultipgateways	List of default IP gateways.
+ 	 	DhcpEnabled	Indicates if DHCP is enabled.
+ 	 	DhcpLeaseExpires	DHCP lease expiration time.
+ 	 	DhcpLeaseObtained	DHCP lease obtained time.
+ 	 	DhcpServer	DHCP server address.
+ 	 	DhcpServers	List of DHCP servers.
+ 	 	DnsServers	List of DNS servers.
+ 	 	Interfacelndex	Interface index.
+ 	 	IpEnabled	Indicates if IP is enabled.
+ 	 	Ipv4	IPv4 address.
+ 	 	Ipv4List	List of IPv4 addresses.
+ 	 	Ipv6	IPv6 address.
+ 	 	Ipv6List	List of IPv6 addresses.
+ 	 	LogicalName	Logical name of the network interface.
+ 	 	MacAddress	MAC address of the network interface.
+ 	 	Product	Product name of the network interface.
+ 	 	Speed	Speed of the network interface.
+ 	 	SubnetMask	Subnet mask.
+ 	 	SubnetMasks	List of subnet masks.
+ 	 	Vendor	Vendor name of the network interface.
+ 	 	Version	Version of the network interface.
+ 	 	WinsPrimaryServer	Primary WINS server.
+ 	 	WinsSecondaryServer	Secondary WINS server.
+ 	OS	Arch	Architecture of the operating system.
+ 	 	BitKerExt	Bit kernel extension.
+ 	 	BootDuration	Boot duration.
+ 	 	BootMode	Boot mode.
+ 	 	BootVolume	Boot volume.
+ 	 	BuildNumber	Build number of the operating system.
+ 	 	DisplayVersion	Display version of the operating system.
+ 	 	InstallDate	Installation date of the operating system.
+ 	 	KernelVersion	Kernel version of the operating system.
+ 	 	Manufacturer	Manufacturer of the operating system.
+ 	 	OsinstalledDrive	Drive where the operating system is installed.
+ 	 	OsLanguage	Language of the operating system.
+ 	 	Product	Product name of the operating system.
+ 	 	Productid	Product ID of the operating system.
+ 	 	ProductKey	Product key of the operating system.
+ 	 	Releaseld	Release ID of the operating system.
+ 	 	SerialNumber	Serial number of the operating system.
+ 	 	ServicePack	Service pack of the operating system.
+ 	 	Type	Type of the operating system.
+ 	 	UserName	User name associated with the operating system.
+ 	 	Version	Version of the operating system.
+ 	 	VirMem	Virtual memory information for the operating system.
+ 	PartnerId	 	Unique identifier for the partner.
+ 	PciDevices	DeviceId	Device ID of the PCI device.
+ 	 	DeviceName	Name of the PCI device.
+ 	 	Id	Identifier of the PCI device.
+ 	 	VendorName	Vendor name of the PCI device.
+ 	PhysicalDrive	Partitions-Descriptions	Descriptions of the partitions on the physical drive.
+ 	 	Partitions- FileSystem	File system type of the partitions.
+ 	 	Partitions - Label	Label of the partitions.
+ 	 	Partitions - MountPoint	Mount point of the partitions.
+ 	 	Partitions - Name	Name of the partitions.
+ 	 	Partitions - SizeBytes	Size of the partitions in bytes.
+ 	 	Partitions - Writable	Indicates if the partitions are writable.
+ 	Type	 	Type of the component.
+ 	PhysicalMemory	Ecc	Error-correcting code (ECC) status.
+ 	 	Manufacturer	Manufacturer of the physical memory.
+ 	 	PartNumber	Part number of the physical memory.
+ 	 	SerialNumber	Serial number of the physical memory.
+ 	 	SizeBytes	Size of the physical memory in bytes.
+ 	 	Slot	Slot where the physical memory is installed.
+ 	 	Speed	Speed of the physical memory.
+ 	 	Status	Status of the physical memory.
+ 	 	Type	Type of the physical memory.
+ 	Power	AutoRestart	Indicates if auto restart is enabled.
+ 	 	CurPower	Current power status.
+ 	 	DiscSleepTimer	Disk sleep timer.
+ 	 	DispSleepTimer	Display sleep timer.
+ 	 	KernalRestart	Indicates if kernel restart is enabled.
+ 	 	NWreachability	Network reachability status.
+ 	 	PowerType	Type of power source.
+ 	 	SleepOnPower	Indicates if sleep on power is enabled.
+ 	 	SysSleepTimer	System sleep timer.
+ 	 	UpsInstalled	Indicates if UPS is installed.
+ 	 	UsesDim	Indicates if dimming is used.
+ 	 	WakeOnLan	Indicates if Wake-on-LAN is enabled.
+ 	Processors	BootRom	Boot ROM version.
+ 	 	ClockSpeedMhz	Clock speed in MHz.
+ 	 	Family	Processor family.
+ 	 	L2Cache	L2 cache size.
+ 	 	L3Cache	L3 cache size.
+ 	 	Level	Processor level.
+ 	 	Manufacturer	Manufacturer of the processor.
+ 	 	NumberofCores	Number of cores.
+ 	 	NumberofLogicalProcessors	Number of logical processors.
+ 	 	NumberofProcessors	Number of processors.
+ 	 	ProcessorType	Type of processor.
+ 	 	Product	Product name of the processor.
+ 	 	SerialNumber	Serial number of the processor.
+ 	 	Version	Version of the processor.
+ 	RaidController	HardwareRaid	Indicates if hardware RAID is supported.
+ 	 	SoftwareRaid	Indicates if software RAID is supported.
+ 	 	Vendor	Vendor name of the RAID controller.
+ 	RemoteAddress	 	Remote address.
+ 	ResourceType	 	Type of resource.
+ 	RolesFeatures	 	Roles and features.
+ 	Services	DelayedAutoStart	Indicates if delayed auto start is enabled.
+ 	 	DisplayName	Display name of the service.
+ 	 	ExecutablePath	Path to the executable file of the service.
+ 	 	LogOnAs	Account used to log on the service.
+ 	 	ServiceName	Name of the service.
+ 	 	ServiceSpecificExitCode	Service-specific exit code.
+ 	 	ServiceStatus	Status of the service.
+ 	 	StartupType	Startup type of the service.
+ 	 	StopEnableAction	Indicates if stop enable action is allowed.
+ 	 	Win32ExitCode	Win32 exit code.
+
+ 
+
+FAQ and Error Reporting RMM Task Reporting
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Create and Schedule Script Type Tasks
+Create and schedule a script task.
+Running RMM Tasks
+How to run a task, create a custom script, or configure a task for the next agent check-in.
+Available Tasks
+RMM Task Reporting
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

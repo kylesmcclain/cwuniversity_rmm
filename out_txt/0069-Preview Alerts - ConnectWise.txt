@@ -1,0 +1,89 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Alerts   Intelligent Alerts   Preview Alerts
+Preview Alerts
+Last updated
+Oct 20, 2025
+Table of contents
+Overview
+Preview Alerts
+Preview Alert Automation Tasks
+Overview
+
+Preview alerts are pre-release alerts that partners can enable and test before general availability. This feature allows you to:
+
+Test alerts on selected endpoints.
+Configure automation tasks for early issue response.
+Preview Alerts
+Preview Alerts are disabled by default.
+Once moved to general availability, they are enabled automatically.
+Any automation or suspension rules configured during preview are retained to prevent disruption.
+
+Note: Monthly release communications notify you when a condition transitions from preview to general availability.
+
+Navigate to Endpoints > Alerts >  Intelligent Alerts > Preview Alerts to view this screen.
+
+Enable and Automate Preview Alerts
+
+Note: Intelligent Alerts > Create permission is required to enable preview alerts.
+
+Enable a preview alert:
+
+Click the name of the monitoring condition on the Preview Alerts tab.
+Review the current state. All preview alerts are off by default. If the alert was enabled by an admin, the toggle appears as enabled.
+ 
+Preview Alert Automation Tasks
+
+After a preview alert is enabled, follow the steps below to create an automation task against the monitoring condition:
+
+Click on the condition from the Preview Alerts tab.
+Confirm the preview alert toggle is in the Enabled position.
+
+Click Add Automation.
+
+Select an automation task from the list. Tasks are populated based on your permissions.
+Click Select.
+Click Select Targets to choose the target endpoint, site, or dynamic group.
+
+Once the configuration is set, Click Save.
+Once the automation is created, you will see an automation icon next to the monitoring condition and the Automation Task will be visible on the card view.
+
+Note: Users with permissions to create the automation task can save automation against the monitoring condition.
+
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ConnectWise RMM Intelligent Alerts Monitoring Conditions
+Intelligent Alerts - Threshold definitions
+Custom Monitors
+Build your own alert monitors using the variety of monitor templates in ConnectWise RMM. Monitors use these templates to trigger alerts when issues ar...
+S.M.A.R.T Monitoring
+S.M.A.R.T. (Self-Monitoring Analysis and Reporting Technology) monitors a hard drive for predictive failures. Our agent automatically monitors the S.M...
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

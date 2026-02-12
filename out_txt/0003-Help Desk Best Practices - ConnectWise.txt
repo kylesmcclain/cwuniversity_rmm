@@ -1,0 +1,195 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Expert Services   Help Desk   Help Desk Best Practices
+Help Desk Best Practices
+Last updated
+Aug 7, 2025
+Table of contents
+Making the Most of Help Desk Services
+Getting Started with Help Desk Services
+Crafting a white labeled answer 
+Create good references
+Tailor your escalation notifications
+Provide the right approvers
+Understand how approvals are performed
+Update your user lists
+Create accounts for Help Desk Services
+Building Industry Best Practices at Your Sites
+Avoid generic passwords
+Disable not delete
+Create basic, universal processes
+System naming schemes
+Do not store end user credentials in case notes
+Force end user password changes
+Add mobile numbers
+Set up multi-factor authentication when possible
+Secure devices when finished
+Working with Help Desk Services
+Set up automated credentials
+Early reviews of escalations
+Review approvers regularly
+Server vs workstation locations
+The affected person should make contact
+Choose the correct contact method
+Partners should use the Help Desk Services Partner Support Line
+Yearly review of references
+Making the Most of Help Desk Services
+
+Help Desk Services can be a powerful addition to your ConnectWise services. Partners who follow industry best practices and the suggestions below will find that their escalation rate goes down by as much as 50% and experience a much lower time-to-resolution than partners who do not follow these suggestions.
+
+Getting Started with Help Desk Services
+Crafting a white labeled answer 
+
+Determine what name Help Desk Services should use when answering calls or chats. This can be your company name (ex. Fakington Tech), the name of the site (ex. XYZ Fabrication), or the gray labeled default of Technical Support. Personalization of the white labeled Answer As will help your end-users feel a sense of connection and confirm they’ve reached the correct location for support.
+
+Create good references
+
+Creating robust, detail-oriented references will reduce unnecessary escalations. References should cover topics that are specific to your sites and any third-party software issues that your users normally experience. See the References page for more information on crafting good references. Remember to create specific references on topics such as new user setup, user termination, and remote access. Avoid using the words ConnectWise or Continuum in your references since Help Desk Services technicians place reference titles in their case notes.
+
+Tailor your escalation notifications
+
+Determine how you want Help Desk Services to contact you for escalations. Escalation notifications can be customized to determine how Help Desk Services alerts you to escalated cases (phone, email, ticket) at different times. Consider adding two different contacts to each escalation number or creating a group contact for the greatest chance of success. Determine if Call Before Escalating is appropriate for each site. Call Before Escalating allows Help Desk Services to contact you in cases where information is missing or reference information is unclear. This can lead to a greater chance of resolution without escalation. It is suggested that the Call Before Escalation contact is different from the Escalation notification contact.
+
+Provide the right approvers
+
+Help Desk Services allows you to add approvers for a variety of different requests. It is important to determine if on-site approvers or partner-based approvers make more sense for your needs. When setting up approvers, be sure to select either automated approvals or SMS authentication, not both.  This will prevent undue confusion and wait times for approvals.
+
+See the Provide Help Desk Information page for a full list of approval types and what falls into each.
+
+Understand how approvals are performed
+
+In most cases, Help Desk Services will follow the approvals matrix for any approvals possible. Up to two numbers will be contacted. If an on-site approver’s number is a mobile number, they will receive a text message request for approval with a web link. If an on-site approver’s number is not a mobile number, they will receive a call for verbal approval. 
+
+If the Authenticate Approver Using Mobile Number on File is checked when selecting approvers, Help Desk Services will send an authentication code via SMS to the approver after receiving verbal or web-based approval. The approver will then be required to successfully verbally repeat this code to Help Desk Services. If Authenticate Requestor Using Mobile Number on File is checked when selecting approvers, Help Desk Services will send an authentication code via SMS to the requestor. The requestor will then be required to successfully repeat this code via voice or chat to Help Desk Services.  If either the approver or requestor are unable to do so when prompted, Help Desk Services will contact the partner for next steps (either approval or escalation). Either, both, or neither option may be selected when choosing approvers.
+
+Update your user lists
+
+Ensure that all known users at your site are listed in the Help Desk tab or in your integrated PSA system. Listing your users by name, email, and phone number will help prevent unnecessary delays when users first contact Help Desk Services and will ensure faster follow up service. Avoid creating multiple contacts for the same user. If a user works at multiple locations, create that user at the site where the agent for their computer is located. This will help prevent confusion and missed opportunities for case resolution due to multiple contacts for the same individual.
+
+Create accounts for Help Desk Services
+
+Ensure that you create specific accounts for Help Desk Services to use (for admin portals such as for Microsoft 365 or eClinicalWorks). Once these administrator accounts are created, wait to assign multi-factor authentication until speaking with the Help Desk Services onboarding team. They will work with you to make the process easier and faster.
+
+Building Industry Best Practices at Your Sites
+Avoid generic passwords
+
+When possible, avoid using a generic password for all new users, new accounts, or password changes. Generic passwords or groups using the same password can lead to intrusion or malicious usage. Industry best practice suggests using strong, individual passwords that need to be changed on first login when possible and a form of multifactor authentication when possible. Avoid using the same credentials across sites, as well.
+
+Many password managers have random password generators available. 
+
+Disable not delete
+
+When possible, disable accounts instead of deleting them. In many cases, Help Desk Services will attempt to disable accounts instead of deleting them. This will not only provide data integrity, but it will make accounts easier to retrieve in cases where users return to a site or unintentional removals. 
+
+Create basic, universal processes
+
+Create processes such as user onboarding and user termination. Having standardized processes for basic activities will allow you to simplify and accelerate your regular activities. View this sample document for user onboarding and termination. Partners may download and use this document or use it as a baseline to create their own process.
+
+System naming schemes
+
+When creating a naming scheme for devices at the site, ensure servers are named in accordance with their function when possible. This will significantly cut down on the time needed to locate the correct device. Additionally, avoid renaming devices. The time required to re-sync the device can cause slowdowns in support or service.
+
+Do not store end user credentials in case notes
+
+Store credentials in a secure location (such as the Passwords area of the portal). Avoid posting credentials to tickets or sending them via email. This will help prevent unintended access to those credentials. In general, support personnel should not have access to user credentials unless they are expected to be changed immediately after.
+
+Force end user password changes
+
+Any time a new password is set for a user by support personnel (including default credentials or automatically generated passwords), users should be prompted to reset or change their password upon login. Password policies should also be strong to encourage good password practices.
+
+Add mobile numbers
+
+End users should have a mobile number or a device capable of receiving SMS messages listed in the portal. This will allow Help Desk Services to perform mobile authentication of end users and client approvers. This will also provide another avenue to contact users to assist with help requests.
+
+Set up multi-factor authentication when possible
+
+When possible, multi-factor authentication should be set up for end users. Ensure that Help Desk Services has references related to the multi-factor authentication method so that users can receive immediate assistance with MFA issues.
+
+Secure devices when finished
+
+When finished working on a computer or server, always be sure to log out or lock a device. This will help ensure the safety and integrity of the device in question. Encourage end-users to practice good security habits by locking or logging off their devices when moving away from the device.
+
+Working with Help Desk Services
+Set up automated credentials
+
+Using secure credentials is a keystone of good security. ConnectWise provides the option for automated credentials at the domain and local level. By using automated credentials, there will be less need for Help Desk Services to contact the partner about existing credentials. This also allows you to keep your existing credentials private. For MFA/TOTP setup, click here.
+
+Early reviews of escalations
+
+During the first three months of using Help Desk Services, review your escalated tickets once a week. During this review, identify areas where references or site notes could provide key information to prevent future escalations.
+
+Review approvers regularly
+
+Ensure that approvers respond to requests for approval promptly. If approvers do not respond in a timely fashion, consider offering to change the approvers to ensure that end users receive approvals quickly. Determine which type of approver (partner or on-site) is the most appropriate for each type of approval for end users to receive the best service.
+
+Server vs workstation locations
+
+When possible, have servers under the same site as workstations for a client. If server agents are associated with a Help Desk Services site or a non-Help Desk Services site, they may be difficult to find or may be ineligible for Help Desk Services support. In cases of a parent-child site relationship, be sure that the parent site that contains the servers has Help Desk Services support.
+
+The affected person should make contact
+
+When possible, users or partners should avoid contacting Help Desk Services on behalf of another user. This can lead to delays in service and communication difficulties if the user contacting Help Desk Services is not the one experiencing the issue.
+
+Choose the correct contact method
+
+Requests of a time sensitive nature should be presented via phone or chat.  This will ensure that the issue is received by Help Desk Services and can be worked on promptly.  Requests received via email or ticket may have a longer lead time, and thus may miss the requested window.
+
+Partners should use the Help Desk Services Partner Support Line
+
+Partners should use the dedicated Help Desk Services Partner Support Line. 
+
+US and Canada:  855-342-8432
+Toll: 628-210-7510
+
+This will keep the primary number free to allow for the quick resolution of user requests. Partner Support Representatives are available to answer inquiries about existing tickets, provide process information, and assist with general questions from partners. 
+
+Partners can also email ExpertServicesHelpDesk@connectwise.com or place a ticket via the Asio portal for non-urgent concerns. Partners can also use the chat feature from within the portal to contact the Help Desk Services Partner Support Line.
+
+Partners with non-Help Desk Services ticket questions should contact the following teams:
+
+Product Support:  Questions about ConnectWise products or product support
+Partner Success:  Success planning, business strategy questions, business growth and improvement
+Yearly review of references
+
+At least once a year, review all references for each site. Remove references that are outdated. Update remaining references with new information or confirm the existing information. Add references based on high-volume escalation issues so Help Desk Services can resolve those issues when possible. Also review on-site approvers to determine if they should be updated or changed to partner approvers. 
+
+ 
+
+Help Desk Help Desk Service Statement of Work
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Help Desk Activation Checklist
+Help Desk Success Checklist
+Use this checklist to help successfully integrate Help Desk to your operations and ensure seamless support for your end users.
+Activating Help Desk
+Help Desk Chat
+The Help Desk Chat application allows your clients to get Help Desk support quickly and easily right from their machine's desktop, taskbar, or notific...
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

@@ -1,0 +1,82 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Devices Page   HyperV and VMware Virtualization   HyperV and VMware Power Actions
+HyperV and VMware Power Actions
+Last updated
+Aug 16, 2024
+Table of contents
+Overview
+Power Options Permissions
+Legacy Default Access
+Application Roles
+Power Options – Enable / Disable
+Other information
+Overview
+
+Hyper-V & VMware Power Actions on the Asio™ platform (ITSupport portal) enable users to manage the VMs state from the Virtualization page. Users can Start, Stop, Pause, Resume, or Restart the VM depending on the current state of the VM.
+
+Note: If the Host machine is offline, the action column will not be displayed to the user even though you have Power Actions permission enabled.
+
+Power Options Permissions
+
+The Power actions are permission-driven, meaning if permission is enabled for Power Options, you will see an action column against the VMs on the Virtualization tab. Refer to Custom Application Roles for more information about non-default access permissions.
+If you do not have permission enabled, the Action column is not visible for your role or user account.
+The Power Options permission is enabled by default for the Super Admin role. The Primary Super Admin and Super Admin can enable or disable the Power Options permission for other roles in the hierarchy or for any user profile.
+Legacy Default Access
+
+Application Roles
+
+Important: You must opt in from the Asio platform to access Application Roles in ConnectWise Home. Primary Admin or Super Primary Admin permissions in Asio and Admin permissions in Home are required to perform this action. Please refer to Custom Application Roles to learn how to opt into this feature and switch from the Asio platform's legacy Default Access user management system.
+
+Permission for Power Actions can be applied to a role in ConnectWise Home via User & Application Settings > Application Roles > Devices > Virtualization > Power Actions > Enable. Assign this role to the users you want to have Power Action permission.
+
+Power Options – Enable / Disable
+
+The Power options icon in the Action Column will be enabled or disabled for that VM based on the machine's current state.
+
+If a machine is already in the Start State, then the Start button will be disabled and the Stop button will be enabled
+If a machine is already in the Stop state, then the Start button will be enabled and the Stop button will be disabled
+Other information
+
+When either of the options (Start or Stop) is performed on any VM, the corresponding icon will be replaced by an in-progress icon, and on the tooltip, it will show In-progress.
+
+If an action performed on any machine has failed, the corresponding action icon color turns red. It will remain red unless the screen is refreshed or any other action is performed on that same machine, and it receives a success or a failure. The hover tooltip will also say that the particular action has failed.
+
+HyperV and VMware Virtualization Virtualization FAQs
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Virtualization FAQs
+Devices Overview
+The information on the Device list provides a high-level view of all sites or filtered sites and includes easy-to-view details for applicable endpoint...
+Device Details Screen
+Custom Fields
+Custom Fields are additional data points you can create in the ConnectWise Asio® platform to record information not collected by the agent or unavaila...
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

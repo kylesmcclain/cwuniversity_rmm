@@ -1,0 +1,103 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Command for Networks   Auvik Pre-Defined Alerts and NOC Support
+Auvik Pre-Defined Alerts and NOC Support
+Last updated
+Oct 18, 2024
+Table of contents
+Overview
+Auvik Pre-Defined Alerts
+Overview
+
+Refer to the table below for the list of Auvik pre-defined alerts and the conditions that trigger them. When Auvik alerts are generated, the NOC creates a ticket and assigns it to you.
+
+Auvik Pre-Defined Alerts
+
+Note: Any alerts that are Disabled in Auvik, whether by default or by custom configuration, are not generated and therefore are not routed through the NOC.
+
+Alert Name	Trigger Condition	Default Alert Status in Auvik*	Auvik Severity Status	ConnectWise Severity Status	Calling Configured**
+Elite (legacy)	Essential
+*High Broadcast Traffic	Total Packet Count is greater than 5,000,000 and Total Broadcast Packet Percentage is greater than 20.0%.	Enabled	Critical	Critical Impact	Yes	Yes
+*High CPU Utilization	CPU Utilization is greater than 90.0%.	Enabled	Warning	Critical Impact	No	No
+*High Memory Utilization	Memory Utilization is greater than 90.0%.	Enabled	Warning	Critical Impact	No	No
+*Configuration Backup Retrieval	Configuration was not retrieved recently.	Enabled	Warning	Critical Non-Impact	No	No
+*High Interface Utilization	Interface Utilization is greater than 80.0%.	Enabled	Warning	Critical Non-Impact	No	No
+*Packet Discard(s)	Greater than 10,000 Packet Discards on a device over 5 minutes.	Enabled	Warning	Critical Non-Impact	No	No
+*Packet Error(s)	Greater than 10,000 Packet Errors on a device over 5 minutes.	Enabled	Warning	Critical Non-Impact	No	No
+Infrastructure Device Offline	Device Type is "Infrastructure Device" and Online Status is "Offline".	Enabled	Warning	Critical Impact	No	No
+Interface Status Mismatch	Admin Status of $interfaceAdminStatus does not match Operational Status of $interfaceOpStatus.	Enabled	Warning	Critical Impact	No	No
+Internet Connection is Lost	Service Status is "Down"	Enabled	Critical	Critical Impact	Yes	Yes
+Network Element Offline	Device Type is "Network Element" and Online Status is "Offline".	Enabled	Critical	Critical Impact	Yes	Yes
+UPS - Possible Power Outage	UPS - Current Failure Reason is not "Self Test" and UPS - Input/Output Status is "On Battery Power".	Enabled	Critical	Critical Impact	Yes	Yes
+Virtual Appliance Offline	Virtual Appliance Connection State is "Connected" and Approval Status is "Approved".	Enabled	Informational	Critical Impact	No	No
+VPN Remote Gateway Is Lost	Service Status is "Down".	Disabled	Critical	Critical Impact	Yes	Yes
+Configuration Backup	Device Configuration Backup	Disabled	Informational	Critical Non-Impact	No	No
+Configuration Restored	Device Type is "Network Element" and Backed-up Config is "Restored".	Enabled	Informational	Critical Non-Impact	No	No
+Default Route Change	Device contains a default gateway and default route changed.	Enabled	Warning	Critical Non-Impact	No	No
+Different Subnets	On Connected Interfaces Subnets are not equal.	Enabled	Informational	Critical Non-Impact	No	No
+Different VLAN Number	On Connected Interfaces VLAN Numbers are not equal.	Enabled	Informational	Critical Non-Impact	No	No
+Different VLAN Types	On Connected Interfaces VLAN Types are not equal.	Enabled	Informational	Critical Non-Impact	No	No
+Distributed File System Replication is Degraded	State is "Degraded"	Enabled	Critical	Critical Non-Impact	Yes	Yes
+Firmware Change on Network Element	Device Type is "Network Element" and Firmware Version is changed.	Enabled	Warning	Critical Non-Impact	No	No
+High Storage Utilization	Device Storage Utilization is greater than 80%.	Enabled	Warning	Critical Non-Impact	No	No
+Interface Duplex Mismatch	Connected Interfaces have different Duplex settings	Enabled	Informational	Critical Non-Impact	Yes	Yes
+No IP Address	IP Address Count is 0.	Enabled	Informational	Critical Non-Impact	No	No
+Non-Routable IP	IP Reference is "Non-routable"	Enabled	Informational	Critical Non-Impact	No	No
+Printer - Input Tray Missing	Printer - Input Tray Missing is "True".	Enabled	Warning	Critical Non-Impact	No	No
+Printer - Low Ink Level	Printer - Supply Level (%) is less than or equal to 20.0%.	Enabled	Warning	Critical Non-Impact	No	No
+Printer - Low Paper	Printer - Low Paper is "True".	Enabled	Warning	Critical Non-Impact	No	No
+Printer - Out of Ink	Printer - Supply Level (%) is 0%.	Enabled	Warning	Critical Non-Impact	No	No
+Printer - Output Tray Missing	Printer - Output Tray Missing is "True".	Enabled	Warning	Critical Non-Impact	No	No
+Printer - Out of Paper	Printer - Out of Paper is "True".	Enabled	Warning	Critical Non-Impact	No	No
+Printer Offline	Device online status is "Offline".	Disabled	Warning	Critical Non-Impact	No	No
+Printer - Paper Jammed	Printer - Paper Jammed is " True".	Enabled	Warning	Critical Non-Impact	No	No
+Recent Vmware Snapshot Not Taken	Age of the Last Snapshot (in Days) is greater than 3.	Disabled	Warning	Critical Non-Impact	No	No
+Route Not Used	Configured Route is empty.	Enabled	Informational	Critical Non-Impact	No	No
+Spanning Tree Change	Port state changed	Enabled	Critical	Critical Non-Impact	Yes	Yes
+Stack Switch Member Status Change	Member status is no longer ready.	Enabled	Critical	Critical Non-Impact	Yes	Yes
+Stack Switch Port Status Change	Port status is no longer up.	Enabled	Critical	Critical Non-Impact	Yes	Yes
+Trunk Port Not Shared	Interface is "Trunk" and VLAN Count is 1.	Enabled	Informational	Critical Non-Impact	No	No
+UPS - Battery Needs To Be Replaced	UPS - Replace Battery is "True"	Enabled	Warning	Critical Non-Impact	No	No
+UPS - Low battery Charge	UPS - Percent Charged is less than or equal to 20.0%.	Enabled	Critical	Critical Non-Impact	Yes	Yes
+Virtual Appliance Discovery	New Virtual Appliance discovered and Connection State is "Connected".	Enabled	Warning	Critical Non-Impact	No	No
+VLAN with no Interfaces	Network Type is "VLAN" and Assigned Interfaces is "None".	Enabled	Informational	Critical Non-Impact	No	No
+VMware Snapshot Repository Size Exceeded	Size of All Snapshots is greater than 50 GiB(s).	Disabled	Warning	Critical Non-Impact	No	No
+VMware Snapshot Limit Exceeded	Number of Snapshots for this Virtual Machine is greater than 5.	Disabled	Warning	Critical Non-Impact	No	No
+*For sites running on the Elite service level (for partners who activated Command for Networks prior to December 2018), the NOC attempts to remediate alerts marked with an asterisk ( *) before generating a ticket and assigning it to you.
+** These columns indicate which conditions the NOC notifies you by phone call if phone notification is configured in the site's notification template.
+Onboarding and Configuring the ConnectWise–Auvik Integration Command for Networks Service Levels
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Onboarding and Configuring the ConnectWise–Auvik Integration
+Command for Networks Service Levels
+Auvik Device Management
+Auvik TrafficInsights
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

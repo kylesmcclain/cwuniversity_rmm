@@ -1,0 +1,290 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   End User Portal
+End User Portal
+Last updated
+Jul 21, 2023
+Table of contents
+Overview
+End User Portal Prerequisites
+Login Credentials
+ConnectWise ScreenConnect Remote Access
+Server Reports
+Server Overview
+Assets
+Security Update
+System Profile
+Favorite List
+Desktop Reports
+Network Devices
+Edit Profile, Viewing Favorites, and Site Logout
+Overview
+
+The End User Portal is located at the same URL as the standard ConnectWise Asio™ Platform (ITSupport Portal): https://control.itsupport247.net. In the End User portal, your clients (End Users) can only see reports and remotely connect to their computers with Control.
+
+The End User Portal view differs depending on the configuration options selected for the user. If a user does not have access to the entire site, they only see:
+
+Desktop Reports
+Server Reports
+
+User accounts with full site access see:
+
+Desktops
+Servers
+Network Devices
+Backup Solutions
+End User Portal Prerequisites
+
+Client End Users access the Asio™ Platform (ITSupport Portal) via the same URL as all other portal users: https://control.itsupport247.net. There clients can see reports and remotely connect with Control.
+
+Login Credentials
+
+When accessing the portal, a login prompt appears requesting a user account. From the portal, click the Star icon  next to the Desktop name to select it as a favorite.
+
+ConnectWise ScreenConnect Remote Access
+
+The ITSupport Portal is upgraded to have another option to launch remote access.
+
+Click the ScreenConnect icon under Desktop / Server Reports to initiate a remote connection to the target system.
+
+
+The color of the icon signifies whether the ScreenConnect Agent is available to initiate remote access or not.
+
+A green icon signifies that ScreenConnect Agent is ready to initiate remote access on click.
+
+A gray icon signifies the ScreenConnect Agent is currently inactive.
+
+Hovering over the ScreenConnect icon will let you know whether the ScreenConnect Agent is available for initiating remote access or not.
+
+Once the icon is clicked, the ScreenConnect Client application will attempt to download and the following screen appears
+
+
+If you have Admin rights on your computer, select Open ScreenConnect Client, otherwise, select the Try next option as shown in the additional screen below:
+
+
+Once the application installs, you will quickly be connected to the remote device.
+
+Note: If Client End Users are trying to remotely access your own machine using ScreenConnect and if that machine is set up to require consent then there will be either delay or failure to connect if nobody is on the machine to provide consent. User if decided to set up consent then they should also consider the ScreenConnect setting (mentioned in the FAQs of How to Enable or Disable Connection Consent for ConnectWise ScreenConnect). This can help with End users who try to connect to endpoints that do not have an end user logged in.
+
+Server Reports
+
+The Server Reports tab is first filtered by device name. A second-level filter can be selected for Operating System. Drop-down menus auto-populate only with information gathered from the Servers at the Site.
+
+The following information is indicated on the Server Reports:
+
+Server Name: The full computer name of the Server.
+
+Friendly Name: A personalized name or brief explanation of the Server.
+
+Operating System: The operating system version installed on the Server.
+
+Availability: Alert shown if the Server does not report at the scheduled time.
+
+Disk: Alert shown if the total disk time is greater than 90% on a 10-minute average.
+
+Application Monitoring Status: Alert shown if any monitored applications do not respond.
+
+Antivirus: Antivirus has four states:
+
+Green: Antivirus Definitions are synchronized.
+
+Red: Antivirus Definitions are not synchronized.
+
+Yellow: Antivirus is either not supported or is not installed.
+
+Grey: Information is not available.
+
+Microsoft Security Updates: Microsoft Security Updates are setup as NAD: No Auto Deploy patches.  Each letter also has a status:
+
+Red: Some patches are missing.
+
+Green: Patches installed and up-to-date.
+
+Grey: Patch details not available.
+
+Windows Critical Updates: Shows status of Microsoft critical patches. Each patch has a status:
+
+Red: Some patches are missing.
+
+Green: Patches installed and up-to-date.
+
+Blue: Patch marked for deployment.
+
+Grey: Patch details not available.
+
+Server Overview
+
+Click the Server Overview icon  to view the Server Overview report. 
+
+The Server Overview report contains three categories: Overview, Asset, and Security Updates. 
+
+The Overview tab contains three sub-tabs: Performance, Task Manager, and Task Manager History. 
+
+Performance: Shows performance data gathered for the last three days.
+
+Task Manager: Shows the processes running on the Server, including CPU and memory usage.
+
+Task Manager History: Shows a three-day trend report on CPU and memory usage by process.
+
+Assets
+
+The Assets tab is a report of the selected server and can also be accessed in the Reports Section of the Asio Platform. 
+
+Security Update
+
+This tab shows the missing security updates for the selected server and includes a list of specific patches missing from the server. 
+
+System Profile
+
+Click the System profile icon  to view detailed information on the selected device. The icon launches a view of system assets for hardware and software. Export the System Details screen to Excel by clicking the Export to Excel link. 
+
+Favorite List
+
+Click the Star icon  next to the server name to enable quick remote access. 
+
+Desktop Reports
+
+The Desktop tab filters first by device name. A second-level filter can be selected from either Users or Operating System. The drop-down menus auto-populate only with information gathered from the Desktops at the site.
+
+The following information is indicated in Desktop Reports:
+
+Desktop: The full computer name of the Desktop.
+
+Friendly Name: A personalized name or brief explanation of the Desktop.
+
+Logged On User: The user account logged on to the computer when the Desktop last scanned.
+
+Last Login (PST): The last login date in Pacific Time.
+
+Operating System: The operating system version of the Desktop.
+
+Available: Desktops are either available or not available. If a Desktop does not report to the Asio™ Platform (ITSupport Portal), an alert is not generated, but the Available status will change from green to red.
+
+Antivirus: Antivirus has four states:
+
+Green: Antivirus definitions are synchronized.
+
+Red: Antivirus definitions are not synchronized.
+
+Yellow: Antivirus is either not supported or is not installed.
+
+Grey: Information is not available.
+
+Free Disk Space: Disk Space has three states:
+
+Green: More than 200 MB free.
+
+Red: Less than 200 MB free.
+
+Grey: Information is not available.
+
+S.M.A.R.T: S.M.A.R.T. has five states:
+
+Green: S.M.A.R.T. enabled; everything is fine.
+
+Red: S.M.A.R.T. enabled; an issue exists.
+
+Yellow: S.M.A.R.T. enabled but no information available.
+
+Grey: Disk is not S.M.A.R.T. enabled.
+
+Orange-brown: No information available.
+
+A.M.T: A.M.T. has three states:
+
+Green: Shows systems where A.M.T. is compatible.
+
+Red: Shows systems where A.M.T. is not compatible.
+
+Grey: No information is available.
+
+Microsoft Security Updates: Microsoft Security Updates are set up as NAD: No Auto Deploy patches. Each letter also has a status:
+
+Red: Some patches are missing.
+
+Green: Patches installed and up-to-date.
+
+Blue: Patch marked for deployment.
+
+Grey: Patch details not available.
+
+Windows Critical Updates: Shows the status of Microsoft critical patches. Each patch has a status:
+
+Red: Some patches are missing.
+
+Green: Patches installed and up-to-date.
+
+Blue: Patch marked for deployment.
+
+Grey: Patch details not available.
+
+Network Devices
+UPS	The UPS tab includes: UPS Name, Friendly Name, Description, Availability, Status, UPS Capacity, Output Status, Replace Indicator, Load Output, Output Frequency, Output Voltage, and Minutes remaining when the UPS is on battery.
+Printer	The Printer tab includes: Printer Name, Friendly Name, Printer Model, Device Availability, Description, and Device Status.
+Firewall	The Firewall tab includes: Firewall IP, Friendly Name, Device Manufacturer, Percentage CPU Utilization, Free Memory, and Used Memory.
+Router	The Router tab displays the Router IP, Friendly Name, Device Type, Device Manufacturer, Percentage CPU Utilization, and Free Memory for the device.
+Switch	The Switch tab displays the Switch IP, Friendly Name, Device Type, Device Manufacturer, Percentage CPU Utilization, Free Memory, and Total Memory for the switch.
+Linux	The Linux tab displays the Machine Name, Friendly Name, OS version, Machine Availability, Critical Managed, and Custom Alerts for the Linux machine.
+ICMP	The ICMP tab displays the ICMP Device Name, Friendly Name, and Device Availability.
+SNMP	The SNMP tab displays the SNMP Device Name, Friendly Name, Device Availability, Critical Managed, and Custom Alerts for the SNMP Device.
+Backup Solution	
+
+Symantec Backup Exec
+
+The Symantec Backup Exec tab provides backup server details that include: Server Name, Job Name, and Date wise Job Status.
+
+The following information is indicated on Symantec Backup Exec Reports:
+
+Server Name: The name of the Server running the backup.
+
+Job Name: The name of the backup job.
+
+Previous Eight Weeks: The status of the job (success or fail) over each of the last eight days.
+
+Edit Profile, Viewing Favorites, and Site Logout
+
+Click the Edit Profile icon  to make changes to the End User profile.
+
+The Password, First Name, Email ID, and Color theme can be edited for the End User portal.
+
+Click the View your Favorite list icon  to access your favorite Desktop/Server list.
+
+Click the Logout icon  to sign off from the portal.
+
+Other Devices Page End User Portal Migration to ConnectWise SSO FAQ
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+End User Portal Migration to ConnectWise SSO FAQ
+The purpose of this article is to provide you with answers to the most frequently asked questions about client migration (your end users) to ConnectWi...
+Command for Networks
+Secure Information Store
+Tech Advantage
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

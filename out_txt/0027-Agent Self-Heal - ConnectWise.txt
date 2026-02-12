@@ -1,0 +1,120 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Agents   Agent Self-Heal
+Agent Self-Heal
+Last updated
+Jan 23, 2026
+Table of contents
+Overview
+About Agent Self-Heal
+Identified Issues to be addressed by Agent Self-Heal
+Overview
+
+As of today, if the Agent experience is hampered due to various issues, such as:
+
+The device is offline during a critical rollout.
+
+Failure to auto-update to the correct version.
+
+These issues create challenges for technicians trying to gain remote access to identify and resolve them.
+
+Additionally, all troubleshooting is currently a manual process, where a partner or tech uses the Agent Repair Utility. This process is time-consuming and may significantly impact the end user. Therefore, we have introduced Agent Self-Heal to keep monitoring plugins and configuration files on the machine to help ensure the agent is always healthy.
+
+About Agent Self-Heal
+
+Agent Self-Heal is a feature of the Agent that runs at regular intervals. During the execution, it identifies and fixes some commonly reported issues without any manual intervention.
+
+If the Agent is updated to the latest version, you receive a new task in Windows Task Scheduler. A Windows task is defined for Windows Server (Version 2008 and above) and Desktop (Windows 8 and above) in the task scheduler.
+
+The task is configured to run every 6 hours.
+
+The task ITSPlatform Self-Heal Utility triggers to verify the health check parameters of the Agent.
+
+Agent uninstallation ensures the removal of the ITSplatform Self-Heal Utility schedule from Task Scheduler.
+
+Identified Issues to be addressed by Agent Self-Heal
+
+Identified Issues
+
+	
+
+Description​s
+
+
+
+
+Agent Configuration and Communication URL are missing.
+
+	
+
+Scan and update the Agent configuration files. The Agent configuration files may be corrupted, or the Endpoint ID is not reporting in the configuration file.
+
+
+
+
+Components are corrupt or missing.
+
+	
+
+Check for the base components, Agent core, Asset plugin, Agent manager, Installation Manager, and Version plugin.
+
+
+
+
+ITS Platform Service is missing​ or not running.
+
+	
+
+The Agent on installation has a core service running. If it is not running or missing, fix the services responsible for keeping the agent running on the machine.
+
+
+
+
+The Agent is not getting updated to the latest version.
+
+	
+
+If the Agent fails to update with the latest components, it is due to errors reported by the third-party installation.
+If the Agent version is very old (e.g., 1.x. or 2.x or 3.x ), we recommend uninstalling it and reinstalling the latest version.
+
+Note: The functionality is available for Agents running on Windows OS.
+
+Agent Schedules Agent Tamper Protection
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Asio Agent Requirements
+The article includes the currently supported operating systems for agent installations.
+Uninstalling an Agent
+This guide includes the steps required to uninstall an agent from a desktop or server in RMM or Asio via the Devices page.
+Cloud Services
+Agent Tamper Protection
+Agents on Windows devices utilize tamper protection to restrict users from stopping the agent core services.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

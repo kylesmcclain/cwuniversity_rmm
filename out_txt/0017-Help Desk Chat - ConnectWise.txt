@@ -1,0 +1,98 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Expert Services   Help Desk   Help Desk Chat
+Help Desk Chat
+Last updated
+Dec 15, 2023
+Table of contents
+Overview
+Help Desk Chat Product Option
+Advantages of the Help Desk Chat Product Option include:
+Visible in:
+Initiating a Help Desk Chat
+Help Desk Chat Tickets
+Additional Resources
+Overview
+
+The Help Desk Chat application allows your clients to get Help Desk support quickly and easily right from their machine's desktop, taskbar, or notification area without having to call in. Tickets for chat sessions are automatically generated so you can track your client's interactions with Help Desk technicians.
+
+Two Help Desk Chat options are available in the Asio™ Platform (IT Support Portal): A stand-alone Help Desk Chat product option and a Help Desk Chat add-on option with the Communicator. Each is described below. You can enable either or both, depending on how prominently you want Help Desk support displayed to your client.
+
+Note: Chat functionality is not supported on terminal servers or thin clients.
+
+Help Desk Chat Product Option
+
+This option provides your clients with a single application dedicated to initiating Help Desk Chat directly from a desktop or taskbar shortcut. To enable this option, go to RMM Setup > Sites Using RMM > [site name] > Product Options, select Help Desk Chat, and configure the appropriate deployment settings.
+
+Chat shortcuts will appear on the client machines you selected:
+
+Note: The shortcuts may take up to five hours to appear after enabling chat in Product Options. If you remove a site entirely from Help Desk support in Product Options, the shortcuts will automatically be removed within five hours.
+
+Advantages of the Help Desk Chat Product Option include:
+Higher visibility and easier access than the Communicator chat option
+Customizable shortcut icons (on Windows) to promote your services
+Visible in:
+Windows 8.1, 8, and 7: Taskbar and desktop
+Windows 11, 10, Vista, and XP: Desktop only
+Mac: Taskbar only
+Initiating a Help Desk Chat
+
+After you configure Help Desk Service Chat, end-clients can initiate a Help Desk Service Chat by following these steps:
+
+The end-client opens the Help Desk Chat shortcut on their machine.
+The end-client enters their contact information in the chat window and clicks Initiate Chat.
+
+Note: Users will see the 10 most recent open or closed tickets associated with their computer and can easily open tickets or search previously closed tickets.
+
+Once the technician becomes available, the end-client can begin the chat.
+
+Help Desk Chat Tickets
+
+After the chat, the Help Desk technician will either mark the ticket status as Resolved, changing the ticket status to NOC Completed and assigning it to you, or as Unresolved, requiring the Help Desk technician to update the ticket status manually for next steps.
+
+Tickets generated during a Help Desk Chat session are displayed under the Tickets tab in the Asio™ Platform (IT Support Portal) with Help Desk in the subject line.
+
+If a PSA is used, these tickets will be synced like any other Asio ticket.
+
+Additional Resources
+
+The Help Desk Success Checklist can help you successfully implement and introduce Help Desk for your clients. The checklist includes various white-label materials designed to help you promote and encourage Help Desk adoption—including a PowerPoint presentation with chat rollout training and a Word doc template for contacting the Help Desk team.
+
+Help Desk Success Checklist
+Help Desk Activation Checklist Help Desk Common Acronyms
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Help Desk Success Checklist
+Use this checklist to help successfully integrate Help Desk to your operations and ensure seamless support for your end users.
+Help Desk Activation Checklist
+Help Desk Best Practices
+Activating Help Desk
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

@@ -1,0 +1,555 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Expert Services   Help Desk   Help Desk Common Acronyms
+Help Desk Common Acronyms
+Last updated
+Oct 8, 2025
+Table of contents
+Overview
+Overview
+
+Listed below are common acronyms that our ConnectWise Help Desk Service technicians often use.
+
+Acronym
+
+	
+
+Meaning
+
+	
+
+Description
+
+
+
+
+AC
+
+	
+
+Awaiting Customer
+
+	
+
+Status indicating that the team or support is waiting for the customer to provide information or take action before the issue can be resolved or the process can move forward.
+
+
+
+
+BDR
+
+	
+
+Backup & Disaster Recovery
+
+	
+
+NOC team; refers to the team that supports ConnectWise Data Protection products.
+
+
+
+
+CBE
+
+	
+
+Call Before Escalating
+
+	
+
+Prior to escalating an issue to a higher level of support, a technician should attempt to resolve the problem by contacting the user or customer.
+
+
+
+
+CC
+
+	
+
+Committed Callback
+
+	
+
+Scheduled calls to users in which the user has agreed to be present and available for an outbound call at a given time.
+
+
+
+
+CMD
+
+	
+
+Command Prompt
+
+	
+
+Refers to the Microsoft Command Prompt window or any command ran inside of a Command Prompt window.
+
+
+
+
+CSR
+
+	
+
+Customer Service Representative
+
+	
+
+Representatives responsible for outbound interactions and connecting users with technicians.
+
+
+
+
+DAAS
+
+	
+
+Desktop as a Service
+
+	
+
+Any form of virtual machine where the virtual machine is hosted in the cloud and provided as SAAS.
+
+
+
+
+DM
+
+	
+
+Desk manual
+
+	
+
+A repository of process and policy-related materials that technicians use to guide their work.
+
+
+
+
+EHD
+
+	
+
+Extended Help Desk
+
+	
+
+Non-user-facing tier 1 technicians generally work on long administration tickets or tickets where a user's input is not necessary.
+
+
+
+
+GHD
+
+	
+
+Global Help Desk
+
+	
+
+Technicians working outside of the United States; not used in tickets, but may be mentioned to the Partner
+
+
+
+
+ISP
+
+	
+
+Internet Service Provider
+
+	
+
+Any company providing internet services to a location, technicians are not to reach out to ISPs per the Scope of Service document
+
+
+
+
+ITG
+
+	
+
+IT Glue
+
+	
+
+3rd party documentation API sometimes connected to the Partner Portal to allow Partners to connect their IT Glue to Techview
+
+
+
+
+MFA
+
+	
+
+Multi-factor Authentication
+
+	
+
+Refers to any form of multiple-layer authentication; usually refers to Partner Portal authentication or Office 365 authentication
+
+
+
+
+NCR
+
+	
+
+No Customer Response
+
+	
+
+Process for handling tickets when a user is unable to be reached or is disconnected during a call or chat
+
+
+
+
+NOC
+
+	
+
+Network Operations Center
+
+	
+
+Technicians of various levels who work on product support, network monitoring and management, backup and recovery, and projects; generally do not work directly with the HD.
+
+
+
+
+PC
+
+	
+
+Partner Care
+
+	
+
+Support team specifically dealing with Partner complaints, billing concerns, and Partner questions about the process
+
+
+
+
+PDR
+
+	
+
+Pre-defined replies
+
+	
+
+Prepared responses in the chat console to speed up communication with the user.
+
+
+
+
+PS
+
+	
+
+PowerShell
+
+	
+
+Refers to the Microsoft PowerShell window or any command run inside a PowerShell window.
+
+
+
+
+PS
+
+	
+
+Partner Support
+
+	
+
+Support team specifically dealing with Partner growth, Partner product knowledge, and Partner business expansion.
+
+
+
+
+PSA
+
+	
+
+Professional Services Automation
+
+	
+
+Any form of ticketing system that is not one provided by ConnectWise.
+
+
+
+
+PST
+
+	
+
+Product Support Team
+
+	
+
+NOC team. Refers to the team that supports ConnectWise products that the ConnectWise Help Desk Services encounter.
+
+
+
+
+RDP/RDS
+
+	
+
+Remote Desktop Services
+
+	
+
+Microsoft's built-in remote access software.
+
+
+
+
+RMM
+
+	
+
+Remote Monitoring & Management
+
+	
+
+NOC team; refers to the team that supports RMM and UMM services.
+
+
+
+
+S1
+
+	
+
+SentinelOne
+
+	
+
+Antivirus software offered by ConnectWise through the SOC.
+
+
+
+
+SLA
+
+	
+
+Service Level Agreement
+
+	
+
+The hours when users are able to call or chat in for assistance (Business Hours, After Hours, 24x7).
+
+
+
+
+SLM
+
+	
+
+NOC team
+
+	
+
+NOC team; handles distribution of tickets to the various NOC teams; entry point for all tickets moving from Partners to NOC or from Help Desk Service to NOC.
+
+
+
+
+SOC
+
+	
+
+Security Operations Center
+
+	
+
+Technicians of various levels who work on security products; generally does not work directly with the HD.
+
+
+
+
+SSO
+
+	
+
+Single Sign-on
+
+	
+
+This refers to the login email and authentication set up in ConnectWies Home. It allows the user to access multiple apps across ConnectWise.
+
+
+
+
+SRT
+
+	
+
+Service Request Team
+
+	
+
+NOC team; refers to the team that supports GPO, server monitoring, Office global administration issues, etc.
+
+
+
+
+T1
+
+	
+
+Tier 1 technician
+
+	
+
+Inbound call or chat technician, or an outbound calling technician.
+
+
+
+
+T2
+
+	
+
+Tier 2 technician
+
+	
+
+Higher level technician who receives transfers and escalations within the Help Desk Service.
+
+
+
+
+T3
+
+	
+
+NOC technician
+
+	
+
+Technician from any team at the NOC (or potentially any team at the NOC); non-user facing technicians.
+
+
+
+
+T4
+
+	
+
+Tier 4 technician (the Partner)
+
+	
+
+The company partnered with ConnectWise to offer services to their users.
+
+
+
+
+TV
+
+	
+
+Techview
+
+	
+
+Partner Portal derived store of information used by technicians to assist in working tickets; contains references, network information, credentials, remote access information, and security approval information.
+
+
+
+
+USHD
+
+	
+
+US Help Desk
+
+	
+
+Technicians working inside of the United States
+
+
+
+
+VD/VM
+
+	
+
+Virtual Device/Virtual Machine
+
+	
+
+Any form of virtual machine where the virtual machine is hosted on a server on site
+
+
+
+
+VPN
+
+	
+
+Virtual Private Network
+
+	
+
+Any form of virtual private network; HD will not set up or make adjustments to VPNs without existing documentation about destinations and settings
+
+
+
+
+WR
+
+	
+
+Webroot
+
+	
+
+Antivirus software offered by ConnectWise; does not require SOC
+
+ 
+
+Help Desk Chat Help Desk Partner Contact Procedures
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Help Desk Activation Checklist
+Help Desk Best Practices
+Help Desk Success Checklist
+Use this checklist to help successfully integrate Help Desk to your operations and ensure seamless support for your end users.
+Activating Help Desk
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

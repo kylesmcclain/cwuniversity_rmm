@@ -1,0 +1,115 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Alerts   Custom Monitors   Service Monitor   Custom Monitors: Service Exclusion List
+Custom Monitors: Service Exclusion List
+Last updated
+Apr 29, 2024
+Table of contents
+Overview
+Service Exclusion List
+Overview
+
+The following services are not available for Custom Monitors. These services are excluded from monitoring by default due to their behavior in toggling the service state and are not allowed to be configured to avoid potential noise in the system.
+
+Service Exclusion List
+
+Service Name
+
+	
+
+Display Name
+
+
+Appinfo	Application Information
+AppXSvc	AppX Deployment Service (AppXSVC)
+tzautoupdate	Auto Time Zone Updater
+BITS	Background Intelligent Transfer Service
+ClipSVC	Client License Service (ClipSVC)
+DsSvc	Data Sharing Service
+DeviceInstall	Device Install Service
+DsmSvc	Device Setup Manager
+WdiSystemHost	Diagnostic System Host
+MapsBroker	Downloaded Maps Manager
+EFS	Encrypting File System (EFS)
+fhsvc	File History Service
+lfsvc	Geolocation Service
+gupdatem	Google Update Service (gupdatem)
+gpsvc	Group Policy Client
+PolicyAgent	IPsec Policy Agent
+wlpasvc	Local Profile Assistant Service
+diagnosticshub.standardcollector.service	Microsoft (R) Diagnostics Hub Standard Collector Service
+wlidsvc	Microsoft Account Sign-in Assistant
+NgcSvc	Microsoft Passport
+NgcCtnrSvc	Microsoft Passport Container
+swprv	Microsoft Software Shadow Copy Provider
+InstallService	Microsoft Store Install Service
+SmsRouter	Microsoft Windows SMS Router Service.
+MozillaMaintenance	Mozilla Maintenance Service
+NetSetupSvc	Network Setup Service
+CscService	Offline Files
+defragsvc	Optimize drives
+PhoneSvc	Phone Service
+WPDBusEnum	Portable Device Enumerator Service
+Spooler	Print Spooler
+RmSvc	Radio Management Service
+SensorService	Sensor Service
+LanmanServer	Server
+StorSvc	Storage Service
+TapiSrv	Telephony
+tiledatamodelsvc	Tile Data model server
+UsoSvc	Update Orchestrator Service for Windows Update
+UserManager	User Manager
+vds	Virtual Disk
+VSS	Volume Shadow Copy
+VacSvc	Volumetric Audio Compositor Service
+WalletService	WalletService
+FrameServer	Windows Camera Frame Server
+WerSvc	Windows Error Reporting Service
+wisvc	Windows Insider Service
+msiserver	Windows Installer
+TrustedInstaller	Windows Modules Installer
+WSearch	Windows Search
+wuauserv	Windows Update
+WaaSMedicSvc	Windows Update Medic Service
+WinHttpAutoProxySvc	WinHTTP Web Proxy Auto-Discovery Service
+wmiApSrv	WMI Performance Adapter
+LanmanWorkstation	Workstation
+
+ 
+
+Service Monitor SNMP Monitor
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Process Monitor
+Event Monitor
+CPU Monitor
+Memory Monitor
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

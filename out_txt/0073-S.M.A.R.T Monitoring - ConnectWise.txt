@@ -1,0 +1,159 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Alerts   S.M.A.R.T Monitoring
+S.M.A.R.T Monitoring
+Last updated
+May 20, 2025
+Table of contents
+Overview
+S.M.A.R.T. Error Codes
+Overview
+
+S.M.A.R.T. (Self-Monitoring Analysis and Reporting Technology) is monitoring of hard drive for predictive failures. The S.M.A.R.T. attributes are monitored by our Agent automatically and if there is any attribute for which the S.M.A.R.T. status is not OK, will report in the device detail page.
+
+The S.M.A.R.T. Status will be reported under Endpoints > Devices > Endpoint details > Inventory > Physical disk section shows SMART column.
+
+SMART Monitoring Details	Screenshots for reference
+No Error detected for SMART monitoring	
+SMART error detected  (Error details will be displayed in the tooltip)	
+Disk Drive not applicable	Virtual Machines and Non-SMART Compliant Disk drives will be displayed as 'Not Applicable'.
+
+Note: SMART status to be supported only for Windows OS endpoints.
+
+If an Alert is raised, we strongly recommend you promptly backup all valuable data on the HDD and contact your HDD manufacturer as soon as possible. This means that the downtime for your Desktop will be extremely short and there will be no need for any reinstall.
+
+S.M.A.R.T. Error Codes
+
+The following is a list of critical attributes for which S.M.A.R.T. alerts will be raised:
+
+Error Code	Attribute	Description	Alert Applicable
+0	Unknown	The error indicates predictive SMART monitoring failure for the drive. Please contact the Hardware vendor to review and confirm if there are issues.	Yes
+1	Read Error Rate	This error indicates that the rate of hardware read errors that occurred when reading data from a disk surface is higher. For some drives, this number may increase during normal operation without necessarily signifying errors.,	Yes
+2	Throughput Performance	This error indicates throughput performance of a hard disk drive is detoriatring and has a high probability that there is a problem with the disk.	 
+3	Spin-Up Time	This error indicates that the average time of spindle spin up (from zero RPM to fully operational [milliseconds]) is getting higher.	Yes
+4	Start/Stop Count	This error indicates the tally of spindle start/stop cycles. The spindle turns on, and hence the count is increased, both when the hard disk is turned on after having before been turned entirely off (disconnected from a power source) and when the hard disk returns from having previously been put to sleep mode.	 
+5	Reallocated Sectors Count	This error indicates the count of reallocated sectors. The error code indicates the count of the bad sectors that have been found and remapped. This also reduces the life expectancy of the drive; a drive that has had any reallocations at all is significantly more likely to fail in the immediate months.	Yes
+6	Read Channel Margin	This error indicates the margin of a channel while reading data.	 
+7	Seek Error Rate	This error indicates the rate of seek errors of the magnetic heads. If there is a partial failure in the mechanical positioning system, then seek errors will arise. Such a failure may be due to numerous factors, such as damage to a servo, or thermal widening of the hard disk.	Yes
+8	Seek Time Performance	This error indicates the average performance of seek operations of the magnetic heads. If this attribute is detected, it is a sign of problems in the mechanical subsystem.	Yes
+9	Power-On Hours	This error indicates the Harddrive hours in power-on state. Consider replacing the harddrive to avoid issues/data loss.	 
+10	Spin Retry Count	This error indicates the retry of spin start attempts. This error detection represents that there is a sign of problems in the hard disk mechanical subsystem.,	Yes
+11	Recalibration Retries or Calibration Retry Count	This error indicates the drive is requesting for recalibration while the first calibration was failed. This error detection represents that there is a sign of problems in the hard disk mechanical subsystem.	Yes
+12	Power Cycle Count	This error indicates the increased error of full hard disk power on/off cycles.	 
+13	Soft Read Error Rate	This error indicates there are uncorrected read errors reported to the operating system.	Yes
+22	Current Helium Level	These errors are specific to He8 drives from HGST. This error is related to the helium inside of the drive specific to this manufacturer. It is a pre-fail attribute that trips once the drive detects that the internal environment is out of specification.	 
+170	Available Reserved Space	This error indicates that there is a reduction in the available reserved space on the hard drive.	 
+171	SSD Program Fail Count	This error is related to Solid-state drives only. This indicates that there is a higher count of flash program operation failures since the drive was deployed.	 
+172	SSD Erase Fail Count	This error is related to Solid-state drives only. This indicates that there is a higher count of flash erase failures since the drive was deployed.	 
+173	SSD Wear Leveling Count	This indicates that there is a maximum count of worst erase on any block.	 
+174	Unexpected Power Loss Count / Power-off Retract Count	This error indicates the number of unclean shutdowns, cumulative over the life of a hard drive, where an "unclean shutdown" is the removal of power without STANDBY IMMEDIATE as the last command (regardless of PLI activity using capacitor power).	 
+175	Power Loss Protection Failure	This error indicates a Power Loss Protection Failure	 
+176	Erase Fail Count	This error indicated a number of flash erase command failures.	 
+177	Wear Range Delta	This error indicates Delta between most-worn and least-worn Flash blocks. It describes how good/bad the wear-leveling of the SSD works.	 
+178	Used Reserved Block Count	This error indicates the "Pre-Fail" attribute used in the Samsung hard drive.	 
+179	Used Reserved Block Count Total	This error indicates the "Pre-Fail" attribute used in the Samsung hard drive.	 
+180	Unused Reserved Block Count Total	This error indicates the "Pre-Fail" attribute used in HP hard drive.	 
+181	Program Fail Count Total or Non-4K Aligned Access Count	This error indicates the total number of Flash program operation failures since the drive was deployed.	 
+182	Erase Fail Count	This indicates that there is higher count of flash erase failures since the drive was deployed.	 
+183	SATA Downshift Error Count or Runtime Bad Block	This error applies to Western Digital, Samsung or Seagate harddrives. This indicates the number of downshifts of link speed (e.g. from 6Gbit/s to 3Gbit/s) or the total number of data blocks with detected, uncorrectable errors encountered during normal operation. Although degradation of this parameter can be an indicator of drive aging and/or potential electromechanical problems, it does not directly indicate imminent drive failure.	 
+184	End-to-End error / IOEDC	This attribute is a part of Hewlett-Packard's SMART IV technology, as well as part of other vendors' IO Error Detection and Correction schemas, and it contains a count of parity errors which occur in the data path to the media via the drive's cache RAM.	 
+185	Head Stability	This error indicates that there are issues with the harddrive head stability. Error is very specific to the Western Digital harddrive.	 
+186	Induced Op-Vibration Detection	This error indicates that there are issues with the Induced Op-Vibration Detection. Error is very specific to the Western Digital harddrive.	 
+187	Reported Uncorrectable Errors	This error indicates that there are errors that could not be recovered using hardware ECC.	 
+188	Command Timeout	The error indicates a total number of aborted operations due to HDD timeout. Normally this attribute value should be equal to zero.	 
+189	High Fly Writes	This error indicates that an unsafe fly height condition is encountered, the write process is stopped, and the information is rewritten or reallocated to a safe region of the hard drive. HDD manufacturers implement a flying height sensor that attempts to provide additional protections for write operations by detecting when a recording head is flying outside its normal operating range. This attribute indicates the count of these errors detected over the lifetime of the drive. This feature is implemented in most modern Seagate drives and some of Western Digital's drives, beginning with the WD Enterprise WDE18300 and WDE9180 Ultra2 SCSI hard drives, and will be included on all future WD Enterprise products.	 
+190	Temperature Difference or Airflow Temperature	This error indicates that there is an issue with the temperature/airflow to the hard drive minimum thresholds.	Yes
+191	G-sense Error Rate	The error indicates that there is an increase in errors resulting from externally induced shock and vibration.,	 
+192	Power-off Retract Count / Emergency Retract Cycle Count / Unsafe Shutdown Count	The error indicates that there is an increase in the number of power-off or emergency retract cycles.	 
+193	Load Cycle Count or Load / Unload Cycle Count	This error indicates that the count of load/unload cycles into head landing zone position has been increased resulting in issues.	 
+194	Temperature or Temperature Celsius	The error indicates the device temperature (operating conditions information), if the appropriate sensor is fitted. Lowest byte of the raw value contains the exact temperature value (Celsius degrees).	 
+195	Hardware ECC Recovered	This error indicates the number may increase during normal operation without necessarily signifying errors.,	 
+196	Reallocation Event Count*	The error indicates the total count of attempts to transfer data from reallocated sectors to a spare area. Both successful and unsuccessful attempts are counted.	Yes
+197	Current Pending Sector Count	Pending Sector Count is a S.M.A.R.T parameter that indicates there is a count of the unstable sectors on your disk which should be remapped. When some of these sectors are read successfully, the value is decreased. If errors still occur when reading some sector, the hard drive will try to restore the data, transfer it to the reserved disk area (spare area) and mark this sector as remapped. This is a critical parameter. Degradation of this parameter may indicate imminent drive failure. Urgent data backup and hardware replacement is recommended.	Yes
+198	(Offline) Uncorrectable Sector Count	The error indicates identified uncorrectable errors when reading/writing a sector. A rise in the value of this attribute indicates defects of the disk surface and/or problems in the mechanical subsystem.	Yes
+199	UltraDMA CRC Error Count	The error indicates count of errors in data transfer via the interface cable as determined by ICRC (Interface Cyclic Redundancy Check).	 
+200	Multi-Zone Error Rate or Write Error Rate (Fujitsu)	The total count of errors when writing a sector.	 
+201	Soft Read Error Rate or TA Counter Detected	The error indicates the number of uncorrectable software read errors.	 
+202	Data Address Mark errors or TA Counter Increased	The error indicates the increase in Data Address Mark errors	 
+203	Run Out Cancel	The parameter indicates errors caused by incorrect checksum during the error correction.	 
+204	Soft ECC Correction	The error indicates the errors corrected by the internal error correction software.	 
+205	Thermal Asperity Rate	The error indicates problems caused due to high temperature.	 
+206	Flying Height	The error indicates height of heads above the disk surface. If too low, head crash is more likely; if too high, read/write errors are more likely.	 
+207	Spin High Current	The error indicates surge in current used to spin up the drive.	 
+208	Spin Buzz	The error indicates number of buzz routines needed to spin up the drive due to insufficient power.	 
+209	Offline Seek Performance	The error indicates the seek performance of drive during its internal self-tests.	 
+210	Vibration During Write	This error indicates vibration encountered during write operations. These errors are for Maxtor 6B200M0 200GB and Maxtor 2R015H1 15GB disks.	 
+211	Vibration During Write	This error indicates vibration encountered during write operations.	 
+212	Shock During Write	The error indicates shock encountered during write operations.	 
+220	Disk Shift	The error indicates that the distance of the disk has shifted relative to the spindle (usually due to shock or temperature).	 
+221	G-Sense Error Rate	The error indicates issues resulting from externally induced shock and vibration.	Yes
+222	Loaded Hours	The error indicates time spent operating under data load (movement of the magnetic head armature).	 
+223	Load/Unload Retry Count	The error indicates the number of times drive head enters/leaves the data zone.	 
+224	Load Friction	The error indicates resistance caused by friction in mechanical parts while operating.	 
+225	Load/Unload Cycle Count	The error indicates a total count of load cycles into the Landing zone position. (Degradation of this parameter can be an indicator of drive aging and/or potential electromechanical problems).	 
+226	Load 'In'-time	The error indicates the total time of loading on the magnetic heads actuator (time not spent in parking area).	 
+227	Torque Amplification Count	This error indicates the count of attempts to compensate for platter speed variations.	 
+228	Power-Off Retract Cycle	This error indicates the number of power-off cycles which are counted whenever there is a "retract event" and the heads are loaded off of the media such as when the machine is powered down, put to sleep, or is idle.	 
+230	GMR Head Amplitude (magnetic HDDs), Drive Life Protection Status (SSDs)	This error indicates the Amplitude of "thrashing" (repetitive head moving motions between operations). In solid-state drives, indicates whether usage trajectory is outpacing the expected life curve.	 
+231	Life Left (SSDs) or Temperature	This error indicates the SSD life left, in terms of program/erase cycles or available reserved blocks indicating a need for replacement.	 
+232	Endurance Remaining or Available Reserved Space	This error indicates a number of physical erase cycles completed on the SSD as a percentage of the maximum physical erase cycles the drive is designed to endure.	 
+233	Media Wearout Indicator (SSDs) or Power-On Hours	This error indicates hard drive errors due to media wornout.	 
+234	Average erase count AND Maximum Erase Count	This error indicates issues with the erase counts on the harddrive	 
+235	Good Block Count AND System(Free) Block Count	This error indicates issues with the Good block counts on the harddrive	 
+240	Head Flying Hours or 'Transfer Error Rate' (Fujitsu)	This error indicates the overall time spent during the positioning of the drive heads. Some of the Fujitsu drives report the count of link resets during a data transfer.	Yes
+241	Total LBAs Written	This error indicates a total count of LBAs written on the hard drive.	 
+242	Total LBAs Read	This parameter is considered informational by most hardware vendors. Although degradation of this parameter can be an indicator of drive aging and/or potential electromechanical problems, it does not directly indicate imminent drive failure.	 
+243	Total LBAs Written Expanded	This error indicates issues with the LBAs written expanded counts on the harddrive	 
+244	Total LBAs Read Expanded	This error indicates issues with the LBAs read expanded counts on the harddrive	 
+249	NAND Writes (1GiB)	The error indicates the number of writes to NAND in 1 GB increments.	 
+250	Read Error Retry Rate	The error indicates the count of errors while reading from a disk.	 
+251	Minimum Spares Remaining	The error indicates the number of remaining spare blocks as a percentage of the total number of spare blocks available.	 
+252	Newly Added Bad Flash Block	This error indicates the total number of bad flash blocks the drive detected since it was first initialized in manufacturing.	 
+254	Free Fall Protection	This error indicates the count of "Free Fall Events" detected.	 
+Keyword	Definition
+Smart ID	This is the S.M.A.R.T. Failure ID. If the Agent finds the ID, on execution of predictive failure means that there is a problem with the disk.
+Attribute	SMART Attribute name 
+Description	This specifies the detailed description of the failure based on the ID.
+
+ 
+
+Network Availability Monitoring: Known Issues Suspensions
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Custom Monitors
+Build your own alert monitors using the variety of monitor templates in ConnectWise RMM. Monitors use these templates to trigger alerts when issues ar...
+Intelligent Alerts
+Intelligent Alerts in ConnectWise RMM are endpoint-specific and generate an appropriate alert based on a predefined set of monitoring conditions.
+Network Availability Monitoring
+If our Data Center cannot reach the device after three consecutive tries (using Windows ICMP), a Device Down ticket is generated.  The agent pings the...
+Suspensions
+Implement suspension rules if you want to stop generating alerts, either temporarily or indefinitely. The alert suspension feature is useful to accomm...
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

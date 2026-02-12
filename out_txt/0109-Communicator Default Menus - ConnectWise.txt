@@ -1,0 +1,84 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Communicator User Guide   Communicator Default Menus
+Communicator Default Menus
+Last updated
+Aug 20, 2024
+Table of contents
+Overview
+Help Desk Chat 
+System Information
+Contact Details
+Maintenance Tasks
+Overview
+
+Under the Communicator Settings, you can enable the default menus you require. More information on the default menus can be found in this article.
+
+Help Desk Chat 
+Once the Help Desk Chat is enabled on the Communicator Policy the corresponding menu is displayed in the Communicator tray of the assigned endpoints.
+If the end-user clicks on the HelpDesk Chat menu, they are redirected to the Helpdesk chat tool.
+The end-user needs to enter the required information:
+Last Name (mandatory)
+Email (mandatory)
+Phone (mandatory)
+Secondary Phone
+The end-user can then start their conversation with ConnectWise Support.
+
+Note: Help Desk Chat will only work on endpoints within Sites that have the Help Desk service enabled.
+
+System Information
+Once the System Information is enabled in the Communicator Policy the corresponding menu is displayed on the Communicator tray assigned to the required endpoint.
+If the end-user clicks on the System Information menu, the window with a summary of the machine's system information is shown.
+
+The end-user can copy all the information to the clipboard by clicking Copy.
+Contact Details
+Once the Contact Details are enabled in the Communicator Policy, the corresponding menu is displayed on the Communicator tray assigned to the required endpoint.
+If the end-user clicks on the Contact Details menu, a window shows the MSP contact details which are added to Admin > My Company > Profile.
+If you make changes in Admin > My Company > Profile, those changes will be reflected in the tray only after Policy configurations are re-saved.
+
+Maintenance Tasks
+Once the Maintenance Tasks menu is enabled on the Communicator Policy,  you are able to select the exact tasks that should be reflected in the Communicator tray.
+After enabling the tasks, the end-user is able to execute the required tasks from the Communicator tray's Maintenance task options.
+If the user clicks on the corresponding tasks menu the following notifications appear:
+If the task is started successfully:
+
+If the task is completed successfully:
+
+If the task is failed
+
+Communicator Customization Communicator Hidden Mode
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Communicator Configuration
+Communicator Assignment
+Communicator Branding
+Communicator Customization
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

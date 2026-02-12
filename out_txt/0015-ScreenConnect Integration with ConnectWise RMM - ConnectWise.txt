@@ -1,0 +1,121 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Getting Started with ConnectWise RMM   ScreenConnect Integration with ConnectWise RMM
+ScreenConnect Integration with ConnectWise RMM
+Last updated
+Aug 13, 2025
+Table of contents
+Overview
+Enable ScreenConnect for Sites
+How to Launch ScreenConnect Administration
+Important Details about the ScreenConnect Integration
+Overview
+
+This article provides you with information on how to use the ScreenConnect integration with ConnectWise RMM. First, you'll need to:
+
+Enable ScreenConnect for Sites
+Launch the ScreenConnect Administration
+Important Details about the ScreenConnect Integration
+Enable ScreenConnect for Sites
+
+ScreenConnect for sites is managed via Policies and Packages.
+
+Navigate to Endpoints > Policies.
+
+If ScreenConnect is not enabled, click Add Policy.
+
+Fill out the appropriate fields:
+
+Category: Devices
+
+Type: Remote Access
+
+Name: Type your name for the policy
+
+Under the Remote access settings, enable the settings that you want.
+
+
+
+Click Save.
+
+Navigate to Endpoints> Packages.
+
+Either edit an existing package or click Add Package.
+
+Name your new package and add the Remote Access Policy to it. For more information, review the Policies and Packages documentation.
+
+Assign the Package to your sites:
+
+Each Policy included in a Site assigned Package will be automatically inherited by all Devices under the Site, including ones added in the future.
+Navigate to the Endpoints > Packages > Sites tab.
+Check the box for each selected Site
+Click Assign Package.
+Click the Name of the Package.
+Click Assign.
+
+Note: To learn more about ScreenConnect Access Management, refer to the ScreenConnect Access Management documentation.
+
+Note: To learn more about ScreenConnect Join Reason Integration, refer to the ScreenConnect Join Reason Integration documentation.
+
+How to Launch ScreenConnect Administration
+Navigate to Devices > Computers.
+Select the icon next to the header for Log In. 
+
+If the user is authorized, the following screen displays:
+
+ 
+Important Details about the ScreenConnect Integration
+Who can use ScreenConnect? 
+The following roles will have access, provided that their profiles are enabled to allow remote control and the RMM sites that have been enabled for ScreenConnect . 
+Primary Super Admin
+Super Admin
+Manager
+Technician and Client Site Manager
+Office Staff
+Why is the ScreenConnect option missing for an endpoint where I just installed ScreenConnect ? 
+It typically takes about 15 minutes from the moment a site is marked to enable ScreenConnect until a partner can launch a remote ScreenConnect session to an endpoint on that site. The status of the ScreenConnect deployment can be reviewed when hovering over the ScreenConnect launch option - this can assist in identifying the root cause of a deployment issue as well as when requesting assistance from the Product Support team. See the Deployment Statuses and Error Descriptions page for further troubleshooting.
+What are the recommended steps and information needed before deploying ScreenConnect to all my endpoints?
+When a ScreenConnect Cloud instance is created, the Advanced Configuration Editor ScreenConnect Extension will be installed for that instance. This will allow Partners to make changes to the settings that define how ScreenConnect operates.
+The setting, Is User Allowed to Require Consent, is enabled by default. This setting allows Partners to manage the consent option to specific endpoints, where consent is required for some endpoints but not for others. The only way that a task can run and update required XML config files on endpoints is to have this setting enabled.
+The setting, Automatically Update Agent Version, is enabled by default. This is to mitigate the security risk and impose less Admin work when Partners are trying to enable the auto-upgrade access agents setting. If this setting is not enabled, then the ScreenConnect agent is not auto-upgraded to latest version unless it is manually upgraded for the endpoints. We recommend keeping this setting enabled always as you don’t have to manually upgrade the Version to the endpoints and also if the version is not upgraded to the latest, it will also cause connectivity issues.
+The Notification Balloon is disabled by default. This is to remove the visibility of the system tray icon and the overhead generated for partners needing to explain the system tray icon.
+When the ScreenConnect Cloud instance is created, the ScreenConnect Account will be automatically assigned to the server nearest to the IP address of the user creating the first RMM site.
+Select the checkbox Allow Remote Control Access by navigating to this path: Settings > Account Administration > Users > Manage Users > Edit User > Allow Remote Control Access
+Ensure the product settings are working per your expectations. Have a Super Admin user log into the ScreenConnect Administration portal, install the Advanced Configuration Editor and review and update the current product settings.
+RMM Offboarding Setting up your Policies and Packages
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Creating Users
+Creating Notification Rules
+Create Client Sites
+Installing Asio Agents
+This article provides information and instructions about how to download and install an agent on your device.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

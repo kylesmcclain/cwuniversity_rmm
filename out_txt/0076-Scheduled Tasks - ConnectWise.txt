@@ -1,0 +1,108 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Automation   Scheduled Tasks
+Scheduled Tasks
+Last updated
+Jun 11, 2025
+Table of contents
+Overview 
+Documentation
+Scheduled Tasks Page 
+Field Descriptions 
+Actions
+Data Grid 
+Summary Card 
+Overview 
+
+The scheduled tasks feature allows you to see all of your tasks that you have scheduled and important information about them.
+
+Tasks constitute any action committed on a resource by a partner, technician, or portal user with appropriate access. They can be executed on demand, on a recurring schedule, or at a later date. Passwords and other required information must be provided at least once when using a pre-defined task template, but can then be saved as a custom task.
+
+From this page, you can manage your scheduled tasks and make adjustments as needed.
+
+Note: When a user is deleted or marked as inactive in the system, their scheduled tasks are automatically deactivated.
+
+Documentation
+Details for Scheduled Task Triggers
+Scheduled Tasks Page 
+
+The Scheduled Tasks page is located under Automation > Scheduled Tasks in the left navigation menu of the ConnectWise Asio™ Platform.
+
+Field Descriptions 
+Name	Displays the name of the task. Click on the task to edit.
+Task Type	Displays whether the task is an action, script, or sequence.
+Status	Displays the current status of the task.
+Last Run	Displays the date and time of the last time the task ran.
+Next Scheduled	Displays the date and time the task is to run next.
+
+ 
+
+Actions
+	Allows you to suspend a scheduled task. The suspend icon will disappear once you suspend the task. The suspended task can be scheduled again by clicking on the task.
+	Allows you to deactivate a scheduled task. The deactivated task cannot be scheduled again. The deactivated task is lost from the data grid after 90 days.
+Data Grid 
+
+The data grid helps you display, sort, filter, and manipulate large datasets with ease. Customize your view by rearranging and resizing columns to suit your needs.
+
+Data Grid Option	Description
+Search	Use the search bar to look for a specific item in the list.
+Show Filters	Filter the list by the fields in the grid.
+Manage Columns	Choose which columns of the grid you want to display.
+Manage View	Choose between the different views of the grid.
+Download as CSV	Download your list of datasets as a CSV file
+
+ 
+
+Pods
+
+We have introduced a graphic representation of the columns from the grid in the form of pods as shown below:
+
+You can click on the legend to disable/enable the respective category in the pie-chart/pod.
+
+Clicking on the Edit View button allows you to edit the page's layout, add more pods, edit existing ones or even delete the pods.
+
+Clicking on the chart context menu gives you options to download the PNG/JPEG image of the pods as shown below:
+
+Summary Card 
+
+Selecting a task opens the Summary card is located on the right of the screen. The Summary card provides more information on a scheduled task including a description of the task, the user that created it, when it was initially created, the user that last edited the task, the title number of devices the task has run on, the number of devices that the task was successfully ran on, and the number of devices that the task failed on.
+
+Automation Details for Scheduled Task Triggers
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Details for Scheduled Task Triggers
+Tasks
+The tasks feature is an automation tool used to address issues on managed devices. You can also sequence tasks with if/then/else logic to streamline w...
+Create and Schedule Script Type Tasks
+Create and schedule a script task.
+Running RMM Tasks
+How to run a task, create a custom script, or configure a task for the next agent check-in.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

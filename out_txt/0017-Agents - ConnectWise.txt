@@ -1,0 +1,102 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Agents
+Agents
+Last updated
+Dec 3, 2025
+Table of contents
+Overview
+Get Started
+Video: How to Download and Install the Agent
+All Agent Management Articles 
+Overview
+
+The ConnectWise Asio® is an agent-based system. Every desktop and server monitored must have the agent installed. Agents report back to the portal with monitoring details.
+
+Get Started
+Agents
+This documentation path provides information about how to download and install the agent as well as agent schedules, firewall exclusions, requirements.
+Pages: 5
+Download and Install Agents
+This article provides information and instructions about downloading and installing an agent on your device with Windows, macOS, or Linux.
+Asio Agent Requirements
+The article includes the currently supported operating systems for agent installations.
+Firewall Exclusions
+Agent Schedules
+Schedule of recurring tasks such as reporting, audits, and maintenance activities for agents deployed across endpoints.
+APIs
+Video: How to Download and Install the Agent
+
+All Agent Management Articles 
+Agent Management
+Click on the title of an article linked below and learn more about Agent Management.
+Assign device to another site (Move Agent)
+Changing Proxy Settings
+Golden Image Support
+Switching the device type for an Endpoint
+Agent Reports Overview
+Learn more about the reporting and audit functions available for agent activity in Asio and RMM.
+Asio Agent Requirements
+The article includes the currently supported operating systems for agent installations.
+Firewall Exclusions
+Download and Install Agents
+This article provides information and instructions about downloading and installing an agent on your device with Windows, macOS, or Linux.
+Agent for Linux 32/64 bit ARM device
+Asio Platform Agent Deployment using Group Policy Object (GPO)
+Installing Asio Agents using MS Intune
+Uninstalling an Agent
+This guide includes the steps required to uninstall an agent from a desktop or server in RMM or Asio via the Devices page.
+All articles
+Article directory
+Agent Feature Comparision
+This page is designed to help you understand the features available across the different OS versions of the Asio/RMM agent.
+Agent Repair Utility
+Agent Repair Utility is a standalone executable supported with command-line prompts. When executed on an endpoint, it helps identify the agent's malfunctioning components and repairs them.
+Agent Schedules
+Schedule of recurring tasks such as reporting, audits, and maintenance activities for agents deployed across endpoints.
+Agent Self-Heal
+Agent self-heal is available for agents running on Windows OS.
+Agent Tamper Protection
+Agents on Windows devices utilize tamper protection to restrict users from stopping the agent core services.
+Cloud Services
+Enhanced Agent Details
+RMM Site Enablement
+Setting up your Policies and Packages Agent Feature Comparision
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Asio Agent Requirements
+The article includes the currently supported operating systems for agent installations.
+Uninstalling an Agent
+This guide includes the steps required to uninstall an agent from a desktop or server in RMM or Asio via the Devices page.
+Cloud Services
+Agent Tamper Protection
+Agents on Windows devices utilize tamper protection to restrict users from stopping the agent core services.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

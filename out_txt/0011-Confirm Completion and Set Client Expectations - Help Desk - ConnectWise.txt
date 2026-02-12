@@ -1,0 +1,85 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Expert Services   Help Desk   Activating Help Desk   Confirm Completion and Set Client Expectations - Help Desk
+ Expand/collapse global location
+Confirm Completion and Set Client Expectations - Help Desk
+Last updated
+Aug 27, 2024
+Table of contents
+Overview
+Email ConnectWise to Confirm Activation
+Manage Client Expectations
+Maintaining your Sites
+Help Desk Resources
+Deactivating Help Desk
+Contacting the Help Desk
+Overview
+
+Once you have completed all necessary steps for activation, be sure your team conducts an internal review and verification of all information, then follow the steps outlined below to schedule go-live, set and manage client expectations, train users, and plan continued maintenance.
+
+Email ConnectWise to Confirm Activation
+
+After you complete the activation requirements outlined in sections 1-4, email the Help Desk at HDActivation@connectwise.com. The team will verify your information and set up the account. If anything is incomplete or the team has any questions, they will contact you directly.
+
+When the requirements are completed fully and correctly, the verification process is complete. The Help Desk Service will email you to confirm a go-live date.
+
+Manage Client Expectations
+
+Once you have completed activation and go-live with the Help Desk, you will receive an email with details and contact information to share with your clients. You can also visit the How to Contact the Help Desk section under Statement of Work for complete Help Desk contact procedures. Schedule a training or a lunch-and-learn and be sure to provide your clients with this contact information as well as with the hours of operation, scope of service (based on your coverage option), and all procedures for contacting the Help Desk Service. Let your clients know what to expect when they call the Help Desk. Calls will be identified by caller ID, appropriately routed, and answered with your company name. See Client Requests and Call Backs for more specific details on how the Help Desk handles client requests.
+
+Maintaining your Sites
+
+Continue to implement processes that ensure your own continued Help Desk success. An ongoing review and maintenance process can contribute to long-term satisfaction. In IT, equipment is frequently upgraded, new applications are installed, and employees turnover. Take time to review and update the documentation used to support your sites and systems to decrease the number of escalations. Identify a resource at your company who will champion the Help Desk, educating others and managing references and documentation.
+
+In addition, plan to conduct quarterly or monthly meetings with your clients to review the service they receive from both your team and the Help Desk. Identify outstanding support issues, help schedule client follow-ups, and verify the latest client profile details with HR.
+
+Constantly reviewing this information and updating documentation for your sites will increase first-call resolution rates, and continued minimal investment will yield positive long-term success.
+
+Help Desk Resources
+
+Visit the portal often for the most current brandable materials.
+
+Deactivating Help Desk
+
+To opt out of Help Desk support at any time, go to RMM Setup > Sites Using RMM > [site name] > Product Options > Help Desk Options > Coverage. Select No Coverage to end Help Desk support and billing for the client site. All previous site information will be saved should you opt to re-activate later.
+
+Contacting the Help Desk
+
+Partners needing to reach the Help Desk should follow the steps outlined in Help Desk Partner Contact Procedures.
+
+Provide Help Desk Information - Help Desk Add Required Documentation and Credentials - Help Desk
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Select Help Desk Product Options - Help Desk
+Create a Help Desk Notification Rule - Help Desk
+Provide Help Desk Information - Help Desk
+Add Required Documentation and Credentials - Help Desk
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

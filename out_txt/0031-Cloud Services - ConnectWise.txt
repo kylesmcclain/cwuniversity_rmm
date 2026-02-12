@@ -1,0 +1,308 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Agents   Cloud Services
+Cloud Services
+Last updated
+Oct 1, 2024
+Table of contents
+Servers
+Azure-Specific Alerts
+Azure AD Connect
+Azure Hyper-V Replication
+Desktops
+Virtual Desktops Provided by Public Cloud Providers
+Remote Desktop Support on Microsoft RDS / Terminal Servers / Public Cloud VDI
+Servers
+The ConnectWise RMM Server Agent works on any cloud deployment model, including on-premises, public cloud, and private cloud.
+Existing IntelliMon alerts have been tuned specifically for Microsoft Azure to filter out non-relevant events and exclude virtual platforms where necessary.
+Azure-Specific Alerts
+
+ConnectWise has also created dedicated alert families for the following Azure services:
+
+Azure AD Connect
+
+Azure AD Connect integrates your on-premises directories with Entra ID (formerly Azure Active Directory). This allows you to provide a common identity to users for Office 365, Azure, and SaaS applications integrated with Microsoft Entra ID. Refer to Azure AD Connect for more information.
+
+Family	Condition Name	Impact	Benefit
+Azure AD Synchronization	
+
+AD Sync failing due to duplicate entries found
+
+	Critical Non-Impact	
+
+This rule indicates duplicates entries to avoid conflict errors in Active Directory Database.
+
+
+Azure AD Synchronization	
+
+Azure AD Connect services won't start
+
+	Critical Non-Impact	
+
+Detects situations where the Password sync feature is not enabled in the Tenant.
+
+
+Azure AD Synchronization	
+
+Azure Sync connectivity issue
+
+	Critical Non-Impact	
+
+Monitors Azure Active directory Sync failures.
+
+
+Azure AD Synchronization	
+
+Directory Synchronization connectivity issue found
+
+	Critical Non-Impact	
+
+Reports connectivity errors when communicating with Azure AD, most commonly a credential issue.
+
+
+Azure AD Synchronization	
+
+DirSync / AD Sync encounter error
+
+	Critical Non-Impact	
+
+Monitoring Rules identifies internal database errors causing replication failure.
+
+
+Azure AD Synchronization	
+
+Error occurred communicating with Azure AD
+
+	Critical Non-Impact	
+
+Monitoring rule will help to Identify errors causing communication issues between On-Premise and Azure AD.
+
+
+Azure AD Synchronization	
+
+Export to Azure AD failed with error
+
+	Critical Non-Impact	
+
+Monitoring rule will help to Identify configuration change since the last run profile.
+
+Azure Hyper-V Replication
+
+Azure Hyper-V is utilized in Disaster Recovery (DR) scenarios to automate the failover process for bringing workloads back up at a secondary site with minimal downtime.
+
+Family	Condition Name	Impact	Benefit
+Azure Hyper-V Synchronization	
+
+VM Replication failed due to Azure Storage service failure
+
+	Critical Non-Impact	
+
+Indicates issues within the storage service
+
+
+Azure Hyper-V Synchronization	
+
+Cannot replicate VM changes due to unspecified error
+
+	Critical Non-Impact	
+
+Identifies issues responsible for VM replication failures
+
+
+Azure Hyper-V Synchronization	
+
+Export System Definition for VM failed
+
+	Critical Non-Impact	
+
+Provides notification when export activity is failing after repeated attempts.
+
+
+Azure Hyper-V Synchronization	
+
+VM Replication failed due to Network Communication Failure
+
+	Critical Non-Impact	
+
+Identifies network errors causing VM replication failure.
+
+
+Azure Hyper-V Synchronization	
+
+VM Replication failed due to Operation Was Cancelled
+
+	Critical Non-Impact	
+
+Identifies operating or task failures responsible for VM replication issues
+
+
+Azure Hyper-V Synchronization	
+
+Resynchronization Failed for VM
+
+	Critical Non-Impact	
+
+Identifies errors responsible for VM replication failures
+
+
+Azure Hyper-V Synchronization	
+
+VM Replication failed due to Timeout Interval Expired
+
+	Critical Non-Impact	
+
+Identifies VM replication failures due to timeout errors
+
+
+Azure Hyper-V Synchronization	
+
+Replication/Resynchronization failed due to dependent Update Process Operation Failed
+
+	Critical Non-Impact	
+
+Helps to identify dependent components due to which VM update operation is failed.
+
+
+Azure Hyper-V Synchronization	
+
+VM Cannot replicate changes due to intermittent Network Communication Failures
+
+	Critical Non-Impact	
+
+Identify intermittent Network Communication Failures in replication.
+
+
+Azure Hyper-V Synchronization	
+
+VM config not available - Failover not possible
+
+	Critical Non-Impact	
+
+This rule will help in identifying VM configuration issues.
+
+
+Azure Hyper-V Synchronization	
+
+Configuration file for VM could not be sent to the Azure Site Recovery (failover may not be possible)
+
+	Critical Non-Impact	
+
+This rule will help in identifying issues where Failover to Azure cloud may not work as expected.
+
+
+Azure Hyper-V Synchronization	
+
+VM marked as corrupted by service
+
+	Critical Non-Impact	
+
+This rule will help in identifying VM healthy state on Azure.
+
+
+Azure Hyper-V Synchronization	
+
+VM not enable for protection with service
+
+	Critical Non-Impact	
+
+Identifies VM's not enabled for protection on Azure.
+
+Desktops
+Virtual Desktops Provided by Public Cloud Providers
+
+ConnectWise RMMs support virtual desktops provided through Microsoft Azure and Amazon Web Services using a Platform agent available for download:
+
+Navigate to Endpoints > Devices.
+Open the Manage drop-down menu and select Download Agent. For more information visit the Windows OS Agent documentation.
+Remote Desktop Support on Microsoft RDS / Terminal Servers / Public Cloud VDI
+
+The RMM Desktop Agent currently requires a persistent drive on all cloned imaged VMs for installing the RMM Agent (in order for the agent to function properly). Virtual Desktop configurations that require Golden or Clone Image functionality are not currently supported.
+
+Product Name	RMM Desktop Agent
+Azure VDI	Supported
+
+
+Microsoft RDS Session (RDSH / Terminal Services)
+
+	
+
+Supported
+
+
+
+
+Citrix XenApp
+
+	
+
+Supported
+
+
+
+
+Microsoft RDS VDI
+
+	
+
+Not Supported
+
+
+
+
+Citrix XenDesktop
+
+	
+
+Not Supported
+
+
+
+
+VMware Horizon View
+
+	
+
+Not Supported
+
+ 
+
+Firewall Exclusions Download and Install Agents
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Asio Agent Requirements
+The article includes the currently supported operating systems for agent installations.
+Uninstalling an Agent
+This guide includes the steps required to uninstall an agent from a desktop or server in RMM or Asio via the Devices page.
+Agent Tamper Protection
+Agents on Windows devices utilize tamper protection to restrict users from stopping the agent core services.
+Download and Install Agents
+This article provides information and instructions about downloading and installing an agent on your device with Windows, macOS, or Linux.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

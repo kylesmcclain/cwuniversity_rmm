@@ -1,0 +1,116 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   ConnectWise RMM Release Notes   ConnectWise RMM Update for May 2025
+ConnectWise RMM Update for May 2025
+Last updated
+Aug 19, 2025
+Table of contents
+Overview 
+What's new in ConnectWise RMM?
+May 23, 2025
+Alerting
+May 22, 2025
+PSA Integration
+May 21, 2025
+Automation
+Issues Addressed
+May 15, 2025
+Alerting
+Issues Addressed
+May 13, 2025
+Policies and Packages
+May 8, 2025
+Automation
+Issues Addressed
+Overview 
+
+This page provides information on the latest enhancements and features for ConnectWise RMM.
+
+What's new in ConnectWise RMM?
+Release Dates	Relevant Modules
+
+May 23, 2025
+May 22, 2025
+May 21, 2025
+May 15, 2025
+May 13, 2025
+May 8, 2025
+	
+Alerting
+PSA Integration
+Automation
+Alerting
+Policies and Packages
+May 23, 2025
+Alerting
+We've included the Create Suspension/Monitor button in the Intelligent Alert/Suspension conditions grid. 
+May 22, 2025
+PSA Integration
+MAC - M series Device Serial Number will sync into the respective CW PSA Serial Number UDF.  
+May 21, 2025
+Automation
+We have added the ability for users to select multiple operating systems (Windows, MAC, Linux) in the script editor, when defining a function or a script.  
+Issues Addressed
+Known Issue	Description
+ISSUE-7789	Resolved an issue where the Suspension details for a scheduled task were missing the user who suspended the task.
+ 	Resolved an issue where the Description field was overlapped by the Information and Scheduling fields on the Tasks page UI.
+ 	Resolved an issue where the "Last Edited" field was appearing empty on the Scheduled Tasks page.
+May 15, 2025
+Alerting
+We have optimized Asset type Custom Monitors for accurate and faster processing.
+The Alerting system will now validate condition entitlements at the Site level.
+Issues Addressed
+Known Issue	Description
+ 	Fixed an issue where an Automation task was getting triggered against a custom monitor that was already deleted.
+ 	Fixed an issue where the User type in Asset type custom monitors was not generating alerts.
+ 	Fixed an issue where partners were observing UI alignment issues in the PowerShell option in Script editor type Custom Monitors.
+ 	Resolved the issue causing crashes on the Monitor/Suspension page when searching with opening or closing bracket symbols.
+May 13, 2025
+Policies and Packages
+
+This release is primarily focused on the Asio Neon theme for the Policies and Packages screens in Asio. This allows partners to apply filters like sorting and column pickers to the available fields in the grid.
+
+Policies and Packages screens can now be set for the Dark theme as well.
+
+May 8, 2025
+Automation
+The function drop-down menu in the Script Editor now defaults to a larger size, displaying at least six functions without scrolling.
+Issues Addressed
+Known Issue	Description
+ISSUE-7476	We resolved an issue where users could not set the Add parameter to True or False when scheduling tasks from the Run menu on the Devices page.​
+ 	We resolved an issue on the Device Details > Services page where the Startup Type for Start/Stop/Restart actions for Services was not working.
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ConnectWise RMM Latest Release Notes
+ConnectWise RMM Update for January 2024
+ConnectWise RMM Update for February 2024
+ConnectWise RMM Update for March 2024
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

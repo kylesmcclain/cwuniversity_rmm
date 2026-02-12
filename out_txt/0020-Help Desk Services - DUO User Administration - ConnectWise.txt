@@ -1,0 +1,82 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Expert Services   Help Desk   Help Desk Services - DUO User Administration
+Help Desk Services - DUO User Administration
+Last updated
+Jan 16, 2026
+Table of contents
+Overview
+How to Enable DUO Authentication
+Overview
+
+This guide outlines the steps to enable DUO Time-based One-Time Password (TOTP) authentication, allowing ConnectWise Help Desk Services™ to securely access your DUO tenant and provide user management assistance for your end-client users.
+
+By following this process, you can ensure seamless integration and secure access management. There is a similar process for ConnectWise NOC Services™, where they need to leverage DUO to access devices. To learn more, review Enabling DUO Authentication for Endpoint Access - ConnectWise.
+
+How to Enable DUO Authentication
+
+To enable DUO Authentication, follow these steps:
+
+Log in to your DUO Admin Console and enroll the user or account using a system account (e.g., HelpDeskServices@msp.com) as an administrator under the User Manager role. This generates system credentials.
+
+
+Note:
+
+If the administrator account is not in the role of User Manager, Help Desk Services will escalate issues they are not permitted to (in the event they are set up as the role of Help Desk, they cannot create or remove users).
+Additionally, if the administrator account is assigned to an Administrative Unit, it can lead to escalations.
+Click the activation link to set a password.
+Ensure these credentials are added in Asio under the sites that require DUO support under Custom Passwords and Properties, including the following details:
+Username
+Password
+URL to Duo Tenant
+
+If using sub accounts or if the same admin account is shared across multiple companies or sites, you only need to activate it once.
+Generate the activation link for the enrolled user and share it with the ConnectWise team at srt@connectwise.com. Include the Company and Site details for where the credentials are stored.
+The ConnectWise Team uses the activation link to generate a Seed HEX Code and return it to you.
+The ConnectWise Team creates an account for this user in Documentation (formerly ITBoost).
+In your DUO Admin Console, navigate to the Hardware Tokens section and select Import Hardware Tokens:
+Select Token Type: TOTP 6 Digit
+Enter the HEX code and click Import Hardware Tokens​​​​​. For example:
+
+Navigate to Administrators and select the account you created in Step 1. Select the drop-down to select the hardware token you created in Step 4. Save changes to that administrator account.
+
+Send an email to srt@connectwise.com to inform them when it has been linked.
+The ConnectWise Team uses the Seed Base 32-bit/Secret Key, mapped to the HEX code, to generate TOTP codes and validate the setup.
+The ConnectWise Team informs you that the setup is complete, enabling the Help Desk Services to log in to Duo with user management permissions using DUO TOTP authentication.
+Help Desk Partner Contact Procedures Help Desk Success Checklist
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Help Desk Activation Checklist
+Help Desk Best Practices
+Help Desk Success Checklist
+Use this checklist to help successfully integrate Help Desk to your operations and ensure seamless support for your end users.
+Activating Help Desk
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

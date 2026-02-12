@@ -1,0 +1,55 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Expert Services   Help Desk   Activating Help Desk
+Activating Help Desk
+Last updated
+Nov 21, 2022
+Table of contents
+Overview
+Overview
+
+Complete ITSupport Portal setup is an essential element that contributes to your success with the Help Desk. The information included in the portal allows the Help Desk to easily find specific details regarding each site and act immediately to handle a request.
+
+Use the sections below to understand and complete the steps required to successfully activate Help Desk for your client sites in the ITSupport Portal:
+
+Select Help Desk Product Options.
+Create a Help Desk Notification Rule.
+Provide Help Desk Information.
+Add Required Documentation and Credentials.
+Confirm Completion and Set Client Expectations.
+MSP Ticket Assignments and Escalations Select Help Desk Product Options - Help Desk
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Select Help Desk Product Options - Help Desk
+Create a Help Desk Notification Rule - Help Desk
+Provide Help Desk Information - Help Desk
+Add Required Documentation and Credentials - Help Desk
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

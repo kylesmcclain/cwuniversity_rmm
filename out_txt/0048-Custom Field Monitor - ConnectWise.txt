@@ -1,0 +1,179 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Alerts   Custom Monitors   Custom Field Monitor
+Custom Field Monitor
+Last updated
+Jun 2, 2025
+Table of contents
+Overview
+How to create a Custom field Monitor
+List of Monitor Variables
+Overview
+
+Custom Field Monitors allow you to define monitors for the custom fields created in the system. Before creating a monitor, you need to add a custom field in the system. Please review the Custom Fields documentation for the process on how to create these.
+
+How to create a Custom field Monitor
+
+Navigate to  Endpoints > Alerts > Monitors.
+
+Click Add Monitor.
+
+Provide a Name for the new monitor. Optionally you can provide a Description of your new monitor.
+
+Select the Type as Custom field from the drop-down for creating the appropriate monitor.
+
+Select the Family and Severity from the drop-down menus.
+
+To enable the Mapper functionality, you need to turn on the toggle. To learn more about the Mapper functionality review this documentation.
+
+Select the Device Availability from the Metric type drop-down
+Under the Condition section:
+Custom Field Type - This allows you to select the custom field types which can be used to trigger alert when the value changes in them. 
+Datepicker - For fields where values will be Date and time stamps.
+Equals - Matches with the value.
+Not Equal - Does not matches with the value.
+Greater Than - The value is greater than.
+Less Than - The value is less than.
+DropDown: - For fields where values will be one of the available options.
+Contains - The value must contain the keywords.
+Does not contain - The value does not contains the keywords.
+Equals - Matches with the value.
+Not Equals - Does not matches with the value.
+Flag - For fields where values will be Boolean (Yes or No).
+Equals: - Matches with the value.
+Not Equals: - Does not matches with the value.
+Text box: - For fields where values will be textual.
+Contains: - The value must contain the keywords.
+Does not contain: - The value does not contains the keywords
+Equals: - Matches with the value.
+Not Equals: - Does not matches with the value
+
+Custom Field Name: - Based on the custom-field-type selection, it will display the lists of custom-fields which are pre-created with custom field type option.
+
+ 
+
+If no custom fields are created, it will not display any details.
+
+Logical Operator -Logical operator can be used with the following types of the custom field types:
+
+Dropdown
+
+Text Box
+
+You can define multiple values which can be validated for the alert generated based on the values.
+
+Values
+
+You can define the field values that should be used for triggering an alert.
+
+You can also select a custom Automation Task to be executed when the condition is met on the endpoints.
+
+Note: System will reflect only selective Automation tasks that do not need parameters. Refer these OOTB tasks which needs parameters. All Custom Scripts created will be available for selection.
+
+Under the Ticket Resolution section:
+Custom Field Type: - This allows you to select the custom field types to identify when the issue is resolved so it can update the corresponding ticket as Resolved.
+Datepicker: - For fields where values will be Date and time stamps.
+Equals: - Matches with the value.
+Not Equal: - Does not match with the value.
+Greater Than: - The value is greater than.
+Less Than: - The value is less than.
+DropDown: - For fields where values will be one of the available options.
+Contains: - The value must contain the keywords.
+Does not contain: - The value does not contain the keywords.
+Equals: - Matches with the value.
+Not Equals: - Does not match with the value.
+Flag: - For fields where values will be Boolean (Yes or No).
+Equals: - Matches with the value.
+Not Equals: - Does not match with the value.
+Text box: - For fields where values will be textual.
+Contains: - The value must contain the keywords.
+Does not contain: - The value does not contain the keywords
+Equals: - Matches with the value.
+Not Equals: - Does not matches with the value
+Custom Field Name - User can define the specific custom field based on the type selected
+If no custom fields are created, it will not display any details but the rule will be applicable on all custom fields matching the type.
+
+Logical Operator -Logical operator can be used with the following types of the custom field types:
+
+Dropdown
+
+Text Box
+
+You can define multiple values which can be validated for the alert generated based on the values.
+
+Values
+
+You can define the field values that should be used for closing an alert.
+
+Resources
+This section allows you to select the target endpoint on which the alerts should be triggered.
+You can select specific machines in the sites using a device type filter.  The machine name and friendly name will automatically fetch from the device.
+Click Save to create and apply the monitor to the targets.
+
+Note: Monitors will be triggered based on the configuration set/defined.
+
+List of Monitor Variables
+
+Here is a list of variables which you can use as per your requirement when creating your own customized ticket template:
+
+Monitor Type	Variable Name	Supported OS Type	Sample Data/Values	Variable Definition
+Generic
+ 	ObservedDate	
+
+Windows, MAC, Linux
+
+	
+
+"2020-09-02T15:35:42.969926103Z"
+
+	Time stamp when the issue was observed
+ 	MonitorDesc	Windows, MAC, Linux	Add local palmtech account and add it to the local administrators group	Description added on the portal while creating a monitor
+ 	MonitorName	Windows, MAC, Linux	Local PalmTech Account with Local Admin	Name of the monitor
+ 	MonitorSummary	Windows, MAC, Linux	(Run PowerShell script every 1 minute(s) AND Run PowerShell script every 1 minute(s))	Summary information for the monitor
+Custom Field
+ 	CustomFieldValue	Windows, MAC, Linux	False	Current value of the custom field
+ 	CustomFieldName	Windows, MAC, Linux	ConsentEnabled	Custom field to be monitored
+ 	CustomFieldEntityType	Windows, MAC, Linux	endpoint	Type at which Custom field is created
+ 	CustomFieldPreviousValue	Windows, MAC, Linux	True	Earlier value of custom field
+ 	CustomFieldType	Windows, MAC, Linux	textbox	Data type of Custom Field
+ 	DPCondition	Windows, MAC, Linux	 	 
+ 	FlagCondition	Windows, MAC, Linux	 	 
+ 	SelectedCustomFieldName	Windows, MAC, Linux	ConsentEnabled	Custom field to be monitored
+ 	TextAndDDCondition	Windows, MAC, Linux	contains	Condition for checking 
+ 	TextAndDDConditionOperator	Windows, MAC, Linux	and	Condition operator
+CPU Monitor Device Availability Monitor
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Service Monitor
+Process Monitor
+Event Monitor
+CPU Monitor
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

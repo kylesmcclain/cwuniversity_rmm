@@ -1,0 +1,118 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Alerts   Custom Monitors   Asset Monitor
+Asset Monitor
+Last updated
+Jun 4, 2025
+Table of contents
+Overview
+Create an Asset Monitor
+Conditions
+List of Monitor Variables
+Overview
+
+Asset monitors allow you to set monitoring for the values of attributes from a target endpoint.
+
+Navigate to Endpoints > Alerts > Monitors to create an asset monitor.
+
+Create an Asset Monitor
+
+Navigate to  Endpoints > Alerts > Monitors.
+Click Create Monitor.
+Provide a Name for the new monitor. Optionally, you can provide a Description of your new monitor.
+Select the Type as Asset from the drop-down for creating the appropriate monitor.
+Select the Family and Severity from the drop-down menus.
+To enable the Mapper functionality, you need to turn on the toggle. To learn more about the Mapper functionality review this documentation.
+Click Select Targets to create a specified endpoint monitor. Sort by Companies, Sites, Device Groups, Devices, or All Resources. You can select specific machines in the sites using a Device Type filter. The machine name and friendly name will automatically be fetched from device.
+Complete the required fields in the Conditions section:
+
+Category - This allows you to select the supported asset categories for which monitors will be created.
+Parameter - You can select parameters that belong to the asset category that is selected.
+Keywords - This allows you to specify the values that can be used to trigger the alerts.
+(Optional) Click Add Automation to select a custom Automation Task to be executed when the condition is met on the endpoints.
+Complete the required fields in the Ticket Resolution section to determine the conditions for automatic ticket resolution:
+
+Category - This allows you to select the supported asset categories for which monitors will be created.
+Parameter - You can select parameters that belong to the asset category that is selected.
+Keywords - This allows you to specify the values that can be used to trigger the alerts.
+(Optional) Select a Monitor Output. 
+
+Click Save to create and apply the monitor to the targets.
+
+Note: Monitors are triggered based on the configuration set/defined.
+
+Conditions
+
+Condition options display based on the parameter selected. Conditions include:
+
+Contains - The value must contain the keywords.
+Does not contain - The value does not contain the keywords.
+Greater Than - The value is greater than.
+Less Than - The value is less than.
+Equals - Matches with the value.
+Not Equal - Does not match the value.
+Logical Operators - Logical operators such as AND / OR can also be used for the conditional parameters, where it is supported.
+List of Monitor Variables
+
+Here is a list of variables which you can use as per your requirement when creating your own customized ticket template:
+
+Monitor Type	Variable Name	Supported OS Type	Sample Data/Values	Variable Definition
+Generic
+ 	ObservedDate	
+
+Windows, MAC, Linux
+
+	
+
+"2020-09-02T15:35:42.969926103Z"
+
+	Time stamp when the issue was observed
+ 	MonitorDesc	Windows, MAC, Linux	Add local palmtech account and add it to the local administrators group	Description added on the portal while creating a monitor
+ 	MonitorName	Windows, MAC, Linux	Local PalmTech Account with Local Admin	Name of the monitor
+ 	MonitorSummary	Windows, MAC, Linux	(Run PowerShell script every 1 minute(s) AND Run PowerShell script every 1 minute(s))	Summary information for the monitor
+Asset
+ 	Category	Windows, MAC, Linux	Os	Category selected for Monitoring
+ 	Condition	Windows, MAC, Linux	equals	Condition operator used 
+ 	ConditionOperator	Windows, MAC, Linux	 	 
+ 	DateTimeTextBox	Windows, MAC, Linux	 	 
+ 	FlagCondition	Windows, MAC, Linux	 	 
+ 	MultiTextBox	Windows, MAC, Linux	 	 
+ 	NumericTextBox	Windows, MAC, Linux	 	 
+ 	TextBox	Windows, MAC, Linux	19045	Expected value of the Parameter
+ 	Parameter	Windows, MAC, Linux	BuildNumber	Parameter to be monitored for Category
+Application Monitor Complex Monitor
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Service Monitor
+Process Monitor
+Event Monitor
+CPU Monitor
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

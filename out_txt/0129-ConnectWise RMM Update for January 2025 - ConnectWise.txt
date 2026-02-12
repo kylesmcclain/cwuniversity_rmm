@@ -1,0 +1,77 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   ConnectWise RMM Release Notes   ConnectWise RMM Update for January 2025
+ConnectWise RMM Update for January 2025
+Last updated
+Jan 31, 2025
+Table of contents
+Overview 
+Announcements
+Premier Network Monitoring is now available!
+PSA Policy Toggle to be Removed
+What's new in ConnectWise RMM?
+January 31, 2025
+RMM Scanning Tool
+Issues Addressed
+January 29, 2025
+RMM Agent Rollout
+Endpoint Protection
+Issues Addressed
+January 21, 2025
+Automation
+Issues Addressed
+Overview 
+
+This page provides information on the latest enhancements and features for ConnectWise RMM.
+
+Announcements
+Premier Network Monitoring is now available!
+
+We have introduced a new tier to our Network Monitoring solution, Premier. This tier gives you all of the features of basic and advanced network monitoring, but includes new features such as Syslog and Traffic Insights. This solution is available to RMM Pro and Premium partners. For more information on how to upgrade and use this new solution, review the following documentation. We have also created a solution comparison page, so you can choose which tier works best for your needs.
+
+Premier Network Monitoring
+Network Monitoring FAQ
+Network Monitoring Feature Comparison
+PSA Policy Toggle to be Removed
+
+This month, we are removing the PSA Policy enablement toggle from the reporting page for CW PSA partners for partners who have already enabled their PSA Policy. This means that partners who have already opted for the policy will no longer see the toggle on the user interface and will not be able to switch it back to the legacy integration. Instead, they will need to utilize the improved PSA Policy for configuring PSA sync entities.
+
+What's new in ConnectWise RMM?
+January 31, 2025
+January 29, 2025
+January 21, 2025
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ConnectWise RMM Update for February 2025
+ConnectWise RMM Update for March 2025
+ConnectWise RMM Latest Release Notes
+ConnectWise RMM Update for January 2024
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

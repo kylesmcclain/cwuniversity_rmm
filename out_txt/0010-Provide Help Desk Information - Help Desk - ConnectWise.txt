@@ -1,0 +1,175 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Expert Services   Help Desk   Activating Help Desk   Provide Help Desk Information - Help Desk
+Provide Help Desk Information - Help Desk
+Last updated
+Dec 3, 2024
+Table of contents
+Overview
+Basic Information
+Client Profiles
+Add Clients in Bulk
+To Edit or Delete clients in bulk:
+Security-Related Requests
+Help Desk Security Approvals
+Overview
+
+The Help Desk tab provides, in one location, all critical information required to ensure a more efficient and personalized client experience. All three sections add intrinsic value for successful Help Desk implementation.
+
+Go to RMM Setup > Sites Using RMM > [site name] and click on the Help Desk tab.
+
+Basic Information
+Under Basic Information, specify a Client main phone number and Client email domain (both used to identify sites).
+If your client uses a public domain such as Gmail, check No Client Email Domain. Note that public domains cannot be used to identify sites for emails. In addition, such emails cannot be automatically processed as tickets, which may delay resolution. For more information, see Enabling Automated Tickets from Help Desk Email Requests.
+Select the Help Desk Notification previously created.
+Enter the Company Name to be used in the greeting.
+
+Note: The details provided here are used to identify your client when they call or email the Help Desk. You can change the Caller Greeting to a name other than your full company name (the default setting). The Help Desk will use that greeting when answering your clients' calls, and this name will be used in SMS text messages sent to your clients from the Help Desk (configured in Help Desk > Client Profiles > Add Client).
+
+Use the Help Desk Site Message feature to directly communicate critical site information of immediate importance to the Help Desk (i.e. Email is down tonight for maintenance or John Doe’s account should not be enabled if he calls). Messages efficiently provide technicians with pertinent information while they work on tickets and do not expire so they must be managed manually.
+
+The final option in this section is to opt-in to having an RMM Desktop Agent installed for a caller whose system does not have one, such as a home machine you agreed to support. Checking this box gives the Help Desk permission to install the RMM agent and begin troubleshooting the issue and results in a $100 fee for each occurrence. Without an opt-in, the technician will escalate the issue to your company using selected notification rules.
+Client Profiles
+
+Under Client Profiles, you can add, edit, or delete client profile information from the Help Desk.
+
+Again, providing complete, detailed client information will enable the Help Desk Service to route issues to the correct team to seamlessly provide appropriate white labeled resolution.
+
+Note: Use Contact sync to enable a one-way synchronization of Autotask contacts into the Continuum Help Desk by checking the box for Enable syncing with Autotask under Client Profiles. The PSA Contact column at the far right helps distinguish between contacts created using the PSA integration and those created here manually. To prevent duplicate entries when using contact sync, confirm current contact information in Autotask, then remove those contacts here before configuring Autotask Contact Sync.
+
+Add Clients in Bulk
+
+To simplify the process of creating and updating client profiles, we recommend using the import and export functionality and adding client profiles in bulk:
+
+Click Export to download a blank Continuum Excel template. This template will be used to add, update, and delete users.
+Enter the client data in the spreadsheet, creating a new row for each user and adding as much identifying information as possible to improve service. Most fields are common (first name, last name, etc.). Note: Each profile requires first name, last name, and at least one phone number.
+Provide a two-letter country code for each phone number entered to identify the user's country. Country codes for phone numbers follow ISO ALPHA-2 Code convention (two letters: US, AU, etc.). Be sure to remove the country codes from lines without numbers added.
+Add phone numbers without a dash (‒) or any other special characters.
+Enter the provider for mobile phone numbers. The provider field is used in addition to the mobile number to determine email address. A drop-down list is available when adding clients individually; with the spreadsheet, leaving the provider and SMS email gateway sections blank is a recommended best practice. Perform an internet search to locate the SMS gateway, if necessary, and always add an apostrophe prior to the SMS gateway field content to prevent Excel from reading the @ symbol as a formula (i.e. '@txt.att.com).
+Add a Y in the Thin Client column if your client has a terminal server or remote desktop environment using thin clients and they do not use a desktop or laptop with an RMM agent installed. Otherwise, add an N. You will be charged per user for every thin client enabled for support. To provide support to these users, an RMM server agent must be installed on the terminal server.
+Avoid using the term N/A. If a field is not applicable, leave it blank.
+When adding spreadsheet data:
+Make sure pasted text properly transfers without data loss or distortion.
+Copy and paste data from a different sheet as a best practice and avoid using the paste value option in Excel.
+Do not use any special characters beyond apostrophes (i.e. parenthesis).
+Be sure to add an apostrophe in the field with the SMS email gateway prior to the @ symbol.
+Ensure all data is right aligned and apply the all borders option in the spreadsheet.
+Do not include spaces at the end of a cell with text or numbers.
+Save the file.
+Click Import, browse to and select the spreadsheet file, then click Import again. A message at the top of the table displays how many records were added, edited, or deleted. You will also see a count of records that may have failed.
+
+To Edit or Delete clients in bulk:
+Click Export to retrieve all existing client data.
+Edit the spreadsheet as needed or locate the row in the spreadsheet and add a Y in the delete column.
+Save the file.
+Click Import, browse to and select the spreadsheet file, then click Import again.
+
+Note: Be sure to put a routine process in place to maintain client profile information, such as a monthly or quarterly HR review of the exported list to make edits and re-import. Remember, carefully maintained client profiles helps identify a user and associated site documentation on a chat, call, or email and enables fast, reliable service for your clients.
+
+Security-Related Requests
+
+For Security-Related Requests, determine how the Help Desk should handle requests dealing with security—such as new user accounts, password resets, or software installations—specifically whether an approver should be contacted for certain request types and, as an added layer of protection, whether the approver and/or caller should be authenticated.
+
+Specify one or two approvers or select No approval needed to ensure requests are escalated properly and clients have an efficient and positive experience.
+
+Provide details to control New User Accounts first. In addition to the approver and authentication settings, include a template for the username format and any default security groups.
+Instruct the Help Desk on the standard format for email addresses and any default distribution groups for inclusion under New Mail Accounts or Mailboxes.
+Name approvers and any authentication details under Password Resets, File and Folder Permissions, and Software Installations.
+Complete all fields and click Save.
+
+The Help Desk will call users in the order they appear. You can request SMS authentication of a call or chat end-user or of an end-user approver. For both instances, a text message will be sent to the individual with a unique code. The end-user must then provide the code to the Help Desk Service technician to proceed. This service is only available if the end-user's contact information has previously been completed with both a mobile phone number and SMS gateway.
+
+Note: Approvers must also be set up for common software under Network Info > Software > Unlicensed Software.
+
+The Help Desk Service will only attempt to dial two numbers from the approvers field (one number each if two different approvers are listed or two numbers if one approver is listed) before disconnecting the call or chat. If this happens, the ticket will be sent to a waiting status until the end-user approver responds. If the only approvers listed are partner approvers, the ticket will be escalated to your team for approval. You can use a group contact as an approver in security-related requests to increase the probability the technician will contact someone for approval. To create a group contact, navigate to the RMM Setup tab and select Group Contacts.
+
+A dropdown enables you to Add References tagged Security-Related Requests from this page; more details about creating, copying, or tagging reference documents can be found in the next section, Add Required Documentation and Credentials.
+
+Help Desk Security Approvals
+
+ConnectWise Help Desk Services is committed to the security of your sites. To do this, the Help Desk performs security approvals via call, SMS authentication, and email. Partners can select either on-site approvers or partner approver contacts.
+
+The following items identify areas that require approval:
+
+New User Account:
+ADUC user creations
+Azure AD user creations
+Local account user creations
+Web portal user creations (including O365)
+Termination of any of the above account types
+Enabling any disabled account of any of the above types
+Removal of old user accounts on local workstations or web portals
+New Mail Account:
+New individual mailbox account
+New shared mailbox account
+New distribution list
+New mail group
+Deletion/removal of any of the above account types
+Password Resets:
+Any user password reset
+If this field is listed as no approval needed, passwords can be reset for that user only
+A user attempting to reset another user's password, a shared account password, or an admin account requires approval
+Any change of existing password that requires HD interaction
+Walking a user through changing their own password can be done without approval
+Any changes to a user's existing MFA settings (updates, refreshes, removals to switch authenticators, etc)
+File/Folder Permission Changes:
+Changes to NTFS permissions of any type
+Changes to Sharing permissions of any type
+Changes to ADUC group membership
+Changes to Azure AD group membership
+Changes to VPN or other networking device group membership
+Changes to permissions (adding/removing/adjusting) on an existing mailbox of any type.
+Including Read & Manage permissions, Send As permissions, Send on Behalf permissions, and distribution group membership changes
+Software Installation:
+Any software installation on a workstation not listed in the always approved section of the DM article or not listed as No approval needed in Unlicensed Software section
+Any software update/upgrade on a workstation not listed in the always approved section of the DM article or not listed as No approval needed in Unlicensed Software section
+Any administrator credentials entered on a workstation when the user is already in process of installing software
+RMM Installation:
+Any installation of the RMM agent via any listed method where the agent is not being immediately removed and then installed for troubleshooting purposes.
+Always Requires Tier 4 approval:
+Changes to the domain (including adding/removing computers from the domain)
+Changes to the network (including changing IP ranges, DNS records, time servers) prior to sending to NOC
+RMM installations not pre-approved in references
+New VPN access, new RDP access from outside the domain
+Control access via the Partner Portal
+Adding or removing MFA at a site or tenant level
+Global changes to MFA at a site or tenant level
+Any software installation/removal or update/upgrade on a server
+Changes to any administrator account (domain, local, website accounts) password
+Changes to allow or deny listing on a firewall or other device prior to sending to NOC
+Create a Help Desk Notification Rule - Help Desk Confirm Completion and Set Client Expectations - Help Desk
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Select Help Desk Product Options - Help Desk
+Create a Help Desk Notification Rule - Help Desk
+Add Required Documentation and Credentials - Help Desk
+Confirm Completion and Set Client Expectations - Help Desk
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

@@ -1,0 +1,641 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Getting Started with ConnectWise RMM   Installing the RMM Scanning Tool
+Installing the RMM Scanning Tool
+Last updated
+Aug 1, 2023
+Table of contents
+Overview
+Prerequisites
+User Access
+Deployment Prerequisites
+How to enable the RMM Scanning tool
+Accessing and Using the RMM Scanning Tool
+Performing an On-Demand Scan
+Scanning an IP range
+Scanning an IP subnet
+Column Data
+Deploying/Updating Agents
+Deploying Agents to Mac and Linux resources
+Scanning Additional Subnets
+Scheduling a Scan
+Editing a Scan Schedule
+RMM Scanning Tool Reporting
+Add Report Permissions
+View Reports
+Error Descriptions and Possible Causes
+Overview
+
+The RMM Scanning Tool allows you to:
+
+Perform on-demand RMM desktop and server (where applicable) agent deployments to Windows, Mac, and Linux machines under your management.
+Set up a schedule to scan and deploy agents to newly discovered systems on a network.
+Update resources with agents installed to the latest agent version.
+Prerequisites
+Before the tool can be installed, an Asio Agent (desktop or server) belonging to a respective member and site must be installed on the machine running the RMM Scanning Tool.
+As part of the installation process, the RMM Scanning Tool installer checks for the existence of Microsoft .Net Framework version 3.5 / 4.0 /4.5 on the machine. If Microsoft .Net Framework is not installed, download and install it from Microsoft before proceeding with setup.
+The RMM Scanning Tool needs to run / launch with the system administrator privileges.
+Mac machines: Remote Login must be enabled and can be found by browsing to: System Preferences > Sharing > Remote Login.
+Application role permissions for Agent Management > RMM Scanning Tool Configuration > Install RMM Scanning Tool. 
+User Access
+
+The following default application roles have Agent Management permission for RMM Scanning Tool Configuration. To edit a custom application role and include RMM Scanning Tool Configuration, follow the steps to add permission to a role in ConnectWise Home > User and Application Settings > Application Roles.
+
+Application Role >
+
+	
+
+Super Admin
+
+	
+
+Manager
+
+	
+
+Technician
+
+	
+
+Office Staff
+
+	
+
+Sales
+
+	
+
+Client Site Manager
+
+
+
+
+Agent Download
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+OFF
+
+	
+
+ON
+
+
+
+
+Switch Device Type
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+OFF
+
+	
+
+ON
+
+
+
+
+Assign to another site
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+OFF
+
+	
+
+ON
+
+
+
+
+Agent Uninstall
+
+
+
+
+Uninstall Desktop Agents
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+OFF
+
+	
+
+ON
+
+
+
+
+Uninstall Server Agents
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+OFF
+
+	
+
+ON
+
+
+
+
+RMM Scanning Tool Configuration
+
+
+
+
+Install RMM Scanning Tool
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+OFF
+
+	
+
+OFF
+
+
+
+
+Uninstall RMM Scanning Tool
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+OFF
+
+	
+
+OFF
+
+Deployment Prerequisites
+
+By default, the RMM Scanning Tool uses a Windows Management Instrumentation (WMI) call to check the status of an installed agent or to deploy the agent.
+
+The WMI service should be in a running state on the target machine.
+If a firewall is enabled on the target machine, the WMI service must be added to the firewall exclusion list.
+File and Printer sharing services should be added to the firewall exclusion list. (This service is required only during the agent deployment process since WMI does not support file copy processes between two systems. To allow the file copy process to occur, the RMM Scanning Tool uses a Windows API that allows network resource connection and file copying).
+WMI uses domain administrator credentials.
+All systems marked for deployment must be ping-able from the system within the subnet where the RMM Scanning Tool is installed.
+All systems marked for deployment must have the exclusions listed below (WMI service, file and printer sharing services) to ensure smooth deployment.
+A user account with administrator privileges must be used for deployment. The user account can have local or domain privileges. Domain accounts should be in the format DOMAIN / USERNAME.
+How to enable the RMM Scanning tool
+Navigate to Endpoints > Devices page.
+Select the endpoint where you want to install the RMM Scanning Tool.
+From the Manage dropdown, select RMM Scanning Tool.
+
+Select the checkbox on the RMM Scanning Configuration page to enable download and installation on the selected endpoint.
+
+Click Save.
+The RMM Scanning Tool automatically downloads and installs in the background on the selected endpoint.
+Accessing and Using the RMM Scanning Tool
+
+The RMM Scanning Tool can be accessed from your Start menu. Upon launching the RMM Scanning Tool, the following user interface is displayed:
+
+
+Performing an On-Demand Scan
+
+From the RMM scanning tool interface, you can perform a network scan and deploy agents to machines without agents when the scan completes. To perform a scan, follow these steps:
+
+Scanning an IP range
+Enter an IP range in the Start IP and End IP fields.
+
+A user account with administrator privileges is required. The user account can be a local or domain account.
+
+Enter the appropriate credentials in the Username and Password fields.
+
+Click Start Scan to initiate the scan.
+
+Scanning an IP subnet
+To scan a subnet IP range, click Add Subnet and enter an additional IP range.
+Enter the appropriate credentials in the Username and Password fields.
+Select Start Scan to initiate the scan.
+
+Column Data
+
+When the scan is complete, the RMM Scanning Tool returns a list of resources found online, and the following columns populate with data:
+
+Column Name
+
+	
+
+Description
+
+
+
+
+IP address
+
+	
+
+Machine IP address
+
+
+
+
+Host name
+
+	
+
+Machine name
+
+
+
+
+Mac address
+
+	
+
+Media Access Control address
+
+
+
+
+Operating system
+
+	
+
+Machine OS
+
+
+
+
+Agent status
+
+	
+
+Installed or Not Installed
+
+
+
+
+Resource type
+
+	
+
+Desktop or Server
+
+
+
+
+Machine status
+
+	
+
+Online or Offline
+
+
+
+
+Description
+
+	
+
+Error message or status returned if agent installation fails
+
+The scan also shows you SNMP devices, which can be added to your Asio Endpoints > Devices list to monitor. Resources without agents installed are identified under the Agent Status column (Not Installed).
+
+Deploying/Updating Agents
+
+To update agents or deploy agents to resources:
+
+Select the applicable resource check boxes (far left column) and click Yes when the X Machine(s) selected for agent update/installation. Do you want to continue? prompt appears.
+
+Click Update Agents or Install Agents as required to initiate the update or installation process. The agent status column text changes to Update/Installation in Progress.
+
+Deploying Agents to Mac and Linux resources
+
+To add credentials for Mac and Linux resources, click + Add additional credentials to launch the Add credentials window. Enter respective credentials and click Ok.
+
+Scanning Additional Subnets
+
+To schedule an additional scan of the same subnet, keep the existing IP range in place and edit schedule details as needed. When scheduling, the Tool checks for any conflicts with already existing scans. If conflicts exist, they will be displayed. You can view a list of suggested additional scan schedules for the subnet if desired and can use the CTRL-C option to copy these schedules onto your clipboard before pasting them into a text editor and back into the schedule window.
+
+Scheduling a Scan
+
+To schedule a scan:
+
+Enter an IP range in the Start IP and End IP fields and click on Add schedule details.
+
+Select a scan frequency of Daily or Weekly in the Schedule Scan window.
+
+Daily Scans: Set the Frequency drop-down to Daily and enter a date and time in the Start Time fields. To create a recurring scan, click the Recurrence check box and select a time interval from the Select drop-down menu. Select Custom and enter desired start times to create a custom scan interval. Up to two custom times can be specified. Click Save to create the schedule.
+
+Weekly Scans: Set the Frequency drop-down to Weekly and select the days the scan will run. Next, enter a date and time in the Start Time fields. To create a recurring scan, click the Recurrence check box then select a time interval from the Select drop-down menu. Select Custom and enter desired start times to create a custom scan interval (up to two custom times can be specified). Click Save to create the schedule.
+
+Editing a Scan Schedule
+Click Credentials in the RMM Scanning Tool menu bar to open the Manage Credentials page.
+
+Use the check box to select a schedule, then click the IP address that appears in the Start IP column to launch the Edit Credentials window.
+
+Make desired changes to the schedule in the Edit Credentials window.
+
+Click Update to apply changes.
+RMM Scanning Tool Reporting
+
+Access to the RMM Scanning Tool and related reports requires access to the RMM Scan Configuration report. All default roles have RMM Scanning Tool permissions enabled. You can add permission to a custom role by following the steps below:
+
+Add Report Permissions
+Navigate to ConnectWise Home > User & Application Settings > Application Roles.
+Click the three dots icon next to the role you want to add permission to. 
+
+Select Edit.
+Click Next to edit permissions.
+Navigate to and expand the menu for Reports > Detail Reports > Agents.
+Select the RMM Scan Configuration checkbox for site level configuration details.
+Select RMM Scan Details Report to enable access to the RMM Scanning Tool schedules and IP ranges.
+
+Click Save.
+View Reports
+
+Access RMM Scanning Tool-related reports:
+
+Log in to ConnectWise Asio® and click the Reports tab.
+Expand the Agents section to run the following reports:
+RMM Scan Configuration Report: This report can be filtered by site and generates details of all scans scheduled in the RMM Scanning Tool. Clicking the View/Edit Details link for any scheduled scan allows you to edit the scan's details, including the provided credentials and the schedule details. When changes are saved, they are synced to the scanner tool and can be used for the next scan.
+RMM Scan Details Report: This report provides the results of all prior RMM Scanning Tool scans. You can filter this report by site, resource, IP range, and date range. To add either of these scans to your Favorites list, click the star in the upper-right corner. Select RMM Scan History for a detailed list of agent deployment events.
+Error Descriptions and Possible Causes
+
+In the event of an agent installation failure, the Description column returns an error message. Refer to the table below for possible error causes:
+
+Error Message
+
+	
+
+Possible Causes
+
+
+
+
+Access is Denied
+
+	
+
+The user name provided does not have sufficient access privileges to perform the operation.
+
+
+
+
+Incorrect login credentials are configured.
+
+
+
+
+Unc/registry is not accessible.
+
+
+
+
+Could not copy setup using Remote Registry. The process cannot access the file because it is being used by another process.
+
+	
+
+While deploying through Remote Registry option, Remote Registry service is disabled on target machine.
+
+
+
+
+The network path was not found
+
+	
+
+Firewall is ON.
+
+
+
+
+File and Printer sharing is disabled.
+
+
+
+
+Machine is pingable but not accessible by UNC path (i.e. \\machinename\c$).
+
+
+
+
+Not enough server storage is available to process this command
+
+	
+
+There is not enough memory (not related to hard disk space) on the target machine. Reboot the target machine.
+
+
+
+
+Could not connect to Remote Registry. The RPC server is unavailable
+
+	
+
+Firewall is ON.
+
+
+
+
+A firewall might be blocking the WMI traffic.
+
+
+
+
+Ports 445,135 are not excluded in the firewall.
+
+
+
+
+WMI service is not excluded.
+
+
+
+
+Remote Administration is disabled.
+
+
+
+
+RMM Scanning Tool not working/deploying
+
+	
+
+For the RMM scanning to function properly, review and adhere to the RMM Scanning Tool prerequisites.
+
+
+
+
+The service cannot be started, either because it is disabled or because it has no enabled devices associated with it
+
+	
+
+WMI service is disabled on the target machine.
+
+
+
+
+The system cannot find the file/path specified
+
+	
+
+If any file is missing from the deployment, this message appears (setup.exe).
+
+
+
+
+The System 32 folder may be set to Read Only from the Security tab.
+
+
+
+
+There are currently no logon servers available to service the logon request
+
+	
+
+Machine (desktop) is not accessible from the server and on desktop is not accessible from server from UNC path.
+
+Installing RMM Agents using MS Intune RMM Five Best Practices
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Creating Users
+Creating Notification Rules
+Create Client Sites
+Installing Asio Agents
+This article provides information and instructions about how to download and install an agent on your device.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

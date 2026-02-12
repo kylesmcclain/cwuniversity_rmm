@@ -1,0 +1,2016 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Agents   Asio Agent Requirements
+Asio Agent Requirements
+Last updated
+Feb 4, 2026
+Table of contents
+Overview
+Agent OS
+Windows Compatibility
+Hardware Requirement
+Software Requirement
+Operating System Compatibility
+Windows Client Operating System Support
+Windows Server Operating System Support
+Supported Mac 64-bit* OS X versions 
+Hardware Requirement 
+Operating System Compatibility 
+Linux Compatibility
+Hardware Requirement
+Software Requirement
+Operating System Compatibility
+VMWare Compatibility
+Requirement
+Operating System Compatibility
+Overview
+
+The following tables list the currently supported operating systems for agent installations. Each of the operating systems listed has one of the following supportability conditions:
+
+Verified — Validated compatibility for Windows, Mac, & Linux operating systems currently in vendor’s mainstream or extended support. ConnectWise Support will provide full troubleshooting and root cause analysis with support from Development to address agent defects.
+Extended — Best effort compatibility for Windows, MAC and Linux operating systems currently in vendor’s mainstream or extended support. ConnectWise Support will only provide known documented fixes and workarounds for the verified compatible base distro.
+Untested — No support or validation for Windows, Mac, Debian and Linux operating systems currently retired, end of life, or out of vendor’s support.
+Emerging — Support and validation for new releases of Windows, Mac, and Linux operating systems currently in or recently (120 days) out of beta, testing or technical preview. ConnectWise Support will provide best-effort troubleshooting and root cause analysis with support from Development to address discovered agent defects.
+Agent OS
+Windows Compatibility
+MAC Compatibility
+Linux Compatibility
+VMWare Compatibility
+Windows Compatibility
+Hardware Requirement
+CPU: Pentium 4 or comparable processor.
+Supports Windows on ARM processor or Snapdragon processor
+Supports on 32-bit and 64-bit processor
+RAM: 2 GB and above.
+Disk Storage: 2.5 GB on the drive where the agent will be installed (If endpoint to be enabled as Gateway cache recommended free space is 4GB)
+
+Disk storage for auto-updating agents: An additional 2 GB of storage should always be available on the machine for the agent to get auto-updated.
+
+Note: Not meeting the above requirements may result in failure of agent installation/auto-update.
+
+Software Requirement
+
+PowerShell 3.0 or above must be installed on Windows.
+
+Note:  PowerShell is required when deploying the agent in GUI mode. We are restricting the Agent versions to 4.0.1. So, partners should be using at least the 4.0.1 version moving forward.
+
+Operating System Compatibility
+Windows Client Operating System Support
+
+OS Name
+
+	
+
+Version
+
+	
+
+Microsoft Support End Date
+
+	
+
+ConnectWise Agent Compatibility
+
+
+
+
+Windows XP
+
+	
+
+Windows XP Home
+
+	
+
+08-Apr-14
+
+	
+
+Untested
+
+
+
+
+Windows XP Standard
+
+	
+
+08-Apr-14
+
+	
+
+Untested
+
+
+
+
+Windows XP Professional SP3 x86
+
+	
+
+08-Apr-14
+
+	
+
+Untested
+
+
+
+
+Windows XP Professional SP3 x64
+
+	
+
+08-Apr-14
+
+	
+
+Untested
+
+
+
+
+Windows Vista
+
+	
+
+Windows Vista (x86) SP2 or higher
+
+	
+
+11-Apr-17
+
+	
+
+Untested
+
+
+
+
+Windows Vista (x64) SP2 or higher
+
+	
+
+11-Apr-17
+
+	
+
+Untested
+
+
+
+
+Windows 7
+
+	
+
+Windows 7 Home/Professional/Enterprise/Ultimate x86 SP1
+
+	
+
+14-Jan-20
+
+	
+
+Verified
+
+
+
+
+Windows 7 Home/Professional/Enterprise/Ultimate x64 SP1
+
+	
+
+14-Jan-20
+
+	
+
+Verified
+
+
+
+
+Windows 8/8.1
+
+	
+
+Windows 8 Professional/Enterprise x86
+
+	
+
+12-Jan-16
+
+	
+
+Verified
+
+
+
+
+Windows 8 Professional/Enterprise x64
+
+	
+
+12-Jan-16
+
+	
+
+Verified
+
+
+
+
+Windows 8.1 Professional/Enterprise x86
+
+	
+
+10-Jan-23
+
+	
+
+Verified
+
+
+
+
+Windows 8.1 Professional/Enterprise x64
+
+	
+
+10-Jan-23
+
+	
+
+Verified
+
+
+
+
+Windows 10
+
+	
+
+Windows 10 (All versions excluding Mobile)
+
+	
+
+Various*
+
+Windows 10: Home & Pro
+
+Windows 10: Enterprise & Education
+
+	
+
+Verified
+
+
+
+
+Windows 11
+
+	
+
+Windows 11 (All versions)
+
+	
+
+Undefined
+
+	
+
+Verified
+
+
+
+
+Windows 365
+
+	
+
+Windows 365
+
+	
+
+Undefined
+
+	
+
+Verified
+
+Windows Server Operating System Support
+
+OS Name
+
+	
+
+Version
+
+	
+
+Vendor Support End Date
+
+	
+
+ConnectWise Agent Compatibility
+
+
+
+
+Windows Server 2008
+
+	
+
+Windows Server 2008 Standard/Enterprise x86 SP2
+
+	
+
+14-Jan-20
+
+	
+
+Verified
+
+
+
+
+Windows Server 2008 Standard/Enterprise x64 SP2
+
+	
+
+14-Jan-20
+
+	
+
+Verified
+
+
+
+
+Windows Server 2008 R2
+
+	
+
+Windows Server 2008 R2 Standard/Enterprise x86
+
+	
+
+14-Jan-20
+
+	
+
+Verified
+
+
+
+
+Windows Server 2008 R2 Standard/Enterprise x64 SP1
+
+	
+
+14-Jan-20
+
+	
+
+Verified
+
+
+
+
+Windows Server 2012
+
+	
+
+Windows Server 2012
+
+	
+
+10-Oct-23
+
+	
+
+Verified
+
+
+
+
+Windows Server 2012 R2
+
+	
+
+Windows Server 2012 R2
+
+	
+
+10-Oct-23
+
+	
+
+Verified
+
+
+
+
+Windows Server 2016
+
+	
+
+Windows Server 2016
+
+	
+
+12-Jan-27
+
+	
+
+Verified
+
+
+
+
+Windows Server 2019
+
+	
+
+Windows Server 2019
+
+	
+
+09-Jan-29
+
+	
+
+Verified
+
+
+
+
+Windows Server 2022
+
+	
+
+Windows Server 2022
+
+	
+
+14-Oct-31
+
+	
+
+Verified
+
+
+
+
+Microsoft Windows Server 2025 Standard
+
+	
+
+Microsoft Windows Server 2025 Standard
+
+	
+
+Undefined
+
+	
+
+Verified
+
+
+
+
+Microsoft Azure Stack HCI
+
+	
+
+Microsoft Azure Stack HCI
+
+	
+
+Undefined
+
+	
+
+Verified
+
+Supported Mac 64-bit* OS X versions 
+
+The macOS agent version 3.1.1 and above is a native agent, supported on both Apple silicon and Intel-based macOS devices.
+
+Hardware Requirement 
+CPU: Pentium 4 or Apple silicon or comparable processor.
+RAM: 2 GB and above.
+Disk Storage: 1.5 GB on the drive where the agent will be installed.
+
+Disk storage for auto-updating agents: An additional 2 GB of storage should always be available on the machine for the agent to get auto-updated.
+
+Note: Not meeting the above requirements may result in failure of agent installation/auto-update.
+
+Operating System Compatibility 
+
+OS Name
+
+	
+
+Release Name
+
+	
+
+ConnectWise Agent Compatibility
+
+
+
+
+Mac OS X 10.0
+
+	
+
+Cheetah
+
+	
+
+Untested
+
+
+
+
+Mac OS X 10.1
+
+	
+
+Puma
+
+	
+
+Untested
+
+
+
+
+Mac OS X 10.2
+
+	
+
+Jaguar
+
+	
+
+Untested
+
+
+
+
+Mac OS X 10.3
+
+	
+
+Panther
+
+	
+
+Untested
+
+
+
+
+Mac OS X 10.4
+
+	
+
+Tiger
+
+	
+
+Untested
+
+
+
+
+Mac OS X 10.5.8
+
+	
+
+Leopard
+
+	
+
+Untested
+
+
+
+
+Mac OS X 10.6.8
+
+	
+
+Snow Leopard
+
+	
+
+Untested
+
+
+
+
+Mac OS X 10.7.5
+
+	
+
+Lion
+
+	
+
+Untested
+
+
+
+
+Mac OS X 10.8
+
+	
+
+Mountain Lion
+
+	
+
+Untested
+
+
+
+
+Mac OS X 10.9
+
+	
+
+Mavericks
+
+	
+
+Untested
+
+
+
+
+Mac OS X 10.10.5
+
+	
+
+Yosemite
+
+	
+
+Untested
+
+
+
+
+Mac OS X 10.11
+
+	
+
+El Capitan
+
+	
+
+Untested
+
+
+
+
+MacOS 10.12
+
+	
+
+Sierra
+
+	
+
+Untested
+
+
+
+
+MacOS 10.13
+
+	
+
+High Sierra
+
+	
+
+Verified
+
+
+
+
+MacOS 10.14
+
+	
+
+Mojave
+
+	
+
+Verified
+
+
+
+
+MacOS 10.15
+
+	
+
+Catalina
+
+	
+
+Verified
+
+
+
+
+MacOS 11
+
+	
+
+Big Sur
+
+	
+
+Verified
+
+
+
+
+MacOS 12
+
+	
+
+Monterey
+
+	
+
+Verified
+
+
+
+
+MacOS 13
+
+	
+
+Ventura
+
+	
+
+Verified
+
+
+
+
+MacOS 14
+
+	
+
+Sonoma
+
+	
+
+Verified
+
+
+
+
+MacOS 15
+
+	
+
+Sequoia
+
+	
+
+Verified
+
+
+
+
+MacOS 26
+
+	
+
+Tahoe
+
+	
+
+Verified
+
+*32-bit versions are not supported. To find out what version you are running, see How to tell if your Intel-based Mac has a 32-bit or 64-bit processor on the Mac Support website.
+
+Note: Our Macintosh desktop agent is an Apple-certified agent setup, digitally signed for Macintosh 64-bit systems running the OS X versions listed above. As mentioned above, 32-bit versions are not supported.
+
+Linux Compatibility
+Servers only 64-bit with kernel version 2.6 and above
+Hardware Requirement
+CPU: Pentium 4 or comparable processor.
+RAM: 2 GB and above.
+Disk Storage: 1.5 GB on the drive where the agent will be installed.
+
+Disk storage for auto-updating agents: An additional 2 GB of storage should always be available on the machine for the agent to get auto-updated.
+
+Note: Not meeting the above requirements may result in failure of agent installation/auto-update.
+
+Software Requirement
+Install the curl library (apt-get install libcurl4).
+Install bzip2 (apt-get install bzip2) or  zip (apt-get install zip)
+Remote assistance is integrated with ScreenConnect, which requires OpenJDK 9 or above. Please reference System Requirements.
+GLIBC 2.14 or above (Run the command to check GLIBC version “sudo ldd –-version”)
+
+Note: The Linux operating systems mentioned above support the following proxy types: HTTP, HTTP1, SOCKS4, SOCKS4A and SOCKS5.
+
+Operating System Compatibility
+
+OS Type
+
+	
+
+OS version
+
+	
+
+Vendor Support End of Life
+
+	
+
+Release Name
+
+	
+
+ConnectWise Agent Compatibility
+
+
+
+
+Ubuntu
+
+	
+
+14.04 LTS
+
+	
+
+30-April-2024
+
+	
+
+Trusty Tahr
+
+	
+
+Untested
+
+
+
+
+Ubuntu
+
+	
+
+16.04 LTS
+
+	
+
+30-April-2026
+
+	
+
+Xenial Xerus
+
+	
+
+Verified
+
+
+
+
+Ubuntu
+
+	
+
+18.04 LTS
+
+	
+
+30-April-2028
+
+	
+
+Bionic Beaver
+
+	
+
+Verified
+
+
+
+
+Ubuntu
+
+	
+
+20.04 LTS
+
+	
+
+30-April-2030
+
+	
+
+Focal Fossa
+
+	
+
+Verified
+
+
+
+
+Ubuntu
+
+	
+
+21.04
+
+	
+
+20-Jan-2022
+
+	
+
+Hirsute Hippo
+
+	
+
+Verified
+
+
+
+
+Ubuntu
+
+	
+
+22.04 LTS
+
+	
+
+21-April-2027
+
+	
+
+Jammy Jellyfish
+
+	
+
+Verified
+
+
+
+
+Ubuntu
+
+	
+
+23.04
+
+	
+
+20-Jan-2024
+
+	
+
+Lunar Lobster
+
+	
+
+Verified
+
+
+
+
+Ubuntu
+
+	
+
+24.04
+
+	
+
+25-Apr-2029
+
+	
+
+Noble Numbat
+
+	
+
+Verified
+
+
+
+
+Ubuntu
+
+	
+
+25.04
+
+	
+
+17-Jan-2026
+
+	
+
+Plucky Puffin
+
+	
+
+Verified
+
+
+
+
+Ubuntu
+
+	
+
+25.10
+
+	
+
+01-Jul-2026
+
+	
+
+Questing Quokka
+
+	
+
+Emerging
+
+
+
+
+Fedora
+
+	
+
+38
+
+	
+
+May-2024
+
+	
+
+ 
+
+	
+
+Verified
+
+
+
+
+Fedora
+
+	
+
+39
+
+	
+
+26-Nov-2024
+
+	 	
+
+Unverified
+
+
+
+
+Fedora
+
+	
+
+40
+
+	
+
+13-May-2025
+
+	 	
+
+Unverified
+
+
+
+
+Fedora
+
+	
+
+41
+
+	
+
+19-Nov-2025
+
+	 	
+
+Unverified
+
+
+
+
+Fedora
+
+	
+
+42
+
+	
+
+13-May-2025
+
+	
+
+Adams
+
+	
+
+Unverified
+
+
+
+
+Red Hat Enterprise Linux
+
+	
+
+9.2
+
+	
+
+31-May-2027
+
+	
+
+Plow
+
+	
+
+Verified
+
+
+
+
+Red Hat Enterprise Linux
+
+	
+
+8.x
+
+	
+
+31-May-2024
+
+	
+
+Ootpa
+
+	
+
+Verified
+
+
+
+
+Red Hat Enterprise Linux
+
+	
+
+7.x
+
+	
+
+06-Aug-2019
+
+	
+
+Maipo
+
+	
+
+Untested
+
+
+
+
+Red Hat Enterprise Linux
+
+	
+
+6.x
+
+	
+
+10-May-2016
+
+	
+
+Santiago
+
+	
+
+Requires GLIBC 2.14
+
+
+
+
+CentOS Linux Release
+
+	
+
+7.x
+
+	
+
+30-June-2024
+
+	
+
+Core
+
+	
+
+Untested
+
+
+
+
+CentOS Linux Release
+
+	
+
+6.x
+
+	
+
+30-Nov-2020
+
+	
+
+Final
+
+	
+
+Untested
+
+
+
+
+Kali GNU/Linux
+
+	
+
+ 
+
+	
+
+ 
+
+	
+
+ 
+
+	
+
+Verified
+
+
+
+
+openSUSE
+
+	
+
+15.x
+
+	
+
+30-Apr-2026
+
+	
+
+Leap
+
+	
+
+Verified
+
+
+
+
+SUSE Linux Enterprise Server
+
+	
+
+12
+
+	
+
+30-Jun-2022
+
+	
+
+Server 12
+
+	
+
+Verified
+
+
+
+
+SUSE Linux Enterprise Server
+
+	
+
+15
+
+	
+
+31-Jul-2034
+
+	
+
+Server 15
+
+	
+
+Verified
+
+
+
+
+Linux Mint
+
+	
+
+20.3
+
+	
+
+30-Apr-2025
+
+	
+
+Una
+
+	
+
+Verified
+
+
+
+
+Linux Mint
+
+	
+
+21.2
+
+	
+
+30-Apr-2027
+
+	
+
+Victoria
+
+	
+
+Verified
+
+
+
+
+Rocky Linux
+
+	
+
+8.8
+
+	
+
+31-May-2024
+
+	
+
+Green Obsidian
+
+	
+
+Verified
+
+
+
+
+Rocky Linux
+
+	
+
+9.1
+
+	
+
+31-May-2027
+
+	
+
+Blue Onyx​
+
+	
+
+Verified
+
+
+
+
+Rocky Linux
+
+	
+
+10
+
+	
+
+31-May-2030
+
+	
+
+RL10
+
+	
+
+Emerging
+
+
+
+
+Debian 8
+
+	
+
+8.0
+
+	
+
+June-2018
+
+	
+
+Jessie
+
+	
+
+Verified
+
+
+
+
+Debian 9
+
+	
+
+9.0
+
+	
+
+July-2020
+
+	
+
+Stretch
+
+	
+
+Verified
+
+
+
+
+Debian 10
+
+	
+
+10.0
+
+	
+
+Sept-2022
+
+	
+
+Buster
+
+	
+
+Verified
+
+
+
+
+Debian 11
+
+	
+
+11.0
+
+	
+
+July-2024
+
+	
+
+Bullseye
+
+	
+
+Verified
+
+
+
+
+Debian 12
+
+	
+
+12.0
+
+	
+
+30-Jun-2028
+
+	
+
+Bookworm
+
+	
+
+Verified
+
+
+
+
+Debian 13
+
+	
+
+13.x
+
+	
+
+Until 2030
+
+	
+
+Trixie
+
+	
+
+Emerging
+
+
+
+
+AlmaLinux
+
+	
+
+8.8
+
+	
+
+Until 2029
+
+	
+
+Sapphire Caracal
+
+	
+
+Verified
+
+
+
+
+AlmaLinux
+
+	
+
+8.9
+
+	
+
+Until 2029
+
+	
+
+Midnight Oncilla
+
+	
+
+Verified
+
+
+
+
+AlmaLinux
+
+	
+
+9.1
+
+	
+
+Until 2032
+
+	
+
+Lime Lynx
+
+	
+
+Verified
+
+
+
+
+AlmaLinux
+
+	
+
+9.3
+
+	
+
+Until 2032
+
+	
+
+Shamrock Pampas Cat
+
+	
+
+Verified
+
+
+
+
+Amazon Linux
+
+	
+
+2
+
+	
+
+30-Jun-2026
+
+	
+
+AL2
+
+	
+
+Verified
+
+
+
+
+Amazon Linux
+
+	
+
+2023
+
+	
+
+30-Jun-2027
+
+	
+
+AL2023
+
+	
+
+Verified
+
+
+
+
+VyOS
+
+	
+
+1.3x
+
+	
+
+01-Mar-2025
+
+	
+
+Equules
+
+	
+
+Verified
+
+VMWare Compatibility
+Requirement
+The ESXi or vCenter can be monitored from a probe machine (Windows OS) where the agent is installed.
+ESXi / vCenter should be accessible from the Probe machine.
+VMware tools are required to show the host-guest relationship data, perform power actions like shutting down, and collect certain performance data, such as Virtual machine memory control.
+Operating System Compatibility
+
+Product Release
+
+	
+
+VMWare Support End of Life
+
+	
+
+ConnectWise Agent Compatibility
+
+
+
+
+ESX 4.x
+
+	
+
+21-05-2014
+
+	
+
+Untested
+
+
+
+
+ESXi 4.x
+
+	
+
+21-05-2014
+
+	
+
+Untested
+
+
+
+
+ESXi 5.0
+
+	
+
+24-08-2016
+
+	
+
+Untested
+
+
+
+
+ESXi 5.1
+
+	
+
+24-08-2016
+
+	
+
+Untested
+
+
+
+
+ESXi 5.5
+
+	
+
+19-09-2018
+
+	
+
+Verified
+
+
+
+
+ESXi 6.0
+
+	
+
+12-03-2020
+
+	
+
+Verified
+
+
+
+
+ESXi 6.5
+
+	
+
+15-10-2022
+
+	
+
+Verified
+
+
+
+
+ESXi 6.7
+
+	
+
+15-10-2022
+
+	
+
+Verified
+
+
+
+
+ESXi 7.0
+
+	
+
+02-04-2025
+
+	
+
+Verified
+
+
+
+
+ESXi 8.x
+
+	
+
+ 
+
+	
+
+Verified
+
+
+
+
+vCenter Server 4.x
+
+	
+
+21-05-2014
+
+	
+
+Untested
+
+
+
+
+vCenter Server 5.0 and 5.1
+
+	
+
+24-08-2016
+
+	
+
+Untested
+
+
+
+
+vCenter Server 5.5
+
+	
+
+19-09-2018
+
+	
+
+Verified
+
+
+
+
+vCenter Server 6.0
+
+	
+
+12-03-2020
+
+	
+
+Verified
+
+
+
+
+vCenter Server 6.5
+
+	
+
+15-10-2022
+
+	
+
+Verified
+
+
+
+
+vCenter Server 6.7
+
+	
+
+15-10-2022
+
+	
+
+Verified
+
+
+
+
+vCenter Server 7.0
+
+	
+
+02-04-2025
+
+	
+
+Verified
+
+Agent Tamper Protection Firewall Exclusions
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Firewall Exclusions
+Uninstalling an Agent
+This guide includes the steps required to uninstall an agent from a desktop or server in RMM or Asio via the Devices page.
+Cloud Services
+Agent Tamper Protection
+Agents on Windows devices utilize tamper protection to restrict users from stopping the agent core services.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

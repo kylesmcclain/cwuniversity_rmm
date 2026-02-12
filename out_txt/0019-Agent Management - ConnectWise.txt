@@ -1,0 +1,57 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Agents   Agent Management
+Agent Management
+Last updated
+Dec 3, 2025
+Overview
+
+Click on the title of an article linked below and learn more about Agent Management.
+
+The All articles tab lists each article published within this guide. The Featured articles tab organizes those articles into the following categories: most popular, highest rated, recently updated, and recently added. 
+
+All articles
+Featured articles
+Assign device to another site (Move Agent)
+Changing Proxy Settings
+Golden Image Support
+Switching the device type for an Endpoint
+
+ 
+
+Agent Feature Comparision Assign device to another site (Move Agent)
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Changing Proxy Settings
+Switching the device type for an Endpoint
+Assign device to another site (Move Agent)
+Golden Image Support
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

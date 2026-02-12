@@ -1,0 +1,181 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Alerts
+Alerts
+Last updated
+Oct 15, 2025
+Table of contents
+Overview
+ Feature Comparison
+Alert Classification
+Documentation
+Overview
+
+Devices with the Asio agent installed can leverage ConnectWise RMM™ remote monitoring architecture to monitor servers, desktops, and VMs, supporting a variety of common protocols. This section includes information on intelligent alerts, custom monitors, suspension, and more.
+
+When the agent is installed, it performs a scan to identify services, ports, and processes. Based on the endpoint type and RMM product tier (Core, Standard, Premium), the system applies a tailored set of Intelligent Alerts. You can then:
+
+Create partner-defined alerts using custom monitors.
+Create automation tasks triggered by alert conditions.
+Customize alert output and configure email notifications for critical alerts.
+Apply suspensions to temporarily suppress alerts during maintenance or testing.
+
+Note: Use email alerts selectively to avoid inbox clutter. For non-critical conditions, rely on ticketing and dashboard notifications.
+
+ Feature Comparison
+Feature	Purpose	Trigger Source	Actions Enabled
+
+
+Monitors
+
+	
+
+Defined conditions to observe endpoints (e.g., CPU usage, service status).
+
+	
+
+Endpoint metrics or system activity
+
+	
+
+Detect issues, trigger alerts, and initiate workflows.
+
+
+
+
+Custom Monitors
+
+	
+
+Partner-defined monitors for specialized conditions beyond default alerts.
+
+	
+
+Manual configuration
+
+	
+
+Expand monitoring scope, tailor alert logic.
+
+
+
+
+Intelligent Alerts
+
+	
+
+Auto-applied alert conditions based on endpoint type and RMM tier.
+
+	
+
+Monitors or system scans
+
+	
+
+Notify users, route tickets, trigger automation.
+
+
+
+
+Automation
+
+	
+
+Execute tasks/scripts in response to alerts or monitor triggers.
+
+	
+
+Configurations in Intelligent Alerts or Monitors
+
+	
+
+Run remediation scripts, suspend alerts, and create tickets.
+
+
+
+
+Suspensions
+
+	
+
+Temporarily suppress alerts during maintenance or exception periods.
+
+	
+
+Manual or automated trigger
+
+	
+
+Pause alerting logic, prevent ticket generation.
+
+Alert Classification
+
+Alerts are classified into two categories:
+
+NOC Defined & Managed Alerts - These alerts are pre-defined by the agent software and act as default monitors.
+Partner Defined & Managed Alerts - These alerts are created in the monitoring system and allow you to expand default monitors for a more robust and versatile monitoring system.
+Documentation
+
+Click on the title of an article to learn more about monitoring, custom monitors, and suspension in ConnectWise RMM.
+
+Custom Monitors
+Build your own alert monitors using the variety of monitor templates in ConnectWise RMM. Monitors use these templates to trigger alerts when issues are identified based on various values that are collected from the endpoint. These alerts are generated in near real-time to notify of problems observed.
+Application Monitor
+Asset Monitor
+Complex Monitor
+CPU Monitor
+Custom Field Monitor
+Show all
+Intelligent Alerts
+Intelligent Alerts in ConnectWise RMM are endpoint-specific and generate an appropriate alert based on a predefined set of monitoring conditions.
+ConnectWise RMM Intelligent Alerts Monitoring Conditions
+Intelligent Alerts - Threshold definitions
+Preview Alerts
+Custom Ticket Template for Custom Monitors
+Custom monitors are personalized templates that can trigger alerts upon detecting issues using data collected from the endpoint. This article explains how to customize the ticket template for custom monitors.
+Network Availability Monitoring
+If our Data Center cannot reach the device after three consecutive tries (using Windows ICMP), a Device Down ticket is generated.  The agent pings the IP address at two-minute intervals and reduces the number of tickets created if a network device is unreachable.
+Network Availability Monitoring: Known Issues
+S.M.A.R.T Monitoring
+S.M.A.R.T. (Self-Monitoring Analysis and Reporting Technology) monitors a hard drive for predictive failures. Our agent automatically monitors the S.M.A.R.T. attributes, and if any attribute for which the S.M.A.R.T. status is not OK, it reports on the device's detail page.
+Suspensions
+Implement suspension rules if you want to stop generating alerts, either temporarily or indefinitely. The alert suspension feature is useful to accommodate the suspension of alerts in such periods of maintenance or testing.
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Custom Monitors
+Build your own alert monitors using the variety of monitor templates in ConnectWise RMM. Monitors use these templates to trigger alerts when issues ar...
+S.M.A.R.T Monitoring
+S.M.A.R.T. (Self-Monitoring Analysis and Reporting Technology) monitors a hard drive for predictive failures. Our agent automatically monitors the S.M...
+Intelligent Alerts
+Intelligent Alerts in ConnectWise RMM are endpoint-specific and generate an appropriate alert based on a predefined set of monitoring conditions.
+Network Availability Monitoring
+If our Data Center cannot reach the device after three consecutive tries (using Windows ICMP), a Device Down ticket is generated.  The agent pings the...
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

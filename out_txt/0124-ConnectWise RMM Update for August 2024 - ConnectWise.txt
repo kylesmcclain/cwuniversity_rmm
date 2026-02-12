@@ -1,0 +1,83 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   ConnectWise RMM Release Notes   ConnectWise RMM Update for August 2024
+ConnectWise RMM Update for August 2024
+Last updated
+Oct 8, 2024
+Table of contents
+Overview 
+What's new in ConnectWise RMM?
+August 27th, 2024
+Patching
+August 26th, 2024
+Alerts
+Issues Addressed
+August 21st, 2024
+Issues Addressed
+August 20th, 2024
+Agent
+Issues Addressed
+August 14th, 2024
+Issues Addressed
+August 13th, 2024
+Reporting
+Issues Addressed
+August 12th, 2024
+Alerts
+Issues Addressed
+August 9th, 2024
+Automation
+August 8th, 2024
+Patching
+August 7th, 2024
+Issues Addressed
+Overview 
+
+This page provides information on the latest enhancements and features for ConnectWise RMM.
+
+What's new in ConnectWise RMM?
+August 27th, 2024
+August 26th, 2024
+August 21st, 2024
+August 20th, 2024
+August 14th, 2024
+August 13th, 2024
+August 12th, 2024
+August 9th, 2024
+August 8th, 2024
+August 7th, 2024
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ConnectWise RMM Update for January 2024
+ConnectWise RMM Update for February 2024
+ConnectWise RMM Update for March 2024
+ConnectWise RMM Update for April 2024
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

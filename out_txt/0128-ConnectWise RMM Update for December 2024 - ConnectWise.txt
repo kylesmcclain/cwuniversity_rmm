@@ -1,0 +1,94 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   ConnectWise RMM Release Notes   ConnectWise RMM Update for December 2024
+ConnectWise RMM Update for December 2024
+Last updated
+Apr 3, 2025
+Table of contents
+Overview 
+Announcements
+Legacy Pages and reports will be deprecated in early January.
+Help Desk Services will be offline on December 12th.
+What's new in ConnectWise RMM?
+December 20, 2024
+Portal
+Legacy Menus Deprecation
+December 19, 2024
+Asio
+User Experience for Company, Site, and Contact Forms
+Bug Fix
+December 17, 2024
+RMM Agent Rollout
+Issues Addressed
+December 9, 2024
+Agent
+Alerting
+Issues Addressed
+December 5, 2024
+PSA Integration
+Issues Addressed
+Overview 
+
+This page provides information on the latest enhancements and features for ConnectWise RMM.
+
+Announcements
+Legacy Pages and reports will be deprecated in early January.
+
+The following legacy reports, pages, and options will not be visible to any users:
+
+Reports > Asio > Custom Reports
+Reports > Asio > Scripting
+Reports > Asio > Audits > Intellimon Alert Suspension report
+Reports > Asio > Backup >Mac Time Machine Backup Report
+Chat button on Top Navigation pane
+Help Desk Services will be offline on December 12th.
+
+Our Help Desk Services Partner Line Chat, NOC Service Partner Chat and our BCDR Service Partner Chat will be offline for a few days as we transition to a new platform.
+
+During this period, if you require assistance with the Help Desk Service, please reach out to our Partner Care Team via email at ExpertServicesHelpDesk@connectwise.com or by phone at +1 (855) 342-8432 (Toll-Free) or +1 (628) 210-7510 (Local).
+
+NOC and BCDR by opening a ticket through the portal or by calling (+1) 914-219-1881 and selecting the appropriate team
+
+We apologize for any inconvenience this may cause and appreciate your understanding as we work to enhance our services for you.
+
+What's new in ConnectWise RMM?
+December 20, 2024
+December 19, 2024
+December 17, 2024
+December 9, 2024
+December 5, 2024
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ConnectWise RMM Update for January 2024
+ConnectWise RMM Update for February 2024
+ConnectWise RMM Update for March 2024
+ConnectWise RMM Update for April 2024
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

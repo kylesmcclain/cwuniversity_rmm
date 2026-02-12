@@ -1,0 +1,96 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   ConnectWise RMM Release Notes   ConnectWise RMM Update for September 2024
+ConnectWise RMM Update for September 2024
+Last updated
+Oct 1, 2024
+Table of contents
+Overview 
+Announcements  
+Left Navigation Menu Realignment
+What's new in ConnectWise RMM?
+September 27th, 2024
+Automation
+September 24th, 2024
+Issues Addressed
+September 20th, 2024
+Reports
+Issues Addressed
+September 18th, 2024
+Issues Addressed
+September 16th, 2024
+Issues Addressed
+September 10th, 2024
+Issues Addressed
+September 5th, 2024
+Automation
+Device Groups
+Issues Addressed
+Overview 
+
+This page provides information on the latest enhancements and features for ConnectWise RMM.
+
+Announcements  
+Left Navigation Menu Realignment
+
+On October 1, 2024, the left-hand navigation within the ConnectWise Asio™ platform will be changing, offering an enhanced navigation experience, below are some of the changes you can expect to see in your menu: 
+
+Consolidation of the current Devices, Quick Access, Alerting, Patching, and Communicator screens under a new Endpoints menu 
+
+Creation of a new Integrations menu 
+
+Moving the Policies and Packages screens from Settings into Endpoints 
+
+Moving the BrightGauge menu into the Reports menu 
+
+Moving the Tickets menu into a new Service Delivery menu 
+
+Additional menu and screen names will be updated for clarity 
+
+No action is required on your part; however, we do suggest familiarizing yourself with these changes and preparing your teams to limit navigation challenges or confusion in the days following the release.
+
+For more information regarding these changes, please review the Left Navigation Menu changes FAQ.
+
+What's new in ConnectWise RMM?
+September 27th, 2024
+September 24th, 2024
+September 20th, 2024
+September 18th, 2024
+September 16th, 2024
+September 10th, 2024
+September 5th, 2024
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ConnectWise RMM Update for January 2024
+ConnectWise RMM Update for February 2024
+ConnectWise RMM Update for March 2024
+ConnectWise RMM Update for April 2024
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

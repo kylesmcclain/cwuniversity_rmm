@@ -1,0 +1,752 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Alerts   Intelligent Alerts
+Intelligent Alerts
+Last updated
+Jan 22, 2026
+Table of contents
+Overview
+User Access
+Alert Management - Intelligent Automation
+Alert Management - Intelligent Alerts
+Manage Intelligent Alerts
+All Endpoint Monitoring Conditions
+Download a Visualization
+Company and Site Monitoring
+Endpoint Monitoring Conditions
+Column Descriptions 
+View Options
+Configuration and Output
+Automation Tasks
+Intelligent Alert Mapper
+Enable the Mapper
+Mapper Field Descriptions
+Monitor Output
+Overview
+
+ConnectWise RMM™ intelligent alerts are a plug-and-play monitoring system that automatically applies predefined conditions based on the endpoint type (server, desktop, etc.). 
+
+When the ConnectWise RMM agent is installed on an endpoint, the agent performs an automatic scan to identify active services, open ports, and running processes. Based on this scan and the RMM product package in use (Core, Standard, or Premium), the system applies a tailored set of intelligent alerts. 
+
+Please refer to Intelligent Alerts Conditions for more detailed information about each condition.
+
+User Access
+
+Refer to Application Roles for more information about adding Alert Management permission to a custom application role. The following default roles have access to the Intelligent Alerts and Automation screens:
+
+Alert Management - Intelligent Automation
+
+Application Role >
+
+	
+
+Super Admin
+
+	
+
+Manager
+
+	
+
+Technician
+
+	
+
+Office Staff
+
+	
+
+Sales
+
+	
+
+Client Site Manager
+
+
+
+
+Update
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+OFF
+
+	
+
+OFF
+
+
+
+
+Delete
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+OFF
+
+	
+
+OFF
+
+
+
+
+View
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+OFF
+
+	
+
+OFF
+
+
+
+
+Create
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+OFF
+
+	
+
+OFF
+
+Alert Management - Intelligent Alerts
+
+Application Role >
+
+	
+
+Super Admin
+
+	
+
+Manager
+
+	
+
+Technician
+
+	
+
+Office Staff
+
+	
+
+Sales
+
+	
+
+Client Site Manager
+
+
+
+
+Update
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+OFF
+
+	
+
+OFF
+
+
+
+
+Delete
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+OFF
+
+	
+
+OFF
+
+
+
+
+Create
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+OFF
+
+	
+
+OFF
+
+
+
+
+View
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+OFF
+
+	
+
+OFF
+
+
+
+
+Mapper
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+OFF
+
+	
+
+OFF
+
+Manage Intelligent Alerts
+
+The Intelligent Alerts page provides centralized visibility and control over monitoring conditions across endpoints, companies, and sites. You can access this feature from multiple areas of the platform, each offering a different scope of visibility.
+
+Note: The displayed alert data is context-sensitive based on the navigation path. However, automations, mappings, and monitor output settings are global—changes made in Edit Intelligent Alert apply across all applicable endpoints and devices.
+
+Scope
+
+	
+
+Path
+
+
+
+
+All endpoint monitoring
+
+	
+
+Endpoints > Alerts > Intelligent Alerts
+
+
+
+
+Company and site monitoring
+
+	
+
+Clients > Companies > [select a company] > Monitoring > Intelligent Alerts
+
+
+
+
+Endpoint monitoring
+
+	
+
+Endpoints > Devices > [select a device] > Monitoring > Intelligent Alerts
+
+All Endpoint Monitoring Conditions
+
+Note: The monitoring conditions available on this page are determined by your ConnectWise RMM product package (Core, Standard, Premium).
+
+Navigate to Endpoints > Alerts > Intelligent Alerts to access this view.
+
+This tab provides a unified list of all preconfigured intelligent alert conditions. It serves as the central hub for managing alert logic, routing, and automation. To learn more, refer to the Descriptions and Configuration sections below.
+
+Intelligent alert conditions are auto-applied based on endpoint type (e.g., server, desktop, VM). 
+Click the condition name to customize alert actions, such as automation or ticket generation.
+Changes made in Edit Intelligent Alert apply across all applicable endpoints and devices.
+
+Download a Visualization
+Navigate to Endpoints > Alerts > Intelligent Alerts.
+Click the kebab icon.
+
+Select your preferred file type from the drop-down.
+Company and Site Monitoring
+
+After the agent is installed for a device associated with an Asio company, you can navigate to the company detail page and manage the intelligent alert monitoring conditions for all endpoints within the company. To learn more, refer to Intelligent Alert Configuration.
+
+Navigate to Clients > Companies > [select a company] > Monitoring > Intelligent Alerts
+
+To manage at the site level, first select a company and then select the site. From the site detail page, click Monitoring > Intelligent Alerts.
+Click the condition name to customize alert actions, such as automation or ticket generation.
+Changes made in Edit Intelligent Alert apply across all applicable endpoints and devices.
+From this view, you can also manage Suspension and Custom Monitors for the company level.
+
+Endpoint Monitoring Conditions
+
+After the agent is installed on a device, you can access a detailed view of intelligent alerts specific to that endpoint. To learn more, refer to the Descriptions and Configuration sections below.
+
+Navigate to Endpoints > Devices > Device Detail > Monitoring > Intelligent Alerts to view this page.
+
+This page provides a highly targeted view of alerting behavior and automation for the selected endpoint. Technicians and users with access to Intelligent Alerts can:
+
+Review active alerts assigned to the endpoint. 
+Customize alert behavior for the endpoint.
+Assign automation tasks to streamline remediation.
+Suspend alerts during maintenance or exception periods.
+
+Column Descriptions 
+
+Descriptions for Intelligent Alerts apply to all levels (e.g., company, device, all endpoints).
+
+Column	Description
+
+
+Name
+
+	
+
+Title of the condition or rule. Click to edit mapping, automation, monitor output, or view monitoring condition details. 
+
+
+
+
+Family
+
+	
+
+Category of the alert (e.g., Hardware, Backup, Server, Email).
+
+
+
+
+Severity
+
+	
+
+Predefined severity level of the condition.
+
+
+
+
+Last 7 Days Alert Trend
+
+	
+
+Visual trend of alert activity. Hover for open/closed counts. 
+
+🟩 No alert
+🟦 Closed same day
+🟥 Open >1 day
+
+
+
+
+Applicable On
+
+	
+
+Endpoint type the alert applies to. For example, a server or a desktop.
+
+
+
+
+NOC Service
+
+	
+
+Indicates if proactive troubleshooting by NOC is enabled. If disabled, NOC does not perform proactive troubleshooting for the associated condition.
+
+Note: This is applicable only if there is a policy with NOC Services Enabled. To learn more, review the RMM Site Configuration Policy details.
+
+
+
+
+Default Automation
+
+	
+
+Shows if there are any default automations configured to resolve issues using the ConnectWise Default Automation solution.
+
+
+
+
+Condition ID
+
+	
+
+This is an informational field for NOC reference.
+
+
+
+
+Gear icon 
+
+	
+
+Indicates automation is configured in response to the monitoring condition. Click to view or edit the configured task.
+
+View Options
+
+Option
+
+	
+
+Description
+
+
+
+
+Search
+
+	
+
+Search by condition name, family, or severity.
+
+
+
+
+Filter
+
+	
+
+Apply filters by severity, family, or configurable conditions.
+
+
+
+
+Columns
+
+	
+
+Show/hide columns based on preference.
+
+
+
+
+View
+
+	
+
+Adjust row height (Standard, Compact, Comfortable).
+
+
+
+
+Export
+
+	
+
+Download visible conditions as CSV.
+
+Note: This feature enables you to export filtered data. Clear all filters if you need to export all alert conditions.
+
+
+
+
+Edit View
+
+	
+
+Customize layout and pod visibility.
+
+
+
+
+Export Charts
+
+	
+
+Click the actions icon next to the visualization pods to export the chart as a JPEG or PNG.
+
+Configuration and Output
+
+Each alert condition is pre-configured based on endpoint type. You can set up automated tasks within the Edit Intelligent Alert window. Changes made in Edit Intelligent Alert apply to all applicable endpoints and devices.
+
+Automation Tasks
+
+Follow the steps below to configure an automation task for an intelligent alert:
+
+Navigate to Endpoints > Alerts > Intelligent Alerts.
+Click the condition name in the Intelligent Alert list view.
+
+In the Automation pod, click Add Automation.
+
+Search for and select the task you want to enable for this condition. If you do not have an automation for this condition yet, you can create one in Automation > Tasks and then return here to select it. Please note the following about automations:
+The list of available automations is populated based on your permissions.
+Users with permissions to create automation tasks can save the automation for the monitoring condition.
+The system displays automation tasks that do not require parameters. Please refer to these out-of-the-box (OOTB) automation tasks for parameterized scripts. All custom scripts/tasks created are available for selection.
+
+Click Select. 
+Click Select Targets to identify the specific resources this automation applies to.
+
+Sort endpoints by Companies, Sites, Device Groups, Devices, or All Resources using the radio buttons at the top. 
+Use checkboxes to select endpoints. 
+Tip: Selecting from Device Groups can help narrow down device types and preferences. This task applies to all future devices added to the device group.
+Click Save Selection.
+Click Save to finish editing the alert configuration.
+
+Intelligent Alert Mapper
+
+Note: This feature is applicable only for partners using ConnectWise PSA with Policies.
+
+The mapper functionality allows you to associate each Intelligent Alert—whether configurable or non-configurable—with specific attributes such as Service Board, Type, Sub-Type, and Item. This mapping enables differentiated handling of alerts based on monitoring conditions.
+
+Enable the Mapper
+
+Note: This functionality requires Alert Management - Intelligent Alert > Mapper permissions. Refer to the Intelligent Alerts permission comparison for more information.
+
+By default, the Mapper toggle is turned off. To activate it:
+
+Switch the Mapper toggle on. 
+Select the values from the drop-down. These selections override the PSA policy configuration. 
+
+Mapper Field Descriptions
+
+This feature is applicable only for partners using ConnectWise PSA with Policies.
+
+Field
+
+	
+
+Description
+
+
+
+
+Service Board
+
+	
+
+Set the service board the ticket is routed to upon creation.
+
+
+
+
+Type, Sub-Type, Item
+
+	
+
+Type → Sub-Type → Item: These fields are interdependent.
+
+Selecting a Type filters the available Sub-Types.
+Selecting a Sub-Type filters the available Items.
+Example: Choosing Tier 1 as the Type shows Sub-Types associated with Tier 1 only.
+
+
+
+Priority
+
+	
+
+Override the system's default ticket priority.
+
+
+
+
+Creation Status
+
+	
+
+Override the system's default creation status.
+
+
+
+
+Closure Status
+
+	
+
+Select one of the predefined statuses created by the RMM-PSA integration.
+
+Please note that only statuses marked as Closed appear in the drop-down menu.
+
+Monitor Output
+
+The Monitor Output functionality lets you control ticket generation behavior for intelligent alerts. 
+
+To select your ticket preference:
+
+Navigate to Endpoints > Alerts > Intelligent Alerts.
+Click on the Alert condition from the list that you want to turn ticket generation on/off for.
+In the Monitor Output section, click the Output drop-down.
+Select from the following options:
+Generate Ticket: A ticket is created immediately when the alert condition is met.
+Generate Ticket with Delay: A ticket is created after a specified delay (5-60 minutes). If the issue is resolved before the delay expires, no ticket is generated.
+Do Not Generate Ticket: No ticket is created, but the alert and any associated automations are still executed.
+
+Note: The Generate Ticket with Delay option is available for conditions with a closing condition. For other conditions, only the options Generate Ticket and Do not Generate Ticket are visible. In case of alert threshold conditions, the Monitor Output value applies to all the thresholds configured.
+
+VMware Monitor ConnectWise RMM Intelligent Alerts Monitoring Conditions
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ConnectWise RMM Intelligent Alerts Monitoring Conditions
+Intelligent Alerts - Threshold definitions
+Preview Alerts
+Custom Monitors
+Build your own alert monitors using the variety of monitor templates in ConnectWise RMM. Monitors use these templates to trigger alerts when issues ar...
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

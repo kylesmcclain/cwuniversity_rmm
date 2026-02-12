@@ -1,0 +1,74 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Command for Networks   Auvik TrafficInsights FAQs
+Auvik TrafficInsights FAQs
+Last updated
+Dec 3, 2024
+Table of contents
+Overview
+Questions and Answers
+What is happening with Auvik TrafficInsights?
+When is the Auvik TrafficInsights free trial ending?
+What does this mean for partners?
+Why is this moving from a free trial to a paid service?
+How much does it cost to enable Auvik TrafficInsights?
+How does someone agree to new terms and conditions of being billed?
+What is Auvik TrafficInsights?
+How does someone purchase Auvik TrafficInsights if they don’t have it today?
+Does anything with the application change?
+If a partner has NOT already signed up for the Auvik TrafficInsights add-on, do they get a free trial when they do?
+If a partner has 50 billable devices across a few sites, would the price increase for those 50 billable devices?
+Is there any difference for partners on legacy Command for Networks pricing?
+Overview
+
+This article answers frequently asked questions regarding Auvik TrafficInsights™.
+
+Questions and Answers
+What is happening with Auvik TrafficInsights?
+When is the Auvik TrafficInsights free trial ending?
+What does this mean for partners?
+Why is this moving from a free trial to a paid service?
+How much does it cost to enable Auvik TrafficInsights?
+How does someone agree to new terms and conditions of being billed?
+What is Auvik TrafficInsights?
+How does someone purchase Auvik TrafficInsights if they don’t have it today?
+Does anything with the application change?
+If a partner has NOT already signed up for the Auvik TrafficInsights add-on, do they get a free trial when they do?
+If a partner has 50 billable devices across a few sites, would the price increase for those 50 billable devices?
+Is there any difference for partners on legacy Command for Networks pricing?
+Auvik TrafficInsights Communicator User Guide
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Onboarding and Configuring the ConnectWise–Auvik Integration
+Auvik Pre-Defined Alerts and NOC Support
+Command for Networks Service Levels
+Auvik Device Management
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

@@ -1,0 +1,68 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Expert Services   Help Desk   Help Desk Partner Contact Procedures
+Help Desk Partner Contact Procedures
+Last updated
+Nov 26, 2025
+Table of contents
+Overview
+How to Contact Help Desk Services
+PSA Tickets
+Overview
+
+Your continued communication with ConnectWise Help Desk Services will make your client's experience a success. Knowing how to properly escalate Help Desk tickets and manage ticket queues reduces the time it takes to troubleshoot and resolve issues.
+
+To report issues with the Help Desk, use the ConnectWise Asio® Support page. This page allows you to contact the Help Desk team leads via chat.
+
+How to Contact Help Desk Services
+Select Support (top-right) in the Asio platform.
+
+
+Click Chat Now in the bottom-right corner on the next screen.
+
+Note: The chat is available Monday - Friday from 8 AM to 8 PM EST. 
+
+Fill out the required information with your contact details and then select the following from the dropdowns to get routed to the Help Desk Service Partner Line Team:
+
+
+PSA Tickets
+
+For issues with any Professional Services Automation (PSA) Integration, transmit tickets via select vendors, such as ConnectWise and Autotask. For details, see PSA Integration in the ConnectWise University.
+
+Help Desk Common Acronyms Help Desk Services - DUO User Administration
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Help Desk Activation Checklist
+Help Desk Best Practices
+Help Desk Success Checklist
+Use this checklist to help successfully integrate Help Desk to your operations and ensure seamless support for your end users.
+Activating Help Desk
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

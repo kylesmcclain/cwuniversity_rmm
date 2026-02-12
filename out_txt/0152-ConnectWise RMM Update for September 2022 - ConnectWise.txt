@@ -1,0 +1,144 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   ConnectWise RMM Release Notes   RMM Release Notes Archive   ConnectWise RMM Update for September 2022
+ConnectWise RMM Update for September 2022
+Last updated
+Sep 22, 2022
+Table of contents
+Overview
+Announcements
+ConnectWise RMM
+Agent and Platform
+Patching
+Reporting
+PSA Improvements
+Bug Fixes / Known Issues
+Overview
+
+The following enhancements, updates, and bug fixes are included in the September 2022 RMM Release. 
+
+Announcements
+
+Update for Acronis Cyber Protect Integration in October
+
+A new version of the Acronis Integration with ConnectWise Asio™ will be made available, with a vast change in the experience of integration configuration. Users will be able to configure the entire integration in the p, including mapping g of the sites. Partners will also be able to create a policy to deploy the Acronis agent on Windows devices and be able to see the status of their integrations in the BDR view on the Devices Page.
+
+Deprecation of monitoring conditions:
+
+We are deprecating the following monitoring condition from production.
+
+Server % disk space
+
+Server Disk space low
+
+The above monitoring conditions were offered as a part of the Partner defined disk space monitoring condition which can be customized.
+
+The following conditions will continue to alert for disk space issues on server endpoints
+
+Critically low disk space on the OS installed drive of Server
+
+Critically low disk space on the NON-OS installed drive of Server
+
+In you need any customization, a custom monitor for disk space can be created. This will trigger ticket notifications similarly to the deprecated condition. You will also get the added benefits of setting automation tasks on trigger, better customization features, and customized resolution conditions offered in the Disk monitor. Review the Disk monitor article for more information.
+
+Feature Update Automation
+
+Feature updates can now be Automated for deployment using the OS Patching Desktop policy. New options have been added to select Feature Update as a classification as well as a separate schedule for Feature update installation is added. The reboot to complete Feature update is also controlled by policy. A new condition for Feature Update failure will be released under Preview Alerts.
+
+Definition Update support to be removed from OS patching in October
+
+We will be removing the support for Definition updates from OS patching with the October 2022 release. Definition updates are automatically updated by Microsoft Defender Antivirus (formerly Windows Defender) so endpoints using Microsoft Defender as the primary Endpoint Security will not see any impact.
+
+A detailed FAQ will be shared soon
+
+Vendor Defined field monitor
+
+We are adding a new capability for adding a vendor-defined field monitor to generate an alert in the system when a value is updated by vendors via integrations. Based on the criteria defined for the monitor, an alert will trigger and execute any corresponding automation if that automation has been defined.
+
+ConnectWise RMM
+Agent and Platform
+
+Agent Update. A new agent, version: 2.1.805, will be released for the partners for Windows, MAC and Linux endpoints.
+
+Patching
+
+We've improved the page performance of the Patch Approvals page to fix cache loading issues faced by small number of partners.
+
+We've fixed an Assessment issue faced on Monterey OS due to system error "XType: com.apple.fonts is not accessible."
+
+We've fixed a deployment issue where patches were failing due to "Policy Timeout" errors.,
+
+Reporting
+
+The following reports will be deprecated from the Reports tab in the Asio Platform as the reports are for legacy features that are already deprecated in the system:
+
+Legacy Gateway Status Report
+
+WGAN Patch Deployment Report
+
+Windows 7 SP1 Installation Report
+
+VMware Executive Report
+
+PSA Improvements
+
+Notification Emails for Sync Failures
+
+Notification emails will be sent for the PSA sync failure for the ConnectWise Manage Integration. You will receive an immediate email notification when the overall integration has failed or is not syncing data.
+
+Partners receive one email notification once every 24 hours for any failed or pending ticket sync to ConnectWise Manage.
+
+Bug Fixes / Known Issues
+
+The following issues will be resolved with this month's release:
+
+Monitoring: We are resolving an issue where the disk monitor would trigger an alert incorrectly for the drive name which is not defined in the monitor.
+
+Service Monitoring: Resolved an issue in Services, when a custom monitor has been created and is in a stopped state, and no tickets have been created for them.
+
+Webroot: Resolved an issue where the Webroot AV information was incorrectly displayed on the Webroot Endpoint Protection Dashboard.
+
+Move Agent: Resolved an issue where endpoints that were configured to be moved from one site to another failed. The endpoints are now available to be rescheduled and configured for migration.
+
+Time Reduction in Loading Devices on the Resource Selector: For partners facing high wait times for loading devices under Device Groups on the Resource selector, we've made performance improvements that will significantly decrease the wait time when loading devices.
+
+VMware monitoring: Incorporated the changes to monitor the "hardwarestatusinfo" path as part of the MOB path issue.
+
+VmHost Device: Resolved an intermittent issue where VMHost Device failed to show when added from a devices page.
+
+ConnectWise RMM Update for August 2022 ConnectWise RMM Update for October 2022
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ConnectWise RMM Update for April 2022
+ConnectWise RMM Update for March 2022
+ConnectWise RMM Update for February 2022
+ConnectWise RMM Update for January 2022
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

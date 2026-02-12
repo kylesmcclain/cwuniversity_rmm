@@ -1,0 +1,361 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   ConnectWise RMM Release Notes   ConnectWise RMM Latest Release Notes
+ConnectWise RMM Latest Release Notes
+Last updated
+Feb 4, 2026
+Table of contents
+Overview
+Announcements
+API Migration: V1 to V2 Transition
+What's New in ConnectWise RMM?
+February 5, 2026
+Devices
+Introducing the New Asio Discovery Tool
+February 4, 2026
+Issues Addressed
+February 2, 2026
+Automation
+PSA Integration
+Issues Addressed
+Overview
+
+This page provides information on the latest enhancements and features for ConnectWise RMM™.
+
+Announcements
+API Migration: V1 to V2 Transition
+
+In the past, when partners accessed ConnectWise Asio® data for endpoints, each device used a public identifier as its unique reference. However, these IDs wouldn’t match the data exposed to them via ConnectWise PSA™ (Manage), Asio console, Snowflake Syndication, Reports and Dashboards (formerly BrightGauge™), etc., which would cause confusion. 
+
+Hence, to ensure consistency in the system for device identifiers, we have now made sure that every system or solution connected to Asio will use a common identifier (Private IDs).  
+
+To support this change, we have migrated several APIs from V1 to V2 to align with the new framework and improve consistency across services.  
+
+For partners who have stored or maintained the device's data, we will add an additional API that allows you to retrieve Public-to-Private or vice versa to support this transition. 
+
+Note: Not all API endpoints have changed from V1 to V2, and some can continue to operate or be functional. Older API endpoints that are updated will be deprecated soon.
+
+Key Details
+
+Endpoint IDs shared with partners will now be private (public-to-private mapping is discontinued). 
+A conversion API is available under Devices on the developer portal to help update integrations: 
+Convert private → public and public → private endpoint IDs. 
+Partners must update their systems to use only private endpoint IDs going forward.
+
+Migration Guidance
+
+Stop using public endpoint IDs in all API calls. 
+Use the conversion API under Devices on the developer portal to update your systems: 
+Convert public → private and private → public IDs as needed during migration. 
+Update all integrations to consume only V2 APIs.
+
+Developer Portal Links
+
+The following link provides access to all API Swagger specifications, including both V1 and V2:
+
+Partner APIs: https://developer.connectwise.com/Products/ConnectWise_Asio/Asio_Vendors/APIs_and_Callbacks/REST_API
+
+Timeline
+
+Complete migration by April 30, 2026. 
+Start consuming V2 APIs immediately. 
+V1 APIs and Legacy Reporting APIs will be deprecated by April 30, 2026.
+What's New in ConnectWise RMM?
+Release Dates:	Relevant Modules:
+
+February 5, 2026
+February 4, 2026
+February 2, 2026
+	
+Devices
+Automation
+PSA Integration
+February 5, 2026
+Devices
+Introducing the New Asio Discovery Tool
+
+The Asio Discovery Tool is now fully integrated into ConnectWise Asio, giving you a faster, more seamless way to scan endpoints and deploy agents across your environment.
+
+For more information, please review the Asio Discovery Tool documentation.
+
+What’s New and Improved
+
+No remote access needed. You can run subnet scans directly from Asin without needing to connect to a probe machine and configure the scan.
+
+Multi‑subnet scanning: Easily scan multiple subnets within a single configuration.
+Smarter credential handling: Add multiple credential sets with automatic retries to minimize scan failures.
+Unified scanning & deployment: Perform both discovery and agent deployment from one streamlined workflow.
+Easier access to historical scan data:  Review previous scan data from a single interface to review devices that were discovered
+
+How to Access It
+
+Navigate to Endpoints > Devices (Preview), select any Windows device, and go to:
+Actions > Manage > Asio Discovery Tool
+
+Flexible Scan Scheduling
+
+Create and modify automated scan schedules with options to:
+
+Scan only
+Scan and deploy
+
+Granular Controls
+
+Asio Discovery Tool supports granular permissions to allow users to view scan results and perform ad hoc agent deployment via the UI.
+
+Enhanced Visibility
+
+Get a high‑level view of discovered devices and installed agents through intuitive dashboard widgets.
+
+February 4, 2026
+Issues Addressed
+
+Known Issue
+
+	
+
+Description
+
+
+
+
+ISSUE-10144
+
+	
+
+Fixed an issue where the user was unable to use the feature 'Share with Specific Role' in the Script Editor.
+
+
+
+
+ISSUE-973
+
+	
+
+Fixed an issue where we were getting an error for an incorrect document link mapped to automatic credentials, not qualified status.
+
+February 2, 2026
+Automation
+
+The following new partner-facing tasks (OOTB) and improvements to existing tasks have been released. For more information, review the Available Tasks documentation.
+
+New Release
+
+
+
+
+Category
+
+	
+
+Task Name
+
+	
+
+Supported OS
+
+	
+
+Description
+
+	
+
+Parameterized
+
+
+
+
+Maintenance
+
+	
+
+Rename Computer Name
+
+	
+
+Windows
+
+	
+
+Task to update the hostname for the Windows endpoint.
+
+	
+
+Yes
+
+
+
+
+Maintenance
+
+	
+
+Windows Time Sync
+
+	
+
+Windows
+
+	
+
+Task to detect and resolve if the machine is out of sync with the date/time
+
+	
+
+Yes
+
+
+
+
+Maintenance
+
+	
+
+Clear Browsers Cache and Cookies
+
+	
+
+Windows
+
+	
+
+Task to delete cache and cookies for browsers [Chrome, Edge, Firefox]
+
+	
+
+Yes
+
+
+
+
+Improvement
+
+
+
+
+Application
+
+	
+
+Create own application - Updated
+
+	
+
+Windows 
+
+	
+
+Removed Internal information
+
+	
+
+Yes
+
+
+
+
+Application
+
+	
+
+SentinelOne Agent Deployment
+
+	
+
+Windows 
+
+	
+
+Added OS architecture check for non-English language
+
+	
+
+Yes
+
+ 
+
+PSA Integration
+Autotask PSA - Added typeahead in Catchall configuration to quickly populate Company/Site values.
+Updated Mapper POD ticket status handling to better align with real-world partner workflows - The Ticket Creation Status drop-down now excludes all closure statuses, so tickets can’t be created in a closed state, while the Ticket Closure Status drop-down now supports both closure and non-closure statuses (such as 'Resolved').
+Issues Addressed
+
+Known Issue
+
+	
+
+Description
+
+
+
+
+ISSUE-10040
+
+	
+
+Fixed an issue where ticket statuses were not updating as per the configuration in the Mapper Pod.
+
+
+
+
+ISSUE-10028
+
+	
+
+Fixed an issue where asset sync was failing with the error 'create asset process failed: 400'.
+
+
+
+
+ISSUE-9862
+
+	
+
+Fixed an issue where CW RMM-PSA ticket status was getting updated to 'Resolved' status even when the closure status mapper was not defined.
+
+
+
+
+ISSUE-9908
+
+	
+
+Fixed an issue where Asset sync was failing with CW PSA when dynamic settings were enabled.
+
+ 
+
+ConnectWise RMM Release Notes ConnectWise RMM Update for January 2024
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ConnectWise RMM Update for January 2024
+ConnectWise RMM Update for February 2024
+ConnectWise RMM Update for March 2024
+ConnectWise RMM Update for April 2024
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

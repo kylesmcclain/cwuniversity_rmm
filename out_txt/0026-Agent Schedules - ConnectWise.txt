@@ -1,0 +1,336 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Agents   Agent Schedules
+Agent Schedules
+Last updated
+Nov 18, 2025
+Table of contents
+Overview
+Agent Schedules
+Overview
+
+Agent schedules in the ConnectWise Asio® refer to the ability to automate and time recurring tasks such as reporting, audits, and maintenance activities for agents deployed across endpoints. These schedules ensure consistent execution without manual intervention.
+
+Agent Schedules
+
+Type
+
+	
+
+Product Area
+
+	
+
+Agent Type
+
+	
+
+Inclusions
+
+	
+
+Initial
+
+	
+
+Frequency for recheck
+
+	
+
+Duration (Time for execution)
+
+
+
+
+Asset Collection
+
+	
+
+Agent
+
+	
+Windows
+MAC
+Linux
+	
+Hardware Inventory
+Software Inventory
+Services
+Product key
+	
+During the platform agent installation
+	
+Any changes detected in the hardware, software on the endpoint
+Restarting the endpoint (if the last asset data reported is > 3 hr.)
+If no change is reported, once in 24 hours
+	
+Less than a minute
+
+
+
+System state
+
+	
+
+Agent
+
+	
+Windows 
+MAC
+Linux
+	
+System last rebooted
+Last logged on user
+	
+Post agent installation within 10 minutes
+	
+Any change in the logged-on user or if the endpoint is restarted, reports in 5 minutes
+	
+Less than 30 seconds
+
+
+
+Patch assessment
+
+	
+
+Patching
+
+	
+Windows
+	
+Assessment of missing patches on the endpoint
+	
+Post agent installation within 10 minutes 
+	
+Every 4 hours
+Restarting the endpoint (if last assessment was > 4hrs ago)
+	
+Less than a minute
+
+
+
+Patch Deployment
+
+	
+
+Patching
+
+	
+Windows
+	
+Deployment of the patches as per the policy
+	
+As per the patch policy configuration
+	
+As per the patch policy configuration
+	
+Varies based on the endpoint and patch to be deployed
+
+
+
+Patch Reboot
+
+	
+
+Patching
+
+	
+Windows
+	
+Rebooting of the endpoint based on the policy assigned to the endpoint/site
+	
+As per the patch policy configuration, (Reboot initiated only if the patch needs a reboot)
+	
+NA
+	
+NA
+
+
+
+Performance Data
+
+	
+
+Agent
+
+	
+Windows
+MAC
+Linux
+VMWare Host*
+	
+Performance data
+CPU
+Disk
+Memory
+Datastore*
+Additional performance data (if configured)
+	
+Post agent installation within 10 minutes
+	
+Every 3 minutes
+	
+Less than 30 Seconds
+
+
+
+ScreenConnect Deployment
+
+	
+
+ScreenConnect
+
+	
+Windows
+MAC
+Linux
+	
+Installation of ScreenConnect on the endpoint
+	
+During the platform agent installation
+	
+Recheck every 4 hours if ScreenConnect is still installed
+	
+Less than a minute
+
+
+
+Communicator Deployment
+
+	
+
+Communicator
+
+	
+Windows
+MAC
+	
+Communicator
+Icon for the system tray
+URL configurations for menu's
+Tasks/Scripts configurations
+	
+Post agent installation within 10 minutes
+	
+ 
+	
+Less than 30 Seconds
+
+
+
+Monitor/Alerting Configuration Deployment
+
+	
+
+Monitoring & Alerting
+
+	
+Windows
+MAC
+Linux
+	
+Monitor configuration for an event or a process
+	
+As per the trigger defined in a monitor
+	
+Near real-time
+	
+Near real-time
+
+
+
+Virtualization
+
+	
+
+Monitoring & Alerting
+
+	
+Windows
+	
+The endpoint with the Windows Agent acts as a probe to monitor VMware ESXi
+Information is collected by executing on the probe machine.
+Host inventory
+Host / VM Guest mapping
+System state
+Sensors
+Events
+	
+Show the Host information in Asio > Devices within 15 minutes.
+	
+Asset: 15 minutes
+System state: 16 minutes
+Services: 12 minutes
+Events: 13 minutes
+Datastores: 14 minutes
+Sensors: 11 minutes
+	
+Less than a minute
+
+
+
+Gateway Configuration
+
+	
+
+Agent
+
+	
+Windows
+	
+Product configuration for the third-party patching and patches
+	
+Based on the Gateway configuration on Asio
+	
+NA
+	
+NA
+
+ 
+
+The following default schedules will be removed for Server / Desktops:
+
+Low Disk space cleanup for desktops
+SMART data checks
+Windows Performance dump
+VMWare Host & Guest Machine data
+Agent Reports Overview Agent Self-Heal
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Asio Agent Requirements
+The article includes the currently supported operating systems for agent installations.
+Uninstalling an Agent
+This guide includes the steps required to uninstall an agent from a desktop or server in RMM or Asio via the Devices page.
+Cloud Services
+Agent Tamper Protection
+Agents on Windows devices utilize tamper protection to restrict users from stopping the agent core services.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

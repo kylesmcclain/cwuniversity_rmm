@@ -1,0 +1,268 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   ConnectWise RMM Release Notes   ConnectWise RMM Update for December 2025
+ConnectWise RMM Update for December 2025
+Last updated
+Jan 13, 2026
+Table of contents
+Overview 
+Annoucements
+RMM Site Enablement
+Permissions Cleanup
+What's new in ConnectWise RMM?
+December 18, 2025
+Policies and Packages
+December 16, 2025
+Asio Discovery Tool [Limited Availability]
+Platform Alerting
+Devices
+December 9, 2025
+Endpoint Protection
+Automation
+Platform Alerting
+Device Groups
+Issues Addressed
+December 8, 2025
+Centralized Audit Trail
+December 4, 2025
+Automation
+Centralized Audit Trail
+PSA Integration
+Restrict Priority Update During Ticket Sync for Mapper Pod Alerts. 
+We’re introducing a new enhancement to improve integration between ConnectWise RMM and PSA.
+We are enhancing the Network Device section in PSA Policy based on partner feedback.
+Issues Addressed
+December 3, 2025
+OS Patching
+Overview 
+
+This page provides information on the latest enhancements and features for ConnectWise RMM.
+
+Annoucements
+RMM Site Enablement
+
+Starting January 19, 2026, RMM Products and Capabilities will only be available on machines through the RMM Site Configuration policy. To maintain RMM capabilities, ensure the RMM Site Configuration policy is enabled at the sites. Refer to RMM Site Enablement for details on the impact of not enabling this policy.
+
+Note:
+
+This change will take effect for partners in the European region only.
+These changes are currently live in the Australian region.
+For North America, the effective date would be communicated later.
+Permissions Cleanup
+
+The following menus and associated permissions in Home will be removed from the Legacy Tickets section this month.
+
+NOC Defined & Managed Alerts
+Partner Defined & Managed Alerts
+What's new in ConnectWise RMM?
+Release Dates:	Relevant Modules:
+
+December 18, 2025
+December 16, 2025
+December 9, 2025
+December 8, 2025
+December 4, 2025
+December 3, 2025
+	
+Policies and Packages
+Endpoint Protection
+Script Editor Updates
+Device Groups
+Automation
+OS Patching
+Centralized Audit Trail
+PSA Integration
+December 18, 2025
+Policies and Packages
+We have added Audit Tracking for Packages (Created, Updated, and Deleted) and Policy Groups (Created, Updated, and Deleted), providing you with greater visibility and accountability across your environment. This can be accessed by navigating to Reports > Audit Trail.
+
+Note: This feature is EA only.
+
+We have now included the 'Created By' and 'Created On' columns on the Policies page and the Packages page for the ease of information or data review.
+
+Note: Columns will be available for selection, but the default will not be added to the table for displaying the data.
+
+December 16, 2025
+Asio Discovery Tool [Limited Availability]
+
+The Asio Discovery Tool is now a fully integrated feature within ConnectWise Asio®, allowing you to scan endpoints in a network and install platform agents.
+
+To get started, navigate to Endpoints > Devices (Preview) and select the Windows device you want to run the new scan on.
+
+Key Updates:
+
+Manage scan configuration - Give an IP range to scan on a given network
+Schedule Management: Schedule Scan for “one time” or “recurring” with options for:
+Scan Only
+Scan and Deploy
+Get an overview of scanned devices and installed agents in widgets.
+
+Review the Asio Discovery Tool article for more information.
+
+Platform Alerting
+
+We are introducing an enhanced approach to monitoring the availability of Windows Server devices. Previously, Virtual and Physical Windows Servers were monitored under a single condition. With this update, monitoring will be more granular, covering Physical Servers, Virtual Servers, VMware Hosts, and Lights Out Management configuration status.
+
+Note: This change is scheduled for release in the AU region.
+
+Devices
+Device group is now a menu on the left navigation. The shortcut icon is removed from the Asio devices page
+The Clones section is removed, will not be visible as a shortcut icon in the Devices section.
+December 9, 2025
+Endpoint Protection
+Added Field Effect MDR to the identified list of Antivirus.
+Users can view endpoints protected by Field Effect on the Asio Devices page.
+Automation
+
+The following updates are now available within the Script Editor:
+
+Create targeted suspensions for Monitors and Alerts directly within the Script Editor using the Create Suspension function, ensuring clean execution without triggering unwanted alerts. For more information, please review the Create Suspension article.
+
+Use conditional logic to jump to labeled sections, enabling smarter and more flexible script execution. For more information, review the GoTo Section documentation.
+
+Visually parse logic at a glance with color‑coded rails (Logic, Section Divider) and distinct block boundaries.
+
+Platform Alerting
+Introducing the 'Last 7 days' alert generation trend column on the Company or Site Management page.
+Introducing the 'Monitoring' tab on the new Device Details page, which will have information regarding Alerts/Monitors/Suspensions applicable to the configured endpoints.
+Early access users who have the Audit Trail menu enabled will be able to see the Intelligent Alert/Alert threshold limited UI actions available in the Audit Trail UI. Currently, the following actions are available - Create/Update/Delete alert thresholds.
+Device Groups
+Audit Tracking for Device Groups has been added, providing you with greater visibility and accountability across your environment. These changes can be accessed by navigating to Reports > Audit Trail. We have added Audit Tracking for:
+
+Updates made to the Device Group configurations.
+
+Endpoints automatically exiting the Device Group based on the configurations.
+
+Device Groups that are referenced in other configurations, such as Monitors, Suspensions, and Automated Tasks.
+
+Device Groups references removed in other configurations, such as Monitors, Suspensions, and Automated Tasks.
+
+Note: This feature is EA only.
+
+Clicking the Device Meeting criteria now opens a Peek window instead of a pop-up, aligning with Asio standards.
+
+Issues Addressed
+
+Known Issue
+
+	
+
+Description
+
+
+
+
+ISSUE-9681
+
+	
+
+Fixed an issue with the errors that were reflected on the browser console while creating Device Groups
+
+
+
+
+ 
+
+	
+
+Fixed an issue where the operator selection was not properly visible in the Dark mode.
+
+December 8, 2025
+Centralized Audit Trail
+
+Audits related to agent version updates are now available in Centralized Audit Trail reports.
+
+Note: This feature is EA only.
+
+December 4, 2025
+Automation
+
+Note: These automation updates are part of a limited release and are only for partners that have the new Devices page enabled.
+
+Added a Status column to the New Devices – Recent Tasks page to display the overall task status.
+
+You can now edit tasks directly from the Recent Tasks section on the New Devices page.
+Centralized Audit Trail
+
+Audits related to notifications sent via Communicator are now available in the Centralized Audit Trail.
+
+Note: This feature is EA only.
+
+PSA Integration
+Restrict Priority Update During Ticket Sync for Mapper Pod Alerts. 
+
+With this release, partners using the mapper pod can now override ticket priorities without risk of their changes being unintentionally reverted during ticket syncs. The system will only update the ticket priority if a partner explicitly changes it in ConnectWise PSA; otherwise, the partner-set priority will persist across all updates.
+
+We’re introducing a new enhancement to improve integration between ConnectWise RMM and PSA.
+
+Partners can now map and sync RMM asset attributes with custom attributes from ConnectWise PSA using PSA policy-based configuration. This gives partners more flexibility and control over which attributes are synced with custom attribute that they have created in PSA
+
+
+
+
+ 
+
+Notes: Ensure that the attribute selected in the drop-down is unique for each property.
+
+You will be able to see the following types of UDFs in the drop-down for each category:
+
+Text
+Date
+Number
+TextArea
+We are enhancing the Network Device section in PSA Policy based on partner feedback.
+
+The following new device types will be added: Access Point, UPS, Printer, NAS, PDU (Power Distribution Module), and Backup Device. Additionally, the behavior of this section is changing to provide flexibility—users will now be able to choose which device types to map to the respective configuration item type in PSA. There will be no requirement to map all detected device types, allowing users to sync only those they prefer.
+
+For more information, please review the Asset Sync Article.
+
+Issues Addressed
+Known Issue	Description
+
+
+ISSUE-9407
+
+	
+
+Fixed an issue where scheduling a task using the Local Machine Time option resulted in an error if the selected time had already passed in the scheduler’s time zone, even if it was still valid in the target endpoint’s time zone.
+
+December 3, 2025
+OS Patching
+You now have a new Deploy all except disapproved option in OS Patching. This setting automatically deploys all available patches, skipping any that technicians have explicitly disapproved, thereby reducing effort by enabling a deny-by-exception workflow.
+OS patching will now allow for a time delay after the reboot is initiated on an endpoint with a banner message informing the user about the imminent reboot. The banner message can also be further customized with a custom message. This option will only work on Windows endpoints
+The OS Patch Approvals page now allows for Approving/Disapproving patches that are in New status for Partner approval.
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ConnectWise RMM Latest Release Notes
+ConnectWise RMM Update for January 2024
+ConnectWise RMM Update for February 2024
+ConnectWise RMM Update for March 2024
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

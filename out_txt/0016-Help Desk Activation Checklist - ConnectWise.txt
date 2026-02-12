@@ -1,0 +1,180 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Expert Services   Help Desk   Help Desk Activation Checklist
+Help Desk Activation Checklist
+Last updated
+Aug 7, 2025
+Table of contents
+Overview
+Permission Requirements
+Initiate a Help Desk Request
+Help Desk Product Options
+ConnectWise University Training
+Help Desk Notification Rule
+Provide Help Desk Information
+Basic Information
+Client Profiles
+Security-Related Requests
+Add Passwords and Credentials
+Provide Required Network Information
+References
+Overview
+
+This document describes how to activate your Help Desk. The process consists of the following steps:
+
+Initiate a Help Desk request.
+Provide Help Desk information.
+Add passwords and credentials.
+Provide required network information.
+
+Important: You must have an Agent deployed at the site to enable the Help Desk.
+
+Permission Requirements
+Application role permissions for RMM Setup > Help Desk 
+Application role permissions for Client Management > Contact Management 
+Resource assignments for companies and sites  
+Initiate a Help Desk Request
+Help Desk Product Options
+
+Begin your Help desk setup by providing basic product selections.
+
+Navigate to RMM Set Up > Sites Using RMM > [Site name] > Product Options.
+Select NOC Services under the Servers Options (NOC Services is required for Help Desk Support. If you are not using NOC Services at this site, change the service level and select a new notification rule. You will only be billed for server agents deployed at the site.)
+First-time partners should select the I’m interested! Tell me how to get started option. Note that this feature is only available once. An overview page opens. Select a Help Desk contact who will be activating client sites and will be the initial point of contact.
+ConnectWise University Training
+
+At least one individual from your organization must complete the ConnectWise University Help Desk certification.
+
+Help Desk Notification Rule
+
+After your site is set up, create a notification template to provide the Help Desk with instructions on how to contact your team if required for ticket inquiries. Technicians may occasionally need additional information not included in site documentation or may need to escalate an issue outside of scope. Notification rules determine who to contact and when.
+
+Call before escalating for a simple inquiry. In some cases, all that prevents the Help Desk from resolving an issue is a small piece of missing information, such as a license key or a path to a drive. In these cases, check the box and specify who the Help Desk should call before escalating a ticket. When using this feature, the Help Desk technician will place the client on hold while they attempt to contact you for the missing information. The use of a phone number that reaches multiple individuals such as a hunt group or a Google Voice number increases the likelihood the technician will successfully obtain the information needed to resolve the issue. For more information, please visit the Notification Rule section in the DocCenter.
+
+Provide Help Desk Information
+
+The Help Desk tab provides all critical information required to ensure a more efficient and personalized client experience in one location. All three sections add intrinsic value for successful Help Desk implementation.
+
+Go to RMM Setup > Sites Using RMM > [site name] and click on the Help Desk tab.
+
+Basic Information
+
+Provide basic Help Desk information:
+
+Client main phone number and Client email domain are both used to identify sites.
+If your client uses a public domain such as Gmail, select the No Client Email Domain option. Note that public domains cannot be used to identify sites for emails. In addition, such emails cannot be automatically processed as tickets, which may delay resolution.
+Select the Help Desk Notification previously created.
+Enter the Company Name to be used in greeting. The Help Desk uses that greeting when answering your clients' calls, and this name will be used in SMS text messages sent to your clients from the Help Desk.
+Help Desk Site Message – this feature directly communicates critical site information of immediate importance to the Help Desk.
+Select the Opt-in RMM Desktop Agent install option to give the Help Desk permission to install the RMM agent and begin troubleshooting the issue. Please note that this results in a $100 fee for each occurrence. Without an opt-in, the technician will escalate the issue to your company using selected notification rules.
+Client Profiles
+
+Under Client Profiles, you can add, edit, or delete client profile information from the Help Desk. Providing complete, detailed client information enables the Help Desk to route issues to the correct team via Bullseye Routing and seamlessly provide appropriate while-labeled resolution.
+
+You may enter client details in three ways:
+
+Contact Sync. Contact sync enables one-way synchronization of Autotask contacts into the ConnectWise Help Desk. Select the Enable syncing with Autotask checkbox under Client Profiles. To prevent duplicate entries when using contact sync, confirm the current contact information in Autotask, then remove those contacts here before configuring Autotask Contact Sync. Ensure that Autotask contains the client name, phone numbe, and email address.
+Add clients in bulk. To simplify the process of creating and updating client profiles, we recommend using the import and export functionality and adding client profiles in bulk.
+Each client profile requires First name, Last name, and at least one phone number, along with its associated 2-letter country code.
+Remove the country codes from lines that do not have a number added.
+It is recommended to keep the provider and SMS gateway section blank. These likely will not sync.
+Phone numbers should be added without a hyphen (–) or any other special characters.
+Leave the space blank and do not mention N/A if there is no information provided.
+If you are trying to copy and paste the data from a different sheet, use the paste value option in Excel.
+All data should be right-aligned. Apply the All Borders option from the spreadsheet.
+Ensure that there are no blank spaces at the end of text or number cells.
+Add clients individually. Adding clients individually or manually is a longer process.
+Click Add client.
+Complete the Personal, Phone number, and Equipment details for the client.
+Security-Related Requests
+
+This section determines how the Help Desk should handle requests dealing with security (e.g., new user accounts, password resets, software installations), whether an approver should be contacted for certain request types, and, as an added layer of protection, whether the approver or caller should be authenticated.
+
+The Help Desk calls users in the order they appear. You can request authentication of the identity of the Help Desk caller and the identity of the approver. For both instances, a text message will be sent to the individual with a unique code. The caller must then provide that code to the Help Desk technician to proceed.
+
+Note: This option requires you to provide mobile numbers of the clients under the Client Profile section. It will allow the Help Desk to fulfill the security requirement.
+
+Add Passwords and Credentials
+
+The site-level Passwords tab enables the creation and storage of passwords that allow the NOC and Help Desk to access client machines for troubleshooting and other support. Types of passwords include:
+
+Servers
+Desktops
+Lights Out Management
+Pre-Defined and Custom Applications
+Custom Passwords & Properties (email, QuickBooks, etc.)
+
+Note: If automatic credentials are not enabled, create server and desktop accounts as described below. Enabling Automatic Credentials for Servers and Desktops in the NOC site-level tab is a much easier alternative to adding server and desktop credentials to the Passwords tab and allows credentials to be system-generated securely and as needed.
+
+Provide Required Network Information
+
+Specific client information is required for the Help Desk to go live for a site. If you would like the ConnectWise Help Desk to support a device, software, or process, you must provide information about that resource. Supplying all this information up-front will enable the Help Desk to offer quick response times, a high quality of service, and expert problem resolution.
+
+Note: Different sites and configurations require different information. Therefore, the more details you can provide about your specific sites and needs, the fewer escalations you will receive, and the better Help Desk support your clients will experience.
+
+Use the Network Info tab (RMM Setup > Sites Using RMM > [site name] > Network Info) to provide Help Desk technicians with quick access to your client’s important network details, such as devices, email, firewall, and backup software.
+ConnectWise also offers integration with ITGlue, an IT documentation management software designed to help maximize efficiency, transparency, and consistency for users. Visit the ITGlue Integration Guide to start integrating with ITGlue.
+
+Below are some items to remember when integrating ITGlue with ConnectWise:
+
+Only the following Core Asset items are viewable by the Help Desk:
+Passwords
+Configurations
+Contacts
+Locations
+Documents
+Flexible Assets are currently only supported as a best effort and are not searchable outside the ITGlue portal, so be sure all content is a Document.
+In a conflict between existing documentation in the ITSupport Portal and ITGlue, the ITGlue documentation supersedes the ITS Portal documentation.
+Network Item	Description	ITS Portal Location
+Printers	Include both Network and Individual use printers. Printer Type, Name, Model, and IP Address.	Network Info Tab > Devices > Printers
+Shared Network Drive or Network Share	Drive Name and Path. File Share Link or location.	Network Info Tab > Devices > Network Drives
+Email Information	Email Provider, Admin Portal URL, and Credentials.	Network Info Tab > Email
+VPN Setup and Configuration	VPN/RDP IP or URL and Setup Guide.	Network Info Tab > Remote Access Information
+Line-of-Business Applications	Any application critical for the client’s daily function, excluding Microsoft Office or Accounting Software.	Network Info Tab > Software > Other Licensed Software
+Active Directory	Server name of AD Location.	Network Info Tab > Active Directory
+Backup	Server Name, IP Address/URL and Log in Information.	Network Info Tab > Back Up
+Unlicensed Software Approvals	The Help Desk can install unlicensed or free/open-source software if pre-approval is provided, eliminating the need for approval calls or emails. Pre-authorize installation or updates for any software not requiring any license or key. Software entries in this section can be added, removed, or adjusted as needed. For each, indicate: Install, Call Approver, or Never if required.	Network Info Tab > Software > Unlicensed Software
+References
+
+Reference documents provide the Help Desk with additional network details and other miscellaneous information required to troubleshoot or inform your users. References are free-text fields, allowing you to be as descriptive as necessary. A properly detailed reference can limit escalations and save your end users time.
+
+Navigate to Admin > Reference. Click New to add a new file. Please refer to References for more information.
+
+Enabling Expert Services for PSA Partners Help Desk Chat
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Help Desk Best Practices
+Help Desk Success Checklist
+Use this checklist to help successfully integrate Help Desk to your operations and ensure seamless support for your end users.
+Activating Help Desk
+Help Desk Chat
+The Help Desk Chat application allows your clients to get Help Desk support quickly and easily right from their machine's desktop, taskbar, or notific...
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

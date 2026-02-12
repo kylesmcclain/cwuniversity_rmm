@@ -1,0 +1,188 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Client Management   Contact Management
+Contact Management
+Last updated
+Dec 16, 2025
+Table of contents
+Overview
+Requirements
+Contact List
+Client Profiles
+Migrate Contacts
+Company and Site Contacts
+Add Contact
+Overview
+
+The Contacts tab allows you to manage site contacts, migrated Help Desk contacts, and PSA, powered by Asio contacts for your companies.
+
+Migration of Help Desk contacts to Clients > Contacts unifies critical features in Asio for a more consistent client management experience. If your contacts were automatically migrated and you require assistance, please contact Support.
+
+Note: Two Help Desk functions remain in Settings > Setup > RMM: 
+
+Contact-device linking
+Export functionality
+
+ This article can help you complete the following tasks:
+
+Add company and site contacts
+Sync PSA contacts to companies and sites
+Requirements
+Asio application roles with Client Management > Contact Management permissions are required to view this screen.
+Refer to Default Application Roles to learn more about application role permissions for default roles.
+Full Contact Management permissions are required to access, edit, and remove Help Desk contacts.
+Contact List
+
+ To access this screen, navigate to Clients > Contacts in the Asio platform.
+
+Field
+
+	
+
+Description
+
+
+
+
+Add Contact
+
+	
+
+Click Add Contact to open the Create Contact form.
+
+
+
+
+Template
+
+	
+
+Download the bulk upload template for your contact list.
+
+
+
+
+Actions
+
+	
+
+Click the actions button to edit, delete, or upload contacts.
+
+
+
+
+Edit Contact
+
+	
+
+Select the checkbox next to the contact to enable this option.
+
+
+
+
+Delete Contact
+
+	
+
+Select the checkbox next to the contact(s) to enable this option.
+
+
+
+
+Bulk Upload CSV
+
+	
+
+Upload a list of contacts from a CSV file. Download the template for your files to upload with the correct formatting.
+
+
+
+
+Search
+
+	
+
+Search for the contact by first or last name.
+
+
+
+
+Filter
+
+	
+
+Enter filter values to filter columns.
+
+
+
+
+View
+
+	
+
+Adjust the row height to Compact, Standard, or Comfortable.
+
+ 
+
+Client Profiles
+
+Previously, Help Desk contacts and client profiles were created in Settings > Setup > RMM > Site Using RMM > [site name] > Help Desk > Client Profiles. Contacts from Client Profiles are now migrated to the Clients > Contacts tab.
+
+Migrate Contacts
+
+Please refer to the Migration of Companies, Sites, and Contacts - PSA powered by Asio documentation to learn more about contacts synced via PSA, powered by Asio.
+
+Company and Site Contacts
+
+To access this screen, navigate to Clients > Companies > Select a Company > Contacts.
+
+Add Contact
+Navigate to Companies in the Asio platform. 
+Click the name of the company you want to add contacts to.
+On the Company Details page, select the Contacts tab.
+To create a site-level contact, navigate to the Company Overview, select a site from the Site List, and click the Contacts tab.
+Click Add Contact.
+
+Add contact details to create a new company contact. The primary contact, title, address, and phone number can be entered or edited in this form.
+
+Click Save.
+
+ 
+
+Company and Site Bulk Import Functionality Command for Networks
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Companies and Sites
+This article provides information on company and site management in the Asio™ platform. Asio allows you to create, view, and edit company or site info...
+Command for Networks
+Secure Information Store
+Tech Advantage
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

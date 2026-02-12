@@ -1,0 +1,115 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   ConnectWise RMM Release Notes   RMM Release Notes Archive   ConnectWise RMM Update for October 2023
+ConnectWise RMM Update for October 2023
+Last updated
+Feb 8, 2024
+Table of contents
+Overview
+Announcements
+Suspension per Endpoint
+Assign to another site (Move Agent)
+ConnectWise PSA - Integration via policies EA
+Legacy deprecation
+What's new in ConnectWise RMM?
+October 20, 2023
+Patching
+October 19, 2023
+Automation
+October 17, 2023
+Patching
+October 15, 2023
+Legacy Portal
+October 13, 2023
+Device Groups
+Legacy Portal
+October 12, 2023
+Ticketing / PSA Integration
+Legacy Portal
+October 11, 2023
+Agent and platform
+October 10, 2023
+Monitoring
+Legacy Portal
+October 6, 2023
+Monitoring
+Overview
+
+This page provides information on the latest enhancements and features for ConnectWise RMM.
+
+Announcements
+Suspension per Endpoint
+
+We are adding a new suspension tab under the endpoints > Monitoring section. This tab will display applicable suspension rules for these endpoints. This includes suspension rules for both Intelligent alerts and monitors.
+
+Assign to another site (Move Agent)
+
+We will be providing a simplified experience to Assign a device to another site. The option will be available in the Devices > Computers Page under the Manage Menu in the Action bar on the top of the page. This feature will be near real-time, where the movement will reflect in the portal near-instantly, with a max delay of up to 15 minutes.
+
+ConnectWise PSA - Integration via policies EA
+
+We are excited to announce that we will be adding an option for you to enable the ConnectWise PSA sync configurations that helps to define Tickets, Configuration items, and Notifications using policies. These policies can be included in your packages and applied to the sites using the package assignment option.
+
+There will be no migration performed for the existing configuration, but the policies will be in effect if they are assigned or applied to a site. You will initially have a toggle button to either enable or disable the policies based configuration and continue using the old method for now.
+
+We will stop supporting the older configuration method by December 15th.
+
+For more information, review the following articles:
+
+ConnectWise PSA - Policy Integration
+
+ConnectWise PSA - Policy Integration - FAQ
+
+Legacy deprecation
+
+As we are moving towards RMM Site Configuration policies, the below legacy options would be removed for partners who opt-in for those policies:
+
+For CW RMM partners: NOC Enabled/Disabled
+
+For Command partners: Service Level - Essential/Preferred/Elite
+
+What's new in ConnectWise RMM?
+October 20, 2023
+October 19, 2023
+October 17, 2023
+October 15, 2023
+October 13, 2023
+October 12, 2023
+October 11, 2023
+October 10, 2023
+October 6, 2023
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ConnectWise RMM Update for January 2023
+ConnectWise RMM Update for February 2023
+ConnectWise RMM Update for March 2023
+ConnectWise RMM Update for April 2023
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

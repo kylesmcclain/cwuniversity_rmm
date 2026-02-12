@@ -1,0 +1,72 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Expert Services   Help Desk   Enabling Automated Tickets from Help Desk Email Requests
+Enabling Automated Tickets from Help Desk Email Requests
+Last updated
+Dec 6, 2023
+Table of contents
+Overview
+To enable the Help Desk to process requests as automated tickets:
+Ticket Updates
+Overview
+
+The Help Desk can process client email requests as automated tickets to work on and resolve issues more efficiently, ensuring your clients have a more positive experience.
+
+To enable the Help Desk to process requests as automated tickets:
+Verify the site has a Client Email Domain (example: companyname.com) entered in Help Desk > Basic Information.
+
+If this field is left blank OR an email to the Help Desk is sent from an address not associated with a Client Profile contact, the email cannot be automatically processed.
+
+For domain name guidelines and other considerations, hover over the field help icon.
+
+Ensure clients send emails with a clear and accurate subject line, body, and From address.
+
+The subject line of the email becomes the subject line of the ticket, the body of the email becomes the ticket description, and after the ticket is generated, acknowledgment is sent to the From address.
+
+Note: Avoid sending attachments to the Help Desk Service email since these do not automatically attach to the ticket.
+
+Note: Attachments emailed to the Help Desk will only be visible to the Help Desk. Attachments that exceed 10MB or that have an executable file extension (.exe, .html, .reg, etc) are not supported.
+
+Ticket Updates
+
+Any subsequent email message received by the Help Desk that contains the same subject line as the original email (the email used to generate the ticket) is considered an update to the existing ticket.
+
+Note: When replying to the acknowledgment email, do not modify the subject line or a new request will be created.
+
+Add Required Documentation and Credentials - Help Desk Enabling Automatic Credentials for Servers and Desktops
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Help Desk Activation Checklist
+Help Desk Best Practices
+Help Desk Success Checklist
+Use this checklist to help successfully integrate Help Desk to your operations and ensure seamless support for your end users.
+Activating Help Desk
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

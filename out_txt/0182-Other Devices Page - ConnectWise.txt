@@ -1,0 +1,193 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Devices Page   Other Devices Page
+Other Devices Page
+Last updated
+Dec 30, 2024
+Table of contents
+Overview
+Access
+VMware Host Addition   
+You can add a VMware from the Other Devices page in two ways: 
+Adding SNMP v1/v2 Devices for Monitoring
+Adding SNMP v3 Devices for Monitoring
+Monitoring
+How to Create a Custom SNMP Monitor 
+Removing the VMware Host, VCenter, and SNMP device from Monitoring
+Hyper-V & VMware Export
+Known Issues/Limitations
+Monitoring will discontinue if:
+Overview
+
+We have added a simplified and unified process to add, modify, or remove VMware Esxi, VCenter, and SNMP devices. This should help quickly add devices for monitoring and simplifying the overall process.
+
+Note: The selection of monitoring devices is restricted to Windows only.
+
+Access
+
+Access to this feature has been enabled for Primary Super Admin, Super Admin, Manager, Technician & Client Site Manager by default. For all other roles, users with a Super Admin or a Manager role can manage roles that are able to view Other Devices on the Devices page (Customize access section under Admin > Manage Users) 
+
+Note: See Access Rights for more information on user roles, default access privileges, and how to customize access for individual users.
+
+Access the Other Devices page by clicking the Other Devices tab on the Asio platform.
+
+Click the Add Device button to select whether you want to add a VMware, VCenter, or SNMP device. 
+
+
+
+VMware Host Addition   
+You can add a VMware from the Other Devices page in two ways: 
+ Directly adding the VMware host to be monitored.
+
+Click Add Device > VMware Host. The registration form displays on the screen.
+
+Select the Site of the Probe machine. 
+Select the Monitoring Device (Probe machine). 
+Fill in VMware host IP address.
+The Port data is filled automatically. 
+Provide the Username and Password for the connection. 
+Click on the Test button. As soon as the connection between the probe machine and VMware Host is established, the Save button becomes active. 
+Click Save. 
+
+Note: The save process can take a few minutes, the device is automatically added to the grid with 'In Progress' status. To see the current status, you need to refresh the page after some time and when the parameters are saved, status in the grid changes to successful. 
+
+ Adding VCenter that manages one or more VMware hosts.
+
+Click Add Device > VCenter. The registration form displays on the screen.
+
+ Select the Site. 
+Select the Monitoring Device.
+Fill in the IP address.
+The Port data is filled automatically. 
+Provide the Username and Password for the connection .
+Click Retrieve information. 
+
+As soon as the connection is established, the list of Hosts under VCenter will appear. You can select or unselect VMware hosts managed by VCenter for monitoring and click the Save button to update the configuration.
+
+Adding SNMP v1/v2 Devices for Monitoring
+
+Click Add Device > SNMP. The registration form displays on the screen.
+
+Select the Site of the Probe machine. 
+Select the Monitoring Device (Probe machine).
+Fill in the IP address of the device that supports the SNMP protocol.
+The Port data is filled automatically .
+Fill in the Device Type information. 
+Select the version of SNMP protocol. 
+Provide the Community string and confirm the same.
+Click Test. As soon as the connection between the probe machine and the device that supports SNMP protocol is established, the Save button becomes active. 
+Click Save. This will complete adding of SNMP devices to monitoring.
+
+Note: The save process can take a few minutes, the device is automatically added to the grid with 'In Progress' status. To see the current status, you need to refresh the page after some time and when the parameters are saved, status in the grid changes to successful. 
+
+Adding SNMP v3 Devices for Monitoring
+
+Click Add Device > SNMP. The registration form displays on the screen.
+
+Select the Site of the Probe machine 
+Select the Monitoring Device (Probe machine) .
+Fill in the IP address of the device that supports the SNMP protocol.
+The Port data is filled automatically. 
+Fill in the Device Type information. 
+Select version of SNMP protocol. 
+Provide a Username.
+Select Authentication Algorithm, if it is applicable.
+Provide an Authentification Password.
+Select Privacy Algorithm, if it is applicable.
+Provide a Privacy Password.
+Select Additional Parameters, if your user has a Context Name or a Context Engine Id, fill in the data.
+Click Test. As soon as the connection between the probe machine and the device that supports SNMP protocol is established, the Save button becomes active.
+Click Save. This completes adding the SNMP devices to monitoring.
+
+Note: The save process can take a few minutes, the device is automatically added to the grid with 'In Progress' status. To see the current status, you need to refresh the page after some time and when the parameters are saved, status in the grid changes to successful. 
+
+Monitoring
+
+There are two ways to set up device monitoring: 
+
+ From the Other Devices Page - support for VMware / VCenter after the device is added.   
+If the probe monitoring VMware Host or VCenter goes offline or is unavailable, two tickets will be generated, one for the probe and the other for the VMware host.
+The ticket that is generated for the probe will not have details of the VMware host.
+The ticket that is generated for the VMware host will have the details of the probe machine.
+
+If the VMware Host goes offline or is unavailable, a ticket will be generated and the probe monitoring the VMware host or VCenter will also referenced in the ticket.
+
+Create Custom Monitor 
+
+Prerequisites: 
+
+You must have access to the Custom Monitors functionality (View and Create permission). Refer the Custom Monitors article for access rights.
+The Endpoint's connection status must be displayed as 'Success'.
+How to Create a Custom SNMP Monitor 
+From the Other Devices page, select one or more devices from the grid. The Add Monitor button will change its state to active and change the name according to the selected device type.  
+Click Add Monitor. You will be automatically redirected to the Custom Monitor creation page. Such parameters as Monitor Name, Monitor type, and an endpoint in the resource selector will be pre-selected. 
+Configure the Custom Monitor according to your requirements. Refer to the SNMP Monitor article for more information.
+
+Note: The custom SNMP monitor can be created for two or more devices only if the devices are the same type.
+
+Removing the VMware Host, VCenter, and SNMP device from Monitoring
+
+Select a device or devices in the device grid. On the top of the grid, you will see the total number of endpoints chosen for removal.
+
+Click Remove.
+Confirm your choice by clicking Remove in the pop-up window.
+
+Device deletion can take some time, therefore sometimes you can see endpoints with a 'Deletion in progress' status. Please refresh the page to see the latest status.
+
+Note: 
+
+Devices with 'In progress' or 'Deletion in progress' status cannot be removed.
+Once a device is removed from the Other Devices page, ensure to check and remove the monitoring device or the probe device from the Devices tab. 
+
+Hyper-V & VMware Export
+
+We have added key Virtualization infrastructure information on a new worksheet on the existing export feature. The new worksheet name is Virtualization as shown in the screenshot below:
+
+Known Issues/Limitations
+Monitoring will discontinue if:
+The credentials (username or password) used to login to the VMware Host / VCenter are changed from the backend (vSphere)
+For VMware – Remove and add the VMware host again with the right credentials from Virtualization monitoring.
+For VCenter – Remove and add the VCenter again with the right credentials from Virtualization monitoring.
+This flow will be simplified in the future.
+The VMware host/ VCenter is deleted from vSphere. This deletion will not auto-sync on the VMware Monitoring page. You must remove the VMware Host / VCenter manually from the Virtualization Monitoring page, which will also remove it from the Devices page.
+Two different monitoring devices can monitor a VMware host / VCenter. This will be prevented in the future.
+Disabling access to the Computers page for a role will disable access to VMware and VCenter Monitoring, Virtualization Power actions even if the access is enabled for the role.
+Filters are applied to the Other Devices list and if an item in the grid is added or updated, returning to the list clears those filtered settings.
+Virtualization FAQs End User Portal
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Devices Overview
+The information on the Device list provides a high-level view of all sites or filtered sites and includes easy-to-view details for applicable endpoint...
+Device Details Screen
+Custom Fields
+Custom Fields are additional data points you can create in the ConnectWise Asio® platform to record information not collected by the agent or unavaila...
+Device Groups
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

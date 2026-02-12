@@ -1,0 +1,103 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   ConnectWise RMM Release Notes   ConnectWise RMM Update for July 2024
+ConnectWise RMM Update for July 2024
+Last updated
+Jun 13, 2025
+Table of contents
+Overview 
+Announcements  
+In Console Reports in the Asio Platform
+Automation Support Update
+What's new in ConnectWise RMM?
+July 31st, 2024
+Agent
+Alerting
+In-Console Reports
+Issues Addressed
+July 29th, 2024
+Agent
+Issues Addressed
+July 18th, 2024
+In-console Reports
+Issues Addressed
+July 15th, 2024
+In-console Reports
+Patching
+July 12th, 2024
+Alert Management
+July 11th, 2024
+PSA Integration and Ticketing
+Issues Addressed
+July 10th, 2024
+Agent
+Automation
+Issues Addressed
+July 5th, 2024
+Platform
+July 1st, 2024
+Tasks
+Overview 
+
+This page provides information on the latest enhancements and features for ConnectWise RMM.
+
+Announcements  
+In Console Reports in the Asio Platform
+
+We will be removing the following legacy reports:
+
+Mail Subscription Report
+No Contact (Desktop)
+Product key Report
+Agent Summary
+Automation Support Update
+
+Support for legacy scripting for Command partners will be discontinued on August 19th. This will be completed in two phases
+
+Phase 1: The UI view for legacy scripting will be removed on August 19th. However, active templates will continue to run in the backend. You will have the ability to move templates from the legacy version to 2.0 until Phase 2.
+Phase 2: During Phase 2, scripts will no longer run as the legacy component will be deprecated. After this phase, you will not be able to copy over templates to the 2.0 version.
+What's new in ConnectWise RMM?
+July 31st, 2024
+July 29th, 2024
+July 18th, 2024
+July 15th, 2024
+July 12th, 2024
+July 11th, 2024
+July 10th, 2024
+July 5th, 2024
+July 1st, 2024
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ConnectWise RMM Update for January 2024
+ConnectWise RMM Update for February 2024
+ConnectWise RMM Update for March 2024
+ConnectWise RMM Update for April 2024
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

@@ -1,0 +1,54 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Client Management
+Client Management
+Last updated
+Sep 3, 2025
+Overview
+
+The Clients tab in the ConnectWise Asio® platform allows you to create and manage your customers and information about them. This is where you can create companies and sites, which allow you to better organize the endpoints that you are managing with ConnectWise RMM™. 
+
+Companies are overarching structures designed to encompass the entirety of your clients' organization. Sites are designed to be either physical or logical groupings within that organization.
+
+All articles
+Companies and Sites
+This article provides information on company and site management in the Asio™ platform. Asio allows you to create, view, and edit company or site information for each company you have permission to access. Navigate to Clients > Companies to view your companies and the data associated with them. Click on a company to view the primary site, site list, phone number, email, and the company's location.
+Company and Site Bulk Import Functionality
+Contact Management
+Using a Custom Field in a PowerShell Script Companies and Sites
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Companies and Sites
+This article provides information on company and site management in the Asio™ platform. Asio allows you to create, view, and edit company or site info...
+Contact Management
+Company and Site Bulk Import Functionality
+Command for Networks
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

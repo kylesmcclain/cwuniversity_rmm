@@ -1,0 +1,121 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   ConnectWise RMM Release Notes   ConnectWise RMM Update for June 2024
+ConnectWise RMM Update for June 2024
+Last updated
+Aug 30, 2024
+Table of contents
+Overview 
+Announcements  
+Advanced Network Monitoring
+In Console Reports in the Asio Platform
+New Onboarding Page for Webroot
+ScreenConnect Instance access to CW SSO
+What's new in ConnectWise RMM?
+June 30th, 2024
+In-console reports
+Issues Addressed
+June 25th, 2024
+Agent
+Ticketing / PSA Integration
+Issues Addressed
+June 21st, 2024
+Alert Management
+Issues Addressed
+June 20th, 2024
+Integrations
+Issues Addressed
+June 18th, 2024
+Automation
+Issues Addressed
+June 13th, 2024
+Policies and Packages
+Issues Addressed
+June 10th, 2024
+Agent
+PSA Integration
+Issues Addressed
+June 7th, 2024
+In-console reports
+Issues Addressed
+Overview 
+
+This page provides information on the latest enhancements and features for ConnectWise RMM.
+
+Announcements  
+Advanced Network Monitoring
+
+We have released an upgraded version of Network Monitoring. Advanced Network Monitoring is an add-on product, enabled at the site level. For an additional cost, you can upgrade your embedded Network Monitoring capabilities including:
+
+Configuration backup comparison and history so you no longer need to guess what changed between configurations. Instantly bring back any previous configuration from the version history when needed (requires SSH). 
+
+60 out-of-the-box SNMP alerts to leverage our best practices recommendations and stay on top of network events (requires SNMP). 
+
+Real-time statistics for better tracking of bandwidth, utilization, and packets. 
+
+NorthStar troubleshooting tool that maps the path of a device to the internet (requires SNMP). 
+
+For more information, review the following documentation articles:
+
+Advanced Network Monitoring
+Advanced Network Monitoring Features
+Network Monitoring FAQ
+In Console Reports in the Asio Platform
+
+Asio reporting will be improved to ensure consistency in data across the Asio platform and Reporting pages. This enhancement will apply to the following reports this month:
+
+Automation Execution Summary - Gives an overview of automation executed across all endpoints
+Automation Execution Detailed - Gives granular level information on endpoint-automation execution 
+New Onboarding Page for Webroot
+
+We will introduce a new Webroot signup page for partners purchasing Webroot from ConnectWise. This new signup page will replace the legacy onboarding page.
+
+ScreenConnect Instance access to CW SSO
+
+Your ScreenConnect instance will be moved to CW SSO for Authentication by the end of the month.
+
+What's new in ConnectWise RMM?
+June 30th, 2024
+June 25th, 2024
+June 21st, 2024
+June 20th, 2024
+June 18th, 2024
+June 13th, 2024
+June 10th, 2024
+June 7th, 2024
+ConnectWise RMM Update for May 2024 ConnectWise RMM Update for July 2024
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ConnectWise RMM Update for January 2024
+ConnectWise RMM Update for February 2024
+ConnectWise RMM Update for March 2024
+ConnectWise RMM Update for April 2024
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

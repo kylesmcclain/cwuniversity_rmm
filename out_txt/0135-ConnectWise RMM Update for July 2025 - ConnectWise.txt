@@ -1,0 +1,151 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   ConnectWise RMM Release Notes   ConnectWise RMM Update for July 2025
+ConnectWise RMM Update for July 2025
+Last updated
+Sep 16, 2025
+Table of contents
+Overview 
+What's new in ConnectWise RMM?
+July 31, 2025
+Custom Fields
+July 30, 2025
+Agent
+Issues Addressed
+July 24, 2025
+Automation
+Issues Addressed
+July 15, 2025
+ScreenConnect
+July 11, 2025
+Uninstall Agents API
+Issues Addressed
+July 10, 2025
+Alerting
+July 7, 2025
+Issues Addressed
+July 2, 2025
+Agent
+Issues Addressed
+Overview 
+
+This page provides information on the latest enhancements and features for ConnectWise RMM.
+
+What's new in ConnectWise RMM?
+Release Dates	Relevant Modules
+
+July 31, 2025
+July 30, 2025
+July 24, 2025
+July 15, 2025
+July 11, 2025
+July 10, 2025
+July 7, 2025
+July 2, 2025
+	
+Custom Fields
+Agent
+Automation
+ScreenConnect
+Uninstall Agents API
+Alerting
+July 31, 2025
+Custom Fields
+
+The following new datasets will be available for partners who have enabled Snowflake Syndication:
+
+Custom fields data for Company
+
+Custom fields data for Site
+
+Custom fields data for Endpoints
+
+July 30, 2025
+Agent
+
+Endpoints with RMM Agent installed will receive an Agent update version 4.0.3. The rollout will start from 30 July in a phased manner. The new Agent setup version 4.0.3 will be enabled from 31 July in a phased manner for all regions.
+
+Note: Always use the latest version while installing the Platform Agent to access new functionalities and ensure that it has the most up-to-date features. Make sure to update the GPO, MS Intune, or any other method used to install the Agent.
+
+Issues Addressed
+Known Issue	Description
+ 	Agent heartbeat is fetched via a secure URL, so agents previously shown offline incorrectly will now appear online on the Asio portal.
+ 	Fixed an issue where an empty configuration file on the machine was preventing the RMM agent from auto-updating.
+ 	Fixed an issue where active applications were getting terminated or restarted on macOS when RMM Agent was being uninstalled.
+ISSUE-7514	Fixed an issue where the Event Log Plugin was causing high CPU utilization when the event log size was large.
+July 24, 2025
+Automation
+Enhanced the Script Editor by migrating all script functions from modal dialogs to peek panels for a more streamlined and consistent user experience.
+Issues Addressed
+Known Issue	Description
+ISSUE-8114	Fixed an issue where the task execution details were not appearing in the Automation Execution Summary and the Detail Reports.
+ 	Fixed an issue where the script parameter inputs were limited to 100 characters; the limit has now been increased to 1000 characters.
+ 	Fixed an issue where the task parameters could be manipulated in a way that allowed unintended code execution under specific conditions.
+July 15, 2025
+ScreenConnect
+The ScreenConnect View feature is now available in the Asio Top Navigation pane as Remote View. Review this Remote View documentation.
+July 11, 2025
+Uninstall Agents API
+API to uninstall agents is now available via OpenAPI.
+Issues Addressed
+Known Issue	Description
+PCH-5722	Addressed issue where feature updates did not deploy when the endpoint comes online in the middle of the Schedule window.
+PCH-5878	Feature Update Deployment was getting marked as installation completed, preventing the finalization process.
+PCH-5841	Superseded or Patches that are no longer missing on the endpoint will not be marked as success anymore.
+ISSUE-7767	Fixed issues with Patch installation failure where multiple tickets generated for each patch instead of consolidating under a single ticket.
+ISSUE-7653	Addressed issues with Server 2016 Pending reboot detection.
+July 10, 2025
+Alerting
+We have introduced a new Intelligent Alert condition to detect stale AVHD files on Microsoft Hyper-V Server.
+Alert Name: Microsoft Hyper V - Stale AVHD Files
+We improved the logic for the Under Research alert "SQL Server Percent Log".
+We improved the logic for the condition - “Security Notification - A user account is added to Security group”.
+July 7, 2025
+Issues Addressed
+Known Issue	Description
+ISSUE-6765	Fixed an issue where the RMM scanning tool was not supporting special characters for macOS devices.
+July 2, 2025
+Agent
+
+Agent version 4.0.2 is now available for download.
+
+Issues Addressed
+Known Issue	Description
+ISSUE-5779	Fixed an issue where the Linux Agent wasn't appearing to be reporting properly.
+ISSUE-7777	Fixed an issue where the System Uptime > Last Restart Time on a few Windows machines was displaying incorrect values.
+ConnectWise RMM Update for June 2025 ConnectWise RMM Update for August 2025
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ConnectWise RMM Latest Release Notes
+ConnectWise RMM Update for January 2024
+ConnectWise RMM Update for February 2024
+ConnectWise RMM Update for March 2024
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

@@ -1,0 +1,137 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Alerts   Custom Monitors   Performance Counter Monitor
+Performance Counter Monitor
+Last updated
+Jun 2, 2025
+Table of contents
+Overview
+How to create a Performance Counter Monitor
+List of Monitor Variables
+Overview
+
+Performance Counter Monitors allow you to define a Windows, Hyper-V, or Application performance counter information for monitoring on a target endpoint. Performance counter Monitors can be applied on Windows endpoints only.  
+
+How to create a Performance Counter Monitor
+
+Navigate to  Endpoints > Alerts > Monitors .
+
+Click Add Monitor.
+
+Provide a Name for the new monitor. Optionally you can provide a Description of your new monitor.
+
+Select the Type as Performance Counter from the drop-down.
+
+Select the Family and Severity.
+
+To enable the Mapper functionality, you need to turn on the toggle. To learn more about the Mapper functionality review this documentation.
+
+Under the Condition section,
+Counter Type Select the type of performance counter that you are adding.
+Windows: Select this for Windows OS-based performance counters.
+Application: Select this type for application-based performance counters. So far, we offer Exchange-based performance counters.
+Hyper-V: Select this type for Hyper-V-based performance counters.
+Object: Select the object that should be monitored.
+Counter: Select the appropriate counter.
+Condition: Select the condition for when the alert should be triggered
+is above: Select this if the value should be above the threshold for the alert trigger. 
+is below: Select this if the value should be below the threshold for the alert trigger. 
+Value: Enter the value that should be used for triggering the alert.
+Duration: Select the duration for which the value should be expected to be high or low.
+You can also select a custom Automation Task to be executed when the condition is met on the endpoint.
+
+Note: System will reflect only selective Automation tasks that do not need parameters. Refer these OOTB tasks which needs parameters. All Custom Scripts created will be available for selection.
+
+Under the Ticket Resolution section you can define if the ticket should be updated as Resolved once the following criteria are met:
+
+Counter Type Select the type of performance counter.
+Windows: Select this for Windows OS-based performance counters.
+Application: Select this type for application-based performance counters. So far, we offer Exchange-based performance counters.
+Hyper-V: Select this type for Hyper-V-based performance counters.
+Object: Select the object that should be monitored.
+Counter: Select the appropriate counter.
+Condition: Select the condition for when the alert should be triggered.
+is above: Select this if the value should be above the threshold for the alert trigger. 
+is below: Select this if the value should be below the threshold for the alert trigger. 
+Value: Enter the value that should be used for triggering the alert.
+Duration: Select the duration for which the value should be expected to be high or low.
+You can also select a custom Automation Task to be executed when the condition is met on the endpoint.
+
+Note: We strongly recommend adding some buffer in the thresholds defined for the Ticket Condition and Resolution. Keeping the same value in both would result in multiple tickets getting created and closed in short duration.
+
+Under the Resources section, you can select the target endpoints on which the alerts should be triggered. You can select specific machines, Sites, or a Dynamic or a Static group.
+
+Click Save to create and apply the monitor to the targets.
+
+Note: Monitors will be triggered based on the configuration set/defined.
+
+List of Monitor Variables
+
+Here is a list of variables which you can use as per your requirement when creating your own customized ticket template:
+
+Monitor Type	Variable Name	Supported OS Type	Sample Data/Values	Variable Definition
+Generic
+ 	ObservedDate	
+
+Windows, MAC, Linux
+
+	
+
+"2020-09-02T15:35:42.969926103Z"
+
+	Time stamp when the issue was observed
+ 	MonitorDesc	Windows, MAC, Linux	Add local palmtech account and add it to the local administrators group	Description added on the portal while creating a monitor
+ 	MonitorName	Windows, MAC, Linux	Local PalmTech Account with Local Admin	Name of the monitor
+ 	MonitorSummary	Windows, MAC, Linux	(Run PowerShell script every 1 minute(s) AND Run PowerShell script every 1 minute(s))	Summary information for the monitor
+Performance Counter - Windows
+ 	Condition	Windows	 	Defines the value configured in the monitor for either above or below
+ 	Counter	Windows	System Up Time	The counter value/information to be monitored
+ 	CounterType	Windows	Windows	The type of counter to be used for monitoring
+ 	Instance	Windows	 	Information on instance to be used for monitoring
+ 	Object	Windows	System	Object definition for the monitor
+ 	TimeWindow	Windows	60	Duration for which counter values should be averaged
+ 	Value	Windows	2592000	Value that should be monitored
+Performance Counter - Hyper-V
+ 	Condition	Windows	above	Defines the value configured in the monitor for either above or below
+ 	Counter	Windows	System Up Time	The counter value/information to be monitored
+ 	CounterType	Windows	Windows	The type of counter to be used for monitoring
+ 	Instance	Windows	n/a	Information on instance to be used for monitoring
+ 	Object	Windows	System	Object definition for the monitor
+ 	TimeWindow	Windows	60	Duration for which counter values should be averaged
+ 	Value	Windows	2592000	Value that should be monitored
+Memory Monitor Port Monitor
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Service Monitor
+Process Monitor
+Event Monitor
+CPU Monitor
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

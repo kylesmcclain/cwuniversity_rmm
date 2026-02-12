@@ -1,0 +1,55 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Communicator User Guide   Communicator Hidden Mode
+Communicator Hidden Mode
+Last updated
+Aug 20, 2024
+Table of contents
+Overview
+For example:
+Overview
+
+The Communicator hidden mode allows the end-user to receive Patch Reboot Notifications and Messages from the Portal, even if the Communicator is disabled on the endpoint in the policy. Hidden mode means the Communicator tray is not visible or accessible to the end-user. Still, at the same time, the end-user will be able to review the Patch Reboot Notification and Messages and act on it.
+
+For example:
+If the Communicator Policy is disabled on the endpoint,
+
+And if the Patching Desktop/Server Policy setting "Notify user before reboot" is ON for the endpoint,
+
+Then the Communicator will be running in hidden mode. 
+Communicator Default Menus Communicator Messaging
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Communicator Configuration
+Communicator Assignment
+Communicator Default Menus
+Communicator Branding
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

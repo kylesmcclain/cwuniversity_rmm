@@ -1,0 +1,70 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Agents   Agent Management   Golden Image Support
+Golden Image Support
+Last updated
+Jul 8, 2025
+Table of contents
+Overview
+Benefits of the updated agent
+Overview
+
+This documentation reviews the benefits and process of the updated RMM Agent and its ability to be supported when you create a golden image.
+
+Note: A golden image is a master copy of a computer system with essential software installed and used as a reference for creating other copies.
+
+The RMM agent continues support when you create a Golden Image. Before, when you made an image with the RMM agent already installed, using the same image for creating new endpoint instances resulted in displaying these new endpoints as clones.
+
+Endpoints that were reported as clones in the Devices page will no longer be shown as Clones, and instead now have a unique identifier. The agent will reprocess these duplicates (clone devices) as a separate device if they are reported online. (The devices page still shows them as individual devices). 
+
+Important: Make sure that you are using the latest version of the RMM Agent when creating a golden image.
+
+Benefits of the updated agent
+You can create an image with the RMM agent installed.
+A new instance of endpoint created using the Golden image will be managed as a new device.
+Golden Image support will be applicable for all flavors of agents (Windows and Linux).
+User can switch the device type for an Endpoint. Review Switching the device type for an Endpoint documentation. Note that, this option is available only for Windows devices. 
+A new instance of VM when created with the image will report as a separate device in the Asio portal > Devices page.
+By using the Golden image, technicians can streamline the deployment process with reduced time and effort when creating a new VM.
+
+Note: 
+
+Golden image will be supported only if the instances created are on a persistent drive.
+Platform agent does not support identical clone machines.
+Changing Proxy Settings Switching the device type for an Endpoint
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Changing Proxy Settings
+Switching the device type for an Endpoint
+Assign device to another site (Move Agent)
+Asio Agent Requirements
+The article includes the currently supported operating systems for agent installations.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

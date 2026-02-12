@@ -1,0 +1,142 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   ConnectWise RMM Release Notes   RMM Release Notes Archive   ConnectWise RMM Update for June 2022
+ConnectWise RMM Update for June 2022
+Last updated
+Aug 2, 2022
+Table of contents
+Announcements
+Task Changes and Updates
+Control Installation via Policies (Coming in August)
+Executive Reports for new OS patching
+ConnectWise RMM
+Communicator
+Monitoring
+Patching
+Portal
+Ticketing / PSA Integration
+Bug Fixes
+Announcements
+Task Changes and Updates
+
+This month we will begin a staged partner-by-partner migration that will take effect through July 23rd. You will not see any changes until you have been migrated. Migrations will occur during off-hours and, on average, take two minutes to complete. You will receive a notification in the Asio Platform (ITSupport Portal) letting you know that your migration has been completed.
+
+Changes to Scheduled Task behavior
+
+Completed Tasks (a Task that has been scheduled to Run and an Outcome has been reported for all computers after the Task's final scheduled execution) can no longer be edited. This change was made last month in preparation for backend changes this month that will improve the stability and reliability of Scheduled Tasks.
+
+Any Scheduled Task that combines a repeating schedule with a trigger, or combines multiple triggers, will be split into multiple Scheduled Tasks. Beginning this month, you can no longer combine a repeating schedule with a trigger, or combine multiple triggers in a single Scheduled Task. However, you can create multiple Scheduled Tasks to achieve the same results.
+
+Scheduled Tasks that use Local Machine Time will fail to run when scheduled to start in the past for any device.
+
+Example: If you are in Central Standard time and support clients in both Central and Eastern Standard Time, and at 4pm CST, you schedule a Task to run once today at 4:15pm Local Machine Time, this Scheduled Task will fail because it is scheduled to start in the past for devices in Eastern Timezone, as it is already 5pm EST.
+
+Scheduled Task History will now group device execution by Local Machine Time.
+
+Example: If you are in Central Standard time and support clients in both Central and Eastern Standard Time, and at 4pm CST, you schedule a Task to run once today at 4:15pm Local Machine Time, the Scheduled Task History will show two records, one for CST and one for EST.
+
+Any instance of a Scheduled Task with a Start Time of more than 72 hours ago will show as Failed for devices that have not completed executing the Task.
+
+Scheduled Tasks that are active, but could not previously be seen, will become visible.
+
+UI Changes when scheduling a Task
+
+Run Time will be merged with Start Time. Any partner looking for Run Time should use Start Time.
+
+End Time will be removed and all new or updated Scheduled Tasks will use 23:59:59 as their End Time.
+
+Always will be removed as an option for Triggers and is now considered the default behavior for Triggers.
+
+Partners will be able to schedule Tasks for Sites and Dynamic Groups that are currently empty (they have no resources in them). If the Site or Dynamic Group is still empty at the scheduled Start Time, the Scheduled Task will fail.
+
+Control Installation via Policies (Coming in August)
+
+We will start to rollout control installation options for site via the Policies & Packages starting next month. After this change, the option to opt in for Control at a site will be removed from the RMM Setup, and will be managed by the policies that are assigned to the sites.
+
+For more information, please review the Migration of Control configuration to Policies and Packages FAQs.
+
+Executive Reports for new OS patching
+
+A new Executive Summary report called ITSupport247 Executive Report v2.0 has been rolled out to all Command and Connectwise RMM partners. This Executive report has OS patching scores for Server and Desktops. Two additional Gauges have also been added to the Executive Report for OS patching.
+
+ConnectWise RMM
+Communicator
+
+End-users can receive patching reboot notifications without the Communicator being enabled on their endpoint. The Communicator is no longer needed to run in the system tray for an endpoint to receive a reboot notification. The agent components will now run in the background and show any messages to the user. The Communicator will need to be enabled to use the functionalities of the Tool which are available in the System tray. This will be released on June 30th.
+
+Monitoring
+
+New Preview Alert. We will be adding a new SMART disk monitoring alert for Server and Desktop called Preview Alert. You can enable the monitoring condition and receive alerts for any disk issues observed.
+
+Patching
+
+Ability to enable or disable Patch Reboot Notifications with Policy. We are providing new options within OS Patching Policy to turn Reboot Notifications ON or OFF as per your preference. The default option will be ON. This will be released on June 23rd.
+
+UI Improvement. We have improved the UI on the Device Details > OS Patching to show the complete OS Name of the endpoint.
+
+Portal
+
+Agent Update. An agent update, version 2.1.802, will be rolled out in phased manner starting June 30th.
+
+New section for Asio™ Platform (ITSupport Portal) Release Notes. As we work to offer better flexibility for our solutions, we've decided to create a new section for Asio Release notes, separating them from the monthly ConnectWise RMM and Command Releases.
+
+IP Restriction Management is available to all Asio™ Platform (ITSupport Portal) Partners. We have added a new feature called IP Restriction Managment. This feature allows you to define and manage an allowed list of IP addresses that can access the Asio Platform and it's products within such as ConnectWise RMM, Command, and Recover. To learn more, visit the IP Restriction Management for the Asio Platform article.
+
+We have also added an IP Restriction Management FAQ page.
+
+Ticketing / PSA Integration
+
+AutoTask PSA Rebrand. AutoTask PSA integration screens will be rebranded to display ConnectWise RMM instead of being displayed as Continuum Sites. This will be released on June 30th.
+
+New resync button for ConenctWise Manage partners. We will be adding a new button for ConnectWise Manage partners to resync any failed Tickets and any Asset and billing configurations which failed due to an error. You no longer need to run the complete PSA integration wizard to initiate the resync process. This will be released on June 30th.
+
+New resync button for AutoTask partners. We will be adding a new button for AutoTask partners to resync any failed Tickets or any Asset and billing configurations which failed due to an error. You no longer need to run the PSA Test Configuration to initiate the resync process. This will be released on June 30th.
+
+Bug Fixes
+
+The following issues will be resolved with this month's release:
+
+Patching: We resolved an issue where in certain scenario machines would not reboot as per Policy.
+
+Patching: We have resolved a UI bug with Application updates popup in the Devices page would not scale as per the page size.
+
+Patching: We have resolved an issue with Auto-deployment to handle scenarios where the installation was failing when download and install have the same schedule. Also improved the logic to ensure a patch is not downloaded multiple times when the first download is successful.
+
+Ticketing / PSA Integration: We are fixing an issue where some of the configuration items were duplicated when the complete asset data was not received from the endpoint.
+
+ConnectWise RMM Update for May 2022 ConnectWise RMM Update for July 2022
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ConnectWise RMM Update for April 2022
+ConnectWise RMM Update for March 2022
+ConnectWise RMM Update for February 2022
+ConnectWise RMM Update for January 2022
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

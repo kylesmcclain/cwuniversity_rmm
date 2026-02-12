@@ -1,0 +1,152 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Agents   Download and Install Agents   Agent for Linux 32/64 bit ARM device
+Agent for Linux 32/64 bit ARM device
+Last updated
+Oct 15, 2025
+Table of contents
+Overview
+Linux ARM 32/64-bit Agent Requirements
+Operating System Compatibility
+Supported ARM 32-bit Architecture Versions
+Download Agent
+Installation steps
+Overview
+
+Linux ARM-based devices like Raspberry Pi are supported for management in the RMM ecosystem.
+
+Linux ARM 32/64-bit Agent Requirements
+CPU: ARM based 32/64 bit.
+RAM: 1 GB and above
+Disk storage: 1.5 GB on the drive.
+
+Important: For ScreenConnect®, the Java Runtime Environment (JRE) 1.9 or above needs to be installed. If Oracle or OpenJDK JRE 1.9+ is installed, the guest client should be compatible with most distributions.
+
+Operating System Compatibility
+
+OS Type
+
+	
+
+OS version
+
+	
+
+ConnectWise Agent Compatibility
+
+
+
+
+Ubuntu
+
+	
+
+22.04
+
+	
+
+Verified on Raspberry pi 3/4/5 Model B
+
+
+
+
+Ubuntu
+
+	
+
+23.04
+
+	
+
+Verified on Raspberry pi 3/4/5 Model B
+
+
+
+
+Raspbian GNU/Linux
+
+	
+
+9 or later
+
+	
+
+Verified on Raspberry pi 2 Model B
+
+Supported on
+
+Raspberry pi 3 model B Rev 1.5
+Raspberry pi 4 model B Rev 1.5
+Raspberry pi 5 model B Rev 1.5
+Raspberry pi 2 Model B
+Supported ARM 32-bit Architecture Versions
+ armv7l 
+armv6l 
+armv5tel 
+armv5tejl 
+armv5te 
+armv4tl 
+armv4l
+Download Agent
+
+Note: The setup for Linux ARM based devices will not work on other Intel based Linux servers. 
+
+Sign in to the Asio™ platform.
+Navigate to Endpoints > Devices.
+Select the endpoints you want to install the agent on.
+Open the Manage drop-down in the toolbar at the top-left of the page.
+
+Select Download Agent from the drop-down menu.
+Select a Company and a Site from the drop-downs in the Download Agent window. You can also type to search for your site and select it.
+
+After selecting the site, select the tiles corresponding with the site OS. To download the Linux ARM-based agent, click the Download .run button. Optionally, click the Copy URL button and paste the URL in a browser to install the agent on the intended device.
+In case you rename the downloaded setup file, append the token with _TKN (Agent token can be copied from site selection)
+Example:  ITSPlatform-Installer_TKN12345XXXXXX.run 
+Installation steps
+Enter your Linux server username and password.
+Type sudo su to get access to root-level privileges.
+To execute permissions for setup, run chmod.
+Example: chmod 777 ITSPlatform-Installer_TKN12345XXXXXX.run
+Execute the .run Installer setup   ./ITSPlatform-Installer_TKN<token>.
+
+The setup takes less than a minute to install. The Endpoint should start showing up in the Asio platform in five minutes.
+
+Upon successful installation, the Linux ARM based device will be reflected on the Asio™ platform (ITSupport Portal) as shown below:
+
+
+Download and Install Agents Asio Platform Agent Deployment using Group Policy Object (GPO)
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Windows OS Agent Overview
+Asio Platform Agent Deployment using Group Policy Object (GPO)
+Installing Asio Agents using MS Intune
+macOS Agent Overview
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

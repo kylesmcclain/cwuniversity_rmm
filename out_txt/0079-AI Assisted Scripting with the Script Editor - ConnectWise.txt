@@ -1,0 +1,297 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Automation   Tasks   AI Assisted Scripting with the Script Editor
+AI Assisted Scripting with the Script Editor
+Last updated
+Mar 27, 2025
+Table of contents
+Overview
+User Permissions
+Limitations
+How to create PowerShell Scripts using the ConnectWise AI Assist
+How to create Bash Scripts using the ConnectWise AI Assist
+How to create Command Prompt (CMD) Scripts using the ConnectWise AI Assist
+Editing scripts generated using ConnectWise AI Assist
+Overview
+
+The ConnectWise RMM™ script editor now offers integration with ConnectWise Azure AI assist to provide quick and simplified ways to generate PowerShell, Bash, or batch (cmd) scripts.
+
+Note:  AI assisted scripting uses Azure OpenAI's 3.5 GPT model for generating scripts. Please refer to the ConnectWise AI responsible use statement for additional details.
+
+User Permissions
+
+AI assist is a permission driven function. You can set access to specific user roles or users to access or use AI assist. The following permissions are the default settings in RMM for access to the AI Assist feature.
+
+Role 
+
+	
+
+Default Value
+
+
+
+
+Primary Admin
+
+	
+
+Enabled
+
+
+
+
+Super Admin
+
+	
+
+Enabled
+
+
+
+
+Manager
+
+	
+
+Enabled
+
+
+
+
+Technician
+
+	
+
+Disabled
+
+
+
+
+CSM
+
+	
+
+Disabled
+
+
+
+
+Office Staff
+
+	
+
+NA
+
+
+
+
+Sales
+
+	
+
+NA
+
+
+
+
+Client Enduser
+
+	
+
+NA
+
+
+Limitations
+
+Each Partner will be allowed to generate only 100 scripts per day using the  Azure AI assist.
+
+How to create PowerShell Scripts using the ConnectWise AI Assist
+Navigate to the Automation > Tasks section on the left navigation menu.
+Click on the Add dropdown button and select Script Editor.
+
+The New Script page opens:
+ 
+
+Enter the following information:
+
+Name
+
+Description (optional)
+
+Category (optional)
+
+If you do not select a category, it will default to custom. You can pick from a preset category or create a new category for your instance of the Asio™ Platform (ITSupport Portal).
+
+Click Add Row and it will add a script row. Type PowerShell Script.
+
+The system will open a new Modal popup window that will allow you to create your PowerShell script using AI Assist.
+
+Toggle the option for Use Generative AI Assist for script creation to ON.
+
+Enter a query in the Generate a PowerShell script that: field. This can be a simple function (e.g., add/remove a user with Admin credentials, update a driver, empty a cache for a specific browser, etc.) or a more complex function (e.g., quarantine a device, update the version of Windows on a computer, generate a list of currently logged in users, perform a defined series of onboarding or offboarding tasks, etc.)
+
+Once you are satisfied with the query, click Generate Script. The results from the Generative AI will be visible in the Output results section.
+
+After the script has been generated, you must review its effectiveness. You can then use the script results by either:
+Click the Download option to download the script to your local machine for testing and analysis outside of you RMM system.
+Click the Copy to Script Editor option to proceed with moving and creating the script. The script must be moved to the Script Editor and you have to accept responsibility for verifying the script and its potential ramifications before allowing it to be saved and used within ConnectWise RMM.
+If you clicked on Copy to Script Editor, the script will be moved to the PowerShell Script Editor window.
+Edit or modify the script based on your requirements.
+Set the timeout interval in Expected time of script execution in seconds.
+Select the check box for the terms of using the Generative AI Script.
+If needed, you can add additional logic within the script editor to create advanced scripts and actions to execute.
+
+Important: ConnectWise highly recommends running or executing the scripts either locally or on a few sample or test endpoints before executing them across all endpoints.
+
+How to create Bash Scripts using the ConnectWise AI Assist
+Navigate to the Automation > Tasks section on the left navigation menu.
+Click on the Add dropdown button and select Script Editor.
+
+The New Script page opens:
+ 
+
+Enter the following information:
+
+Name
+
+Description (optional)
+
+Category (optional)
+
+If you do not select a category it will default to custom. You can pick from a preset category or create a new category for your instance of the Asio™ Platform (ITSupport Portal).
+
+Click Add Row it will add a script row. Type Bash Script.
+
+The system will open a new Modal popup window that will allow you to create your Bash script using AI Assist.
+
+
+
+
+Toggle the option for Use Generative AI Assist for script creation to ON.
+
+
+
+
+Enter a query in the Generate a Bashscript that: field. This can be a simple function (e.g., add/remove a user with Admin credentials, update a driver, empty a cache for a specific browser, etc.) or a more complex function (e.g., quarantine a device, update the version of Windows on a computer, generate a list of currently logged in users, perform a defined series of onboarding or offboarding tasks, etc.)
+
+Once you are satisfied with the query, click Generate Script. The results from the Generative AI will be visible in the Output results section.
+
+After the script has been generated, you must review its effectiveness. You can then use the script results by either:
+
+Click the Download option to download the script to your local machine for testing and analysis outside of you RMM system.
+Click the Copy to Script Editor option to proceed with moving and creating the script. The script must be moved to the Script Editor and you have to accept responsibility for verifying the script and its potential ramifications before allowing it to be saved and used within ConnectWise RMM.
+
+ 
+
+If you clicked on Copy to Script Editor, the script will be moved to the Bash Script Editor window.
+
+Edit or modify the script based on your requirements.
+
+Set the timeout interval in Expected time of script execution in seconds.
+
+Select the check box for the terms of using the Generative AI Script.
+
+If needed, you can add additional logic within the script editor to create advanced scripts and actions to execute.
+
+Important: ConnectWise highly recommends running or executing the scripts either locally or on a few sample or test endpoints before executing them across all endpoints.
+
+How to create Command Prompt (CMD) Scripts using the ConnectWise AI Assist
+Navigate to the Automation > Tasks section on the left navigation menu.
+Click on the Add dropdown button and select Script Editor.
+
+The New Script page opens:
+ 
+
+Enter the following information:
+
+Name
+
+Description (optional)
+
+Category (optional)
+
+If you do not select a category, it will default to custom. You can pick from a preset category or create a new category for your instance of the Asio™ Platform (ITSupport Portal).
+
+Click Add Row it will add a script row. Type Command Prompt (CMD) Script.
+
+The system will open a new Modal popup window that will allow you to create your Command Prompt script using AI Assist.
+
+
+
+
+Toggle the option for Use Generative AI Assist for script creation to ON.
+
+
+
+
+Enter a query in the Generate a Command Prompt (CMD) script that: field. This can be a simple function (e.g., add/remove a user with Admin credentials, update a driver, empty a cache for a specific browser, etc.) or a more complex function (e.g., quarantine a device, update the version of Windows on a computer, generate a list of currently logged in users, perform a defined series of onboarding or offboarding tasks, etc.)
+
+Once you are satisfied with the query, click Generate Script. The results from the Generative AI will be visible in the Output results section.
+
+After the script has been generated, you must review its effectiveness. You can then use the script results by either:
+
+Click the Download option to download the script to your local machine for testing and analysis outside of you RMM system.
+Click the Copy to Script Editor option to proceed with moving and creating the script. The script must be moved to the Script Editor and you have to accept responsibility for verifying the script and its potential ramifications before allowing it to be saved and used within ConnectWise RMM.
+
+ 
+
+If you clicked on Copy to Script Editor, the script will be moved to the Command Prompt Script Editor window.
+
+Edit or modify the script based on your requirements.
+
+Set the timeout interval in Expected time of script execution in seconds.
+
+Select the check box for the terms of using the Generative AI Script.
+
+If needed, you can add additional logic within the script editor to create advanced scripts and actions to execute.
+
+Important: ConnectWise highly recommends running or executing the scripts either locally or on a few sample or test endpoints before executing them across all endpoints.
+
+Editing scripts generated using ConnectWise AI Assist
+
+Navigate to Automation > Tasks and search for the script you wish to edit.
+
+Under the Actions column, click the pencil icon.
+
+You can now edit the script.
+
+ 
+
+Tasks Available Tasks
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Create and Schedule Script Type Tasks
+Create and schedule a script task.
+Running RMM Tasks
+How to run a task, create a custom script, or configure a task for the next agent check-in.
+Available Tasks
+RMM Task Reporting
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

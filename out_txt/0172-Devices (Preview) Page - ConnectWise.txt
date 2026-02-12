@@ -1,0 +1,989 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Devices Page   Devices (Preview) Page
+Devices (Preview) Page
+Last updated
+Jan 7, 2026
+Table of contents
+Overview
+To Access Devices (Preview)
+Search
+Adding a Filter
+Creating a Custom View
+Exporting a View
+Available Data Fields on the Device Grid
+Actions
+View Tasks
+Other Devices
+Overview
+
+The Device grid shows all managed ConnectWise Asio® platform endpoints. This article can help you customize the grid to show different data views and easily locate device information.
+
+To Access Devices (Preview)
+Navigate to Endpoints > Devices (Preview).
+The Devices list shows all endpoints across the ecosystem for centralized viewing and management. Users can find and manage Linux servers, Windows desktops, and servers within sites. 
+The Default View is the main landing page when navigating to Devices. This view is standard for all partners and cannot be modified.
+
+Search
+
+Use the Device page's search feature to find specific terms, such as endpoint name, or to perform a general search with less exact keywords across environments (by name, friendly name, last user, OS version, etc.). You can also use the filter to help you find the endpoint you are looking for.
+
+
+Adding a Filter
+
+Follow the steps below to add a filter to your Devices page.
+
+Click the Filter icon next to the search bar.
+
+Fill in the Columns, Operator, and Value fields.
+
+To add another filter, click Add filter. When adding a filter, the AND and OR options allow you to filter devices with matching or different qualifications.
+
+Click Done.
+To add and delete filters, click the Filter icon again.
+Creating a Custom View
+
+Follow the steps below to create a custom view based on any of the available data points on the grid. The custom view saves after logging out of Asio.
+
+Navigate to Endpoints > Devices.
+Click Default View and to open the drop-down.
+
+Select Create new view.
+
+Enter a unique View Name.
+Select the data fields to add to the view from the right-hand side of the dialogue. Each view can contain up to 30 data fields that define the view. Optionally, you can locate data using:
+Search the name of the data field.
+Select Category or Subcategory filter criteria.
+Add filters and sorting criteria to the view.
+
+Click Save View.
+To edit a custom view, click the Custom View drop-down and click the edit icon. To delete a custom view, click the delete icon.
+
+Exporting a View
+
+To export one or more device records from the grid, select the devices of interest from the grid by selecting individual device records on the left-hand side. The Select All option at the top of the device grid either selects the full page or all available devices in the view.
+
+Click Continue.
+
+Then, select the Export near the top-right of the grid.
+
+Note: By default, if no device records are selected, then the entire contents of the grid will be exported.
+
+Available Data Fields on the Device Grid
+
+Note: More data fields are added continuously. Check in periodically to stay updated with the data fields.
+
+Column Name
+
+	
+
+Description
+
+	
+
+Category
+
+	
+
+Data Type
+
+
+
+
+Name
+
+	
+
+Identifier assigned to a device within a network or system.
+
+	
+
+Asset
+
+	
+
+Name
+
+
+
+
+Friendly Name
+
+	
+
+User-friendly device name.
+
+	
+
+Asset
+
+	
+
+Friendly Name
+
+
+
+
+Status
+
+	
+
+Device status (online/offline).
+
+	
+
+Asset
+
+	
+
+Status
+
+
+
+
+Site Name
+
+	
+
+Physical or logical location of the device within an organization or network.
+
+	
+
+Site
+
+	
+
+Site Name
+
+
+
+
+Company Name
+
+	
+
+Name of the company owning the device.
+
+	
+
+Company
+
+	
+
+Company Name
+
+
+
+
+Device Type
+
+	
+
+Type of device (e.g., Desktop).
+
+	
+
+Asset
+
+	
+
+Device Type
+
+
+
+
+Operating System
+
+	
+
+Operating system installed on device.
+
+	
+
+Asset
+
+	
+
+Operating System
+
+
+
+
+OS Version
+
+	
+
+Version of the operating system.
+
+	
+
+ Asset
+
+	
+
+OS Version
+
+
+
+
+OS Installed On
+
+	
+
+Date when OS was installed.
+
+	
+
+Asset 
+
+	
+
+OS Installed On
+
+
+
+
+ASIO Agent Version
+
+	
+
+Version of ASIO agent (if available).
+
+	
+
+Asset 
+
+	
+
+ASIO Agent Version
+
+
+
+
+Last Online
+
+	
+
+Timestamp of last online activity.
+
+	
+
+Asset 
+
+	
+
+Last Online
+
+
+
+
+Last User
+
+	
+
+Last user who accessed the device.
+
+	
+
+Asset 
+
+	
+
+Last User
+
+
+
+
+Last Restart
+
+	
+
+Timestamp of last device restart.
+
+	
+
+Asset 
+
+	
+
+Last Restart
+
+
+
+
+Managed In
+
+	
+
+System/device managed in (e.g., CW RMM).
+
+	
+
+ Asset 
+
+	
+
+Managed In
+
+
+
+
+OS User Name
+
+	
+
+Currently logged in user name.
+
+	
+
+Asset
+
+	
+
+OS User Name
+
+
+
+
+System Product
+
+	
+
+Model information about the device.
+
+	
+
+Asset
+
+	
+
+System Product
+
+
+
+
+Serial Number
+
+	
+
+Hardware Serial number for the device.
+
+	
+
+Asset
+
+	
+
+Serial Number
+
+
+
+
+OS Release ID
+
+	
+
+Unique identifier for the operating system release/version installed on the device.
+
+	
+
+Asset 
+
+	
+
+OS Release ID
+
+
+
+
+RAM
+
+	
+
+Amount of Random Access Memory (RAM) installed in the device, measured in GB or MB.
+
+	
+
+Asset 
+
+	
+
+RAM
+
+
+
+
+Processor
+
+	
+
+The main CPU model/type installed in the device (e.g., Intel Core i7, AMD Ryzen 5).
+
+	
+
+Asset 
+
+	
+
+Processor
+
+
+
+
+OS Serial Number
+
+	
+
+Serial number assigned to the operating system installation, often used for licensing.
+
+	
+
+Asset 
+
+	
+
+OS Serial Number
+
+
+
+
+OS Language
+
+	
+
+Language setting of the operating system (e.g., English, French, Japanese).
+
+	
+
+Asset 
+
+	
+
+OS Language
+
+
+
+
+OS Installed Drive
+
+	
+
+The disk or partition where the operating system is installed (e.g., C:\ drive).
+
+	
+
+Asset 
+
+	
+
+OS Installed Drive
+
+
+
+
+OS Build
+
+	
+
+Specific build number of the operating system, indicating update or patch level.
+
+	
+
+Asset 
+
+	
+
+OS Build
+
+
+
+
+Model
+
+	
+
+Manufacturer’s model name/number for the device (e.g., Dell Latitude 5420).
+
+	
+
+Asset 
+
+	
+
+Model
+
+
+
+
+IP Address
+
+	
+
+Network address assigned to the device for communication within a network.
+
+	
+
+Asset 
+
+	
+
+IP Address
+
+
+
+
+Gateway Address
+
+	
+
+IP address of the network gateway/router used by the device to access external networks.
+
+	
+
+Asset 
+
+	
+
+Gateway Address
+
+
+
+
+Domain
+
+	
+
+Network domain to which the device belongs (e.g., company.local).
+
+	
+
+Asset 
+
+	
+
+Domain
+
+
+
+
+Device Time Zone
+
+	
+
+Time zone setting configured on the device (e.g., Pacific Standard Time).
+
+	
+
+Asset 
+
+	
+
+Device Time Zone
+
+
+
+
+Processor Product
+
+	
+
+Specific product name or code for the processor (e.g., Intel Xeon E-2286M).
+
+	
+
+Asset 
+
+	
+
+Processor Product
+
+
+
+
+Processors Number of Processors
+
+	
+
+Total number of physical processors (CPUs) installed in the device.
+
+	
+
+Asset 
+
+	
+
+Processors Number of Processors
+
+
+
+
+Processors Number of Cores
+
+	
+
+Number of cores per processor, affecting multitasking and performance.
+
+	
+
+Asset 
+
+	
+
+Processors Number of Cores
+
+
+
+
+Processor Manufacturer
+
+	
+
+Name of the company that made the processor (e.g., Intel, AMD).
+
+	
+
+Asset 
+
+	
+
+Processor Manufacturer
+
+
+
+
+BIOS SMBIOS Version
+
+	
+
+Version of the System Management BIOS (SMBIOS) standard implemented on the device.
+
+	
+
+Asset 
+
+	
+
+BIOS SMBIOS Version
+
+
+
+
+BIOS Product
+
+	
+
+Product name or identifier for the BIOS firmware.
+
+	
+
+Asset 
+
+	
+
+BIOS Product
+
+
+
+
+BIOS Manufacturer
+
+	
+
+Company that produced the BIOS firmware (e.g., American Megatrends, Phoenix).
+
+	
+
+Asset 
+
+	
+
+BIOS Manufacturer
+
+
+
+
+Motherboard Product
+
+	
+
+Product name or code for the motherboard.
+
+	
+
+Asset 
+
+	
+
+Motherboard Product
+
+
+
+
+Motherboard Name
+
+	
+
+Manufacturer’s name for the motherboard.
+
+	
+
+Asset 
+
+	
+
+Motherboard Name
+
+
+
+
+Motherboard Model
+
+	
+
+Model number of the motherboard.
+
+	
+
+Asset 
+
+	
+
+Motherboard Model
+
+
+
+
+Motherboard Manufacturer
+
+	
+
+Company that made the motherboard (e.g., ASUS, Dell).
+
+	
+
+Asset 
+
+	
+
+Motherboard Manufacturer
+
+
+
+
+System Type
+
+	
+
+Indicates if the device is a physical machine, virtual machine, or other system type.
+
+	
+
+Asset 
+
+	
+
+System Type
+
+
+
+
+Name
+
+	
+
+Unique identifier or hostname assigned to the device.
+
+	
+
+Asset 
+
+	
+
+Name
+
+
+
+
+OS Type
+
+	
+
+Type of operating system (e.g., Windows, Linux, macOS).
+
+	
+
+Asset 
+
+	
+
+OS Type
+
+
+
+
+Domain Role
+
+	
+
+Role of the device within the domain (e.g., Domain Controller, Member Server, Workstation).
+
+	
+
+Asset 
+
+	
+
+Domain Role
+
+
+
+
+DNS Address
+
+	
+
+IP address of the Domain Name System (DNS) server used by the device.
+
+	
+
+Asset 
+
+	
+
+DNS Address
+
+
+
+
+Chassis
+
+	
+
+Physical form factor of the device (e.g., laptop, desktop, rack server).
+
+	
+
+Asset 
+
+	
+
+Chassis
+
+
+
+
+OS Architecture
+
+	
+
+Architecture of the operating system (e.g., 32-bit, 64-bit).
+
+	
+
+Asset 
+
+	
+
+OS Architecture
+
+
+
+
+Name
+
+	
+
+Identifier assigned to a device within a network or system.
+
+	
+
+Asset
+
+	
+
+Name
+
+Actions
+
+The Actions button allows you to execute a task.
+
+Click the Actions button on the Devices (Preview) screen.
+
+You can either select the endpoint you want to run the task on or wait to select a device from the Resource Center. You can search and filter tasks in the search bar above. A task summary appears.
+Click Next.
+
+If you have not already selected an endpoint, select a site or all sites, device group(s), or another subset of endpoints to run a task. Click Next.
+
+Configure the PowerShell script as necessary. This can also be saved as a Custom task by clicking Save as Custom task (optional). Click Next.
+
+Schedule the task as necessary.
+
+The following options are available to schedule your task under the When to Run field:
+
+Click Next.
+Finalize and click Run.
+
+View Tasks
+
+The View Tasks button allows you to view previous tasks and their identifiable information.
+
+Click the drop-down next to Actions. Then, select View tasks.
+
+The Recent Tasks screen allows you to view the Task Name, Type, Regularity, Run As, Devices, Status, and Last Run.
+
+From the Recent Tasks screen, you can search and filter tasks.
+To view tasks in a certain time frame, select the drop-down next to the Filter icon. The default time frame is 48 hours.
+
+After clicking a task, the date and time of the last run, the user who initiated it, and the task output are shown. A list of results are shown that can be sorted by Device, Site, or Status.
+
+After clicking the three dots in the top-right corner, the following options appear:
+
+To export a task, click on the download icon to the left of the three dots. 
+
+Other Devices
+
+The Other Devices tab adds, modifies, or removes VMware Esxi, VCenter, and SNMP devices. This helps quickly add devices for monitoring and simplifying the overall process.
+
+For more information, visit the Other Devices Page.
+
+ 
+
+ 
+
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Asio Discovery Tool
+Devices Overview
+The information on the Device list provides a high-level view of all sites or filtered sites and includes easy-to-view details for applicable endpoint...
+Device Details Screen
+Custom Fields
+Custom Fields are additional data points you can create in the ConnectWise Asio® platform to record information not collected by the agent or unavaila...
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

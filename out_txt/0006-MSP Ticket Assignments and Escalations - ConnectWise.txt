@@ -1,0 +1,77 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Expert Services   Help Desk   Help Desk Service Statement of Work   MSP Ticket Assignments and Escalations
+ Expand/collapse global location
+MSP Ticket Assignments and Escalations
+Last updated
+Aug 16, 2023
+Table of contents
+Overview
+Tips to Prevent or Streamline Escalations
+Overview
+
+The goal of the Help Desk Service is to assign only resolved tickets marked NOC Completed to MSPs for approval. However, the Help Desk Service may occasionally assign an open ticket to the MSP or escalate a call if the technician does not have the minimum set of site details needed to resolve an issue, if an action requires MSP approval, or if the client’s request falls outside our Scope of Service.
+
+In cases where phone escalation is indicated in the Help Desk Service notification rule in the Asio Platform (ITSupport Portal) (in RMM Setup -> Notification Rules), the Help Desk Service will attempt to call up to two MSP telephone numbers. If two escalation contacts are listed, the Help Desk Service will attempt to call the first listed number for each. If one escalation contact is listed, the Help Desk Service will attempt to call the first two listed numbers for that contact.
+
+If the technician reaches an MSP employee, they will do one or more of the following:
+
+Warm transfer the call (e.g., request is out-of-scope or mandatory information is missing) and assign the ticket to the MSP.
+Assign the ticket to the MSP because information needed to resolve the ticket is not available in the Asio™ Platform (ITSupport Portal).
+Update the site information when the MSP can provide and approve the update. Once the MSP has added the missing information to the Asio Platform (ITSupport Portal), the ticket should be reassigned by the MSP to the Help Desk Service to continue to work on the issue.
+
+If the technician cannot reach an MSP employee, they will:
+
+Leave voice messages at the two numbers called (the first line of the notification template).
+Email all addresses in the notification template.
+Assign a ticket to the MSP with Info Needed status.
+Tips to Prevent or Streamline Escalations
+
+To avoid MSP ticket assignments and escalations, always:
+
+Verify all required site information is provided for the Help Desk Service.
+Opt in to Simple Inquiry, which is a call before escalating option in your Help Desk Service notification rule (under RMM Setup → Notification Rules) that allows the technician to place a client on hold while they contact you for minor missing information.
+Ensure that all contact details are up-to-date in the Help Desk Service notification rule and that assigned technicians are available during the assigned time frames.
+Enable Automatic Credentials for Servers and Desktops (to reduce login-related escalations).
+
+For more details about these tips, see Activating Help Desk Service.
+
+ 
+
+Client Requests and Callbacks Activating Help Desk
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Client Requests and Callbacks
+Help Desk Activation Checklist
+Help Desk Best Practices
+Help Desk Success Checklist
+Use this checklist to help successfully integrate Help Desk to your operations and ensure seamless support for your end users.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

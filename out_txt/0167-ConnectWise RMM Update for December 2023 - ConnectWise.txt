@@ -1,0 +1,154 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   ConnectWise RMM Release Notes   RMM Release Notes Archive   ConnectWise RMM Update for December 2023
+ConnectWise RMM Update for December 2023
+Last updated
+Jan 4, 2024
+Table of contents
+Overview 
+Announcements 
+Agent Management at Site Level
+Custom Monitors at Site Level
+Suspension at Site Level
+Resolved Defects in the Resource Selector
+LMI deprecation
+Autotask PSA - Integration via policies
+ConnectWise PSA - Integration via policies
+Next agent check-in for task integrators- Fusion scripts
+Final Migration and Deprecation of Legacy Scripts
+Retirement of App Updates via Tasking
+What's new in ConnectWise RMM?
+December 22, 2023
+Legacy Portal
+December 18, 2023
+Automation
+December 14, 2023
+Ticketing / PSA Integration
+December 13, 2023
+Automation
+December 11, 2023
+Agent and Platform
+December 8, 2023
+Legacy Portal
+Agent and Platform
+December 7, 2023
+Asio UI Updates
+December 5, 2023
+Patching
+Overview 
+
+This page provides information on the latest enhancements and features for ConnectWise RMM.
+
+Announcements 
+Agent Management at Site Level
+
+Partners who are migrated to the Company and Sites feature will be able to see the Agent management tab under sites. This section will allow partners to download, move, or uninstall agents.
+
+There will be no limit to the agent uninstallation from a site offboarding standpoint
+
+Note: We are also deprecating the legacy agent uninstall section from the RMM Setup section.
+
+Custom Monitors at Site Level
+
+Partners who are migrated to the Company and Sites feature will be able to see a new monitoring tab which should have a sub tab for monitors. This section will allow partners to see monitors that are applied at the site level.
+
+Suspension at Site Level
+
+Partners who are migrated to the Company and Sites feature will be able to see a new monitoring tab which should have a sub tab for Suspension. This section will allow partners to see suspensions that are applied at the site level.
+
+Resolved Defects in the Resource Selector
+
+Partners will be able to easily adjust their selections in the Resource Selector, ensuring accurate site/device selections. Visibility of complex monitoring conditions has been improved, allowing users to easily modify and adjust settings.
+
+We have also addressed a defect where partners encountered a limitation in the resource selector, with only a limited number of sites available for selection.
+
+LMI deprecation
+
+We are ending support for our LogMeIn Rescue + Mobile offering. As a result, we would not be updating or renewing any active licenses for the same. The New License option on the LMI page will be disabled and the page will only be visible to active LMI partners.
+
+Autotask PSA - Integration via policies
+
+We are excited to announce that we will be adding an option for partners to enable the Autotask PSA sync configurations that helps to define tickets, Configuration items, and contacts using policies. These policies can be included in the packages and applied to the sites using the package assignment option.
+
+There will be no migration performed for the existing configuration but the policies will take effect if they are assigned or applied to a site. You will initially have a toggle button to either enable the policies-based configuration or disable it and continue using the old method.
+
+We will completely stop supporting the older configuration method by the end of January 2024.
+
+ConnectWise PSA - Integration via policies
+
+Partners currently have a toggle button to either enable a policies-based configuration for CW PSA or disable it and continue using the old method for now.
+
+We will completely stop supporting the older configuration method by January 15th, 2024.
+
+Next agent check-in for task integrators- Fusion scripts
+
+As part of this release, we have now enabled the next agent check-in feature for Script type of tasks.
+
+Final Migration and Deprecation of Legacy Scripts
+
+By January 31, 2024 all legacy scripts will be migrated as Script Editor Scripts. The deprecation process for legacy scripts began in 2020 and was paused while a long-term solution for Client Site Managers was identified - see the Script Migration FAQs During the pause, Tasks and Script Editor were enhanced to support Client Site Managers and Next Agent Check-in. Now that Script Editor Scripts can be scheduled using Next Agent Check-in, ConnectWise will resume the deprecation process for legacy scripts.
+
+Partners with Client Site Managers who actively use legacy scripts can open a ticket with Support to request a post-migration verification by the Rapid Response Team.
+
+Retirement of App Updates via Tasking
+
+Phase two of the Application Updates retirement is taking place in December 2023. Starting from December 2023, all existing tasks related to application updates will be deprecated and rendered inactive.
+
+We understand that this change may impact your current workflow, and we want to assure you that it is part of our commitment to providing you with a more streamlined and efficient update process. In place of the current tasking method, we have already introduced a new and improved way of patching third-party applications through policies. We encourage all users to start using our new policy-based approach for patching third-party applications. Policies offer a more flexible and centralized method for managing updates across your environment.
+
+Key Changes:
+
+Retirement of Tasking Feature: 
+
+The application update feature via tasking will no longer be available after December 2023.
+
+All existing App Updates Tasks will be deactivated. 
+
+Following on-demand task from RUN will be removed after December 2023 Release
+
+Install Update Third Party Application
+Install Update Third Party Application By policy
+What's new in ConnectWise RMM?
+December 22, 2023
+December 18, 2023
+December 14, 2023
+December 13, 2023
+December 11, 2023
+December 8, 2023
+December 7, 2023
+December 5, 2023
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ConnectWise RMM Update for January 2023
+ConnectWise RMM Update for February 2023
+ConnectWise RMM Update for March 2023
+ConnectWise RMM Update for April 2023
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

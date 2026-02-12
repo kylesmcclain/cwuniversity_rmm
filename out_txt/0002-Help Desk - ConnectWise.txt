@@ -1,0 +1,75 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Expert Services   Help Desk
+Help Desk
+Last updated
+Mar 20, 2024
+Table of contents
+Overview
+Overview
+
+ConnectWise Help Desk Services™, enables you to provide consistent, scalable, and high-quality service your customers depend on.
+
+Click on the articles below to learn more about the Help Desk features and services.
+
+All articles
+Article directory
+Help Desk Best Practices
+Help Desk Service Statement of Work
+Client Requests and Callbacks
+MSP Ticket Assignments and Escalations
+Activating Help Desk
+Select Help Desk Product Options - Help Desk
+Create a Help Desk Notification Rule - Help Desk
+Provide Help Desk Information - Help Desk
+Confirm Completion and Set Client Expectations - Help Desk
+Add Required Documentation and Credentials - Help Desk
+Enabling Automated Tickets from Help Desk Email Requests
+Enabling Automatic Credentials for Servers and Desktops
+Help Desk Activation Checklist
+Help Desk Chat
+The Help Desk Chat application allows your clients to get Help Desk support quickly and easily right from their machine's desktop, taskbar, or notification area without having to call in. Tickets for chat sessions are automatically generated so you can track your client's interactions with Help Desk technicians.
+Help Desk Common Acronyms
+Help Desk Partner Contact Procedures
+Help Desk Services - DUO User Administration
+Help Desk Success Checklist
+Use this checklist to help successfully integrate Help Desk to your operations and ensure seamless support for your end users.
+IT Glue Integration Guide
+User Onboarding and Termination
+Expert Services Documentation Sitemap Help Desk Best Practices
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Help Desk Activation Checklist
+Help Desk Best Practices
+Help Desk Success Checklist
+Use this checklist to help successfully integrate Help Desk to your operations and ensure seamless support for your end users.
+Activating Help Desk
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

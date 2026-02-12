@@ -1,0 +1,100 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   ConnectWise RMM Release Notes   RMM Release Notes Archive   ConnectWise RMM Update for August 2022
+ConnectWise RMM Update for August 2022
+Last updated
+Sep 22, 2022
+Table of contents
+Overview
+Monitoring
+Patching
+Portal
+Bug Fixes / Known Issues
+Overview
+
+The following items are the enhancements, updates, and fixes for the August 2022 RMM release. 
+
+Monitoring
+
+IntelliMon customization will be updated for the following legacy Desktop monitoring conditions:
+
+A system crash or unexpected reboot
+
+Machine restart is required
+
+System performance is low due to high paging
+
+You will be able to make changes to the thresholds based on the condition requirements.
+
+You can now customize the IntelliMon alerts for the desktop which will generate the alerts. The following changes will be applicable:
+
+The Legacy Manage Threshold section for the Desktop alerts will not be applicable for any changes
+
+You can view the current configurations defined but this data or information will not be migrated to the new IntelliMon customization
+
+Alerts will be enabled by default for the desktop monitoring conditions
+
+You can use suspension rules if you do not want to receive alerts for specific conditions
+
+Once all the monitoring conditions on the Manage Threshold page is modified the legacy page will be deprecated. These features will release on the 26th of August.
+
+Patching
+
+Patches with Upgrade classification will be removed for Manual deployments from Quick patch actions or Patch approval page.
+
+The compliance score formula will consider the exclusions and conditional approval settings for the install and pending reboot patches.
+
+Portal
+
+Agent Update. An agent update, version 2.1.804, will be rolled out in phased manner starting September 6th.
+
+Legacy Gateway Validation and enablement. Agent removal will no longer have any validations if the legacy gateway is configured on the endpoint. Additionally, the Gateway tab on the RMM Setup for site will no longer be visible. You can enable the Gateway Cache from the Devices page for the specific endpoint as needed. No separate installation of the Gateway agent is needed.
+
+RMM Scanning Tool Improvement. We are improving our RMM Scanning tool to automatically update to the latest version on endpoints. This will no longer require any user login to the RMM Scanning tool to prompt for the update.
+
+Removal of the VMWare Dashboard widget. We will be removing the legacy VMWare Widget from the dashboard as the data or information displayed is outdated or obsolete.
+
+Bug Fixes / Known Issues
+
+The following issues will be resolved with this month's release:
+
+Ticketing / PSA Integration: We have resolved an issue where some of the ConnectWise Manage billing agreements were not updated.
+
+Ticketing / PSA Integration: We have resolved an issue where the billing and asset sync information was not being displayed on the PSA Sync Report section.
+
+ConnectWise RMM Update for July 2022 ConnectWise RMM Update for September 2022
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ConnectWise RMM Update for April 2022
+ConnectWise RMM Update for March 2022
+ConnectWise RMM Update for February 2022
+ConnectWise RMM Update for January 2022
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

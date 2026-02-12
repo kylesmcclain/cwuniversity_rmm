@@ -1,0 +1,258 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   ConnectWise RMM Release Notes   RMM Release Notes Archive   ConnectWise RMM Update for March 2023
+ConnectWise RMM Update for March 2023
+Last updated
+Mar 21, 2023
+Table of contents
+Announcements
+Platform Agent for macOS
+Agent Uninstall
+Golden Image Support
+RMM Scanning Deployment from ASIO Platform
+ConnectWise RMM
+Agent and Platform
+Device Groups
+Monitoring
+Patching
+Third-Party Patching
+Ticketing / PSA Integration
+Bug Fixes / Known Issues
+Announcements
+Platform Agent for macOS
+
+Partners currently use the RMM mac Agent which is a combined setup for the 2.0 and Legacy 1.0 agent. With this change, we will reduce the agent size for the installation and use the platform agent installation first. This will expand on the endpoint based on the site entitlements. 1.0 agent components will still be deployed for the 1.0 registration (RegID generation) and Webroot component for installations.
+
+Agent Uninstall
+
+We are providing a new UX for the Agent uninstall via the devices page. With this UX, you can easily search or find the device by navigating to the Devices > Computers page and can uninstall the Agent. We are limiting the uninstall capacity to a max of 5 devices with this launch. You can also uninstall or skip uninstall of Webroot. Additionally:
+
+You can now open the Device details page and see an uninstall button available for an endpoint. This removes that single endpoint and will follow the same process as the bulk (5 devices).
+
+You can now see a report of all previous and new agents uninstalled. The report will still be available in the legacy portal and the data in the report will be updated every 8 hours. In the future, we will release a new report in BrightGauge.
+
+Golden Image Support
+
+Golden Image support will be available for Windows and Linux OS. Partners can now create an image with the RMM agent installed. This allows you to have a new instance when added in the network using Golden Image. Additionally:
+
+This feature enables a new instance when using Golden Image and will be managed as a new device with the Agent.
+
+New endpoint ID and registration ID will be generated against the instance (when the image is created from Golden Image).
+
+The endpoints created as clones will be treated as new devices. In turn, they will be added to the billing count.
+
+RMM Scanning Deployment from ASIO Platform
+
+Currently, you need to download the RMM Scanning tool from the Asio Platform and install it manually. We have simplified the solution by allowing you to choose the endpoint where you would like to deploy the RMM Scanning tool. This option will be available under the Manage drop-down on the Devices page. For more information, view the RMM Scanning tool article.
+
+ConnectWise RMM
+Agent and Platform
+
+Agent Update. A new agent, version 3.0.5, will be rolled out on March 29th. Windows, MAC, and Linux agents will be updated to the latest version automatically.
+
+End user portal improvement. We are improving the data display and collection for endpoints that are using the new Platform agent. These endpoints will receive data updates and refreshes in realtime.
+
+The following fields will be updated on the end user portal:
+
+Device Name
+
+Device Friendly Name
+
+Last Logged on User
+
+Last Login
+
+OS Name
+
+Availability
+
+The following fields from the end user portal will be deprecated:
+
+SMART monitoring
+
+AMT
+
+You can now delete sites without having to delete or remove Auvik endpoints. The system will no longer be validating the legacy Auvik, SNMP, ICMP devices added under monitoring while deleting sites
+
+Device Groups
+
+New Device Groups Criteria. We've added new criteria for you to use while creating your device groups. You can use the following new categories for device groups:
+
+Drives
+
+Drive Product
+
+Drive Manufacturer
+
+Drive Logical Name
+
+Drive Name Of Partition
+
+Drive Size in Bytes
+
+Drive Interface Type
+
+Networks
+
+Network Vendor
+
+Network Product
+
+Network Dhcp Enabled
+
+Network IPEnabled
+
+Network Dhcp Servers
+
+Network Dns Servers
+
+Network Default IP Gateways
+
+Network Subnet Masks
+
+Monitoring
+
+Monitors on the Devices page. With this release, you can view monitors that are applied per endpoint regardless of how they are created (Partner, Site, Endpoint or Device Group). Monitors that are applied per endpoint will be visible under device details.
+
+Asset Monitor Additional Attributes. We are adding fields that you can use for creating Asset Monitors. Any value changes against these new attributes will generate a ticket for notification.
+
+New Monitoring condition for Preview Alerts. We are enabling or adding the following monitoring condition in the system as Preview alerts. You can enable the condition for the alert generation logic.
+
+Error when backing up a passive database copy in an Exchange DAG
+
+VM Failed to replicate disk to insufficient storage space
+
+Device Down - Physical machine with Lights out Management configured
+
+Device Down - Physical machine without Lights out Management configured
+
+Device Down - Virtual machine with Lights out Management or Host Under Monitoring configured
+
+Device Down - Virtual machine without Lights out Management or Host Under Monitoring configured
+
+Device Down - VMWare Host Device down or unreachable
+
+Device Down - Linux Device Down alert
+
+Patching
+
+Update to the OS Patch Assessment. We are adding the patch Installed date and Installed by to the OS Patch Assessment - Windows dataset in BrightGauge. The Missing Updates Report V2.0 and Installed Updates Report V2.0 which use this dataset will also be updated to show these columns on drilldown.
+
+Desktop Patch Policy Update. Major OS upgrades automation will be supported in the Desktop Patch Policy. This new option will perform OS Upgrade from Windows 10 to Windows 11 on applicable endpoints.
+
+Third-Party Patching
+
+Additional products support in third-party patching. We are adding support for the following products:
+
+Zoom (macOS)
+
+Visual Studio Code (Windows and macOS)
+
+Ticketing / PSA Integration
+
+PSA Improvements. We've made the following improvements to Ticketing and PSA integrations this month:
+
+"Incorrect Configuration Item type" will no longer display on the endpoint where the agent type was changed and a new configuration will be created to update the type.
+
+In the case of a Configuration item failure, clicking on retry from the PSA Sync menu will trigger a full sync instead of a partial or differential sync for failed items.
+
+The body content of emails for PSA Sync-enabled partners is updated.
+
+Autotask PSA Improvements. We've made the following improvements to Autotask PSA integrations this month:
+
+Resolved an issue where the Install Date field was not updating when resyncing the new configuration in Autotask.
+
+Autotask PSA billing exception will now refer the Endpoint ID instead of Legacy RegID.
+
+Currently, asset sync application is referring the Legacy billing sync configuration API. Now it will consider the new Juno 2.0 API.
+
+Improved the configuration item sync for Autotask users where system was using Legacy RegID for syncing and mapping the service bundles. System will now be using Endpoint IDs.
+
+Improved the billing exception for Autotask PSA where the system will show the exception device list from 2.0 and will be storing the endpoint ID.
+
+Bug Fixes / Known Issues
+
+The following issues will be resolved with this month's release:
+
+Agent - We fixed a bug where the Linux Agent was not properly installing on Red Hat on lower and production environments.
+
+Agent - We resolved an issue where the Agent core was crashing when a third-party application like Bitdefender or Acronis packages failed during deployment.
+
+Agent - We resolved an issue where users might have experienced a mismatch in the Hostname when technician moves a guest machine (with RMM Agent installed) from a Host (RMM Agent installed) to another Host (with no RMM Agent).
+
+Agent - Fixed an issue where users might have experienced intermittent issue, when the communicator policies are applied and are not getting reflected on the communicator system tray.
+
+Automation - Fixed a bug where the graph query produced no result" when attempting to query Site and/or Company Custom Fields.
+
+Automation - Fixed a bug where the script editor was not saving the selected Custom Field for Logic checks.
+
+Automation - Bug Fix for published Known Issue- If a site is scheduled for a task, but there are no partner agents related to that site no entries should be shown in recent tasks for the site for dates when no devices were active in that site.
+
+Automation - Bug Fix for published Known Issue- Scheduled Tasks created by NOC display as created by "Integration User."
+
+Automation - Bug Fix for published Known Issue- As per the partner, they were unable to check this scheduled task history and were getting black history tab.
+
+Automation - Bug Fix for published Known Issue- Partner is trying to run a task on the device group. Even after selecting the trigger option as 'Endpoint Entering Dynamic Group' we are getting error "'can't validate input data'."
+
+Automation - Bug Fix for published Known Issue- Partner reported a issue with a task is not showing in the Scheduled Tasks tab on his ITS Portal intermittently.
+
+Automation - Bug Fix for published Known Issue- Partner has been disabled
+
+Automation - Bug Fix for published Known Issue- Next Scheduled will intermittently display as NONE in Automation > Scheduled Tasks has now been fixed and partners can see the next schedule as expected on schedule page.
+
+Automation - Bug Fix for published Known Issue- Issue is fixed and going ahead for the patching template type, if the name is blank while requesting we will get "Scheduled Task" as the task name.
+
+Automation - Bug Fix for published Known Issue- Recent Tasks displaying output multiple times for single execution has been fixed and is displayed now only once per execution.
+
+Automation - Bug Fix for published Known Issue- Scheduled Task screen was incorrectly showing "No results found" when filtered to period "Last 90 Days" has now been fixed.
+
+Automation - Bug Fix for published Known Issue- Scheduled Task using trigger First Check-in does will now show under Automation tab of Device after the fix.
+
+ConnectWise PSA - Resolved an issue for company status on the site mapping page. It will now be able to populate all the values whereas the previous limit was 25.
+
+Autotask PSA - Resolved a bug where incoming ticket update would show failed ticket updates with a value of "0" instead of the NOC Ticket ID value on the ticket report.
+
+Portal - We fixed an issue that when endpoint was migrated, it was not returning any status and there was no mechanism to retry and fetch the same. A retry mechanism has been implemented and you will be able to migrate the endpoint again upon failure.
+
+Third-Party Patching - We are releasing a bug fix of Third-party patching Scheduled Tasks failing with template error during the execution.
+
+ 
+
+ConnectWise reserves the right to remove any enhancement or fix from this update if it does not pass quality assurance tests.
+
+ConnectWise RMM Update for February 2023 ConnectWise RMM Update for April 2023
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ConnectWise RMM Update for January 2023
+ConnectWise RMM Update for February 2023
+ConnectWise RMM Update for April 2023
+ConnectWise RMM Update for May 2023
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

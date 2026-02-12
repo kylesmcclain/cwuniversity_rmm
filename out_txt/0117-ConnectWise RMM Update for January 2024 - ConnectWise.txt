@@ -1,0 +1,128 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   ConnectWise RMM Release Notes   ConnectWise RMM Update for January 2024
+ConnectWise RMM Update for January 2024
+Last updated
+Jan 31, 2024
+Table of contents
+Overview 
+Announcements 
+UI Refresh - Tasking & Scripting Pages (Tasks & Scheduled Tasks)
+Edit UI Layout - Communicator - Phase 1
+Webroot Integration 2.0 is now live.
+ConnectWise PSA - Integration via policies 
+Autotask PSA - Integration via policies
+Legacy Uninstall agent Option Deprecation. 
+What's new in ConnectWise RMM?
+January 29, 2024
+Agent
+January 24, 2024
+Neon Migration
+Patching
+January 18, 2024
+Automation
+January 15th, 2024
+Legacy Portal
+Overview 
+
+This page provides information on the latest enhancements and features for ConnectWise RMM.
+
+Announcements 
+UI Refresh - Tasking & Scripting Pages (Tasks & Scheduled Tasks)
+
+Note: This will be released on 8th Feb 2024.
+
+As part of our ongoing efforts to provide a consistent UI experience across the platform, we have successfully refreshed Tasking & Scripting pages(Tasks & Scheduled tasks). With a uniform and consistent user interface, users will have a seamless and intuitive experience across Tasking & Scripting pages. 
+
+Edit UI Layout - Communicator - Phase 1
+
+Note: This will be released on 8th Feb 2024.
+
+Partners will see an option to Edit View that allows them to organize data into multiple sections on the Communicator page. While this initial release focuses on providing the framework for editing the UI layout, future updates will enable partners to add data to various sections.
+
+Issues Resolved 
+
+Note: This will be released on 8th Feb 2024.
+
+Missing default Sorting Indicators for Patch Exclusions & Communicator
+
+We have resolved the default sorting indicators for Patch Exclusions and Communicator. The sorting order for "Date Created" in Patch Exclusions, "Date Sent" in Communicator is now set to descending order on load. 
+
+Information on Side card not retained for Row Selection on Scheduled Tasks
+
+We have resolved a defect on the Scheduled Tasks page where selection of a row was not retaining corresponding information on the side card after a few seconds, and was getting replaced by the corresponding information in the first row in the data grid.
+
+Duplicate/Edit icons not visible on Tasks page
+
+We have resolved a defect on the Tasks page where Duplicate/Edit icons did not appear intermittently under the Actions column on page load.
+
+Webroot Integration 2.0 is now live.
+
+The integration will be rolled out in batches starting on January 15th 2024.
+
+Note: The integration is being enabled only for existing partners whose Webroot license management is managed via ConnectWise. 
+
+ConnectWise PSA - Integration via policies 
+
+This is a final reminder about an important update regarding RMM integration with ConnectWise PSA.
+
+On February 15th, 2024 we will be retiring our Legacy PSA Configuration for Manage. To ensure uninterrupted sync with ConnectWise PSA and to take full advantage of our latest enhancement, we strongly encourage you to explore and adopt the improved RMM & ConnectWise PSA sync configurations that could be integrated using policies.
+
+This is your last opportunity to act before the Legacy PSA Configuration for Manage is deprecated. Ticket, configuration item and notifications for sync failure would be disabled unless ConnectWise PSA Policies are not enabled.
+
+Autotask PSA - Integration via policies
+
+We are excited to announce that we will be adding an option for partners to enable the Autotask PSA sync configurations that helps to define Ticket, Configuration item and Contact using policies. These policies can be included in the packages and applied to the sites using the package assignment option.
+
+The Policy improvement will be having additional features like Syncing Friendly Name to Autotask PSA, also with the newer integration you will get option to select Custom note types in Inward and Outward Note Type Sync.
+
+There will be no migration performed for the existing configuration but the policies will take effect if they are assigned or applied to a site. Partner will initially have a toggle button to either enable or disable the policies based configuration and continue using the old method for now.
+
+We will completely stop supporting the older configuration method by the end of February 2024.
+
+Legacy Uninstall agent Option Deprecation. 
+
+The option to uninstall agent under RMM Setup > Sites Using RMM > Agents tab > Manage Installed Agents will no longer be available. 
+
+You can still uninstall an agent from the Devices > Computers page.
+
+What's new in ConnectWise RMM?
+January 29, 2024
+January 24, 2024
+January 18, 2024
+January 15th, 2024
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ConnectWise RMM Update for February 2024
+ConnectWise RMM Update for March 2024
+ConnectWise RMM Update for April 2024
+ConnectWise RMM Update for May 2024
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

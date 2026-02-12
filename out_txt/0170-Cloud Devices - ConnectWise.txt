@@ -1,0 +1,128 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Devices Page   Cloud Devices
+Cloud Devices
+Last updated
+Dec 11, 2025
+Table of contents
+Overview
+Requirements
+Permissions
+Setup
+Cloud Devices
+Actions
+Alerts
+Overview
+
+Cloud Monitoring offers a centralized view of your client's cloud environment and alerts you when issues impact resource health, and provides troubleshooting access with ease.
+
+Requirements
+ConnectWise RMM Premium
+Microsoft account with a minimum permission set of Application Administrator and Directory Reader roles in Azure AD and Admin Agent role in Partner Center
+If converted to GDAP
+Role	Microsoft Role Descriptions	Security Group
+Directory Reader	Users can read basic directory information. Commonly used to grant directory read access to applications and guests.	Admin agents and custom security groups.
+Application Administrator	Users can create and manage all aspects of app registrations and enterprise apps.	Admin agents and custom security groups.
+
+ 
+
+Note: 
+
+The Microsoft Intune integration only works with a CSP account.
+Our Integration only provides support for customers with a reseller-type relationship. This means that in the Microsoft Intune sites drop-down for mapping, you will only see customers who have a reseller-type relationship.
+Permissions
+Read: Any user with this permission can see and access Cloud Devices in the left navigation menu. They can also see and access Resource Names hyperlinks and applicable Cloud Devices (based on Site Access).
+Update: Any user with this permission can see and execute actions for applicable Cloud Devices (based on Site Access).
+Setup
+Navigate to Integrations.
+Enable the Azure Cloud Monitoring integration.
+
+Enter a Connection Name and click Generate Token.
+
+You will be redirected to a Microsoft Sign in page. Enter your Credentials for your Azure instance.
+A token will be automatically generated for you and return you to the integration page.
+
+Click Test Connection.
+
+Once the Connection is successful, click Save and Proceed.
+Map your ConnectWise Sites to Microsoft Tenants. Only choose sites with an Azure subscription.
+
+Click Save and Proceed.
+Click Continue to confirm the number of mapped sites.
+Click Complete Setup.
+Cloud Devices
+
+Now that the integration is complete, when you navigate to Endpoints > Cloud you will be able to view all of the Cloud devices you have mapped.
+
+The following information is available to you on this page:
+
+Name: Azure site name. This includes a hyperlink that opens a new tab for that specific device in Azure that respects all Microsoft permissions.
+Type: Azure Resource Type
+Region: Azure Location
+Group: Azure Resource Group
+Subscription: Azure Subscription Name
+Tenant: Microsoft Tenant Name
+Client: ConnectWise Client Name
+Site: ConnectWise Site Name
+Status: Azure Resource Health Status
+
+Important: On the top of the page, we include a last refreshed time. This is updated every 15 minutes.
+
+Actions
+
+From the Endpoints > Cloud Devices page you have access to the Actions column. From here can perform the following actions:
+
+Start
+Stop
+Pause
+Resume
+Restart
+
+Note: All actions are currently available for all device types, including device types that do not support the action. Actions will be focused based on device type in Q1 2024.
+
+Alerts
+
+Under Endpoints > Alerts > Intelligent Alerts, there is now an Azure Resource Health Alerts.
+
+This alert setting does the following:
+
+When Azure Resource Health reports anything other than Available for a device it will send a ticket.
+That ticket will auto-close when Azure Resource Health returns to Available.
+Devices Page Custom Fields
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Devices Overview
+The information on the Device list provides a high-level view of all sites or filtered sites and includes easy-to-view details for applicable endpoint...
+Device Details Screen
+Custom Fields
+Custom Fields are additional data points you can create in the ConnectWise Asio® platform to record information not collected by the agent or unavaila...
+Device Groups
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

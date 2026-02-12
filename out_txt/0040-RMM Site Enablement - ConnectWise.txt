@@ -1,0 +1,222 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Agents   RMM Site Enablement
+RMM Site Enablement
+Last updated
+Dec 19, 2025
+Table of contents
+Overview
+How to Setup an RMM Site Configuration Policy
+Setting up an RMM Site Configuration policy:
+How to add your RMM Enablement Policy to a Package
+Package to Site Assignment 
+FAQ
+What is the change?
+Why is this being changed now?
+What happens if the RMM Site Configuration policy is not enabled?
+I do not want RMM capabilities on a site. What do I have to do?
+ 
+Overview
+
+Important: If you do not enable the RMM Site Configuration policy, your ConnectWise Asio Agents will not have RMM functionalities, and you will not be able to use many of the features of ConnectWise RMM, including but not limited to:
+
+Performance Data Collection
+Remote Access (ScreenConnect deployment/capabilities)
+Automation
+OS Patching
+Communicator
+Important information in In-console reports
+Third-party Patching
+Event Monitoring
+File System
+Optional features like enabling NOC/Helpdesk service
+Network Monitoring
+Some Security products may also be affected.
+
+This article provides information on using the RMM Site Configuration policy to enable your ConnectWise agent to use ConnectWise RMM capabilities.
+
+The ConnectWise agent is used across the entire ConnectWise Asio® platform and is a general, bare-minimum component deployed on endpoints at a site. This component does not enable any functionality on the endpoint.
+
+Based on the policies you assign to sites using the Asio Agent, those sites will have additional capabilities related to RMM, Security, PSA, and more. All of these functionalities will be near-real-time functions in Asio. 
+
+First, the Asio platform Agent is installed on the endpoints.
+After the Asio platform Agent is installed on an endpoint, its components show basic machine information in Asio.
+Next, the Agent looks for product enablement, which verifies whether the RMM Site Configuration Policy (or a similar policy) is enabled or not.
+Then it fetches all required components. If the RMM Site Configuration Policy is enabled, components such as patching and automation can be installed on the machine based on other policies applied.
+How to Setup an RMM Site Configuration Policy
+
+RMM Site Configuration Settings are site-level settings that can be enabled via policies. Upon enabling this setting, the platform agent will start installing all the components related to RMM services and capabilities. The following RMM functionalities and more are available once this policy is enabled and applied to a site:
+
+Performance Data Collection
+Remote Access (ScreenConnect deployment/capabilities)
+Automation
+OS Patching
+Communicator
+Important information in In-console reports
+Third-party Patching
+Event Monitoring
+File System
+Optional features like enabling NOC/Helpdesk service
+
+Note: Once this policy is enabled, you do not have to perform any additional installation steps. Based on the policies, the platform agent will evaluate and install the required components automatically and transform into an RMM Agent.
+
+Setting up an RMM Site Configuration policy:
+
+This policy is required to enable the RMM Services on a particular site. To create an RMM Site Configuration policy, 
+
+Navigate to Endpoints > Policies & Packages > Policies.
+Click Add Policy.
+When the new policy page loads, In the Left section of the page, you should see the below fields.
+Change the Category field from Devices to Sites. 
+
+
+In the Type dropdown, select RMM Site Configuration and give your policy a Name of your choice.
+
+
+Under the settings for your RMM Site Configuration policy, enable and disable the configurations and settings you require.
+
+To enable RMM for a site via this policy, update the Enable RMM Services toggle to the Enabled state. 
+
+On enabling RMM for a site, you will get the option to enable NOC Services for RMM. You can choose to enable the NOC Services or keep it disabled.
+
+Note: RMM NOC Services are paid add-ons. If you enable these services, they will be charged to you in your monthly invoice. For details on NOC Services, please review the NOC Services documentation.
+
+Another key field for enabling RMM on a site is the Notification Rule. This rule defines how ConnectWise RMM and NOC will communicate with the partner.
+Click Save.
+How to add your RMM Enablement Policy to a Package
+
+After you've created your Policies, you need to group them in a Package so you can assign them to your sites.
+
+Navigate to Endpoints > Policies & Packages > Packages.
+Click the Add button. The following screen appears.
+
+
+Input the appropriate information for the package:
+
+Field Name
+
+	
+
+Description
+
+
+
+
+Name
+
+	
+
+A user-defined name for the package, up to 200 characters.
+
+
+
+
+Default Package
+
+	
+
+Defines whether the package is assigned to the partner level of the RMM hierarchy. This is Off by default. If a package is assigned as default it will be inherited by all lower levels.
+
+
+
+
+Package Builder
+
+	
+Defines which policies the package includes.
+Add a policy to the package by dragging and dropping a policy from the Policy List to the Package Builder.
+Remove a policy from the package by clicking the delete icon displayed to the left of the Policy Name in the Package Builder.
+
+Important: Each package can only contain one (1) policy of each type. Attempting to add a second policy of the same type to the Package Builder replaces the current policy of that type.
+
+Important: Each package must contain at least one (1) policy.
+
+Drag your getting started policies into the building blocks section.
+Click Save when you are finished. To edit an existing package, select the one you want to edit on the Package List page.
+Package to Site Assignment 
+Assign a package to Site(s): Each Policy included in a Site Assigned Package will be automatically inherited by all Devices under the Site, including ones added in the future.
+Navigate to Endpoints > Policies & Packages > Assignment > Sites tab
+Check the box for each selected Site
+Click Assign Package
+Click the Name of the Package
+Click Assign
+Remove a package from a Site(s): Removing a package from a Site will revert all Devices under the Site that are not assigned an Override to their inherited values.
+Navigate to Endpoints > Packages > Sites tab
+Check the box for each selected Site
+Click Remove Assignment
+Click OK
+
+Important: A site can only be assigned one (1) package. Assigning a second package to a site will replace the site's current package.
+
+FAQ
+What is the change?
+The way our agent installs the required components is changing. Earlier, irrespective of the entitlement, the agent installed everything on a machine. This not only hampered the download time but also added to the download size of the agent exe.
+Why is this being changed now?
+Being consistent with our platform-first approach, all agents will now be platform agents. Based on the applicable entitlements and policies, this platform agent will fetch the required components and download them to the machine. This not only improves agent download time but also ensures the correct components and present on a machine.
+What happens if the RMM Site Configuration policy is not enabled?
+The RMM Site Configuration policy is a prerequisite for other RMM-related functionalities and policies, such as Automation, Patching, In-console reporting, Communicator, etc., to work seamlessly. If this policy is not enabled, the platform agent will not download components for automation/patching/communicator, etc. On a high level, you will see the following impacts across sites/endpoints:
+Performance data - Gets shown as a trend for CPU/Memory usage, will be stopped.
+Monitors/Custom monitors configured for endpoints will no longer report as part of RMM.
+.The ability to take remote control will not work
+
+The ScreenConnect® installation/uninstallation status may display as Pending when the two policies below are not aligned (one is enabled while the other is disabled):
+
+RMM Site Configuration – Enabled/Disabled
+
+ScreenConnect Access – Disabled/Enabled
+
+Automation: The option to Run Task will be visible, but will not work on execution from Asio.
+Patch Assessment - Endpoints showing patch assessment and patch updates will not be shown.
+Communicator will not work / HD chat.
+Optional features like enabling NOC/Helpdesk service will not work.
+Network Monitoring will not work.
+Reports specific to RMM will not show any updated data.
+Some Security products may be affected.
+Other impacts that are not listed here may also occur.
+I do not want RMM capabilities on a site. What do I have to do?
+
+Because this policy is typically enabled in the default policy, which applies to all sites, removing it from one site requires an override. To do this, create a separate policy for "Disabled RMM" that has this policy setting disabled. You can apply it to any sites you want to override the default enabled RMM policy. This allows you to remove it from a site, but not from all sites. If the policy is not applied as a default and is only deployed via policy groups or packages, you can simply disable the policy and remove it from the package or policy group it is assigned to.
+
+ 
+
+ 
+
+Enhanced Agent Details Uninstalling an Agent
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Asio Agent Requirements
+The article includes the currently supported operating systems for agent installations.
+Uninstalling an Agent
+This guide includes the steps required to uninstall an agent from a desktop or server in RMM or Asio via the Devices page.
+Cloud Services
+Agent Tamper Protection
+Agents on Windows devices utilize tamper protection to restrict users from stopping the agent core services.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.
