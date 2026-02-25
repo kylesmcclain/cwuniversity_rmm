@@ -1,0 +1,246 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   PSA Integration   ConnectWise PSA (Manage) Integration   Asset Sync
+Asset Sync
+Last updated
+Jan 30, 2026
+Table of contents
+Overview
+Asset Sync Mapping
+Prevent Device Duplication
+What Prevent Device Duplication Does
+Match RMM Device to Existing PSA
+Device De-duplication Logic
+How to Map Assets
+Types of Asset Attribute Mapping
+Pre-defined Asset Attribute Mapping
+Dynamic Asset Attribute Mapping
+Overview
+
+This article provides information about the Asset Sync mapping with the Configuration Item Type for ConnectWise PSA partners.
+
+The ConnectWise RMM - PSA Integration enables you to sync asset attributes of asset categories, such as Server, Workstation, Backup, and Network Devices from RMM to ConnectWise PSA. You can view the synced assets from RMM by navigating to the respective company in ConnectWise PSA.
+
+Our goal is to enhance system flexibility, allowing our partners to select which fields they want to synchronize with custom asset types.
+
+Asset Sync Mapping
+
+You can now sync a custom asset type and its respective assets with the Custom Configuration Item type. You can do that by turning on the Configuration Item Sync toggle in the ConnectWise PSA Integration Settings, as shown here:
+
+Prevent Device Duplication
+
+This option allows the user to select options that should be validated by the integration before creating a new device in ConnectWise PSA.
+
+Note: Device deduplication is applicable for Servers, Desktops, Backup Devices, and Network Devices.
+
+What Prevent Device Duplication Does
+
+This setting controls how your RMM (Remote Monitoring and Management) system matches existing devices in ConnectWise PSA so it doesn’t create duplicate Configuration Items (CIs) in PSA.
+
+When enabled, the system tries to find an existing device in PSA before creating a new one.
+
+Match RMM Device to Existing PSA
+
+When this toggle is turned ON, the integration will:
+
+Look at each device coming from the RMM.
+Compare it against devices already in PSA.
+Try to match based on specific identifiers (shown in the dropdown).
+Only create a new CI if no match is found.
+
+Device De-duplication Logic
+
+Policy Settings
+
+Note: When the toggle is turned off, no matching is performed.
+
+Option
+
+	
+
+Action
+
+
+
+
+1
+
+	
+
+Based on Device Name and Serial Number
+
+
+
+
+2
+
+	
+
+Based on Device Name, Serial Number, and MAC Address
+
+ 
+
+Comparison Logic
+
+Priority
+
+	
+
+Search Based On
+
+
+
+
+1
+
+	
+
+EndpointID
+
+
+
+
+2
+
+	
+
+Legacy RegID
+
+
+
+
+3
+
+	
+
+Device Name and Serial Number (applicable only if option 1 or option 2 is selected)
+
+
+
+
+4
+
+	
+
+Device Name and MAC Address (applicable only if option 2 is selected)
+
+
+
+
+5
+
+	
+
+Serial Number (applicable only if option 1 or option 2 is selected)
+
+
+
+
+6
+
+	
+
+MAC Address (applicable only if option 2 is selected)
+
+
+
+
+7
+
+	
+
+Device Name (applicable only if option 1 or option 2 is selected)
+
+How to Map Assets
+
+Turn on the respective toggle to select the attributes to be synced for that asset.
+
+Type of Asset	Configuration Item Type Mapping Fields	Pre-defined Asset Attribute Mapping	Dynamic Asset Attribute Mapping
+
+
+Servers
+
+Turning this toggle ON pushes the Server configuration items from RMM to PSA
+You can choose the fields that should be pushed from RMM to PSA
+			
+
+
+Workstations
+
+Turning this toggle ON pushes the Workstation/Desktop configuration items from RMM to PSA
+You can choose the fields that should be pushed from RMM to PSA
+			
+
+
+Backup Devices
+
+Turning this toggle ON pushes the Recover Appliances configuration items from RMM to PSA
+You can choose the fields that should be pushed from RMM to PSA
+			
+
+
+Network Devices
+
+Turning this toggle ON pushes the Network Devices configuration items from RMM to PSA
+You can choose the fields that should be pushed from RMM to PSA
+
+Note: 
+
+This feature is available in PSA Policy for RMM Premium and Pro partners under the Configuration Item Sync Configurations section.
+You can choose which fields you want to sync or do not want to sync.
+			
+
+ 
+
+Types of Asset Attribute Mapping
+
+You can choose to sync the asset attributes of asset categories, such as Server, Workstation, Backup, and Network Devices, from RMM to ConnectWise PSA in a pre-defined or dynamic manner.
+
+Pre-defined Asset Attribute Mapping
+
+You can select predefined attributes for syncing from RMM to PSA by clicking the properties link in the respective category.
+
+Note: If you are an existing partner who has created a PSA policy, the predefined asset attribute mapping option will be visible by default.
+
+Dynamic Asset Attribute Mapping
+
+You can override the predefined mapping by selecting the asset attribute dynamically, any system attribute, or a user-defined field (UDF) for syncing from RMM to PSA.
+
+To do this, turn on the toggle in the respective category and select the attribute from the drop-down.
+
+Note: Ensure that the attribute selected in the drop-down is unique for each property.
+
+Note: You will be able to see the following types of UDFs in the drop-down for each category:
+
+Text
+Date
+Number
+TextArea
+ConnectWise PSA (Manage) Integration Configure ConnectWise PSA Policies
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ConnectWise PSA (Manage) Integration Setup Process
+Configure ConnectWise PSA Policies
+PSA Policies define how tickets, configuration items, Contacts, and Notifications sync from RMM to ConnectWise PSA or vice-versa.
+ConnectWise PSA - Policies Integration - FAQ
+ConnectWise PSA - Tech Efficiency Devices Pod
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

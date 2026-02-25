@@ -1,0 +1,114 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Agents   Uninstalling an Agent
+Uninstalling an Agent
+Last updated
+Nov 3, 2025
+Table of contents
+Overview
+Uninstall Agent from the Devices page
+Bulk Uninstall Methods
+Uninstalling agents from the Company Agent Management Tab
+Uninstalling agents from the Site Agent Management Tab
+Uninstalling agents from the Agent Report
+Overview
+
+After an agent is installed, you can uninstall it at any time via the Devices page. The uninstall agent feature schedules an uninstall job at the data center. The next time the agent reports to the data center, the job is downloaded, and the desktop or server agent is uninstalled. On uninstall, the agents are removed, and the endpoints are no longer visible in Asio.
+
+Important: If the device is offline, a technician can manually remove the agent from the endpoint. To do this, please refer to Agent Tamper Protection.
+
+Navigate to Endpoints > Devices in Asio to perform this action.
+
+Uninstall Agent from the Devices page
+
+Note: You can select up to five (5) endpoints at a time to perform the uninstall agent action. The process is similar for desktops and servers. Monitored endpoints must be removed before performing the uninstall.
+
+To uninstall the RMM Agent from an endpoint:
+
+Navigate to Endpoints > Devices. 
+Use search or filters to identify the device from which to uninstall the agent. 
+Select the checkbox for the device.
+
+Select Manage > Uninstall Agent in the toolbar. This option is not available if no device is selected.
+
+The Uninstall Agent window displays the list of selected devices. Only the devices without references are selected to run the uninstall. Review the list and deselect incorrect devices, if any.
+
+The red icon  indicates that the endpoint has references or other devices monitored via the endpoint, and it is automatically deselected. The uninstall action cannot be performed on this endpoint until the other devices are removed by a Technician or authorized user.  
+
+After you have verified the devices and removed references, you must provide a reason for the uninstall. Select a reason from the drop-down menu to enable the Uninstall Agent(s) button.
+
+Click Uninstall Agent(s).
+Click Confirm to proceed.
+
+A confirmation message is displayed to indicate the uninstall job has been scheduled. Upon confirmation, if the endpoint is reporting online, the job has not been executed in the data center yet and is scheduled. If the endpoint is reporting offline or not communicating with the data center, the request is maintained in the backend to process for up to 360 days. The device must be online to perform the agent uninstall job. 
+
+Note: When uninstalling RMM agents, remember to also uninstall any Webroot agents on the device that may be installed to avoid being billed on the next billing cycle for Webroot licenses not in use.
+
+Bulk Uninstall Methods
+
+While the devices page is useful for removing a few agents, if you need to remove a significant amount of agents, then we have a few options to choose from:
+
+Clients > Companies > Select Company > Agents > Agent Management  > Select devices and click on uninstall (Max 2000 devices at once)
+
+Clients > Companies > Select Company > Select a Site > Agents > Agent Management > Select devices and click on uninstall (Max 2000 devices at once)
+
+Reports > Asio Reports > Agents > Agent Report > Select devices and click on uninstall (Max 2000 devices at once)
+Uninstalling agents from the Company Agent Management Tab
+
+Note: These options will only show agents that are assigned to devices under the company.
+
+Navigate to Clients > Companies and click into the company you want to remove agents from.
+Switch to the Agents tab and click Agent Management.
+Select the devices you want to remove agents from and click on uninstall (Max 2000 devices at once).
+Uninstalling agents from the Site Agent Management Tab
+
+Note: These options will only show agents that are assigned to devices under the site.
+
+Navigate to Clients > Companies and click into the company you want to remove agents from.
+Select the site you want to remove the agent from. 
+Switch to the Agents tab and click Agent Management.
+Select the devices you want to remove agents from and click on uninstall (Max 2000 devices at once).
+
+Uninstalling agents from the Agent Report
+Navigate to Reports > Asio Reports > Agents > Agent Report. 
+Select the devices you want to remove agents from and click on uninstall (Max 2000 devices at once).
+
+RMM Site Enablement Alerts
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Asio Agent Requirements
+The article includes the currently supported operating systems for agent installations.
+Cloud Services
+Agent Tamper Protection
+Agents on Windows devices utilize tamper protection to restrict users from stopping the agent core services.
+Download and Install Agents
+This article provides information and instructions about downloading and installing an agent on your device with Windows, macOS, or Linux.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

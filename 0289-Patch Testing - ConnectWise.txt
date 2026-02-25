@@ -1,0 +1,79 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Patching   Patch Testing
+Patch Testing
+Last updated
+Oct 14, 2025
+Table of contents
+How the ConnectWise NOC Helps You Test and Manage Security Updates
+Day 1: Patch Tuesday
+Day 7: Patch Testing Report Published
+Patch Monitoring After Day 7
+The Benefits of Patch Testing
+How to Receive the Monthly Patch Testing Report
+How can I keep my endpoints on a longer testing cycle?
+How the ConnectWise NOC Helps You Test and Manage Security Updates
+
+Patching is a crucial service you provide to clients to help keep their software secure, up-to-date, and running efficiently. However, new patches often cause issues with existing applications, which can create additional work for your team and result in lost productivity for your clients. To avoid these problems, thoroughly test new patches before deploying them.
+
+To help reduce the number of issues experienced when installing Microsoft’s monthly security updates, our Patch Research Team conducts extensive testing to identify any errors and conflicts with existing applications, allowing you to provide a more efficient and comprehensive patching service to your clients.
+
+Below is an overview of our Windows security update patch testing process:
+
+Day 1: Patch Tuesday
+
+Microsoft releases its monthly Security updates on Patch Tuesday, the second Tuesday of each month. At this time, we delay the installation of this update for one week to thoroughly test how the installation impacts common business applications. NOC recommendations for any new Security updates are shown as 'Under Review' delay will not apply if the Policy setting for Security Updates is configured to "Deploy All"
+
+ 
+Day 7: Patch Testing Report Published
+
+Seven days after Patch Tuesday, the updates are Approved or Blocked by the NOC based on their testing. The patches are deployed for all endpoints where the Policy setting for Security Updates is set to 'Deploy only Partner' or 'NOC Approved' report in our documentation, listing any identified issues and, if applicable, providing steps to avoid or remediate the issue. This report also includes any previously blacklisted patches included in the monthly Security update.
+
+Patch Monitoring After Day 7
+
+After releasing patches following seven days of Testing, our Research team continues to monitor and research the month's security updates. If any new issues are identified based on this research, then (depending on the impact to endpoints) the recommendation is updated. Any change in recommendation is also communicated, and the Testing report is updated
+
+The Benefits of Patch Testing
+
+Patch management can be a very time-consuming process for both MSPs and end clients. By delaying the installation of Microsoft’s monthly Security Updates, our team is able to extensively test the different patches within the update on your behalf—helping you identify and remediate issues before they happen and providing a better overall patching service to your clients.
+
+Additionally, delaying the installation provides other software vendors with time to release updates that fix known issues, giving you a better chance at avoiding additional problems altogether.
+
+Your role as an MSP is to minimize your clients’ technology issues, allowing them to keep their businesses running smoothly. With ConnectWise's patch testing process, you not only get a patch management tool; you get a complete team that enables you to provide a better patching service to your clients.
+
+How to Receive the Monthly Patch Testing Report
+
+On the third Tuesday of each month (seven days after Patch Tuesday), we publish our full patch testing report.
+
+How can I keep my endpoints on a longer testing cycle?
+
+If you wish to keep your endpoints on the 14-day testing, then you can change your Policy schedule to target the fourth week of a month or the first week of the next month. 
+
+OS Upgrades (Windows and Mac) Patch Testing Reports
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Patch Testing Reports
+OS Patching
+OS patching is a critical feature that helps to keep your managed endpoints up to date on the many security and non-security patches released every mo...
+Third-Party Patching
+Windows 11 Patch Assessment issue
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

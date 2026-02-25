@@ -1,0 +1,57 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Policies and Packages   Evolve Recommended - Best Practices for Policies and Packages   Evolve Recommended - Network Monitoring Configurations
+ Expand/collapse global location
+Evolve Recommended - Network Monitoring Configurations
+Last updated
+Oct 28, 2025
+Table of contents
+Overview
+Policy Details
+Policy Settings
+Overview
+
+This article covers the recommended settings to employ for your Network Monitoring Policy. These best practice settings for different RMM configurations are based on the feedback and analysis of policies used by partners.
+
+Policy Details
+Policy Usage	RMM policies allow the partner to set the Network Monitoring functionality at the site level. System will deploy the appropriate agent components on the endpoints once the site is enabled for RMM.
+Policy Type	Network Monitoring
+Policy Name	Evolve Recommended - Network Monitoring Configuration
+Policy Applies To	These settings will be applied to a Site.
+Policy Settings
+Field Name	Value
+
+
+Site Type
+
+	
+
+Basic Network Monitoring
+
+Evolve Recommended - Communicator Policy Evolve Recommended - OS Patching Desktop Policy
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Evolve Recommended - RMM Site Configuration Policy
+Evolve Recommended - OS Patching Desktop Policy
+Evolve Recommended - OS Patching Server Policy
+Evolve Recommended - Communicator Policy
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

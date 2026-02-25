@@ -1,0 +1,921 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Client Management   Companies and Sites
+Companies and Sites
+Last updated
+Dec 15, 2025
+Table of contents
+Overview 
+Requirements
+Client Management Permissions
+Companies 
+Video: How to Create a Company and a Site
+Add Company 
+Edit a Company
+Delete a Company 
+Company Details
+Create a Site
+Add Site
+Edit a Site
+Delete a Site
+Company and Site Tabs
+Overview Tab
+Customize a Layout 
+Agents
+Uninstall Agents from Company or Site Details 
+Monitoring
+Custom Monitors
+Intelligent Alerts
+Suspensions
+Contacts
+Add Contact
+Custom Fields
+Overview 
+
+This article provides information on company and site management in the ConnectWise Asio®. Bulk import functionality is available to set up your companies and sites for the first time. Please refer to the Company and Site Bulk Import Functionality documentation for more information.
+
+Navigate to Clients > Companies to create, view, and edit company or site information for each company you have permission to access. Click on a company to view the primary site, site list, phone number, email, and the company's location.
+
+This article can help you accomplish the following tasks:
+
+Company List
+Create a company
+Edit a company
+Delete a company
+Company Details
+Create a site
+Edit a site
+Delete a site
+Company and Site Agent Management
+Contact List
+Add company contacts
+Requirements
+Access to the Asio platform with ConnectWise SSO.
+Client Management permissions. By default the Primary and Super Admin, Technician, and Manager roles retain all Client Management permissions.
+Resource assignments or site access. Resource assignments automatically grant the user permission to view. For more information, refer to Resource Assignment for the Asio platform.
+Client Management Permissions
+
+Application roles are assigned in ConnectWise Home and can be customized for granular access to client management permissions. Refer to Application Roles for more information about assigning and customizing application roles.
+
+Application Role >
+
+	
+
+Super Admin
+
+	
+
+Manager
+
+	
+
+Technician
+
+	
+
+Office Staff
+
+	
+
+Sales
+
+	
+
+Client Site Manager
+
+	
+
+PSA powered by Asio Admin
+
+
+
+
+Company Management
+
+
+
+
+Create Company
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+ON
+
+
+
+
+Create Site
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+ON
+
+
+
+
+Delete Company
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+ON
+
+
+
+
+Delete Site
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+ON
+
+
+
+
+Edit Company
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+ON
+
+
+
+
+Edit Company Finance
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+OFF
+
+	
+
+OFF
+
+	
+
+OFF
+
+
+
+
+Edit Site
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+ON
+
+
+
+
+Import Companies & Sites
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+ON
+
+
+
+
+View Company Finance
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+OFF
+
+	
+
+OFF
+
+	
+
+ON
+
+
+
+
+Contact Management
+
+
+
+
+Create Contact
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+OFF
+
+	
+
+ON
+
+	
+
+ON
+
+
+
+
+Delete Contact
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+OFF
+
+	
+
+ON
+
+	
+
+ON
+
+
+
+
+Edit Contact
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+OFF
+
+	
+
+ON
+
+	
+
+ON
+
+
+
+
+Import Contacts
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+OFF
+
+	
+
+ON
+
+	
+
+ON
+
+Companies 
+
+ Navigate to Clients > Companies in the Asio platform to view the Company List.
+
+Field 
+
+	
+
+Description
+
+
+
+
+Add Company
+
+	
+
+Click the Add Company button to create a company. Enter company information to create the primary site. The primary site name you create is the primary office location. 
+
+
+
+
+Actions
+
+	
+
+Click Actions for the following options:
+
+Edit Company
+Delete Company
+Bulk Import CSV
+Bulk Export CSV
+
+
+
+ Search icon
+
+	
+
+Enter keywords to find specific sites.
+
+
+
+
+   Filter icon
+
+	
+
+Apply filters to narrow down the site list.
+
+
+
+
+List View
+
+	
+
+Adjust the display to compact, standard, or comfortable.
+
+
+
+
+Column Selector
+
+	
+
+Choose which columns to show. This does not affect filtering.
+
+
+
+
+ 
+
+	
+
+Click the download icon to download the CSV template for your company list.
+
+Video: How to Create a Company and a Site
+
+Add Company 
+
+Note: When a user creates a company and site, it is auto-assigned to the user who created it.
+
+Sign in to the Asio platform.
+Navigate to Clients > Companies.
+Click Add Company.
+
+
+When you open a form to add a company, site, or contact, you can select from Central Peek, Side Peek, Bottom Peek, or Full Page to change the location of the form on your screen. Click the Peek option at the top of the form to select your preference from the drop-down.
+
+
+Enter the Company Name and Primary Site details to create a primary site.
+
+
+Note: Create a unique company ID, site name, and primary site ID. The primary site name you create is the primary office location. 
+
+Enter the Primary Site Details to create a primary site with the address and contact information for the company.
+
+Click Save.
+
+Your new company now appears in the list under Company List with the primary site in the Site List.
+Edit a Company
+From the Company List, select the checkbox of the company you want to delete.
+
+Click Actions > Edit Company.
+
+Edit the company details, such as name and status, from this page. To change an address or contact detail, edit the company's primary site. 
+Click Save.
+Delete a Company 
+From the Company List page, select the checkbox of the company you want to delete.
+Click Actions > Delete Company. 
+
+Click Confirm to delete the company.
+
+Company Details
+
+Navigate to Clients > Companies and click the company name to view the Company Details and Site List. 
+
+
+The Company Details page includes the Site List. Select a site to view the site details, create a new site, or edit existing sites from this page. Client Management permissions are required to create, edit, and delete company details.
+
+Note: Overview, Agents, Monitoring, Contacts, and Custom Fields tabs are available to select on the Company Details page.
+
+Field
+
+	
+
+Description
+
+
+
+
+Overview tab
+
+	
+
+Click the Overview tab to customize the layout with widgets or switch to a saved layout.
+
+
+
+
+Agents tab
+
+	
+
+Install, uninstall, and manage agents for the company.
+
+Refer to the section below to learn more about company and site-level agent management. Refer to Agents for all agent management documentation.
+
+
+
+
+Monitoring tab
+
+	
+
+View Custom Monitors, Suspensions, and Intelligent Alerts associated with the selected company. Click the name of the Custom Monitor to edit.
+
+
+
+
+Contacts tab
+
+	
+
+View, add, or update company contacts. 
+
+
+
+
+Custom Fields
+
+	
+
+Review custom fields linked to the company. Review the Custom Field documentation for more information.
+
+
+
+
+Site List
+
+	
+
+View all company-associated sites, including inactive ones. Use filters and column settings to tailor the view. Click a site to view its details.
+
+
+
+
+Add Site
+
+	
+
+Create a new site and with a unique ID and location details. 
+
+
+
+
+Actions
+
+	
+
+Access options to edit or delete a site.
+
+
+
+
+ Search icon
+
+	
+
+Enter keywords to find specific sites.
+
+
+
+
+   Filter icon
+
+	
+
+Apply filters to narrow down the site list.
+
+
+
+
+List View
+
+	
+
+Adjust the display to compact, standard, or comfortable.
+
+
+
+
+Column Selector
+
+	
+
+Choose which columns to show. This does not affect filtering.
+
+Create a Site
+Add Site
+Click a parent company to navigate to the Company Details page.
+Click the Add Site button located in the header of the Site List.
+
+Enter the site details in the required fields.
+
+Click Save.
+
+Your new site is then listed on the Company Details page.
+Edit a Site
+
+To edit the name or contact details of the site:
+
+Navigate to the Company Details page and select the checkbox of the site you want to edit.
+Click Actions > Edit Site.
+Edit the details of the site.
+Click Save.
+Delete a Site
+
+Note: You cannot delete a primary site.
+
+Navigate to the Company Details page and select the checkbox of the site you want to delete.
+Click Actions > Delete Site.
+
+Click Confirm to delete. When a site is deleted, the respective managed endpoints associated with the site will also be uninstalled. If a user or technician wants to remove selective endpoints, they can use the Agent Management section to remove the Agents.
+Company and Site Tabs
+
+Click the company name in the Company List or the site name in the Site List.
+
+Use the toolbar to navigate to all actions related to Agents, Monitoring and Alerts, Contacts, Custom Fields, and Settings specific to the selected resource. 
+
+
+Overview Tab
+
+You can personalize the Company, Site, and Contact detail pages using the Overview > Create New Layout feature. This allows you to tailor each page to your workflow by adding widgets, rearranging content, and saving layouts for future use. 
+
+Customize a Layout 
+Sign in to ConnectWise Asio®.
+Navigate to Clients > Companies and select a company.
+On the Company Details page, expand the Overview drop-down and select Create a New Layout.
+To customize a Site, select it from the Site List and use the Overview drop-down on the Site Detail page. 
+To customize Contacts, click the Contacts tab for the selected company and use the Overview tab to create a layout specific to contact details.
+The Add Widget panel displays where you can click the + icon next to the widget you want to add. You can build your layout by dragging and dropping widgets. If you have access to other products, you can include their widgets to centralize key information for the company, site, or contact.
+
+Enter a Layout Title.
+
+Click Done. To return to this view at another time, click Overview and select the custom view from the drop-down.
+Agents
+
+Agent management is available from the Company or Site Detail page. For more information on agent management, refer to the Download and Install Agents documentation.
+
+Uninstall Agents from Company or Site Details 
+
+To uninstall selective endpoints from a company or site, select the company from the Company List. All agents deployed to site endpoints are available from this page. To isolate site-specific endpoints, select a company and then select a site from the Site List. Follow the steps below to uninstall the agent from an endpoint:
+
+Click the Agents tab.
+
+Click the Agent Management tab.
+Select the checkbox for the endpoint.
+Click Uninstall Agent(s).
+
+The Uninstall Agent window displays the list of selected devices. Only the devices without references are selected to run the uninstall. Review the list and deselect incorrect devices, if any.
+
+A red icon  indicates that the endpoint has references or other devices monitored via the endpoint, and it is automatically deselected. The uninstall action cannot be performed on this endpoint until the other devices are removed by a Technician or authorized user.  
+
+After you have verified the devices and removed references, you must provide a reason for the uninstall. Select a reason from the drop-down menu to enable the Uninstall Agent(s) button.
+
+Click Uninstall Agent(s).
+Click Confirm to proceed.
+
+A confirmation message is displayed to indicate that the uninstall job has been scheduled. Upon confirmation, if the endpoint is reporting online, the job has not been executed in the data center yet and is scheduled. If the endpoint is reporting offline or not communicating with the data center, the request is maintained in the backend to process for up to 360 days. The device must be online to perform the agent uninstall job. 
+
+Note: When uninstalling RMM agents, remember to also uninstall any Webroot agents on the device that may be installed to avoid being billed on the next billing cycle for Webroot licenses not in use.
+
+Monitoring
+Custom Monitors
+
+Click Monitoring > Custom Monitors on the Company Detail or Site Detail page to view custom monitors applied to the company or site. Custom Monitors are applied based on the conditions created in the Custom Monitor section of RMM, located under Endpoints > Alerts > Monitors.
+
+
+Click the name of the custom monitor to open the Edit Monitor page, where you can designate the output, targeted resources, and details of the custom monitor. Refer to Custom Monitors for more information.
+
+Intelligent Alerts
+
+After the agent is installed for a device associated with an Asio company, you can navigate to the company detail page and manage the intelligent alert monitoring conditions for all endpoints within the company. To learn more, refer to Intelligent Alert Configuration.
+
+Navigate to Clients > Companies > [select a company] > Monitoring > Intelligent Alerts
+
+To manage at the site level, first select a company and then select the site. From the site detail page, click Monitoring > Intelligent Alerts.
+Click the condition name to customize alert actions, such as automation or ticket generation.
+Changes made in Edit Intelligent Alert apply across all applicable endpoints and devices.
+From this view, you can also manage Suspension and Custom Monitors for the company level.
+
+Suspensions
+
+Suspension rules are created in Endpoints > Alerts > Suspensions. Suspensions can apply to Intelligent Alerts, Custom Monitors, and Automation for a specified window. If applicable to the selected resource, suspensions appear on this page. 
+
+Contacts
+
+Contacts can be created for both Companies and Sites. The company's primary contact can only be assigned when creating a new contact. Navigate to the company or site contact list by selecting the Contacts tab from the Company Detail or Site Detail page. Refer to Contact management for more information about contacts in Asio.
+
+
+Add Contact
+Navigate to Companies in the Asio platform. 
+Click the name of the company you want to add contacts to.
+On the Company Details page, select the Contacts tab.
+To create a site-level contact, navigate to the Company Overview, select a site from the Site List, and click the Contacts tab.
+Click Add Contact.
+
+Add contact details to create a new company contact. The primary contact, title, address, and phone number can be entered or edited in this form.
+
+Click Save.
+Custom Fields
+
+Click the Custom Fields tab on the Company Detail or Site Detail page to view all custom fields applicable to the selected resource. Refer to Custom Fields to learn more about the management of custom fields in Asio.
+
+
+Client Management Company and Site Bulk Import Functionality
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Company and Site Bulk Import Functionality
+Contact Management
+Command for Networks
+Secure Information Store
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

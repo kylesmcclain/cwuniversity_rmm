@@ -1,0 +1,203 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   ConnectWise RMM Release Notes   RMM Release Notes Archive   ConnectWise RMM Update for April 2023
+ConnectWise RMM Update for April 2023
+Last updated
+Apr 25, 2023
+Table of contents
+Announcements
+ConnectWise PSA - Integration via policies
+Ability to Switch endpoint type from Server to Desktop or vice-versa
+Endpoint protection score improvement in Executive summary data
+ConnectWise ScreenConnect (Control) Rebranding
+Deprecation of Tools page
+Migration of Clones
+ConnectWise RMM
+Agent and Platform
+Intune Integration
+Monitoring / Alerting
+Patching
+Third-Party Patching
+Bug Fixes / Known Issues
+Announcements
+ConnectWise PSA - Integration via policies
+
+We are excited to announce that we will be adding an option for you to enable the ConnectWise PSA sync configurations that helps to define Ticket, Configuration items, and Notifications using policies. These policies can be included in your packages and applied to the sites using the package assignment option.
+
+There will be no migration performed for the existing configuration, but the policies will be in effect if they are assigned or applied to a site. You will initially have a toggle button to either enable or disable the policies based configuration and continue using the old method for now.
+
+We would stop supporting the older configuration method by the end of June 2023.
+
+For more information, review the following articles:
+
+ConnectWise PSA - Policy Integration
+
+ConnectWise PSA - Policy Integration - FAQ
+
+Ability to Switch endpoint type from Server to Desktop or vice-versa
+
+With this release, we are adding the ability to switch and endpoints type.
+
+You will be able to swap the endpoint type without the need for uninstalling and reinstalling the agent.
+
+This feature to be enabled for Windows OS.
+
+It will be available to users who have access to Install an Agent.
+
+The change will be reported in two to three minutes on the Devices page.
+
+This Feature will be released on April 28th.
+
+Endpoint protection score improvement in Executive summary data
+
+We are improving the Endpoint protection score calculation in the Executive Report in BrightGauge to use the new AV detection logic on the endpoint.
+
+ConnectWise ScreenConnect (Control) Rebranding
+
+ConnectWise Control will be rebranded to ConnectWise ScreenConnect. We will be making these changes in both the product and documentation, but expect this update to take some time to complete.
+
+Deprecation of Tools page
+
+We are removing access to the Tools page inside RMM Setup. The below tools will not be available for installation from the page:
+
+RMM Scanning Tool - There is an alternate way to download and install this tool via Devices page.
+
+Wake-On-LAN Tool - This tool is being deprecated for Command partners because of no active usage. No CW RMM Partners are using this tool currently.
+
+This page will be removed on May 30th.
+
+Migration of Clones
+
+With the announcement of the Supporting Golden Image, we needed to resolve the issue with existing endpoints that were cloned but not getting properly processed for billing.
+
+With the next release, we would be making the following changes so that the existing clone devices will be processed to be considered as an independent endpoint on the UI and billing.
+
+The Agent will reprocess these duplicate clone devices as a separate device (the Devices page still shows them as individual devices)
+
+Clone Machines that are reporting keep alive will be re-registered as a separate Endpoint.
+
+Migrated machines in the Devices page will no longer be seen in the Clones Tab.
+
+These machines will be considered as new device in billing.
+
+The Migration will occur in a phased manner starting May 5th.
+
+ConnectWise RMM
+Agent and Platform
+
+Agent Update. A new agent, version 3.0.6, will be rolled out on April 25th. Windows, MAC, and Linux agents will be updated to the latest version automatically.
+
+Legacy Portal Update. LogMeIn Rescue and the Mobile option will not be available in the Products & Services page for new partners. Existing partners will still be able to see the options on the portal. This change goes into effect on May 3rd.
+
+Intune Integration
+
+Configuration Profiles on Device Details. From the Device Details screen, partners will see Configuration Profiles and their status from Intune / Microsoft Endpoint Manager. This will be released on April 21st.
+
+Monitoring / Alerting
+
+Event Monitor Updates:
+
+Event monitor will now be supporting validation of multiple keywords in "AND" or "OR" criteria against the event description for alert generation criteria.
+
+Script Monitor Updates:
+
+Script monitor will now be supporting validation of multiple keywords in "AND" or "OR" criteria against the script output for alert generation criteria.
+
+Registry Monitor Updates
+
+Registry monitor will now be supporting validation of multiple keywords in "AND" or "OR" criteria against the event description for Registry value criteria.
+
+The value field in registry monitor will not be a mandatory field for existing or missing criteria.
+
+Device Availability (Formerly Device Down) Monitor Updates:
+
+We have renamed the Device Down monitor to Device Availability monitor.
+
+You can now configure or add an additional check to validate if ConnectWise ScreenConnect (Control) is down as an additional checkpoint before triggering an alert.
+
+Patching
+
+Improved UI for the Patch Approval & Patch Exclusions. We have improved the User interface for the Patch Approval and Patch exclusion to better represent the data and information and to align with Asio standards.
+
+Introducing OS Upgrade option while creating OS Patching Desktop Policy. You can now upgrade your applicable Windows 10 machines to Windows 11. Information for this process is available in the OS Upgrade documentation.
+
+Customization of Reboot Notifications. We are planning to release a new feature to customize force reboot time and reboot postpone time via policies. The new customization options will be available after enabling Notify User Before Initiating Reboot under Settings > Policies > OS Patching Desktop/Server Policy > Notify User Before Initiating Reboot. This will release on May 12th.
+
+Third-Party Patching
+
+Zoom macOS support. Zoom has been added to the list of Supported applications for Third-Party Patching.
+
+Bug Fixes / Known Issues
+
+The following issues will be resolved with this month's release:
+
+Automation - We have resolved an issue where the scheduled tasks missed the next immediate schedule due to DST changes.
+
+Automation - We have resolved an issue where the last runtime for the tasks were not displayed correctly on the portal. (UI display issue, Tasks were getting executed correctly).
+
+Automation - We have resolved an issue where the next scheduled time was not displayed correctly on the portal. (UI display issue, Tasks were getting executed correctly).
+
+Automation - We have resolved an issue where few of the deleted tasks were displayed on the UI (Tasks were not getting executed on the endpoint but stale entries were left on the portal)
+
+Device Groups - If the Device Group/Policy was created against a site criteria and the same was deleted the bug would show internal ids of deleted sites. This has been fixed.
+
+Monitoring - We have resolved an issue where tickets generated from monitors will not run the corresponding Automation configured if the task was created using script editor.
+
+Note: You need to perform following actions to resolve the existing monitor issues:
+
+Remove the existing automation task configured or mapped with the Monitor.
+
+Save the the monitor.
+
+Open and map the automation task against the monitor.
+
+Going forward, any new alerts generated against the monitor will trigger/execute automation on the endpoint.
+
+Patching - Bug fix regarding NOC Recommendation reverting back to Under Review state for some of the KB Articles.
+
+Patching - Bug Fix regarding ticket created for an UpdateID gets autoclosed when the update is no longer present in list of missing updates.
+
+Patching - Released a bug fix of Third-party patching Scheduled Tasks Failing with template error during the execution.
+
+Ticketing - Currently technicians at partner side are able to see only 500 sites for CES migrated partners. For sites beyond 500, they see the blank information for those respective sites. We have fixed this bug and partners will be able to see all the sites for the partners.
+
+ 
+
+ConnectWise reserves the right to remove any enhancement or fix from this update if it does not pass quality assurance tests.
+
+ConnectWise RMM Update for March 2023 ConnectWise RMM Update for May 2023
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ConnectWise RMM Update for January 2023
+ConnectWise RMM Update for February 2023
+ConnectWise RMM Update for March 2023
+ConnectWise RMM Update for May 2023
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

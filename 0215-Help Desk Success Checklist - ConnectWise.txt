@@ -1,0 +1,106 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Expert Services   Help Desk   Help Desk Success Checklist
+Help Desk Success Checklist
+Last updated
+Feb 5, 2024
+Table of contents
+Overview
+Activation Checklist
+Overview
+
+Integrating the Help Desk into your operation ensures seamless support for your end users. A caller identification system creates a white-label experience that becomes a natural extension of your organization. Chats and phone calls will be routed to a team supporting your selected level of service. Technicians can build relationships and begin solving problems immediately without needing basic customer information.
+
+The more complete information you provide to ConnectWise Help Desk Services upfront, the easier your Help Desk implementation will be. Proper activation will help you offer a completely white-labeled, seamless experience for your clients. After set-up, continued maintenance will ensure long-term success.
+
+Activation Checklist
+
+For a successful implementation, follow this checklist as you work through each section to Activate the Help Desk.
+
+PHASE 1: Learning and Preparation
+□	Click I’m Interested in the Asio Platform
+□	Receive Email with links to educational resources
+□	Review the Getting Started with ConnectWise Help Desk Services lessons.
+□	
+
+Prepare marketing material:
+
+Help Desk Solution Overview Template 
+
+□	Review materials and reach out to your Account Management team with questions
+  PHASE 2: Planning and Information Gathering
+□	Determine the site to be activated
+□	Conduct an internal kickoff meeting
+□	Hold a project kickoff meeting with client
+□	Download and complete the Help Desk Activation Workbook
+PHASE 3: Technical Setup and Configurations
+□	Select Help Desk product and service options
+□	Configure Help Desk chat
+□	
+
+Create a notification rule
+
+Identify a group number for simple inquiries
+Setup Help Desk inquiry line
+
+□	Deploy RMM agents to desktops and servers
+□	
+
+Complete the Help Desk tab:
+
+Basic Info
+Client Profile
+Security Releated Requests
+
+□	Enable automated passwords
+□	Add additional passwords
+□	Complete network info (If device/feature support is expected, information is required)
+□	Setup unlicensed software approvals
+□	Add reference documents
+PHASE 4: Verification
+□	Conduct internal review and verification (by your team)
+□	Email HD activation
+□	Provide/clarify additional content
+□	Receive activation approval from HD activation team
+PHASE 5: Enablement and Expectation Training
+□	Prepare and send internal communication
+□	
+
+Hold client training and enablement meetings and leverage the following customizable resources:
+
+Client Training Presentation Template
+Contact the Help Desk Template
+
+□	Go-Live
+PHASE 6: Maintenance
+□	Plan review cycle
+□	Review/update internal processes and project templates and update documentation
+□	Conduct weekly review of escalations for first 30 days and update documentation as needed
+Help Desk Services - DUO User Administration IT Glue Integration Guide
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Help Desk Chat
+The Help Desk Chat application allows your clients to get Help Desk support quickly and easily right from their machine's desktop, taskbar, or notific...
+Help Desk Activation Checklist
+Help Desk Best Practices
+Activating Help Desk
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

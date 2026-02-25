@@ -1,0 +1,670 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Expert Services   ConnectWise Network Operations Center - NOC   NOC Service Statement of Work
+NOC Service Statement of Work
+Last updated
+Sep 22, 2025
+Table of contents
+1. Overview
+2. Service Description
+Coverage Hours
+Location of Services
+Access Level Roles
+3. In Scope Services for NOC Service Level 1 and above
+Server / Internet Down Management incident types / activity:
+Patch Management incident types / activity:
+OS Drive Disk Space Management incident types / activity:
+Antivirus Management incident types / activity:
+Hardware / Firmware Issues
+Performance Management incident types / activity:
+Windows Server Management incident types / activity
+Virtualization Support and Management incident types / activity:
+Exchange / O365 Management incident types / activity:
+Active Directory Management incident types / activity:
+DHCP Management incident types / activity:
+Terminal Server/ RDS incident types/activity:
+IIS Management alert types/activity:
+SharePoint Management incident types/activity:
+SQL Server Management incident types/activity:
+Volume Shadow Copy Service (VSS) Management incident types/activity:
+Performance Management:
+Microsoft Entra ID
+ESXI Host mapping
+Distributed File System (DFS) Management and Activities
+AD-HOC Requests
+MSP Initiated Tickets
+4. End client communication
+5. Out-of-Scope Services
+6. MSP Responsibilities
+7. Service Level Objectives:
+8. How to contact the NOC Service
+9. Additional Resources
+10. Revision History
+1. Overview
+
+This Statement of Work ("SOW”) for NOC Services has been entered into pursuant to the Schedule of Software and Services ("Schedule") between your organization (“You,” “Your” “MSP” or “Client”) and ConnectWise and the terms of the then current Master Agreement and the applicable Addendum(s) located at www.connectwise.com/legal (collectively the "Agreement"). Such terms are incorporated by reference as if fully set forth herein.
+
+The scope of the NOC Services may change, and we may update this document from time to time. It is your responsibility to check this SOW periodically for changes. ConnectWise will notify you of significant changes in our SOW in our monthly release notes. You may also check the revision history section of this document for recent changes.
+
+2. Service Description
+
+The goal of the NOC is to maintain Server/Endpoint performance and availability. The NOC provides 24x7 support. The NOC assists the Client with managing the activities described below.
+
+Coverage Hours
+
+24x7: 24 hours a day, 7 days a week coverage
+
+Location of Services
+
+NOC Services are provided from India. ConnectWise may also hire technicians via a work-from-home policy. The following service levels are based on where the service is being delivered from:
+
+Voice: All incoming phone calls are routed through the interactive voice response (IVR) and managed by Supervisors and lead of respective teams within NOC.
+Email communications: All incoming emails are routed by Supervisors and lead of respective teams within NOC
+Tickets (Asio™ platform (ITSupport Portal)): All incoming tickets are routed by Supervisors and lead of respective teams within NOC
+Chat Support: Chat Support is available through the Asio platform for initiating new work requests.
+
+NOC Services are enabled at the site level in the Asio platform. There are four levels of service:
+
+Access Level 0 does not allow NOC technicians to login to servers. The NOC will generate a ticket and ask for your approval to work on the issue.
+Access Level 1 allows NOC technicians to login and diagnose an issue. The NOC will generate a ticket with troubleshooting steps for Client to fix the issue or provide approval to the NOC to attempt to resolve the issue
+Access Level 2 allows NOC technicians to login and attempt to diagnose, and fix the issue, only if it does not require restarting services or rebooting the servers. If the issue does require restarting service or sever the NOC technician will generate a ticket for MSP approval. Non-Critical Services may be restarted without MSP approval.
+Access Level 3 allows NOC technicians to login to the server. The NOC technician will log-in to the server, and attempt to diagnose and fix issues, and create a ticket to inform you that they have worked on the issue.
+Access Level Roles
+NOC SERVICE ON INCIDENTS PER ACCESS LEVEL
+ROLES/ACCESS LEVEL	0	1	2	3
+LOGIN	No	Yes	Yes	Yes
+DIAGNOSE	No	Yes	Yes	Yes
+FIX AND CONFIGURATION CHANGES	No	No	Yes	Yes
+START THE STOPPED SERVICE	No	Yes	Yes	Yes
+STOP AND RESTART SERVICES	No	No	Yes	Yes
+START THE STOPPED SERVERS	No	Yes	Yes	Yes
+SHUTDOWN AND RESTART SERVERS	No	No	No	Yes
+3. In Scope Services for NOC Service Level 1 and above
+
+ConnectWise will make commercially reasonable efforts to provide the following Services:
+
+For each section below, NOC Technicians will acknowledge the incidents generated by the ConnectWise Alert Service. A list of active NOC supported alerts can be found here.
+
+NOC Technicians will call the MSP based on the notification template configured to report the issue. NOC Technicians will log a ticket with the analysis and steps performed on the server as a part of troubleshooting.
+
+Description of troubleshooting activities for access level 1, 2 and 3 (as per the permissions described above):
+
+In the event of device down ConnectWise systems will send the incident to the NOC
+After the ticket is generated by the monitoring condition, the ConnectWise NOC technicians will call MSP within 15 minutes after the incident created on the NOC service board.
+Note: NOC Technicians will call the Client based on the notification template configured to report the issue.
+NOC technicians will send the incident acknowledgement within 15 minutes of its generation and begin working on the incident
+We access configured LOM URL (internal or external) from adjacent servers & from desktop (as configured by the MSP) and bring the server online by using the power cycle option available in LOM
+In some cases, servers do not respond to start requests then such incidents are assigned to the next level of experts based on the server environment (VMware, Hyper-V, performance, NMS) for extended level troubleshooting.
+
+The following section describes all categories of the incidents and activities covered. Detailed documentation on individual tickets and configures can be found in the Asio platform.
+
+Server / Internet Down Management incident types / activity:
+NOC monitors server status online/offline
+For offline servers the NOC technician notifies Client via a phone call, for VMs on Host (VMware/Hyper-V) and Servers with Lights Out Management (LOM)
+NOC technicians starts the server that is down or has been turned off
+LOM must be configured for Hyper-V, if Hyper-V host and Virtual Machines are monitored, NOC can work on device down for Virtual machines.
+LOM must be configured for VMware - VMware host & guest machines need to be under NOC monitoring for Device down cases.
+To perform work on cloud apps, NOC uses Password Vault to route tickets. NOC requires that the password field be populated in Password Vault. 
+Patch Management incident types / activity:
+Enable deployment of Microsoft and non-Microsoft patches to managed systems. NOC divides patch policies into three basic categories: Microsoft Updates, Apple Updates, and Third-Party Updates.
+Microsoft Updates: Consist of Core Patches (security and critical updates) and Optional Patches (non-security updates). Microsoft Security Monthly Rollups are part of the Security updates category within Core Patches and are tested by the NOC, while nonsecurity Microsoft updates and all other updates are not.  
+OS Upgrade: Our platform offers a convenient feature called OS Upgrade, which facilitates the seamless upgrading of Windows and MAC endpoints to the most recent OS version. It's important to note that regular security updates, feature updates, and major upgrades are distinct functionalities. When you choose to utilize OS Upgrades and there are applicable OS Version upgrades identified in the assessment, we will initiate the deployment of the OS upgrade according to the schedule specified in Deploy Feature ConnectWise Confidential and Proprietary Information Updates/OS Upgrades. Note: macOS Major upgrades are only available for intel-based Mac endpoints and do not support ARM/Silicon-based Mac machines.
+Feature Update Deployment: The automated option for Feature Update Deployment enables partners to maintain machines on the Supported Windows 10 and 11 operating system versions. This feature specifically targets Windows 10 & 11 endpoints that are currently running on an End of Support OS version and automatically upgrades them to a supported OS version. 
+Apple Updates: Apple updates are made available as needed by Apple and include updates for Apple applications and Mac. Apple updates are deployable through ConnectWise patch policies after the first patch assessment scan is released by Microsoft. Note: macOS updates are only available for intel-based Mac endpoints and do not support ARM/Silicon-based Mac machines.  
+Third-Party Updates: Updates to third-party applications, including those from Adobe, Apple, Chrome, FireFox 
+Windows Monthly Rollup Testing. The NOC performs Windows Monthly Rollup Testing before deploying them to the client machines. NOC tests each rollup and publishes findings on the Monthly Rollup Testing Reports 
+Missing desktop and server patches are identified by our monitoring agent during patch assessment. To undergo automatic patch assessment, a resource must be online at the time the assessment is scheduled. The Agent runs a Patch assessment every 4 hours and immediately after the endpoint restarts. The assessment is also performed immediately after any Patch installation (Manual or Auto-deployment) to get the latest information. For more information review the OS patching Documentation.
+OS Drive Disk Space Management incident types / activity:
+Unable to install critical OS security updates.
+Unable to perform backups.
+Failure to run Application Server roles properly (i.e., SQL jobs/Exchange)
+Disk Read/Write latency
+Deteriorated performance while functioning server roles.
+Non OS Drive incidents are assigned to MSP; MSP may reassign to NOC with instructions
+Antivirus Management incident types / activity:
+ConnectWise provides a license for Webroot Endpoint Protection with specific CW RMM packages.
+NOC provides a Webroot integration policy to automatically install and uninstall Webroot Endpoint Protection agent on the systems.
+Hardware / Firmware Issues
+
+On Servers, the Noc assists on firmware and driver updates on a reactive basis upon partner request but then expects the Client to identify the supported version and provide downloaded drivers or URL.
+
+For Desktops firmware and driver updates can be initiated by opening a service request with the Project Assistance team at a charge 
+
+10 Network devices per site per month can be upgraded if an Auvik is installed 
+
+For network devices without Auvik, firmware and driver updates can be initiated by opening a service request with the Project Assistance team at a charge  
+
+Performance Management incident types / activity:
+Operating system crash and hang-related issues
+Application hangs and crashes
+Memory dump analysis
+Key Operating System Performance Metrics – Monitoring and Troubleshoot
+Resource utilization monitoring and fine-tuning. Ex- Memory, CPU usage
+Windows Installer Service
+Windows Management Instrumentation
+Component Object Model (COM)/COM+/Distributed COM \DCOM
+Windows Printing (Spooler Service)
+Printer Publishing in Active Directory
+Windows Server Management incident types / activity
+Service Control Manager – Windows Services status check
+No-Boot Scenario with a memory dump
+If a memory dump is required, the incident will be escalated to the MSP for instructions and approval. 
+Driver and firmware update
+Volume Shadow copy services
+Disk Drive Management
+RAID monitoring and Management are provided on a best-effort basis
+Virtualization Support and Management incident types / activity:
+Hypervisor OS version, IP Address, Hostname, Hardware status.
+Hypervisor storage details, CPU Count, Memory Size.
+Virtual machine configuration details like Name, Operating System, CPU Count, Memory Size, Disk Size, Snapshot details, powered ON or OFF.
+CPU, Memory, Network I/O & Storage utilization on Hypervisor & Virtual Machine level.
+Latest error message / Open incident under Hypervisor.
+NOC also provide support for Citrix XENApp till 6.5 version. Like Hypervisor provides multiple virtual machines under single hardware, Citrix XENApp offered application streaming, also known as Application Virtualization. XenApp allows to install applications on a server and then access those applications without having to install anything on the client apart from the Citrix client software. All processing is done by the server.
+Along with this Virtualization, NOC Team does support for Windows Cluster Setups wherein monitoring & management the issue reported by our Intellimon system are handled with timely resolution. The major support components are Cluster availability, Node Management & Cluster Shared Volume.
+NOC also provides basic level request-based support for Microsoft Entra ID (formerly Azure) Cloud infrastructure-related issues raised by MSP.
+Works on Microsoft Hyper-V replication related issues.
+Exchange / O365 Management incident types / activity:
+Defrag and repair Exchange servers
+Update expired web certificates
+Ensuring features like OWA, ECS, Outlook anywhere, Auto discover remains in healthy state
+Mailbox size management
+High reliability infrastructure maintenance e.g. DAG/Cluster
+Supporting Cloud user Management
+Creating Mailboxes and assigning licenses & permissions (limited to 10 mailboxes)
+Recover “Deleted” mailboxes/emails
+Create & configure retention policies / transport rules
+Import/Export Mailboxes/Emails via e-discovery/outlook
+Hybrid Configuration Wizard issues (Certificate expires/endpoint credentials/additional domain adding)
+Mail-flow issues with Exchange/O365
+Outlook connectivity in Hybrid Configuration (Adding entries in Registry / GPO)
+DNS records of O365 (SPF/DKIM/DMARC)
+Office 365 app for Business updates
+Public Folder permissions
+Message trace to check emails is being quarantined which needs to be released
+Enable Conditional Access / MFA
+Troubleshooting on Groups (M365, DL, Security Groups)
+Troubleshooting on Microsoft Teams / SharePoint Online / OneDrive issues
+Troubleshooting on issues related to Microsoft Intune.
+Active Directory Management incident types / activity:
+Microsoft Entra ID Integration
+User management
+Group Policy
+Permissions
+Database Management
+Org and OU management
+DHCP Management incident types / activity:
+Database Backup
+DHCP Scope maintenance
+The incident will be escalated to the MSP for instructions and approval. 
+Service Monitoring
+IP Address Management
+Terminal Server/ RDS incident types/activity:
+RDS roles and services troubleshooting
+Connection Broker, RD Gateway, RD Licensing, and RD Web Access
+Remote Desktop Client and Web Client
+Local and Redirected Printing
+Client-Side Redirection
+IIS Management alert types/activity:
+Service monitoring
+Site migration server to server
+Certificate related issues
+SharePoint Management incident types/activity:
+SharePoint
+Database Management
+Site Management
+Certificate Management
+Permission
+User Management
+SQL Server Management incident types/activity:
+Database Monitoring and Management
+Service / Instance break fix
+Client Connectivity
+Backup / Restore
+Volume Shadow Copy Service (VSS) Management incident types/activity:
+We check the following VSS writers only - NTDS Writer, Microsoft Exchange Writer, MSDEWriter / SqlServerWriter, System Writer, IIS Metabase Writer.
+Check for free space and dirty bit on the volumes
+Check and remediate if VSS writers are not listed at all
+Restart the corresponding services for the above-described 5 VSS writers
+Performance Management:
+Operating system crash and hang-related issues
+Application hangs and crashes
+Memory dump analysis
+The incident will be escalated to the MSP for instructions and approval.
+Key Operating System Performance Metrics – Monitoring and Troubleshoot
+Resource utilization monitoring and fine-tuning. Ex- Memory, CPU usage
+Windows Installer Service
+Windows Management Instrumentation
+Component Object Model (COM)/COM+/Distributed COM \DCOM
+Windows Printing (Spooler Service)
+Printer Publishing in Active Directory
+Microsoft Entra ID
+Microsoft Entra ID Sync Not Running
+Microsoft Entra ID Sync Failures
+Microsoft Entra ID Connectivity Failures
+Microsoft Entra ID Duplicate Failures
+Issues related to “Entra ID Join” workstations.
+Upgrading Microsoft Entra ID Connect to the latest versions
+Syncing issues with the Entra ID Connect & O365 (Hard/Soft Match)
+Troubleshooting the errors that occur in Entra ID Connect
+Entra ID Connect service crashing issues
+Adding the permissions to the Admin account of Entra Connect
+Enable Conditional Access / MFA
+Configure special attribute rules in Entra Connect
+ESXI Host mapping
+
+When a VMware guest machine is found down, the NOC can proactively restart it provided all the following conditions are met:
+
+The Site is on Elite Servers.
+A Server Agent is installed on the VMware Guest machine.
+The Host is being monitored by a Server Agent installed on a probe machine.
+Credentials for the Host machine are saved in the Application Vault.
+Port 16447 is open between the VMware guest machine and the probe machine
+Distributed File System (DFS) Management and Activities
+DFS Namespace or Replication Service - Not in Running State.
+DFS Replication service was unable to recover from an internal database error on volume.
+DFSR - Replication service stopped replication on volume.
+DFSR - The replicated folder has been offline for too long.
+The DFS Replication service has stopped communicating with its partner.
+DFSR database corruption or internal error caused replication to fail.
+Improper staging size configured, causing DFSR replication issue.
+Authoritative and non-authoritative restore of Sysvol and Data configured in DFSR.
+AD-HOC Requests
+
+NOC undertakes AD-HOC requests described below from MSPs by opening a ticket through the Asio platform.
+
+Service Pack Installation during off-hours.
+Driver updates for servers.
+Firmware updates (with Lights Out Management access or if vendor provides access through the console)
+Server Cluster Health Checks and remediation/recommendation for improvement.
+Citrix XenApp hotfixes, rollup installations, and configuration.
+
+Exchange:
+
+Defrag and repair Exchange servers.
+Update expired web certificates.
+Configure recipient update policies for multiple domains.
+Health Checks for Exchange Servers, which includes running the Best Practice Analyzer and resolving any detected issues.
+Upgrade to latest CU and Security updates
+Mail-flow issues (Firewall/Spam filters)
+Network connectivity between Exchange and DC
+Exchange Certificate & Webconfig issues
+Exchange Performance issues
+Configure Retention policies & Transport Rules
+Database issues (Defrag/Mount/Dismount/Repair)
+Outlook Connectivity / Out-of-office / OWA / ECP / ECS / Freebusy issues
+Mailbox permissions & Mobile device connectivity
+DAG connectivity issues (Replication/Corruption/Seeding)
+DAG Configuration and cluster-related issues
+Exchange backup issues
+Mailboxes restore from backups
+Troubleshooting on groups (DDL, DL, Security)
+Import/Export Mailboxes/Emails via e-discovery/outlook
+
+VMware:
+
+Health Checks of configurations, including vCPU and memory and network setup.
+Review error logs using vSphere or vCenter.
+Reconfigure VMs and host data stores.
+
+Hyper-V:
+
+Health Checks including network setup, memory cache, and RAID configuration.
+Configure VMs.
+
+Active Directory:
+
+Check Flexible Single Master Operation (FSMO) roles.
+Check master role.
+Check primary domain controller (DC) (if multiple DCs in different geographical locations).
+Check DC replication.
+Check database integrity (if downtime provided).
+Perform Distributed File System Replication (DRFS) (review and recommend changes if implemented; major changes must be submitted as a project).
+
+Azure:
+
+Change the size of Azure virtual machine
+Manage No-Boot / access related issues for Azure VM
+Changes to any Azure network related setting
+Hyper-V to Azure replication related issues
+Azure Windows virtual desktop access related issues.
+Azure storage related issues
+Azure Recovery Services vault backup related issues.
+MSP Initiated Tickets
+
+MSP may also initiate tickets to perform the following tasks by opening a ticket through the Asio platform. Requests which lead to over 60 minutes of time need to be reviewed and approved by the NOC. For requests that fall out of scope please leverage Project Assistance Services.
+
+Exchange troubleshooting
+
+Outlook Web or Outlook Anywhere Access
+DAG replication
+Active Sync issues
+Spam issues
+Auto-discovery feature issues
+Restore mailboxes as part of a disaster recovery
+Outlook calendar issues
+
+Remote Desktop troubleshooting
+
+Login issues
+Gateway policies
+Web access
+Single sign on
+Licensing
+Session issues (including timeout, printing, broken gateway, user profile, and certificates)
+Remote application access
+Remote Desktop Protocol (RDP) port
+
+VMware troubleshooting
+
+Virtual Machine Resource Management (i.e., increase or decrease CPU/Memory/Disk)
+Snapshot Management
+Virtual machine performance tuning
+Host performance tuning
+ESXi host datastore storage troubleshooting
+Installation of VMware ESXi host & vCenter related updates
+Update VMware tools, VM hardware.
+Work on vSphere replication related issues.
+ESXi host, Virtual Machines maintenance activities.
+
+Hyper-V troubleshooting
+
+Virtual Machine Resource Management (i.e., increase or decrease CPU/Memory/Disk)
+Checkpoint Management
+Virtual machine performance tuning
+Host performance tuning
+Hyper-V failover cluster management
+Hyper-V network performance tuning
+
+Citrix XenApp Server troubleshooting
+
+Login
+Secure gateway
+Web access
+Single sign on
+Licensing
+Session issues (including time out, printing, user profile, and certificate)
+Publish applications (including access, streaming, and publishing issues)
+Port
+Load balancing
+XTE Service
+
+Server performance issues
+
+Check the event viewer for performance-specific events, including high CPU, low memory, memory leaks, and slow response
+Chkdsk in read/only
+Free space
+Task Manager check (CPU, memory)
+Performance counters (CPU, memory, disk, network, etc.)
+Hardware event logs
+
+Email Delivery Issue:
+
+Email Delivery Delay
+Emails visible in OWA but not in Outlook application
+Multiple users with email failures
+Email bounce back to user
+Unable to receive an email from specific domains
+Troubleshoot Email issue with the help of NDR (Non-Delivery Report)
+
+Group Policy Failures:
+
+Group policy not getting Applied
+Group Policy not Working
+Any issues arising due to Group Policy Settings
+
+Office 365:
+
+User object and Password sync is not syncing
+Recover deleted emails
+Create and configure retention policies
+Enable archive on mailbox
+Import and Export PST
+Enabling Multi-Factor Authentication
+Need to Remove Single User from Dynamic Distribution Group
+Adding User to Block List
+Convert User to Shared Mailbox
+Incloud User from O365 to Convert to Sync with AD
+
+Microsoft Entra ID:
+
+Entra VM into No boot state
+Entra virtual machine backup failure
+Entra Hyper-V replication failure
+Increase memory of CPU virtual machine
+Increase disk size of Entra VM
+Assign permission to any user on Entra instances
+Change Entra VM instance size
+Make changes to existing Microsoft Entra ID Intune policies
+Entra ID Windows Hello break fix
+Troubleshooting existing Entra ID Site to site to VPN issues
+Entra Virtual machine connectivity issue
+
+Windows server errors (including blue screens, memory dumps and errors related to third-party applications in ConnectWise’)
+
+BSOD - Server reboots unexpectedly with memory dump
+Unable to open MMC / Event Viewer / Server Manager
+DCOM & WMI issue
+.net framework issue
+Unable to install any application (Windows Installer issue)
+Disk expansion after Low Disk Space issue
+4. End client communication
+
+NOC does not communicate directly with MSP’s clients. If the MSP subscribes to the Help Desk Service, the MSP may reassign the ticket to the Help Desk to coordinate with the MSP’s Client. 
+
+5. Out-of-Scope Services
+
+Notwithstanding anything to the contrary herein, the following services are out of scope and ConnectWise shall not have any responsibility or liability for such services.
+
+Third-party back-up
+
+No support for third party backup configuration, troubleshooting or data restoration.
+
+SAN/NAS Storage
+
+NOC does not support Storage related such as NAS configuration, upgradation, or troubleshooting.
+
+Installation of third party software through Group Policy Objects
+
+NOC does not support the installation of third party software through group policy or scripting.
+
+Third-party applications
+
+NOC does not support any 3rd Party application such as Quick books, MySQL etc. we can assist Client’s request for any specific requisites such as certain net framework installation for application to work but do not directly support or work on 3rd party apps.
+
+MSP Ad Hoc Requests estimated over 60 minutes in duration per month.
+
+Adhoc requests which lead to over 60 minutes of time need to be reviewed and approved by the NOC. For requests that fall out of scope please leverage Project Assistance Services
+
+Network Monitoring – Auvik escalatations only 
+
+Desktop Patching 
+
+If a patch policy for the site fails, the NOC will respond to MSP Initiated requests to address the failure and redeploy the patch 
+
+Custom Monitor 
+
+Patching troubleshooting before a patch is tested by SRT and deployed by the Patch Policy 
+
+Creation of reports
+
+Anything not specifically identified as in scope
+
+6. MSP Responsibilities
+
+MSP is solely responsible for the following tasks and MSP acknowledges and agrees that ConnectWise shall be relieved of its obligations to the extent MSP fails to fulfill the responsibilities set forth below.
+
+Review the list of alerts that the NOC supports. 
+NOC Services Enabled at the Site Level in Asio platform with Access Level 1 or Above
+The Server must have the RMM Agent installed
+The Server must have ConnectWise Control enabled
+End Point Password for Physical Servers added to Passwords tab through the Asio platform
+Providing access level configuration at the server level
+Enabling Automatic Credentials for Servers and Desktops through the Asio platform
+Reviewing tickets assigned or escalated to MSP by the NOC
+Updating the notification templates
+Configure patch policies and reboot schedules. The NOC will manually reboot servers only from alerts generated by failures of the automatic reboot. 
+Enabling NOC services at Site level
+LOM must be configured in passwords tab for physical server/VMware ESXi host.
+LOM must be configured for Hyper-V, if Hyper-V host and Virtual Machines are monitored so NOC can proactively work on device down for Virtual machines.
+LOM must be configured for VMware - VMware host & guest machines need to be under NOC monitoring for proactive work on Device down scenario by NOC.
+Role management for Entra
+Enable IT Glue integration
+7. Service Level Objectives:
+
+The table below provides NOC guidelines for acknowledging support requests, starting work on tickets, and providing status updates for in-progress, critical-impact tickets. These guidelines represent an objective for delivering NOC services and support across all clients; however, response times may vary by client or by client-site conditions.
+
+NO responds to requests in a manner that is consistent with an issue's severity as determined by ConnectWise in its sole discretion.
+
+NOC Service	Time Frame Objective	Target Service Level
+Acknowledge emails	Within 4 hours (start time depends on criticality) **	99%
+Acknowledge tickets	Within 4 hours (start time depends on criticality)	95%
+Begin work on server down tickets with Light Out Management (Elite)	Within 15 minutes	99.5%
+Begin work on critical impact (emergency) incidents	Within 1 hour	98%
+Begin scheduled tickets	Within the specified window, provided that the start time is frozen no less than 4 hours in advance	99%
+Update critical impact (emergency) tickets	Every 3-4 hours, once work has begun	95%
+Resolution Rate for full NOC Access Levels	Within 24 Hours	80%
+8. How to contact the NOC Service
+
+To contact the NOC about an issue, through ConnectWise Home, select support, open a case or follow the NOC Support links through the Chat with Agent by selecting: Chat Now → Support Area: Using ConnectWise Products & Experiencing Technical Issues → Type: Technical Issues → Product Line: NOC Services.
+
+9. Additional Resources
+How to secure servers through Passwords tab
+Multi-factor Authentication. Learn how the NOC can support MFA
+Reports: Learn how can get various reports through our reports section
+Enable IT Glue integration
+IP listing to enable Integrated Services, including Help Desk Service.
+NOC Supported Alerts 
+10. Revision History
+Document Version	Date Published	Revision Description	Notes
+8/7/2025	9/15/2025	In Scope - Ad Hoc - VMware	Last three bullets added to in scope services
+8/7/2025	9/15/2025	In Scope - Ad Hoc - Azure	New Section
+8/7/2025	9/15/2025	In Scope - Ad Hoc Requests -Exchange Several Additions	Several Additions – 4th Bullet to end of Section
+8/7/2025	9/15/2025	In Scope - Distributed File System	New Section Addition
+8/7/2025	9/15/2025	In Scope - Exchange/O365	Several Additions – 4th Bullet to end of Section
+8/7/2025	9/15/2025	In Scope - MS Entra Connect Sync	Several Additions – 6th Bullet to end of Section
+8/7/2025	9/15/2025	In Scope - Virtualization	Added MS Hyper-V
+8/7/2025	9/15/2025	In Scope - LOM	Password fields need to be populated in Password Vault for the ticket Routing to NOC to be enabled. Without Passwords, the ticket will be automatically escalated to MSP for missing credentials.
+2/13/2025	2/17/2025	Patch Management Section 3	Grammar updates and updated links to NOC Patch testing Reports
+2/13/2025	2/17/2025	Antivirus Management Section 3	Updated based on AV Policy available through RMM
+2/13/2025	2/17/2025	How to Contact the NOC Service	Added path to initiate a chat with the NOC Service through ConnectWise Home
+2/13/2025	2/17/2025	Out of Scope	Out of ScopeEnd Client Communication – Added steps for MSPs that have both NOC and Help Desk Service for Client Communication
+2/13/2025	2/17/2025	Out of Scope	Clarified MSPs option to open a service request for Desktop patching failures
+10/29/2021	11/1/2021	Reformatted and Simplified Structure of document	Goal is to clearly state what is in scope and what is out of scope and MSP responsibilities for a successful partnership
+4/1/2022	4/1/2022	Updated How to Contact NOC	Section updated based on latest processes
+4/1/2022	4/1/2022	Removed NOC Certifications	Not a SOW related section. Removed
+4/1/2022	4/1/2022	New Section 10	Added Revision History
+6/1/2022	6/1/2022	Section 3, second bullet	RAID – Added service is performed at a best effort basis
+6/1/2022	6/1/2022	Windows Server Management	RAID – Added service is performed at a best effort basis
+6/1/2022	6/1/2022	Office 365 MSP Initiated Tickets	Added work performed by NOC for Office 365
+6/1/2022	6/1/2022	Azure MSP Initiated Tickets	Added work performed by the NOC for Azure
+
+
+7/1/2023
+
+	
+
+n/a
+
+	
+
+NOC Service Chat Support
+
+	
+
+Rephrased to clarify what MSPs can do through Chat
+
+
+
+
+7/1/2023
+
+	
+
+n/a
+
+	
+
+Throughout document
+
+	
+
+Changed ‘alert’ to ‘incident’
+
+
+
+
+7/1/2023
+
+	
+
+n/a
+
+	
+
+3rd party patching
+
+	
+
+Added Chrome
+
+
+
+
+7/1/2023
+
+	
+
+Active Directory
+
+	
+
+Changes to DFSR
+
+	
+
+Changes to DFSR will only be performed along with or with detailed instructions from MSP
+
+
+12/8/23	12/8/23	Updated Azure AD references to Microsoft Entra ID.	Microsoft Azure  Active Directory was rebranded to Microsoft Entra ID. 
+10/3/2024 	10/7/2024 	3 – In Scope Services	Added new OS Upgrade and Future Update Deployment sections under Patch Management incident type/activity
+10/3/2024 	10/7/2024 	3 – In Scope Services	Under Hardware/Firmware Issues – added detail under three new bullet point
+10/3/2024 	10/7/2024 	Throughout Document	Azure to Entra and Azure AD to Entra ID Brand Name Change
+10/3/2024 	10/7/2024 	Hardware/Firmware Issues – Microsoft Entra	Added the need for MSPs to update the role configuration to be able to restart the service
+10/3/2024 	10/7/2024 	Out of Scope	
+
+Added:
+
+Network monitoring is an escalate only for Auvik
+Desktop patching
+Work against custom/partner created monitoring
+Patch troubleshooting before the patch is approved by SRT
+
+10/3/2024 	10/7/2024 	Additional Resources	Added link to NOC-supported monitoring conditions
+10/3/2024 	10/7/2024 	How to Contact NOC	Added direct links to Expert Services Asio Support Section and Removed the option to use NOC IM or Slack
+NOC Escalation Procedure Setting NOC Access Levels
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+NOC Access Levels
+Setting NOC Access Levels
+Enabling Automatic Credentials for Servers and Desktops
+Changes to NOC Proactive Remediation
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

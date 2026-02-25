@@ -1,0 +1,107 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Alerts   Custom Monitors   CPU Monitor
+CPU Monitor
+Last updated
+Jun 2, 2025
+Table of contents
+Overview
+How to create a CPU Monitor
+List of Monitor Variables
+Overview
+
+CPU Monitors allow you to trigger an alert and create a ticket when the CPU Utilization on the endpoint crosses a set threshold for a specific amount of time. CPU Monitor can be applied on Windows, Hyper-V Host, VMware Esxi device, Linux and MAC.
+
+How to create a CPU Monitor
+
+Navigate to  Endpoints > Alerts > Monitors.
+
+Click Add Monitor.
+
+Provide a Name for the new monitor. Optionally you can provide a Description of your new monitor.
+
+Select the Type as CPU from the drop-down.
+
+Select the Family and Severity.
+
+To enable the Mapper functionality, you need to turn on the toggle. To learn more about the Mapper functionality review this documentation.
+
+Under the Condition section:
+CPU Utilization: This lets you define the percentage of CPU utilization that will trigger an alert.
+Duration: This lets you set the duration of time that the CPU utilization percentage is being met before an alert is triggered.   
+You can also select a custom Automation Task to be executed when the condition was met on the endpoint
+Ticket Update - Snooze: Duration for which the ticket updates should be ignored even when the issue persists/resurfaces on the drive.
+
+Note: 
+
+Ticket resolution threshold will override the Snooze and the ticket will be updated as NOC Completed. If the issue persists/resurfaces, a new ticket will be generated for the issue.
+System will reflect only selective Automation tasks that do not need parameters. Refer these OOTB tasks which needs parameters. All Custom Scripts created will be available for selection.
+Under the Ticket Resolution section you can define if the ticket should be updated as Resolved once the issue no longer persists on an endpoint using the following criteria:
+CPU Utilization: This lets you define the percentage of CPU utilization that will automatically resolve a ticket.
+Duration This lets you set the duration of time that the CPU utilization percentage is met that will automatically resolve a ticket.
+
+Note: We strongly recommend adding some buffer in the thresholds defined for the Ticket Condition and Resolution. Keeping the same value in both would result in multiple tickets getting created and closed in short duration.  
+
+Under the Resources section, you can select the target endpoints on which the alerts should be triggered. You can select specific machines, Sites, or a Dynamic or a Static group.
+
+Click Save to create and apply the monitor to the targets. 
+
+Note: Monitors will be triggered based on the configuration set/defined.
+
+List of Monitor Variables
+
+Here is a list of variables which you can use as per your requirement when creating your own customized ticket template:
+
+Monitor Type	Variable Name	Supported OS Type	Sample Data/Values	Variable Definition
+Generic
+ 	ObservedDate	
+
+Windows, MAC, Linux
+
+	
+
+"2020-09-02T15:35:42.969926103Z"
+
+	Time stamp when the issue was observed
+ 	MonitorDesc	Windows, MAC, Linux	Add local palmtech account and add it to the local administrators group	Description added on the portal while creating a monitor
+ 	MonitorName	Windows, MAC, Linux	Local PalmTech Account with Local Admin	Name of the monitor
+ 	MonitorSummary	Windows, MAC, Linux	(Run PowerShell script every 1 minute(s) AND Run PowerShell script every 1 minute(s))	Summary information for the monitor
+CPU
+ 	PercentUtil	Windows, MAC, Linux	90	% CPU utilization for the endpoint
+ 	TimeWindow	Windows, MAC, Linux	15	Time window configured in the monitoring rule
+Complex Monitor Custom Field Monitor
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Service Monitor
+Process Monitor
+Event Monitor
+Memory Monitor
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

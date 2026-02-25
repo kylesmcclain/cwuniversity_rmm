@@ -1,0 +1,75 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Tickets   Edit a Ticket
+Edit a Ticket
+Last updated
+Jul 3, 2025
+Table of contents
+Overview
+Edit a Ticket
+Overview
+
+To edit a ticket, navigate to the Service Delivery > Tickets (Legacy) > Queue in the left navigation bar and select the queue for the ticket you want to edit. 
+
+Edit a Ticket
+
+To edit a ticket: 
+
+To edit a ticket, navigate to the Service Delivery > Tickets (Legacy) > Queue, on the left navigation bar, and select an appropriate container (My Queue, My Team Queue, etc.). The selection generates a drop-down list of ticket sub-categories.
+
+Click a ticket sub-category (New, Acknowledge) to display its contents in the main window. The Queue tab updates accordingly to reflect your current ticket queue and sub-category.
+
+To locate a ticket via the search function, search by Ticket ID, Alert ID, or Subject. You can search by Sr.No. only if configured for any PSA platform. A brief description displays in the Subject column.
+
+Filter tickets by selecting Site, Machine Name, or Assignment Group.
+Click Go to apply the filter.
+Hide or view the filter options by clicking the Filter tab.
+
+View an editable ticket details summary by clicking the Ticket ID hyperlink for the ticket. This summary contains the initial ticket information as well as any updates to the ticket. Updates include Date, User Name, Status, Assignment Group, and Comments. You have the option to Acknowledge Ticket, Work on Multiple Tickets, and Create Combined Ticket.  Right-click to view the ticket editing menu. Left-click to view the single ticket update.
+
+Acknowledge Ticket – Moves a ticket from the current ticket container into the Acknowledge ticket container.
+Work on Multiple Tickets – Opens a ticket details window to edit multiple tickets details. The left pane has a listing of all tickets selected. The right pane shows the ticket summary.
+Create Combined Tickets – Opens a Create Combined Ticket window. The site will be pre-populated. Also, the tickets selected for combination will be attached as Reference Tickets.
+Quick Close – Allows you to immediately close out a ticket without making any updates or filling out the information in the Work Status Update ticket. A blank Work Status Update ticket will be created and which can later be updated by you.
+
+On the Ticket Summary page:
+
+
+Enter comments or updates regarding the ticket under Notes Management
+Make additional changes under the Notification tab.
+Click the  icon to open the User Email List window where you can set scheduled contacts for this site's escalations.
+Add a message to be included when ticket updates are emailed in the Text field.
+Click Submit to create the ticket in the Asio after you are finished.
+Set all fields to defaults by clicking Clear.
+Close the window without submitting a ticket by clicking Close.
+Create a Ticket Work Status Update
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Best Practices for Going Green
+Are you looking to impress a client with a solid green dashboard? Regardless of your reasons for wanting to go green, we will help you get there. But ...
+Service Plans and Ticket Lifecycles
+The lifecycle of a ticket depends on the subscribed service plan of the site generating an alert. Service plans and their respective ticket lifecycles...
+Create a Ticket
+To create a new ticket, click the Tickets tab in the Asio™ Platform (ITSupport Portal) and select New Ticket from the top of the navigation bar on the...
+Work Status Update
+A work status update is exactly what it implies: an update to a ticket's status.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

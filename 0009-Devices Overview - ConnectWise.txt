@@ -1,0 +1,787 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Getting Started with ConnectWise RMM   Devices Overview
+Devices Overview
+Last updated
+Aug 12, 2024
+Table of contents
+Overview
+To Access Devices
+General Tab
+Patching Tab
+Integrations Tab
+Networking Tab
+Backup Tab
+Search
+Run
+Manage
+Download
+Filter
+Company
+Sites
+Conditions
+Availability
+Device Groups
+Device Types
+Endpoint Protection
+OS Type
+Application Updates
+Patch Assessment
+Compliance Score
+Managing Filters
+Recent Tasks
+Device Groups
+Overview
+
+The information on the Device list provides a high-level view of all sites or filtered sites and includes easy-to-view details for applicable endpoints.
+
+To Access Devices
+
+Note: Internet Explorer (IE) 11 is not recommended for this process.
+
+Navigate to Endpoints > Devices.
+The Devices list shows all endpoints across the ecosystem for centralized viewing and management. Users can find and manage Linux servers, Mac desktops, Windows desktops, and servers within sites.
+
+The Devices list includes tabs for different categories: General, Patching, Integrations, Networking, and Backup.
+
+General Tab
+
+The General tab is the default Devices landing page and includes high-level information specific to each endpoint.
+
+Note: To sort a column, click any column header.
+
+Column
+
+	
+
+Description
+
+
+
+
+Online Indicator
+
+	
+
+Defines the current online status of the endpoint.
+
+
+
+
+Alerts Suspended Indicator
+
+	
+
+Defines whether or not an endpoint has had alerts suspended.
+
+
+
+
+Name
+
+	
+
+Shows the actual name of the endpoint. Clicking the hyperlink opens the Device Details page with specific resource details.
+
+
+
+
+Friendly Name
+
+	
+
+Details the originally defined, editable-friendly name for the endpoint. Click the pencil icon to edit the friendly name.
+
+
+
+
+Log in
+
+	
+
+This allows the user to log in to a workstation if it has ScreenConnect installed. For more information about this, review the ScreenConnect documentation.
+
+
+
+
+Device Type
+
+	
+
+Identifies the type of endpoint.
+
+
+
+
+Site Name
+
+	
+
+Includes the name of the site the endpoint is assigned to, directly linked to the agent installed on the endpoint.
+
+
+
+
+Company Name
+
+	
+
+Includes the name of the company that the endpoint is assigned to.
+
+
+
+
+Last User
+
+	
+
+This field contains the username of whoever most recently logged in to the target endpoint and shows whether that user is logged on or off. Hover over for details on the Last User field. The green status indicates that the user is logged in, and the grey status indicates that the user is logged off. The status display may experience a slight delay (less than five minutes) to change the indicator from logged in to logged out.
+
+
+
+
+Last Restart
+
+	
+
+Displays details of the last time the endpoint device was restarted.
+
+
+
+
+OS
+
+	
+
+Describes the operating system version installed on the endpoint.
+
+
+
+
+Critical Tickets
+
+	
+
+Displays open critical tickets (tickets either high-impact or requiring action).
+
+
+
+
+Endpoint Protection
+
+	
+
+Provides a snapshot of the device’s endpoint coverage status. If the endpoint has Webroot installed, following statuses display against the endpoint based on the information received from Webroot APIs:
+
+Attention Required: The endpoint is infected and requires attention
+
+Cleaning: A Webroot clean is currently in progress
+
+Clean Requested: A user initiated a Webroot clean
+
+Configuration Error: ConnectWise does not have access to the given site; adding WRAdmin as site admin is required
+
+Not Available: No data has been received within 24 hours from the endpoint
+
+Scanning: A Webroot scan is in progress
+
+Scan Requested: A user initiated a Webroot scan
+
+If Webroot is not detected using the Webroot APIs, this column displays the actual name of the AV software found on the endpoint, if available. Refer to the identified AV list for more information.
+
+Name of actual AV: Name of the anti-virus (AV) software detected on the endpoint from the identified AV list.
+ Note: For Windows 10 and above endpoints, the Endpoint Protection column displays as Windows Defender if it was found to be active.
+
+Not Found: Agent could not detect an Endpoint Protection software installed on the endpoint from the Identified AV list.
+
+Not Applicable: AV not applicable for the type of endpoint (Linux and VMWare Host devices).
+
+Multiple EPP: The agent detected more than one endpoint protection application installed on the endpoint. 
+Note: Windows Defender is not considered against the Multiple EPP status if it was not active on the endpoint.
+
+Patching Tab
+
+The Patching tab includes the general information columns, followed by more specific patching information.
+
+
+Column
+
+	
+
+Description
+
+
+
+
+Online Indicator
+
+	
+
+Defines the current online status of the endpoint.
+
+
+
+
+Alerts Suspended Indicator
+
+	
+
+Defines whether or not an endpoint has had alerts suspended.
+
+
+
+
+Name
+
+	
+
+Shows the actual name of the endpoint. Clicking the hyperlink opens the Device Details page with specific resource details.
+
+
+
+
+Friendly Name
+
+	
+
+Displays the originally defined, editable-friendly name for the endpoint. Click the pencil icon to edit the friendly name.
+
+
+
+
+Log in
+
+	
+
+This allows the user to log in to an endpoint if it has ScreenConnect installed. For more information, review the ScreenConnect documentation.
+
+
+
+
+Device Type
+
+	
+
+Identifies the type of endpoint.
+
+
+
+
+Site Name
+
+	
+
+Includes the name of the site the endpoint is assigned to, directly linked to the agent installed on the endpoint.
+
+
+
+
+Company Name
+
+	
+
+Includes the name of the company that the endpoint is assigned to.
+
+
+
+
+OS
+
+	
+
+Describes the operating system version installed on the endpoint.
+
+
+
+
+Compliance
+
+	
+
+Shows the percentage that the machine is up-to-date.
+
+
+
+
+Missing
+
+	
+
+Shows the number of missing patches on the machine.
+
+
+
+
+Pending Reboot
+
+	
+
+Shows the number of patches pending a reboot.
+
+
+
+
+Last Assessed
+
+	
+
+Displays the last time the compliance check was run against the machine.
+
+
+
+
+Application Updates
+
+	
+
+It displays whether third-party policies are up-to-date, scheduled, failed, or not assigned, with drop-down options available to assign a task if applicable.
+
+Integrations Tab
+
+The Integrations view allows you to select a view from a dropdown list of your integrations. The view will show you a limited number of General view columns followed by information about your integration.
+
+
+
+
+Networking Tab
+
+The Networking tab includes a limited number of general information columns, followed by more specific network information.
+
+Note: Click any column in the view to sort that column, except the IP Address tab which is not sortable. 
+
+Column
+
+	
+
+Description
+
+
+
+
+Online Indicator
+
+	
+
+Defines the current online status of the endpoint.
+
+
+
+
+Alerts Suspended Indicator
+
+	
+
+Defines whether or not an endpoint has suspended alerts.
+
+
+
+
+Name
+
+	
+
+Shows the actual name of the endpoint. Clicking the hyperlink opens a Device Details page with specific resource details.
+
+
+
+
+Friendly Name
+
+	
+
+Details the machine’s originally defined, editable-friendly name. Click the pencil icon to edit the friendly name directly from the Devices page.
+
+
+
+
+Log in
+
+	
+
+This allows the user to log in to an endpoint if it has ScreenConnect installed. For more information about this, review the ScreenConnect documentation.
+
+
+
+
+Device Type
+
+	
+
+Identifies the type of endpoint.
+
+
+
+
+Site Name
+
+	
+
+Displays the name of the site the endpoint is assigned to, directly linked to the agent installed on the endpoint.
+
+
+
+
+Company Name
+
+	
+
+Displays the name of the company that the endpoint is assigned to.
+
+
+
+
+Domain 
+
+	
+
+Refers to the domain to which the endpoint is mapped within the network.
+
+
+
+
+IP Address 
+
+	
+
+Refers to the IP Address, which is a unique identifier for the device on a network.
+If the endpoint is connected to multiple networks, it can have multiple IP addresses. A down arrow icon displays to view the other IP Addresses. 
+
+
+
+
+Public Gateway
+
+	
+
+Refers to the Gateway, which connects the endpoint to the external networks or the internet.
+
+
+
+
+Serial Number
+
+	
+
+Refers to the Serial Number of the endpoint. This is an identifier of information.
+
+Backup Tab
+
+The Backup tab includes general information columns, followed by more specific backup information pertaining to backup integrations and policies.
+
+
+Column
+
+	
+
+Description
+
+
+
+
+Online Indicator
+
+	
+
+Defines the current online status of the endpoint.
+
+
+
+
+Alerts Suspended Indicator
+
+	
+
+Defines whether or not an endpoint has suspended alerts.
+
+
+
+
+Name
+
+	
+
+Shows the actual name of the endpoint. Clicking the hyperlink opens the Device Details page with specific endpoint details.
+
+
+
+
+Friendly Name
+
+	
+
+Details the endpoint's originally defined, editable-friendly name. Click the pencil icon to edit the friendly name directly from the Devices page.
+
+
+
+
+Log in
+
+	
+
+This allows the user to log in to an endpoint if it has ScreenConnect installed. For more information about this, review the ScreenConnect documentation.
+
+
+
+
+Device Type
+
+	
+
+Identifies the type of endpoint.
+
+
+
+
+Package
+
+	
+
+Provides the package name associated with the endpoint.
+
+
+
+
+Protection Plan
+
+	
+
+The name of the backup jobs and policies applicable to the endpoint under protection.
+
+
+
+
+Backup Status
+
+	
+
+Displays the overall recorded backup status of the endpoint. The backup status can be Failed, Warning, In Progress, Unknown, Success, or None.  
+
+
+
+
+Last Backup
+
+	
+
+This field represents the date and time of the last successful backup of the endpoint. 
+
+
+
+
+Protected Data
+
+	
+
+The total size of the backup includes all restore points of the endpoint.
+
+
+
+
+DR Readiness
+
+	
+
+Provides a status indicator of your DR Readiness.
+
+
+
+
+Agent Version
+
+	
+
+This is the version of the Backup Agent deployed on the managed endpoint. If the endpoint is a virtual machine protected using an agentless backup job, then the agent version field of the endpoint appears blank. 
+
+
+
+
+Access
+
+	
+
+URL link to access the endpoint on the Service Provider Console.
+
+Search
+
+Use the Device page's search feature to find specific terms, such as endpoint name, or to perform a general search with less exact keywords across environments (by name, friendly name, last user, OS version, etc.). You can also use the filter to help you find the endpoint you are looking for.
+
+
+Run
+
+Use the Run drop-down to execute a task or sequence. Refer to Automation for more information about scripts and running tasks.
+
+From Endpoints > Devices > Run.
+Select the task from the drop-down.
+Select targets to select a site, all sites, device group(s), or another subset of endpoints to run a task.
+The Configure setup step is dependent on the task selected. Review the configuration and make any changes required. 
+Click Continue to Scheduling. 
+Schedule options for online endpoints include Next Agent Check-in, Run now, Run later, Run recurringly, and Run on trigger. For offline endpoints, the Run Now option is not available. 
+
+Configure the schedule according to your preferences. 
+Click Run Task to apply the task configuration and schedule to the selected endpoints.
+
+Optionally, in Endpoints > Devices,
+
+Select the checkbox of a specific endpoint or endpoints to execute the task on only those endpoints.
+Click Run and select a task from the drop-down.
+
+Manage
+
+Use the Manage drop-down to download agent or view and manage alert thresholds for all endpoints.
+
+
+Select the endpoint checkbox(es) to perform all other Manage quick actions.
+
+
+From this menu, you can select the following options:
+
+Alert Thresholds	Allows you to manage the alert thresholds on your devices.
+Gateway Cache	Allows you to enable your device as a gateway cache.
+RMM Scanning Tool	Installs the RMM scanning tool on your device.
+Network Probe	Installs a network probe on your device. Refer to the Network Monitoring documentation for more information.
+Send Message	Allows you to send a message to the end user using the communicator.
+Download Agent	Begins the agent installation process.
+Uninstall Agent (Max 5)	Begins the agent uninstallation process.
+Assign to Another Site	Starts the process for assigning a device to another site. Refer to the Assign Device to Another Site documentation for more information.
+
+ 
+
+Download
+
+Use the icon on the top right to download a .xlsx spreadsheet of Device page details. 
+
+
+Filter
+
+
+Click the Filter icon on the far right toolbar. Click + or - to expand the category and filter by:
+
+Company
+Site
+Conditions
+Availability
+Device Groups
+Device Type
+Endpoint Protection
+OS Type
+Application Updates
+Patch Assessment
+Compliance Score
+Company
+
+Use the Company filter to isolate endpoints on a company or a combination of selected companies. Filters are automatically applied after selection.
+
+Sites
+
+Expand the Sites filter to isolate endpoints on a site or a combination of selected sites.
+ 
+
+Conditions
+
+Use Conditions to filter by various options, including:
+
+Alerts Suspended
+Critical Partner Alerts / Tickets
+End of Support
+Low Disk Space
+Missing Application Updates
+Pending Reboot
+
+Availability
+
+Expand the Availability filter to select both online and offline devices. It easily pairs those options with other condition types.
+
+Device Groups
+
+Expand the Device Groups filter to view custom lists that can be further filtered. See Device Groups for additional details.
+
+Device Types
+
+Expand Device Type to filter by Desktops or Servers.
+
+Endpoint Protection
+
+Expand Endpoint Protection to filter for Protected or Unprotected endpoints.
+
+OS Type
+
+Expand OS Type to filter by device OS types.
+
+Application Updates
+
+Expand Application Updates to filter devices based on the following Application Update statuses:
+
+No Policy Assigned
+Not Applicable
+Scheduled
+Up to Date
+
+Patch Assessment
+
+Filter your devices based on their patch assessment timeline:
+
+No filter
+Assessment Pending
+Older than 1 week
+Older than 2 weeks
+Older than a month
+
+Compliance Score
+
+Filter devices based on their compliance score.
+
+Managing Filters
+
+Click the X icon at the top of the filter menu to close the filter window. Click the X next to the filter list to remove certain applied filters, or select Clear All to remove all applied filters.
+
+Note: The Device table updates as filters are added and removed.
+
+When filters are applied, a capsule appears at the top right of the Device list, enabling users to view and manage filters without opening the filter window.
+
+Recent Tasks
+
+Below the Filter icon on the toolbar, the Recent Tasks panel provides information about tasks and sequences previously performed or scheduled. Click the drop-down next to Tasks & Sequences to select the lookback timeframe for Recent Tasks.
+
+ 
+
+Device Groups
+
+To use Device Groups, navigate to Endpoints > Groups. Create and manage a custom list of endpoints that you can filter by in the Filters section. For more details on creating and managing Device Groups, refer to Device Groups.
+
+Creating Companies and Sites in the Asio Platform Installing Asio Agents
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Creating Users
+Creating Notification Rules
+Create Client Sites
+Installing Asio Agents
+This article provides information and instructions about how to download and install an agent on your device.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

@@ -1,0 +1,59 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Integrations to ConnectWise RMM   ScreenConnect with RMM   ScreenConnect Remote Support
+ScreenConnect Remote Support
+Last updated
+Mar 31, 2025
+Table of contents
+Overview
+Prerequisites
+ScreenConnect Remote Support
+Overview
+
+The ScreenConnect® Remote Support feature allows you to access the Remote Support functionality (previously only available via ScreenConnect Portal) via the Asio™ platform. This functionality is the same as available in the ScreenConnect Portal. To understand how ScreenConnect Remote Support works, review the ScreenConnect documentation.
+
+Prerequisites
+
+Below are the prerequisites to ensure ScreenConnect Remote Support launches from the Asio platform:
+
+ConnectWise RMM Premium or Support Add-on entitlements.
+Remote Support permission must be enabled from ConnectWise Home > User & Application Settings > Application Roles. Refer to Application Roles for more information.
+
+
+
+Note: If you are still unable to launch Remote Support from the left navigation, please refer to this troubleshooting guide.
+
+ScreenConnect Remote Support
+After the prerequisites are in place, select Endpoints > Remote Support from the left navigation menu in the Asio platform.
+
+
+The Remote Support screen provides the same functionality as the ScreenConnect portal. Follow the steps in the Remote support guide to create a session.
+
+
+ScreenConnect Privileged Access ScreenConnect Remote Support Troubleshooting Guide
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ScreenConnect Remote Support Troubleshooting Guide
+ScreenConnect Installation Status and Error Codes
+Enable or Disable Connection Consent for ScreenConnect
+ScreenConnect Dashboard for RMM
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

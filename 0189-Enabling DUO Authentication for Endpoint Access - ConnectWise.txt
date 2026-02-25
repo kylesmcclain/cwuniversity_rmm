@@ -1,0 +1,54 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Expert Services   ConnectWise Network Operations Center - NOC   Enabling DUO Authentication for Endpoint Access
+Enabling DUO Authentication for Endpoint Access
+Last updated
+Oct 6, 2025
+Table of contents
+Overview
+Steps to Enable DUO Authentication
+Overview
+
+This guide outlines the steps to enable DUO Time-based One-Time Password (TOTP) authentication, allowing the ConnectWise Network Operations Center (NOC) to securely access your endpoints that are protected by DUO. By following this process, you can ensure seamless integration and secure access management.
+
+Steps to Enable DUO Authentication
+Log in to your DUO Admin Console and enroll the user/account using your email address. This will generate system credentials.
+
+Generate the activation link for the enrolled user and share it with the ConnectWise NOC team at srt@connectwise.com.
+
+The NOC will use the activation link to generate a Seed HEX Code and return it to you.
+In your DUO Admin Console, attach the provided HEX code as a Hardware Token to the system-generated user credentials.
+
+Select Token Type: TOTP 6 Digit
+Enter the HEX code and click 'Import Hardware Tokens'
+Once the token is imported, the NOC will create an account for this user in ITBoost.
+The NOC will use the Seed Base 32-bit/Secret Key mapped to the HEX code to generate TOTP codes.
+This completes the setup, enabling the NOC to log in to endpoints using DUO TOTP authentication.
+
+Enabling Automatic Credentials for Servers and Desktops NOC Access Levels
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+NOC Access Levels
+NOC Service Statement of Work
+Setting NOC Access Levels
+Enabling Automatic Credentials for Servers and Desktops
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

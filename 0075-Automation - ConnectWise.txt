@@ -1,0 +1,66 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Automation
+Automation
+Last updated
+Jun 11, 2025
+Table of contents
+Overview
+Overview
+
+Welcome to the Automation category! The Automation section of ConnectWise RMM™ allows you to create tasks and scripts in order to automate processes, creating more efficiency for your day-to-day work. Click on the title of an article linked below and learn more about automation in ConnectWise RMM.
+
+Scheduled Tasks
+The scheduled tasks feature displays all your tasks, schedules, and key details. Tasks are actions performed on a resource by authorized users. They can be executed on-demand, on a recurring schedule, or at a later date.
+Details for Scheduled Task Triggers
+Tasks
+The tasks feature is an automation tool used to address issues on managed devices. You can also sequence tasks with if/then/else logic to streamline workflows and achieve desired outcomes.
+AI Assisted Scripting with the Script Editor
+Available Tasks
+Create and Schedule Script Type Tasks
+Create Suspension for Monitors and Alerts in Script Editor
+Create Ticket Using the Script Editor
+Show all
+
+  
+
+Suspensions Scheduled Tasks
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Tasks
+The tasks feature is an automation tool used to address issues on managed devices. You can also sequence tasks with if/then/else logic to streamline w...
+Scheduled Tasks
+The scheduled tasks feature displays all your tasks, schedules, and key details. Tasks are actions performed on a resource by authorized users. They c...
+Create and Schedule Script Type Tasks
+Create and schedule a script task.
+Running RMM Tasks
+How to run a task, create a custom script, or configure a task for the next agent check-in.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

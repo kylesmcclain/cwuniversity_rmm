@@ -1,0 +1,153 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   ConnectWise RMM Release Notes   RMM Release Notes Archive   ConnectWise RMM Update for July 2023
+ConnectWise RMM Update for July 2023
+Last updated
+Aug 21, 2023
+Table of contents
+Announcements
+Release Notes Changes
+ConnectWise PSA - Integration via policies
+ConnectWise RMM
+Agent and Platform
+Monitoring / Alerting
+Patching
+Ticketing / PSA Integration
+Bug Fixes / Known Issues
+Announcements
+Release Notes Changes
+
+Starting with our August release we will be changing how we publish release notes. Instead of a monthly release communication, we will publish the notes as changes are made to the software. This change is being made to eliminate confusion based around shifting dates for feature releases. Please review the ConnectWise Roadmap for information on upcoming features.
+
+ConnectWise PSA - Integration via policies
+
+We are excited to announce that we will be adding an option for you to enable the ConnectWise PSA sync configurations that helps to define Tickets, Configuration items, and Notifications using policies. These policies can be included in your packages and applied to the sites using the package assignment option.
+
+There will be no migration performed for the existing configuration, but the policies will be in effect if they are assigned or applied to a site. You will initially have a toggle button to either enable or disable the policies based configuration and continue using the old method for now.
+
+We will stop supporting the older configuration method by September 10th.
+
+For more information, review the following articles:
+
+ConnectWise PSA - Policy Integration
+
+ConnectWise PSA - Policy Integration - FAQ
+
+Realtime Gauge for Device Availability
+
+You will get a new dataset synced in BrightGauge which will pull the data for the Device availability for endpoints in near realtime
+
+You can view the gauges and customize them as per your needs
+
+Default Gauges will be created for you and also included in the Executive Dashboard – 3 v2.0
+
+ConnectWise RMM
+Agent and Platform
+
+Agent Update. A new agent, version 3.0.8, will be rolled out on July 29th. Windows, Mac, and Linux agents will be updated to the latest version automatically.
+
+Ability to define a Windows agent as a Server or Desktop during installation. The agent setup (MSI package) will be updated to incude the option to define the Agent with server monitoring capabilities on a desktop or vice versa. An agent installed with the parameter 'Server' will show the Endpoint as Server in the Asio portal. This is planned for August 1st.
+
+Ability to install the Linux agent on SUSE enterprise Servers - We're adding the compatibility to monitor SUSE with Version 3.0.8. This is planned for August 1st.
+
+Agent tamper protection. We are hiding the Agent application from Add/Remove programs. Users with Admin access will have the ability to uninstall using the Command line parameter. This will occur when the new agent (v3.0.8) is installed on or after July 29th.
+
+Monitoring / Alerting
+
+Intelligent Alerts per endpoint.Partners will now be able to see the Intelligent Alerts that are applicable for the specific endpoint under the monitoring tab. This is planned for July 31st.
+
+New Auvik services for monitoring. You will be alerted if the following Auvik services are found down or disabled on the endpoint:
+
+AuvikWatchdog
+
+AuvikAgent
+
+Alerts are generated only when the AuvikNetwork Monitoring integration is enabled. This is planned for July 31st.
+
+Patching
+
+Partners who are using 1.0 patching can now freely move to new and advanced 2.0 patching.
+
+The Default legacy policy which gets selected after turning off 2.0 patching will no longer be selected.
+
+Partners will now see a "No policy Assigned" message if their 2.0 policy is turned off in following paths.
+
+Devices > Patches
+
+Compliance Device Details > OS Patching Tab.
+
+Deployments for 1.0 patching will not be impacted unless the partner decides to enable 2.0 patching and turns it off again. Once 2.0 Patching is enabled partners won’t be able to go back to default legacy patch policy.
+
+Partners would need to enable 2.0 patching to re-calculate their compliance to get latest patch status of the endpoint.
+
+This is planned for August 5th.
+
+Ticketing / PSA Integration
+
+Ability to enable / disable the devices tech efficiency pod.We are adding the option (checkbox) on the Site Mapping Page so you can choose if you want to activate the PSA Technician Efficiency feature or not. This is planned for August 9th.
+
+Bug Fixes / Known Issues
+
+The following issues will be resolved with this month's release
+
+Automation - An issue where the host servers were being rebooted during business hours has been fixed.
+
+Device Groups - Partners will no longer face an issue in the PSA integration saying policy setting not found for partner and site. Tickets will be synced.
+
+Monitoring - We are resolving an issue where a Custom field monitor that is based on the Flag type was not triggering alerts.
+
+Monitoring - Resolved an issue where the Registry monitor will not trigger an alert when the key has a blank value set for target.
+
+Monitoring - Resolved an issue where the custom monitor for field type as Flag was generating alerts when the values were changed.
+
+Monitoring - Resolved an issue where the Custom field name would not display the actual field name while trying to edit an existing monitor.
+
+Patching - Releasing a Bug fix regarding macOS major upgrade installation finalization.
+
+Patching - Releasing a bug fix regarding where the error "Failed to calculate policy compliance" was displayed in the log when "OS Patching Desktop" Settings were not enabled.
+
+Patching - Fixed an issue where OS upgrade was available in the assessment for M1 chip macOS.
+
+Third-Party Patching - Releasing a bug fix for Third-Party Applications that are failing with "Application Not Whitelisted" error on M1 based Mac Endpoints.
+
+Third-Party Patching -Releasing a bug fix regarding an error "Could not fetch/create/update schedule task" when adding Sites/Devices to Scheduled Task for Third-Party Patching.
+
+ 
+
+ConnectWise reserves the right to remove any enhancement or fix from this update if it does not pass quality assurance tests.
+
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ConnectWise RMM Update for January 2023
+ConnectWise RMM Update for February 2023
+ConnectWise RMM Update for March 2023
+ConnectWise RMM Update for April 2023
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

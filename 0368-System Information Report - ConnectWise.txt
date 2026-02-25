@@ -1,0 +1,95 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Reports   Asio Reports   Technical Details Reports   System Information Report
+System Information Report
+Last updated
+Sep 22, 2025
+Table of contents
+Overview
+User Access to Reports
+System Information Report Details
+Overview
+
+This report contains system information gathered from each machine.
+
+ To locate this screen, navigate to Reports > Asio > Detailed Reports > Technical Details > System Information Report.
+
+User Access to Reports
+
+Confirm user access and permissions to view this report. The following default roles have access to this report:
+
+Report	Manager	Technician	Office Staff	Sales	Client Site Manager
+System Information Report 	No	Yes	Yes	Yes	Yes
+
+This additional step allows you to enable or disable access to specific reports for different user roles, giving you more control over which reports are accessible to each role.
+
+To control the visibility of endpoints on reports, you can manage site access for users. The visibility of endpoints on reports will be based on the user's permissions to sites. By controlling site access, you can determine which endpoints are visible to each user.
+
+System Information Report Details
+
+The details covered by this report are:
+
+Name
+Friendly Name
+Device Type
+Company Name
+Company Friendly Name
+Site Name
+Site Friendly Name
+OS
+OS Architecture
+OS language
+IP Address
+External IP Address
+System Domain Role
+Device Serial Number
+Installed Date
+System Model
+Processor
+Processor Type
+Number of Processors
+Number of Cores
+RAM (GB)
+Disk Manufacturer/Model
+Disk Interface Type
+Disk Volume (GB)
+Partitions
+BIOS Version
+BIOS Manufacturer
+BIOS Serial No
+BIOS Product
+Base Board Manufacturer
+Device Time Zone
+Last Check Date
+
+The tools at the top right of the report allow you to filter or search for all of this information. You can also download the report as a CSV.
+
+Note: This report is refreshed every eight hours.
+
+Installed Software Report Automation Execution Reports
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Asset Change Report
+Disk Space Report
+Installed Software Change Report
+Installed Software Count Report
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

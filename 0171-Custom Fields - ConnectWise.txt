@@ -1,0 +1,401 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Devices Page   Custom Fields
+Custom Fields
+Last updated
+Jan 20, 2026
+Table of contents
+Overview
+Definition and Administration of Custom Fields
+Custom Fields
+Custom Fields Definition
+Custom Fields Value
+Create a New Custom Field
+Edit a Custom Field
+Delete a Custom Field
+Update Custom Fields on Device Details Page
+Overview
+
+Custom Fields are additional data points you can create in the ConnectWise Asio® platform to record information that the agent does not collect or that is unavailable out of the box. Further, you can use custom fields to tag or create fields with values for endpoints, companies, sites, tickets, and ticket notes using relevant data for internal business processes. Custom Fields, as the name suggests, are fully customizable and appear on the Devices page according to the configured settings. You completely manage custom fields, and the Asio agent cannot modify them.
+
+Important: Please note that Custom Fields should not be utilized to collect or retrieve personally identifiable information.
+
+To locate this screen in the Asio platform, navigate to Settings > Custom Fields. 
+
+Definition and Administration of Custom Fields
+
+Note: Settings > Custom Fields permissions are available for Primary Super Admins, Super Admins, and Managers by default. You can add permission for custom fields to any non-admin application role. For more details, refer to Application Roles for the Asio Platform.
+
+Custom Fields
+
+Permission to manage partner-originated custom field definitions and values in Asio. 
+
+Application Role >
+
+	
+
+Super Admin
+
+	
+
+Manager
+
+	
+
+Technician
+
+	
+
+Office Staff
+
+	
+
+Sales
+
+	
+
+Client Site Manager
+
+
+
+
+Custom Fields Definitions
+
+
+
+
+Create
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+OFF
+
+	
+
+OFF
+
+	
+
+OFF
+
+
+
+
+Update
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+OFF
+
+	
+
+OFF
+
+	
+
+OFF
+
+
+
+
+View
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+OFF
+
+	
+
+OFF
+
+	
+
+OFF
+
+
+
+
+Delete
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+OFF
+
+	
+
+OFF
+
+	
+
+OFF
+
+
+
+
+Custom Fields Values
+
+
+
+
+View
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+ON
+
+
+
+
+Update
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+ON
+
+Custom Fields Definition
+
+This permission provides access to create and modify custom fields and their parameters in Settings > Custom Fields.
+
+Permission Level
+
+	
+
+Description
+
+
+
+
+View
+
+	
+
+View existing custom fields and their associated parameters in Settings > Custom Fields.
+
+
+
+
+Create
+
+	
+
+Create new custom fields using the Add button.
+
+
+
+
+Update
+
+	
+
+Modify existing custom fields.
+
+
+
+
+Delete
+
+	
+
+Delete existing custom fields.
+
+Custom Fields Value
+
+This permission provides access to view and edit custom field values, including partner and vendor-defined custom fields.
+
+Permission Level
+
+	
+
+Description
+
+
+
+
+View
+
+	
+
+View custom field values on the Device Details screen.
+
+
+
+
+Update
+
+	
+
+Update custom field values on the Device Details screen.
+
+Create a New Custom Field
+
+Navigate to Settings > Custom Fields in the Asio platform.
+
+
+Click the Add Field + button.
+
+The Add new custom field window opens. You can adjust the window placement using the Peek option.
+
+Enter the Name of the field. A maximum of 32 characters (letters, numbers, and underscores are allowed).
+Select the Level. Custom fields can be applied at the following levels:
+Endpoint
+Company
+Site
+Contact
+Select the Type of the field.
+
+Select from the following values:
+Datepicker – For fields with date and time stamp values.
+Dropdown – For fields where values are limited to available options. Options are customizable.
+Flag – For fields with Boolean values (Yes or No).
+Text Box – For fields with text values (Maximum of 300 characters).
+Select or enter a Default value for the field. If a default value is entered for a field, all the applicable fields have that value as the default. Users can then modify/update the values per endpoint from the Devices UI. The Default value options depend on the Type selection.
+Each field can be marked as either Editable or not. If a field is marked as Editable, users can modify its values through the Devices UI (explained later in this document).
+Click Save to create the field.
+Edit a Custom Field
+Navigate to Settings > Custom Fields.
+Select the checkbox for the field you want to edit. The Edit Custom Field box appears.
+
+Make changes and click Update.
+Delete a Custom Field
+Navigate to Settings > Custom Fields.
+Select the checkbox for each field you want to delete.
+Click Delete. The fields are deleted. Please note that this action cannot be undone.
+Update Custom Fields on Device Details Page
+
+Note: For more information on how to use Custom Fields in Scripts, review Using Custom Fields in a PowerShell Script documentation.
+
+After custom fields are created in Settings > Custom Fields, they are visible on the Device Details page. Select a specific device or workstation from Endpoints > Devices to open Device Details.
+Click the Custom Fields tab to view values for all created custom fields and also edit field values.
+
+
+Click on the Edit icon to modify fields. You can edit values for fields if they are defined as Is Editable when creating the custom field.
+
+
+Different types of fields have different input options. To update the value for the field, select or enter the new value.
+Click Update to confirm. Select the desired value and click Save. The value for that field is then updated for that respective endpoint.
+Data for the user who modified the value and when it was modified is also shown in the table.
+Cloud Devices Device Details Screen
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Devices Overview
+The information on the Device list provides a high-level view of all sites or filtered sites and includes easy-to-view details for applicable endpoint...
+Device Details Screen
+Device Groups
+HyperV and VMware Virtualization
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

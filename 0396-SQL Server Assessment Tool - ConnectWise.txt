@@ -1,0 +1,94 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   RMM - Network Assessment   SQL Server Assessment Tool
+SQL Server Assessment Tool
+Last updated
+Jul 9, 2025
+Table of contents
+Overview
+Supported SQL Server Versions
+Order SQL Server Assessment Tool
+Setting Up and Running a SQL Server Assessment
+Branded SQL Server Assessment Reports
+SQL Server Reports You Can Generate
+Overview
+
+Network Assessment's SQL Server Assessment Tool performs deep-dive assessments and analyses of Microsoft SQL Server environments. The tool generates a set of SQL Server-specific reports that can be used as part of a comprehensive network assessment or for delivering an ongoing managed service. The SQL Server Assessment Tool is a self-extracting zip file that executes an .exe and is completely non-invasive, meaning it is not installed on the SQL server or any other machine on the client’s network and does not make any changes to the system.
+
+You can run the SQL Server Assessment Tool from any machine that has access to SQL Server over its management port of 1433. You will be required to provide SQL Server Authentication credentials. The user conducting the SQL Server scan should have administrative rights similar to that of the default 'sa' user.
+
+Note: You must be running version 2.1.1135.1 or later of RapidFire's Network Detective to access the SQL Server Assessment Tool.
+
+Supported SQL Server Versions
+
+The SQL Server Assessment Tool supports the following versions of SQL Server:
+
+2012
+2008 R2 SP1
+2008 R2
+2008
+2005
+Order SQL Server Assessment Tool
+
+In the Asio™ platform, go to SETTINGS > Account Administration > Products & Services > Network Assessment Tool > SQL Server Assessment Tool. If you previously installed a Network Assessment Tool, select the SQL Server Assessment Tool and click Update Account. If this is your first time activating a Network Assessment tool, select the Basic Package, then select SQL Server Assessment Tool and click Activate Account.
+
+Setting Up and Running a SQL Server Assessment
+
+Detailed instructions on setting up and running a SQL Server Assessment are provided in the following RapidFire user guides. (Some initial setup steps may not apply when this tool is downloaded from ConnectWise's Asio™ Platform (ITSupport Portal).)
+
+Network Detective SQL Server Assessment Module Quick Start Guide
+Network Detective User Guide: Performing a SQL Server Assessment
+Branded SQL Server Assessment Reports
+
+After you collect the baseline SQL Server data using the scanning tool, you can then import the scan results into the risk analyzer and generate the reports.
+
+All Network Detective subscriptions include an Enhanced Branding Package, which allows you to control the overall look-and-feel of the reports generated. With the Enhanced Branding package, you can:
+
+Personalize the reports with your company name and logo.
+Change the accent colors to match your own company standards.
+Select from a number of pre-designed report templates.
+Embellish your reports with photos and images from the pre-screened, royalty-free library.
+SQL Server Reports You Can Generate
+Document	Description	Sample (click to view)
+Routine Health Report	
+
+This report assesses the health of the SQL Server using three major categories: settings, file, and resources. Setting health looks for configuration issues that may go against prescribed best practices. File health looks at how the database interacts with the file system, looking for adequate space and comparing the current configuration versus best practices. Resource health looks to ensure adequate resources are available to operate the SQL Server optimally and looks for indicators pointing to performance issues. Resource health comprises three sub-categories:wait health, task health, and memory health. Wait health deals with database processing wait and delay issues. Task health validates that scheduled tasks and jobs are working optimally. Memory health ensures adequate memory is available to run the SQL Server properly.
+
+	
+SQL Server Detail Report	This report details the settings and health of the SQL Server as a whole. It looks at settings, configuration, performance, and backup. Information and detailed breakdown of databases can be found in the Database Detail report.	
+Database Detail Report	
+
+This report details the settings and health of individual databases that reside on the scanned SQL Server. It lists the database properties, potentially missing indexes, locks, statistics, fragmentation, and existing indexes. Collecting this information would be a daunting task without this tool. This report documents each database individually and can be run ad-hoc when specific database performance problems arise. However, best practice is not to wait and react to these problems but to run this report on a regular basis (quarterly or monthly, depending on application criticality).
+
+This report will help identify opportunities to improve performance and accumulate trending data that will help you anticipate problems before they occur. The report is also a great way to document your work for both internal and external uses.
+
+	
+Maintenance Plan Report	This report details all maintenance plans and their sub-plans. Maintenance plans perform routine tasks on your SQL Server. Not all maintenance plans are active and in-use, and you can use the report to document what’s in place and if adequate automation of maintenance and backups are being performed.	
+SQL Server Agent Jobs Report	This report details all jobs (active and inactive) for the SQL Server agent. Some jobs may be maintenance plans and can be seen in detail in the Maintenance Plan Detail report (see above). Look in the Job History section of this report for entries in RED or that do not say "success" and see what jobs are causing errors and why. This report is so easy to generate, even non-DBA techs can use it to check for errors in jobs. Since some remote monitoring and management tools do not delve into the actual database level, it makes sense to run this report monthly to supplement your RMM tool and to keep it "honest."	
+Security Assessment Tool RMM Dashboard
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+PCI Compliance Module
+Network Data Collector
+Advanced Configuration Network Assessment Tool
+Client Connector Tool
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

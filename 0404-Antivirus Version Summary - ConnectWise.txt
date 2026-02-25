@@ -1,0 +1,127 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   RMM Reporting API   Reporting API REST Resources   Antivirus Version Summary
+Antivirus Version Summary
+Last updated
+Jul 9, 2025
+Table of contents
+Overview
+Endpoint and URI
+Method
+Request Body
+Response Body
+Parameter Descriptions for Antivirus Version Summary
+Source of Data in the Asio Platform 
+Overview
+
+Retrieves currently detected antivirus software and the definition version.
+
+Endpoint and URI
+
+https://itsapi.itsupport247.net/repo...virus/versions
+
+Method
+
+POST
+
+Request Body
+
+{
+
+"SiteCode": "AGTSolutions"
+
+}
+
+Response Body
+
+{
+
+"Error": null,
+
+"AntivirusVersionSummary": [
+
+{
+
+"AgentType": "Desktop, Windows",
+
+"Antivirus": "Not Available",
+
+"CurrentVersion": "49442",
+
+"Date": "2014-02-10T12:53:30Z",
+
+"FriendlyName": "Mike's PC",
+
+"InstalledVersion": "30656",
+
+"MachineId": 9223372036854775807,
+
+"MachineName": "Intel-AMT1",
+
+"OperatingSystem": "Windows XP"
+
+},
+
+{
+
+...
+
+},
+
+{
+
+...
+
+}
+
+]
+
+}
+
+Parameter Descriptions for Antivirus Version Summary
+Parameter	Description
+"SiteCode"	Unique site code in Asio™ Platform (ITSupport Portal)
+"AgentType"	Desktop agent or Server agent
+"Antivirus"	Antivirus status
+"CurrentVersion"	Current antivirus version
+"Date"	Date antivirus was last checked
+"FriendlyName"	Machine friendly name in Asio™ Platform (ITSupport Portal)
+"InstalledVersion"	Installed version of antivirus
+"MachineId"	Unique machine ID in ConnectWise database
+"MachineName"	Machine name in Asio™ Platform (ITSupport Portal)
+"OperatingSystem"	Machine operating system
+Source of Data in the Asio Platform 
+
+Reports > Asio > Preventive Maintenance > Antivirus Version Report
+
+Antivirus Summary BCDR Continuity Backup Summary
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Agent Details
+Retrieves agent information for the authenticated partner and the specified site.
+Antivirus Summary
+Retrieves counts of machines having antivirus protection in the following states: Updated, Outdated, Not Installed, or Information Unavailable.
+BCDR Continuity Appliances
+Retrieves a list of Recover Continuity backup appliances provisioned at the given site.
+BCDR Continuity Backup Summary
+Overall summary of the percentage of Recover Continuity backups that have succeeded or failed.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

@@ -1,0 +1,104 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   RMM - Network Assessment   Exchange Assessment Tool
+Exchange Assessment Tool
+Last updated
+Jul 9, 2025
+Table of contents
+Overview
+Order the Exchange Assessment tool
+Setting Up and Running an Exchange Assessment
+Branded Exchange Assessment Reports
+Exchange Reports You Can Generate
+Overview
+
+Use Network Assessment's Exchange Assessment Tool to perform quick, easy, and comprehensive assessments for most Microsoft Exchange environments, including Microsoft 365 and Exchange 2013, 2010, 2007, and 2003. The tool is a self-extracting zip file that executes a completely non-invasive .exe; it is not installed on the Exchange server or any other machine on the customer’s network and does not make any changes to the system.
+
+The Exchange Assessment Tool uses multiple technologies/approaches to collecting information on the Microsoft Exchange environment, depending on the version. Remote protocols are used to access Microsoft 365 environments, while the PowerShell Cmdlet for Microsoft Exchange is used for local scans. Typically, the server Microsoft Exchange already has PowerShell and the proper Cmdlet installed. The tool checks for prerequisites before performing the scan.
+
+For local Exchange 2007 and 2010, the Exchange Assessment Tool must run on the server running Exchange.
+
+Note: The Exchange Assessment Tool is not compatible with Exchange 2007 running PowerShell v1. Running the tool on this environment may result in the error Hidden -ExecutionPolicy Unrestricted -command . 'C:\Program Files\Microsoft\Exchange Server\bin\Exchange.ps1. Run this beta-tool as a workaround.
+
+Order the Exchange Assessment tool
+In the Asio™ platform, go to Settings > Account Administration > Products & Services > Network Assessment Tool > Exchange Assessment Tool.
+If you previously installed a Network Assessment Tool, select the Exchange Assessment Tool and click Update Account. If you have never activated a Network Assessment tool, select the Basic Package, then select Exchange Assessment Tool and click Activate Account.
+Setting Up and Running an Exchange Assessment
+
+Detailed instructions for setting up and running an Exchange Assessment are provided in the following RapidFire user guides.
+
+Note: Some initial setup steps may not apply when this tool is downloaded from ConnectWise's Asio™ Platform (ITSupport Portal).
+
+Network Detective Exchange Assessment Module Quick Start Guide 
+Network Detective User Guide: Performing an Exchange Assessment
+Branded Exchange Assessment Reports
+
+Once you collect the baseline Exchange data using the scanning tool, import the scan results into the risk analyzer and generate the reports.
+
+All Network Detective subscriptions include an Enhanced Branding Package, which allows you to control the overall look-and-feel of the reports generated. With the Enhanced Branding package, you can:
+
+Personalize the reports with your company name and logo.
+Change the accent colors to match your own company standards.
+Select from a number of pre-designed report templates.
+Embellish your reports with photos and images from the pre-screened, royalty-free library.
+
+ 
+
+Exchange Reports You Can Generate
+Document	Description	Sample (click to view)
+Exchange Risk Report	
+
+The Exchange Assessment module automatically generates detailed reports to manage a full migration projector deliver an on-going security and maintenance service. If you do not want to share all that information with your clients, show them a branded, customer-facing high-level report that provides a polished overview of issues identified in more detailed reports.
+
+Corresponding charts and graphs clearly communicate issues and serve as a graphical aide to suggest remedial steps. Exchange Risk is the ideal report to prepare for customer account reviews to show you are properly handling their Exchange environments.It's also great to run for new prospects to show potential deficiencies and risks you can help cure and manage.
+
+	
+Exchange Management Plan	This report helps prioritize issues based on the issue's risk score. A listing of all affected computers, users, or sub-systems are provided along with recommended actions.	
+Exchange Assessment PowerPoint	The generated PowerPoint is suitable for conducting a meeting presenting your findings from the Network Detective. General summary information along with the risk and issue score are presented along with specific issue recommendations and next steps.	
+Exchange Traffic and Use Report	
+
+Managing individual and aggregate mailbox sizes is a challenge for most organizations. It's obviously important to understand the total organizational email traffic and usage to prepare for a migration project, but this report is equally useful ongoing to help manage individual mailbox size limits based on usage needs and to identify individuals who may be misusing or abusing their mailboxes.
+
+This report shows the status of all mailboxes–their size limits, percentage used, and percentage free. The report is useful when planning a migration or for growth to ensure systems continue to run without interruption.
+
+	
+Exchange Mailbox Detail Report	This report provides a mailbox-by-mailbox catalog of information, including everything from mailbox display name to quotas to a listing of folders/sizes for each mailbox (and more). Whether documenting regular use, planning ahead, or preparing for a migration, knowledge is power and, in this case, knowledge can be mone. The report improves preparation for a migration by defining all mailbox settings, ensuring display names, etc., are standardized, setting quotas appropriately, and troubleshooting issues with specific mailboxes.	
+Exchange Distribution Lists Report	Most organizations routinely create email distribution groups–both for internal communications and for routing incoming emails to multiple individuals at the same time. The problem is that over time, many companies lose track of what groups they've created and who's included. Obviously, you'd want to be able to accurately replicate all these groups with a migration. But what about those situations when employees turn over or change positions? Each time, individual emails need to be systematically added and removed from groups. This report identifies and lists all distribution groups as well as what end-users or other groups are to receive emails.	
+Exchange Mailbox Permissions Report by Mailbox	Sometimes there's a need to give one or more individuals permission to access either someone else's mailbox or a group mailbox on a temporary basis–vacations, leaves of absence, and terminations are all examples of this situation. For security purposes, best practices suggest a periodic review of all mailboxes. This report will identify on a mailbox-by-mailbox basis what groups or individuals have access to the mailbox and at what level.	
+Exchange Mailbox Permissions Report by User	A separate companion report inverts the information to show you on a user-by-user basis what users have access to what mailboxes. This report is a good way to document individual access rights.	
+Exchange Excel Export	We give you the ability to output all Exchange data configurations uncovered by our scan and export to an Excel file. Once in Excel, you can take the data and import it into your favorite Service Desk or PSA system or simply create your own custom sorts, analyses, reports, and graphs in Excel.	
+Exchange Mobile Device Report	
+
+Whether users are provided with a company-sanctioned mobile device or are given the ability to bring their own, you should know all the details of the network's techno-diversity. This report provides a detailed listing of every mobile device used by employees to access their organization's mailbox. The report indicates the names and specific types of mobile devices accessing the Exchange server as well as the operating systems and even the number of folders that are being updated.
+
+This report will help optimize employee connectivity/productivity and plan appropriately for system changes/upgrades. The report is also useful to present to clients as an aid to support your case for system changes (such as setting up a SharePoint portal, moving to Exchange 2011, etc.).
+
+ 
+
+Client Connector Tool HIPAA Compliance Module
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+PCI Compliance Module
+Network Data Collector
+Advanced Configuration Network Assessment Tool
+Client Connector Tool
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

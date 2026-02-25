@@ -1,0 +1,112 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Expert Services   Help Desk   Help Desk Service Statement of Work   Client Requests and Callbacks
+Client Requests and Callbacks
+Last updated
+Apr 7, 2025
+Table of contents
+Overview
+Calls and Chats
+Emails
+Tickets
+Client Contact Detail
+Overview
+
+This article describes how the Help Desk service handles client requests through various channels of communication and how the Help Desk Service reaches your clients for support. 
+
+Calls and Chats
+
+Calls and chats are handled through our routing capability. Our Help Desk Service uses caller ID (phone) or the user email address (chat) to direct incoming calls to a specific team of Help Desk Service technicians assigned to you and your clients. This process ensures that calls to the Help Desk Service are received by technicians who know you and your clients and can provide a reliable, consistent, efficient Help Desk Service experience.
+
+The Help Desk Service creates or updates a ticket for each call or chat received from a Help Desk Service-activated site, whether or not the issue falls within the Help Desk Service Statement of Work. For requests in scope, the Help Desk Service attempts to work the issue to resolution, following up if required after an investigation is completed. When additional support is needed or the call or chat is for an issue not in scope, the request is escalated to the MSP.
+
+Note: For the Help Desk Service to provide optimal routing, ensure your Client Profiles in the ConnectWise Asio® platform (ITSupport Portal) are complete and accurate, especially phone numbers and email addresses (in Settings > Setup > RMM > Sites Using RMM > [site name] > Help Desk > Client Profiles). For details about setting up Client Profiles, see Provide Help Desk Service Information.
+
+Emails
+
+The Help Desk Service can receive service requests via email and will create tickets for new requests. Emails are processed in the order received and are always a lower priority than incoming real-time interactions. If you have added a domain for the site in the ConnectWise Asio® platform (ITSupport Portal) (in Settings > Setup > RMM > Sites Using RMM > [site name] > Help Desk > Basic information), then emails to the Help Desk Service are automatically converted to tickets and an auto-reply is sent to the email sender with the ticket number.
+
+For email requests requiring client call backs, a technician will contact the client the next business day.
+
+For email requests to be processed, the following information must be included in the body of the email:
+
+Requester’s full name
+Client company name
+Callback number(s)
+Detailed description of the issue
+
+If the MSP and/or client cannot be determined from the return address, then the Help Desk Service will be unable to create a ticket or contact the client and no further action will be taken.
+
+Tickets
+
+All tickets are handled in the order received, regardless of the priority assigned by the MSP or client. If an MSP has an emergency issue, we recommend that the End Client contact the Help Desk Service directly through Chat or Phone.
+
+Incoming tickets are placed in the Help Desk Service ticket queue, and a technician contacts the client the next business day.
+
+Client Contact Detail
+
+Outbound calls from the Help Desk Service have a caller ID of 866-520-6414 and display Technical Support. If no one answers, the technician leaves a voicemail asking the client to call the Help Desk Service at 866-520-6414 or to reply via email. Emails are sent from HelpDesk@ITSupport247.net.
+
+Scenario	Help Desk Actions
+Help Desk Service completes work without client on phone (e.g. an email ticket or portal or PSA ticket)	
+
+Help Desk Service technician emails the client indicating that the work has been completed and requests the client call back if not satisfied with the work performed.
+
+Help Desk Service marks the ticket as resolved and assigns it to the partner.
+
+
+Help Desk Service is unable to complete scheduled work such as an after hours endpoint protection scan or request for non-user interaction work because the resource was offline or information was missing or incomplete	
+
+Help Desk Service technician emails the client requesting a new timeframe and for any missing or incomplete information.
+
+Ticket is placed into an awaiting status until the client replies to the email or calls back.
+
+Ticket is marked as resolved and assigned to the partner after 72 hours of no contact from the client.
+
+
+Client stops work during a call with a Help Desk Service technician (e.g. they must go to a meeting)	
+
+Help Desk Service emails the client requesting that they call when available to work.
+
+Ticket is placed into an awaiting status until the client replies to the email or calls back.
+
+Ticket is marked as resolved and assigned to the partner after 72 hours of no contact from the client.
+
+The Help Desk Service reserves the right to end any communication that becomes unprofessional in language or content.
+Help Desk Service Statement of Work MSP Ticket Assignments and Escalations
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+MSP Ticket Assignments and Escalations
+Help Desk Activation Checklist
+Help Desk Best Practices
+Help Desk Success Checklist
+Use this checklist to help successfully integrate Help Desk to your operations and ensure seamless support for your end users.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

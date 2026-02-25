@@ -1,0 +1,346 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Reports
+Reports
+Last updated
+Sep 22, 2025
+Table of contents
+Overview
+Reports Home Page
+Executive Reports
+Detailed Reports 
+Documentation
+Overview
+
+This article describes the Reports tab of the Asio™ platform. The Reports tab is a centralized location for all types of reports, including technical systems information, asset collection, preventive maintenance, and performance and application monitoring.
+
+Reports Home Page
+
+The Reports home page comprises Executive Reports followed by Detailed Reports. The detailed reports combine legacy and in-console reports across different categories and provide multiple features for insights and analysis.
+
+ Navigate to Reports > Asio to access the Reports Home page.
+
+ 
+
+A few common features across the in-console reports are as follows:
+
+Keyword Search – This feature allows you to search & filter the report based on a specific word.
+Filter – This feature allows you to filter the repost based on a column value. Additionally, you can combine cell values of more than one column to filter the report on a specific combination
+Column Picker – This feature allows you to choose specific columns you want to see on the report. By default, all the reports will always load with all columns visible.
+Read Mode/Preference - Based on user’s readability preferences, the UI can be adjusted to Compact, Standard, Comfortable. By default, all reports have Comfortable mode enabled
+Download – This feature allows you to download the report in current view. By default, the report is downloaded in CSV file format. In case you plan to do further analysis on the report offline, it is recommended to change the file format to .xlsx first.
+Direct Download – This feature is visible only if a filter selection results in a large dataset (>~100k records/rows) on the screen. Clicking on this button will export the entire dataset based on selection into a zip file which will contain a .csv file.
+
+
+Executive Reports
+
+Click the View Executive Reports button in the My Reports box to view all available Executive Reports from the last three months. Downloadable Word docx reports are available for 12 months. When you download multiple reports, you receive an email containing a link. Follow the link to download a zipped file of the selected reports. A maximum of 50 reports can be downloaded together. Refer to Executive Reports for more information.
+
+Click Manage Templates to open the Report Templates page to create, edit, delete, or clone a report template.
+
+Detailed Reports 
+
+Open the category drop-down to view all available reports in the category. Every report shows different information and serves various different purposes. You can find more details by clicking on the individual reports:
+
+Report Category
+
+	
+
+Reports Name
+
+	
+
+Description
+
+
+
+
+Agent
+
+	
+
+Agent Report
+
+	
+
+Gives information about the overall agents installed
+
+
+
+
+RMM Scan Configuration*
+
+	
+
+Provides configuration information for the Agent Deployment Tool per site.
+
+
+
+
+RMM Scan Details*
+
+	
+
+Lists the IP range and deployment schedules to scan the machines in the network for the agent.
+
+
+
+
+Agent Uninstall Report
+
+	
+
+Gives information about the overall agents uninstalled
+
+
+Network Devices Report	Displays a list of Network Devices identified via the network probe and can be used to identify network devices of different types, IP addresses, makes/models, etc.
+Probe Devices Report	Lists all the RMM devices on which a Network Probe has been installed.
+User Management Report	Provides information about the users logged in to different endpoints in a given time period
+
+
+Automation Execution
+
+	
+
+Automation Execution Summary Report
+
+	
+
+Gives an overall number of automations executed along with their statuses
+
+
+
+
+Automation Execution Detailed Report
+
+	
+
+This is a detailed report which enlists task wise information of execution, results and endpoints
+
+
+
+
+Audits
+
+	
+
+Remote Access Report
+
+	
+
+Detailed record of user-wise access onto the end users’ system by NOC.
+
+
+
+
+User Login Report*
+
+	
+
+Shows what users are logged into the Asio Portal along with the duration.
+
+
+
+
+Patches
+
+	
+
+Patch Deployment Report
+
+	
+
+Provides on information on the patches deployed on the endpoints along with additional information on patch status, type, installation and failure of the patch
+
+
+
+
+Patch Assessment Report
+
+	
+
+Provides an overview of how many Windows devices have been assessed for patches with additonal information on the patch status, installation, approval, reboot behavior and NOC recommendations.
+
+
+
+
+Patch Compliance Report
+
+	
+
+Provides information on the compliance status of endpoints based on the patching policy applied to endpoints
+
+
+
+
+Preventive Maintenance
+
+	
+
+Endpoint Protection Report
+
+	
+
+Displays currently detected endpoint protection software and the definition version.
+
+
+
+
+Technical Details
+
+	
+
+Asset Change Report*
+
+	
+
+Contains data for changes that have been made to assets over a given time period. The following reports are available:
+
+Logical Drive
+Logical Memory
+Software
+Physical Disk
+Adapter Configuration
+
+
+
+Disk Space Report
+
+	
+
+Provides information about disks including capacity, free space and used spaced.
+
+
+
+
+Installed Software Change Report*
+
+	
+
+Displays applications that have been installed or removed in a particular date range.
+
+
+
+
+Installed Software Count Report
+
+	
+
+Displays how many resources have a particular application installed.
+
+
+
+
+Installed Software Report
+
+	
+
+Lists the software installed on each machine including publisher, version and installation date.
+
+
+
+
+System Information Report
+
+	
+
+Contains system information gathered from each machine including Operating system, system type, serial number, time zone, processor type, disk information and BIOS information.
+
+
+
+
+Security
+
+	
+
+ConnectWise Risk Assessment*
+
+	
+
+Displays a summary of the site's security posture and Dark Web search results.
+
+
+
+
+Cyber Essentials*
+
+	
+
+Answers addressable questions about Cyber Essentials technical controls in a customer environment
+
+
+
+
+HIPAA Compliance*
+
+	
+
+Report of Technical Support for Administrative and Technical Safeguard requirements in the HIPAA regulation
+
+
+
+
+ConnectWise Endpoint Policy Management – Endpoint*
+
+	
+
+Displays the security posture relative to assign security profiles.
+
+
+
+
+ConnectWise Endpoint Policy Management – User*
+
+	
+
+Displays the user security posture relative to assign security profiles
+
+Note: The reports marked as * are legacy reports. These reports do not contain the features of In-Console reports mentioned above.
+
+The Favorites section displays links to the reports used frequently. To add a report to the Favorites section, open the category for the report, such as Technical Details, and click the star next to the report name. Click on the star again to remove the report from the Favorites section.
+
+Documentation
+
+These categories detail the reports available in the Asio platform. Click on the title of an article below to learn more about individual reports.
+
+Asio Reports
+Agent Reports
+Audit Reports
+Technical Details Reports
+Automation Execution Reports
+Executive Reports Modules
+Show all
+BrightGauge in ConnectWise RMM
+Reports for RMM are available in BrightGauge. These reports are in the form of templates and you can use these to create reports for your clients or for yourself.
+Reports and Dashboards (formerly BrightGauge) SSO FAQs
+Security Reports
+ConnectWise Endpoint Policy Management: Reports
+Risk Assessment Reports
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+BrightGauge in ConnectWise RMM
+Reports for RMM are available in BrightGauge. These reports are in the form of templates and you can use these to create reports for your clients or f...
+Asio Reports
+Security Reports
+Reports and Dashboards (formerly BrightGauge) SSO FAQs
+This document provides answers to frequently asked questions about the BrightGauge SSO process.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

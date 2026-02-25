@@ -1,0 +1,90 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Notification Rules   Set Notification Rules
+Set Notification Rules
+Last updated
+Dec 19, 2025
+Table of contents
+Overview
+Set up Notification Rules for a site
+Overview
+
+Notification Rules (in RMM Setup → Notifications Rules) specify how you would like the NOC to handle alerts received from your RMM agents based on criticality, service level, and date/time. Rules must be set up for an entire week. The Notifications window displays the agent’s service level, site count, created by date/time/user, and modified by date/time/user details.
+
+ 
+
+Notifications created must match the site's Servers Level and, for Help Desk Notifications, the Help Desk configuration in RMM Setup → Sites Using RMM → [site name] → Product Options. Actions vary based on Servers Level, with Elite defining actions.
+
+Note: Notifications supersede care-level defaults.
+
+Set up Notification Rules for a site
+
+By default, Notifications are set up to Ticket Only. This can be modified using the following process:
+
+Go to Settings > Setup > RMM > Notification Rules.
+Click New and select the appropriate Notification type (in this case, Elite Servers).
+
+Enter an informative, easily understood Name for your notification rule (such “8-5 Calls Only,” “24/7 Calls,” or “On-Call Weekends”), verify the selected Service Level is correct, and choose the appropriate Time Zone for the notification rule.
+
+Note: The time zone selected will be used when the NOC contacts you and does not have to match the time zone at the assigned site. For example, if your client is in Indiana (Eastern time), but your office is located in Illinois (Central time), select Central time zone for the notification. Alerts will follow the Central time zone block.
+
+To create an 8:00 AM to 5:00 PM notification time block, click the 8:00 AM cell in the table, enter an end time under Time Slot Details on the right, and specify how and to whom the NOC should send alerts for each issue during that block. Use the green ‘+’ to select a technician for notification.
+
+Suggested settings for working hours:
+
+Server/Internet Down: "Call Immediately"
+Critical Impact Alerts: "Start documented fix and call immediately to inform"
+Critical Non-Impact: For fewer calls, set to "Start documented fix and place a phone call if issue is not resolved in 2 hours" or "Ticket Only"
+Others: Ticket Only
+
+Suggested settings for non-working hours:
+
+Server/Internet Down: "Call in the next time slot"
+Critical Impact Alerts: "Start documented fix and place phone call in next time slot"
+Critical Non-Impact: "Start documented fix and place phone call in next time slot"
+Others: Ticket Only
+
+If an issue occurs, the NOC will begin contacting individuals in the listed order based on the action specified (i.e. Call Immediately, Wait 30 minutes and call, etc.) until they reach someone. Alerts always will be emailed to all individuals listed in the email contact list. To change the order of escalation, use the up and down arrows above the contact box.
+
+Note: Enabling PSA integration with AutoTask PSA or CW PSA disables email notifications set via Notification Rules. Other PSA integrations are unaffected.
+
+Note on Texts: If you select to receive an SMS text message in place of a phone call (in Admin → Manage Users → [select user] → Text is preferred phone contact method), you will be notified immediately by text for all server/Internet down or critical impact alerts even if you have selected the “Wait 30 minutes and call” or “Call in the next time slot” option.
+
+Click Apply to finish configuring the notification details for the time block.
+Duplicate the block across other days with the same notification protocol by clicking the green box in the new block and selecting the appropriate days.
+
+Create time blocks for all other non-working hours, such as "After Hours" and/or "Before Hours" blocks.
+
+Note: For the Notification Rule to be saved, every hour of every day must have assigned settings.
+
+Once all time blocks have been assigned notification settings, click Save to finish.
+
+From the Notifications page, you can select an existing rule and click on the time slot to edit, delete, or replace contact details.
+
+Notifications and Servers Levels Patching
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Notifications and Servers Levels
+Command for Networks
+Secure Information Store
+Tech Advantage
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

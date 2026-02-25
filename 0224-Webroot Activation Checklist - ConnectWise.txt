@@ -1,0 +1,71 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Integrations to ConnectWise RMM   Webroot   Webroot Activation Checklist
+Webroot Activation Checklist
+Last updated
+Jul 17, 2023
+Table of contents
+Overview 
+Checklist 
+Set Up Your Webroot Account 
+Create Webroot Sites 
+Create Administrators, Setup Policies, and Alerts 
+Deploy Webroot to Endpoints 
+Uninstall Existing Endpoint Protection Software 
+Overview 
+
+This document provides a high-level checklist for activating Webroot in the Webroot console and in the Asio Platform.
+
+Checklist 
+
+Before deploying Webroot to any endpoints (server or desktop) ensure the RMM agent version is 527 or later. To verify the current RMM version on the resource, go to RMM Setup > Agent Version Update, then select the site and click the number in the Needs Update column.
+
+Set Up Your Webroot Account 
+In the Asio Platform, go to Admin > Products & Services > Webroot Endpoint Protection License Management and complete the Webroot Sign Up fields.
+Wait for the confirmation email and follow the link to log in to the Webroot console and validate your account.
+Ensure the appropriate Webroot firewall exclusions have been set up on your firewall.
+Create Webroot Sites 
+Create your Webroot sites either directly from the Asio Platform (recommended) or in the Webroot console. An option when creating a site in the Webroot console is to select the default policy. We strongly recommend that you run the Silent Audit policy with the first scan on a few of your endpoints. The Silent Audit only reports on threats and does not quarantine them.
+Create Administrators, Setup Policies, and Alerts 
+In the Webroot console, create your Administrators and Policies.
+Create a new Global Policy that will be used for all endpoints after the Silent Audit runs. This new Global Policy can be a copy of the Silent Audit policy that you modify.
+If desired, create Alerts so you are notified when scans run.
+Deploy Webroot to Endpoints 
+In the Asio Platform, deploy Webroot on a limited number of endpoints before deploying to all so you can review scan results to see what threats are valid and what can be excluded via threat overrides.
+If desired, create endpoint groups in the Webroot site console.
+Deploy Webroot to existing endpoints by using Webroot installation scripts with Silent Audit policy. 
+Configure automated Webroot deployment for future endpoints by enabling the Install Webroot site-level product option.
+Run the Webroot console Global Policy on all endpoints at your site. This policy will run from now on.
+Uninstall Existing Endpoint Protection Software 
+When an endpoint is running smoothly with Webroot, you can then remove any previously installed endpoint protection software via Scripting.
+
+Once you have set up your Webroot account and sites, use the Webroot Security Dashboard in the Asio Platform to see the Webroot status of all protected resources, both at the site and machine level.
+
+ 
+Getting Started with Webroot Endpoint Protection Webroot Best Practices
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Getting Started with Webroot Endpoint Protection
+Webroot Best Practices
+Webroot Billing
+Webroot Reporting
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

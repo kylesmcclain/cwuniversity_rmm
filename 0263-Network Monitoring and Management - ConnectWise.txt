@@ -1,0 +1,61 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Network Monitoring and Management
+Network Monitoring and Management
+Last updated
+Jan 7, 2025
+Table of contents
+Overview
+Overview
+
+ConnectWise RMM has a Network Monitoring and Management solution that provides a single pane of glass experience for managing your Network Devices through the Asio Platform. The Network Monitoring Solution is fully integrated with the RMM and Asio Platform. Currently, this solution is only available to RMM Premium and Pro partners who have an SSO instance of the Asio Platform and have access to Companies and Sites.
+
+We offer three levels for this solution:
+
+Basic Network Monitoring
+Advanced Network Monitoring
+Premier Network Monitoring
+
+Premier and Advanced Network Monitoring are add-on products, enabled at the site level. For an additional cost, you can upgrade your embedded Network Monitoring capabilities. For more information on the products, review the following documentation.
+
+All articles
+Featured articles
+Network Monitoring Getting Started
+Advanced Network Monitoring
+Advanced Network Monitoring Features
+Network Devices
+Network Monitoring Alerting
+Network Monitoring FAQ
+Network Monitoring Feature Comparison
+Premier Network Monitoring
+Premier Network Monitoring Features
+
+ 
+
+Configuring the ConnectWise–Auvik Integration: Legacy Method Network Monitoring Getting Started
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Network Monitoring FAQ
+Network Devices
+Network Monitoring Alerting
+Network Monitoring Getting Started
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

@@ -1,0 +1,101 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   RMM Reporting API   Reporting API REST Resources   Antivirus Summary
+Antivirus Summary
+Last updated
+Jul 9, 2025
+Table of contents
+Overview
+Endpoint and URI
+Method
+Request Body
+Response Body
+Parameter Descriptions for Antivirus Summary
+Source of Data in the Asio Platform 
+Overview
+
+Retrieves counts of machines having antivirus protection in the following states: Updated, Outdated, Not Installed, or Information Unavailable.
+
+Endpoint and URI
+
+https://itsapi.itsupport247.net/repo...ivirus/summary
+
+Method
+
+POST
+
+Request Body
+
+{
+
+"Month":4,
+
+"SiteCode":"AGTSolutions",
+
+"Year":2015,
+
+"ResourceType":"Desktop"
+
+}
+
+Response Body
+
+{
+
+"error":null,
+
+"informationUnavailable":4,
+
+"notInstalled":3,
+
+"outdated":0,
+
+"updated":2
+
+}
+
+Parameter Descriptions for Antivirus Summary
+Parameter	Description
+"Month"	Requested month (numerical)
+"SiteCode"	Unique site code listed in Asio™ Platform (ITSupport Portal)
+"Year"	Requested year
+"ResourceType"	Desktop or server
+"informationUnavailable"	Number of machines with unavailable antivirus information
+"notInstalled"	Number of machines with no antivirus installed
+"outdated"	Number of machines with outdated antivirus
+"updated"	Number of machines with updated antivirus
+Source of Data in the Asio Platform 
+
+Reports > Asio > Executive Report > Desktop Data / Server Data > Antivirus Definitions > Monthly Status
+
+Antivirus Ages Antivirus Version Summary
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Agent Details
+Retrieves agent information for the authenticated partner and the specified site.
+Antivirus Version Summary
+Retrieves currently detected antivirus software and the definition version.
+BCDR Continuity Appliances
+Retrieves a list of Recover Continuity backup appliances provisioned at the given site.
+BCDR Continuity Backup Summary
+Overall summary of the percentage of Recover Continuity backups that have succeeded or failed.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

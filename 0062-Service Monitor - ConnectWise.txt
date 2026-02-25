@@ -1,0 +1,160 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Alerts   Custom Monitors   Service Monitor
+Service Monitor
+Last updated
+Nov 6, 2025
+Table of contents
+Overview 
+Create a Service Monitor
+Create a Service Monitor from Device Details for endpoint
+List of Monitor Variables
+Overview 
+
+ConnectWise RMM™ Service Monitors allow you to trigger an alert and create a ticket when a specific Service running on an endpoint changes state. The monitor can be applied to Windows, MAC, or Linux endpoints. It can also automatically resolve a ticket when the application information changes state. Refer to the list of services that are excluded by default from monitoring.
+
+Note: The service monitors generate tickets only when there is a change in the state of the configured service. Tickets are not triggered if the service does not exist on the endpoint.
+
+Create a Service Monitor
+Sign in to the Asio™ platform.
+Navigate to Endpoints > Devices > Alerts > Monitors.
+Click Add Monitor.
+Provide a Name for the new monitor. Optionally you can provide a Description of your new monitor.
+Select the Type as Service from the drop-down.
+Select the Family and Severity.
+
+To enable the Mapper functionality, you need to turn on the toggle. To learn more about the Mapper functionality review this documentation.
+
+In the Conditions section, select the drop-down and click View all Services.
+Note: This will fetch a list of all the services found on the endpoints that have the agent installed. Data is collected from both server and desktop endpoints, including Windows, MAC, and Linux OS.
+Select the state that should be captured for the alert trigger:
+Stopped - This will trigger the alert as soon as the monitor finds that the service state has changed to stopped.
+Stopped for - This allows you to define the waiting period before triggering an alert when the state has changed to stopped.
+Running - This will trigger the alert as soon as the monitor finds that the service state has changed to running.
+Running for - This allows you to define the waiting period before triggering an alert when the state has changed to running.
+Select to enable or disable the option to Automatically start or stop the service. This will trigger an automation Task on the endpoint to initiate the service start or stop process.
+You can also select a custom Automation Task to be executed when a service condition is met on the endpoint.
+
+Note: 
+
+You can enable both default and custom automation tasks for when an issue is observed.
+System will reflect only selective Automation tasks that do not need parameters. Refer these OOTB tasks which needs parameters. All Custom Scripts created will be available for selection.
+Under the Ticket Resolution section you can define if the ticket should be updated as Resolved once the issue no longer persists on an endpoint
+Under the Resources section you can select the target endpoints on which the alerts should be triggered. You can select specific machines, Sites, or a Dynamic or a Static group.
+Click Save to create and apply the monitor to the targets. 
+
+Refer to the list of services that are excluded by default from monitoring.
+
+
+ 
+
+Create a Service Monitor from Device Details for endpoint
+
+Navigate to Endpoints > Devices.
+
+Select the Computer you want to create the new Monitor for. The device details page will open.
+
+Click Services.
+
+Under Actions for the service you want to create the monitor for, select the icon that appears under Actions 
+
+Note: The action button will be visible and enabled only if the user has permission to create monitors. For more information, refer to Application Roles.    
+
+The Monitor Name and Service name should be pre-selected on the monitor creation page.
+
+Note: The endpoint from which the service was selected will be selected automatically.
+
+Select the Family and Severity from the drop-down menus. Optionally provide a Description.
+
+To enable the Mapper functionality, you need to turn on the toggle. To learn more about the Mapper functionality review this documentation.
+
+Under the Condition section, Information will be pre-selected by default. However, you can change the configuration when the alert should be triggered:
+You can also select the dropdown to define what state should be captured for the alert trigger 
+Stopped- This will trigger the alert when the monitor finds that the service state has changed to stopped.
+Stopped for - This allows you to define the waiting period before triggering an alert when the state has changed to stopped.
+Running- This will trigger the alert when the monitor finds that the service state has changed to running.
+Running for - This allows you to define the waiting period before triggering an alert when the state has changed to running.
+Select to enable or disable the option to automatically start or stop the service. This will trigger an automation task on the endpoint to initiate the service start or stop process.
+You can also select a custom Automation Task to be executed when a service condition is met on the endpoint.
+
+Note: System will reflect only selective Automation tasks that do not need parameters. Refer these OOTB tasks which needs parameters. All Custom Scripts created will be available for selection.
+
+Under the Ticket Resolution section you can define if the ticket should be updated as Resolved once the issue no longer persists on an endpoint
+Under the Resources section you can select the target endpoints on which the alerts should be triggered. You can select specific machines, Sites, or a Dynamic or a Static group.
+Click Save to create and apply the monitor to the targets. 
+
+Note: Monitors will be triggered based on the configuration set/defined.
+
+Refer to the list of services that are excluded by default from monitoring.
+
+List of Monitor Variables
+
+Here is a list of variables which you can use as per your requirement when creating your own customized ticket template:
+
+Monitor Type	Variable Name	Supported OS Type	Sample Data/Values	Variable Definition
+Generic
+ 	ObservedDate	
+
+Windows, MAC, Linux
+
+	
+
+"2020-09-02T15:35:42.969926103Z"
+
+	Time stamp when the issue was observed
+ 	MonitorDesc	Windows, MAC, Linux	Add local palmtech account and add it to the local administrators group	Description added on the portal while creating a monitor
+ 	MonitorName	Windows, MAC, Linux	Local PalmTech Account with Local Admin	Name of the monitor
+ 	MonitorSummary	Windows, MAC, Linux	(Run PowerShell script every 1 minute(s) AND Run PowerShell script every 1 minute(s))	Summary information for the monitor
+Service
+ 	DisplayName	Windows, MAC & Linux	
+
+"AVG WatchDog"
+
+	
+
+Name that is displayed on the Endpoint for the Service
+
+
+ 	ExitCode	Windows, MAC & Linux	2141	Service exit code that was captured when the service changed state from Running to Stopped for the endpoint
+ 	ServiceName	Windows, MAC & Linux	"Service2"	Actual Service Name on the endpoint
+ 	ServiceStatus	Windows, MAC & Linux	"Down"	State of the service when the change was detected
+ 	StartupType	Windows, MAC & Linux	"Automatic"	
+
+Startup type of the Service
+
+Script Monitor Custom Monitors: Service Exclusion List
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Custom Monitors: Service Exclusion List
+Process Monitor
+Event Monitor
+CPU Monitor
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

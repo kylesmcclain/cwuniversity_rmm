@@ -1,0 +1,60 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Integrations to ConnectWise RMM   ConnectWise RMM Intune Integration   View Intune Information in the Asio™ Platform (ITSupport Portal)
+ Expand/collapse global location
+View Intune Information in the Asio™ Platform (ITSupport Portal)
+Last updated
+Dec 23, 2025
+Table of contents
+Overview
+Intune Flyout menu
+Overview
+
+We have elevated key device and compliance information for MS Intune managed devices on the Integration page on the Devices Summary page. This page will provide actionable information (identify out of compliance devices in Intune) for partner technicians to log in MS Intune and take necessary corrective measures for devices out of compliance.
+
+The devices that will be mapped from MS Intune will belong to one of the following Operating Systems:
+
+Windows 10 version 1709 (RS3) and later, Windows 8.1 RT, PCs running Windows 8.1 (Sustaining mode)
+
+macOS 10.15 and later
+
+The Intune data is fetched on an interval of one hour once a connection with a tenant is established successfully.
+
+The Intune information can be viewed by navigating to Endpoints > Devices > Integrations > Microsoft Intune.
+
+Intune devices can be currently filtered by using the filter option on the right hand side panel. 
+
+Intune Flyout menu
+
+By clicking the Icon in the right menu, you can access your Intune information at glance.
+
+Intune Integration Using your CSP Account Endpoint Protection
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Intune Integration Using your CSP Account
+ScreenConnect with RMM
+This guide contains all relevant articles for using ScreenConnect with ConnectWise RMM.
+Scalepad Lifecycle Manager and ConnectWise RMM Integration
+Lifecycle Manager syncs your hardware assets from ConnectWise RMM via API. This article provides instructions on how to integrate ConnectWise RMM to L...
+Endpoint Protection
+This guide includes articles about ConnectWise RMM™ endpoint protection and managed antivirus products.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

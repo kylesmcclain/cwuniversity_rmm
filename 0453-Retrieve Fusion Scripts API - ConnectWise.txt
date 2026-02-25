@@ -1,0 +1,130 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   RMM Tools   APIs   Automation API   Retrieve Fusion Scripts API
+Retrieve Fusion Scripts API
+Last updated
+Dec 5, 2025
+Table of contents
+API Name
+API Description
+Request and Response API
+API Name
+
+Retrieve Fusion Scripts created by Partner (Script Editor)
+
+API Description
+
+This API allows you to retrieve information about custom scripts created by the script editor.
+
+Request and Response API
+
+You can find the Request and Response API details at this dev portal.
+
+The API Response will include the following fields:
+
+Field
+
+	
+
+Description
+
+
+
+
+id
+
+	
+
+Template ID (string)
+
+
+
+
+name
+
+	
+
+Name of the template (string) 
+
+
+
+
+description
+
+	
+
+Description of the template (string) 
+
+
+
+
+scriptCategory
+
+	
+
+Categories associated with the template
+
+
+
+
+updatedAt
+
+	
+
+Timestamp indicating when the template was last updated (string)
+
+
+
+
+createdAt
+
+	
+
+Timestamp indicating when the template was created (string) 
+
+
+
+
+hasParameters
+
+	
+
+indicates if the script has parameters
+
+ 
+
+Note: Review the Tasking documentation for more information.
+
+ 
+
+ 
+
+ 
+
+Retrieve Custom Templates API Retrieve Global Templates API
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Retrieve Global Templates API
+Retrieve Custom Templates API
+Retrieve all Scheduled Tasks API
+Retrieve Task Instance Summary for a Task API
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

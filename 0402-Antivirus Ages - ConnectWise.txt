@@ -1,0 +1,118 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   RMM Reporting API   Reporting API REST Resources   Antivirus Ages
+Antivirus Ages
+Last updated
+Jul 9, 2025
+Table of contents
+Overview
+Endpoint and URI
+Method
+Request Body
+Response Body
+Parameter Descriptions for Antivirus Ages
+Source of Data in the Asio Platform
+Overview
+
+Returns the age of antivirus definitions on desktop machines.
+
+Endpoint and URI
+
+https://itsapi.itsupport247.net/repo...antivirus/ages
+
+Method
+
+POST
+
+Request Body
+
+{
+
+"Month":4,
+
+"SiteCode":"AGTSolutions",
+
+"Year":2015,
+
+"ResourceType":"desktop"
+
+}
+
+Response Body
+
+{
+
+"antivirusAge":[
+
+{
+
+"DaysOld":2,
+
+"MachineId": 9223372036854775807,
+
+"MachineName":"Intel-AMT1"
+
+},
+
+{
+
+...
+
+},
+
+{
+
+...
+
+}
+
+]
+
+"error":null
+
+}
+
+Parameter Descriptions for Antivirus Ages
+Parameter	Description
+"Month"	Requested month (numerical)
+"SiteCode"	Unique site code listed in Asio™ Platform (ITSupport Portal)
+"Year"	Requested year
+"ResourceType"	Desktop only
+"DaysOld"	Antivirus age in days
+"MachineId"	Unique machine ID in ConnectWise database
+"MachineName"	Machine name listed in Asio™ Platform (ITSupport Portal)
+Source of Data in the Asio Platform
+
+Reports > Asio > Executive Report > Desktop Data > Antivirus Definitions > Ages
+
+Agent Details Antivirus Summary
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Agent Details
+Retrieves agent information for the authenticated partner and the specified site.
+Antivirus Summary
+Retrieves counts of machines having antivirus protection in the following states: Updated, Outdated, Not Installed, or Information Unavailable.
+Antivirus Version Summary
+Retrieves currently detected antivirus software and the definition version.
+BCDR Continuity Appliances
+Retrieves a list of Recover Continuity backup appliances provisioned at the given site.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

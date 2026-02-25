@@ -1,0 +1,236 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   ConnectWise RMM Release Notes   RMM Release Notes Archive   ConnectWise RMM Update for June 2023
+ConnectWise RMM Update for June 2023
+Last updated
+Jul 10, 2023
+Table of contents
+Announcements
+ConnectWise PSA - Integration via policies
+Ability to Switch endpoint type from Server to Desktop or vice-versa
+Sequences silently converted to Script Editor Scripts.
+Introducing macOS Major Upgrade functionality.
+PSA Technician Efficiency Pod
+A new way to enable Webroot Integration coming soon.
+SentinelOne Integration
+SLA based alert monitoring of Axcient x360Recover
+Enable Co-Managed Backup NOC Services option for all Acronis Partners
+ConnectWise RMM
+Agent and Platform
+Automation
+Device Groups
+Intune Integration
+Patching
+Third-Party Patching
+Ticketing / PSA Integration
+Bug Fixes / Known Issues
+Announcements
+ConnectWise PSA - Integration via policies
+
+We are excited to announce that we will be adding an option for you to enable the ConnectWise PSA sync configurations that helps to define Ticket, Configuration items, and Notifications using policies. These policies can be included in your packages and applied to the sites using the package assignment option.
+
+There will be no migration performed for the existing configuration, but the policies will be in effect if they are assigned or applied to a site. You will initially have a toggle button to either enable or disable the policies based configuration and continue using the old method for now.
+
+We will stop supporting the older configuration method by July 14th.
+
+Ability to Switch endpoint type from Server to Desktop or vice-versa
+
+With this release we are adding the ability to switch and endpoints type.
+
+You will be able to swap the endpoint type without the need for uninstalling and reinstalling the agent.
+
+This feature will be enabled for Windows OS.
+
+It will be available to users who have permission / access to Install an Agent.
+
+The change will be reported in two to three minutes on the Devices page.
+
+If you want to revert back when a user switches the Endpoint / device type, this should be done with a gap of 15 minutes between the switches.
+
+This Feature will be released on July 12th.
+
+Sequences silently converted to Script Editor Scripts.
+
+With this release, Sequences will be silently converted to Script Editor scripts to provide you with your own personal library of Script examples. In addition, any Scheduled Task configured to execute a Sequence will be updated to execute your converted Script Editor Script. No action is required from you. This is planned to roll out from May 16th until June 30th.
+
+Note: Invalid Sequences (ie. a sequence that in its current configuration cannot be executed) will not be migrated.
+
+Introducing macOS Major Upgrade functionality.
+
+We’re excited to announce a new feature for Mac endpoints: Major Upgrades. With this feature, you can easily upgrade your operating system to the latest version, ensuring that you have access to the newest features and enhancements. With Mac OS Major Upgrades, you’ll be able to keep your system up-to-date and running smoothly. You will be able to enable this feature by switching the toggle located in your OS Patching Desktop policy.
+
+This is currently planned for July 11th.
+
+PSA Technician Efficiency Pod
+
+We will be enabling a new pod in the ConnectWise Manage instance for partners who have enable the RMM-PSA Integration. This new pod will fetch the configuration details from the RMM in realtime to display the values for the endpoint attached on the ticket. Users can also initiate a remote access session from this pod.
+
+This will be enabled only for partners which are migrated to ConnectWise SSO.
+
+A new way to enable Webroot Integration coming soon.
+
+We will be releasing a new way to enable Webroot Integration with Asio sites via the Integrations page. You will have a simpler interface to integrate Webroot with Asio portal. This enhancement is expected to go live by the end of July.
+
+SentinelOne Integration
+
+We are pleased to announce that the integration between SentinelOne and CW RMM & Command will be available starting in June 2023.
+
+Seamlessly deploy, manage, and monitor SentinelOne instances within the Connectwise Asio Platform. With this integration, you will gain enhanced visibility and control, enabling you to map SentinelOne to Asio sites. This new integration offers streamlined workflows, simplified management, and heightened cybersecurity capabilities.
+
+Expect to receive an in-app notification in your Asio™ Platform (ITSupport Portal) once the integration is ready.
+
+SLA based alert monitoring of Axcient x360Recover
+
+We will be enhancing the existing Axcient x360Recover Integration with Asio to add SLA based alert monitoring and management in Asio. Alert events generated based on the defined SLAs in Axcient will create tickets in the Asio platform, which depending on whether you have subscribed to NOC services or not, will be either assigned to BDR NOC Team or MSP technicians to act upon. We will be supporting 10 SLA based alerting conditions of Axcient x360Recover solution with this release.
+
+Enable Co-Managed Backup NOC Services option for all Acronis Partners
+
+Currently, we provide Co-Managed Backup NOC Services option to partners who have purchased their Acronis Licenses from ConnectWise. Going forward, we will be removing this restriction so that any Acronis partner (irrespective of whether they have purchased Acronis licenses from ConnectWise or otherwise) will be able to subscribe to NOC Services.
+
+ConnectWise RMM
+Agent and Platform
+
+Agent Update. A new agent, version 3.0.7, will be rolled out on June 24th. Windows, Mac, and Linux agents will be updated to the latest version automatically.
+
+Linux Compatibility. We've added compatibility between ConnectWise Agent Ver 3.0.6 with the following Linux OS:
+
+Ubuntu 23.04
+
+Kali Linux
+
+Fedora 38
+
+Updated list of Identified Antivirus. We've updated the Identified Antivirus list to include the follow software:
+
+Huntress Antivirus
+
+Heimdal Thor Agent
+
+Deep Instinct Antivirus
+
+Legacy Portal Improvements. We have made the following legacy portal improvements:
+
+The option to download Wake-On-LAN tool from the Tools page will no longer be visible. Already downloaded Wake-on-LAN tool will continue to work as is.
+
+Automation
+
+Company Support for Tasking. Partners migrated to ConnectWise SSO and Company/Site feature will now be able to select company as a target for scheduling tasks. Once a company is selected then all sites and endpoints under it will be selected automatically. This will be released on June 28th.
+
+Task Improvements. This month we've added the following updates and improvements to Tasks.
+
+Disable Windows Update Notification for Windows 10 and 11 (Improvement). This will be released on June 30th.
+
+Uninstall Sophos Endpoint Agent (Improvement). This will be released on June 30th.
+
+Uninstall Malwarebytes (Improvement). This will be released on June 30th.
+
+Device Groups
+
+Device Group to support Company level custom field. Soon you will be able to use the custom fields created at Company level. This will release on July 5th.
+
+Policy Group to support company site integrations. Users can now create a policy group using "Company Name" attribute and devices meeting criteria will have a column "Company name" associated with it. Sites will be associated with company name.
+
+Policy Support for Non-RMM Sites. The sites tab will list NON-RMM sites as well and users can assign the packages on them,
+
+Intune Integration
+
+Pulling Managed Application Details from Microsoft Intune into Asio Device Details. From the Device Details screen, partners will see Managed Applications and their status from Intune / Microsoft Endpoint Manager.
+
+Patching
+
+Additional information on Devices Page for OS Patching. This month, we're releasing a UI improvement for the Devices > Patching Tab. We will be showing additional columns to show important details on the devices page so that users don't have to visit device details page to review this information. This is planned for June 22nd.
+
+Third-Party Patching
+
+Expanded Third-Party Patching Support. We've added the following list of Supported applications for Third-Party Patching.
+
+Mozilla Thunderbird (macOS)
+
+VLC Media Player (macOS)
+
+Amazon Corretto 8 (Windows)
+
+Amazon Corretto 11 (Windows)
+
+Amazon Corretto 17 (Windows)
+
+WinSCP (Windows)
+
+Libre Office (Windows)
+
+Slack (macOS)
+
+Wireshark (Windows & macOS)
+
+Ticketing / PSA Integration
+
+Public Ticketing API Improvement - Contact Association. We are releasing an updated functionality so that contacts can be associated with the tickets via the Public Ticketing API. The changes will be done in CreateTicket and UpdateTicket API.
+
+ConnectWise PSA - Notification Emails for Asset/Billing/Ticket sync failures. Users that have opted/not opted for Policies for configuring PSA will be receiving the failure notification for Ticket/Asset/Billing sync. This will be released June 8th.
+
+Open Beta GA Release in ConnectWise PSA. We are doing an Open BETA release for the ConnectWise PSA - Integration via policies. After this release partners will be able to configure Ticket, Assets, Notifications, and Billing sync with the help of Policy and Packages. This feature is going to be available on Opt-in basis. By enabling toggle on the PSA Integration page, you will be able to configure ConnectWise PSA - Integration via Policies.
+
+All the ConnectWise PSA partners who have configured PSA Integration will be able to see the Toggle option on the portal and will be able use Policies and Packages for configuring PSA.
+
+Bug Fixes / Known Issues
+
+The following issues will be resolved with this month's release:
+
+Agent - We've fixed an issue where Mac endpoints with M2 processors, showing as M1.
+
+Agent - We've fixed an issue where partners were unable to change site plan from Elite to Essential.
+
+Automation - We have resolved an issue where RecentTasksActivity API was giving 500 error when called from GQL(RecentTasksActivity).
+
+Automation - We have resolved an issue where partners were unable to Deactivate Scheduled Task using First Check-in Trigger until the first new agent is installed.
+
+Automation - We have resolved an issue where partners were unable to Deactivate Scheduled Task using other Triggers due to expired Time-to-live (TTL).
+
+Patching - We're releasing a bug fix regarding multiple patch deployments getting triggered for same Update ID.
+
+Ticketing / PSA integration - We've fixed an issue that occurred if an MSP has configured VMware/HyperV in Exception devices, but it was not getting synced with the respective Contract.
+
+Ticketing / PSA integration - Incoming Tickets should not continue to update if the Site is no longer mapped.
+
+ 
+
+ConnectWise reserves the right to remove any enhancement or fix from this update if it does not pass quality assurance tests.
+
+ 
+
+ConnectWise RMM Update for May 2023 ConnectWise RMM Update for July 2023
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ConnectWise RMM Update for January 2023
+ConnectWise RMM Update for February 2023
+ConnectWise RMM Update for March 2023
+ConnectWise RMM Update for April 2023
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

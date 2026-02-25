@@ -1,0 +1,114 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   PSA Integration   Computicate Integration Guide
+Computicate Integration Guide
+Last updated
+Jan 8, 2025
+Table of contents
+Overview
+1. Prepare Computicate for ConnectWise Tickets
+2. Enable the API in ConnectWise
+3: Complete the Integration in Computicate
+4. Begin Working
+Overview
+
+Computicate is a next-generation Professional Service Automation (PSA) platform that offers MSPs easy set-up and neatly packed intelligence, including real-time metrics and consumption-based billing as well as seamless integration with other tools and cloud platforms.
+
+Use this guide to walk through the setup process for the Computicate integration with ConnectWise.
+
+Note: 
+
+Enabling a PSA integration disables email notifications through Notification Rules.
+Computicate integration is not available in EU and AU.
+1. Prepare Computicate for ConnectWise Tickets
+Log in to Computicate as an admin.
+Click Settings → Servicedesk Settings.
+Select RMM Ticket integration settings → Edit RMM Ticket integration settings:
+Select the Default SLA that will be applied to ConnectWise tickets.
+Select the default Category for ConnectWise tickets if no category is selected.
+Select the Default priority for ConnectWise tickets if no priority is selected.
+
+Note: Unlike Computicate, ConnectWise RMM uses a pre-defined set of statuses, categories, and priorities:
+
+The Computicate ticket category ConnectWise Family Names includes all ConnectWise ticket categories.
+ConnectWise priorities Emergency, Low, and Medium are available.
+A support user group called ConnectWise Group includes two users. The ConnectWise NOC can be used to assign a ticket to the ConnectWise NOC from Computicate, and the ConnectWise Help Desk Service can be used to assign to the Help Desk Service if the service is enabled.
+
+2. Enable the API in ConnectWise
+Log in to the ConnectWise Asio™ platform (ITSupport Portal) (control.itsupport247.net) with admin credentials.
+Go to Settings > Account Administration > Integration > PSA Integration.
+Select Computicate from the drop-down.
+Write down the API token and your chosen username and password.
+
+Note: Leave this screen open.
+
+3: Complete the Integration in Computicate
+Log in to Computicate as an Admin.
+Click Integrations in the left menu bar.
+Select the ConnectWise integration and click Edit ConnectWise Integration.
+Enter the username, password, and API token created in ConnectWise.
+Turn the switch to active.
+Click the refresh icon next to the callback URL field to generate a unique callback URL and copy the URL to your clipboard.
+Leave this screen open and go back to the ConnectWise Asio™ platform (ITSupport Portal) PSA Integration page.
+Paste the Callback URL in the Callback URL field.
+Be sure the callback method is set to GET.
+Click Activate to enable the API connection.
+Go back to the Computicate screen.
+Click TEST CONNECTION to verify credentials and to receive a Connection successful message.
+
+4. Begin Working
+
+After several minutes, the initial sync completes. All current tickets in ConnectWise will be created in Computicate as a one-time action and you can begin working.
+
+Within up to 30 minutes, all client groups and machines also will be available in Computicate and can be used to connect machines for service delivery and billing.
+
+Ticket handling in Computicate remains the same. To create a ticket and assign it to the ConnectWise NOC:
+
+Open the ticket with the normal update option (Not with Quick Update).
+Click User Support Field → ConnectWise Group → ConnectWise NOC.
+The ticket category clears. Click the category field and select a ConnectWise status in the right menu.
+Only Computicate tickets with a ConnectWise family name category can be assigned to NOC.
+Select the ticket type.
+Type the update and click Save.
+
+The ticket will now be created in ConnectWise and assigned to the ConnectWise NOC. All NOC updates will reflect in Computicate. When a ticket is closed, both systems reflect the closure.
+
+Other notes:
+
+Time spent on tickets from the ConnectWise portal will not be recorded in Computicate.
+Closed tickets can only be re-opened in Computicate. In ConnectWise, a new ticket must be created.
+Synchronization of tickets and ticket updates will usually process within 30 seconds but can occasionally take more time because of high volume.
+ 
+
+If you have any questions or need additional support related to your integration with ConnectWise, contact Computicate at support@computicatepsa.com.
+
+ 
+
+CommitCRM Integration Guide ConnectWise PSA (Manage) Integration
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ConnectWise PSA (Manage) Integration
+ConnectWise RMM features the ability to integrate with the ConnectWise PSA system to sync tickets, assets, configuration items, billing data, and cont...
+Autotask Integration Guide
+Accelo Integration Guide
+PSA Synchronization Dashboard
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

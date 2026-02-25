@@ -1,0 +1,124 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   RMM Reporting API   Reporting API REST Resources   Missing Antivirus
+Missing Antivirus
+Last updated
+Jul 8, 2025
+Table of contents
+Overview
+Endpoint and URI
+Method
+Request Body
+Response Body
+Parameter Descriptions for Missing Antivirus
+Source of Data in the Asio Platform
+Overview
+
+Returns a list of resources that are missing antivirus software.
+
+Endpoint and URI
+
+https://itsapi.itsupport247.net/repo...ivirus/missing
+
+Method
+
+POST
+
+Request Body
+
+{
+
+"Month":4,
+
+"SiteCode":"AGTSolutions",
+
+"Year":2015,
+
+"ResourceType":"server"
+
+}
+
+Response Body
+
+{
+
+"error":null,
+
+"missingAntivirus":[
+
+{
+
+"friendlyName":"Windows Server 2008_1",
+
+"iPAddress":"10.2.43.3",
+
+"lastScanDate":"2015-01-29",
+
+"MachineId": 9223372036854775807,
+
+"resourceName":"WS2008_1"
+
+},
+
+{
+
+...
+
+},
+
+{
+
+...
+
+}
+
+]
+
+}
+
+Parameter Descriptions for Missing Antivirus
+Parameter	Description
+"Month"	Requested month (numerical)
+"SiteCode"	Unique site code listed in Asio™ Platform (ITSupport Portal)
+"Year"	Requested year
+"ResourceType"	Desktop or server
+"friendlyName"	Machine friendly name in Asio™ Platform (ITSupport Portal)
+"iPAddress"	Machine IP address
+"lastScanDate"	Last antivirus scan date
+"MachineId"	Unique machine ID in ConnectWise database
+"resourceName"	Machine name in Asio™ Platform (ITSupport Portal)
+Source of Data in the Asio Platform
+
+Reports > Asio > Executive Report > Server Data / Desktop Data > Antivirus Definitions > Missing
+
+Memory Utilization Missing Patches Summary
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Agent Details
+Retrieves agent information for the authenticated partner and the specified site.
+Antivirus Summary
+Retrieves counts of machines having antivirus protection in the following states: Updated, Outdated, Not Installed, or Information Unavailable.
+Antivirus Version Summary
+Retrieves currently detected antivirus software and the definition version.
+BCDR Continuity Appliances
+Retrieves a list of Recover Continuity backup appliances provisioned at the given site.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

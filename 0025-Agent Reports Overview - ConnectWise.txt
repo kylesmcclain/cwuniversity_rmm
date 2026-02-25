@@ -1,0 +1,153 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Agents   Agent Reports Overview
+Agent Reports Overview
+Last updated
+Dec 3, 2025
+Table of contents
+Overview
+Agent Reports
+Overview
+
+ConnectWise Asio® agent reports provide visibility into agent-related activities, automation, audits, and technical details. These reports help partners and internal teams monitor agent deployment, performance, and compliance across environments.
+
+Note: All details in generated reports are dependent on user access permissions and resource assignments. Users can only generate reports for companies and sites that they have access to.
+
+Agent Reports
+
+Navigate to Reports > Asio > Agents and select one of the following reports.
+
+Category
+
+	
+
+Report
+
+	
+
+Description
+
+
+
+
+Agents
+
+	
+
+Agent Report
+
+	
+
+Gives information about the overall agents installed
+
+
+
+
+RMM Scan Configuration*
+
+	
+
+Provides configuration information for the Agent Deployment Tool per site.
+
+
+
+
+RMM Scan Details*
+
+	
+
+Lists the IP range and deployment schedules to scan the machines in the network for the agent.
+
+
+
+
+Agent Uninstall Report
+
+	
+
+Gives information about the overall agents uninstalled
+
+
+
+
+Network Devices Report
+
+	
+
+Displays a list of Network Devices identified via the network probe and can be used to identify network devices of different types, IP addresses, and makes/models.
+
+
+
+
+Probe Devices Report
+
+	
+
+Lists all the RMM devices on which a Network Probe has been installed.
+
+
+
+
+User Management Report
+
+	
+
+Provides information about the users logged in to different endpoints in a given time period
+
+ 
+
+Refer to the articles below to learn more about each report:
+
+Agent Report
+Agent Uninstall Report
+Network Devices Report
+Probe Devices Report
+RMM Scan Configuration Report
+RMM Scan Details Report
+User Management Report
+
+ 
+
+ 
+
+ 
+
+Agent Repair Utility Agent Schedules
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Asio Agent Requirements
+The article includes the currently supported operating systems for agent installations.
+Uninstalling an Agent
+This guide includes the steps required to uninstall an agent from a desktop or server in RMM or Asio via the Devices page.
+Cloud Services
+Agent Tamper Protection
+Agents on Windows devices utilize tamper protection to restrict users from stopping the agent core services.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

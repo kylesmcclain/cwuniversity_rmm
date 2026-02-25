@@ -1,0 +1,94 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   ConnectWise RMM Release Notes   RMM Release Notes Archive   ConnectWise RMM Update for January 2023
+ConnectWise RMM Update for January 2023
+Last updated
+Jan 19, 2023
+Table of contents
+Announcements
+Custom Fields for Company/Site
+ConnectWise RMM
+Agent and Platform
+Automation
+Reporting
+Ticketing / PSA Integration
+Bug Fixes / Known Issues
+Announcements
+Custom Fields for Company/Site
+
+Partners that have migrated to the ConnectWise SSO and enabled our Company/Site hierarchy will get an option to create or manage the custom fields at Company/Site levels.
+
+ConnectWise RMM
+Agent and Platform
+
+Agent Update. A new agent, version 3.0.3, will be rolled out on January 20th. Windows, MAC, and Linux agents will be updated to the latest version automatically.
+
+Automation
+
+Automation Support for Custom Field Variables from Company/Site. When searching for Custom Fields using the Script Functions Set Custom Field and Set Pre-Defined Value, partners can see a new column called "Source" that displays whether the Custom Field exists on the Endpoint, Site, or Company level.
+
+Note: Script Functions Set Custom Field and Set Pre-Defined Value already supports all Custom Fields.
+
+Reporting
+
+Legacy Executive Report Depreciation. We will be deprecating the Legacy Executive reports for the ConnectWise RMM partners which is available from the legacy reports section.
+
+Ticketing / PSA Integration
+
+Rebranding of ConnectWise Manage. We are rebranding the ConnectWise Manage PSA integration to ConnectWise PSA across all sections/pages.
+
+Bug Fixes / Known Issues
+
+The following issues will be resolved with this month's release:
+
+Portal - CES migrated partners will be able to see the Company Name when selecting a site in Agent Download from the Networking Tab or in the Cloned Devices sections.
+
+Platform - Fixed an issue where the Customs monitors page was taking around 30-45 seconds to load the data and in some cases, it would return a blank page.
+
+Device Groups - Resolved an issue where the user is trying to apply keywords to filter sites. It will now apply to all sites instead of filtered sites.
+
+Device Groups - Resolved an issue where the Machine role criteria was not returning the correct data for the target endpoints.
+
+Automation - Resolved the Tasking Error "error_invalid_endpoint_status" that occurs when sending trigger First Check-in for execution.
+
+Automation - Resolved an issue where Scheduled Tasks did not work with a user's Site access.
+
+Patching - We have fixed an issue where the Application Updates which were not created by Client Site Manager users were visible to Client Site Manager users.
+
+Patching - We have fixed an issue where the patching assessment failure alerts was not getting generated for the servers.
+
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ConnectWise RMM Update for February 2023
+ConnectWise RMM Update for March 2023
+ConnectWise RMM Update for April 2023
+ConnectWise RMM Update for May 2023
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

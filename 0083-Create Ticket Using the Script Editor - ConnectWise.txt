@@ -1,0 +1,100 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Automation   Tasks   Create Ticket Using the Script Editor
+Create Ticket Using the Script Editor
+Last updated
+Mar 17, 2025
+Table of contents
+Overview
+Navigation Path
+Create Ticket using the Script Editor
+Overview
+
+This article provides information on the Create Ticket functionality in the Asio™ platform. This functionality allows you to create a ticket using the script editor based on specific conditions defined in the script.
+
+Note:
+
+Create Ticket functionality is available to all the partners who have Asio Ticketing enabled.
+To enable Asio ticketing and learn more about it, review the Asio Ticketing documentation.
+PSA Partners can view the Ticket Sync details in PSA Portal as well as in Asio Ticketing.
+Navigation Path
+
+To access the Script Editor:
+
+Log in to the Asio™ platform.
+Navigate to Automation > Tasks.
+On the Tasks page, click the Add button in the top-right corner and select Script Editor as shown below.
+
+
+Create Ticket using the Script Editor
+
+To create a ticket, follow these steps:
+
+On the New Script page, add an appropriate Name and Description for the script.
+
+
+Click on the Add Row button and under the Add Function pod, select the Create Ticket function.
+
+
+A Create Ticket pop-up window opens.
+Enter a Name, Description and Priority in the Create Ticket pop-up window.
+
+
+
+Note:
+
+You can use system variables or predefined system variables in the Name and the Description field as shown above. To learn more about how to do that, review the Script Type Tasks documentation. You can add as much information as you want in these fields to make it more informative.
+You can also set user variables in the script and reference them in the fields above. For example: @uservariable@. To learn more about how to do that, review the Script Type Tasks documentation.
+Click Save to save the details in the pop-up.
+The previous script editor screen is displayed. Click Save to save the task.
+You are navigated back to the Tasks page as shown here:
+
+
+Now to run the script, search for the created script using the script name and click on the Schedule icon as highlighted here.
+
+
+You are re-directed to the Schedule Task page where you have the option to run the task now or schedule it for a later date. To learn more about creating and scheduling tasks, review the Create and Schedule Script Type Tasks article.
+
+Note: You can also click on the Save and Run button. By doing so, you are directly navigated to the Scheduled Tasks page.
+
+You can view if the script ran successfully in the Endpoints > Devices > Recent Tasks section in the Asio platform.
+You can also view the details of the Ticket in Service Delivery > Service Tickets > All Tickets tab in the Asio platform.
+To know more about the Ticket Sync between PSA and ConnectWise RMM, review the Tickets section in CW PSA Integration article.
+Create Suspension for Monitors and Alerts in Script Editor Creating Tasks Using the Script Editor
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Create and Schedule Script Type Tasks
+Create and schedule a script task.
+Running RMM Tasks
+How to run a task, create a custom script, or configure a task for the next agent check-in.
+Available Tasks
+RMM Task Reporting
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

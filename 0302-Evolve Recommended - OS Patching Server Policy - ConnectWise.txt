@@ -1,0 +1,294 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Policies and Packages   Evolve Recommended - Best Practices for Policies and Packages   Evolve Recommended - OS Patching Server Policy
+ Expand/collapse global location
+Evolve Recommended - OS Patching Server Policy
+Last updated
+Oct 29, 2025
+Table of contents
+Overview
+Policy Details
+Policy Settings
+Overview
+
+This article covers the recommended settings to employ for your OS Patching Server Policy. These best practice settings for different RMM configurations are based on the feedback and analysis of policies used by partners.
+
+Policy Details
+Policy Usage	OS Patching Server policies allow the partner to define how the Server endpoints are patched by the RMM Agent.
+Policy Type	OS Patching Server
+Policy Name	Evolve Recommended - OS Patching Server Policy
+Policy Applies To	
+
+These settings will be applied to the following types of agents:
+
+RMM Enabled Windows Server
+
+RMM Enabled Linux Server
+
+Policy Settings
+Section	Field Name	Value
+
+
+OS Patching Automation
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+	
+
+ 
+
+	
+
+On
+
+
+
+
+Security Updates
+
+	
+
+Deploy only Partner or NOC Approved
+
+
+
+
+Critical Updates
+
+	
+
+Deploy all
+
+
+
+
+Updates
+
+	
+
+Deploy all
+
+
+
+
+Drivers
+
+	
+
+Do not Deploy
+
+
+
+
+Feature Packs
+
+	
+
+Do not Deploy
+
+
+
+
+Update Rollups
+
+	
+
+Do not Deploy
+
+
+
+
+Tools
+
+	
+
+Do not Deploy
+
+
+
+
+Schedule
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+	
+
+ 
+
+	
+
+ 
+
+
+
+
+Download
+
+	
+
+Immediately
+
+
+
+
+Install
+
+	
+
+At Scheduled time
+
+
+
+
+Repeat
+
+	
+
+Every Week on Saturday and Sunday
+
+
+
+
+Between (Local machine time)
+
+	
+
+12:00 am to 6:00 am
+
+
+
+
+Patching Catchup
+
+	
+
+On
+
+
+
+
+Reboot
+
+	
+
+At Scheduled time
+
+
+
+
+Repeat
+
+	
+
+Every Week on Saturday and Sunday
+
+
+
+
+Between (Local machine time)
+
+	
+
+4:00 am to 8:00 am
+
+
+
+
+Extended Pending Reboot Detection
+
+	
+
+Off
+
+
+
+
+Always Reboot Endpoint
+
+	
+
+Off
+
+
+
+
+System Configuration
+
+	
+
+The user can check for updates
+
+	
+
+No
+
+
+
+
+Notification
+
+	
+
+Notify user before initiating reboot
+
+	
+
+Off
+
+Evolve Recommended - OS Patching Desktop Policy Evolve Recommended - Remote Access Policy
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Evolve Recommended - RMM Site Configuration Policy
+Evolve Recommended - Network Monitoring Configurations
+Evolve Recommended - OS Patching Desktop Policy
+Evolve Recommended - Communicator Policy
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

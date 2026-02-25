@@ -1,0 +1,131 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Tech Advantage   Desktop Projects
+Desktop Projects
+Last updated
+Oct 1, 2024
+Table of contents
+Overview
+How to Request a Standard Desktop Project
+Standard Desktop Projects
+Creating a Standard Desktop Project
+When Your Project Work is Complete 
+How to Request a Custom Desktop Project
+Custom Desktop Projects
+Overview
+
+Desktop Projects are scheduled on a first come, first serve basis. You can select from a wide range of Desktop Projects and schedule a maintenance window from the list of available time slots. You can check the status of your Project on the ITSupport Portal.
+
+Desktop Projects can be either Standard or Custom in nature. Standard Desktop Projects can be ordered directly from the ITSupport Portal, whereas Custom Projects can be requested via email and are managed through Service Request Tickets.
+
+Learn more about Best Practices for ensuring successful completion of your Desktop Projects by ConnectWise's Project Assistance (Tech Advantage) team.
+
+How to Request a Standard Desktop Project
+Standard Desktop Projects
+
+The following are standard Desktop Projects offered through ConnectWise Project Assistance:
+
+Add to Domain / Create a new user
+Adobe Application Issue
+Antivirus Installation / Uninstallation
+Antivirus Scan Request
+Application Installation / Uninstallation
+Browser issue
+Internet Explorer troubleshooting
+Map Drive Verification
+Mapped drive issue
+Microsoft .NET Installation
+MS Office application issue
+Office 365 Migration Cutover
+Office 365 Migration Hybrid
+Patch Installation Request
+Permission issue
+Printer Issue / Printer Uninstallation
+System Performance Issues
+User Profile Verification & Map Drive
+User Profile Migration along with Outlook
+User Profile Migration without Outlook
+Creating a Standard Desktop Project
+
+To request a Standard Desktop Project, log on to the Asio platform (ITSupport Portal) and go to Settings > Account Administration > Products & Services > ConnectWise Project Assistance (Tech Advantage) > Desktop Projects > Create Desktop Project.
+
+Make the following selections:
+Select Site.
+Select Operating System: (Optional). Select which desktop operating systems the project will apply to. If the project is not OS-specific, leave this setting on ALLOperating Systems. You still have the option to filter devices by OS on the next page.
+Select Project Window: Select an available time slot for the project. Time slots are first-come, first-serve. You can fine-tune the time slot later on in the request process. 
+Note: Times displayed in the Project Window menu are Pacific Standard Time (PST).
+Click Go to proceed. 
+
+The page refreshes to display the list of desktops at the site (you can use the Select Operating System drop-down to filter the list by OS, if desired). Select the desktop machines you want to add to this project.
+Under Select Project, choose a project from the drop-down for each desktop. If the same project will be applied to more than one desktop, use the Copy to Selected Desktops option in the far-right column to apply that project to all currently selected desktops. As you select projects, the Service Price column will update with the applicable project fee for each desktop.
+Note: If a machine does not have credentials associated with the device, you cannot select a project.
+Note: Projects can differ from desktop to desktop, but only one project can be selected for each desktop.
+When you have made your selections, click Next to continue.
+Make selections for the following components:
+Start/End Times and Maintenance Window: You can limit the time slot by adjusting the start and end times and/or Maintenance Window as desired. Changes to one section are automatically updated in the other.
+Comments: If you have any specific comments or directions for the NOC, you can enter them for each desktop. If the comment applies to all desktops you can use the Copy Comments to all option on the right to apply it to all desktops.
+If machine is locked by User: If a user account is already logged on to the desktop when the NOC goes to perform the project work, select how the NOC should proceed:
+Forcefully log off User and work on this Desktop Project: The NOC will log the user off the machine and begin work on the project.
+Do not work on this Desktop Project: The NOC will abandon the project for the desktop if a user is logged on. The task will be updated to include that information.
+
+Wake on LAN configuration: If the desktops support Wake-on-LAN, and if Wake-on-LAN is configured on the desktop, you can schedule the desktops to power-on before the Project time slot. To use Wake-on-LAN, you must select a management system (Desktop or Server). For more information on configuring Wake-on-LAN, please see Wake-on-LAN Management.
+The Wake-on-LAN manager is required so that the appropriate commands can be sent to power on the machines. Those commands cannot be sent directly from the ITSupport Portal.
+Contact Notification: Select Yes or No based on whether the project contact can be notified during non-business hours.
+Click Next to proceed to the final screen.
+The final screen will show you a summary of the ConnectWise Project Assistance (Tech Advantage) service ordered and the selected configuration and notification settings.
+
+Select I agree to be invoiced for each project. You must acknowledge that you agree to be invoiced for the work by selecting the check box and then clicking Submit. An acknowledgment window will appear.
+When Your Project Work is Complete 
+For services completed, fees will appear on the next month’s invoice. Invoices are created during the first week of the month for the previous month.
+You have three days to review the work done after the NOC has completed a project. During that time you can send the request back to the NOC if you believe the project has not been fully completed.
+How to Request a Custom Desktop Project
+
+Note: Custom desktop projects are typically Windows-based, but the ConnectWise Project Assistance team is also capable of undertaking Mac and Linux desktop project activities. Learn more about custom Linux projects.
+
+Follow these steps to request a Custom Desktop Project:
+
+Send an email to DesktopProjects@connectwise.com that includes a detailed description of your project requirements.
+The Project Team will acknowledge the request.
+After reviewing your project requirements, the Project Team will respond to your email request to confirm if your project can be undertaken. A price quote and/or applicable rates will be provided.
+Note: For some requests, a partner/technician phone call may be necessary to clarify the project scope before a price quote can be provided.
+If you wish to proceed with the project, reply to the price quote email indicating your approval.
+The Project Team will work with you to gather required information and create an execution schedule based on resource availability.
+The project will be executed according to the agreed-upon schedule window. You will receive project status updates at regular intervals.
+When the project work has been completed, you will be asked to certify the project as Complete and approve billing for the project.
+Once you have confirmed that the project is complete, the project ticket will be marked as Completed by the NOC and a separate invoice (not included in the monthly invoice) will be generated and sent to you.
+Custom Desktop Projects
+
+Some examples of Custom Desktop Projects you can order for ConnectWise Project Assistance include:
+
+User Profile Verification & Map Drive
+User Profile Migration along with Outlook
+User Profile Migration without Outlook
+Windows 10 Version Upgrade
+Windows 7 to Windows 10
+Tech Advantage Desktop Projects: Tips and Best Practices
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Project List
+Desktop Projects: Tips and Best Practices
+Server Projects
+Server Projects Best Practices
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

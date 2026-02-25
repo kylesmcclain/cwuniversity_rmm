@@ -1,0 +1,556 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Integrations to ConnectWise RMM   Endpoint Protection   RMM Recommended AV Server Exclusion List
+RMM Recommended AV Server Exclusion List
+Last updated
+Jul 7, 2025
+Table of contents
+Overview
+Overview
+
+While an endpoint protection scan is being performed on your system, files may become locked, causing performance and operating system reliability problems. To prevent locking, add these folders and processes to the exclusion list.
+
+Note: If you have made any changes to where programs are installed, the paths below may be different on your machines.
+
+Product Description	Files/Folders	Location	Defined By
+ConnectWise RMM Desktop \ Server agent Exclusions
+Desktop \ Server agent Exclusions for 64 bit
+ 	 	Drive:\Program Files (x86)\SAAZOD	 
+ 	 	Drive:\Program Files (x86)\ITSPlatform	 
+ 	 	Drive:\Program Files (x86)\ITSPlatformSetupLogs	 
+Desktop \ Server agent Exclusions for 32 bit
+ 	 	Drive:\Program Files (x86)\SAAZOD	 
+ 	 	Drive:\Program Files (x86)\ITSPlatform	 
+ 	 	Drive:\Program Files (x86)\ITSPlatformSetupLogs	 
+Windows Operating System
+Windows Updates or Automatic Updates database	datastore.edb	%windir%\SoftwareDistribution\Datastore	 
+Windows Updates or Automatic Updates related files (logs)	Res*.log
+Edb*.jrs
+Edb.chk
+Tmp.edb	%windir%\SoftwareDistribution\Datastore\Logs	 
+Windows Security files	*.edb
+*.sdb
+*.log
+*.chk
+*.jrs	%windir%\Security\Database	 
+SBS POP3 connector Failed Mail	 	Drive:\Program Files\Microsoft Windows Small Business Server\Networking\POP3\Failed Mail	 
+SBS POP3 connector Incoming Mail	 	Drive:\Program Files\Microsoft Windows Small Business Server\Networking\POP3\Incoming Mail	 
+Group Policy user registry information	NTUser.pol	%allusersprofile%	 
+Group Policy client settings file	Registry.pol	%Systemroot%\System32\GroupPolicy	 
+Paging file	pagefile.sys	 	 
+Windows Server Update Services (WSUS)	 	\WSUS\WSUSContent
+\WSUS\UpdateServicesDBFiles
+\SoftwareDistribution\Datastore
+\SoftwareDistribution\Download	 
+Microsoft Message Queuing (MSMQ)
+MSMQ	 	%SystemRoot%\system32\MSMQ
+%SystemRoot%\system32\MSMQ\storage	 
+Domain Controller
+Active Directory and Active Directory-related files
+Lightweight Directory Services (Enterprise Edition only)	dsamain.exe	%windir%\System32	 
+Main NTDS database files	Ntds.dit
+Ntds.pat	%windir%\Ntds	 
+Active Directory transaction log files	EDB*.log
+Res*.log
+Edb*.jrs
+Ntds.pat	%windir%\Ntds	HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NTDS\Parameters\Database Log Files Path
+NTDS Working folder files	Temp.edb
+Edb.chk	%windir%\Ntds	HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NTDS\Parameters\DSA Working Directory
+Sysvol, File Replication Server (FRS), and Distributed File System (DFS)
+Sysvol files (FRS working directory)	Ntfrs.jdb	%windir%\Ntfrs\jet	HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NtFrs\Parameters\Working Directory
+edb.chk	 %windir%\Ntfrs\jet\sys	 
+FRS Database Log files	*.log
+Edb*.jrs	 %windir%\Ntfrs\jet\log	HKEY_LOCAL_MACHINE\System\Currentcontrolset\Services\Ntfrs\Parameters\DB Log File Directory
+Sysvol Staging folder	Nntfrs_cmp*	%systemroot%\Sysvol\Staging areas	HKEY_LOCAL_MACHINE\System\Currentcontrolset\Services\NtFrs\Parameters\Replica Sets\GUID\Replica Set Stage
+Sysvol files	*.adm
+*.admx
+*.adml
+Registry.pol
+*.aas
+*.inf
+Fdeploy.inf
+Scripts.ini
+*.ins
+Oscfilter.ini	%systemroot%\Sysvol\Domain	 
+FRS Preinstall folder	Ntfrs*.*	%windir%\sysvol\domain\DO_NOT_REMOVE_NtFrs_PreInstall_Directory	 
+DFSR database and working folders	$db_normal$
+FileIDTable_*
+SimilarityTable_*
+*.xml
+$db_dirty$
+$db_lost$
+Dfsr.db
+Fsr.chk
+*.frx
+*.log
+Fsr*.jrs
+Tmp.edb	%systemdrive%\System Volume Information\DFSR  (this is a hidden folder)	HKEY_LOCAL_MACHINE\System\Currentcontrolset\Services\DFSR\Parameters\Replication Groups\GUID\Replica Set Configuration File=Path >
+DHCP, DNS, and WINS Servers
+DHCP files	*.mdb
+*.pat
+*.log
+*.chk
+*.edb	%systemroot%\System32\DHCP	HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DHCPServer\Parameters
+DNS Server
+ 	*.log
+*.dns
+BOOT	%systemroot%\System32\Dns
+
+
+
+
+ 	 
+WINS Server	*.chk
+*.log
+*.mdb	%systemroot%\System32\Wins	 
+IIS Server
+Default compression directory in IIS 7.0	 	%SystemDrive%\inetpub\temp\IIS Temporary Compressed Files	 
+Default compression directory in IIS 6.0	 	%systemroot%\IIS Temporary Compressed Files	 
+Web content directory	 	%SystemDrive%\InetPub	 
+Processes (32-bit)	inetinfo.exe
+w3wp.exe	%systemroot%\System32\inetsrv	 
+Processes (64-bit)	inetinfo.exe
+w3wp.exe	%systemroot%\SysWOW64\inetsrv	 
+Hyper-V
+Default virtual machine configuration directory	 	Drive:\ProgramData\Microsoft\Windows\Hyper-V	 
+Default virtual hard disk drive directory	 	Drive:\Users\Public\Documents\Hyper-V\Virtual Hard Disks	 
+Default snapshot files directory, if used	 	%systemdrive%\ProgramData\Microsoft\Windows\Hyper-V\Snapshots	 
+Processes	Vmms.exe
+Vmwp.exe	 	 
+Microsoft Cluster Servers (MSCS)
+Quorum hard disk	 	/MSCS
+%Systemroot%\Cluster	 
+CSV path, if using Live Migration (Hyper-V) together with Cluster Shared Volumes	 	Drive:\Clusterstorage	 
+Temp folder for Cluster Service account	 	\clusterserviceaccount\Local Settings\Temp	 
+Microsoft SQL Server
+SQL Server 2012
+Processes	SQLServr.exe	Drive:\Program files\Microsoft SQL Server\MSSQL11.<Instance Name>\MSSQL\Binn	 
+ReportingServicesService.exe	Drive:\Program files\Microsoft SQL Server\MSRS11.<Instance Name>\Reporting Services\ReportServer\Bin
+MSMDSrv.exe	Drive:\Program files\Microsoft SQL Server\MSAS11.<Instance Name>\OLAP\Bin
+SQL Server 2008 R2
+Processes	SQLServr.exe	Drive:\Program files\Microsoft SQL Server\MSSQL10_50.<Instance Name>\MSSQL\Binn	 
+ReportingServicesService.exe	Drive:\Program files\Microsoft SQL Server\MSSQL10_50.<Instance Name>\Reporting Services\ReportServer\Bin
+MSMDSrv.exe	Drive:\Program files\Microsoft SQL Server\MSSQL10_50.<Instance Name>\OLAP\Bin
+SQL Server 2008
+Processes	SQLServr.exe	Drive:\Program files\Microsoft SQL Server\MSSQL10.<Instance Name>\MSSQL\Binn	 
+ReportingServicesService.exe	Drive:\Program files\Microsoft SQL Server\MSSQL10.<Instance Name>\Reporting Services\ReportServer\Bin
+MSMDSrv.exe	Drive:\Program files\Microsoft SQL Server\MSSQL10.<Instance Name>\OLAP\Bin
+SQL Server 2005
+Processes	SQLServr.exe	Drive:\Program files\Microsoft SQL Server\MSSQL.1\MSSQL\Binn	 
+SQLWriter.exe	Drive:\Program Files (x86)\Microsoft SQL Server\90\Shared
+ReportingServicesService.exe	Drive:\Program files\Microsoft SQL Server\MSSQL.3\Reporting Services\ReportServer\Bin	 
+MSMDSrv.exe	Drive:\Program files\Microsoft SQL Server\MSSQL.2\OLAP\Bin
+SQL Server Data Engine (MSDE) and Log Files
+SQL MSDE folders	 	Drive:\Program files\Microsoft SQL Server	 
+SQL 2003 MSDE	sqlmangr.exe	Drive:\Program files\Microsoft SQL Server\80\Tools\Binn	 
+sqlservr.exe	Drive:\Program files\Microsoft SQL Server\MSSQL$MSFW
+Analysis Services data	*.ldf
+*.mdf
+*.ndf	Drive:\Program files (x86)\Microsoft SQL Server\*\mssql\data	 
+
+
+ 	Drive:\Program files (x86)\Microsoft SQL Server\*\OLAP\Data
+*.ldf
+*.mdf
+*.ndf	Drive:\Program files\Microsoft SQL Server\*\mssql\data
+
+
+ 	Drive:\Program files\Microsoft SQL Server\*\OLAP\Data
+Analysis Services backup files	 	Drive:\Program files\Microsoft SQL Server\MSSQL.X\OLAP\Backup	 
+Analysis Services logs	 	Drive:\Program files\Microsoft SQL Server\MSSQL.X\OLAP\Log	 
+Full-Text catalog files - Default instance	 	Drive:\Program files\Microsoft SQL Server\MSSQL\FTDATA	 
+Full-Text catalog files - Named instance	 	Drive:\Program files\Microsoft SQL Server\MSSQL$instancename\FTDATA	 
+Backup files	.bak
+.trn	 	 
+Microsoft Internet Security & Acceleration (ISA) Server
+Installation folder	 	Drive:\Program files\Microsoft ISA Server	 
+Web cache folder	 	 	ISA server administrator
+Report Summary Generator	dailysum.exe	Drive:\Program files\Microsoft ISA Server	 
+Report Generator (ISA Server 2000)	repgen.exe	 
+Report Generator (ISA Server 2004/2006)	isarepgen.exe	 
+Diagnostic Logging Viewer	isadlviewer.exe	 
+Storage Service	isastg.exe	 
+Control Service	mspadmin.exe	 
+Web Content Download Service	w3prefch.exe	 
+Firewall Service	wspsrv.exe	 
+Log folder	 	Drive:\Program files\Microsoft ISA Server\ISALogs	 
+Microsoft Intelligent Application Gateway (IAG)
+Installation folder	 	Drive:\whale-com\e-gap	 
+Whale Monitor Manager	MonitorMgrCom.exe	%SystemDrive%\Whale-Com\e-Gap\common\bin	 
+Whale Session Manager	SessionMgrCom.exe	 
+Whale User Manager	UserMgrCom.exe	 
+Whale Log Server	whlerrsrvd.exe	 
+Whale Network Connector Server	whlios.exe	 
+Whale File Sharing Service	ShareAccess.exe	%SystemDrive%\Whale-Com\e-Gap\von\FileAccess	 
+Microsoft Forefront Threat Management Gateway (TMG) and Unified Access Gateway (UAG)
+Database file	tmp.edb	%windir%\SoftwareDistribution\Datastore	 
+Log files	 	%ProgramData%\Microsoft\Search\Data\Applications\Windows	 
+Forefront TMG Medium Business Edition
+Installation folder	 	Drive:\Program Files (x86)\Microsoft ISA Server	 
+Malware scanning cache	 	%SystemRoot%\Temp\ScanStorage	 
+Log folder	 	Drive:\Program Files (x86)\Microsoft ISA Server\Logs	 
+Log queue	 	 
+Reporting folder	 	 	TMG administrator
+Web cache	 	D:\urlcache	 
+Web Content Download Service	w3prefch.exe	Drive:\Program Files (x86)\Microsoft ISA Server	 
+Report Summary Generator	dailysum.exe	 
+Report Generator	isarepgen.exe	 
+Diagnostic Logging Viewer	isadlviewer.exe	 
+Storage Service	isastg.exe	 
+Administration Component	mspadmin.exe
+Firewall Service	wspsrv.exe
+Forefront TMG 2010
+Installation folder	 	Drive:\Program Files\Microsoft Forefront Threat Management Gateway	 
+TMG SQL Express installation folder	 	Drive:\Program Files\Microsoft SQL Server\MSSQL10.ISARS	 
+TMG SRS installation folder	 	%ProgramFiles%\Microsoft SQL Server\MSSQL10.MSFW	 
+Malware scanning cache	 	%SystemRoot%\Temp\ScanStorage	 
+Log queue	 	Drive:\Program Files\Microsoft Forefront ThreatManagement Gateway\Logs	 
+Web cache	 	 	TMG administrator
+Report Summary Generator	dailysum.exe	Drive:\Program Files\Microsoft Forefront Threat Management Gateway	 
+Report Generator	isarepgen.exe	 
+Diagnostic Logging Viewer	isadlviewer.exe	 
+Managed Control Service	IsaManagedCtrl.exe	 
+Storage Service	isastg.exe	 
+Administration Component	mspadmin.exe	 
+Firewall Service	wspsrv.exe	 
+Web Content Download Service	w3prefch.exe	 
+Forefront UAG 2010
+Installation folder	 	Drive:\Program Files\Microsoft Forefront Unified Access Gateway	 
+DNS-ALG Service	DnsAlgSrv.exe	 
+Monitoring Manager	MonitorMgrCom.exe	 
+Session Manager	SessionMgrCom.exe	 
+File Sharing	ShareAccess.exe	 
+Quarantine Enforcement Server	uagqessvc.exe	 
+Terminal Services RDP Data	uagrdpsvc.exe	 
+User Manager	UserMgrCom.exe	 
+Watch Dog Service	WatchDogSrv.exe	 
+Log Server	whlerrsrv.exe	 
+SSL Network Tunneling Server	whlios.exe	 
+System Center Operations Manager (SCOM) and Microsoft Operations Manager (MOM)
+Processes	monitoringhost.exe
+Momhost.exe	 	 
+SQL Database and Log files	*.MDF and *.LDF	 	 
+Queue and log files	EDB, CHK and LOG	 	 
+MOM 2005	 	%allusersprofile%\Application Data\Microsoft\Microsoft Operations Manager	 
+MOM 2007	 	Drive:\Program Files\System Center Operations Manager <version>\Health Service State\Health Service Store	 
+MOM 2012	 	Drive:\Program Files\System Center 2012\Operations Manager\<Component>\Health Service State\Health Service Store	 
+Microsoft Systems Management Server (SMS) and System Center Configuration Manager (SCCM)
+SMS 2003	 	SMS\Inboxes directory on Microsoft Systems Management Server site servers	 
+ 	SMS_CCM\ServiceData directory on Microsoft SMS Management Points
+SCCM 2007	 	Drive:\Program Files\Microsoft Configuration Manager\Inboxes	 
+System Center Data Protection Manager 2007	dpmra.exe	Drive:\Program Files\Microsoft Data Protection Manager\DPM\bin	 
+csc.exe	%windir%\Microsoft.net\Framework\v2.0.50727
+Sharepoint
+SharePoint Foundation 2013
+Web Server Extensions	 	Drive Letter:\Program Files\Common Files\Microsoft Shared\Web Server Extensions	 
+If you do not want to exclude the entire 'Web Server  Extensions' folder, exlude just these two paths.
+(The 'Applications' folder need only be excluded if the machine is running  SharePoint Foundation Search service.  If the index files are configured to use a different folder, you must also exclude that folder.)	 	Drive:\Users\Default\AppData\Local\Temp:\Program Files\Common Files\Microsoft Shared\Web Server Extensions\15\Logs
+
+Drive:\Users\Default\AppData\Local\Temp:\Program Files\Common Files\Microsoft Shared\Web Server Extensions\15\Data\Applications	 
+Temporary ASP .NET files	 	%windir%\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files	 
+WebTempDir / FrontPageTempDir	 	Drive: \Users\ServiceAccount\AppData\Local\Temp\WebTempDir	 
+Program Data	 	Drive:\ProgramData\Microsoft\SharePoint	 
+Temporary folder for search service	 	Drive:\Users\account that the search service is running as\AppData\Local\Temp	 
+Log files	 	%windir%\System32\LogFiles	 
+%windir%\Syswow64\LogFiles
+If you use a specific account for SharePoint services or application pools identities	 	Drive:\Users\ServiceAccount\AppData\Local\Temp
+Drive:\Users\Default\AppData\Local\Temp	 
+SharePoint Server 2013
+Microsoft Office Servers	 	Drive:\Program Files\Microsoft Office Servers	 
+If you do not want to exclude the entire 'Microsoft Office Servers' folder, exclude just these four paths.
+(The 'Data' folder is used for the indexing process. If the index files are configured to use a different folder, you must also exclude that folder.)	 	Drive:\Program Files\Microsoft Office Servers\15.0\Data
+Drive:\Program Files\Microsoft Office Servers\15.0\Logs
+Drive:\Program Files\Microsoft Office Servers\15.0\Bin
+Drive:\Program Files\Microsoft Office Servers\15.0\Synchronization Service	 
+SharePoint Foundation 2010
+Web Server Extensions	 	Drive:\Program Files\Common Files\Microsoft Shared\Web Server Extensions	 
+If you do not want to exclude the entire 'Web Server Extensions' folder, exclude just these two paths.
+(The 'Applications' folder need only be excluded if the machine is running SharePoint Foundation Search service.)	 	Drive:\Program Files\Common Files\Microsoft Shared\Web Server Extensions\14\Logs
+
+Drive:\Program Files\Common Files\Microsoft Shared\Web Server Extensions\14\Data\Applications	 
+Temporary ASP .NET files	 	%windir%\Microsoft.NET\Framework64\v2.0.50727\Temporary ASP.NET Files	 
+WebTempDir	 	Drive: \Users\ServiceAccount\AppData\Local\Temp\WebTempDir	 
+Program Data	 	Drive:\ProgramData\Microsoft\SharePoint	 
+Temporary folder for search service	 	Drive:\Users\account that the search service is running as\AppData\Local\Temp	 
+Log files	 	%windir%\system32\LogFiles	 
+SharePoint Server 2010
+Microsoft Office Servers	 	Drive:\Program Files\Microsoft Office Servers 	 
+If you do not want to exclude the whole 'Microsoft Office Servers' folder, exclude just these four paths.
+(The 'Data' folder is used for the indexing process. If the index files are configured to use a different folder, you must also exclude that folder.)	 	Drive:\Program Files\Microsoft Office Servers\14.0\Data
+Drive:\Program Files\Microsoft Office Servers\14.0\Logs
+Drive:\Program Files\Microsoft Office Servers\14.0\Bin
+Drive:\Program Files\Microsoft Office Servers\14.0\Synchronization Service	 
+Windows SharePoint Services 3.0
+Web Server Extensions	 	Drive:\Program Files\Common Files\Microsoft Shared\Web Server Extensions	 
+If you do not want to exclude the entire 'Web Server Extensions' folder, exclude just these two paths.
+(The 'Applications' folder should only be excluded if the machine is running Windows SharePoint Services Search. If the folder that contains the index file is located elsewhere, you must also exclude that folder.)	 	Drive:\Program Files\Common Files\Microsoft Shared\Web Server Extensions\12\Logs
+
+Drive:\Program Files\Common Files\Microsoft Shared\Web Server Extensions\12\Data\Applications	
+
+ 
+Temporary ASP.NET files (64-bit)	 	%windir%\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files	 
+Temporary ASP.NET files (32-bit)	 	%windir%\Microsoft.NET\Framework64\v2.0.50727\Temporary ASP.NET Files
+Drive:\Documents and Settings\All Users\Application Data\Microsoft\SharePoint\Config	 
+WebTempDir / FrontPageTempDir	 	%windir%\Temp\WebTempDir	 
+Search account gthrsvc Temp folder	 	Drive:\Documents and Settings\account that the search service is running as\Local Settings\Temp
+
+Drive:\Users\the account the search service is running as\Local\Temp	 
+If you use a specific account for SharePoint services or application pools identities	 	%windir%\system32\LogFiles
+%windir%\Syswow64\LogFiles
+Drive:\Documents and Settings\ServiceAccount\Local Settings\Application Data
+Drive:\Users\ServiceAccount\Local
+Drive:\Documents and Settings\ServiceAccount\Local Settings\Temp
+Drive:\Users\ServiceAccount\Local\Temp
+Drive:\Documents and Settings\Default User\Local Settings\Temp
+Drive:\Users\Default\AppData\Local\Temp	
+ 
+SharePoint Server 2007
+Microsoft Office Servers	 	Drive:\Program Files\Microsoft Office Servers 	 
+If you do not want to exclude the whole 'Microsoft Office Servers' folder, exclude just these four paths.
+(The 'Data' folder is used for the indexing process. If the index files are configured to use a different folder, you must also exclude that folder.)	 	Drive:\Program Files\Microsoft Office Servers
+Drive:\Program Files\Microsoft Office Servers\12.0\Data
+Drive:\Program Files\Microsoft Office Servers\12.0\Logs
+Drive:\Program Files\Microsoft Office Servers\12.0\Bin	 
+SharePoint Portal Server 2001 and 2003
+Sharepoint Portal Server	 	Drive:\Program Files\SharePoint Portal Server	 
+Web Storage System	 	Drive:\Program Files\Common Files\Microsoft Shared\Web Storage System	 
+If you are using Microsoft SharePoint Portal Server 2003 with Service Pack 1 (SP1):	 	%windir%\Temp\Frontpagetempdir	 
+Lync Server
+Lync 2010
+ Processes	ASMCUSvc.exe	 	 
+AVMCUSvc.exe
+DataMCUSvc.exe
+DataProxy.exe
+FileTransferAgent.exe
+IMMCUSvc.exe
+MasterReplicatorAgent.exe
+MediaRelaySvc.exe
+MediationServerSvc.exe
+MeetingMCUSvc.exe
+MRASSvc.exe
+OcsAppServerHost.exe
+QmsSvc.exe
+ReplicaReplicatorAgent.exe
+RTCArch.exe
+RtcCdr.exe
+RTCSrv.exe
+Folders	 	%systemroot%\System32\LogFiles	 
+%systemroot%\SysWow64\LogFiles
+%systemroot%\Windows\Assembly\GAC_MSIL
+Drive:\Program Files\Microsoft Lync Server 2010
+Drive:\Program Files\commonfiles\Microsoft Lync Server 2010
+%SystemDrive%\RtcReplicaRoot
+File share store as specified in Topology Builder
+Data and Log Files for Central Management Store (Central Management store database files)	Xds.mdf
+Xds.ldf
+Lis.mdf
+Lis.ldf	 	 
+Data and Log files for User, Conferencing, and Address Book (Core Lync Server 2013 database files)	Rtc.mdf
+Rtc.ldf
+Rtcdyn.mdf
+Rtcdyn.ldf
+Rtcab.mdf
+Rtcab.ldf
+Rtcxds.mdf
+Rtcxds.ldf
+Rtclobal.mdb	 	 
+Data and Log Files for Call Park and Response Group (Application database)	Cpsdyn.mdf
+Cpsdyn.ldf
+Rgsconfig.mdf
+Rgsconfig.ldf
+Rgsdyn.mdf
+Rgsdyn.ldf	 	 
+Data and Log Files for Archiving and Monitoring Server (Archiving and Monitoring database files)	LcsCdr.mdf
+LcsCdr.ldf
+QoEMetrics.mdf
+QoEMetrics.ldf
+Lcslog.mdf
+Lcslog.ldf	 	 
+Microsoft Exchange Server
+Exclusions common across versions
+Exchange Installation Path	 	%ExchangeInstallPath%	 
+Exchange databases, checkpoint files, Database content indexes, log files	 	%ExchangeInstallPath%Mailbox	 
+Offline Address Book files	 	%ExchangeInstallPath%ClientAccess\OAB	Location where Eseutil.exe is run from, or as configured while running the utility.
+Mailbox database temporary folder	 	%ExchangeInstallPath%Mailbox\MDBTEMP	 
+OLE conversions	 	%ExchangeInstallPath%Working\OleConverter	 
+Cluster quorum database	 	%windir%\Cluster	 
+Witness directory files	 	%SystemDrive%:\DAGFileShareWitnesses\<DAGFQDN>	These are usually located on another server in the environment, typically a Client Access server that is not the Mailbox server.
+Transport Service Pickup and Replay message directory folders	 	%ExchangeInstallPath%TransportRoles	 
+Transport queue databases, checkpoints, and log files	 	%ExchangeInstallPath%TransportRoles\Data\Queue	 
+Transport Sender Reputation database, checkpoint, and log files	 	%ExchangeInstallPath%TransportRoles\Data\SenderReputation 	 
+Transport Log files	 	%ExchangeInstallPath%TransportRoles\Logs	 
+Unified Messaging grammar files for different locales	 	%ExchangeInstallPath%UnifiedMessaging\grammars	 
+Unified Messaging voice prompts, greetings, and informational message files	 	%ExchangeInstallPath%UnifiedMessaging\Prompts	 
+Unified Messaging voicemail files temporary store	 	%ExchangeInstallPath%UnifiedMessaging\voicemail	 
+Unified Messaging temporary files	 	%ExchangeInstallPath%UnifiedMessaging\temp	 
+Processes	Cdb.exe
+Cidaemon.exe
+Dsamain.exe
+EdgeCredentialSvc.exe
+EdgeTransport.exe
+Microsoft.Exchange.AntispamUpdateSvc.exe
+Microsoft.Exchange.ContentFilter.Wrapper.exe
+Microsoft.Exchange.EdgeSyncSvc.exe
+Microsoft.Exchange.Imap4.exe
+Microsoft.Exchange.Imap4service.exe
+Microsoft.Exchange.Monitoring.exe
+Microsoft.Exchange.Pop3.exe
+Microsoft.Exchange.Pop3service.exe
+Microsoft.Exchange.Servicehost.exe
+MSExchangeMailboxAssistants.exe
+MSExchangeSubmission.exe
+MSExchangeTransport.exe
+MSExchangeTransportLogSearch.exe
+Msftefd.exe
+Msftesql.exe
+OleConverter.exe
+Powershell.exe
+TranscodingService.exe
+UmService.exe
+UmWorkerProcess.exe	 	 
+Files	.cfg
+.chk
+.ci
+.config
+.dia
+.dir
+.edb
+.grxml
+.jrs
+.log
+.lzx
+.que
+.wid
+.wsb
+0
+0.001
+0.002	 	 
+Microsoft Exchange Server 2013 / 2010
+Group Metrics files	 	%ExchangeInstallPath%GroupMetrics	 
+POP3 folder	 	%ExchangeInstallPath%Logging\POP3	 
+IMAP4 folder	 	%ExchangeInstallPath%Logging\IMAP4	 
+Log files	 	%ExchangeInstallPath%TransportRoles\Logs\Mailbox
+%ExchangeInstallPath%TransportRoles\Logs\FrontEnd	 
+Processes	Clussvc.exe
+ExFBA.exe
+Microsoft.Exchange.Diagnostics.Service.exe
+Microsoft.Exchange.Directory.TopologyService.exe
+Microsoft.Exchange.ProtectedServiceHost.exe
+Microsoft.Exchange.RPCClientAccess.Service.exe
+Microsoft.Exchange.Search.Service.exe
+Microsoft.Exchange.Store.Service.exe
+Microsoft.Exchange.Store.Worker.exe
+Microsoft.Exchange.TransportSyncManagerSvc.exe
+Microsoft.Exchange.UM.CallRouter.exe
+MSExchangeDelivery.exe
+MSExchangeFrontendTransport.exe
+MSExchangeHMHost.exe
+MSExchangeHMWorker.exe
+MSExchangeLESearchWorker.exe
+MSExchangeMailboxReplication.exe
+MSExchangeRepl.exe
+MSExchangeThrottling.exe
+ScanEngineTest.exe
+UpdateService.exe	 	 
+Files	.jsl
+.dsc
+.txt	 	 
+Microsoft Exchange Server 2007
+Log files	 	Drive:\Program Files\Microsoft\Exchange Server\Logging	 
+The ExchangeOAB directory on a shared drive	 	 	SYSTEM\CurrentControlSet\Services\MSExchangeSA\Parameters\<CMS-name>\OabDropFolderLocation
+Transport server role IP filter database, checkpoint, and log files	 	Drive:\Program Files\Microsoft\Exchange Server\TransportRoles\Data\IpFilter	 
+Unified Messaging bad voicemail files	 	Drive Letter:\Program Files\Microsoft\Exchange Server\UnifiedMessaging\badvoicemail	 
+ForeFront Security Archived messages	 	Drive:\Program Files\Microsoft ForeFront Security\Exchange Server\Data\Archive folder	 
+ForeFront Security Quarantined files	 	Drive:\Program Files\Microsoft ForeFront Security\Exchange Server\Data\Quarantine folder	 
+ForeFront Security Antivirus engine files	 	Drive:\Program Files\Microsoft ForeFront Security\Exchange Server\Data\Engines\x86 folder	 
+ForeFront Security configuration files	 	Drive:\Program Files\Microsoft ForeFront Security\Exchange Server\Data folder	 
+ForeFront Security shared storage	 	 	HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Forefront Server Security\Exchange Server\DatabasePath
+Processes	Cluster.exe
+Galgrammargenerator.exe
+Mad.exe
+Microsoft.Exchange.Cluster.Replayservice.exe
+Microsoft.Exchange.Infoworker.Assistants.exe
+Microsoft.Exchange.Search.Exsearch.exe
+Msexchangeadtopologyservice.exe
+Msexchangefds.exe
+Sesworker.exe
+Speechservice.exe
+Store.exe	 	 
+Processes, for ForeFront Security for Exchange Server	Adonavsvc.exe
+Fsccontroller.exe
+Fscdiag.exe
+Fscexec.exe
+Fscimc.exe
+Fscmanualscanner.exe
+Fscmonitor.exe
+Fscrealtimescanner.exe
+Fscstarter.exe
+Fscstatsserv.exe
+Fsctransportscanner.exe
+Fscutility.exe
+Fsemailpickup.exe
+Fssaclient.exe
+Getenginefiles.exe
+Perfmonitorsetup.exe
+Scanenginetest.exe
+Semsetup.exe	 	 
+Files, for ForeFront Security for Exchange Server	.avc
+.cab
+.cfg
+.config
+.da1
+.dat
+.def
+.dt
+.fdb
+.fdm
+.ide
+.key
+.klb
+.kli
+.lst
+.mdb
+.ppl
+.set
+.v3d
+.vdb
+.vdm	 	 
+Exchange Server 2003
+Exchange databases, log files across storage groups, MTA files	 	Exchsrvr\Mdbdata	 
+Virtual working folder for message conversion .tmp files	 	Exchsrvr\Mailroot	 
+Site Replication Service files	 	Exchsrvr\Srsdata	 
+Additional log files	 	Exchsrvr\Mdbdata	 
+Processes	Store.exe
+Emsmta.exe
+Mad.exe
+Mssearch.exe	 	 
+
+ 
+
+Removing Viruses and Other Malware Bitdefender Integration
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ConnectWise Automate Administration and Configuration
+Automate Antivirus Exclusions for Windows
+Antivirus Service Shows as Not Running on the Antivirus Tile
+Trend Micro AntiVirus not detected
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

@@ -1,0 +1,675 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Getting Started with ConnectWise RMM   Installing Asio Agents
+Installing Asio Agents
+Last updated
+Oct 16, 2025
+Table of contents
+Overview
+Prerequisites
+User Access
+Agent Management
+How to Download the Agent
+Download the Agent with Token
+Download the Agent without Token
+Install the Agent
+How to Install the Agent on Windows OS
+GUI-based Installation
+Silent Installation
+Supported Parameters for Installation
+How to Install the Agent on Mac OS
+GUI-based Installation
+Silent Installation
+How to Install the Agent on Linux OS
+Command-line Installation
+Silent Installation
+ Documentation
+Getting Started Documentation Path
+Overview
+
+Every Windows, Mac, or Linux OS device (Desktop or Server) must have the agent installed in order for it to report back to the ConnectWise Asio® platform with monitoring information. Agents can be downloaded from the Asio platform and installed on your endpoint directly or remotely.
+
+Note: Agents are self-updating and check for new updates once daily. If an Agent falls multiple updates behind, the Agent performs one update per day until it has been fully updated.
+
+This article provides information and instructions about how to download and install an agent on your device.
+
+Prerequisites
+Asio companies and sites. Please refer to Setting Up Your Asio platform for more information.
+Full Agent Management permissions via a default or custom application role.
+Review the agent prerequisites and compatibility information for the respective OS available in Prerequisites.
+User Access
+
+Refer to the table below for details about default application role permissions for agent installation:
+
+Agent Management
+
+Application Role >
+
+	
+
+Super Admin
+
+	
+
+Manager
+
+	
+
+Technician
+
+	
+
+Office Staff
+
+	
+
+Sales
+
+	
+
+Client Site Manager
+
+
+
+
+Agent Download
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+OFF
+
+	
+
+ON
+
+
+
+
+Switch Device Type
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+OFF
+
+	
+
+ON
+
+
+
+
+Assign to another site
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+OFF
+
+	
+
+ON
+
+
+
+
+Agent Uninstall
+
+
+
+
+Uninstall Desktop Agents
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+OFF
+
+	
+
+ON
+
+
+
+
+Uninstall Server Agents
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+OFF
+
+	
+
+ON
+
+
+
+
+RMM Scanning Tool Configuration
+
+
+
+
+Install RMM Scanning Tool
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+OFF
+
+	
+
+OFF
+
+
+
+
+Uninstall RMM Scanning Tool
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+OFF
+
+	
+
+OFF
+
+How to Download the Agent
+
+The Asio platform operates as an agent-based system. An agent must be installed on every desktop and server that needs monitoring. These agents send monitoring details back to the platform. They can be downloaded from the Asio platform and installed on a desktop or server.
+
+Perform the agent download with or without a token:
+
+Download the Agent with Token
+Download the Agent without Token
+
+Note:  The token is a unique license key per company and site for installing the agent. Any agents installed with the token reflect the devices under the company and site that were selected while generating the token.
+
+Note: Find or copy the token from the Download Agent window as described in the following section.
+
+Download the Agent with Token
+Log in to the Asio platform.
+Navigate to Endpoints > Devices.
+
+Note: Alternatively, you can navigate to the company or site detail page to download the agent:
+Clients > Companies > [Select a Company] > Agents tab > Agent Download.
+Clients > Companies > [Select a Company] > [Select a Site] > Agents tab > Agent Download.
+
+Select the checkbox for the device(s) you want to install the agent on.
+Click the Manage drop-down menu in the toolbar and select Download Agent.
+
+In the Download Agent window, select a Company and Site from the drop-down. You can also type to search for your site and select it. If you navigated to this window from the company or site detail page, this step is completed for you.
+
+After you select the Company and Site, a token populates in the Agent Token field. The token is automatically applied to the file. If necessary, click Copy token to clipboard.
+
+Example: new_site-new_test_company_Windows_OS_ITSPlatform_TKNXXXX7a27-3472-XXXa-aXXX-7e1b273XXXXX
+
+Notes: The setup has a token embedded, which is denoted by the suffix TKN followed by a key (highlighted in the example above), which is unique for a site.
+
+Locate the tile corresponding to the site OS.
+If you are on the device where you want the agent downloaded, click the Download button to download the agent file. If you want to download the agent on a remote machine, click Copy URL and paste it into the browser of the intended device. This downloads the agent.
+The agent setup file, when downloaded, is in the following format: Sitename-Companyname_OSname_ITSPlatform_TKNXXXX.
+
+Note: Paste the OS-specific URL in the browser of the intended device to download the agent. This is helpful for downloading the agent on the required endpoint to be monitored.
+
+Download the Agent without Token
+
+North America
+
+
+
+
+Windows Installer
+
+	
+
+https://prod.setup.itsupport247.net/windows/BareboneAgent/32/ITSPlatform/MSI/setup
+
+
+
+
+Mac Installer
+
+	
+
+https://prod.setup.itsupport247.net/darwin/DPMA/64/CWRMM/PKG/setup
+
+
+
+
+Linux Installer
+
+	
+
+https://prod.setup.itsupport247.net/linux/BareboneAgent/64/ITSagent/RUN/setup
+
+
+
+
+Europe
+
+
+
+
+Windows Installer
+
+	
+
+https://setup.euplatform.connectwise.com/windows/BareboneAgent/32/ITSagent/MSI/setup
+
+
+
+
+Mac Installer
+
+	
+
+https://setup.euplatform.connectwise.com/darwin/DPMA/64/ITSagent/run/setup
+
+
+
+
+Linux Installer
+
+	
+
+https://setup.euplatform.connectwise.com/linux/BareboneAgent/64/ITSagent/RUN/setup
+
+
+
+
+Australia
+
+
+
+
+Windows Installer
+
+	
+
+https://setup.auplatform.connectwise.com/windows/BareboneAgent/32/ITSagent/MSI/setup
+
+
+
+
+Mac Installer
+
+	
+
+https://setup.auplatform.connectwise.com/darwin/DPMA/64/ITSagent/run/setup
+
+
+
+
+Linux Installer
+
+	
+
+https://setup.auplatform.connectwise.com/linux/BareboneAgent/64/ITSagent/RUN/setup
+
+Note: You can find or copy the token from the Download Agent window.
+
+Install the Agent
+
+You can install the agent in the following ways:
+
+Installing the agent with Token
+Windows OS (GUI-based Installation)
+Mac OS (GUI-based Installation)
+Linux OS (Command-line Installation)
+
+Notes:
+
+Users with Administrative rights can directly invoke the agent installers (GUI-based installation).
+During installation, the agent uses the token available in the file name, and it must be updated if the file name changes.
+When installed, the agent reflects the endpoint under the corresponding company/site.
+Installing the agent without Token (Silent Installation)
+Windows OS
+Mac OS
+Linux OS
+Install the agent using the RMM Scanning Tool
+Installing Asio Agents using MS Intune
+Download and install using Group Policy Object (GPO)
+How to Install the Agent on Windows OS
+
+The following sections contain agent installation instructions for Windows OS:
+
+GUI-based Installation
+After you have clicked on the Download.msi file, verify that the setup filename conforms to the specified format of MSI (Microsoft Installer) setup.
+The Agent setup gets downloaded to the Download folder. The Agent requires administrative privileges to run the installer.
+Click to install the downloaded .msi file to execute and complete the Agent installation in GUI mode.
+
+Click Accept the terms in the License agreement. Click Next.
+The Agent is installed by default in the C:\Program Files (x86) directory. If you want to install it in a different directory, click Browse to select a different drive.
+If no changes are made to the .msi filename, the key is auto-populated in the Token text box. If the downloaded .msi file is renamed, you must enter the key (token) during the installation process.
+
+For sites that have a proxy configured, you can enter the proxy information during the installation by selecting the Proxy settings Required checkbox.
+Enter the Proxy information.
+Click Next to proceed.
+Click Install. The agent takes one to two minutes to install and less than five minutes to report to the Asio™ platform on the Endpoints > Devices page.
+After the installation is done, click Finish.
+Silent Installation
+
+To execute the Agent silently, follow these steps:
+
+Open the Command Prompt using Run as Administrator.
+Navigate to the directory where the .msi file has been downloaded.
+Append the respective parameter.
+
+The following commands can be used for a silent installation of the MSI setup in a Command Prompt launched in administrator mode.
+
+Supported Parameters for Installation
+Parameters	Description	Example
+
+
+SYSTEM=desktop
+
+	
+
+You can choose using the parameter SYSTEM=desktop to install as “Desktop”
+
+	
+
+
+
+
+<Installer-Name-With-Token>.msi /q
+
+	
+
+/q is the silent install switch. It tells the MSI to install silently, without any user interaction or UI display
+
+	
+
+
+
+
+<Installer-Name-With-Token>.msi /qn
+
+	
+
+/qn is the silent install switch. It tells the MSI to install silently, without any user interaction or UI display
+
+	
+
+
+
+
+<Installer-Name-With-Token>.msi /quiet
+
+	
+
+/quiet is the silent install switch. It tells the MSI to install silently, without any user interaction or UI display
+
+	
+
+
+
+
+<Installer-Name-Without-Token>
+
+	
+
+If the installer does not have the token, you can pass the token as a parameter for silent installation.
+
+	
+
+
+
+
+For UI based installation
+
+	
+
+Token already gets populated as it is passed as a parameter during installation
+
+	
+
+How to Install the Agent on Mac OS
+
+Note: The MAC agent on macOS Catalina has some limitations. Please refer to Asio Agent Requirements and contact Support if you experience issues with the installation.
+
+The following sections contain agent installation instructions for Mac OS:
+
+GUI-based Installation
+
+Note: You must have Administrator Privileges to install the macOS Agent.
+
+Download and double-click the setup (.pkg) file.
+
+The setup (.pkg) is wizard-based; follow the steps by clicking Continue.
+
+Click Continue.
+
+Click Close.
+
+You can see the Mac Desktop in Endpoints > Devices. Search, filter, or click the OS column header to sort by OS type.
+
+The Mc agent can also take advantage of RMM Patching*, PSA Integration, and script creation using Bash, Python, and AppleScript.
+*We provide all of the same updates available in Apple Software Updates.
+Silent Installation
+
+Note: Ensure that the user has root privileges.
+
+sudo launchctl setenv TOKEN XXXXXXXXXXXX
+installer -pkg ITSPlatform.pkg -target /
+
+Please replace XXXXXXXXXXXX with the actual token generated per company/site.
+
+How to Install the Agent on Linux OS
+
+The following sections contain agent installation instructions for Linux OS:
+
+Command-line Installation
+
+Note: If the Linux version includes a GUI, you can use any browser to navigate; otherwise, open the terminal and connect to the machine to run commands.
+
+Enter your Linux server username and password.
+
+
+Type sudo su to get access to root-level privileges.
+
+
+Create a temp folder to store the setup that you download in the next step. For example: 
+# mkdir setup
+# cd setup - to go into the directory
+
+Optional: As a best practice, navigate to the directory where you want the file to be downloaded so you know where it is located. To do so, enter the 'cd' command and the directory where you want the download to go, e.g., 'cd ~'.
+
+Verify WGET or CURL is installed to facilitate the download of the agent install package. To verify:
+For WGET: Run the command wget –V to provide a version of WGET if it is installed, or the command will not be found if it is not installed.
+For CURL: Run the command curl –V to provide a version of CURL if it is installed, or the command will not be found if it is not installed.
+If neither tool is installed, pick one and install it using the appropriate package manager for the distribution.
+The setup internally uses zip or bzip2 to uncompress. Run the command 'zip –v' to verify. Install zip or bzip2 if not available.
+
+To download the setup, enter the URL copied from the Download Agent step, located in Endpoints > Devices > Manage > Agent Download.
+
+Use WGET or CURL:
+
+Use WGET and run the following command with the download URL: wget –O agentsetup.run <setup download URL> 
+
+Use CURL and run the following command with the download URL: curl -L -o agentsetup.run <setup file location>. The file is named agentsetup.run
+
+Note:  Refer to the token from Asio Download Agent step above. To view an alphabetical list of files contained in the directory, type "ls" ("ls" = list directory).
+To execute permission for setup, run the chmod command. For example: chmod 777 TEST_MSMA_ITSPlatform_TKNxxxxe0e2-728b-xxxx-8803-xxxx4e528245.run
+If the setup filename contains the token, type ./TEST_MSMA_ITSPlatform_TKNaXXXXXXXXXXX000.run to begin the Linux Agent installation. If the setup filename was renamed as a part of step 6, then it should be: TOKEN=<Token copied for the selected company and site> ./agentsetup.run.
+
+Note:  The setup has a key embedded with a suffix, denoted as TKN (followed by the key), which is unique to a site. when the Agent is installed via this installer, the device gets associated with the respective site to which the token belonged.
+
+The setup takes less than a minute to install, and the target endpoint appears in the Asio platform in five (5) minutes.
+The Agent is installed in /opt/ITSPlatform.
+
+Upon successful installation, the Linux-based device will be reflected on the Endpoints > Devices page. For more information, review the Devices Overview documentation.
+
+Note: You may delete the temporary folder after completing the agent installation. If required, copy and save the setup file.
+
+Silent Installation
+
+Note: Ensure that the user has root privileges.
+
+Command: TOKEN=XXXXXXXXXXXX ./ITSPlatform.run
+
+Please replace XXXXXXXXXXXX with the actual token generated per company/site.
+
+ Documentation
+Agent for Linux 32/64 bit ARM device
+Asio Platform Agent Deployment using Group Policy Object (GPO)
+Installing Asio Agents using MS Intune
+Getting Started Documentation Path
+View pages
+Admins: Set Up ConnectWise RMM
+Proper setup is critical for the successful implementation of your Asio™ platform (ITSupport Portal) and your ConnectWise Remote Monitoring and Management (RMM). This section guides you through the required steps. Be sure to complete each section in the Guide and review all of the linked articles.
+Pages: 6
+Devices Overview
+Installing the RMM Scanning Tool
+Set Notification Rules
+ScreenConnect Integration with ConnectWise RMM
+Configuring Reboot Schedules
+RMM Site Enablement
+
+ 
+
+Devices Overview Installing RMM Agents using MS Intune
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Creating Users
+Creating Notification Rules
+Create Client Sites
+ScreenConnect Integration with ConnectWise RMM
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

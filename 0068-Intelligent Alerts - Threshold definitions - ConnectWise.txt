@@ -1,0 +1,470 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Alerts   Intelligent Alerts   Intelligent Alerts - Threshold definitions
+Intelligent Alerts - Threshold definitions
+Last updated
+Feb 9, 2026
+Table of contents
+Overview
+Overview
+
+The following table outlines the alert logic or thresholds defined in the pre-defined alerts
+
+Condition Name	Condition Criticality	Family Name	Ticket generation logic	Ticket Closure logic
+Agent Malfunction	Critical Impact Alerts	RMM Agent	
+Agent Malfunction alert should be generated when the Device is offline in RMM but accessible via ScreenConnect.
+If the partner has not enabled ScreenConnect then skip the alert generation as Device Down alert will be created for them.
+	
+Inverse Rule: If agent is reporting online then the Agent Malfunction alert should be closed.
+
+Monitored Server / Device down or Site internet is down	Server/Internet Down	General (Up/Down/Reboot)	
+
+Device is not communicating for 10 min
+
+& 
+Additional validation: ScreenConnect is NOT able to communicate with endpoints
+
+	Device communication is initiated from the endpoint
+Critically low disk space on the OS installed drive of Server	Critical Impact Alerts	Disk space	
+
+Drive is where the OS is found to be installed 
+
+&
+
+Disk space is as per the below table reference:
+
+Volume Size in GB	Available Free Space
+>10 and < = 107	
+
+10 %
+
+
+>107 and < = 268	
+
+8%
+
+
+>268 and < = 536	
+
+6%
+
+
+>536 and < = 1099	
+
+4%
+
+
+> 1099 and above	
+
+2%
+
+	
+
+Drive is where the OS is found to be installed 
+
+&
+
+Disk space is as per the above table reference:
+
+Volume Size in GB	Available Free Space
+>10 and < = 107	15%
+>107 and < = 268	12%
+>268 and < = 536	9%
+>536 and < = 1099	6%
+> 1099 and above	3%
+
+Critically low disk space on the NON-OS installed drive of Server	Critical Impact Alerts	Disk space	
+
+Drive is where the NON-OS is found to be installed 
+
+&
+
+Disk space is as per the below table reference:
+
+Volume Size in GB	Available Free Space
+>10 and < = 107	
+
+10 %
+
+
+>107 and < = 268	
+
+8%
+
+
+>268 and < = 536	
+
+6%
+
+
+>536 and < = 1099	
+
+4%
+
+
+> 1099 and above	
+
+2%
+
+	
+
+Drive is where the NON-OS is found to be installed 
+
+&
+
+Disk space is as per the above table reference:
+
+Volume Size in GB	Available Free Space
+>10 and < = 107	15%
+>107 and < = 268	12%
+>268 and < = 536	9%
+>536 and < = 1099	6%
+> 1099 and above	3%
+
+Linux Emergency low disk space issue observed	Critical Impact Alerts	Disk space	Free space is less than 2% of the drive volume or 500 MB which ever is low.	Free space is more than 2% of the drive volume or 500 MB which ever is low.
+VMware Host high datastore Utilization is observed	Critical Impact Alerts	VMware	Trigger an alert if the Datastore utilization is above 96%	Datastore utilization is below 92%
+Intelligent Service Monitoring:
+AdaptecStorageManagerAgent - Not In Running State	Critical Non-Impact Alerts	Hardware	
+
+Service status is not Running & Startup Type is Disabled
+
+ 
+
+Note: This would only trigger an alert if the Startup type was changed. No further alerts will be triggered for the alert until the Startup type or Service status was changed.
+
+ 
+
+OR
+
+ 
+
+Service Status is not Running & Startup Type is not Manual & Startup Type is not Disabled
+
+ 
+
+OR
+
+ 
+
+Service is not running & Startup Type is Manual & Service exit code is either 0 or 1077
+
+	Startup Type is not Disabled  & Service is running
+APC PBE Agent - Not In Running State	Others	Hardware
+APC PBE Server - Not In Running State	Others	Hardware
+Backup Exec Agent Browser - Not In Running State	Others	Backup
+Backup Exec Device & Media Service - Not In Running State	Critical Non-Impact Alerts	Backup
+Backup Exec Job Engine - Not In Running State	Critical Non-Impact Alerts	Backup
+Backup Exec Remote Agent for Windows NT/2000 - Not In Running State	Critical Non-Impact Alerts	Backup
+Backup Exec Server - Not In Running State	Critical Non-Impact Alerts	Backup
+Citrix SMA Service - Not In Running State	Critical Non-Impact Alerts	Citrix
+Citrix WMI Service - Not In Running State	Others	Citrix
+Citrix XML Service - Not In Running State	Others	Citrix
+Citrix XTE Server - Not In Running State	Critical Non-Impact Alerts	Citrix
+Client Network - Not In Running State	Others	Windows Server
+Dell OpenManage ServerAgent or DSM SA Data Manager - Not In Running State	Others	Hardware
+Dell OpenManage ServerAgent EventMonitor or DSM SA Event Manager - Not In Running State	Others	Hardware
+DHCP Server - Not In Running State	Critical Non-Impact Alerts	DHCP
+DNS Server - Not In Running State	Critical Impact Alerts	Windows Server
+FTP Publishing Service - Not In Running State	Others	IIS
+HP Insight Event Notifier - Not In Running State	Others	Hardware
+HP Insight Foundation Agent - Not In Running State	Others	Hardware
+HP ProLiant Remote Monitor Service - Not In Running State	Others	Hardware
+HP Version Control Repository Manager - Not In Running State	Others	Hardware
+IIS Admin Service - Not In Running State	Critical Impact Alerts	IIS
+Independent Management Architecture - Not In Running State	Critical Impact Alerts	Citrix
+Intel(R) Matrix Storage Event Monitor - Not In Running State	Critical Non-Impact Alerts	Hardware
+Liebert MultiLink - Not In Running State	Others	Windows Server
+McAfee Framework Service - Not In Running State	Critical Non-Impact Alerts	Antivirus
+McAfee Managed Services Agent - Not In Running State	Others	Antivirus
+MetaFrame COM Server - Not In Running State	Critical Impact Alerts	Citrix
+Microsoft Exchange Information Store - Not In Running State	Critical Impact Alerts	Exchange
+Microsoft Exchange Management - Not In Running State	Others	Exchange
+Microsoft Exchange Routing Engine - Not In Running State	Critical Impact Alerts	Exchange
+Microsoft Exchange System Attendant - Not In Running State	Critical Impact Alerts	Exchange
+MS Exchange ADTopology - Not In Running State	Critical Impact Alerts	Exchange
+MS Exchange AntispamUpdate - Not In Running State	Critical Non-Impact Alerts	Exchange
+MS Exchange EdgeSync - Not In Running State	Critical Non-Impact Alerts	Exchange
+MS Exchange FDS - Not In Running State	Critical Impact Alerts	Exchange
+MS Exchange Imap4 - Not In Running State	Others	Exchange
+MS Exchange MailboxAssistants - Not In Running State	Critical Non-Impact Alerts	Exchange
+MS Exchange MailSubmission - Not In Running State	Critical Impact Alerts	Exchange
+MS Exchange Monitoring - Not In Running State	Others	Exchange
+MS Exchange Pop3 - Not In Running State	Critical Non-Impact Alerts	Exchange
+MS Exchange Search - Not In Running State	Critical Impact Alerts	Exchange
+MS Exchange ServiceHost - Not In Running State	Critical Impact Alerts	Exchange
+MS Exchange Transport - Not In Running State	Critical Impact Alerts	Exchange
+MS Exchange TransportLogSearch - Not In Running State	Critical Impact Alerts	Exchange
+msftesql-Exchange - Not In Running State	Others	Exchange
+MSSQL$SOPHOS - Not In Running State	Others	Antivirus
+MSSQLServer - Not In Running State	Critical Impact Alerts	SQL Server
+Network Associates McShield - Not In Running State	Critical Non-Impact Alerts	Antivirus
+Network Associates Task Manager - Not In Running State	Critical Non-Impact Alerts	Antivirus
+OfficeScan Master Service - Not In Running State	Critical Non-Impact Alerts	Antivirus
+OfficeScanNT Listener - Not In Running State	Critical Non-Impact Alerts	Antivirus
+OfficeScanNT RealTime Scan - Not In Running State	Critical Non-Impact Alerts	Antivirus
+Serv-U FTP Server - Not In Running State	Critical Non-Impact Alerts	Windows Server
+ShadowProtect Service - Not In Running State	Critical Impact Alerts	Backup
+Simple Mail Transfer Protocol (SMTP) - Not In Running State	Critical Impact Alerts	IIS
+Sophos Agent - Not In Running State	Others	Antivirus
+Sophos Anti-Virus - Not In Running State	Critical Impact Alerts	Antivirus
+Sophos Anti-Virus status reporter - Not In Running State	Others	Antivirus
+SQLServerAgent - Not In Running State	Others	SQL Server
+Sunbelt Vipre Enterprise agent - Not In Running State	Critical Non-Impact Alerts	Antivirus
+Symantec AntiVirus - Not In Running State	Critical Impact Alerts	Antivirus
+Symantec Central Quarantine - Not In Running State	Others	Antivirus
+Symantec Endpoint Protection - Not In Running State	Critical Non-Impact Alerts	Antivirus
+Symantec Endpoint Protection Manager - Not In Running State	Critical Non-Impact Alerts	Antivirus
+Symantec Mail Security for Microsoft Exchange - Not In Running State	Critical Impact Alerts	Antivirus
+Symantec Management Client - Not In Running State	Critical Non-Impact Alerts	Antivirus
+Symantec Quarantine Scanner - Not In Running State	Others	Antivirus
+Terminal Services or Remote Desktop Services - Not In Running State	Critical Impact Alerts	Terminal Server / RDS
+Uni RPC Service - Not In Running State	Others	Hardware
+World Wide Web Publishing Service - Not In Running State	Critical Impact Alerts	IIS
+VIPRE Email Security Remoting Service- Not In Running State	Critical Non-Impact Alerts	Antivirus
+VIPRE Email Security Updates Service- Not In Running State	Critical Non-Impact Alerts	Antivirus
+Symantec Settings Manager- Not In Running State	Critical Non-Impact Alerts	Antivirus
+AVG10 Admin Server- Not In Running State	Critical Non-Impact Alerts	Antivirus
+AVG WatchDog services- Not In Running State	Critical Non-Impact Alerts	Antivirus
+AVG10 Admin Server on 64 bit version- Not In Running State	Critical Non-Impact Alerts	Antivirus
+Trend Micro Client/Server Security Agent Listener or OfficeScanNT Listener- Not In Running State	Critical Non-Impact Alerts	Antivirus
+Trend Micro Client/Server Security Agent RealTime Scan or OfficeScan NT RealTime Scan- Not In Running State	Critical Non-Impact Alerts	Antivirus
+Trend Micro Plug-in Manager- Not In Running State	Critical Non-Impact Alerts	Antivirus
+Trend Micro Security Server Master Service- Not In Running State	Critical Non-Impact Alerts	Antivirus
+Trend Micro Smart Scan Service- Not In Running State	Critical Non-Impact Alerts	Antivirus
+Trend Micro Solution Platform- Not In Running State	Critical Non-Impact Alerts	Antivirus
+SharePoint Server Search 14- Not In Running State	Others	Sharepoint
+SharePoint Foundation Server Search 14- Not In Running State	Others	Sharepoint
+SharePoint 2010 VSS Writer- Not In Running State	Others	Sharepoint
+SharePoint 2010 User Code Host- Not In Running State	Others	Sharepoint
+SharePoint 2010 Tracing- Not In Running State	Others	Sharepoint
+SharePoint 2010 Timer- Not In Running State	Others	Sharepoint
+SharePoint 2010 Administration- Not In Running State	Others	Sharepoint
+Document Conversions Load Balancer for Microsoft SharePoint Server 2010- Not In Running State	Others	Sharepoint
+Document Conversions Launcher for Microsoft SharePoint Server 2010- Not In Running State	Others	Sharepoint
+Web Analytics Service- Not In Running State	Others	IIS
+SQL Active Directory Helper Service- Not In Running State	Others	SQL Server
+Windows SharePoint Services VSS Writer- Not In Running State	Others	Sharepoint
+Windows SharePoint Services Tracing- Not In Running State	Others	Sharepoint
+Windows SharePoint Services Timer- Not In Running State	Others	Sharepoint
+Windows SharePoint Services Search- Not In Running State	Others	Sharepoint
+Windows SharePoint Services Administration- Not In Running State	Others	Sharepoint
+VIPRE Business Site Service- Not In Running State	Others	Antivirus
+Microsoft Exchange RPC Client Access- Not In Running State	Critical Impact Alerts	Exchange
+Microsoft Exchange Forms-Based Authentication service- Not In Running State	Others	Exchange
+Microsoft Exchange Replication- Not In Running State	Critical Non-Impact Alerts	Exchange
+Hyper-V Data Exchange Service- Not In Running State	Others	Hyper-V
+Hyper-V Guest Shutdown Service- Not In Running State	Others	Hyper-V
+Hyper-V Heartbeat Service- Not In Running State	Others	Hyper-V
+Hyper-V Time Synchronization Service- Not In Running State	Others	Hyper-V
+Hyper-V Volume Shadow Copy Requestor- Not In Running State	Others	Hyper-V
+StorageCraft Raw Agent- Not In Running State	Others	Backup
+StorageCraft Shadow Copy Provider- Not In Running State	Others	Backup
+Microsoft Exchange Address Book- Not In Running State	Others	Exchange
+VMware DHCP Service- Not In Running State	Critical Impact Alerts	VMware
+VMware Host Agent- Not In Running State	Critical Non-Impact Alerts	VMware
+VMware NAT Service- Not In Running State	Critical Impact Alerts	VMware
+VMware VirtualCenter Server- Not In Running State	Critical Non-Impact Alerts	VMware
+VMware VirtualCenter Management Webservices- Not In Running State	Critical Non-Impact Alerts	VMware
+VMwareVCMSDS- Not In Running State	Critical Non-Impact Alerts	VMware
+vSphere Web Client- Not In Running State	Critical Non-Impact Alerts	VMware
+VMware vCenter Orchestrator Configuration- Not In Running State	Critical Non-Impact Alerts	VMware
+DSM SA Connection Service- Not In Running State	Critical Non-Impact Alerts	Hardware
+Distributed Transaction Coordinator- Not In Running State	Critical Non-Impact Alerts	Windows Server
+Microsoft Exchange Diagnostics 2013- Not In Running State	Others	Exchange
+Microsoft Exchange Health Manager 2013- Not In Running State	Others	Exchange
+Microsoft Exchange IMAP4 Backend 2013- Not In Running State	Critical Non-Impact Alerts	Exchange
+Microsoft Exchange Mailbox Replication 2013- Not In Running State	Critical Non-Impact Alerts	Exchange
+Microsoft Exchange Mailbox Transport Delivery 2013- Not In Running State	Critical Impact Alerts	Exchange
+Microsoft Exchange Mailbox Transport Submission 2013- Not In Running State	Critical Impact Alerts	Exchange
+Microsoft Exchange POP3 Backend 2013- Not In Running State	Critical Non-Impact Alerts	Exchange
+Microsoft Exchange Search 2013- Not In Running State	Others	Exchange
+Microsoft Exchange Search Host Controller 2013- Not In Running State	Others	Exchange
+Microsoft Exchange Throttling 2013- Not In Running State	Critical Non-Impact Alerts	Exchange
+Microsoft Exchange Unified Messaging 2013- Not In Running State	Others	Exchange
+Microsoft Exchange Frontend Transport 2013- Not In Running State	Critical Impact Alerts	Exchange
+Microsoft Exchange Unified Messaging Call Router 2013- Not In Running State	Critical Non-Impact Alerts	Exchange
+AD FS Web Agent Authentication Service- Not In Running State	Critical Non-Impact Alerts	Active Directory
+Netlogon Service- Not In Running State	Critical Impact Alerts	Active Directory
+Remote Desktop Configuration- Not In Running State	Critical Non-Impact Alerts	Terminal Server / RDS
+Remote Desktop Connection Broker- Not In Running State	Critical Non-Impact Alerts	Terminal Server / RDS
+Remote Desktop Licensing- Not In Running State	Critical Non-Impact Alerts	Terminal Server / RDS
+Remote Desktop Management- Not In Running State	Critical Non-Impact Alerts	Terminal Server / RDS
+Remote Desktop Services- Not In Running State	Critical Non-Impact Alerts	Terminal Server / RDS
+Remote Desktop Services UserMode Port Redirector- Not In Running State	Critical Non-Impact Alerts	Terminal Server / RDS
+RemoteApp and Desktop Connection Management- Not In Running State	Critical Non-Impact Alerts	Terminal Server / RDS
+Remote Desktop Gateway- Not In Running State	Critical Non-Impact Alerts	Terminal Server / RDS
+IKE and AuthIP IPsec Keying Modules- Not In Running State	Critical Non-Impact Alerts	Windows Server
+Intersite Messaging- Not In Running State	Critical Non-Impact Alerts	Windows Server
+IP Helper- Not In Running State	Critical Non-Impact Alerts	Windows Server
+Kerberos Key Distribution Center- Not In Running State	Critical Impact Alerts	Active Directory
+Local Session Manager- Not In Running State	Critical Impact Alerts	Windows Server
+Network Location Awareness- Not In Running State	Critical Non-Impact Alerts	Windows Server
+Network Store Interface Service- Not In Running State	Critical Impact Alerts	Windows Server
+Power- Not In Running State	Others	Windows Server
+Print Spooler- Not In Running State	Critical Impact Alerts	Windows Server
+Remote Procedure Call (RPC)- Not In Running State	Critical Impact Alerts	Windows Server
+Remote Registry- Not In Running State	Critical Non-Impact Alerts	Windows Server
+RPC Endpoint Mapper- Not In Running State	Critical Impact Alerts	Windows Server
+Security Accounts Manager- Not In Running State	Critical Impact Alerts	Windows Server
+Server- Not In Running State	Critical Impact Alerts	Windows Server
+Shell Hardware Detection- Not In Running State	Others	Windows Server
+System Event Notification Service- Not In Running State	Critical Non-Impact Alerts	Windows Server
+System Events Broker- Not In Running State	Others	Windows Server
+Task Scheduler- Not In Running State	Critical Non-Impact Alerts	Windows Server
+TCP/IP NetBIOS Helper- Not In Running State	Critical Non-Impact Alerts	Windows Server
+Themes- Not In Running State	Others	Windows Server
+User Access Logging Service- Not In Running State	Others	Windows Server
+User Profile Service- Not In Running State	Others	Windows Server
+Windows Connection Manager- Not In Running State	Critical Non-Impact Alerts	Windows Server
+Windows Event Log- Not In Running State	Critical Impact Alerts	Windows Server
+Windows Firewall- Not In Running State	Critical Impact Alerts	Windows Server
+Windows Font Cache Service- Not In Running State	Others	Windows Server
+Windows Licensing Monitoring Service- Not In Running State	Others	Windows Server
+Windows Management Instrumentation- Not In Running State	Critical Non-Impact Alerts	Windows Server
+Windows Remote Management (WS-Management)- Not In Running State	Critical Non-Impact Alerts	Windows Server
+Windows Time- Not In Running State	Critical Non-Impact Alerts	Windows Server
+Workstation- Not In Running State	Critical Impact Alerts	Windows Server
+Citrix Encryption Service- Not In Running State	Critical Non-Impact Alerts	Citrix
+Citrix Licensing- Not In Running State	Critical Non-Impact Alerts	Citrix
+SQL Server (SQLEXPRESS)- Not In Running State	Critical Non-Impact Alerts	SQL Server
+SQL Server (BKUPEXEC)- Not In Running State	Critical Non-Impact Alerts	SQL Server
+SQLAgent$SBSMONITORING- Not In Running State	Critical Non-Impact Alerts	SQL Server
+SQLAgent$SHAREPOINT- Not In Running State	Critical Non-Impact Alerts	SQL Server
+DSM SA Data Manager- Not In Running State	Critical Non-Impact Alerts	Hardware
+VMware Tools Service- Not In Running State	Others	VMware
+COMODO Internet Security Helper Service- Not In Running State	Others	Antivirus
+DHCP Client- Not In Running State	Critical Non-Impact Alerts	DHCP
+COMODO Virtual Service Manager- Not In Running State	Others	Antivirus
+DFS Replication- Not In Running State	Critical Non-Impact Alerts	Active Directory
+Routing and Remote Access- Not In Running State	Critical Non-Impact Alerts	Terminal Server / RDS
+SQL Server Integration Services 10.0- Not In Running State	Critical Non-Impact Alerts	SQL Server
+VMware vSphere Update Manager Service- Not In Running State	Others	VMware
+SQL Server VSS Writer- Not In Running State	Critical Non-Impact Alerts	SQL Server
+SQL Server Browser- Not In Running State	Critical Non-Impact Alerts	SQL Server
+Hyper-V Virtual Machine Management- Not In Running State	Critical Non-Impact Alerts	Hyper-V
+SQL Server Active Directory Helper- Not In Running State	Others	SQL Server
+DFS Namespace- Not In Running State	Critical Non-Impact Alerts	Active Directory
+Hyper-V Guest Service Interface- Not In Running State	Critical Non-Impact Alerts	Hyper-V
+DSM SA Event Manager- Not In Running State	Others	Hardware
+DSM SA SharedServices- Not In Running State	Others	Hardware
+Hyper-V Remote Desktop Virtualization Service- Not In Running State	Critical Non-Impact Alerts	Hyper-V
+SQL Server (BLACKBERRY)- Not In Running State	Critical Non-Impact Alerts	SQL Server
+Lync Server Front-End- Not In Running State	Critical Impact Alerts	Skype for Business
+Lync Server IM Conferencing- Not In Running State	Critical Non-Impact Alerts	Skype for Business
+Lync Server Replica Replicator Agent- Not In Running State	Critical Non-Impact Alerts	Skype for Business
+Lync Server Application Sharing- Not In Running State	Critical Non-Impact Alerts	Skype for Business
+Lync Server Audio Test Service- Not In Running State	Others	Skype for Business
+Lync Server Audio/Video Conferencing- Not In Running State	Critical Non-Impact Alerts	Skype for Business
+Lync Server Web Conferencing- Not In Running State	Critical Non-Impact Alerts	Skype for Business
+Lync Server Bandwidth Policy Service (Authentication)- Not In Running State	Others	Skype for Business
+Lync Server Bandwidth Policy Service (Core)- Not In Running State	Others	Skype for Business
+Lync Server Call Park- Not In Running State	Critical Impact Alerts	Skype for Business
+Lync Server Centralized Logging Service Agent- Not In Running State	Critical Non-Impact Alerts	Skype for Business
+Lync Server Conferencing Attendant- Not In Running State	Critical Non-Impact Alerts	Skype for Business
+Lync Server Mediation- Not In Running State	Critical Non-Impact Alerts	Skype for Business
+Lync Server Response Group- Not In Running State	Critical Non-Impact Alerts	Skype for Business
+Lync Server XMPP Translating Gateway- Not In Running State	Critical Non-Impact Alerts	Skype for Business
+Lync Server Audio/Video Authentication- Not In Running State	Critical Non-Impact Alerts	Skype for Business
+Lync Server Web Conferencing Compatibility- Not In Running State	Critical Non-Impact Alerts	Skype for Business
+Webroot SecureAnywhere Endpoint Protection- Not In Running State	Critical Non-Impact Alerts	Antivirus
+Citrix Audio Redirection Service- Not In Running State	Critical Non-Impact Alerts	Citrix
+Citrix Diagnostic Facility COM Server- Not In Running State	Critical Non-Impact Alerts	Citrix
+Citrix Group Policy Engine- Not In Running State	Critical Non-Impact Alerts	Citrix
+Citrix HDX MediaStream for Flash Service- Not In Running State	Critical Non-Impact Alerts	Citrix
+Citrix Health Monitoring and Recovery- Not In Running State	Critical Non-Impact Alerts	Citrix
+Citrix Licensing Support Service- Not In Running State	Critical Non-Impact Alerts	Citrix
+Citrix Print Manager Service- Not In Running State	Critical Non-Impact Alerts	Citrix
+Citrix Services Manager- Not In Running State	Critical Non-Impact Alerts	Citrix
+Citrix Smart Card Service- Not In Running State	Critical Non-Impact Alerts	Citrix
+Citrix Streaming Service- Not In Running State	Critical Non-Impact Alerts	Citrix
+Citrix Tools for Virtual Machines Service- Not In Running State	Critical Non-Impact Alerts	Citrix
+Active Directory Domain Services- Not In Running State	Critical Impact Alerts	Active Directory
+Active Directory Federation Service- Not In Running State	Critical Non-Impact Alerts	Active Directory
+Windows Azure active directory Sync service- Not In Running State	Critical Non-Impact Alerts	Active Directory
+StorageCraft SPX- Not In Running State	Critical Non-Impact Alerts	Backup
+Microsoft Dynamics NAV Business Web Services- Not In Running State	Critical Non-Impact Alerts	Windows Server
+Microsoft Dynamics NAV Server- Not In Running State	Critical Non-Impact Alerts	Windows Server
+SQL Server Integration Services 11.0- Not In Running State	Critical Non-Impact Alerts	SQL Server
+VMware high CPU utilization is observed	Critical Non-Impact Alerts	VMware
+Azure AD Connect Health SYNc Indsights service- Not In Running State	Critical Non-Impact Alerts	Active Directory
+Azure AD Connect Health SYNc monitoring service- Not In Running State	Critical Non-Impact Alerts	Active Directory
+Microsoft Azure AD Sync- Not In Running State	Critical Impact Alerts	Active Directory
+Microsoft Exchange Compliance Audit- Not In Running State	Others	Exchange
+Microsoft Exchange Compliance Service- Not In Running State	Critical Non-Impact Alerts	Exchange
+Microsoft Exchange DAG Management- Not In Running State	Critical Non-Impact Alerts	Exchange
+Microsoft Exchange Health Manager Recovery- Not In Running State	Critical Non-Impact Alerts	Exchange
+Microsoft Exchange Server Extension for Windows Server Backup- Not In Running State	Others	Exchange
+Microsoft Filtering Management Service- Not In Running State	Critical Impact Alerts	Exchange
+VMware Inventory Service- Not In Running State	Critical Impact Alerts	VMware
+VMware License Service- Not In Running State	Critical Impact Alerts	VMware
+VMware Postgres- Not In Running State	Critical Impact Alerts	VMware
+CryptoPrevent Email Service- Not In Running State	Others	Security
+CryptoPrevent Folder Watch Service- Not In Running State	Others	Security
+CryptoPrevent Monitor Service- Not In Running State	Critical Non-Impact Alerts	Security
+Symantec LUService- Not In Running State	Others	Antivirus
+Symantec Migration Service- Not In Running State	Critical Non-Impact Alerts	Antivirus
+Symantec Network Access Control- Not In Running State	Others	Antivirus
+Symantec.cloud Cloud Agent- Not In Running State	Others	Antivirus
+Symantec.cloud Endpoint Protection- Not In Running State	Critical Non-Impact Alerts	Antivirus
+Symantec.cloud Scheduler- Not In Running State	Others	Antivirus
+Symantec Endpoint Protection.- Not In Running State	Critical Non-Impact Alerts	Antivirus
+SharePoint Search Host Controller- Not In Running State	Critical Non-Impact Alerts	Sharepoint
+SharePoint Server Search- Not In Running State	Others	Sharepoint
+Cluster Service- Not In Running State	Critical Impact Alerts	Windows Server
+ 	 	 
+ 	 	 
+Sophos Network Threat Protection- Not In Running State	Others	Antivirus
+SQL Server Reporting Services (MSSQLSERVER)- Not In Running State	Critical Non-Impact Alerts	SQL Server
+SQL Server Integration Services 12.0- Not In Running State	Critical Non-Impact Alerts	SQL Server
+HP AMS Storage Service- Not In Running State	Critical Non-Impact Alerts	Hardware
+HP Smart Array SAS/SATA Event Notification Service- Not In Running State	Critical Non-Impact Alerts	Hardware
+EventTracker Agent Service- Not In Running State	Critical Impact Alerts	Security
+EventTracker Monitoring Daemon Service- Not In Running State	Critical Impact Alerts	Security
+HP ProLiant Agentless Management Service- Not In Running State	Others	Hardware
+HP ProLiant Agentless Management Service- Not In Running State [Unexpected]	Others	Hardware
+Azure AD Connect Health AD FS Monitoring Service- Not In Running State	Critical Non-Impact Alerts	Active Directory
+Azure AD Connect Health AD FS Insights Service- Not In Running State	Critical Non-Impact Alerts	Active Directory
+Azure AD Connect Health AD DS Monitoring Service- Not In Running State [Unexpected]	Critical Non-Impact Alerts	Active Directory
+Azure AD Connect Health AD DS Insights Service- Not In Running State	Critical Non-Impact Alerts	Active Directory
+Azure AD Connect Health AD DS Insights Service- Not In Running State [Unexpected]	Critical Non-Impact Alerts	Active Directory
+
+ 
+
+ConnectWise RMM Intelligent Alerts Monitoring Conditions Preview Alerts
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ConnectWise RMM Intelligent Alerts Monitoring Conditions
+Preview Alerts
+Custom Monitors
+Build your own alert monitors using the variety of monitor templates in ConnectWise RMM. Monitors use these templates to trigger alerts when issues ar...
+S.M.A.R.T Monitoring
+S.M.A.R.T. (Self-Monitoring Analysis and Reporting Technology) monitors a hard drive for predictive failures. Our agent automatically monitors the S.M...
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

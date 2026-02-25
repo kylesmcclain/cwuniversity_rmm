@@ -1,0 +1,102 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Integrations to ConnectWise RMM   ScreenConnect with RMM   ScreenConnect System Requirements for RMM
+ScreenConnect System Requirements for RMM
+Last updated
+May 26, 2023
+Table of contents
+Overview
+Supported Browsers
+Whitelisted Pages
+Bandwidth Usage 
+Host Client System Requirements 
+Windows
+macOS
+Linux/Unix
+Overview
+
+This document lists the system requirements for ConnectWise ScreenConnect.
+
+Supported Browsers
+
+Important: ConnectWise ScreenConnect 6.8+ requires browsers with CSS grid support, but we highly recommend keeping your browser up-to-date.
+
+Google Chrome™ 57+
+Firefox® 52+
+Safari® 10.1+
+Microsoft Edge 41.16299.579.0+
+Whitelisted Pages
+
+Whitelist the following domains in your spam filter:
+
+amazonses.com
+54.240.42.206
+54.240.42.207
+screenconnect.com
+
+Because we cannot guarantee that your cloud instance will use the same server IP address, it is safest to all allow all IP addresses that are listed with the nslookup command for both URLs:
+
+nslookup instance-xxxxxx-relay.screenconnect.com
+nslookup yourinstance.screenconnect.com
+
+"yourinstance.screenconnect.com" is your cloud instance URL and "instance-xxxxxx-relay.screenconnect.com" is your Relay Server URL.
+
+To find your Relay Server URL, navigate to Administration > Status > External Accessibility Check.
+
+Bandwidth Usage 
+
+Typical usage for a ConnectWise ScreenConnect session requires 500-1000 kbps. More intensive usage, such as video playback, will require more bandwidth.
+
+Host Client System Requirements 
+
+Note: While we do our best to support end-of-life operating systems, we cannot guarantee successful performance in all cases.
+
+Windows
+Windows 7
+Windows 8.1
+Windows 10
+Windows Server 2008
+Windows Server 2012
+Windows Server 2016
+Windows Server 2019
+macOS
+
+While we attempt to support end-of-life macOS® systems, ScreenConnect can only guarantee support for the current operating system and its two previous versions. See Apple's security updates to check the support status of your operating system. 
+
+Linux/Unix
+Ubuntu
+OpenSUSE
+Fedora
+Red Hat Enterprise
+CentOS
+Most other distributions (Oracle or OpenJDK JRE 1.6+)
+
+ 
+
+ScreenConnect Security Guide The Host Client
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ScreenConnect Installation Status and Error Codes
+Enable or Disable Connection Consent for ScreenConnect
+ScreenConnect Dashboard for RMM
+ScreenConnect 1-Click for RMM
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

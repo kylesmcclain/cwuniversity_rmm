@@ -1,0 +1,57 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   RMM - Network Assessment   Network Data Collector
+Network Data Collector
+Last updated
+Jul 9, 2025
+Table of contents
+Overview
+Using the Optional Network Data Collector
+Run the Computer Data Collector
+Overview
+
+The Optional Network Data Collector collects information from Windows and Mac machines that are not on the network. It should be run from the primary domain controller with administrative privileges.
+
+Using the Optional Network Data Collector
+
+The Optional Network Data Collector scans Active Directory and performs scans of devices and computers on the network using ICMP Ping, SNMP, WMI, RPC, and other network protocols to gather more detailed information. Administrative rights are required, and computers on the network must have WMI and other protocols open, available, and running.
+
+The Network Data Collector is not able to collect detailed information on those systems if remote access to WMI, etc., on the computers is blocked by a firewall or is turned off (e.g., using Group Policy). However, it will still perform the port scan, looking for common open ports.
+
+The optional Computer Data Collector allows you to perform scans on individual systems and merge the data from these computer scans into the network scan during the Import Scan.
+
+Scans can be used on networks that have a domain as well as networks without a domain. But in both cases, you must also run the Network Data Collector because the Network Assessment tool requires an NDF.
+
+Remember, use the Protocol Availability Scan to determine what systems are accessible and to decide if you also want to collect data from the systems individually.
+
+Run the Computer Data Collector
+Run the Computer Data Collector as an administrator on one or more of the computers included in the reports to produce one <computername>.CDF file for each computer. Upon completion, the program opens the output folder
+Note: If you run it from the computer's drive, the default is to unzip and run in the temporary directory. 
+Copy the CDF to a common/permanent location. Consider unzipping permanently to a thumb drive and running runLocal.bat or runLocalSilent.bat, which collects the information and stores it on the thumb drive.
+HIPAA Compliance Module Network Detective XP Migration Readiness Analysis Report
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+PCI Compliance Module
+Advanced Configuration Network Assessment Tool
+Client Connector Tool
+HIPAA Compliance Module
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

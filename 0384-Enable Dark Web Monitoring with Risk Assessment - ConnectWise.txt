@@ -1,0 +1,65 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Reports   Security Reports   Risk Assessment Reports   Enable Dark Web Monitoring with Risk Assessment
+Enable Dark Web Monitoring with Risk Assessment
+Last updated
+Jan 21, 2025
+Table of contents
+Overview
+Enable Dark Web Monitoring
+Video: Set up a Site for Dark Web Monitoring
+Overview
+
+Dark Web capabilities allow you to scan client domains for email ID exposure and, if Dark Web monitoring is enabled, be notified by ticket when an email ID is exposed on the Dark Web.
+
+Note: Dark Web Monitoring is billed per domain configured on the sites. Personal email IDs are not billed. 
+
+Enable Dark Web Monitoring
+
+Enabling dark web monitoring can be completed when activating ConnectWise Risk Assessment in the Asio™ platform. 
+
+To ensure dark web monitoring is enabled: 
+
+In the Asio platform, click on the Security > Activations.
+Select a site and click Get Started.
+
+Click Risk Assessment.
+
+If Risk Assessment has not been activated on the site yet, input the domain name in the Domain Name field. If you intend to scan multiple domains, separate the domain names with a comma.
+To scan individual email addresses associated with a public provider (Gmail, Yahoo, etc.), add them in the Email Id field. Use a comma to separate multiple addresses.
+Note: Dark web tickets can be found in Asio under Service Delivery >Service Tickets. Ticket details include: Impacted Site, Total user account Impacted, Impacted Email ID and Password, Breach Description, Media URL, Confidence, and Severity.
+Select the Alert for new user data on the Dark Web checkbox to enable automated alerts for dark web monitoring. You can still generate reports manually even if this setting is not enabled. Dark Web Monitoring runs daily scans to determine if a password associated with an email address entered by you has appeared on the Dark Web in the previous 24 hours and generates a ticket to notify you. The Dark Web Assessments report all email IDs and passwords that have been exposed on the Dark Web throughout the domain's history. ConnectWise recommends running an initial assessment to review client email IDs that may have been exposed prior to Dark Web Monitoring being enabled.
+Click FINISH and then click Close on the following screen.
+Video: Set up a Site for Dark Web Monitoring
+
+ 
+
+Risk Assessment Reports Generate and Download an Assessment
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Generate and Download an Assessment
+Understanding Risk Assessment Reports
+ConnectWise Endpoint Policy Management: Reports
+This article provides information on the available reports for ConnectWise Endpoint Policy Management™.
+BrightGauge in ConnectWise RMM
+Reports for RMM are available in BrightGauge. These reports are in the form of templates and you can use these to create reports for your clients or f...
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

@@ -1,0 +1,80 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Policies and Packages   Policies
+Policies
+Last updated
+Nov 17, 2025
+Table of contents
+Overview
+Create a New Policy
+Duplicate a Policy
+Overview
+
+Policies allow users to define values for settings. By creating a policy, you can manage your settings from one place, without having to make changes to each and every endpoint you manage.
+
+Create a New Policy
+Navigate to Endpoints > Policies & Packages > Policies.
+Click the Add Policy button. The following screen will appear.
+
+
+Input the appropriate information for the policy.
+
+Field Name
+
+	
+
+Description
+
+
+Category	Defines what the policy applies to, such as a Device.
+Type	Defines what type of settings the policy contains, such as OS Patching.
+Name	A user defined name for the policy, up to 200 characters.
+Settings	Variable list of settings and values determined by the type of policy being created.
+Click the Save button when you are finished. To edit an existing policy, you can select the one you want to edit on the Policies page.
+Duplicate a Policy
+
+Note: Users will need to have the create policy permission enabled, otherwise the duplicate option will not be visible to them.
+
+Navigate to Endpoints > Policies & Packages > Policies.
+Click on the policy that you want to duplicate.
+Click on the Duplicate button.
+
+
+The edit screen opens.
+
+The name of the policy is pre-appended with Copy of [name of the copied policy].
+
+For example, if the policy name was 20SeptPolicy, the duplicate is named Copy of 20SeptPolicy.
+
+Edit the name and settings of the policy if needed.
+
+Save the duplicate policy to create it.
+
+
+Evolve Recommended - Third Party Patching Policy Packages
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Packages
+Policy Groups
+Evolve Recommended - Best Practices for Policies and Packages
+Command for Networks
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

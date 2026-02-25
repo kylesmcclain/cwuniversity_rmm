@@ -1,0 +1,54 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Reports   Asio Reports   Technical Details Reports   Asset Change Report
+Asset Change Report
+Last updated
+Sep 22, 2025
+Table of contents
+Overview
+Asset Change Report Details
+Overview
+
+The Asset Change Report contains data for asset changes over a given period. For example, these reports can help you troubleshoot issues end users raise, especially if their systems are running slow or abnormal. You can see physical changes to a machine by running the Logical Memory, Physical Disk, or Adapter Configuration Change Report. If an end user's system is running slow, you may want to check if RAM has been removed from the system or if unauthorized programs have been added (these programs may load modules into RAM on start-up, causing them to run faster when used but slowing down the system as a whole).
+
+  To locate this screen, navigate to Reports > Asio > Detailed Reports > Technical Details > Asset Change Report.
+
+Asset Change Report Details
+
+To access the report:
+
+Select a site.
+Select an Agent type (e.g., Desktop, Server, VMware).
+Select Agents.
+Select a date range.
+Select asset change report (e.g., Logical Drive, Logical Memory, Software, Physical Disk).
+
+ 
+
+Technical Details Reports Disk Space Report
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Disk Space Report
+Installed Software Change Report
+Installed Software Count Report
+Installed Software Report
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

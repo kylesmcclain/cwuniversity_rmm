@@ -1,0 +1,133 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   RMM Reporting API   Reporting API REST Resources   Expiring Warranties
+Expiring Warranties
+Last updated
+Jul 9, 2025
+Table of contents
+Overview
+Endpoint and URI
+Method
+Request Body
+Response Body
+Parameter Descriptions for Expiring Warranties
+Source of Data in the Asio Platform 
+Overview
+
+Retrieves a list of resources that have expired warranties or have warranties that will soon expire.
+
+Endpoint and URI
+
+https://itsapi.itsupport247.net/repo...ranty/expiring
+
+Method
+
+POST
+
+Request Body
+
+{
+
+"Month":4,
+
+"SiteCode":"AGTSolutions",
+
+"Year":2015,
+
+"ResourceType":"server"
+
+}
+
+Response Body
+
+{
+
+"error":null,
+
+"expiringWarranties":[
+
+{
+
+"description":"Wty: HP HW Maintenance Onsite Support",
+
+"expirationDate":"2015-03-08",
+
+"MachineId": 9223372036854775807,
+
+"provider":"Base Warranty",
+
+"resourceName": "Windows Server 2008_1",
+
+"serviceTag":"CZ120502DC",
+
+"shipDate":"2015-02-08",
+
+"status":"Expired"
+
+},
+
+{
+
+...
+
+},
+
+{
+
+...
+
+}
+
+]
+
+}
+
+Parameter Descriptions for Expiring Warranties
+Parameter	Description
+"Month"	Requested month (numerical)
+"SiteCode"	Unique site code listed in Asio™ Platform (ITSupport Portal)
+"Year"	Requested year
+"ResourceType"	Desktop or server
+"description"	Warranty description
+"expirationDate":	Warranty expiration date
+"MachineId"	Unique machine ID in ConnectWise database
+"provider"	Warranty provider
+"resourceName"	Machine name in Asio™ Platform (ITSupport Portal)
+"serviceTag"	Warranty service tag
+"shipDate"	Hardware ship date
+"status"	Warranty status
+Source of Data in the Asio Platform 
+
+Reports > Asio > Executive Report > Server Data / Desktop Data > Warranty > Expired / Expiring
+
+Disk Usage Installed Software
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Agent Details
+Retrieves agent information for the authenticated partner and the specified site.
+Antivirus Summary
+Retrieves counts of machines having antivirus protection in the following states: Updated, Outdated, Not Installed, or Information Unavailable.
+Antivirus Version Summary
+Retrieves currently detected antivirus software and the definition version.
+BCDR Continuity Appliances
+Retrieves a list of Recover Continuity backup appliances provisioned at the given site.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

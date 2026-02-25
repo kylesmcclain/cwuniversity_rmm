@@ -1,0 +1,156 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   RMM Tools   Gateway Cache
+Gateway Cache
+Last updated
+Jul 8, 2025
+Table of contents
+Overview
+Gateway Cache Software Prerequisites
+Hardware
+Supported OS
+Prerequisites
+Port Information
+Internet Requirements
+Third Party Patching URLs
+How to enable the Gateway cache
+Disable the role of Gateway cache on an endpoint
+Mapping Endpoints communicating with Gateway cache
+Overview
+
+The Gateway cache is responsible for caching all preventive maintenance updates and security patches for all Windows resources. Enabling the endpoint to act as a Gateway cache reduces the amount of internet traffic at the end client’s site by downloading and caching updates and patches.
+
+The Gateway cache must be enabled on a Windows machine managed from the Asio™ platform.
+
+RMM agent updates, Microsoft patch updates, and third-party patch updates (Windows) are downloaded on demand to the Gateway cache and deployed to client machines on request.
+
+Any updates that are already up to date are not deployed again from Gateway Cache.
+Downloaded files on the Gateway older than 40 days (the default configuration) are automatically removed from the download folder.
+Gateway Cache Software Prerequisites
+
+To enable the Gateway cache role on a machine, your system must meet the following requirements:
+
+Hardware
+CPU: Pentium Class computer (PIV, AMD series).
+RAM: 4 GB
+Disk Space: The computer drives where the Cache feature is enabled to download and maintain Agent updates and application updates will take a max size of 4 GB.
+Supported OS
+
+Windows 8
+
+Windows 8.1
+
+Windows 10
+
+Windows 11
+
+Windows Server 2003
+
+Windows Server 2008
+
+Windows Server 2012
+
+Windows Server 2016
+
+Windows Server 2019
+
+Prerequisites
+
+The gateway cache should be configured on a Windows machine (Windows desktop or server) managed from the Asio platform (ITSupport Portal).
+
+Requires a static IP address because it is mapped in the configuration file on the agents, which checks for patches on the Gateway cache.
+
+Port Information
+
+TCP port 6061: All the agents on the internal network communicate with the Gateway cache over TCP port 6061. Configure the local endpoint protection and firewall to allow incoming connection to the Gateway over this port.
+
+Internet Requirements
+Requires Internet Explorer 6.0 or later.
+The computer should have outbound HTTP and HTTPS access to the internet either directly or via Proxy.
+The computer on which the Gateway cache is enabled must be able to access the following websites:
+http://download.windowsupdate.com
+Third Party Patching URLs
+
+https://download.ccleaner.com
+
+https://download.mozilla.org
+
+https://files2.codecguide.com
+
+https://files3.codecguide.com
+
+https://get.videolan.org
+
+https://www.adobe.com
+
+https://www.dropbox.com
+
+https://dl.google.com
+
+https://secure-appldnld.apple.com
+
+https://updates.cdn-apple.com
+
+https://www.apple.com
+
+https://www.win-rar.com
+
+How to enable the Gateway cache
+
+Log in to the Asio™ platform and navigate to Endpoints > Devices
+
+a Windows endpoint, then select Manage > Select Gateway Cache.
+
+Note: You can only select one machine at a time.
+
+Click on Save to deploy the configuration on the endpoint to act as Gateway cache.
+
+The enablement process takes 5 to 10 minutes, and the endpoint is updated to act as a Gateway Cache.
+
+On completion of the backend process, the endpoint displays as "Gateway Cache - Enabled".
+
+If a technician tries to enable the Gateway cache on a machine other than windows the following error will be shown.
+
+Disable the role of Gateway cache on an endpoint
+Select the endpoint where Gateway cache is enabled.
+Uncheck the box and click Save to remove the configuration.
+
+The endpoint will display as Gateway Cache - Disable In Progress.
+
+Mapping Endpoints communicating with Gateway cache
+
+When an endpoint is enabled as Gateway in each site location, it will be automatically mapped to a Gateway cache.
+
+
+ 
+
+RMM Scanning Tool APIs
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+APIs
+RMM Scanning Tool
+The RMM Scanning Tool allows you to: Perform on-demand RMM desktop and server (where applicable) agent deployments to Windows, Mac, and Linux machine...
+Asio Integration API
+Managed Service Providers (MSPs) use a number of different tools and products to effectively monitor and manage their client's networks. Each of these...
+Public Ticketing API
+ConnectWise's public ticketing API allows MSPs or PSA vendors to integrate with our two-way ticket synchronization system to create tickets, update ti...
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

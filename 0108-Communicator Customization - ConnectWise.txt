@@ -1,0 +1,77 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Communicator User Guide   Communicator Customization
+Communicator Customization
+Last updated
+Sep 30, 2024
+Table of contents
+Overview
+Customizable Menus
+Custom URLs
+Parent Custom Menus
+Custom Message Menu
+Overview
+
+You can create custom menus and custom message boxes for your end-users to use. Navigate to one of the following locations to view and enable these settings.
+
+Endpoints > Packages > Select Required Policy > Edit
+
+Endpoints > Devices > Select required endpoint > Settings > Devices > Communicator > Edit > Save
+Customizable Menus
+
+Custom URLs
+
+Custom URLs are the predefined set of menus that can be enabled on the Policy and can be customized with custom names and URLs. 
+
+Up to three URLs can be added per Policy
+Once the Custom URL menu is filled with data and saved,  the corresponding menu is reflected on the Communicator tray.
+After clicking the menu, the URL is launched with the User's default browser.
+Parent Custom Menus
+
+Parent Custom Menus allow you to group URLs under one parent menu.
+
+Up to two Parent Menus could be added per Policy.
+A Parent Menu includes up to four child URL menus.
+
+Custom Message Menu
+
+You can create Message boxes within the Communicator tray to share more information with End-users. The message box will pop up on the end user's desktop with all the details provided by the partner in the Policy.
+
+ 
+
+Communicator Configuration Communicator Default Menus
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Communicator Configuration
+Communicator Assignment
+Communicator Default Menus
+Communicator Branding
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

@@ -1,0 +1,78 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Communicator User Guide
+Communicator User Guide
+Last updated
+Mar 11, 2025
+Table of contents
+Overview
+Data Grid
+Overview
+
+The Communicator is a tool that allows you to synchronize news feeds, send instant messages, and integrate scripts to provide your clients with resources to fix problems on demand.
+
+Clients can access your Communicator via a taskbar menu deployed to any Windows or Mac desktop running the RMM desktop agent.
+
+Data Grid
+
+The data grid helps you display, sort, filter, and manipulate large datasets with ease. Customize your view by rearranging and resizing columns to suit your needs.
+
+Data Grid Option	Description
+Search	Use the search bar to look for a specific item in the list.
+Show Filters	Filter the list by the fields in the grid.
+Manage Columns	Choose which columns of the grid you want to display.
+Manage View	Choose between the different views of the grid.
+
+ 
+
+ 
+
+To learn more about the Communicator, review the other articles in this section:
+
+All Articles
+Communicator Assignment
+Communicator Branding
+Communicator Configuration
+Communicator Customization
+Communicator Default Menus
+Communicator Hidden Mode
+Communicator Messaging
+Communicator Permissions
+Communicator Scripting
+Communicator Ticketing
+Auvik TrafficInsights FAQs Communicator Assignment
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Communicator Configuration
+Communicator Assignment
+Communicator Default Menus
+Communicator Branding
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

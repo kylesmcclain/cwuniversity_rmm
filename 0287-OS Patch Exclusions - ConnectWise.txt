@@ -1,0 +1,106 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Patching   OS Patching   OS Patch Exclusions
+OS Patch Exclusions
+Last updated
+Jan 16, 2026
+Table of contents
+Overview
+Data Grid
+Creating a new Patch Exclusion
+Editing a Patch Exclusion
+Deleting a Patch Exclusion
+Deployment Process
+Compliance Logic
+Overview
+
+The Patch Exclusions page can be used to Block updates across all sites for Automated deployment as per policy. All updates are collated and listed based on the KB number. Selecting the KB Number will show all the different updates available under the given KB Number
+
+You can navigate to the patch approvals page by clicking Endpoints > Patches > Exclusions.
+
+Data Grid
+
+The data grid helps you display, sort, filter, and manipulate large datasets with ease. Customize your view by rearranging and resizing columns to suit your needs.
+
+Data Grid Option	Description
+Search	Use the search bar to look for a specific item in the list.
+Show Filters	Filter the list by the fields in the grid.
+Manage Columns	Choose which columns of the grid you want to display.
+Manage View	Choose between the different views of the grid.
+Creating a new Patch Exclusion
+
+To create a new Exclusion rule click the Add button.
+
+Fill in the following data:
+
+Name (required)
+
+Description
+
+Exclusion Criteria (required)
+
+A Patches Update Title or a KB number that contains one or more keywords entered in this section will be excluded from the automated deployment.
+
+Resources to assign newly created exclusion rule
+
+It's possible to select at the site level or a specific endpoint on a site.
+
+Click Save.
+
+Note: You need to press Enter to create each Exclusion criteria.
+
+Editing a Patch Exclusion
+
+To edit a patch exclusion, navigate to the Patch Exclusions page and click on the Exclusion Name.
+
+Now, make any required updates and click Save.
+
+To go back to the exclusion rules list, select Cancel after your edits are saved.
+
+Deleting a Patch Exclusion
+
+To delete a patch exclusion, navigate to the Patch Exclusions page and click the checkboxs next to any patch exclusion you want to delete.
+
+Click Delete.
+
+A confirmation window will appear. Select Delete again.
+
+Deployment Process
+
+Missing excluded patches for the endpoint will not be deployed when Policy Setting = Deploy Only Partner or NOC Approved.
+
+Missing excluded patches for the endpoint will be deployed when Policy Setting = Deploy All.
+
+Missing excluded patches for the endpoint will be deployed when Policy Setting = Deploy All except Partner/NOC Disapproved.
+
+Compliance Logic
+
+Missing excluded patches are not considered in calculating the compliance score for the endpoint when Policy Setting = Deploy only Approved.
+
+OS Patch Automation System Level Changes OS Patching Compliance
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+OS Patching Compliance
+OS Patching Getting Started Settings
+OS Patch Approvals
+OS Patching Policies
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

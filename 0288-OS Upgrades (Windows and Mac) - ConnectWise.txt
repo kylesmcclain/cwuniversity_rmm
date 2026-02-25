@@ -1,0 +1,69 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Patching   OS Patching   OS Upgrades (Windows and Mac)
+OS Upgrades (Windows and Mac)
+Last updated
+Feb 4, 2025
+Table of contents
+Overview
+Create a New Policy for OS Upgrade
+Create a New Package with Your OS Upgrade Policy
+FAQs
+What happens when I don’t opt in for OS upgrades?
+What is the difference between feature updates vs OS upgrades?
+Overview
+
+The OS Upgrade feature allows you to easily upgrade your Windows and MAC endpoints to the latest available OS version. Please note that regular security updates and feature updates and major upgrades are independent functionality. When you opt in for OS Upgrades and applicable OS Version upgrades found in the assessment, we trigger the OS upgrade deployment as per the schedule defined in Deploy Feature Updates/OS Upgrades.
+
+Create a New Policy for OS Upgrade
+Navigate to Endpoints > Policies and click Add Policy.
+Choose OS Patching Desktop.
+Name the new policy.
+Switch the OS Patching Automation to ON.
+Under OS Upgrade, switch the OS Upgrade toggle to On.
+
+Under Schedule, use the Deploy Feature Updates / OS Upgrades drop-down to select At scheduled time and choose the window you want the OS Upgrade to occur.
+When you have finished selecting your settings, click Save.
+Create a New Package with Your OS Upgrade Policy
+Navigate to Endpoints > Packages and click Add Package.
+Enter a Package Name.
+Add the new policies to your package.
+Click Save.
+From the Packages page, click on the Sites tab.
+Select all of the sites your want to assign your package to.
+FAQs
+What happens when I don’t opt in for OS upgrades?
+
+Regular updates and feature updates will work as expected for both Windows and MAC endpoints as OS Upgrade is an independent functionality that upgrades the Operating System version.
+
+What is the difference between feature updates vs OS upgrades?
+
+A feature update is a minor improvement or a bug fix, while an upgrade is a major improvement or a change in the version of software or hardware. An update is often released to fix errors, enhance security or add new features, while an upgrade improves the performance or functionality of a system.
+
+OS Patching Reboot Patch Testing
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+OS Patching Compliance
+OS Patching Getting Started Settings
+OS Patch Approvals
+OS Patch Exclusions
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

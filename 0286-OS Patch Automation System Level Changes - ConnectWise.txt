@@ -1,0 +1,116 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Patching   OS Patching   OS Patch Automation System Level Changes
+OS Patch Automation System Level Changes
+Last updated
+Jan 9, 2025
+Table of contents
+Overview
+Disable Windows Auto Update (Windows and MacOS)
+Disable Windows Auto Reboot (Windows only)
+Disable Check for updates (Windows 10 and above only)
+Using Automation Task to set Registry keys
+Overview
+
+To ensure the patch automation works as expected via the RMM, we have applied some endpoint level changes. These changes are only on the endpoints where OS Patch automation is enabled within Policies.
+
+The settings are applied immediately on the endpoint when policy is changed. Any applied changes are reverted when Patching automation is turned off.
+
+Note: Before uninstalling the RMM agent from endpoints, it is recommended to turn off the OS patching automation to revert these changes.
+
+Disable Windows Auto Update (Windows and MacOS)
+
+These changes prevent the OS from automatically downloading and installing patches outside the scheduled window and defined patch approvals.
+
+To revert this to default,
+
+For Windows:
+
+Set the following registry key:
+
+Path: HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU
+
+Key: NoAutoUpdate
+
+Value: 0
+
+For Mac:
+
+On your Mac, choose Apple menu  > System Settings
+Click General in the sidebar. (You may need to scroll down)
+Click Software Update on the right.
+To set update options, click the Info button for Automatic updates.
+Turn on Check for updates.
+Turn on Download new updates when available.
+Turn on Install macOS updates.
+Disable Windows Auto Reboot (Windows only)
+
+These changes prevent the OS from automatically restarting endpoints outside the scheduled maintenance window.
+
+To revert the setting to default, make the following changes:
+
+If endpoint is a Desktop/Server/VM
+
+Navigate to "C:\Windows\System32\Tasks\Microsoft\Windows\UpdateOrchestrator" (for 32 bit)
+or
+“C:\Windows\Sysnative\Tasks\Microsoft\Windows\UpdateOrchestrator” (64 bit)
+Check if Reboot_AC.BAK exists
+If yes, then delete the folder Reboot
+Rename Reboot.BAK to Reboot
+
+If endpoint is Laptop - Plugin goes to
+
+Navigate to "C:\Windows\System32\Tasks\Microsoft\Windows\UpdateOrchestrator" (for 32 bit)
+or
+“C:\Windows\Sysnative\Tasks\Microsoft\Windows\UpdateOrchestrator” (64 bit)
+Check if Reboot_AC.BAK exists
+If yes, then delete the folder Reboot_AC
+Rename Reboot.BAK to Reboot_AC
+Disable Check for updates (Windows 10 and above only)
+
+These changes disables the Check for update button within Windows and prevents downloading and installing patches outside the scheduled window and defined patch approvals.
+
+To revert this to default, set the following registry key:
+
+Path: HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate
+
+Key: SetDisableUXWUAccess
+
+Value: 0
+
+Using Automation Task to set Registry keys
+Navigate to Automation > Tasks.
+Search for the Task Configure registry settings.
+Click Schedule.
+Set the Parameters as shown below:
+
+
+Name the Automation Task.
+Select the Schedule and Resources.
+OS Patch Approvals OS Patch Exclusions
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+OS Patching Compliance
+OS Patching Getting Started Settings
+OS Patch Approvals
+OS Patch Exclusions
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

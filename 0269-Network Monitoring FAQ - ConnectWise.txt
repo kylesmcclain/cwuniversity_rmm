@@ -1,0 +1,139 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Network Monitoring and Management   Network Monitoring FAQ
+Network Monitoring FAQ
+Last updated
+Jan 7, 2025
+Table of contents
+Overview
+General FAQ
+What network monitoring capabilities are available in ConnectWise RMM?
+How are the embeded network monitoring options different from the Auvik standalone offerings?   
+How do I engage support for network monitoring?
+Why do the embedded network monitoring options (basic and advanced) not include the integrations that Auvik standalone does?
+Who has access to enable advanced and premier network monitoring?   
+How are the advanced and premier network monitoring features enabled? 
+How are the network monitoring options billed?   
+How do I upgrade or downgrade the network monitoring capabilities assigned per site?
+Do ConnectWise NOC services extend to network devices? ​
+Troubleshooting FAQ
+Why am I seeing the following screen under Endpoints > Network?
+Why am I seeing the following screen under Endpoints > Network?
+Why has the Last Reported date and time for a device not been updated on the Network devices page?
+Can I change my Auvik Domain name?
+On the network devices page, I see a lot of my devices listed as Generic. What does this mean?
+Overview
+
+The purpose of this article is to provide you with answers to the most frequently asked questions about Network Monitoring.
+
+General FAQ
+What network monitoring capabilities are available in ConnectWise RMM?
+Basic network monitoring is included in the RMM Pro and Premium packages. For more information on setup or features like network topology mapping, up/down alerts, audit logs and more, see the documentation: Network Monitoring Getting Started - ConnectWise
+Advanced network monitoring and Premier network monitoring are available for purchase as an add-ons for RMM Pro and Premium packages. For more information review the Network Monitoring Feature Comparison documentation.
+How are the embeded network monitoring options different from the Auvik standalone offerings?   
+
+Benefits of the embedded options:
+
+Implementation: Since network monitoring is embedded in RMM, this reduces the complexity of implementing and managing network management capabilities by using the existing RMM sites and agent setup.
+Visibility: ConnectWise RMM is your single pane of glass for client endpoints and networks on the Asio platform.
+Billing: Basic network monitoring is included in the Pro and Premium packages while advanced and premier can be selected at the site level through policies and are billed by the number of agents per enabled site. The site-based billing allows for greater flexibility and control- you only pay for what you need and can upgrade or downgrade customers through policies and packages.
+
+Support: The embedded network monitoring features are supported by the ConnectWise team. Exceptions:
+
+Custom Alerts: At this time, custom alerts must be created and managed from the Auvik UI, they do not appear in the Asio UI.
+
+Integration: The embedded network monitoring options in RMM do not create or sync configuration items to ConnectWise PSA or sync information to BrightGauge reporting. PSA configuration and BrightGauge sync capabilities are exclusive to Auvik standalone at this time.
+
+How do I engage support for network monitoring?
+
+Support for basic, advanced, and premier features is handled by a dedicated team at ConnectWise. ConnectWise RMM support can route your concerns to this team, or you can contact these network monitoring experts directly via these email or chat options:
+
+Email: networkmanagement@connectwise.com
+Chat: Navigate to the following link and select Network support for Auvik only. Then select Start a chat.
+North American Partners: https://control.itsupport247.net/QADashB/ContactUs
+EU Partners: https://euplatform.connectwise.com/QADashB/ContactUs
+Why do the embedded network monitoring options (basic and advanced) not include the integrations that Auvik standalone does?
+
+The network monitoring solution within RMM is not an integration with Auvik but a solution built through strategic partnerships to work seamlessly with the Asio platform. The integrations that Auvik buildsand maintains for its standalone offering are not available in Asio at this time.
+
+For updated timelines on features coming soon, please see the ConnectWise Roadmap.
+
+Who has access to enable advanced and premier network monitoring?   
+
+ConnectWise RMM Pro and Premium partners are eligible for these add-ons. ConnectWise RMM Essentials or legacy package partners must upgrade to Pro or Premium to access this feature.
+
+To see the Advanced Network Monitoring and Premier Network Monitoring policy options in RMM, a user must have access to the Asio platform Marketplace screen and must enable the Network Management Upgrade.
+
+How are the advanced and premier network monitoring features enabled? 
+To use either of the add-on network monitoring features, you must first enable the Network Management Upgrade Marketplace tile, then create a site-level policy, and apply that policy to a package. All sites with the package and the network probe deployed will be able to use the add-on network monitoring features.
+How are the network monitoring options billed?   
+
+Basic network monitoring is included in the RMM Pro and Premium package.
+
+Advanced and premier network monitoring are sel-enabled and billed monthly by the number of RMM agents on each enabled site. The monthly agent count used for billing is the average number of RMM agents on enabled sites throughout that month. (Sum of total active RMM agents per day with advanced network monitoring enabled/days in the month) x Price.
+
+Important: Billing is not pro-rated. For example, if the advanced network monitoring policy is applied to a site for one day of the month, you will be automatically billed for the entire month. However, if you downgrade network monitoring capabilities mid-month, you will have access to the network monitoring features for the remainder of the month. The policy applied to the package must be downgraded to basic network monitoring before the first day of the next month to prevent future billing.
+
+How do I upgrade or downgrade the network monitoring capabilities assigned per site?
+
+All network monitoring capabilities are controlled by policies and packages and require network probe deployment. To change the capabilities available per site, edit the network management policy applied:
+
+Basic network monitoring
+Advanced network monitoring (requires accepting the Network Management Upgrade on the ConnectWise Marketplace)
+Premier network monitoring (requires accepting the Network Management Upgrade on the ConnectWise Marketplace)
+
+Note: Feature upgrades take effect immediately once the policy is applied to the site via packages. Feature downgrades take effect at the start of the following month.
+
+Do ConnectWise NOC services extend to network devices? ​
+
+No, keep in mind that NOC services focus on server management and maintenance. Our network monitoring capabilities enable you to deliver network device monitoring and troubleshooting for your clients.
+
+Troubleshooting FAQ
+Why am I seeing the following screen under Endpoints > Network?
+
+
+You have not yet been onboarded for Network Monitoring.
+
+Why am I seeing the following screen under Endpoints > Network?
+
+You have not deployed any probes, please install a network probe to begin utilizing network monitoring.
+
+Why has the Last Reported date and time for a device not been updated on the Network devices page?
+
+Please check to make sure that the network probe is running on the site and that the device is accessible to the network probe. 
+
+Can I change my Auvik Domain name?
+
+No, your Auvik domain name is automatically mapped to your tenant, companies, and sites. This way, your companies and sites mirror the information found in ConnectWise RMM.
+
+On the network devices page, I see a lot of my devices listed as Generic. What does this mean?
+
+Make sure that your network credentials are in place. Auvik uses this tag for devices that are missing credentials.
+
+Network Monitoring Alerting Network Monitoring Feature Comparison
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Network Devices
+Network Monitoring Alerting
+Network Monitoring Getting Started
+Advanced Network Monitoring
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

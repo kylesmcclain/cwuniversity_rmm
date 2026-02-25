@@ -1,0 +1,78 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   RMM Tools
+RMM Tools
+Last updated
+Jul 8, 2025
+Overview
+
+Click on the title of an article linked below and learn more about the ConnectWise RMM™ tools.
+
+ConnectWise RMM Tools
+RMM Scanning Tool
+Gateway Cache
+APIs
+Asio Integration API
+Authentication and Authorization
+Managed Devices Details APIs
+Product Status APIs
+Rate Limits
+Automation API
+Retrieve Custom Templates API
+Retrieve Fusion Scripts API
+Retrieve Global Templates API
+Schedule Automation Tasks on Managed Endpoints API
+Retrieve all Scheduled Tasks API
+Retrieve Task Instance Summary for a Task API
+Retrieve Task Instance Execution Results API
+Retrieve Task Summary at Endpoint Level API
+Devices API
+Agent Last Seen API
+Device Summary API – Retrieve All Endpoint Devices
+Exposed API for Generate Token
+Offboard/Uninstall Agent via API
+Retrieve Details of an Endpoint via API
+Retrieve Last Logged on User Information on an Endpoint via API
+Device Groups API
+Retrieve All Device Groups API
+Public Ticketing API
+API Exceptions
+API Integration Process
+API Operations
+Example Public Ticketing API Operations
+Getting Started with the Public Ticketing API
+User Acceptance Test
+
+ 
+
+ 
+
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+APIs
+RMM Scanning Tool
+The RMM Scanning Tool allows you to: Perform on-demand RMM desktop and server (where applicable) agent deployments to Windows, Mac, and Linux machine...
+Gateway Cache
+The Gateway cache is responsible to cache all preventive maintenance updates and security patches for all windows resources. Enabling the endpoint to ...
+Asio Integration API
+Managed Service Providers (MSPs) use a number of different tools and products to effectively monitor and manage their client's networks. Each of these...
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

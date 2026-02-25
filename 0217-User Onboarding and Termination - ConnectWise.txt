@@ -1,0 +1,139 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Expert Services   Help Desk   User Onboarding and Termination
+User Onboarding and Termination
+Last updated
+May 23, 2024
+Table of contents
+Overview
+User Onboarding
+User Termination
+Sample Onboarding Reference
+Overview
+
+The following steps can be used as a template for your own onboarding and termination process or can be customized as a first step in creating your own industry best practice aligned processes.  At the bottom of this page, you’ll find a full version of an onboarding reference that follows the template listed here.
+
+User Onboarding
+Determine who is required/allowed to send in onboarding requests.
+This will allow you to skip approvals steps by having only the on-site approver submit onboarding/termination requests or prepare users for required approvals.
+Determine the timing for onboarding steps.
+How far in advance should onboarding requests be submitted?  How much lead time, on average, is required to complete the request?
+Document where user accounts primarily exist.
+Is the site using Entra ID, on-prem Active Directory, local accounts, another provider? 
+If accounts are on-prem Active Directory, document which server is the primary domain controller.
+Document the naming convention and domain for new users.
+Creating users with the same naming convention across the site will make searching and making mass adjustments easier. 
+Be sure to consider edge cases such as how multiple users with the same or similar name are handled within the naming convention.
+Document how user credentials are handled.
+Industry best practice is to avoid generic or identical credentials.
+Credentials should be random, following strong credential guidelines (8+ characters, number, letters, special characters).
+Determine if credentials should be sent to the user requesting new user setup or to the new user directly.
+When possible, credentials should be required to reset upon first login.
+Document how email is set up.
+If users receive an email address automatically, document any license type or special instructions for email addresses.
+If using an on-prem email service, be sure to document which server houses the email service.
+If users receive any extra services, such as software to add signatures, document how to apply those.
+Determine if new user creation includes computer setup.
+If so, document who provides the computer name and prepares it for Help Desk Services access.
+Document any software that should be added to the computer prior to new user initial login.
+If software requires setup after new user initial login, create a separate reference for that.
+Document any locations of software (manufacturer’s websites, server locations, preferred versions, etc).
+Document additional accounts the new user requires.
+Document location and account type required for software and services outside of basic user accounts.
+Document which administrator account should be used to access account setup.
+Document the naming convention for each type of account.
+Document specific settings required for each additional account.
+User Termination
+Determine who is required/allowed to send in onboarding requests.
+This will allow you to skip approvals steps by having only the on-site approver submit onboarding/termination requests or prepare users for required approvals.
+Determine the timing for onboarding steps.
+How far in advance should onboarding requests be submitted?  How much lead time, on average, is required to complete the request?
+Document where user accounts primarily exist.
+Is the site using Entra ID, on-prem Active Directory, local accounts, another provider? 
+If accounts are on-prem Active Directory, document which server is the primary domain controller.
+Document which additional accounts should be removed.
+Accounts with the ability to be disabled instead of deleted should be disabled.
+This ensures data integrity and is industry best practice.
+Accounts which are disabled can be returned more easily than attempting to restore a deleted account.
+Primary user accounts (Entra ID, Active Directory, local workstation accounts) should remain until the end of the process to avoid issues.
+Determine how to handle email accounts.
+Should email accounts be turned into group or shared mailboxes?
+Who should receive access to these mailboxes?
+Industry best practice is to retain access to the account, when possible, according to good retention guidelines for the region.
+Determine how to handle file sharing.
+Who should receive access to these shares?
+Industry best practice is to retain access to the shared files, when possible, according to good retention guidelines for the region.
+Document any software that should be removed from the user’s workstation.
+Determine how accounts should be disabled or deleted.
+Accounts with the ability to be disabled instead of deleted should be disabled.
+This ensures data integrity and is industry best practice.
+Accounts which are disabled can be returned more easily than attempting to restore a deleted account.
+Consider not only disabling accounts, but changing to a random, strong password prior to disabling to ensure security.
+Document additional steps.
+If the requestor should receive specific information about the termination, be sure to document those items.
+If the case should be escalated after work is completed due to steps only the partner can perform, document how best to do this.
+Document any other items required prior to completion of the termination process.
+Sample Onboarding Reference
+New user onboarding requests should be submitted by Marge Douglas. Any other requests must be approved by Marge.
+Unless otherwise stated by Marge, onboarding requests should be worked immediately.
+Create the new user in Active Directory on server PDC1-2024.
+New users should be set up like this:
+Navigate to the OU people\standard users
+Copy the user usertemplate
+Username is firstinitiallastname (Ex: jsmith for John Smith)
+Users whose username would match an existing user should follow firstinitialmiddleinitiallastname (Ex: jasmith for John Adam Smith)
+Domain is @zephyrshoes.com
+Generate the password
+Passwords should be 12 characters; 1 upper, 1 lower, 1 number, 1 special
+Passwords should be set to change at first login
+Initial passwords should be random, not recognizable words or phrases
+Synchronize to M365 using an administrative PowerShell session from the PDC
+Log in to M365 admin to set up email
+Confirm user information synced successfully
+Apply Business Standard license
+If no licenses are available, call Marge and request she add a license
+If the original request included a computer name, continue to the next step. If not, resolve the ticket and email Marge.
+Set up the user’s new computer
+Log in to Windows as the new user
+Change the user’s password to a temporary new password
+Log in to portal.office.com as the new user
+Download and install Office
+Install FootTraffic from \\zephyrf1\soft\foottraffic\installer.exe
+On the FootTraffic setup page, enter the following:
+Server:  zephyrf1
+User:  enter the username you created earlier in this reference
+Role:  pedestrian
+Log out as the new user
+Log in to PDC1-2024
+Reset the user’s password
+Passwords should be 12 characters; 1 upper, 1 lower, 1 number, 1 special
+Passwords should be set to change at first login
+Initial passwords should be random, not recognizable words or phrases
+IT Glue Integration Guide Expert Services Release Notes
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Help Desk Activation Checklist
+Help Desk Best Practices
+Help Desk Success Checklist
+Use this checklist to help successfully integrate Help Desk to your operations and ensure seamless support for your end users.
+Activating Help Desk
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

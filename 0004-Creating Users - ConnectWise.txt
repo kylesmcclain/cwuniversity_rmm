@@ -1,0 +1,248 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Getting Started with ConnectWise RMM   Creating Users
+Creating Users
+Last updated
+Oct 24, 2025
+Table of contents
+Overview
+Video: How to Create SSO Users in ConnectWise Home
+User and Application Settings
+Add a User
+Import Users
+Connected App Access for the Asio platform
+Assign Resources 
+Enable ScreenConnect Remote Control Access
+ScreenConnect Role Management in ConnectWise Home
+Add a Client End User in Settings
+Create a new client end user via Account Administration sub-menu
+Create a new client end user via Setup > RMM sub-menu
+Authentication Set Up
+Complete the Client End User SSO Set Up
+Forgot Password
+Next, proceed to RMM and Asio Platform Setup: Setting up your default policies and packages.
+Overview
+
+This article includes information about user management in ConnectWise Home® and client end users in Asio.
+
+Asio users require an authentication method and an application role to access the Asio platform. After your companies and sites are set up in ConnectWise Asio®, you can assign company and site resource access in the user profile and add client end users in Asio.
+
+Important: To prevent lockout, one Admin user account set to Local Login is recommended. Refer to Users for more information.
+
+Video: How to Create SSO Users in ConnectWise Home
+User and Application Settings
+
+To locate this screen, navigate to ConnectWise Home > User & Application Settings.
+
+Tab
+
+	
+
+Description
+
+
+
+
+Users
+
+	
+
+Select this tab to create new users, edit user information, change passwords, manage MFA methods for users, and turn access on or off. Click the name of a user in the list to edit the User Profile. User resource assignment, application role assignment, and connected app access are managed in the User Profile. 
+
+
+
+
+Authentication
+
+	
+
+Select this tab to set up single sign-on (SSO) with external authentication and manage your external identity provider details.
+
+
+
+
+Identity Roles
+
+	
+
+Select this tab to create a new identity role or manage connected app access within your organization.
+
+
+
+
+Products
+
+	
+
+Select this tab to view the products associated with your ConnectWise Home instance and to generate tokens to register additional products. 
+
+
+
+
+Application Roles
+
+	
+
+Select this tab to manage user access to the Asio platform and create Custom Application Roles.
+
+Add a User
+
+Important: An Admin or User Management role is required to perform this action.
+
+To set up a new user for ConnectWise Home:
+
+Sign in to ConnectWise Home.
+Navigate to User & Application Settings > Users.
+
+Click Add User.
+
+For more detailed instructions on completing the user profile, MFA, and Connected App Access sections, refer to Create a User Profile in Home.
+Import Users
+
+You can add a user list in ConnectWise Home. 
+
+ 
+
+Connected App Access for the Asio platform
+Navigate to ConnectWise Home > User & Application Settings > Users tab.
+Click the user name to open the user profile.
+Under Connected App Access, locate Asio Platform.
+Click the + add icon.
+Open the Add app role drop-down menu and select an existing application role. You can maintain all Asio platform app roles and permissions in the Application Roles tab. 
+
+Click Save.
+Assign Resources 
+
+After an Asio application role is assigned, you can assign the user access to Asio companies and sites. Click Assign Resource Access to begin. Refer to How to Assign Resource Access for more information.
+
+Enable ScreenConnect Remote Control Access
+
+Important: To join remote sessions or access ScreenConnect Remote Access from the Devices screen, users must have the Allow Remote Control Access checkbox selected in Asio > Settings. Follow the steps in this section to enable this setting.
+
+After you have created a user in ConnectWise Home:
+
+Sign in to the Asio platform.
+Navigate to Settings > Account Administration > Users > Manage Users. 
+Select the user.
+
+Select the Allow Remote Control Access checkbox.
+
+Click Save.
+Repeat for each user you want to grant access to.
+Complete the steps to create a remote access policy and deploy it to the sites. 
+
+ScreenConnect Role Management in ConnectWise Home
+
+Note: ScreenConnect® is a secure remote support and access solution designed for IT technicians to provide remote desktop and mobile assistance. Administrators can manage user access levels to ScreenConnect and enable portal access through ConnectWise Home. While connected app access allows for granular control over which ScreenConnect features a user can access, it is not required for joining a session or using Remote Control Access in RMM and Asio.
+
+(Optional) If you want the user to have specified access to ScreenConnect outside of Asio and beyond joining a session for remote access, apply existing ScreenConnect security roles in Home > Users > User Profile > Connected App Access and click the + plus icon for the ScreenConnect instance.
+
+(Optional) Select the role from the drop-down menu. All ScreenConnect security profiles are managed in the Administration section of the ScreenConnect instance. Refer to the List of role-based security permissions documentation for more details.
+
+Click Save.
+Add a Client End User in Settings
+
+You can add a new client end user two ways:
+
+Settings > Account Administration 
+Settings > Setup 
+Create a new client end user via Account Administration sub-menu
+
+Add or remove a client end user in the Asio platform:
+
+Sign in to the Asio platform via SSO.
+Navigate to Settings > Account Administration > Users > Manage Users.
+Click New User.
+
+Enter a Username, Logon Email, and Password for the user.
+
+Select Client End User from the Role drop-down.
+
+Select an Authentication method for the client end user. When logging on for the first time, the user must set up a password and complete the authenticator setup. Refer to Complete the Client End User SSO Set Up for more information.
+Select the Site you want to assign the user from the Site Access drop-down menu.
+
+Select Resource Access to determine which devices and endpoints the user has access to. You can select All desktops and servers for the selected site or Limited and manually assign an endpoint.
+
+Click Save. The client end user is now added to your list of users in Users > Manage Users.
+Create a new client end user via Setup > RMM sub-menu
+
+Add or Remove a Client end user in the Asio platform
+
+Sign in to the Asio platform via SSO.
+Navigate to Settings > Setup > RMM.
+Click a Site Name from the Sites Using RMM list.
+
+Click the Client End Users tab.
+
+Click the +New User button.
+
+Enter a Username, Logon Email, and Password for the client end user.
+
+Select Client End User from the Role drop-down.
+
+Select an Authentication method for the client end user. When logging on for the first time, the user must complete the authenticator setup. Refer to Complete the Client End User SSO Set Up for more information.
+Site and Resource Access is dependent on the Site you selected in the Sites Using RMM menu to create a new user. The resources associated with this Site are listed in the Resource Access list. You can select All desktops and servers for the selected site or Limited and manually assign an endpoint.
+
+Click Save. The client end user is now added to your list of users in Users > Manage Users.
+Complete the Client End User SSO Set Up.
+Authentication Set Up
+
+Set up authentication for the new client end user:
+
+Select one of the authentication methods from the drop-down.
+Authenticator (Google, Microsoft, LastPass and Authy Authenticator) requires users to set up their preferred authentication method when they click the invitation link and sign in for the first time.
+
+Duo Multi-Factor Authentication requires an account and API keys to facilitate authentication. Please have these details prepared before adding the end user. Incorrect attributes may prevent users from signing in.
+
+Select the required fields for Site Access and click Save.
+Complete the Client End User SSO Set Up
+Inform the client end user of their new login.
+Instruct the user to navigate to home.connectwise.com, enter their login email, and click Forgot Password. 
+The end user receives an email from donotreply@connectwise.com to verify their email and create their SSO password.
+A separate email is sent to the user to complete the authentication setup required before logging in to home.connectwise.com.
+Forgot Password
+Client end users can reset their passwords using the Forgot Password option on the SSO login screen.
+Open the email with a password reset link. This email is sent from DoNotReply@Connectwise.com.
+
+Click the link to reset your password. You must reauthenticate after changing your password.
+Next, proceed to RMM and Asio Platform Setup: Setting up your default policies and packages.
+
+ 
+
+Getting Started with ConnectWise RMM Creating Notification Rules
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Creating Notification Rules
+Create Client Sites
+Installing Asio Agents
+This article provides information and instructions about how to download and install an agent on your device.
+ScreenConnect Integration with ConnectWise RMM
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

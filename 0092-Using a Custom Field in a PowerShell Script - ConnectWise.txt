@@ -1,0 +1,146 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Automation   Tasks   Using a Custom Field in a PowerShell Script
+Using a Custom Field in a PowerShell Script
+Last updated
+Mar 17, 2025
+Table of contents
+Overview
+Defining a Custom Field
+Example 1 - Setting a Custom Field's Value
+Example 2 - Reading a Custom Field's Value
+Example 3 - Using the Custom Field in an IF condition
+Overview
+
+This article provides information on how to use Custom Fields in different scenarios.
+
+Note: In the following examples, a PowerShell script is used to demonstrate the use of Custom Fields, but you can also use Bash script or Command prompt to do the same task.
+
+Defining a Custom Field
+
+First, you need to define a Custom Field. This is a common step for any scenario.
+
+Define Custom Fields from Settings > Custom Fields. Review the Custom Fields documentation to learn more about what a custom field is and how to create one.
+
+Example 1 - Setting a Custom Field's Value
+
+In this example, we are setting the Custom Field's value to the output of a PowerShell script and displaying it.
+
+Define the Custom Field from Settings > Custom Fields.
+
+
+Navigate to Automation > Tasks > Add > Script Editor. To learn how to use the Script Editor, review the documentation Creating Tasks Using the Script Editor.
+Create a new script by adding mandatory details on the New Script page.
+
+
+Click Add Row, and in the Add Function section, select PowerShell script.
+Write a PowerShell script where the OS version of an endpoint is captured in a variable and is displayed. To learn how to use AI for script creation, review AI Assisted Scripting documentation.
+
+
+Set the Custom Field's value as the output of the PowerShell script from the Set Custom Field popup.
+
+
+Use the Script Log function to print the output of the script (optional).
+
+
+Save and run the script on an online endpoint. Review the documentation Create and Schedule Script Type Tasks to learn more about how to schedule and run scripts.
+Check Recent Tasks from the Endpoints > Devices page to view if the output of the task was printed.
+
+
+Navigate to Endpoints > Devices > Custom Fields tab to check the value of the Custom Field.
+
+
+
+As expected, it was generated and captured in the created Custom Field OS Version.
+Example 2 - Reading a Custom Field's Value
+
+In this example, we are capturing the Custom Field's value in a pre-defined variable and using it in a PowerShell script.
+
+Define the Custom Field Display Adapter Type with default value as Ethernet Adapter as shown below:
+
+
+Navigate to Automation > Tasks > Add > Script Editor. To learn how to use the Script Editor, review the documentation Creating Tasks Using the Script Editor.
+Create a new script by adding mandatory details on the New Script page.
+
+
+Click Add Row and in the Add Function section, select Pre-defined Variable.
+In the Set Pre-defined Variable popup, enter the Variable Name.
+Select Custom Field option and select the earlier created Custom Field (Display Adapter Type) from the dropdown.
+
+
+Write a simple PowerShell script where you display the pre-defined variable CaptureAdapterType. To learn how to use AI for script creation, review AI Assisted Scripting documentation.
+
+
+The variable CaptureAdapterType can be invoked by adding a '@' at the start and end of the variable. For example: @VariableName@.
+Use the Script Log function to print the output.
+
+
+Save and run the script on an online endpoint. Review the documentation Create and Schedule Script Type Tasks to learn more about how to schedule and run scripts.
+Check Recent Tasks from the Endpoints > Devices page to view if the output of the task was printed. Here, you can verify whether the default value of the Custom Field was successfully read from the script and displayed.
+
+
+
+As expected, the default value of the Custom Field was successfully captured and displayed using the pre-defined variable.
+Example 3 - Using the Custom Field in an IF condition
+
+In this example, we use the Custom Field in an IF condition and verify if it is executed successfully.
+
+Follow steps one to three from Example 2 for defining the custom field and creating a new script.
+Write or generate a PowerShell script for displaying the adapter type of an endpoint and storing the value in a variable. To learn how to use AI for script creation, review AI Assisted Scripting documentation.
+
+
+Set the Custom Field's value as the output of the PowerShell script from the Set Custom Field popup.
+
+
+Click the Add Logic button to introduce an IF condition where it says if the Custom Field Display Adapter Type contains a certain text string (YourEndpointIdentifier).
+
+
+Add a Script Log function to check if the IF condition was executed successfully.
+
+
+Save and run the script on an online endpoint. Review the documentation Create and Schedule Script Type Tasks to learn more about how to schedule and run scripts.
+Check Recent Tasks from the Endpoints > Devices page to view if the output of the task was printed.
+
+
+As expected, the IF condition was successfully executed.
+
+Note: You can use as many system variables and pre-defined variables as you want in the scripts. There is no limit to that. To learn how to use system variables and pre-defined variables in a script, review the documentation Using System Variables in a Script and Pre-defined System Variables.
+
+Script Sharing via User Roles Client Management
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Create and Schedule Script Type Tasks
+Create and schedule a script task.
+Running RMM Tasks
+How to run a task, create a custom script, or configure a task for the next agent check-in.
+Available Tasks
+RMM Task Reporting
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

@@ -1,0 +1,562 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Alerts   Custom Monitors   ICMP Monitor
+ICMP Monitor
+Last updated
+Dec 1, 2025
+Table of contents
+Overview
+Prerequisites
+Alert Management - Monitors
+ICMP Monitors
+How to Create an ICMP Monitor
+Configure Alerts for ICMP Monitor
+List of Monitor Variables
+Overview
+
+This article outlines the configuration of ConnectWise RMM and ConnectWise Asio® ICMP monitors. Internal Control Message Protocol (ICMP) Monitors allow you to define the device-to-website connectivity from a target endpoint. ICMP Monitors can be applied on Windows, Linux, and macOS endpoints. If the device is unreachable, the Asio agent cannot report, and multiple tickets may be assigned to you. Configure the ICMP monitor to automatically generate or resolve a Device Down ticket based on specified conditions.
+
+Tip: Combine ICMP and SNMP monitors for comprehensive coverage. ICMP ensures connectivity, while SNMP provides health and performance data.
+
+Note: Windows ICMP uses the public IP address 198.22.253.6 when trying to reach the target IP.
+
+Prerequisites
+For ICMP and TRACERT, requests must be permitted to pass through the network and device.
+Before creating a monitor, you must register the endpoint and install the agent. Please review the Other Devices Page documentation for more information.
+Primary or Super Admin, Manager, or Technician default application role or a custom application role with Alert Management - Monitors > View and Create permissions. Refer to the table below for more information about the default application role access for Custom Monitors. 
+Alert Management - Monitors
+
+Application Role >
+
+	
+
+Super Admin
+
+	
+
+Manager
+
+	
+
+Technician
+
+	
+
+Office Staff
+
+	
+
+Sales
+
+	
+
+Client Site Manager
+
+
+
+
+All eligible endpoints
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+OFF
+
+	
+
+OFF
+
+
+
+
+Read
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+OFF
+
+	
+
+OFF
+
+
+
+
+Update
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+OFF
+
+	
+
+OFF
+
+
+
+
+Device Groups
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+OFF
+
+	
+
+OFF
+
+
+
+
+Create
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+OFF
+
+	
+
+OFF
+
+
+
+
+Delete
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+OFF
+
+	
+
+OFF
+
+	
+
+OFF
+
+
+
+
+Mapper
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+OFF
+
+	
+
+OFF
+
+	
+
+OFF
+
+ICMP Monitors
+
+Refer to the following definitions for more information about the types of Network Device Monitors. Additionally, Device Availability Monitors allow you to trigger an alert and create a ticket when an endpoint is down. Device Availability Monitors can be applied to Windows, Linux, and macOS endpoints.   
+
+Navigate to Endpoints > Alerts > Monitors to add a new ICMP Monitor.
+
+ICMP (Internet Control Message Protocol) monitors are network monitoring tools used to verify the availability and responsiveness of devices or endpoints by sending requests or pings and measuring the response.
+Versions Supported:
+ICMPv4
+ICMPv6
+How to Create an ICMP Monitor
+Navigate to  Endpoints > Alerts > Monitors.
+Click Create Monitor.
+
+Enter a Name and Description
+Open the Type drop-down and select ICMP. This populates the Resources, Conditions, and Ticket Resolution setup pods.
+
+Configure Alerts for ICMP Monitor
+
+Note: Alerts will only be generated for the selected conditions.
+
+Select ICMP from the Type drop-down in Endpoints > Alerts > Monitors > Create Monitor as shown above.
+Complete the required fields for Severity (Critical Impact Alerts, Non-Impact, etc.) and Family to categorize the alert.
+
+Enable the Mapper toggle to direct the alert to a specific service board and specify type, priority, and status. To learn more about the Mapper functionality, review this documentation.
+
+In the Targeted Resources section, you can select the target endpoints to which you want to apply the conditions. You can select specific machines, Sites, or a Dynamic or a Static group. Refer to the Dynamic Group documentation for more information. Click Select Targets to choose the device, site, or group.
+
+Navigate through the selection pop-up using the Selection Type or Search/Filter tools. 
+
+Click the checkbox for the endpoint or resource you want to monitor. Click Save Selection when complete.
+Set the Conditions:
+Remote host/IP: Enter the IP address (IPv4 or IPv6) and select an availability status condition (available or not available).
+For: Select the number of consecutive tries you want the ICMP monitor to attempt to verify the availability status of the endpoint.
+Verify every: Enter a frequency unit and type. For example, verify every 5 minutes.  
+Optionally, click Add Automation to execute a task when the condition is met on the endpoint. For example, Retrieve system information.
+Note: Only select automation tasks that do not require parameters are provided as options. Refer to the Available OOTB Tasks that need parameters. All Custom Scripts created will be available for selection.
+ Automatic Ticket Resolution is enabled by default when the endpoint becomes available. Deselect the toggle to deactivate resolution conditions. If the Mapper functionality is enabled, you can set ticket resolution conditions in the Mapper section.
+Use the same frequency as above: This allows you to use the same frequency as defined in the condition section.
+Define new verification frequency: Select a unit frequency to verify availability before resolving the ticket.
+Remote Host/IP: Define the IP address (IPv4 or IPv6) of the endpoint or website to be monitored. For website monitoring, the system checks accessibility from the target endpoint selected in the resources section.​
+Is: Available/Not Available. Select the new status you want the monitor to use to resolve the ticket.
+Verify every: Define the number of attempts before resolving the ticket. For example, the endpoint/IP availability status is Available for 3 consecutive tries.  
+Output is set to Generate Ticket by default.
+You can change this to Do not Generate Ticket or Generate Ticket with Delay to modify the frequency of ticket generation. Enter a number of minutes to delay the ticket generation.
+
+Click Save to create and apply the monitor to the targets.
+
+List of Monitor Variables
+
+Here is a list of variables that you can use as per your requirement when creating your own customized ticket template:
+
+Monitor Type
+
+	
+
+Variable Name
+
+	
+
+Supported OS Type
+
+	
+
+Sample Data/Values
+
+	
+
+Variable Definition
+
+
+
+
+Generic
+
+
+
+
+ 
+
+	
+
+ObservedDate
+
+	
+
+Windows, MAC, Linux
+
+	
+
+"2020-09-02T15:35:42.969926103Z"
+
+	
+
+Time stamp when the issue was observed
+
+
+
+
+ 
+
+	
+
+MonitorDesc
+
+	
+
+Windows, MAC, Linux
+
+	
+
+Add local palmtech account and add it to the local administrators group
+
+	
+
+Description added on the portal while creating a monitor
+
+
+
+
+ 
+
+	
+
+MonitorName
+
+	
+
+Windows, MAC, Linux
+
+	
+
+Local PalmTech Account with Local Admin
+
+	
+
+Name of the monitor
+
+
+
+
+ 
+
+	
+
+MonitorSummary
+
+	
+
+Windows, MAC, Linux
+
+	
+
+(Run PowerShell script every 1 minute(s) AND Run PowerShell script every 1 minute(s))
+
+	
+
+Summary information for the monitor
+
+
+
+
+ICMP
+
+
+
+
+ 
+
+	
+
+IcmpHostName
+
+	
+
+ICMP Supported Devices
+
+	
+
+192.168.254.220
+
+	
+
+ICMP host to be configured
+
+
+
+
+ 
+
+	
+
+IcmpPeriod
+
+	
+
+ICMP Supported Devices
+
+	
+
+Minute(s)
+
+	
+
+Status check time period
+
+
+
+
+ 
+
+	
+
+IcmpPingStatus
+
+	
+
+ICMP Supported Devices
+
+	
+
+inversefailed
+
+	
+
+ICMP status
+
+
+
+
+ 
+
+	
+
+IcmpVerify
+
+	
+
+ICMP Supported Devices
+
+	
+
+5
+
+	
+
+Status check time period
+
+
+
+
+ 
+
+	
+
+IcmpTrycount
+
+	
+
+ICMP Supported Devices
+
+	
+
+1
+
+	
+
+Retry count
+
+Hyper-V Monitor Integration Field Monitor
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Service Monitor
+Process Monitor
+Event Monitor
+CPU Monitor
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

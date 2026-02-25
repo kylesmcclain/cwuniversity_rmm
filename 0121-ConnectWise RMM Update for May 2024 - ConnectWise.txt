@@ -1,0 +1,107 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   ConnectWise RMM Release Notes   ConnectWise RMM Update for May 2024
+ConnectWise RMM Update for May 2024
+Last updated
+Jun 4, 2024
+Table of contents
+Overview 
+Announcements 
+ConnectWise PSA - Integration via policies 
+Autotask PSA - Integration via policies
+In Console Reports in the Asio Platform
+What's new in ConnectWise RMM?
+May 31st, 2024
+Alerting
+Legacy Portal
+May 30th, 2024
+Automation
+May 27th, 2024
+Agent and Platform
+Device Groups
+May 20th, 2024
+Agent and Platform
+May 17th, 2024
+Legacy Portal
+Ticketing / PSA Integration
+May 16th, 2024
+Automation
+Reporting
+May 10th, 2024
+Policies and Packages
+Legacy Portal
+May 3rd, 2024
+Alert Management 
+Overview 
+
+This page provides information on the latest enhancements and features for ConnectWise RMM.
+
+Announcements 
+ConnectWise PSA - Integration via policies 
+
+This is a final reminder about an important update regarding RMM integration with ConnectWise PSA.
+
+On June 15th, 2024 we will be retiring our Legacy PSA Configuration for Manage. To ensure uninterrupted sync with ConnectWise PSA and to take full advantage of our latest enhancement, we strongly encourage you to explore and adopt the improved RMM and ConnectWise PSA sync configurations that could be integrated using policies.
+
+This is your last opportunity to act before the Legacy PSA Configuration is deprecated. Ticket, configuration item, and notifications for sync failure would be disabled unless ConnectWise PSA Policies are not enabled.
+
+Autotask PSA - Integration via policies
+
+We will be adding an option for partners to enable the Autotask PSA sync configurations that defines Ticket, Configuration item, and Contacts using policies. These policies can be included in the packages and applied to the sites using the package assignment option.
+
+The Policy improvement will have additional features like Syncing Friendly Name to Autotask PSA. With the newer integration, you will have the option to select custom note types in Inward and Outward Note Type Sync.
+
+There will be no migration performed for the existing configuration, but the policies will take effect if they are assigned or applied to a site. You will initially have a toggle button to either enable or disable the policies-based configuration and continue using the old method for now.
+
+We will completely stop supporting the older configuration method by May 1st, 2024.
+
+In Console Reports in the Asio Platform
+
+Asio reporting will be improved to ensure consistency in data across the Asio platform and Reporting pages. This enhancement will apply to the following reports this month:
+
+Patch Deployment report
+Windows OS Patch Assessment Report
+What's new in ConnectWise RMM?
+May 31st, 2024
+May 30th, 2024
+May 27th, 2024
+May 20th, 2024
+May 17th, 2024
+May 16th, 2024
+May 10th, 2024
+May 3rd, 2024
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ConnectWise RMM Update for January 2024
+ConnectWise RMM Update for February 2024
+ConnectWise RMM Update for March 2024
+ConnectWise RMM Update for April 2024
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

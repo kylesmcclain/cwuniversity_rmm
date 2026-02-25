@@ -1,0 +1,133 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Policies and Packages   Evolve Recommended - Best Practices for Policies and Packages   Evolve Recommended - Third Party Patching Policy
+ Expand/collapse global location
+Evolve Recommended - Third Party Patching Policy
+Last updated
+Oct 28, 2025
+Table of contents
+Overview
+Policy Details
+Policy Settings
+Overview
+
+This article covers the recommended settings to employ for your Third-Party Patching Policy. These best practice settings for different RMM configurations are based on the feedback and analysis of policies used by partners.
+
+Policy Details
+Policy Usage	Third-party patching policies allow the partner to define how the third-party applications are patched or updated on endpoints by the RMM Agent.
+Policy Type	Third-Party Patching
+Policy Name	Evolve Recommended - Third-Party Patching
+Policy Applies To	
+
+These settings will be applied to the following types of agents:
+
+RMM Enabled Windows Desktop
+
+ 
+
+Policy Settings
+Section	Field Name	Value
+
+
+Improved Third-Party Patching
+
+	
+
+ 
+
+	
+
+On
+
+
+
+
+ 
+
+	
+
+Action
+
+	
+
+Update Only Approved
+
+
+
+
+ 
+
+	
+
+Schedule
+
+	
+
+ 
+
+
+
+
+ 
+
+	
+
+Deploy
+
+	
+
+At Scheduled time
+
+
+
+
+ 
+
+	
+
+Repeat
+
+	
+
+Every Day
+
+
+
+
+ 
+
+	
+
+Between (Local machine time)
+
+	
+
+4:00 am to 8:00 pm
+
+Evolve Recommended - RMM Site Configuration Policy Policies
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Evolve Recommended - RMM Site Configuration Policy
+Evolve Recommended - Network Monitoring Configurations
+Evolve Recommended - OS Patching Desktop Policy
+Evolve Recommended - OS Patching Server Policy
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

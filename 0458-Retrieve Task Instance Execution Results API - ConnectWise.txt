@@ -1,0 +1,67 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   RMM Tools   APIs   Automation API   Retrieve Task Instance Execution Results API
+Retrieve Task Instance Execution Results API
+Last updated
+Jul 7, 2025
+Table of contents
+API Name
+API Description
+Request and Response API
+API Name
+
+Retrieve Task Instance Execution Results
+
+API Description
+
+This API allows you to retrieve the task results for a specific task instance. This represents clicking on the ‘+’  icon on any row on the History tab under Scheduled Tasks.
+
+Request and Response API
+
+You can find the Request and Response API details at this dev portal.
+
+The API Response will include the following fields:
+
+Field	Description
+taskId	Unique identifier for the task
+taskInstanceId	Unique identifier for the specific instance of the task
+endpointId	Unique identifier for the endpoint associated with the task
+executionTime	Date and time when the task was executed
+createdOn	Date and time when the task instance was created
+errorDetails	Details of any errors encountered during the task execution
+resultDetails	Additional details or information about the task result
+completionStatus	Status indicating whether the task execution was successful or failed (e.g., SUCCESS, FAILED)
+executorType	Type of executor responsible for executing the task (e.g., PARTNER)
+count	Total count of devices scheduled for the task
+
+Note: Review the Scheduled Tasks documentation for more information.
+
+ 
+
+Retrieve Task Instance Summary for a Task API Retrieve Task Summary at Endpoint Level API
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Retrieve Global Templates API
+Retrieve Custom Templates API
+Retrieve Fusion Scripts API
+Retrieve all Scheduled Tasks API
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

@@ -1,0 +1,58 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Reports   Asio Reports   Agent Reports   RMM Scan Details Report
+RMM Scan Details Report
+Last updated
+Sep 22, 2025
+Table of contents
+Overview
+RMM Scan Details Report
+Overview
+
+The RMM Scan Details Report lists the IP range and deployment schedules to scan the machines in the network for the agent.
+
+ 
+
+To locate this screen, navigate to 
+
+Reports > Asio > Detailed Reports > Agents > RMM Scan Details Report.
+
+ 
+
+Note: Only agent schedules configured in the RMM Scanning Tool will be reported here.
+
+RMM Scan Details Report
+
+Click RMM Scan History to get a detailed list of agent deployment history.
+
+ 
+
+ 
+
+RMM Scan Configuration Report User Management Report
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Agent Report
+Agent Uninstall Report
+Network Devices Report
+Probe Devices Report
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

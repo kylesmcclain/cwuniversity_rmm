@@ -1,0 +1,386 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Policies and Packages   Evolve Recommended - Best Practices for Policies and Packages   Evolve Recommended - OS Patching Desktop Policy
+ Expand/collapse global location
+Evolve Recommended - OS Patching Desktop Policy
+Last updated
+Oct 28, 2025
+Table of contents
+Overview
+Policy Details
+Policy Settings
+Overview
+
+This article covers the recommended settings to employ for your OS Patching Desktop Policy. These best practice settings for different RMM configurations are based on the feedback and analysis of policies used by partners.
+
+Policy Details
+Policy Usage	OS Patching Desktop policies allow the partner to define how the Desktop endpoints are patched by the RMM Agent.
+Policy Type	OS Patching Desktop
+Policy Name	Evolve Recommended - OS Patching Desktop Policy
+Policy Applies To	
+
+These settings will be applied to the following types of agents:
+
+RMM Enabled Windows Desktop
+
+RMM Enabled MAC Desktop
+
+Policy Settings
+Section	Field Name	Value
+
+
+OS Patching Automation
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+	
+
+ 
+
+	
+
+On
+
+
+
+
+Security Updates
+
+	
+
+Deploy only Partner or NOC Approved
+
+
+
+
+Critical Updates
+
+	
+
+Deploy all
+
+
+
+
+Updates
+
+	
+
+Deploy all
+
+
+
+
+Feature Updates
+
+	
+
+Deploy all
+
+
+
+
+Drivers
+
+	
+
+Do not Deploy
+
+
+
+
+Feature Packs
+
+	
+
+Do not Deploy
+
+
+
+
+Update Rollups
+
+	
+
+Do not Deploy
+
+
+
+
+Tools
+
+	
+
+Do not Deploy
+
+
+
+
+OS Upgrade
+
+	
+
+ 
+
+	
+
+On
+
+
+
+
+MAC Updates
+
+	
+
+ 
+
+	
+
+On
+
+
+
+
+Schedule
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+	
+
+ 
+
+	
+
+ 
+
+
+
+
+Download
+
+	
+
+Immediately
+
+
+
+
+Install
+
+	
+
+Immediately
+
+
+
+
+Deploy Feature Updates/OS Upgrades
+
+	
+
+At Scheduled time
+
+
+
+
+Repeat
+
+	
+
+Every 1st month on the 3rd Thursday
+
+
+
+
+Between (Local machine time)
+
+	
+
+3:00 pm to 12:00 am
+
+
+
+
+Reboot
+
+	
+
+At Scheduled time
+
+
+
+
+Repeat
+
+	
+
+Every 1 day
+
+
+
+
+Between (Local machine time)
+
+	
+
+4:00 pm to 10:00 pm
+
+
+
+
+Extended Pending Reboot Detection
+
+	
+
+Off
+
+
+
+
+Always Reboot Endpoint
+
+	
+
+Off
+
+
+
+
+System Configuration
+
+	
+
+The user can check for updates
+
+	
+
+No
+
+
+
+
+Notification
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+	
+
+Notify user before initiating reboot
+
+	
+
+On
+
+
+
+
+Reboot if no user response (hours)
+
+	
+
+1
+
+
+
+
+Customized Reboot Message
+
+	
+
+Your workstation has been updated, and a reboot is necessary for the updates to be applied. Please save your work and reboot your system as soon as possible. Your machine will be restarted in $ hours
+
+
+
+
+Allow user to delay for (hours)
+
+	
+
+1
+
+
+
+
+Limit number of delays
+
+	
+
+3
+
+
+
+
+Custom Notification Icon
+
+	
+
+Off
+
+Evolve Recommended - Network Monitoring Configurations Evolve Recommended - OS Patching Server Policy
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Evolve Recommended - RMM Site Configuration Policy
+Evolve Recommended - Network Monitoring Configurations
+Evolve Recommended - OS Patching Server Policy
+Evolve Recommended - Communicator Policy
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

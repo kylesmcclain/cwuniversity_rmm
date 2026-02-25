@@ -1,0 +1,124 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Alerts   Custom Monitors   Device Availability Monitor
+Device Availability Monitor
+Last updated
+Jan 22, 2026
+Table of contents
+Overview
+How to create a Device Availability Monitor
+List of Monitor Variables
+Overview
+
+Device Availability Monitors allow you to trigger an alert and create a ticket when an endpoint is down. Device Availability Monitors can be applied on Windows, Linux, and macOS endpoints.   
+
+How to create a Device Availability Monitor
+
+Navigate to  Endpoints > Alerts > Monitors.
+
+Click Add Monitor.
+
+Provide a Name for the new monitor. Optionally you can provide a Description of your new monitor.
+
+Select the Type as Device Availability from the drop-down.
+
+Select the Family and Severity.
+
+To enable the Mapper functionality, you need to turn on the toggle. To learn more about the Mapper functionality review this documentation.
+
+Under the Condition section,
+
+State: This allows you to select the state of the device for the alert
+
+Down: This can be used to define the "Down" state of the endpoint for monitoring.
+
+If you want to validate the device availability with Control Remote access, select the option for additional validation for Control Remote access availability.
+
+Up: This can be used to define the "Up" state of the endpoint for monitoring.
+
+Enter the number of minutes for which the system should be waiting before triggering an alert.
+
+Note: The device generates a ticket or an alert if it is offline for X number of minutes. For e.g., the device will generate a ticket or an alert if it is offline for 10 minutes. Remember that the minimum number of minutes that can be configured is 5, and the maximum is 60.  
+
+You can also select a custom Automation Task to be executed when the condition was met on the endpoint.
+
+Note: System will reflect only selective Automation tasks that do not need parameters. Refer these OOTB tasks which needs parameters. All Custom Scripts created will be available for selection.
+
+Under the Ticket Resolution section you can define if the ticket should be updated as Resolved once the endpoint is back up.
+
+State: This allows you to select the state of the device for the alert
+
+Down: This can be used to define the "Down" state of the endpoint for monitoring.
+
+If you want to validate the device availability with Control Remote access, select the option for additional validation for Control Remote access availability.
+
+Up: This can be used to define the "Up" state of the endpoint for monitoring.
+
+Enter the number of minutes for which the system should be waiting before triggering an alert  
+
+Under the Resources section, you can select the target endpoints on which the alerts should be triggered. You can select specific machines, Sites, or a Dynamic or a Static group.
+
+Click Save to create and apply the monitor to the targets.
+
+Note: Monitors will be triggered based on the configuration set/defined.
+
+List of Monitor Variables
+
+Here is a list of variables which you can use as per your requirement when creating your own customized ticket template:
+
+Monitor Type	Variable Name	Supported OS Type	Sample Data/Values	Variable Definition
+Generic
+ 	ObservedDate	
+
+Windows, MAC, Linux
+
+	
+
+"2020-09-02T15:35:42.969926103Z"
+
+	Time stamp when the issue was observed
+ 	MonitorDesc	Windows, MAC, Linux	Add local palmtech account and add it to the local administrators group	Description added on the portal while creating a monitor
+ 	MonitorName	Windows, MAC, Linux	Local PalmTech Account with Local Admin	Name of the monitor
+ 	MonitorSummary	Windows, MAC, Linux	(Run PowerShell script every 1 minute(s) AND Run PowerShell script every 1 minute(s))	Summary information for the monitor
+Device Availability
+ 	Availability	Windows, MAC, Linux	false	Current state of device
+ 	DeviceStatus	Windows, MAC, Linux	"Down"	Current state of device
+ 	ControlOpted	Windows, MAC, Linux	true	Check for Screenconnect opted or not
+ 	TimeWindow	Windows, MAC, Linux	5	time window that needs to be monitored
+ 	NotificationType	Windows, MAC, Linux	"DeviceDown"	 
+Custom Field Monitor Disk Monitor
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Service Monitor
+Process Monitor
+Event Monitor
+CPU Monitor
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

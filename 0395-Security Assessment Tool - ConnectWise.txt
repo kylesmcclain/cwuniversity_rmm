@@ -1,0 +1,87 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   RMM - Network Assessment   Security Assessment Tool
+Security Assessment Tool
+Last updated
+Jul 9, 2025
+Table of contents
+Overview
+Order the Security Assessment Tool
+Setting Up and Running a Security Assessment
+Branded Security Assessment Reports
+Security Reports You Can Generate
+Overview
+
+The Network Assessment Security Assessment Tool provides in-depth reports on security risks and regular checkups on your network, allowing you to closely monitor your clients' system security and provide greater value as an MSP. The Security Assessment runs a non-invasive data collector on your clients' or prospects' domain server, then analyzes the network data to produce a set of network security reports you can brand as your own and deliver as part of one-time or recurring security briefings with your clients.
+
+Order the Security Assessment Tool
+In the Asio™ platform, go to Settings > Account Administration > Products & Services > Network Assessment Tool > Security Assessment Tool.
+If you previously installed a Network Assessment Tool, select the Security Assessment Tool and click Update Account. Otherwise, if you have not activated a Network Assessment tool, select the Basic Package, then select Security Assessment Tool and click Activate Account.
+Setting Up and Running a Security Assessment
+
+Detailed instructions on setting up and running a Security Assessment are provided in the following RapidFire user guides.
+
+Note: Some initial setup steps may not apply when the tool is downloaded from ConnectWise's Asio™ Platform (ITSupport Portal).
+
+Network Detective Security Assessment Module Quick Start Guide
+Network Detective User Guide: Performing a Security Assessment
+Network Detective Push Deploy Tool Guide
+Branded Security Assessment Reports
+
+Once you collect the baseline security data using the scanning tool, import the scan results into the risk analyzer and generate reports.
+
+All Network Detective subscriptions include an Enhanced Branding Package, which allows you to control the overall look-and-feel of the reports generated. With the Enhanced Branding package, you can:
+
+Personalize the reports with your company name and logo.
+Change the accent colors to match your own company standards.
+Select from a number of pre-designed report templates.
+Embellish your reports with photos and images from the pre-screened, royalty-free library.
+
+ 
+
+Security Reports You Can Generate
+Document	Description	Sample (click to view)
+Network Security Risk Review 	This report includes a proprietary Security Risk Score and chart showing the relative health (on a scale of 1 to 10) of the network security, along with a summary of the number of computers with issues. This powerful lead-generation and sales-development tool also reports on outbound protocols, System Control protocols, User Access Controls, as well as an external vulnerabilities summary list.	Security Risk Report
+Network Security Management Plan	This report will help prioritize issues based on the issue's risk score. A listing of all security related risks is provided along with recommended actions.	Security Management Plan
+Network Security PowerPoint	Use our generated PowerPoint presentation as a basis for conducting a meeting presenting your findings from the Network Detective. General summary information along with the risk and issue score are presented along with specific issue recommendations and next steps.	Security Assessment PowerPoint
+External Vulnerabilities Scan Detail Report	A comprehensive output including security holes and warnings, informational items that can help make better network security decisions, plus a full NMap Scan that checks all 65,535 ports and reports which are open. An essential item for many standard security compliance reports.	External Vulnerabilities Scan Detail Report
+External Vulnerability Scan Detail by Issue Report	A more compact version of the External Vulnerability Scan Detail report organized by issues. Devices affected are listed within an issue. This report is useful for technicians looking to resolve issues rather than perform remediation on a particular system.	External Vulnerability Scan Detail by Issue Report
+External Network Vulnerabilities Summary Report	This report provides a priority-ordered listing of issues by CVSS that allows technicians to prioritize open issues. It offers a very compact view of all issues to enable quick survey of the various issues detected in an environment.	External Network Vulnerabilities Summary Report
+Outbound Security Report	Highlights deviation from industry standards compared to outbound port and protocol accessibility, lists available wireless networks as part of a wireless security survey, and provides information on Internet content accessibility.	Outbound Security Report
+Security Policy Assessment Report	A detailed overview of the security policies in place on both a domain wide and local machine basis.	Security Policy Assessment Report
+Share Permission Report by Computer	Comprehensive lists of all network “shares” by computer, detailing what users and groups have access to devices and files and providing level of access.	Share Permission Report by Computer
+Share Permission Report by User	Organizes permissions by user, showing all shared computers and files to which they have access.	Share Permission Report by User
+User Behavior Analysis Report	Shows all logins, successful and failed, by user. This report shows service accounts not properly configured (and thus failing login) as well as users who may be attempting (and possibly succeeding) to access resources (computers) they should not be accessing.	User Behavior Analysis Report
+Login History by Computer Report	Same data as User Behavior but inverted to display by computer. Useful, in particular, for looking at commonly accessed machines (file server, domain controller, etc.) – or a particularly sensitive machine for failed login attempts. Examples would be a CEO’s laptop or the accounting computer where you want to be extra diligent in checking for users trying to get in.	Login History by Computer Report
+Login Failures by Computer Report	Report identifies users who have succeeded in logging in to another machine. Great for auditing/logging purposes to know of all attempts.	Login Failures by Computer Report
+Cyber Liability and Data Breach Report	Identifies specific and detailed instances of personal identifiable information (PII) and cardholder data throughout a computer network that could be the target of hackers and malicious insiders. Also calculates the potential monetary liability and exposure based on industry published research.	Cyber Liability and Data Breach Report
+
+ 
+
+PCI Compliance Module SQL Server Assessment Tool
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+PCI Compliance Module
+Network Data Collector
+Advanced Configuration Network Assessment Tool
+Client Connector Tool
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

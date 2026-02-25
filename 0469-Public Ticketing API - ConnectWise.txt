@@ -1,0 +1,53 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   RMM Tools   APIs   Public Ticketing API
+Public Ticketing API
+Last updated
+Jul 7, 2025
+Table of contents
+Overview
+Documentation
+Overview
+
+ConnectWise's public ticketing application programming interface (API) allows MSPs or PSA vendors to integrate with our two-way ticket synchronization system to create tickets, update ticket details (add notes, change statuses, etc.), and close tickets from either side of the integration as outlined in the User Acceptance Test. The API supports RESTful protocol and uses a callback mechanism for real-time synchronization. The integration process includes reviewing scope, building the integration using a test-bench, executing user acceptance test cases and receiving authorization, then launching the integration in production.
+
+Documentation
+
+Click on the title of an article linked below and learn more about our Public ticketing API.
+
+The All articles tab lists each article published within this guide. The Featured articles tab organizes those articles into the following categories: most popular, highest rated, recently updated, and recently added. 
+
+All articles
+API Exceptions
+API Integration Process
+API Operations
+Example Public Ticketing API Operations
+Getting Started with the Public Ticketing API
+User Acceptance Test
+Retrieve Last Logged on User Information on an Endpoint via API API Exceptions
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+API Integration Process
+Getting Started with the Public Ticketing API
+API Operations
+API Exceptions
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

@@ -1,0 +1,128 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   ConnectWise RMM Release Notes   ConnectWise RMM Update for June 2025
+ConnectWise RMM Update for June 2025
+Last updated
+Sep 26, 2025
+Table of contents
+Overview 
+What's new in ConnectWise RMM?
+June 26, 2025
+RMM Scanning Tool
+Issues Addressed
+June 25, 2025
+Asio Agent
+Issues Addressed
+June 13, 2025
+Endpoint Protection
+June 11, 2025
+Agent
+June 10, 2025
+Alerting
+Last Seven Days Alert Trend
+Donut Chart Update
+Improved Logic
+Issues Addressed
+Overview 
+
+This page provides information on the latest enhancements and features for ConnectWise RMM.
+
+What's new in ConnectWise RMM?
+Release Dates	Relevant Modules
+
+June 26, 2025
+June 25, 2025
+June 13, 2025
+June 11, 2025
+June 10, 2025
+	
+RMM Scanning Tool
+Asio Agent
+Endpoint Protection
+Agent
+Alerting
+June 26, 2025
+RMM Scanning Tool
+RMM Scanning Tool is now permission-based. View the permissions for the RMM Scanning Tool in ConnectWise Home.
+Issues Addressed
+Known Issue	Description
+ISSUE-2924	Resolved an issue where RMM scanning tool once enabled on an endpoint, users experience no status is shown if the deployment of scanning tool is in progress.
+June 25, 2025
+Asio Agent
+
+Agent version 4.0.5 is now available for download.
+
+The Agent update will be rolled out in a phased manner starting today. With this update, we've resolved some issues that occurred during agent installation on SurfacePro devices.
+
+Note: Always use the latest version while installing Platform Agent to access new functionalities and ensure that they have the most up-to-date features. Make sure to update the GPO, MS Intune, or any other method used to install the Agent.
+
+Issues Addressed
+Known Issue	Description
+ISSUE-8164	Fixed an issue with the Agent installation on ARM64 (SurfacePro) devices where the setup would fail/rollback.
+ISSUE-8669	Fixed an issue where Microsoft Defender was not reflecting under Endpoint Protection.
+ISSUE-8681	Fixed an issue of false device down alerts getting generated on Linux servers.
+ISSUE-8862	Fixed an issue where the incorrect disk space was showing in the device space for Linux device, thus the alert was not getting generated for low disk space.
+ISSUE-7916	Fixed an issue where the Privilege Access Management settings were not synchronizing from RMM to ScreenConnect for newly added RMM Agents.
+June 13, 2025
+Endpoint Protection
+Added Secure Endpoint Connector and Cortex XDR to the identified list of Endpoint Protection.
+June 11, 2025
+Agent
+Agent version 4.0.1 is released which contains the latest HSM-based certificate.
+June 10, 2025
+Alerting
+Last Seven Days Alert Trend
+
+We have added a ticket alert column to the Intelligent Alerts details page where you can view the count of alerts generated in the last seven days.
+
+Green indicates no alerts have been generated
+Blue indicates that alerts were generated and closed on the same day
+Red color indicates that there are open alerts that did not get closed on the same day
+
+By hovering over these bars, you will be able to view the specific alerts. The alert and ticket count will be based on the monitor output you have selected. If you select a "do not generate" status, you will not receive tickets for that condition, but you will still be able to see the count in this column.
+
+Donut Chart Update
+We have updated the donut chart component on the intelligent alert, monitors, and suspension page.
+Improved Logic
+We have released improved logic for "Multiple VSS writers are in failed state" condition.
+Issues Addressed
+Known Issue	Description
+ 	Fixed an issue where the Asset Monitor allowed monitor entities to be empty.
+ 	Fixed an issue where an Automation task associated with an Intelligent Alert was not getting triggered if Device Group was selected as the target.
+ 	Fixed an issue where the default automation that was associated with certain intelligent alert conditions was not getting triggered.
+ 	Fixed an issue where partners were not receiving alert ticket for linux virtual server machines.
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ConnectWise RMM Latest Release Notes
+ConnectWise RMM Update for January 2024
+ConnectWise RMM Update for February 2024
+ConnectWise RMM Update for March 2024
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

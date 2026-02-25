@@ -1,0 +1,838 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   RMM Tools   APIs   Devices API   Device Summary API – Retrieve All Endpoint Devices
+Device Summary API – Retrieve All Endpoint Devices
+Last updated
+Feb 17, 2026
+Table of contents
+Overview
+Prerequisites
+Parameters
+API Details
+Host/Base URLs
+API Request Body
+Example Value 1: Company ID as a Request
+Example Value 2: Site ID as a Request
+Example Value 3: Endpoint ID as a Request
+API Response Example
+API Response Fields
+Response Fields Descriptions for Platform Endpoints
+API Response Codes
+Projection Guidelines
+Example of an API Request with Projection
+API Response with Projection
+Example of an API Request without Projection
+API Response without Projection
+Overview
+
+The Device Summary API retrieves all data from endpoints grouped by company and site for the specified user within the given category. 
+
+Note:
+
+The response is paginated with a maximum of 500 records per page. 
+The response has projection support to retrieve only selected fields (max 15).
+If no projection fields are specified, only minimal fields (metadata) will be returned by default. Refer to the Projection Guidelines section for more details. 
+The Device Summary API is currently limited to the platform category. Refer to the Parameters section for additional details.
+
+You can find the following sections in this API document:
+
+Prerequisites
+Parameters
+API Details
+Host/Base URLs
+API Request Body
+API Response Example
+API Response Fields
+API Response Codes
+Projection Guidelines
+Prerequisites
+
+To view the Device Summary API details, you should have access to:
+
+The Developer Portal
+API Access section in the Asio platform (Integrations > API Access)
+Parameters
+
+Name
+
+	
+
+Description
+
+	
+
+Parameter Type
+
+	
+
+Example
+
+
+
+
+Authorization
+
+	
+
+Bearer token for authorization
+
+	
+
+string - required
+
+	
+
+Bearer <token>
+
+
+
+
+Host
+
+	
+
+Host header
+
+	
+
+string - required
+
+	
+
+api.example.com
+
+
+
+
+Origin
+
+	
+
+Origin header
+
+	
+
+string - required
+
+	
+
+example.com
+
+
+
+
+User-Agent
+
+	
+
+User-Agent header
+
+	
+
+string - required
+
+	
+
+PostmanRuntime/1.1.0
+
+
+
+
+X-Request-ID
+
+	
+
+X-Request-ID header
+
+	
+
+string - required
+
+	
+
+<uuid>
+
+
+
+
+Category
+
+	
+
+Category of endpoint
+
+Note: Support for the Backup, Network, and Cloud endpoint categories is planned for a future release.
+
+	
+
+string - required
+
+	
+
+platform
+
+API Details
+
+The following is the Device Summary API available in the developer portal for API integration.
+
+Method
+
+	
+
+API
+
+	
+
+Description
+
+	
+
+Scope
+
+	
+
+Rate Limit
+
+
+
+
+POST
+
+	
+
+/api/platform/v2/device/categories/{category}/endpoints
+
+	
+
+Fetches all endpoint devices grouped by company and site for the specified category.
+
+	
+
+platform.devices.read
+
+	
+
+100 (per 10 mins)
+
+Note: To get the company ID, use the company API. To learn more, refer to the GET Company ID API under the Company drop-down in the Developer Portal.
+
+Host/Base URLs
+
+Important: The first few characters of the Client ID indicate which environment you are in.
+
+Environment
+
+	
+
+URL
+
+	
+
+Client ID Prefix 
+
+
+
+
+Production - NA
+
+	
+
+https://openapi.service.itsupport247.net
+
+	
+
+0e30
+
+
+
+
+Production - EU
+
+	
+
+https://openapi.service.euplatform.connectwise.com
+
+	
+
+0e31
+
+
+
+
+Production - AU
+
+	
+
+https://openapi.service.auplatform.connectwise.com
+
+	
+
+0e32
+
+API Request Body
+
+This request body is mandatory. The payload must include both resourceType and resources fields.
+
+Validation rules:
+
+If resourceType is company, only 4 values are allowed in the resources array.
+If resourceType is site, only 10 values are allowed in the resources array.
+If resourceType is endpoint, up to 500 values are allowed in the resources array.
+Example Value 1: Company ID as a Request
+1
+	{
+2
+	  "resourceType": "company",
+3
+	  "resources": [
+4
+	    "id1",
+5
+	    "id2"
+6
+	  ]
+7
+	}
+Example Value 2: Site ID as a Request
+1
+	{
+2
+	"resourceType": "site",
+3
+	"resources": [
+4
+	   "s1",
+5
+	   "s2"
+6
+	]
+7
+	}
+Example Value 3: Endpoint ID as a Request
+01
+	curl -- location '<domain>/api/platform/v2/device/categories/platform/endpoints?field=endpointID%2CdeviceName%2CfriendlyName%2CresourceType%2CendpointType%2CipAddress%2CmacAddress%2CcreatedAt%2CcreatedBy%2CmodifiedAt%2CmodifiedBy.' \
+02
+	--header 'X-Request-ID: uuid' \
+03
+	--header 'Server: example' \
+04
+	--header 'Origin: example' \
+05
+	--header 'User-Agent: example' \
+06
+	--header 'Content-Type: application/json' \
+07
+	--header 'Authorization: Bearer ••••••' \
+08
+	--data '{
+09
+	    "resourceType": "endpoint",
+10
+	    "resources": [
+11
+	        "a1b2c3d4-e5f6-7890-abcd-ef1234567890"
+12
+	    ]
+13
+	}'
+API Response Example
+
+Expand API Response Example
+
+ 
+
+API Response Fields
+Response Fields Descriptions for Platform Endpoints
+
+Response fields include the following:
+
+Agent metadata
+Anti Virus (AV)
+Baseboard
+BIOS
+Bluetooth
+Card Readers
+Device
+Diagnostic
+Disc
+Drive
+Ethernet
+Firewall
+Graphic Card
+Keyboard/Mouse
+Location
+Logical Volume
+Network Adapters
+Operating System (OS)
+PCI Devices
+Physical Drives/Memory
+Processors
+RAID Controller
+Shares
+System
+Thunderbolts
+USBs
+
+Expand for API Response Fields
+
+API Response Codes
+
+Code
+
+	
+
+Description
+
+	Example Value
+
+
+200
+
+	
+
+Successful Response
+
+ 
+
+	
+01
+	{
+02
+	  "platform": [
+03
+	    {
+04
+	      "companyID": "string",
+05
+	      "siteID": "string"
+06
+	    }
+07
+	  ],
+08
+	  "backup": [
+09
+	    {
+10
+	      "companyID": "string",
+11
+	      "siteID": "string"
+12
+	    }
+13
+	  ],
+14
+	  "network": [
+15
+	    {
+16
+	      "companyID": "string",
+17
+	      "siteID": "string"
+18
+	    }
+19
+	  ],
+20
+	  "cloud": [
+21
+	    {
+22
+	      "companyID": "string",
+23
+	      "siteID": "string"
+24
+	    }
+25
+	  ]
+26
+	}
+
+
+
+400
+
+	
+
+Bad Request
+
+ 
+
+	
+1
+	{
+2
+	  "code": "400",
+3
+	  "message": "Bad Request"
+4
+	}
+
+
+
+401
+
+	
+
+Unauthorized
+
+ 
+
+	
+1
+	{
+2
+	  "code": "401",
+3
+	  "message": "Unauthorized"
+4
+	}
+
+
+
+404
+
+	
+
+Not Found
+
+ 
+
+	
+1
+	{
+2
+	  "code": "404",
+3
+	  "message": "Not Found"
+4
+	}
+
+
+
+429
+
+	
+
+Too Many Requests
+
+ 
+
+	
+1
+	{
+2
+	  "code": "429",
+3
+	  "message": "Too Many Requests"
+4
+	}
+
+
+
+500
+
+	
+
+Internal Server Error
+
+ 
+
+	
+1
+	{
+2
+	  "code": "500",
+3
+	  "message": "Internal Server Error"
+4
+	}
+Projection Guidelines
+
+Note: Device Service supports field-based projection. Use the field query parameter with comma-separated values to specify projection, e.g., friendlyName, os, system.If no projection fields are specified, only the default fields will be returned.
+
+ 
+
+	
+
+Projectable Fields
+
+
+
+
+Default
+
+	
+
+endpointID, deviceName, friendlyName, resourceType, endpointType
+
+
+
+
+Metadata
+
+
+
+
+endpointID, deviceName, friendlyName, resourceType, endpointType, ipAddress, macAddress, createdAt, createdBy, modifiedAt, modifiedBy.
+
+
+
+
+Categories
+
+
+
+
+platform
+
+	
+
+remoteAddress, type, subResourceType, virtualType, baseBoard, power, bios, drives, physicalMemory, networks, ethernet, firewall, locations, cardReaders, graphicCards, bluetooth, usbs, diagnostic, discBurning, thunderbolts, os, processors, raidControllers, system, keyboards, mouse, monitors, physicalDrives, shares, pciDevices, logicalVolume, antiViruses, rolesFeatures, agentInstalledUTC, createTimeUTC
+
+
+
+
+backup
+
+	
+
+subResourceType, virtualType, os, system, bios, baseBoard, networks
+
+
+
+
+network
+
+	
+
+remoteAddress, type, subResourceType, virtualType, os, system, rolesFeatures, agentInstalledUTC, createTimeUTC
+
+
+
+
+cloud
+
+	
+
+remoteAddress, type, subResourceType, virtualType, os, system, rolesFeatures, agentInstalledUTC, createTimeUTC
+
+Example of an API Request with Projection
+01
+	curl --location --request POST '<domain>/api/v1/categories/platform/endpoints?field=endpointID%2CdeviceName%2CfriendlyName%2CresourceType%2CendpointType%2Csystem%2Cos' \
+02
+	--header 'X-Request-ID: uuid' \
+03
+	--header 'Server: example' \
+04
+	--header 'Origin: example' \
+05
+	--header 'User-Agent: example' \
+06
+	--header 'Content-Type: application/json' \
+07
+	--header 'Authorization: Bearer ••••••' \
+08
+	--data '{
+09
+	  "resourceType": "company",
+10
+	  "resources": [
+11
+	    "cid1",
+12
+	    "cid2"
+13
+	  ]
+14
+	}'
+API Response with Projection
+01
+	{
+02
+	   "platform": [
+03
+	       {
+04
+	           "companyID": "00000000-0000-0000-0000-000000000001",
+05
+	           "siteID": "00000000-0000-0000-0000-000000000002",
+06
+	           "endpoints": [
+07
+	               {
+08
+	                   "endpointID": "00000000-0000-0000-0000-000000000003",
+09
+	                   "deviceName": "name",
+10
+	                   "friendlyName": "friendly-name",
+11
+	                   "resourceType": "Server",
+12
+	                   "endpointType": "Server",
+13
+	                   "system": {
+14
+	                       "product": "example product",
+15
+	                       "model": "example model",
+16
+	                       "timeZone": "+0000",
+17
+	                       "timeZoneDescription": "UTC",
+18
+	                       "serialNumber": "XYZ-SN",
+19
+	                       "systemName": "name",
+20
+	                       "domain": "XYZ-DOMAIN",
+21
+	                       "domainRole": 1,
+22
+	                       "chassis": "Laptop",
+23
+	                       "timeZoneLocation": "Etc/UTC",
+24
+	                       "systemType": "x64-based PC",
+25
+	                       "chassisTypes": [
+26
+	                           10
+27
+	                       ]
+28
+	                   },
+29
+	                   "os": {
+30
+	                       "product": "example os",
+31
+	                       "manufacturer": "example manufacturer",
+32
+	                       "language": "example language",
+33
+	                       "serialNumber": "XYZ-SN",
+34
+	                       "version": "0.0.0",
+35
+	                       "installDate": "2020-01-01T00:00:00Z",
+36
+	                       "type": "windows",
+37
+	                       "arch": "64-bit",
+38
+	                       "installedDrive": "C:",
+39
+	                       "buildNumber": "0",
+40
+	                       "productID": "00000-00000-00000-XX000",
+41
+	                       "productKey": "XXXXX-XXXXX-XXXXX-XXXXX-XXXXX",
+42
+	                       "releaseID": "0000",
+43
+	                       "displayVersion": "00X0",
+44
+	                       "installationType": "Client"
+45
+	                   }
+46
+	               }
+47
+	           ]
+48
+	       }
+49
+	   ]
+50
+	}
+Example of an API Request without Projection
+01
+	curl --location --request POST '<env>/api/v1/categories/platform/endpoints' \
+02
+	--header 'X-Request-ID: uuid' \
+03
+	--header 'Server: example' \
+04
+	--header 'Origin: example' \
+05
+	--header 'User-Agent: example' \
+06
+	--header 'Content-Type: application/json' \
+07
+	--header 'Authorization: Bearer ••••••' \
+08
+	--data '{
+09
+	"resourceType": "company",
+10
+	"resources": [
+11
+	   "cid1",
+12
+	   "cid2"
+13
+	]
+API Response without Projection
+01
+	{
+02
+	   "platform": [
+03
+	       {
+04
+	           "companyID": "00000000-0000-0000-0000-000000000001",
+05
+	           "siteID": "00000000-0000-0000-0000-000000000002",
+06
+	           "endpoints": [
+07
+	               {
+08
+	                   "endpointID": "00000000-0000-0000-0000-000000000003",
+09
+	                   "deviceName": "name",
+10
+	                   "friendlyName": "friendly-name",
+11
+	                   "resourceType": "Server",
+12
+	                   "endpointType": "Server"
+13
+	               }
+14
+	           ]
+15
+	       }
+16
+	   ]
+17
+	}
+Agent Last Seen API Exposed API for Generate Token
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Retrieve Details of an Endpoint via API
+Retrieve Last Logged on User Information on an Endpoint via API
+Offboard/Uninstall Agent via API
+Exposed API for Generate Token
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

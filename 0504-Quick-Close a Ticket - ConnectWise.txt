@@ -1,0 +1,51 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Tickets   Quick-Close a Ticket
+Quick-Close a Ticket
+Last updated
+Jul 3, 2025
+Table of contents
+Overview
+How to Quick-Close a Ticket
+Overview
+
+Quick-closing a ticket allows you to close out a ticket immediately without making updates or filling out the information in the Work Status Update ticket. When quick-closing a ticket, a blank Work Status Update ticket is created, which you can update later.
+
+How to Quick-Close a Ticket
+Browse to the queue and to the ticket container.
+Select Tickets by ticking the checkbox next to the ticket ID.
+Right-click to open the ticket menu. Select Quick Close.
+Verify that these are the tickets you want to close. A warning message box is displayed. Click OK to close the selected ticket.
+
+ 
+Close a Ticket Ticket Clean-Up
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Best Practices for Going Green
+Are you looking to impress a client with a solid green dashboard? Regardless of your reasons for wanting to go green, we will help you get there. But ...
+Service Plans and Ticket Lifecycles
+The lifecycle of a ticket depends on the subscribed service plan of the site generating an alert. Service plans and their respective ticket lifecycles...
+Create a Ticket
+To create a new ticket, click the Tickets tab in the Asio™ Platform (ITSupport Portal) and select New Ticket from the top of the navigation bar on the...
+Edit a Ticket
+To edit a ticket, browse to the ticket queue on the left navigation bar and select an appropriate container.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

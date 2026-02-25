@@ -1,0 +1,373 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Agents   Enhanced Agent Details
+Enhanced Agent Details
+Last updated
+Oct 10, 2025
+Table of contents
+Overview 
+Agent File Details 
+Agent Remote Connections 
+Agent Files 
+Local Database 
+Scheduled Tasks 
+Overview 
+
+This document provides an overview of major components, files, schedules, and other details for the enhanced RMM desktop and server agent.
+
+Agent File Details 
+
+The following table provides file and registry locations for agent files on 32-bit and 64-bit systems. Install and uninstall log files are stored in the JunoSetupLogs folder inside program files. Agent logs are stored in the log folder ITSPlatform.
+
+Component
+
+	
+
+32-bit File Location
+
+	
+
+64-bit File Location
+
+
+
+
+Agent Executable Details
+
+	
+
+C:\Program Files\ITSPlatform
+
+	
+
+C:\Program Files(x86)\ITSPlatform
+
+
+
+
+Agent Registry Details
+
+	
+
+HKEY_LOCAL_MACHINE \ SOFTWARE \ Microsoft \ Windows \ Current Version \ Uninstall \ [BundleProviderKey]
+
+	
+
+HKEY_LOCAL_MACHINE \ SOFTWARE \ Wow6432Node \ Microsoft \ Windows \ Current Version \ Uninstall \ [BundleProviderKey]
+
+
+
+
+Agent Log Files
+
+	
+
+C:\Program Files\ITSPlatform\log\platform_agent_core.log
+
+C:\Program Files\JunoSetupLogs\JunoInstallationLog.log
+
+C:\Program Files\JunoSetupLogs\JunoUninstallationLog.log
+
+	
+
+C:\Program Files(x86)\ITSPlatform\log\platform_agent_core.log
+
+C:\Program Files(x86)\JunoSetupLogs\JunoInstallationLog.log
+
+C:\Program Files(x86)\JunoSetupLogs\JunoUninstallationLog.log
+
+Agent Remote Connections 
+The agent requires an internet connection to contact the data center. If the connection is lost, actions such as heartbeat and configuration updates or changes made in the Asio will not download.
+The agent continues to run tasks scheduled in the platform_agent_schedule_cfg.json file, such as collecting asset and performance data.
+To block remote access, stop the Asio service.
+The Asio service internally calls the platform-agent-core.exe file, which runs over port 80 to post keep-alive status to the datacenter.
+The agent only requires outbound connections on port 80.
+Agent Files 
+
+Component
+
+	
+
+Binary Location
+
+	
+
+Configuration File Location
+
+
+
+
+Platform Agent Core
+
+	
+
+%programfiles%\ITSPlatform\agentcore\platform-agent-core.exe
+
+	
+
+%programfiles%\ITSPlatform\congif\platform_agent_core_cfg.json
+
+
+
+
+Long-Running Plugins
+
+
+
+
+Eventlog Plugin
+
+	
+
+%programfiles%\ITSPlatform\plugin\eventlog\platform-eventlog-plugin.exe
+
+	
+
+%programfiles%\ITSPlatform\plugin\eventlog\eventlog_agent_plugin_cfg.json
+
+
+
+
+Short-Running Plugins
+
+
+
+
+Asset Plugin
+
+	
+
+%programfiles%\ITSPlatform\plugin\asset\platform-asset-plugin.exe
+
+	
+
+%programfiles%\ITSPlatform\plugin\asset\asset_agent_plugin_cfg.json
+
+
+
+
+Performance Plugin
+
+	
+
+%programfiles%\ITSPlatform\plugin\performance\platform-performance-plugin.exe
+
+	
+
+%programfiles%\ITSPlatform\plugin\performance\performance_agent_plugin_cfg.json
+
+
+
+
+Scripting Plugin
+
+	
+
+%programfiles%\ITSPlatform\plugin\scripting\platform-scripting-plugin.exe
+
+	
+
+%programfiles%\ITSPlatform\plugin\scripting\scripting_agent_plugin_cfg.json
+
+
+
+
+Systemstate Plugin
+
+	
+
+%programfiles%\ITSPlatform\plugin\systemstate\platform-systemstate-plugin.exe
+
+	
+
+%programfiles%\ITSPlatform\plugin\systemstate\systemstate_agent_plugin_cfg.json
+
+Local Database 
+cntm.agent.db.db: This SQLite database stores the webposts that were not successful since the agent went offline because of any kind of network problem. After the agent is back online, these webposts are sent to the data center.
+mailboxmsg.db: This SQLite database stores the message IDs and processing status of mailbox messages received from our data center.
+Scheduled Tasks 
+
+Category
+
+	
+
+Task
+
+	
+
+Default Frequency
+
+	
+
+Operating System
+
+
+
+
+Heartbeat
+
+	
+
+Sends availability status of an endpoint.
+
+	
+
+Once every 10 seconds
+
+	
+
+Windows XP, Vista, 7, 8, 10
+
+Windows Server 2003 and above
+
+
+
+
+Asset
+
+	
+
+Collects asset data of an endpoint.
+
+	
+
+Once every 24 hours
+
+	
+
+Windows XP, Vista, 7, 8, 10
+
+Windows Server 2003 and above
+
+
+
+
+Processor Performance Schedule
+
+	
+
+Collects processor performance data of an endpoint.
+
+	
+
+Once every 3 minutes
+
+	
+
+Windows 7, 8, 10
+
+
+
+
+Memory Performance Schedule
+
+	
+
+Collects memory performance data of an endpoint.
+
+	
+
+Once every 3 minutes 15 seconds
+
+	
+
+Windows 7, 8, 10
+
+Windows Server 2003 and above
+
+
+
+
+Storage Performance Schedule
+
+	
+
+Collects storage performance data of an endpoint.
+
+	
+
+Once every 3 minutes 30 seconds
+
+	
+
+Windows 7, 8, 10
+
+Windows Server 2003 and above
+
+
+
+
+Network Performance Schedule
+
+	
+
+Collects network performance data of an endpoint.
+
+	
+
+Once every 3 minutes 45 seconds
+
+	
+
+Windows 7, 8, 10
+
+Windows Server 2003 and above
+
+
+
+
+Systemstate
+
+	
+
+Collects user information of an endpoint.
+
+	
+
+Once every 5 minutes
+
+	
+
+Windows 7, 8, 10
+
+Windows Server 2003 and above
+
+Windows OS Agent Overview RMM Site Enablement
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Asio Agent Requirements
+The article includes the currently supported operating systems for agent installations.
+Uninstalling an Agent
+This guide includes the steps required to uninstall an agent from a desktop or server in RMM or Asio via the Devices page.
+Cloud Services
+Agent Tamper Protection
+Agents on Windows devices utilize tamper protection to restrict users from stopping the agent core services.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

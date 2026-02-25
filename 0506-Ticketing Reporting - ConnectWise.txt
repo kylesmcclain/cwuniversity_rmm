@@ -1,0 +1,59 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Tickets   Ticketing Reporting
+Ticketing Reporting
+Last updated
+Jul 3, 2025
+Table of contents
+Overview
+Ticket List
+Ticket Closed from > 30 days Inactivity
+Overview
+
+Several reporting resources in the Service Delivery > Tickets (Legacy) > Report, help to monitor and manage ticket and alert data, including:
+
+Ticket List
+Ticket closed from inactivity > 30 days
+Ticket List
+
+The Ticket List displays all tickets for the specified date range, sites, machines, creator, and status. Once the list is generated, filter tickets by any of the columns provided and export to Excel as needed.
+
+Unlike the Ticket Summary Report, the Ticket List allows you to update ticket details. Right-click the ticket ID to open a quick-editing menu, or left-click to view ticket details, update ticket status, and send ticket notifications.
+
+Ticket Closed from > 30 days Inactivity
+
+The Ticket closed list displays all tickets for the specified date range, sites, and machines older than 30 days closed by the system because of inactivity. Once the list is generated, filter tickets by any of the columns provided and export to Excel as needed.
+
+Left-click the ticket ID to view ticket details.
+
+Ticket Clean-Up Ticket Queue
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Best Practices for Going Green
+Are you looking to impress a client with a solid green dashboard? Regardless of your reasons for wanting to go green, we will help you get there. But ...
+Service Plans and Ticket Lifecycles
+The lifecycle of a ticket depends on the subscribed service plan of the site generating an alert. Service plans and their respective ticket lifecycles...
+Create a Ticket
+To create a new ticket, click the Tickets tab in the Asio™ Platform (ITSupport Portal) and select New Ticket from the top of the navigation bar on the...
+Edit a Ticket
+To edit a ticket, browse to the ticket queue on the left navigation bar and select an appropriate container.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

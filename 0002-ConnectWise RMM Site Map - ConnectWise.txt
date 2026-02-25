@@ -1,0 +1,552 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   ConnectWise RMM Site Map
+ConnectWise RMM Site Map
+Last updated
+Jul 2, 2025
+Table of contents
+No headers
+
+Here is the list of all available ConnectWise RMM articles. Keep checking back as we add new features to the product. All new articles can be found here. 
+
+Getting Started with ConnectWise RMM
+Creating Users
+Creating Notification Rules
+Create Client Sites
+Configuring Reboot Schedules
+Creating Companies and Sites in the Asio Platform
+Devices Overview
+Installing Asio Agents
+Installing RMM Agents using MS Intune
+Installing the RMM Scanning Tool
+RMM Five Best Practices
+RMM Offboarding
+ScreenConnect Integration with ConnectWise RMM
+Setting up your Policies and Packages
+Agents
+Agent Feature Comparision
+Agent Management
+Assign device to another site (Move Agent)
+Changing Proxy Settings
+Golden Image Support
+Switching the device type for an Endpoint
+Agent Repair Utility
+Agent Reports Overview
+Agent Schedules
+Agent Self-Heal
+Agent Tamper Protection
+Asio Agent Requirements
+Firewall Exclusions
+Cloud Services
+Download and Install Agents
+Agent for Linux 32/64 bit ARM device
+Asio Platform Agent Deployment using Group Policy Object (GPO)
+Installing Asio Agents using MS Intune
+Linux Server Agent Overview
+macOS Agent Overview
+Windows OS Agent Overview
+Enhanced Agent Details
+RMM Site Enablement
+Uninstalling an Agent
+Alerts
+Custom Monitors
+Application Monitor
+Asset Monitor
+Complex Monitor
+CPU Monitor
+Custom Field Monitor
+Device Availability Monitor
+Disk Monitor
+Event Monitor
+File System Monitor
+Hyper-V Monitor
+ICMP Monitor
+Integration Field Monitor
+Memory Monitor
+Performance Counter Monitor
+Port Monitor
+Process Monitor
+Registry Monitor
+Script Monitor
+Service Monitor
+Custom Monitors: Service Exclusion List
+SNMP Monitor
+VMware Monitor
+Intelligent Alerts
+ConnectWise RMM Intelligent Alerts Monitoring Conditions
+Intelligent Alerts - Threshold definitions
+Preview Alerts
+Custom Ticket Template for Custom Monitors
+Network Availability Monitoring
+Network Availability Monitoring: Known Issues
+S.M.A.R.T Monitoring
+Suspensions
+Automation
+Scheduled Tasks
+Details for Scheduled Task Triggers
+Tasks
+AI Assisted Scripting with the Script Editor
+Available Tasks
+Create and Schedule Script Type Tasks
+Create Suspension for Monitors and Alerts in Script Editor
+Create Ticket Using the Script Editor
+Creating Tasks Using the Script Editor
+FAQ and Error Reporting
+Predefined System Variables
+RMM Task Reporting
+Running RMM Tasks
+Run Scripts as Current Logged In User
+Script Functions
+Script Sharing via User Roles
+Using a Custom Field in a PowerShell Script
+Client Management
+Companies and Sites
+Company and Site Bulk Import Functionality
+Contact Management
+Command for Networks
+Onboarding and Configuring the ConnectWise–Auvik Integration
+Auvik Pre-Defined Alerts and NOC Support
+Command for Networks Service Levels
+Auvik Device Management
+Auvik TrafficInsights
+Auvik TrafficInsights FAQs
+Communicator User Guide
+Communicator Assignment
+Communicator Branding
+Communicator Configuration
+Communicator Customization
+Communicator Default Menus
+Communicator Hidden Mode
+Communicator Messaging
+Communicator Permissions
+Communicator Scripting
+Communicator Ticketing
+ConnectWise RMM Release Notes
+ConnectWise RMM Latest Release Notes
+ConnectWise RMM Update for January 2024
+ConnectWise RMM Update for February 2024
+ConnectWise RMM Update for March 2024
+ConnectWise RMM Update for April 2024
+ConnectWise RMM Update for May 2024
+ConnectWise RMM Update for June 2024
+ConnectWise RMM Update for July 2024
+ConnectWise RMM Update for August 2024
+ConnectWise RMM Update for September 2024
+ConnectWise RMM Update for October 2024
+ConnectWise RMM Update for November 2024
+ConnectWise RMM Update for December 2024
+ConnectWise RMM Update for January 2025
+ConnectWise RMM Update for February 2025
+ConnectWise RMM Update for March 2025
+ConnectWise RMM Update for April 2025
+ConnectWise RMM Update for May 2025
+ConnectWise RMM Update for June 2025
+ConnectWise RMM Update for July 2025
+ConnectWise RMM Update for August 2025
+ConnectWise RMM Update for September 2025
+ConnectWise RMM Update for October 2025
+ConnectWise RMM Update for November 2025
+ConnectWise RMM Update for December 2025
+ConnectWise RMM Update for January 2026
+ConnectWise RMM Update for February 2026
+RMM Release Notes Archive
+ConnectWise RMM Update for January 2022
+ConnectWise RMM Update for February 2022
+ConnectWise RMM Update for March 2022
+ConnectWise RMM Update for April 2022
+ConnectWise RMM Update for May 2022
+ConnectWise RMM Update for June 2022
+ConnectWise RMM Update for July 2022
+ConnectWise RMM Update for August 2022
+ConnectWise RMM Update for September 2022
+ConnectWise RMM Update for October 2022
+ConnectWise RMM Update for November 2022
+ConnectWise RMM Update for December 2022
+ConnectWise RMM Update for January 2023
+ConnectWise RMM Update for February 2023
+ConnectWise RMM Update for March 2023
+ConnectWise RMM Update for April 2023
+ConnectWise RMM Update for May 2023
+ConnectWise RMM Update for June 2023
+ConnectWise RMM Update for July 2023
+ConnectWise RMM Update for August 2023
+ConnectWise RMM Update for September 2023
+ConnectWise RMM Update for October 2023
+ConnectWise RMM Update for November 2023
+ConnectWise RMM Update for December 2023
+ConnectWise RMM Site Map
+Devices Page
+Cloud Devices
+Custom Fields
+Devices (Preview) Page
+Asio Discovery Tool
+Devices Overview
+Device Details Screen
+Device Groups
+Device Groups Dynamic Attributes
+Device Groups Management
+HyperV and VMware Virtualization
+HyperV and VMware Power Actions
+Virtualization FAQs
+Other Devices Page
+End User Portal
+End User Portal Migration to ConnectWise SSO FAQ
+Expert Services
+ConnectWise Network Operations Center - NOC
+Changes to NOC Proactive Remediation
+Enabling Automatic Credentials for Servers and Desktops
+Enabling DUO Authentication for Endpoint Access
+NOC Access Levels
+NOC Escalation Procedure
+NOC Service Statement of Work
+Setting NOC Access Levels
+Using the NOC Chat Support Feature
+Expert Services Documentation Sitemap
+Help Desk
+Help Desk Best Practices
+Help Desk Service Statement of Work
+Client Requests and Callbacks
+MSP Ticket Assignments and Escalations
+Activating Help Desk
+Select Help Desk Product Options - Help Desk
+Create a Help Desk Notification Rule - Help Desk
+Provide Help Desk Information - Help Desk
+Confirm Completion and Set Client Expectations - Help Desk
+Add Required Documentation and Credentials - Help Desk
+Enabling Automated Tickets from Help Desk Email Requests
+Enabling Automatic Credentials for Servers and Desktops
+Enabling Expert Services for PSA Partners
+Help Desk Activation Checklist
+Help Desk Chat
+Help Desk Common Acronyms
+Help Desk Partner Contact Procedures
+Help Desk Services - DUO User Administration
+Help Desk Success Checklist
+IT Glue Integration Guide
+User Onboarding and Termination
+Expert Services Release Notes
+SOC, NOC, and Help Desk Services Firewall Exclusions
+Using the Chat Support Feature
+Integrations to ConnectWise RMM
+Webroot
+Getting Started with Webroot Endpoint Protection
+Webroot Activation Checklist
+Webroot Best Practices
+Webroot Billing
+Webroot Default Configurations
+Webroot Integration 2.0 - Bundled Integration
+Webroot Integration 2.0 – Non-bundled Integration
+Webroot Reporting
+ScreenConnect with RMM
+Administrating Roles, Permissions, and Session Groups Setup
+Advanced Configuration Editor
+Backstage Mode
+False positive from antivirus software
+Define user roles and permissions for ScreenConnect
+Enable or Disable Connection Consent for ScreenConnect
+Enable Reason for Remote Access
+How to Launch ScreenConnect
+Remote View
+ScreenConnect 1-Click for RMM
+ScreenConnect Dashboard for RMM
+ScreenConnect Login Authentication FAQ
+ScreenConnect Installation Status and Error Codes
+ScreenConnect Integration for ConnectWise RMM
+ScreenConnect Privileged Access
+ScreenConnect Remote Support
+ScreenConnect Remote Support Troubleshooting Guide
+ScreenConnect Security Guide
+ScreenConnect System Requirements for RMM
+The Host Client
+ConnectWise RMM Intune Integration
+Intune Integration Using your CSP Account
+View Intune Information in the Asio™ Platform (ITSupport Portal)
+Endpoint Protection
+Identified Antivirus Products
+Managed Antivirus Products
+Removing Viruses and Other Malware
+RMM Recommended AV Server Exclusion List
+Bitdefender Integration
+Scalepad Lifecycle Manager and ConnectWise RMM Integration
+Configuring the ConnectWise–Auvik Integration: Legacy Method
+Network Monitoring and Management
+Network Monitoring Getting Started
+Advanced Network Monitoring
+Advanced Network Monitoring Features
+Network Devices
+Network Monitoring Alerting
+Network Monitoring FAQ
+Network Monitoring Feature Comparison
+Premier Network Monitoring
+Premier Network Monitoring Features
+Notification Rules
+Notifications and Servers Levels
+Set Notification Rules
+Patching
+OS Patching
+OS Patching Getting Started Settings
+OS Feature Updates (Windows)
+OS Patching Compliance
+OS Patching Error Codes
+OS Patching FAQs
+OS Patching Policies
+OS Patching Reboot
+OS Patch Approvals
+OS Patch Automation System Level Changes
+OS Patch Exclusions
+OS Upgrades (Windows and Mac)
+Patch Testing
+Patch Testing Reports
+Patching Deployment Flow and Patching Catch-up Flow
+Third-Party Patching
+Improved Third-Party Patching
+Supported Third-Party Applications
+Windows 11 Patch Assessment issue
+OS Patching Best Practices
+Policies and Packages
+Evolve Recommended - Best Practices for Policies and Packages
+Evolve Recommended - Communicator Policy
+Evolve Recommended - Network Monitoring Configurations
+Evolve Recommended - OS Patching Desktop Policy
+Evolve Recommended - OS Patching Server Policy
+Evolve Recommended - Remote Access Policy
+Evolve Recommended - RMM Site Configuration Policy
+Evolve Recommended - Third Party Patching Policy
+Policies
+Packages
+Policy Groups
+PSA Integration
+Accelo Integration Guide
+Autotask Integration Guide
+Autotask - Policies Integration
+Autotask PSA - Policies Integration FAQs
+Autotask Asset Errors Knowledgebase
+Autotask Integration Contact Sync
+Autotask Integration Error Messages
+Autotask Integration Reporting on Synchronization Status
+Autotask Integration Setup Guide
+Autotask PSA - Billing Sync Error Codes Knowledgebase
+AutoTask Ticket Errors Knowledgebase
+Include User-Defined Fields in Configuration Items
+CommitCRM Integration Guide
+Computicate Integration Guide
+ConnectWise PSA (Manage) Integration
+Asset Sync
+Configure ConnectWise PSA Policies
+ConnectWise PSA (Manage) Help Desk Contact Sync
+ConnectWise PSA (Manage) Integration Setup Process
+ConnectWise PSA (Manage) REST API Integration Troubleshooting
+ConnectWise PSA - Billing Sync Error Codes Knowledgebase
+ConnectWise PSA - Policies Integration - FAQ
+ConnectWise PSA - Tech Efficiency Devices Pod
+ConnectWise PSA Asset Error Code Knowledgebase
+ConnectWise PSA Ticket Error Code Knowledgebase
+Impact Post PSA Migration Enablement
+PSA and RMM Integration Checklist
+Ticket Sync Improvement
+Harmony PSA Integration
+Kaseya BMS Integration Guide
+Promys Integration Guide
+PSA Public Ticketing API
+Getting Started with the Public Ticketing API
+Public Ticketing API Exceptions
+Public Ticketing API Integration Process
+Public Ticketing API Operations
+Public Ticketing API User Acceptance Test
+PSA Synchronization Dashboard
+Tigerpaw Integration
+Reports
+Asio Reports
+Agent Reports
+Agent Report
+Agent Uninstall Report
+Network Devices Report
+Probe Devices Report
+RMM Scan Configuration Report
+RMM Scan Details Report
+User Management Report
+Audit Reports
+Remote Access Report
+User Login Report
+Technical Details Reports
+Asset Change Report
+Disk Space Report
+Installed Software Change Report
+Installed Software Count Report
+Installed Software Report
+System Information Report
+Automation Execution Reports
+Automation Execution Detail Report
+Automation Execution Summary Report
+Executive Reports Modules
+Patches Reports
+Patch Assessment Report
+Patch Compliance Report
+Patch Deployment Report
+Preventive Maintenance Reports
+Endpoint Protection Report
+BrightGauge in ConnectWise RMM
+Reports and Dashboards (formerly BrightGauge) SSO FAQs
+Security Reports
+ConnectWise Endpoint Policy Management: Reports
+Risk Assessment Reports
+Enable Dark Web Monitoring with Risk Assessment
+Generate and Download an Assessment
+Understanding Risk Assessment Reports
+RMM - Network Assessment
+Advanced Configuration Network Assessment Tool
+Client Connector Tool
+Exchange Assessment Tool
+HIPAA Compliance Module
+Network Data Collector
+Network Detective XP Migration Readiness Analysis Report
+PCI Compliance Module
+Security Assessment Tool
+SQL Server Assessment Tool
+RMM Dashboard
+RMM Reporting API
+Getting Started with the Reporting API
+Reporting API REST Resources
+Agent Details
+Antivirus Ages
+Antivirus Summary
+Antivirus Version Summary
+BCDR Continuity Backup Summary
+BCDR Continuity Backup Summary by Resource
+BCDR Continuity Protected Resources
+CPU Utilization
+Daily Antivirus Status
+Daily Server Availability
+Daily Server Utilization
+Devices
+Disk IO Utilization
+Disk Space Utilization
+Disk Usage
+Expiring Warranties
+Installed Software
+Memory Utilization
+Missing Antivirus
+Missing Patches Summary
+Noncompliant Mobile Devices
+Operating System Summary
+Outdated Antivirus
+PageFile Utilization
+Patch Summary by Resource
+Patch Summary by Severity
+Patch Summary by State
+BCDR Continuity Appliances
+Score Summary
+Server Availability Monthly Averages
+Server Utilization
+Service Requests by Month
+Service Requests by Week
+Sites
+Site Summary
+SNMP Devices
+System Information
+Unsupported Antivirus
+Warranty Details
+Warranty Summary
+Work Summary
+RMM Tools
+RMM Scanning Tool
+Gateway Cache
+APIs
+Asio Integration API
+Authentication and Authorization
+Managed Devices Details APIs
+Product Status APIs
+Rate Limits
+Automation API
+Retrieve Custom Templates API
+Retrieve Fusion Scripts API
+Retrieve Global Templates API
+Schedule Automation Tasks on Managed Endpoints API
+Retrieve all Scheduled Tasks API
+Retrieve Task Instance Summary for a Task API
+Retrieve Task Instance Execution Results API
+Retrieve Task Summary at Endpoint Level API
+Devices API
+Agent Last Seen API
+Device Summary API – Retrieve All Endpoint Devices
+Exposed API for Generate Token
+Offboard/Uninstall Agent via API
+Retrieve Details of an Endpoint via API
+Retrieve Last Logged on User Information on an Endpoint via API
+Device Groups API
+Retrieve All Device Groups API
+Public Ticketing API
+API Exceptions
+API Integration Process
+API Operations
+Example Public Ticketing API Operations
+Getting Started with the Public Ticketing API
+User Acceptance Test
+Secure Information Store
+Security Whitepaper
+Secure Information Store Overview
+Passwords Tab
+Server and Desktop Passwords
+How to Change a Server Password
+Lights Out Management Passwords
+Pre-Defined and Custom Application Passwords
+Access Control Groups
+Custom Passwords and Properties
+Enabling Automatic Credentials for Servers and Desktops
+Tech Advantage
+Desktop Projects
+Desktop Projects: Tips and Best Practices
+Project List
+Server Projects
+Server Projects Best Practices
+Tech Advantage Linux Projects
+Tech Advantage Overview
+Tech Advantage Reporting
+Tech Advantage Sample Project: Microsoft Exchange Setup
+Tickets
+Best Practices for Going Green
+Service Plans and Ticket Lifecycles
+Create a Ticket
+Edit a Ticket
+Work Status Update
+Close a Ticket
+Quick-Close a Ticket
+Ticket Clean-Up
+Ticketing Reporting
+Ticket Queue
+ConnectWise RMM Update for December 2023 Devices Page
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Command for Networks
+Secure Information Store
+Tech Advantage
+Getting Started with ConnectWise RMM
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

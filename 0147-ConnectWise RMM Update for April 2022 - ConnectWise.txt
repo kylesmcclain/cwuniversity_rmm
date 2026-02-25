@@ -1,0 +1,110 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   ConnectWise RMM Release Notes   RMM Release Notes Archive   ConnectWise RMM Update for April 2022
+ConnectWise RMM Update for April 2022
+Last updated
+Apr 28, 2022
+Table of contents
+Overview
+Announcements
+ConnectWise RMM Updates
+Automation
+Communicator
+Device Groups
+Intune Integration
+Monitoring
+Overview
+
+Below is a summary of the new Command features and updates released in April, 2022.
+
+Announcements
+
+Official List of Supported operating systems.
+
+We will soon be publishing the details for the OS's that ConnectWise officially supports.
+
+New Agent
+
+An agent update, version 2.1.800, will be rolled out on all endpoints starting April 25th.
+
+ConnectWise RMM Updates
+Automation
+
+Partners will be able to associate platform data to a User Variable of their choosing. This is a major milestone for Scripting in CW RMM as we work towards functional parity with Automate Scripting (this feature solves for SQL queries & System Variables in Automate).
+
+Example: Partners can choose to associate the OS name of a device the script runs on to a User Variable named XYX.
+
+Partners will be able to create Policy Groups based on familiar Dynamic Group criteria and then assign a Policy to the Policy Group. Because Policies assigned to a Group trump Policies assigned to a Site, partners that want to assign Patch Policies based on device role are strongly encouraged to use Policy Groups for Patching.
+
+Example: Partners can create an OS Patching Server policy and assign it to a Policy Group that contains all Windows Server 2012 R2 devices.
+
+Communicator
+
+Patching reboot notification. A Reboot notification has been added for Endpoints when patching requires reboot to complete. This will be released on April 28th.
+
+Device Groups
+
+We've added VMware-Esxi endpoint type support in Device Groups service. You are now able to configure VMware-Esxi endpoints in device groups.
+
+Intune Integration
+
+Intune Flyout menu. For integrations setup with MS Intune tenants, you will now have a view of device compliance across multiple tenants and devices under the tenants. This is available from the righthand menu in the Asio Portal (ITSupport Portal).
+
+Monitoring
+
+Custom Monitor Documentation Improvements. We have updated the Custom Monitors Documentation to better aid you in creating your own monitors.
+
+In addition, we have implemented the following improvements:
+
+Enhancement of existing VMware monitor. You will now be able to receive an alert if the snapshot size or snapshots count matched with setup conditions.
+
+Enhancement of existing Hyper-V monitor. You will be able to receive an alert if the checkpoint size or checkpoints count matched with setup conditions.
+
+You will now be able to use "Does not contain" and "Not Equals" in the script output validation for the Script Monitor.
+
+The Disk Monitor ticket will include the Free space and used space in the GB instead of MB. Additionally, the ticket will also include the percentage of freespace value in the ticket.
+
+Suspension Rules will not allow the user to select the "All future sites" option if the user doesn't have permission to all sites.
+
+While defining Automation rule against the IntelliMon Alerts, the user will not be allowed to create automation configuration if the user doesn't have permission to all sites .
+
+ConnectWise reserves the right to remove any enhancement or fix from this update if it does not pass quality assurance tests.
+
+ 
+
+ConnectWise RMM Update for March 2022 ConnectWise RMM Update for May 2022
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ConnectWise RMM Update for March 2022
+ConnectWise RMM Update for February 2022
+ConnectWise RMM Update for January 2022
+ConnectWise RMM Update for May 2022
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

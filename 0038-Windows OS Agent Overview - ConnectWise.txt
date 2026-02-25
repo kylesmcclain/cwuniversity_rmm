@@ -1,0 +1,769 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Agents   Download and Install Agents   Windows OS Agent Overview
+Windows OS Agent Overview
+Last updated
+Oct 30, 2025
+Table of contents
+Overview
+Prerequisites
+Agent Management
+Hardware Requirement
+Software Requirement
+Operating System Compatibility
+Windows Client Operating System Support
+Windows Server Operating System Support
+Download and Install Windows OS Agents
+Overview
+
+Every Windows, Mac, or Linux OS device (Desktop or Server) must have the agent installed in order for it to report back to the ConnectWise Asio® platform with monitoring information. Agents can be downloaded from the Asio platform and installed on your endpoint directly or remotely.
+
+Note: Agents are self-updating and check for new updates once daily. If an Agent falls multiple updates behind, the Agent performs one update per day until it has been fully updated.
+
+This article provides information and instructions about how to download and install an agent on your device.
+
+Prerequisites
+Asio companies and sites. Please refer to Setting Up Your Asio platform for more information.
+Full Agent Management permissions via a default or custom application role.
+Review the agent prerequisites and compatibility information for the respective OS available in Prerequisites.
+Agent Management
+
+The following table displays the default application role permissions for agent download and install on the Asio platform.
+
+Application Role >
+
+	
+
+Super Admin
+
+	
+
+Manager
+
+	
+
+Technician
+
+	
+
+Office Staff
+
+	
+
+Sales
+
+	
+
+Client Site Manager
+
+
+
+
+Agent Download
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+OFF
+
+	
+
+ON
+
+
+
+
+Switch Device Type
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+OFF
+
+	
+
+ON
+
+
+
+
+Assign to another site
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+OFF
+
+	
+
+ON
+
+
+
+
+Agent Uninstall
+
+
+
+
+Uninstall Desktop Agents
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+OFF
+
+	
+
+ON
+
+
+
+
+Uninstall Server Agents
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+OFF
+
+	
+
+ON
+
+
+
+
+RMM Scanning Tool Configuration
+
+
+
+
+Install RMM Scanning Tool
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+OFF
+
+	
+
+OFF
+
+
+
+
+Uninstall RMM Scanning Tool
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+OFF
+
+	
+
+OFF
+
+ 
+
+Hardware Requirement
+CPU: Pentium 4 or comparable processor.
+Supports Windows on ARM processor or Snapdragon processor
+Supports on 32-bit and 64-bit processor
+RAM: 2 GB and above.
+Disk Storage: 2.5 GB on the drive where the agent will be installed (If endpoint to be enabled as Gateway cache recommended free space is 4GB)
+
+Disk storage for auto-updating agents: An additional 2 GB of storage should always be available on the machine for the agent to get auto-updated.
+
+Note: Not meeting the above requirements may result in failure of agent installation/auto-update.
+
+Software Requirement
+
+PowerShell 3.0 or above must be installed on Windows.
+
+Note:  PowerShell is required when deploying the agent in GUI mode. We are restricting the Agent versions to 4.0.1. So, partners should be using at least the 4.0.1 version moving forward.
+
+Operating System Compatibility
+Windows Client Operating System Support
+
+OS Name
+
+	
+
+Version
+
+	
+
+Microsoft Support End Date
+
+	
+
+ConnectWise Agent Compatibility
+
+
+
+
+Windows XP
+
+	
+
+Windows XP Home
+
+	
+
+08-Apr-14
+
+	
+
+Untested
+
+
+
+
+Windows XP Standard
+
+	
+
+08-Apr-14
+
+	
+
+Untested
+
+
+
+
+Windows XP Professional SP3 x86
+
+	
+
+08-Apr-14
+
+	
+
+Untested
+
+
+
+
+Windows XP Professional SP3 x64
+
+	
+
+08-Apr-14
+
+	
+
+Untested
+
+
+
+
+Windows Vista
+
+	
+
+Windows Vista (x86) SP2 or higher
+
+	
+
+11-Apr-17
+
+	
+
+Untested
+
+
+
+
+Windows Vista (x64) SP2 or higher
+
+	
+
+11-Apr-17
+
+	
+
+Untested
+
+
+
+
+Windows 7
+
+	
+
+Windows 7 Home/Professional/Enterprise/Ultimate x86 SP1
+
+	
+
+14-Jan-20
+
+	
+
+Verified
+
+
+
+
+Windows 7 Home/Professional/Enterprise/Ultimate x64 SP1
+
+	
+
+14-Jan-20
+
+	
+
+Verified
+
+
+
+
+Windows 8/8.1
+
+	
+
+Windows 8 Professional/Enterprise x86
+
+	
+
+12-Jan-16
+
+	
+
+Verified
+
+
+
+
+Windows 8 Professional/Enterprise x64
+
+	
+
+12-Jan-16
+
+	
+
+Verified
+
+
+
+
+Windows 8.1 Professional/Enterprise x86
+
+	
+
+10-Jan-23
+
+	
+
+Verified
+
+
+
+
+Windows 8.1 Professional/Enterprise x64
+
+	
+
+10-Jan-23
+
+	
+
+Verified
+
+
+
+
+Windows 10
+
+	
+
+Windows 10 (All versions excluding Mobile)
+
+	
+
+Various*
+
+Windows 10: Home & Pro
+
+Windows 10: Enterprise & Education
+
+	
+
+Verified
+
+
+
+
+Windows 11
+
+	
+
+Windows 11 (All versions)
+
+	
+
+Undefined
+
+	
+
+Verified
+
+
+
+
+Windows 365
+
+	
+
+Windows 365
+
+	
+
+Undefined
+
+	
+
+Verified
+
+Windows Server Operating System Support
+
+OS Name
+
+	
+
+Version
+
+	
+
+Vendor Support End Date
+
+	
+
+ConnectWise Agent Compatibility
+
+
+
+
+Windows Server 2008
+
+	
+
+Windows Server 2008 Standard/Enterprise x86 SP2
+
+	
+
+14-Jan-20
+
+	
+
+Verified
+
+
+
+
+Windows Server 2008 Standard/Enterprise x64 SP2
+
+	
+
+14-Jan-20
+
+	
+
+Verified
+
+
+
+
+Windows Server 2008 R2
+
+	
+
+Windows Server 2008 R2 Standard/Enterprise x86
+
+	
+
+14-Jan-20
+
+	
+
+Verified
+
+
+
+
+Windows Server 2008 R2 Standard/Enterprise x64 SP1
+
+	
+
+14-Jan-20
+
+	
+
+Verified
+
+
+
+
+Windows Server 2012
+
+	
+
+Windows Server 2012
+
+	
+
+10-Oct-23
+
+	
+
+Verified
+
+
+
+
+Windows Server 2012 R2
+
+	
+
+Windows Server 2012 R2
+
+	
+
+10-Oct-23
+
+	
+
+Verified
+
+
+
+
+Windows Server 2016
+
+	
+
+Windows Server 2016
+
+	
+
+12-Jan-27
+
+	
+
+Verified
+
+
+
+
+Windows Server 2019
+
+	
+
+Windows Server 2019
+
+	
+
+09-Jan-29
+
+	
+
+Verified
+
+
+
+
+Windows Server 2022
+
+	
+
+Windows Server 2022
+
+	
+
+14-Oct-31
+
+	
+
+Verified
+
+
+
+
+Microsoft Windows Server 2025 Standard
+
+	
+
+Microsoft Windows Server 2025 Standard
+
+	
+
+Undefined
+
+	
+
+Verified
+
+
+
+
+Microsoft Azure Stack HCI
+
+	
+
+Microsoft Azure Stack HCI
+
+	
+
+Undefined
+
+	
+
+Verified
+
+Download and Install Windows OS Agents
+
+Please refer to the Download and Install Agents documentation for the Windows OS agent installation.
+
+macOS Agent Overview Enhanced Agent Details
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Asio Platform Agent Deployment using Group Policy Object (GPO)
+Installing Asio Agents using MS Intune
+macOS Agent Overview
+Linux Server Agent Overview
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

@@ -1,0 +1,154 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   RMM Reporting API   Reporting API REST Resources
+Reporting API REST Resources
+Last updated
+Jul 9, 2025
+Overview
+
+Below are the REST resources supported in the ConnectWise Reporting API.
+
+Each resource section lists the following:
+
+Purpose of the resource
+REST endpoint and URI combination for calling the raw reporting data. With the exception of the Devices and Sites resources, which use a separate endpoint, all resources use the same REST Legacy endpoint.
+Method of request. With the exception of the Devices and Sites resources, which accept GET requests, all resources accept only POST requests from client applications.
+JSON sample request and response body. Parameters in POST requests provided to the REST Legacy endpoint are case-sensitive.
+Parameter descriptions for the JSON request and response data.
+
+To run each resource request, enter the resource endpoint-URI combination in your REST request tool, specify the method and request body (if applicable), and run the request. For authentication, remember to leave the username blank and enter the Reporting API key you retrieved from the Asio™ Platform (Settings > Account Administration > Integration > Reporting API.) as the password.
+
+Notes
+
+API data source and update frequency: Where applicable, each resource below lists the location in either Executive Reports or Detail Reports in the Asio™ Platform (ITSupport Portal) from which the resource data is taken. API data from Executive Reports is updated every 48 hours, and data from Detail Reports every 30 minutes to an hour.
+"MachineID" parameter: The Machine ID is a unique number assigned to each machine in the ConnectWise database. This parameter can optionally be used in requests for many of the REST resources below (such as Antivirus Version Summary, Installed Software, and System Information) to return machine-specific data. You can then consolidate information across multiple REST resources corresponding to the same machine.
+
+To retrieve a Machine ID, run the Sites resource to get the unique Site Code of the site where the device is located, then use the Site Code to run the Agent Details resource and note the IDs in the returned data.
+
+To run a REST resource for a specific machine or device, enter the retrieved Machine ID in the request body in the following format: "MachineID": {#}
+
+Example: Request details (depending on which resource below is used) for a single machine
+
+{
+
+"SiteCode": "AGTSolutions"
+
+"MachineID": 9223372036854775807
+
+}
+
+REST resources
+Featured articles
+Agent Details
+Retrieves agent information for the authenticated partner and the specified site.
+Antivirus Ages
+Returns the age of antivirus definitions on desktop machines.
+Antivirus Summary
+Retrieves counts of machines having antivirus protection in the following states: Updated, Outdated, Not Installed, or Information Unavailable.
+Antivirus Version Summary
+Retrieves currently detected antivirus software and the definition version.
+BCDR Continuity Backup Summary
+Overall summary of the percentage of Recover Continuity backups that have succeeded or failed.
+BCDR Continuity Backup Summary by Resource
+Summary of backup results for each protected resource during the given time period.
+BCDR Continuity Protected Resources
+Retrieves a list of resources being backed up by Recover Continuity appliances at the given site.
+CPU Utilization
+Returns the monthly minimum, maximum, and average CPU utilization, as well as average daily CPU utilization for each server.
+Daily Antivirus Status
+Returns the status of antivirus software on each machine for each day in the given month.
+Daily Server Availability
+Returns average daily availability for all servers at the given site.
+Daily Server Utilization
+Daily summary of the following server utilization metrics: CPU, memory, disk IO, disk space, and page file.
+Devices
+Retrieves a list of devices for a given site.
+Disk IO Utilization
+Returns the monthly minimum, maximum, and average disk IO utilization, as well as average daily disk utilization for each server.
+Disk Space Utilization
+Retrieves diskspace utilization data.
+Disk Usage
+Returns the monthly minimum, maximum, and average disk space utilization, as well as average daily disk space utilization for each server.
+Expiring Warranties
+Retrieves a list of resources that have expired warranties or have warranties that will soon expire.
+Installed Software
+Lists the software installed on a specified machine including publisher, version, and installation date.
+Memory Utilization
+Returns the monthly minimum, maximum, and average memory utilization, as well as average daily memory utilization for each server.
+Missing Antivirus
+Returns a list of resources that are missing antivirus software.
+Missing Patches Summary
+Summary of desktop machines that are missing patches.
+Noncompliant Mobile Devices
+Returns a list of mobile devices that are not in compliance with corporate policies.
+Operating System Summary
+Returns a summary of operating systems in use and the corresponding machine count.
+Outdated Antivirus
+Returns a list of resources that have outdated antivirus definitions.
+PageFile Utilization
+Returns the monthly minimum, maximum, and average pagefile utilization, as well as average daily pagefile utilization for each server.
+Patch Summary by Resource
+Returns the total number of patches in each state (Installed, Missing, Blacklisted, etc.) for each resource of the given resource type.
+Patch Summary by Severity
+Returns the total number of patches installed and missing in each severity class (Critical, Important, Moderate, Low, etc.)
+Patch Summary by State
+Returns the total number of patches in each state (Installed, Missing, Blacklisted, etc.)
+BCDR Continuity Appliances
+Retrieves a list of Recover Continuity backup appliances provisioned at the given site.
+Score Summary
+Returns various scoring metrics for a given site.
+Server Availability Monthly Averages
+Retrieves server availability monthly averages.
+Server Utilization
+Retrieves average server utilization data for a given month.
+Service Requests by Month
+Returns counts of service requests that have been opened and/or closed over the last 6 months.
+Service Requests by Week
+Returns counts of service requests that have been opened and/or closed over the previous 6 weeks.
+Sites
+Retrieves the list of active sites for the authenticated partner.
+Site Summary
+Asset and service request summary for a specified site.
+SNMP Devices
+Retrieves a list of SNMP devices at the given site.
+System Information
+Retrieves system information gathered from a specified machine, including hardware, OS, and BIOS information.
+Unsupported Antivirus
+Returns a list of resources with unsupported antivirus software installed.
+Warranty Details
+Retrieves warranty information for the authenticated partner and the specified site.
+Warranty Summary
+Returns the count of resources with active and expired warranties, and the count of resources where warranty information is not available.
+Work Summary
+Returns a summary of work performed on all desktops and servers.
+Getting Started with the Reporting API Agent Details
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Agent Details
+Retrieves agent information for the authenticated partner and the specified site.
+Antivirus Summary
+Retrieves counts of machines having antivirus protection in the following states: Updated, Outdated, Not Installed, or Information Unavailable.
+Antivirus Version Summary
+Retrieves currently detected antivirus software and the definition version.
+BCDR Continuity Appliances
+Retrieves a list of Recover Continuity backup appliances provisioned at the given site.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

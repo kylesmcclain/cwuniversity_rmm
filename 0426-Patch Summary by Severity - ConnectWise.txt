@@ -1,0 +1,128 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   RMM Reporting API   Reporting API REST Resources   Patch Summary by Severity
+Patch Summary by Severity
+Last updated
+Jul 8, 2025
+Table of contents
+Overview
+Endpoint and URI
+Method
+Request Body
+Response Body
+Parameter Descriptions for Patch Summary by Severity
+Source of Data in the Asio Platform
+Overview
+
+Returns the total number of patches installed and missing in each severity class (Critical, Important, Moderate, Low, etc.)
+
+Endpoint and URI
+
+https://itsapi.itsupport247.net/repo...tches/severity
+
+Method
+
+POST
+
+Request Body
+
+{
+
+"Month":4,
+
+"SiteCode":"AGTSolutions",
+
+"Year":2015,
+
+"ResourceType":"server"
+
+}
+
+Response Body
+
+{
+
+"error":null,
+
+"patchSummary":[
+
+{
+
+"installed":23,
+
+"missing":0,
+
+"severity":"Critical"
+
+},
+
+{
+
+"installed":46,
+
+"missing":0,
+
+"severity":"Important"
+
+},
+
+{
+
+...
+
+},
+
+{
+
+...
+
+}
+
+]
+
+}
+
+Parameter Descriptions for Patch Summary by Severity
+Parameter	Description
+"Month"	Requested month (numerical)
+"SiteCode"	Unique site code listed in Asio™ Platform (ITSupport Portal)
+"Year"	Requested year
+"ResourceType"	Desktop or server
+"installed"	Number of installed patches of the specified severity type
+"missing"	Number of missing patches of the specified severity type
+"severity"	Patch severity type
+Source of Data in the Asio Platform
+
+Reports >  Asio > Executive Report > Server Data / Desktop Data > Patch Updates > By Severity
+
+Patch Summary by Resource Patch Summary by State
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Agent Details
+Retrieves agent information for the authenticated partner and the specified site.
+Antivirus Summary
+Retrieves counts of machines having antivirus protection in the following states: Updated, Outdated, Not Installed, or Information Unavailable.
+Antivirus Version Summary
+Retrieves currently detected antivirus software and the definition version.
+BCDR Continuity Appliances
+Retrieves a list of Recover Continuity backup appliances provisioned at the given site.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

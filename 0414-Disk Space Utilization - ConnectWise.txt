@@ -1,0 +1,132 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   RMM Reporting API   Reporting API REST Resources   Disk Space Utilization
+Disk Space Utilization
+Last updated
+Jul 9, 2025
+Table of contents
+Overview
+Endpoint and URI
+Method
+Request Body
+Response Body
+Parameter Descriptions for Disk Space Utilization
+Source of Data in the Asio™ Platform
+Overview
+
+Retrieves diskspace utilization data.
+
+Endpoint and URI
+
+https://itsapi.itsupport247.net/Repo...tion/diskspace
+
+Method
+
+POST
+
+Request Body
+
+{
+
+"Month":4,
+
+"SiteCode":"AGTSolutions",
+
+"Year":2015,
+
+"ResourceType":"server"
+
+}
+
+Response Body
+
+{
+
+"diskSpaceUtilization":[
+
+{
+
+"diskSpace":20.161907683188620492,
+
+"drive":"C:",
+
+"MachineId": 9223372036854775807,
+
+"resource":"WS2008_1"
+
+},
+
+{
+
+"diskSpace":83.020453529742197418,
+
+"drive":"C:",
+
+"MachineId": 9223372036854775808,
+
+"resource":"WS2008_2"
+
+},
+
+{
+
+...
+
+},
+
+{
+
+...
+
+}
+
+]
+
+"error": null
+
+}
+
+Parameter Descriptions for Disk Space Utilization
+Parameter	Description
+"Month"	Requested month (numerical)
+"SiteCode"	Unique site code listed in Asio™ Platform (ITSupport Portal)
+"Year"	Requested year
+"diskSpace"	Percentage disk space used for the specified resource
+"drive"	Local drive containing disk data
+"MachineId"	Unique machine ID in ConnectWise database
+"resource"	Resource name
+Source of Data in the Asio™ Platform
+
+Reports > Asio > Executive Report > Server Data / Desktop Data > Utilization > Disk Space Per Volume
+
+Disk IO Utilization Disk Usage
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Agent Details
+Retrieves agent information for the authenticated partner and the specified site.
+Antivirus Summary
+Retrieves counts of machines having antivirus protection in the following states: Updated, Outdated, Not Installed, or Information Unavailable.
+Antivirus Version Summary
+Retrieves currently detected antivirus software and the definition version.
+BCDR Continuity Appliances
+Retrieves a list of Recover Continuity backup appliances provisioned at the given site.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

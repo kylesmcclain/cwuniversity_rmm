@@ -1,0 +1,475 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Patching   OS Patching   OS Patching Policies
+OS Patching Policies
+Last updated
+Jan 23, 2026
+Table of contents
+Overview
+Creating a New Policy
+Policy Setting Details
+Create a New Package with your Policies
+Endpoint Specific Policies and Overrides
+Assign Policy to Device Groups
+Edit a Policy Group
+Remove Assignments from a Policy Group
+Delete a Policy Group
+Overview
+
+This page describes how to create, edit, and delete your patching policies.
+
+Creating a New Policy
+
+Navigate to Endpoints > Policies & Packages > Policies and click Add Policy.
+
+In the Type drop-down, choose OS Patching Desktop or OS Patching Server depending on the endpoint type.
+
+Name the new policy.
+
+Switch the OS Patching Automation to ON.
+
+Select the Patch Classifications you want to automate using Policies. Review the Policies and Packages page for more information. You have three options you can choose from:
+
+Do not deploy
+
+Deploy all
+
+Deploy only Partner or NOC-Approved
+
+Note: Review the following documentation to learn more about how patch classifications can be affected.
+
+Description of the standard terminology that is used to describe Microsoft software updates
+
+Patch Testing
+
+OS Patch Approvals
+
+Note: If you select a scheduled time, the window must be a minimum of 2 hours for Download, Installation and Feature updates. The time selected will apply based on the endpoint's local time.
+
+After you have finished selecting your settings, click Save.
+
+Policy Setting Details
+
+Setting Name
+
+	
+
+Information
+
+	
+
+Options
+
+
+
+
+OS Patching Automation
+
+	
+
+The automation will run based on the classifications and the schedule selected in the Policy.
+
+Review this documentation to see all the system changes applied when the policy is turned on.
+
+	
+
+ON – Enables OS patching automation on endpoints.
+
+OFF – Disables OS patching automation on endpoints.
+
+
+
+
+Patch Classifications
+
+
+Security Updates	
+
+A widely released fix for a product-specific, security-related vulnerability. Security vulnerabilities are rated by their severity. The severity rating is indicated in the Microsoft security bulletin as critical, important, moderate, or low.
+
+Note: NOC testing covers Security Updates only.
+
+	
+
+Do Not Deploy – Updates in this classification are not considered for Deployment or Compliance score calculation.
+
+Assessment Only - The Assessment Only feature includes Patch classifications for Compliance calculation without deploying updates. This option is available under each patch classification in the Patch Policy.
+
+Deploy All – Updates in this classification are deployed during the scheduled time without considering the Patch Approval or Blocks.
+
+Missing updates of this classification will reduce the Compliance score.
+
+Deploy Only Partner or NOC Approved - Updates in this classification are deployed during the scheduled time only if they are either approved by NOC or Partner on the Patch Approvals page.
+
+Partner Approval takes precedence over NOC Approval.
+
+Missing updates of this classification will reduce the Compliance score if they are New or Approved.
+
+Missing updates of this classification will not reduce the Compliance score if they are Blocked or Excluded.
+
+Deploy only Partner Approved - Updates in this classification are deployed during the scheduled time only if they are approved in the Patch Approvals page.
+
+Missing updates of this classification reduce the Compliance score if they are New or Approved.
+
+Missing updates of this classification will not reduce the Compliance score if they are Blocked or Excluded.
+
+Deploy All except Partner Disapproved - Updates in this classification automatically deploy all available patches, skipping any that technicians have explicitly disapproved.
+
+
+Critical Updates	
+
+A widely released fix for a specific problem that addresses a critical, non-security-related bug.
+
+
+Updates	
+
+A widely released fix for a specific problem. An update addresses a noncritical, non-security-related bug.
+
+
+Feature Updates	
+
+Feature updates will upgrade Windows 10 and 11 desktops wherever they are available.
+
+
+Drivers	
+
+Software that controls the input and output of a device.
+
+We recommend setting this option to Do not Deploy.
+
+
+Feature Packs	
+
+New product functionality that is first distributed outside the context of a product release and that is typically included in the next full product release.
+
+Note: These updates are different from Feature Updates.
+
+
+Update Rollups	
+
+A tested, cumulative set of hotfixes, security updates, critical updates, and updates that are packaged together for easy deployment.
+
+
+Tools	
+
+A utility or feature that helps complete a task or set of tasks.
+
+
+OS Upgrade
+OS Upgrade	
+
+Enabling this upgrade all applicable Windows and MAC devices to the latest available operating system version. Both Windows and MAC Major Upgrades will use the use the Feature Update/OS Upgrade Schedule.
+
+Note: macOS Major upgrades are only available for Intel-based MAC endpoints and do not support ARM/Silicon-based MAC machines.
+
+	
+
+ON – Enable applicable macOS and Windows endpoints to upgrade to the latest operating system version.
+
+OFF – Disable the OS Upgrades and regular feature upgrades for Windows. Regular security updates for macOS will work as usual.
+
+
+MAC
+MAC Updates	
+
+This enables Mac Patching, and reuses the download, install, and reboot schedules.
+
+	
+ON – This will enable automation for MAC Devices.    
+OFF – This will disable automation for MAC Devices.
+
+Schedule
+Download	
+
+Updates are downloaded in this time window.
+
+Note: Immediate download is recommended. For the schedule option, 4 hours is recommended.
+
+	
+
+Immediately - Start download of missing policy patches if the endpoint is online.
+
+Scheduled - Download patches as per the schedule value in Setting "Repeat" and "Between"
+
+Every <N> Day(s): Specify frequency in days for action execution at Local machine time
+
+<Action> every (N) day(s) between <Start time> to <End time>
+
+Example – Download everyday between 6 PM to 11PM
+
+Every <N> Week(s): Specify days of the week for action execution at Local machine time.
+
+<Action> every (N) weeks on <Specific day(s)> between <Start time> to <End time>
+
+Note: At least one day of the week should be selected.
+
+Example – Install every 2 weeks on Saturday, and Sunday between 8 AM to 6 PM
+
+Every <N> Month(s) on <Xth> <Day of the week>: Specify days of the month for download execution at Local machine time.
+
+<Action> every (N) Month(s) on the (Xth) <Specific day> between <Start time> to <End time>
+
+Example – Reboot every Month on Third Saturday between 8 AM to 6 PM
+
+
+Install	
+
+Updates are installed in this time window.
+
+Note: Immediate installation is recommended. For the schedule option, 4 hours is recommended.
+
+
+Deploy Feature Updates / OS Upgrades	
+
+Schedule to download and install feature updates. Reboots are scheduled separately.
+
+Note: 10 hours is recommended.
+
+
+Reboot	
+
+Endpoints are rebooted if at least one update is pending reboot during the time window.
+
+Note: A schedule of a minimum 30 minutes is recommended. A schedule window that is less than 15 minutes may get skipped.
+
+
+Extended Pending Reboot Detection	
+
+Expand detection logic to identify pending reboots for reasons other than patching. Learn more about OS Patching Reboot.
+
+	
+ON - Detect endpoints as pending reboot if any of the registry keys are found.
+OFF - Only detect if endpoint is pending reboot for patches deployed.
+
+Patching Catch-up	
+
+If the endpoint is offline during the install schedule, all missing patches are deployed as per policy if the endpoint comes back online within the next 90 days.
+
+	
+ON – This enables Patching Catch-up on the endpoints where policy is assigned
+OFF – This disables always Patching Catch-up option
+
+Always Reboot Endpoint	
+
+When enabled endpoints reboot during the Patching reboot schedule regardless of whether a patch requires a reboot or not.
+
+Note: A patch does not have to be installed for the reboot to happen.
+
+Note: The Always reboot does not take effect unless a reboot window is scheduled.
+
+	
+ON – This enables always reboot feature and will be applied to endpoints where this policy is assigned. 
+OFF – This disables always reboot option
+
+System Configuration
+User can check for updates	
+
+This setting enables or disables the option for a Windows end user to click on Check for Updates. Not applicable for macOS endpoints.
+
+	
+
+YES - User can click on Check for Updates and potentially deploy blocked or non-policy patches.
+
+NO - This disables the Check for Updates option and prevents deployment of blocked or non-policy patches.
+
+ 
+
+
+Notify User Before Initiating the Reboot	
+
+The reboot prompt will appear at the end-user’s system when receiving a reboot request from the portal.
+
+	
+
+ON – Will enable the Reboot Prompt to appear on endpoint.
+
+OFF – Will disable the Reboot Prompt.
+
+
+Reboot Options
+Reboot if no user response (hours)	
+
+Define the reboot timeout window to force a reboot of your machine automatically when there is no action taken from the user on the reboot prompt.
+
+	
+
+Default Value = 1
+
+Time Format = Hourly
+
+Maximum Accepted Value = 24 Hours
+
+ 
+
+
+Customized Reboot Message	
+
+Change the reboot message shown to your end user when prompted for a reboot. A '$' sign can be added within the message to dynamically show the number of hours as defined in "Reboot if no user response." 
+
+Example: The IT Team has completed endpoint maintenance. The machine will reboot in $ hours.
+
+	
+Any String value up to 300 characters
+Applies to all endpoint types
+
+Allow user to delay for (hours)	
+
+Define the time for which a user can postpone the reminder.
+
+	
+
+Default Value = 1
+
+Time Format = Hourly
+
+Maximum Accepted Value = 24 Hours
+
+
+Limit number of delays	
+
+Define the number of times a user can postpone the reboot. When the postponement limit is reached, the user will only have the option to restart now. If no action is taken, the endpoint will automatically reboot based on the time set in "Reboot if no user response."
+
+	
+Default Value = 3
+Maximum Accepted Value = 99
+Minimum Accepted Value = 1
+
+Custom Notification Icon	
+
+The image shown to the user within the reboot notification can be branded to reflect your managed service business. Users will know that the requested reboot is from the IT solution provider.
+
+	
+The accepted image format is .bmp
+Size - 32x32
+
+
+
+Time delay in Minutes
+
+	
+
+Define the time the user has until the reboot actually gets initiated at the endpoint.
+
+	
+Default Value = 1
+Maximum Accepted Value = 55
+Minimum Accepted Value = 1
+
+
+
+Windows banner message
+
+	
+
+A Windows banner message appears on the end user's desktop when a reboot is about to occur. The message informs the user about the upcoming restart.
+
+	
+Default Text - The system is preparing for a scheduled reboot as part of patch deployment. Please save your work and close applications.
+Applies to Windows endpoints only
+Customize the message (Max. 300 characters)
+Create a New Package with your Policies
+
+Navigate to Endpoints > Policies & Packages > Packages and click Add Package.
+
+Add the new policies to your package.
+
+Click Save.
+
+From the Packages page, click on the Sites tab
+
+Select all of the sites you want to assign your package to.
+
+Important: As soon as you assign a new package to a site, the Legacy System will turn off in order to prevent them from interfering with each other.
+
+Note: Review the Policies and Packages page for more information.
+
+Endpoint Specific Policies and Overrides
+
+Policy overrides can be used to turn OS patching automation ON or OFF for specific endpoints or to apply settings different from the Site packages.
+
+Navigate to Endpoints > Devices and click the name of the device you want to modify.
+
+Click on the Settings tab.
+
+Click the ^ (caret) icon to open the Devices menu, then click on OS Patching Desktop or OS Patching Server, depending on the endpoint type.
+
+Click Edit to make changes to the settings.
+
+
+After the changes are made, click Save.
+
+Note: The Compliance score is recalculated as per the last assessment after the settings are saved.
+
+Assign Policy to Device Groups
+
+Navigate to Endpoints > Policies & Packages > Assignments and click the Policy Groups tab.
+
+Select either OS Patching Desktop or OS Patching Server and click Add Group.
+
+Add your Policy Group Name and provide a description.
+
+Click Assign and add in the Policy you wish to group. The selected Policy will appear under Assigned Policy.
+
+Under Devices Criteria, click Add Criteria. Fill out the required criteria and click Save.
+
+Note: It can potentially take up to 10 minutes for Policy Group updates to reflect on a Device's Settings tab.
+
+Edit a Policy Group
+
+Navigate to Endpoints > Policies & Packages > Assignments > Policy Groups.
+
+Locate the Policy Group you want to edit and select it.
+
+Click on the pencil icon to bring up the edit window.
+
+Edit your group.
+
+Remove Assignments from a Policy Group
+
+Navigate to Endpoints > Policies & Packages > Assignments > Policy Groups.
+
+Locate the Policy Group you want to remove an assignment from and select it.
+
+Click on the remove assignment icon.
+
+A window will open where you can remove assignments. Select the assignments you want to remove and click Remove Assignments.
+
+Delete a Policy Group
+
+Navigate to Endpoints > Policies & Packages > Assignments > Policy Groups.
+
+Locate the Policy Group you want to delete and select it.
+
+Click on the delete icon.
+
+Confirm the deletion.
+
+Note: You cannot delete a Policy group if it has a policy assigned to it, so you must follow the steps in Remove Assignments from a Patching Policy Group first.
+
+OS Patching FAQs OS Patching Reboot
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+OS Patching Compliance
+OS Patching Getting Started Settings
+OS Patch Approvals
+OS Patch Exclusions
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

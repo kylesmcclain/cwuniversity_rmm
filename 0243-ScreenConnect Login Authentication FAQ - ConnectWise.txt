@@ -1,0 +1,91 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Integrations to ConnectWise RMM   ScreenConnect with RMM   ScreenConnect Login Authentication FAQ
+ScreenConnect Login Authentication FAQ
+Last updated
+Jul 4, 2024
+Table of contents
+Overview
+Frequently Asked Questions
+What is the change?
+Why are we changing the authentication method?
+What impact will this change have on the ScreenConnect experience in RMM?
+Which partners will see the ScreenConnect tile in ConnectWise Home?
+Can I remove the Launch tile in ConnectWise Home?
+Now that ScreenConnect shows in Home as a product, will I be billed separately for it?
+Will there be any change in Authentication?
+Will I be able to access ScreenConnect from ConnectWise Home?
+Overview
+
+This document provides answers to frequently asked questions about the Screenconnect instance access to use ConnectWise Asio.
+
+Frequently Asked Questions
+What is the change?
+
+Starting July 3rd, 2024, your ScreenConnect instance will be moved to Connectwise Asio™ for authentication. We will be migrating partners from the legacy SSO in a phased manner. This change will result in a more secure login & unified experience for all partners and add the ability to launch ScreenConnect directly from ConnectWise Home. Users currently see the following screenshot, when they log into a Screenconnect Instance.
+
+After the migration, they will see the following screen:
+
+Why are we changing the authentication method?
+
+As a part of our unified login experience for all ConnectWise products, we are moving away from Command SSO to use ConnectWise SSO. Command SSO will no longer be a supported authentication method. To protect our partners, we are now requiring all partners to use ConnectWise SSO.
+
+What impact will this change have on the ScreenConnect experience in RMM?
+
+No functional changes have been made for the RMM and ScreenConnect Integration.
+
+Which partners will see the ScreenConnect tile in ConnectWise Home?
+
+All RMM partners will now see ScreenConnect available in ConnectWise Home, under the My ConnectWise Hub > Products tab.
+
+Can I remove the Launch tile in ConnectWise Home?
+
+No. The tile will be present for any products registered for ConnectWise SSO. This tile connects RMM partners to their instance of ScreenConnect, included in their package.
+
+Now that ScreenConnect shows in Home as a product, will I be billed separately for it?
+
+As ScreenConnect is bundled with RMM, there will be no additional cost. Earlier the ScreenConnect instance could be accessed only from the RMM Devices page but with this change we are offering an additional option for partner users to access the ScreenConnect instead of always getting routed from RMM.
+
+Will there be any change in Authentication?
+
+There will be no change for users when they log in from Asio portal. If the users, who are currently viewing the option Connect with Command SSO, logout and log in to launch the Control instance they will see the option Connect with Connectwise Asio as shown here:
+
+When a user clicks on Launch Control Administration as shown below,
+
+A screen appears that asks consent for certain permissions, from every user who has access, and has logged in for the first time after migration:
+
+Users having access to take remote control will be able to access ScreenConnect and need to click Accept and proceed. The session will take you to the ScreenConnect instance.
+
+Will I be able to access ScreenConnect from ConnectWise Home?
+
+ScreenConnect is now available from https://home.connectwise.com/
+
+Users who have access to take remote control will be able to access ScreenConnect from https://home.connectwise.com/. When a user clicks on the Launch button, they will get a consent form. They need to grant the required permissions and click Accept to proceed.
+
+ScreenConnect Dashboard for RMM ScreenConnect Installation Status and Error Codes
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ScreenConnect Installation Status and Error Codes
+Enable or Disable Connection Consent for ScreenConnect
+ScreenConnect Dashboard for RMM
+ScreenConnect 1-Click for RMM
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

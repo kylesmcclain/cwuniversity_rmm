@@ -1,0 +1,56 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Tech Advantage   Server Projects
+Server Projects
+Last updated
+Oct 1, 2024
+Table of contents
+Overview
+Creating a Server Project      
+Overview
+
+Tech Advantage Server Projects allow you to leverage the ConnectWise NOC’s expertise and manpower to perform time-consuming tasks usually during off-hours. To see the list of projects available, visit Tech Advantage Project List.
+
+Creating a Server Project
+Go to Settings > Account Administration > Products & Services > Tech Advantage > Server Projects.
+Click Create Server Project.
+
+Complete the fields described below.
+
+1 - Project Overview	Contains a summary and description of the project and the site for the planned work. The Project Type field lists current project offerings, and the Number of Users/Devices is required for project selection.
+2 - Partner Contact	The Partner Contact section is for your contact information.
+3 through 6                          	Sections vary depending on the Project Type selected. For example, an Exchange Server Migration requires source and destination server details, but a VMware vCenter installation and configuration requires server and VMware vCenter management machine network information. Required fields are marked with an asterisk; however, the more information provided, the better the outcome.
+7 - Schedule	In the Schedule section, indicate the start date for the NOC to review this project.
+8 - Confirmation                                  	The Confirmation section specifies if you are a Microsoft Certified Partner and requires you to agree to project invoicing.
+Click Submit to continue. Fn acknowledgment window briefly appears.
+
+For services completed, fees show on next month’s invoice. Invoices are created during the first week of the month for the previous month.
+
+Note: You have fifteen days to review after the NOC has completed a project. During that time, you can send the request back to the NOC if you believe the project is not fully completed.
+Project List Server Projects Best Practices
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Project List
+Desktop Projects
+Desktop Projects: Tips and Best Practices
+Server Projects Best Practices
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

@@ -1,0 +1,113 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Policies and Packages   Evolve Recommended - Best Practices for Policies and Packages   Evolve Recommended - Remote Access Policy
+ Expand/collapse global location
+Evolve Recommended - Remote Access Policy
+Last updated
+Oct 28, 2025
+Table of contents
+Overview
+Policy Details
+Policy Settings
+Overview
+
+This article covers the recommended settings to employ for your Remote Access Policy. These best practice settings for different RMM configurations are based on the feedback and analysis of policies used by partners.
+
+Policy Details
+Policy Usage	Remote access policies allow the partner to define whether the ScreenConnect® application should be deployed on the endpoint. The partner can define whether ScreenConnect can be deployed on server or desktop machines.
+Policy Type	Remote Access
+Policy Name	Evolve Recommended - Remote Access Policy
+Policy Applies To	
+
+These settings will be applied to the following types of agents:
+
+RMM Enabled Windows Server
+
+RMM Enabled Linux Server
+
+RMM Enabled Desktops
+
+RMM Enabled MAC
+
+Policy Settings
+Field Name	Value
+
+
+ScreenConnect Access for Servers
+
+	
+
+Enabled
+
+
+
+
+Reason for Remote Access
+
+	
+
+Enabled
+
+
+
+
+ScreenConnect 1-Click Server
+
+	
+
+Disabled
+
+
+
+
+ScreenConnect Access for Desktops
+
+	
+
+Enabled
+
+
+
+
+Reason for Remote Access
+
+	
+
+Enabled
+
+
+
+
+ScreenConnect 1-Click Desktop
+
+	
+
+Disabled
+
+Evolve Recommended - OS Patching Server Policy Evolve Recommended - RMM Site Configuration Policy
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Evolve Recommended - RMM Site Configuration Policy
+Evolve Recommended - Network Monitoring Configurations
+Evolve Recommended - OS Patching Desktop Policy
+Evolve Recommended - OS Patching Server Policy
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

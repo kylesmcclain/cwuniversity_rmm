@@ -1,0 +1,75 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   RMM Tools   APIs   Automation API   Retrieve Global Templates API
+Retrieve Global Templates API
+Last updated
+Jul 8, 2025
+Table of contents
+API Name
+API Description
+Request and Response API
+API Name
+
+Retrieve Global Templates for a Partner
+
+API Description
+
+This API allows you to retrieve information about global templates that are available out of the box. Global templates are predefined, which you can use for various automation tasks. 
+
+Request and Response API
+
+You can find the Request and Response API details at this dev portal.
+
+The API Response will include the following fields:
+
+Field	Description
+templateId	Template ID (string) 
+state	Current state of the template (string)
+name	Name of the template (string) 
+description	Description of the template (string) 
+categories	Categories associated with the template (array of strings) 
+operatingSystem	Supported operating systems for the template
+executorEngine	Task Type (string) 
+expectedExecutionTimeSec	Expected execution time in seconds (integer) 
+jsonSchema	JSON schema for the template parameters (string)
+hasParameters	Indicates if the template has parameters (boolean) 
+createdOn	Timestamp indicating when the template was created (string)
+updatedOn	Timestamp indicating when the template was last updated (string)
+
+ 
+
+Note: Review the Tasking documentation for more information.
+
+ 
+
+ 
+
+ 
+
+Retrieve Fusion Scripts API Schedule Automation Tasks on Managed Endpoints API
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Retrieve Custom Templates API
+Retrieve Fusion Scripts API
+Retrieve all Scheduled Tasks API
+Retrieve Task Instance Summary for a Task API
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

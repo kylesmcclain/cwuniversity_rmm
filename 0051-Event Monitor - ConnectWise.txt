@@ -1,0 +1,133 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Alerts   Custom Monitors   Event Monitor
+Event Monitor
+Last updated
+Jun 2, 2025
+Table of contents
+Overview
+How to create an Event Monitor
+List of Monitor Variables
+Overview
+
+Event Monitors allow you to trigger an alert and create a ticket when a specific event is identified on a Windows endpoint.  
+
+How to create an Event Monitor
+
+Navigate to  Endpoints > Alerts > Monitors.
+
+Click Add Monitor.
+
+Provide a Name for the new monitor. Optionally you can provide a Description of your new monitor.
+
+Select the Type as Event from the drop-down.
+
+Select the Family and Severity.
+
+To enable the Mapper functionality, you need to turn on the toggle. To learn more about the Mapper functionality review this documentation.
+
+Under the Conditions section:
+If you keep the Use Generative AI Assist for Event Log Monitor Configuration toggle OFF, then follow the steps below to configure the Event Monitor manually (note that the toggle will be OFF by default):
+Event Log: Select the appropriate event log from the list. If you wish to use a custom Event log, type the name in the Custom Event log field.
+Note: In the case of a custom event log, it should be the Channel Name from the event details. Please use the XML view to fetch the channel name of the Event Log name for event validations.
+Event Id's: Add any Event Id's that you would like to add to monitoring (You can add more than 1 event id in the list and they will be considered in "OR" combinations.)
+Level (Severity): This allows you to select the level or severity for the Event id defined. (You can add multiple and they will be considered in "OR" combinations.)
+Provider Name (Source): This allows you to define the provider name for the event which can be found in the event details field.
+Note: There is a difference in the Source which is visible on the Event window and details under the XML. Please use the XML view of the provider name for event validations.
+Occurrences: This allows the user to define the occurrence count before triggering an alert in a specific duration .
+Event Description: This allows you to define any text to be validated in the event description. You can also select a custom Automation Task to be executed when the condition was met on the endpoint. You can add multiple keywords to be used for validations along with logical operators like "AND" or "OR".
+
+Note: System will reflect only selective Automation tasks that do not need parameters. Refer these OOTB tasks which needs parameters. All Custom Scripts created will be available for selection.
+
+If you turn ON the Use Generative AI Assist for Event Log Monitor Configuration toggle, then follow the steps below:
+In the Ask AI textbox, enter the prompt for the event you want to monitor. For example: Unexpected Restart.
+Click the Generate and Apply button, the subsequent fields will be automatically populated as shown below:
+
+
+Selecting the checkbox accepts your consent for using the AI generated values for configuring the Event Monitor.
+Under the Ticket Resolution section you can define if the ticket should be updated as Resolved once the issue no longer persists on an endpoint.
+If you keep the Use Generative AI Assist for Event Log Monitor Configuration toggle OFF, then follow the steps below for manual configuration (note that the toggle will be OFF by default):
+Event Log: Select the appropriate event log from the list. If you wish to use a custom Event log, type the name in the Custom Event log field.
+Note: In the case of a custom event log, it should be the Channel Name from the event details. Please use the XML view to fetch the channel name of the Event Log name for event validations.
+Event Id's: Add any Event Id's that you would like to add to monitoring (You can add more than 1 event id in the list and they will be considered in "OR" combinations.)
+Level (Severity): This allows you to select the level or severity for the Event id defined. (You can add multiple and they will be considered in "OR" combinations.)
+Provider Name (Source): This allows you to define the provider name for the event which can be found in the event details field.
+Note: There is a difference in the Source which is visible on the Event window and details under the XML. Please use the XML view of the provider name for event validations.
+Occurrences: This allows the user to define the occurrence count before triggering an alert in a specific duration .
+Event Description: This allows you to define any text to be validated in the event description. You can also select a custom Automation Task to be executed when the condition was met on the endpoint. You can add multiple keywords to be used for validations along with logical operators like "AND" or "OR".
+If you turn ON the Use Generative AI Assist for Event Log Monitor Configuration toggle, then follow the steps below:
+In the Ask AI textbox, enter the prompt for the event you want to monitor. For example: Unexpected Restart.
+Click the Generate and Apply button, the subsequent fields will be automatically populated as shown below:
+
+
+Selecting the checkbox accepts your consent for using the AI generated values.
+
+Under the Resources section you can select the target endpoints on which the alerts should be triggered. You can select specific machines, Sites, or a Dynamic or a Static group.
+
+Note: If using the AI Assist options for configuring the Event Monitor or for Ticket Resolution, ensure to select the checkboxes before clicking Save, to grant your consent for using the AI generated values.
+
+Click Save to create and apply the monitor to the targets.
+
+Note: Once an event monitor is created the corresponding configuration will be pushed on the target endpoint to collect data and information for triggering an alert based on the Ticket condition defined. Once the configuration is defined, alerts will be generated in near real-time once the event is observed on the endpoint. If the event monitor is applied to a non-windows endpoint, there will be no alerts triggered from the selected endpoint.
+
+List of Monitor Variables
+
+Here is a list of variables which you can use as per your requirement when creating your own customized ticket template:
+
+Monitor Type	Variable Name	Supported OS Type	Sample Data/Values	Variable Definition
+Generic
+ 	ObservedDate	
+
+Windows, MAC, Linux
+
+	
+
+"2020-09-02T15:35:42.969926103Z"
+
+	Time stamp when the issue was observed
+ 	MonitorDesc	Windows, MAC, Linux	Add local palmtech account and add it to the local administrators group	Description added on the portal while creating a monitor
+ 	MonitorName	Windows, MAC, Linux	Local PalmTech Account with Local Admin	Name of the monitor
+ 	MonitorSummary	Windows, MAC, Linux	(Run PowerShell script every 1 minute(s) AND Run PowerShell script every 1 minute(s))	Summary information for the monitor
+Event
+ 	FacilityName	Windows	"Application"	Event log of received event
+ 	EventID	Windows	100	Event ID of the last received event, which triggered an alert
+ 	Source	Windows	"CoolAntivirus"	Event source
+ 	SeverityName	Windows	1	Severity
+ 	Message	Windows	"Disk Failure"	Message of the last received event, which triggered an alert
+ 	Occurrences	Windows	4	Event count which triggered an alert
+Disk Monitor File System Monitor
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Service Monitor
+Process Monitor
+CPU Monitor
+Memory Monitor
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

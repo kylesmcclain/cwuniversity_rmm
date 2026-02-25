@@ -1,0 +1,66 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   PSA Integration   ConnectWise PSA (Manage) Integration   PSA and RMM Integration Checklist
+PSA and RMM Integration Checklist
+Last updated
+Mar 8, 2024
+Table of contents
+Overview
+Integration Checklist
+This page applies to:
+PSA Standard and PSA Premium
+Overview
+
+This is a checklist for integrating your ConnectWise PSA™ (Manage) and ConnectWise RMM™ instances.
+
+Integration Checklist
+Task	Location	Notes	Done
+Plugin Setup
+Verify API Member	PSA > System > Members > API Members tab	Verify that an API Member to be used for this integration exists. Create one if not. The Role ID for the API member must be set to Admin and the Level set to (Level 1).	
+
+
+Generate API Keys
+
+ 
+
+	PSA > System > Members > API Member Profile > API Keys tab 	Manage workflows can be set up to run Automate scripts if certain event actions occur. This integration requires a set of API keys to be generated for Automate to communicate with PSA. 	
+Verify Service Boards Exist	PSA > System > Setup Tables > Service Board setup table	Ensure that there is at least one service board that is not marked as inactive. 	
+Verify Managed Services Category Exists 	PSA > System > Setup Tables > Category setup table 	Ensure that the Managed Services category exists. 	
+Verify Managed IT Services Subcategory Exists 	PSA > System > Setup Tables > Subcategory setup table 	Ensure that the Managed IT Services subcategory exists. 	
+Verify Service Product Type Exists 	PSA > System > Setup Tables > Product Type setup table 	Ensure that the Service Product Type exists. 	
+Verify the Each Unit of Measure Exists 	PSA > System > Setup Tables > UOM setup table 	Ensure that the Each unit of measure exists. 	
+Enable ConnectWise PSA Integration	RMM > Settings > Admin Integration > PSA Integration 	In the Choose PSA to integrate drop-down, select ConnectWise PSA. 	
+Enter the API Keys	RMM > Settings > Admin Integration > PSA Integration 	Enter the PSA Site, PSA Login Company, and API keys that you generated in Step 2. Click Authorize.	
+Complete RMM to PSA company/site mappings	RMM > Settings > Admin Integration > PSA Integration 	In the list view on the Sites tab, map your RMM companies and sites to their respective PSA companies and sites. Be sure to make a selection in the ConnectWise Catch-all site drop-down at the bottom. You can also enable the technician efficiency pod via the checkbox on the Sites tab. 
+
+Click Next to advance to the Billing tab.	
+Complete Billing selections	RMM > Settings > Admin Integration > PSA Integration 	On the Billing tab, make selections in the Agreement, Agreement Addition, and Product drop-downs for Servers, Desktops and Backups for each company that will have billing information pass through the integration. 	
+Activate the integration	RMM > Settings > Admin Integration > PSA Integration 	Click Activate on the Finish tab to activate this integration. 	
+Enable ConnectWise PSA Policies Configuration 	RMM > Settings > Admin Integration > PSA Integration	Toggle on ConnectWise PSA Policies Configuration to maximize efficiency through the use of PSA integration policies. 	
+Impact Post PSA Migration Enablement Ticket Sync Improvement
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Advanced Settings
+Kaseya Integration
+Autotask Integration
+ConnectWise PSA Integration
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

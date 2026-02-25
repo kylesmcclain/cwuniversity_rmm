@@ -1,0 +1,288 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Network Monitoring and Management   Premier Network Monitoring   Premier Network Monitoring Features
+Premier Network Monitoring Features
+Last updated
+Nov 3, 2025
+Table of contents
+Overview
+Syslog
+Traffic Insights
+Device Inventory and Statistics
+Inventory
+Hardware Lifecycle
+Discovery Dashboards
+Configuration Backup and History
+Alerting
+Network Monitoring Basic Alerts
+Network Monitoring Advanced Alerts
+Helpful links
+Custom SNMP Pollers (OID Monitoring)
+Northstar (Troubleshooting tool)
+To use Northstar:
+Overview
+
+Listed below are the features that ConnectWise Premier Network Monitoring offers that our standard Network Monitoring offering does not.
+
+Overview
+Syslog
+Traffic Insights
+Device Inventory and Statistics
+Inventory
+Hardware Lifecycle
+Discovery Dashboards
+Configuration Backup and History
+Alerting
+Network Monitoring Basic Alerts
+Network Monitoring Advanced Alerts
+Helpful links
+Custom SNMP Pollers (OID Monitoring)
+Northstar (Troubleshooting tool)
+To use Northstar:
+Syslog
+
+The syslog feature enables faster troubleshooting by providing centralized access to system logs. For more information, refer to the Getting started with syslog article.
+
+Traffic Insights
+
+Traffic Insights uses flow data to analyze IP traffic passing through devices. It builds an overview of network traffic flow and volume, and lets you see where network traffic is coming from and going to. For more information, refer to the Traffic Insights article.
+
+Device Inventory and Statistics
+
+The following tables show inventory and statistics availability for both of our Network Monitoring options.
+
+Inventory
+
+Inventory
+
+	
+
+Basic
+
+	
+
+Advanced
+
+
+Devices - Info	Yes	Yes
+Devices - Online Status	Yes	Yes
+Devices - Statistics	No	Yes
+Interfaces - Info	Yes	Yes
+Interfaces - Online Status	Yes	Yes
+Interfaces - Statistics	No	Yes
+Networks - Info	Yes	Yes
+Networks - Online Status	Yes	Yes
+Networks - Statistics	No	Yes
+Services - Info	Yes	Yes
+Services - Online Status	Yes	Yes
+Services - Statistics	No	Yes
+Cloud Controllers - Info	Yes	Yes
+Cloud Controllers - Online Status	Yes	Yes
+Cloud Controllers - Statistics	No	Yes
+Components - Info	No	Yes
+Components - Online Status	No	Yes
+Components - Statistics	No	Yes
+Hypervisors - Info	No	Yes
+Hypervisors - Online Status	No	Yes
+Hypervisors - Statistics	No	Yes
+Hyper-V - Info	No	Yes
+Hyper-V - Online Status	No	Yes
+Hyper-V - Statistics	No	Yes
+Hardware Lifecycle
+Hardware Lifecyle	Basic	Advanced
+Vendor Suggested Software	Yes	Yes
+Vendor Device Lifecycle	Yes	Yes
+Device Contract Information	Yes	Yes
+
+For more information on the Hardware lifecycle feature, review the following Auvik articles.
+
+https://support.auvik.com/hc/en-us/a...or-all-devices
+Discovery Dashboards
+Discover	Basic	Advanced
+Dashboard	Yes	Yes
+Manage Devices	Yes	Yes
+Manage Networks	Yes	Yes
+Manage Credentials	Yes	Yes
+
+For more information on dashboards, review the following Auvik articles.
+
+https://support.auvik.com/hc/en-us/a...home-dashboard
+https://support.auvik.com/hc/en-us/a...vice-dashboard
+https://support.auvik.com/hc/en-us/a...work-dashboard
+Configuration Backup and History
+
+Network Monitoring Advanced allows you to view both the Current Configuration Backup and the Historical Configuration backup.
+
+Configuration Backup	Basic	Advanced
+Configuration Backup - Current	Yes	Yes
+Configuration Backup - History	No	Yes
+
+This information can be found under Documentation > Configurations.
+
+You can also compare the two different configurations to see their differences.
+
+Alerting
+
+We have 60+ alerts in Network Monitoring.
+
+Network Monitoring Basic Alerts
+Network Monitoring & Management - Network Device Down
+Network Monitoring & Management - Network Probe failed to deploy
+Network Monitoring & Management - Auvik Collector Disconnected
+Network Monitoring Advanced Alerts
+Network Monitoring & Management - Network Device down
+Network Monitoring & Management - Network Probe failed to deploy 
+Network Monitoring & Management - VMware Hypervisor CPU Module Degraded
+Network Monitoring & Management - VMware Hypervisor RAM Module Degraded
+Network Monitoring & Management - VMware Hypervisor Hard Drive Degraded
+Network Monitoring & Management - VMware Hypervisor Power Supply Degraded
+Network Monitoring & Management - VPN remote gateway is lost
+Network Monitoring & Management - Stack Switch Port Status Change
+Network Monitoring & Management - Stack Switch Member Status Change
+Network Monitoring & Management - Spanning Tree Changed From Forwarding
+Network Monitoring & Management - Distributed File System Replication is Degraded
+Network Monitoring & Management - Internet Connection is Lost
+Network Monitoring & Management - UPS - Possible Power Outage
+Network Monitoring & Management - UPS - Low battery Charge
+Network Monitoring & Management - High Broadcast Traffic
+Network Monitoring & Management - Auvik Collector Disconnected
+Network Monitoring & Management - VMware Hypervisor CPU Module Failed
+Network Monitoring & Management - VMware Hypervisor RAM Module Failed
+Network Monitoring & Management - VMware Hypervisor Hard Drive Failed
+Network Monitoring & Management - VMware Hypervisor Power Supply Failed
+Network Monitoring & Management - New Network Device Discovered
+Network Monitoring & Management - High Percentage of SSL VPN Sessions In Use
+Network Monitoring & Management - Low Number of Available SSL VPN Sessions
+Network Monitoring & Management - High Number of SSL VPN Sessions In Use
+Network Monitoring & Management - Configuration Backup
+Network Monitoring & Management - Interface Duplex Mismatch
+Network Monitoring & Management - Configuration Restored
+Network Monitoring & Management - Route Not Used
+Network Monitoring & Management - Different Subnets
+Network Monitoring & Management - Different VLAN Types
+Network Monitoring & Management - Different VLAN Number
+Network Monitoring & Management - No IP Address
+Network Monitoring & Management - Trunk Port Not Shared
+Network Monitoring & Management - Non-Routable IP
+Network Monitoring & Management - VLAN with no Interfaces
+Network Monitoring & Management - Network Element Uptime
+Network Monitoring & Management - Number of SSL VPN Sessions Has Reached The Maximum
+Network Monitoring & Management - VMware Snapshot Repository Size Exceeded
+Network Monitoring & Management - Recent VMware Snapshot Not Taken
+Network Monitoring & Management - VMware Snapshot Limit Exceeded
+Network Monitoring & Management - UPS - Battery needs to be replaced
+Network Monitoring & Management - Default Route Change
+Network Monitoring & Management - Configuration Polling
+Network Monitoring & Management - Printer - Low Ink Level
+Network Monitoring & Management - Printer - Out of Ink
+Network Monitoring & Management - Printer - Output Tray Missing
+Network Monitoring & Management - Printer - Input Tray Missing
+Network Monitoring & Management - Printer - Paper Jammed
+Network Monitoring & Management - Printer - Low Paper
+Network Monitoring & Management - Printer - Out of Paper
+Network Monitoring & Management - High Memory Utilization
+Network Monitoring & Management - High CPU Utilization
+Network Monitoring & Management - High Interface Utilization
+Network Monitoring & Management - Firmware Change on Network Element
+Network Monitoring & Management - Packet Discard
+Network Monitoring & Management - Packet Error
+Network Monitoring & Management - Auvik Collector Discovery
+Network Monitoring & Management - Interface Status Mismatch
+Network Monitoring & Management - High Storage Utilization
+Helpful links
+
+For information on how to edit an alert, review the Network Monitoring Alerting article.
+
+For more information on alerting, review the following Auvik articles.
+
+https://support.auvik.com/hc/en-us/a...-each-in-Auvik
+https://support.auvik.com/hc/en-us/a...308-Alerts-FAQ
+Custom SNMP Pollers (OID Monitoring)
+
+In cases where you'd need to pull information from a specific SNMP OID in your device and Network Monitoring doesn't gather it by default, you can set up a custom SNMP Poller to achieve that. You can then set up custom alerts based on the values obtained. Additionally, you can configure an SNMP Poller to poll serial numbers for devices that store this information in a vendor/device specific OID.\
+
+For information on how to do this, review the following Auvik article.
+
+https://support.auvik.com/hc/en-us/a...m-SNMP-Pollers
+Northstar (Troubleshooting tool)
+
+Northstar is a troubleshooting tool that maps the network path of a device to the internet. It will also provide key metrics for the devices in the path to assist with troubleshooting.
+
+To use Northstar:
+Click on the device you want to troubleshoot
+
+Click on the Northstar icon on the top of the side menu
+               
+
+The screen will then show the network path from that device to the internet.
+
+Northstar removes the extra devices on the map so that you can see the KPIs for the path. Each of the devices or sections of the path have expandable sections that hold additional information. The statuses and data on Northstar will be determined by the time frame selected at the lower right corner of your Auvik instance. You can now also click the Expand All button to show all the information for each section of the path.
+
+ 
+
+To see the extra information on each section or device on the path click the arrow at the right side of the device or path name.
+    
+
+ 
+
+When the closed section opens, all the additional data will be available for that part of the path.
+
+
+
+For each device that information includes:
+
+Device Name
+Device Type
+Make/Model
+Online status
+Manage status
+IP address(es)
+CPU% (Min/Max/Avg)
+Memory% (Min/Max/Avg)
+
+For path segments, that includes:
+
+Path Segment
+Negotiated Speed
+Admin status
+Operational status
+IP address
+Access
+Rx Packets (Min/Max/Avg)
+Tx Packets (Min/Max/Avg)
+Rx Errors (Min/Max/Avg)
+Tx Errors (Min/Max/Avg)
+Rx Discard (Min/Max/Avg)
+Tx Discard (Min/Max/Avg)
+Rx Utilization (Min/Max/Avg)
+Tx Utilization (Min/Max/Avg)
+
+When configured, each expanded section will also show any alerts generated.
+
+Premier Network Monitoring Notification Rules
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Network Monitoring FAQ
+Network Devices
+Network Monitoring Alerting
+Network Monitoring Getting Started
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

@@ -1,0 +1,60 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Tickets   Close a Ticket
+Close a Ticket
+Last updated
+Jul 3, 2025
+Table of contents
+Overview
+Overview
+
+To close a ticket, right-click and select Quick Close (note that right-clicking a ticket selects it via the check box). To close multiple tickets, select all the tickets to close, right-click any of them, and select Quick Close.
+
+An alternate method to close tickets is to select multiple tickets, right-click, and choose Work on Multiple Tickets. A new window opens containing only the tickets selected. Click a ticket number on the left to display the ticket details, then close the ticket by selecting Closed from the Status drop-down menu.
+
+Select the Close Reference Ticket check box to close all reference tickets. Click Submit to open the Problem and Resolution window, a client-friendly summary of the ticket.
+
+The Problem and Resolution page consists of the following fields:
+
+Problem: Enter a problem description.
+Resolution: Enter a resolution description.
+Time Block: Enter the number of time blocks worked in the Time Block field. Time blocks were set up during site configuration. Next to the Time Block field is a legend showing the time block equivalent in minutes.
+Work Time: Select the time worked on the ticket.
+Onsite: Select Yes if the ticket requires on-site work.
+Report this in Executive Report: Select Yes to include this ticket in the monthly Executive Report.
+
+Click Submit when you are done.
+
+Important: In the ticketing system, a ticket is closed after 30 days of inactivity. To access a report on these tickets, navigate to Service Delivery > Tickets (Legacy) > Report > Tickets closed due to inactivity > 30 days.
+
+Work Status Update Quick-Close a Ticket
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Best Practices for Going Green
+Are you looking to impress a client with a solid green dashboard? Regardless of your reasons for wanting to go green, we will help you get there. But ...
+Service Plans and Ticket Lifecycles
+The lifecycle of a ticket depends on the subscribed service plan of the site generating an alert. Service plans and their respective ticket lifecycles...
+Create a Ticket
+To create a new ticket, click the Tickets tab in the Asio™ Platform (ITSupport Portal) and select New Ticket from the top of the navigation bar on the...
+Edit a Ticket
+To edit a ticket, browse to the ticket queue on the left navigation bar and select an appropriate container.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

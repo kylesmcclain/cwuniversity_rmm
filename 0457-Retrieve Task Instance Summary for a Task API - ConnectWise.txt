@@ -1,0 +1,77 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   RMM Tools   APIs   Automation API   Retrieve Task Instance Summary for a Task API
+Retrieve Task Instance Summary for a Task API
+Last updated
+Jul 8, 2025
+Table of contents
+API Name
+API Description
+Request and Response API
+API Name
+
+Retrieve Task Instance Summary for a Task
+
+API Description
+
+This API allows you to retrieve information about task instances for a task. This represents the History tab for a specific Task on Scheduled Tasks.
+
+Request and Response API
+
+You can find the Request and Response API details at this dev portal.
+
+The API Response will include the following fields:
+
+Field	Description
+TaskID	Unique identifier for the task
+Id	Unique identifier for the task instance
+CreatedOn	Date and time when the task was created
+Name	Name or title of the task
+OverallStatus	Overall status of the task execution (e.g., SUCCESS, FAILURE)
+Regularity	Specifies the regularity of the task (e.g., recurrent, one-time)
+NextSchedule	Date and time of the next scheduled execution for the task
+ExecutedOn	Date and time when the task was last executed
+DeviceCount	Total count of devices associated with the task
+SuccessCount	Number of successful executions for the task
+FailedCount	Number of failed executions for the task
+ScheduledCount	Number of devices scheduled for the task
+PostponedCount	Number of devices for which the task execution has been postponed
+DisabledCount	Number of devices for which the task is disabled
+RunningCount	Number of devices currently running the task
+CanceledCount	Number of devices for which the task execution has been canceled
+WaitingCount	Number of devices waiting for the task execution
+Count	Total count of devices scheduled for the task
+
+ 
+
+Note: Review the Scheduled Tasks documentation for more information.
+
+ 
+
+Retrieve all Scheduled Tasks API Retrieve Task Instance Execution Results API
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Retrieve Global Templates API
+Retrieve Custom Templates API
+Retrieve Fusion Scripts API
+Retrieve all Scheduled Tasks API
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

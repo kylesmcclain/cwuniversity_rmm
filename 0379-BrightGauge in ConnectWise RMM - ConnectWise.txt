@@ -1,0 +1,424 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Reports   BrightGauge in ConnectWise RMM
+BrightGauge in ConnectWise RMM
+Last updated
+Jul 10, 2025
+Table of contents
+Overview
+Accessing BrightGauge Reports
+For partners with a BrightGauge instance independent of Asio (i.e., before using BrightGauge from Asio):
+Merge Accounts
+Provisioning and Accessing the BrightGauge Account
+Available Reports
+Available Datasets
+Notes on the RMM Datasets
+Monthly Site Score Discrepancies
+Deprecated RMM Datasets and Alternatives
+Overview
+
+Reports, datasets, gauges and dashboards for ConnectWise RMM™ are available in BrightGauge™, a ConnectWise solution.
+
+Reports are in the form of templates that you can use to create reports for your clients or for yourself. You can use these templates as is or modify them. Each template consists of a number of gauges, each built to show specific data for a specific functional area. A gauge is like a building block for the report. A report can consist of one or more gauges.
+
+Refer to the following BrightGauge articles to learn more about how you can set up and use reports:
+
+How to create a report
+How to create client mappings in BrightGauge
+How to schedule and send reports to a client
+What are gauges and how are they created
+How to check if my Datasets are up to date and synchronized
+Accessing BrightGauge Reports
+Navigate to Reports > BrightGauge from the left-hand menu of the Asio™ platform (ITSupport Portal).
+This redirects you to your BrightGauge portal where you can access all of your reports.
+While in the BrightGauge Dashboard, navigate to the Reports section.
+
+Note: The first two admins are automatically created after opening BrightGauge from the Asio platform. Additional users need to be invited by admins from BrightGauge > Users screen before the Asio platform (ITSupport Portal) BrightGauge link can be accessed.
+
+Important: Refer to the below section if you already have an existing BrightGauge instance.
+
+For partners with a BrightGauge instance independent of Asio (i.e., before using BrightGauge from Asio):
+
+Note: For partners who already have a BrightGauge instance and have not yet provisioned/used BrightGauge from the Asio platform, it is strongly recommended that only those Super Admins of the Asio platform should access the BrightGauge menu for the first time who are Admins in their existing BrightGauge instance and have the same email id in both the portals to correctly map the BrightGauge instance to Asio platform.
+
+Make sure that the user who attempts to access has the same email ID in both the Asio™ platform (ITSupport Portal) and the already existing BrightGauge instance. This user must also be an Admin in the BrightGauge instance.
+Navigate to Reports > BrightGauge in the left-hand menu of the Asio platform.
+You are redirected and connected to your existing BrightGauge instance on the Asio platform.
+For all other cases, a new BrightGauge instance with a new admin user and a new ITSupport247 datasource will be created. You can access the reports in BrightGauge by clicking the same Reports > BrightGauge menu in the Asio platform.
+Merge Accounts
+
+If you accidentally have two different instances of BrightGauge (one previously existing and one provisioned via Asio), BrightGauge Support can merge them so that your previous account remains and the new connection and users from the Asio platform account are added to it.
+
+Follow the steps below to merge your accounts:
+
+Submit a ticket to support@brightgauge.com that clearly indicates which account is the primary one and which account will be deleted. Any data will be wiped out on the account that is merged.
+Indicate the email address used to log into the Asio platform, as it needs to be reflected in the BrightGauge account that it is merging with. The following is a sample of information to include in this email:
+I would like BrightGauge Support to facilitate merging my BrightGauge account created from my Asio account with my already existing paid BrightGauge account.
+The main account subdomain (the one that you wish you have integrated): A.brightgauge.co
+The account to merge (the one that needs to be deleted): X.brightgauge.co.
+The email address that is used for accessing BrightGauge via theAsio Platform is: sample@XYZ.com
+Provisioning and Accessing the BrightGauge Account
+
+The first time any Primary Super Admin and Super Admin access BrightGauge from the new menu in the Asio platform, a new BrightGauge partner account, along with a new BrightGauge user account is automatically provisioned and created. If the email address already exists as a BrightGauge user, it links your BrightGauge instance to the Asio platform. If there is no matching email, a new instance is created for this email. As soon as the account is created, data synchronization for your BrightGauge account begins. This takes approximately two to three hours to complete before you can see any data in your reports. This is a one-time activity. 
+
+When the user account is created, you receive an email from BrightGauge with details of your account and login instructions (this is useful if you want to directly access the BrightGauge portal without going through Asio). You also receive a direct BrightGauge link in this email that you can use to log in to your BrightGauge account.
+
+Single Sign-On is implemented between BrightGauge and the Asio platform. You must use the same credentials that you use to log in to Asio. Learn more at the BrightGauge SSO FAQ documentation.
+
+Available Reports
+
+To locate your reports, select Reports from the top menu bar.
+
+Agent Report
+Agent Uninstall Report v2.0
+ConnectWise Asio (ITSupport247) Executive Report v2.0
+Installed Software Support
+Installed Updates Report v2.0
+Missing Updates Report v2.0
+OS Patching
+Recover SaaS Report
+Remote Access Report
+System Information Report
+Warranty Report
+Available Datasets
+
+To locate your datasets, navigate to DATA > Datasets.
+
+ 
+
+Dataset Name
+
+	
+
+Description
+
+
+
+
+Application Data
+
+	
+
+This dataset contains data and information about the software installed on the devices. This can only report on what exists, not what is missing.
+
+
+
+
+Application Patch Deployment
+
+	
+
+This dataset contains details about the third-party patches that attempted to get installed on the endpoint by the RMM Agent. The dataset provides an audit of all third-party patching actions taken by the RMM agent and reasons why actions may have failed. Data is collected/refreshed near real-time from the RMM system.
+
+
+
+
+Automation Details
+
+	
+
+This dataset contains details about the RMM automation tasks (executions) performed on an endpoint. Data is available for the last three months at a daily level. Subsequently, data is collected every 24 hours from the source, but only the last two days of data is considered and synchronized into the Reports and Dashboards dataset.
+
+
+
+
+Automation Summary
+
+	
+
+This dataset contains a summarized view of the automation executions performed on an endpoint, grouped by execution status. Data is available for the last three months at a daily level. Subsequently, data is collected every 24 hours from the source, but only the last two days of data is considered and synchronized into the Reports and Dashboards dataset.
+
+
+
+
+Custom Company Fields
+
+	
+
+This dataset contains details about the custom fields configured at the company level. This information is available on an hourly basis and always shows the latest information.
+
+
+
+
+Custom Endpoint Fields
+
+	
+
+This dataset contains details about the custom fields configured at the endpoint level. This information is available on an hourly basis and always shows the latest information.
+
+
+
+
+Custom Site Fields
+
+	
+
+This dataset contains details about the custom fields configured at the site level. This information is available on an hourly basis and always shows the latest information.
+
+
+
+
+Devices Availability
+
+	
+
+This dataset contains devices availability information for all the endpoints that are under monitoring. Data is collected/refreshed near realtime from the RMM system.
+
+
+
+
+Disk Space Utilization Summary
+
+	
+
+This dataset contains summarized details for partition space utilization per drive/volume of all the machines. Details of each machine are recorded for each day for the last four months. Data is collected every 24 hours from the source, but only the latest data for each day is considered and synchronized into the Reports and Dashboards dataset. 
+
+
+
+
+Endpoint Performance
+
+	
+
+This dataset contains performance indicators for all the machines. 
+
+
+
+
+Endpoint Protection
+
+	
+
+This dataset shows which machines are protected or out of date. It also shows if machines have no endpoint protection software installed or if the machine has no available information regarding Endpoint Protection software installed on any given day during the given time period.
+
+
+
+
+Endpoint Summary
+
+	
+
+This dataset contains summarized details of all the machines. Details of each machine are recorded for each day for the last four months. Data is available for the last four months at a daily level. Data is collected every two  hours from the source but only latest data for each day is considered and synchronized into the Reports and Dashboards dataset.
+
+
+
+
+Endpoint Summary Lite
+
+	
+
+This dataset contains summarized details of all the machines. Details of each machine are recorded for each day. Data is available for up to two (2) days at a daily level. Data is collected every eight (8) hours from the source, but only the latest data for each day is considered and synchronized into the Reports and Dashboards dataset. We advise using the Calendar Date field in gauges that display data for that period.
+
+Note: This is a lighter version of the existing Endpoint Summary dataset. See the Endpoint Summary dataset documentation for more details.
+
+
+
+
+Endpoint User Logging Details (NA region)
+
+	
+
+The Endpoint User Logging Details dataset contains summarized details of the users logging in to the endpoints, endpoint details, and the datetime of the login session. Users’ details are recorded each day for the last 45 days and aggregated every eight (8) hours from the source at a daily level prior to synchronizing with Reports and Dashboards. This dataset provides historical user login information.
+
+
+
+
+Executive Reporting Warranty Details
+
+	
+
+This dataset contains summarized warranty details of all the machines. Details of each machine are recorded for each day for the last four months. Data is available for the last four months at a daily level. Data is collected every two hours from the source but only latest data for each day is considered and synchronized into the Reports and Dashboards dataset.
+
+
+
+
+Executive Reporting Patch Status
+
+	
+
+This dataset contains status of OS Patches as well as Application Updates (Third Party Patching) for each machine on any given day. Data is available for the last four months at a daily level. Data is collected every two hours from the source but only latest data for each day is considered and synchronized into the Reports and Dashboards dataset.
+
+
+
+
+HD Chat Logs
+
+	
+
+The HD Chat Logs dataset contains data from the Chat interactions that the Help Desk Service handles. It contains information like the number, time, and SLA-related data from each interaction. The data is updated every 24 hours from the source, but only the latest data for each day is considered and synchronized into the Reports and Dashboards dataset.
+
+
+
+
+HD Phone Logs
+
+	
+
+This dataset contains data from the Phone interactions that the Help Desk Service handles. It contains information like the number, time, and SLA related data from each interaction. The data is updated every 24 hours from the source, but only the latest data for each day is considered and synchronized into the Reports and Dashboards dataset.
+
+
+
+
+Help Desk Incidents
+
+	
+
+This dataset contains detailed data of all the Help Desk service requests/incidents. Details like when was a request created, when it got resolved, how much time for resulution, who requested, if it was escalated, escalation reason, source of origin, etc. Data is available for the last four months at a daily level. Data is collected at the end of each day and reported on daily basis.
+
+
+
+
+Monthly Site Scores
+
+	
+
+This dataset contains summarized data for all the sites in the form of scores. The relevant parameters of all the devices on the site are considered and used for arriving at the scores. Scores are calculated on a daily basis and averaged for the month.
+
+
+
+
+Network Devices
+
+	
+
+This dataset contains details about which network devices have been identified via the ConnectWise RMM probe devices. All the data is available at a daily level. Subsequently, data is collected every eight hours from the source and synchronized into the Reports and Dashboards dataset.
+
+
+
+
+Network Probe
+
+	
+
+This dataset contains details about the endpoints that have been configured as probe devices. All data is available at a daily level. Subsequently, data is collected every 24 hours from the source and synchronized into the Reports and Dashboards dataset. 
+
+
+
+
+Recover Appliance Summary
+
+	
+
+This dataset contains details of the appliances, number of protected servers and workstations, details of appliance including space used. Data is available for the last four months at a daily level.
+
+
+
+
+Recover Pooled Cloud
+
+	
+
+This dataset contains data about how much cloud storage is used on a daily basis. Data is available for the last four months at a daily level. Data is collected at the end of each day and reported on daily basis.
+
+
+
+
+Recover Local Backup
+
+	
+
+This dataset contains data about the status of all the local backups on a daily basis. Details like space utilized, appliance name, protected server name and IP address is available. Data is available for the last four months at a daily level. Data is collected at the end of each day and reported on daily basis.
+
+
+
+
+Recover Offsite backup
+
+	
+
+This dataset contains data about the status of all the offsite backups on a daily basis. Details like space utilized, appliance name, protected server name and IP address is available. Data is available for the last four months at a daily level. Data is collected at the end of each day and reported on daily basis.
+
+
+
+
+Recover Truverify Backup
+
+	
+
+This dataset contains data about the truverify status of all the backups on a daily basis. Details like space utilized, appliance name, protected server name and IP address is available. Data is available for the last four months at a daily level. Data is collected at the end of each day and reported on daily basis.
+
+
+
+
+Remote Access
+
+	
+
+This dataset contains details about which endpoints were accessed remotely via ScreenConnect®. The dataset provides details about who accessed the endpoint along with the reason and session details. Data is available for the last four months at a daily level. Subsequently, data is collected every 24 hours from the source, but only the latest two days of data is considered and synchronized into the Reports and Dashboards dataset.
+
+
+
+
+SAAS Appsite Backup Details
+
+	
+
+This dataset contains data about the status of all SaaS Backup Connectors like Microsoft 365, Google Workspace, Salesforce and MS Dynamics 365 (CRM). Based on the connectors provisioned at the site level, details like connector name, connector type, retention period, protected user account, backup status, last backup data/time are available. Data is available for the last four months at a daily level. Data is collected at the end of each day and reported on a daily basis.
+
+Notes on the RMM Datasets
+
+New datasets were released, along with the new RMM Executive Report, in September of 2020. If you were using the RMM integration before these datasets were released, you have both the legacy and the new datasets. Be aware that certain data (e.g., device info) may occur in both datasets but appear in different formats (e.g., daily summaries versus monthly summaries).
+
+Monthly Site Score Discrepancies
+
+In some cases, the Monthly Site Score reported in the Reports and Dashboards report may not match the Monthly Site Score reported in ConnectWise RMM. This is because the Monthly Site Score is reported in two locations in RMM:
+
+Devices Tab: The Reports and Dashboards report references the data on this tab.
+Quick Access Tab: This tab is not applicable to the Reports and Dashboards report.
+
+There have been many reported cases where the score differs between the two tabs (Devices tab vs. Quick Access tab).
+
+Deprecated RMM Datasets and Alternatives
+
+Some legacy datasets are no longer in use and are now deprecated or will be deprecated in the near future. The data can be found in a corresponding alternative dataset, as shown in the table below:
+
+Important: These deprecated datasets are at the end of life. This means no further changes will be made to these datasets, including updates to company_name or other details. The data syncing into these deprecated datasets may not provide accurate information, so we advise you to use an alternate dataset, below. Using gauges powering through these deprecated datasets may lead to inconsistent data provided in your dashboards or client reports.
+
+Deprecated Dataset	New Dataset
+Application Failure Status - Deprecated	Application Patch Deployment
+Application Update Status - Deprecated	Application Patch Deployment
+Current AV Status	Endpoint Protection
+Current Patch Status	OS Patch Status
+OS Patch Assessment - Windows
+Executive Reporting Patch Status - Deprecated	OS Patch Status
+Machine Statistics	Endpoint Summary
+Monthly AV Data	Endpoint Protection
+Monthly Patches Summary	OS Patch Status
+OS Patch Assessment - Windows
+Monthly Server Utilization	Endpoint Performance
+OS Patches Installed - Deprecated	OS Patch Status
+OS Patch Assessment - Windows
+OS Patch Compliance
+OS Patches Missing - Deprecated	OS Patch Status
+OS Patch Assessment - Windows
+OS Patch Compliance
+Warranty Details	Executive Reporting Warranty Details
+Webroot Protection Status	Webroot Default Datasets
+Endpoint Protection Report Reports and Dashboards (formerly BrightGauge) SSO FAQs
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Reports and Dashboards (formerly BrightGauge) SSO FAQs
+This document provides answers to frequently asked questions about the BrightGauge SSO process.
+Asio Reports
+Security Reports
+Command for Networks
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

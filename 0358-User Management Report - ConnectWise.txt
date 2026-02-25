@@ -1,0 +1,82 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Reports   Asio Reports   Agent Reports   User Management Report
+User Management Report
+Last updated
+Sep 22, 2025
+Table of contents
+Overview
+User Access to Reports
+User Management Report Details
+Overview
+
+The User Management Report provides information about the users logged in to different endpoints in a given time period. To view the logged-in users, provide the company name and date range.
+
+ 
+
+To locate this screen, navigate to 
+
+Reports > Asio > Detailed Reports > Agents > User Management Report.
+
+User Access to Reports
+
+Confirm user access and permissions to view this report. The following default roles have access to this report:
+
+Report	Manager	Technician	Office Staff	Sales	Client Site Manager
+User Management Report 	Yes	Yes	Yes	Yes	Yes
+
+This additional step allows you to enable or disable access to specific reports for different user roles, giving you more control over which reports are accessible to each role.
+
+To control the visibility of endpoints on reports, you can manage site access for users. The visibility of endpoints on reports will be based on the user's permissions to sites. By controlling site access, you can determine which endpoints are visible to each user.
+
+User Management Report Details
+
+To generate the report:
+
+Navigate to Reports > Asio > Detailed Reports > Agents > User Management Report.
+Select the Company Name from the drop-down, select the Start Date and End Date.
+Click Run Report. The User Management Report is displayed. 
+
+The details that the report covers are:
+
+Name
+Friendly Name
+Device Type
+Company Name
+Company Friendly Name
+Site Name
+Site Friendly Name
+User Name - Username is the account name used by the authorized end user (local account or domain account).
+Log On Time - Log On Time is the time when a user successfully authenticates into a system (excluding cases where the session is restored from hibernate or sleep state).
+
+All of this information can be filtered or searched by using the tools at the top of the report. You can also download the report as a CSV.
+
+Note: This report is refreshed every 8 hours.
+
+RMM Scan Details Report Audit Reports
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Agent Report
+Agent Uninstall Report
+Network Devices Report
+Probe Devices Report
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

@@ -1,0 +1,122 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   RMM Reporting API   Reporting API REST Resources   Service Requests by Week
+Service Requests by Week
+Last updated
+Jul 8, 2025
+Table of contents
+Overview
+Endpoint and URI
+Method
+Request Body
+Response Body
+Parameter Descriptions for Service Requests by Week
+Source of Data in the Asio Platform
+Overview
+
+Returns counts of service requests that have been opened and/or closed over the previous 6 weeks.
+
+Endpoint and URI
+
+https://itsapi.itsupport247.net/repo...equests/weekly
+
+Method
+
+POST
+
+Request Body
+
+{
+
+"Month":4,
+
+"SiteCode":"AGTSolutions",
+
+"Year":2015,
+
+}
+
+Response Body
+
+{
+
+"error":null,
+
+"serviceRequestSummary":[
+
+{
+
+"startDate":"Mar 20"
+
+"endDate":"Mar 26",
+
+"closed":5,
+
+"opened":3,
+
+},
+
+{
+
+...
+
+},
+
+{
+
+...
+
+}
+
+]
+
+}
+
+Parameter Descriptions for Service Requests by Week
+Parameter	Description
+"Month"	Requested month (numerical)
+"SiteCode"	Unique site code listed in Asio™ Platform (ITSupport Portal)
+"Year"	Requested year
+"startDate"	Start date for the week
+
+
+"endDate"
+
+	End date for the week
+"closed"	Number of closed requests in the specified week
+"opened"	Number of opened requests in the specified week
+Source of Data in the Asio Platform
+
+Reports >  Asio > Executive Report > Service Request Data > Open / Closed > By Week
+
+Service Requests by Month Site Summary
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Agent Details
+Retrieves agent information for the authenticated partner and the specified site.
+Antivirus Summary
+Retrieves counts of machines having antivirus protection in the following states: Updated, Outdated, Not Installed, or Information Unavailable.
+Antivirus Version Summary
+Retrieves currently detected antivirus software and the definition version.
+BCDR Continuity Appliances
+Retrieves a list of Recover Continuity backup appliances provisioned at the given site.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

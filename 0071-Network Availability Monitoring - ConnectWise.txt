@@ -1,0 +1,115 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Alerts   Network Availability Monitoring
+Network Availability Monitoring
+Last updated
+Dec 4, 2025
+Table of contents
+Overview
+Prerequisites
+RMM Setup
+How to add IP Addresses to Network Availability Monitoring
+Configure Alert Suppression (Optional)
+Best Practices for IP Monitoring
+Overview
+
+Network Availability Monitoring helps by consolidating Device Down alerts if a device at one of your sites becomes unreachable by the agent. The feature monitors any device attached to a public IP address. If the data center cannot reach the device after three consecutive attempts (using Windows ICMP), a Device Down ticket is generated. You can temporarily suspend Device Down alerts if needed using Network Availability Monitoring.
+
+The agent pings the IP address at two-minute intervals, and a ticket is created if three successive pings are not returned.
+
+Important: There are known issues with Network Availability Monitoring. For more information, refer to Network Availability Monitoring Known Issues.
+
+Note: ICMP and TRACERT requests must be allowed through the network and device.
+
+Prerequisites
+RMM Setup > Agents > Network Availability Monitoring permission is required. Primary and Super Admin, Technician, and Manager default application roles are enabled for this feature by default.
+Refer to custom application roles to learn how to add RMM Setup permissions to a custom application role.
+Add Firewall Exclusions to your allow-list to ensure that the agent can reach the network. 
+
+Note: Windows ICMP uses the public IP address 198.22.253.6 when trying to reach the target IP.
+
+RMM Setup
+
+Navigate to Settings > Setup > RMM to locate this screen.
+
+How to add IP Addresses to Network Availability Monitoring
+
+Follow these steps to configure monitoring for public IP addresses and manage device down notifications:
+
+From the Sites Using RMM screen, click the name of the site.
+
+
+Click the Agents tab and expand the Network Availability Monitoring section.
+
+
+Click Add Public IPs to add the IPs you want to monitor. You can suppress Device Down alerts for servers at an IP or a set of associated IPs.
+
+Enter the public IP address you want to monitor.
+Enter a Friendly Name to identify the address by.
+Click Add to add another IP address.
+
+Repeat this process for each IP address you need to add. If multiple IPs belong to the same server or device group, you can associate them together via prefixes in the Friendly Name for easier management.
+(Optional) Select the Suppress device down alert if all of the IPs listed above are unreachable checkbox to prevent alerts during planned downtime.
+Click Save to confirm your IP additions.
+Verify that the new IP addresses appear in the monitoring list.
+
+Configure Alert Suppression (Optional)
+
+For servers or devices that may intentionally go offline, enable this option to prevent alerts when these IPs are unreachable due to maintenance.:
+
+Select the checkbox next to the IP Address entry.
+
+Click Edit.
+
+Select the Suppress Device Down Alerts checkbox next to the IP entry. 
+
+Select the checkbox next to the resources you want to suppress alerts for. All devices monitored from the server do not generate device down alerts if all the listed IPs are unreachable. Deselect checkboxes if you do not want to suppress alerts for all resources. 
+
+Click Save.
+ 
+Best Practices for IP Monitoring
+Use Public IPs Only: Add external/public IP addresses, not internal ones, for accurate availability checks.
+Group Related IPs: Organize IPs by server or service for easier management and troubleshooting.
+Avoid Over-Monitoring: Monitor only critical IP addresses to minimize unnecessary alerts and system load.
+Regularly review and remove outdated or unused IP addresses to ensure efficient monitoring.
+Document Alert Suppression: Note which IPs have alert suppression enabled to avoid confusion during outages.
+Test After Changes: Always verify monitoring after adding or modifying IPs.
+Custom Ticket Template for Custom Monitors Network Availability Monitoring: Known Issues
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Network Availability Monitoring: Known Issues
+Custom Monitors
+Build your own alert monitors using the variety of monitor templates in ConnectWise RMM. Monitors use these templates to trigger alerts when issues ar...
+S.M.A.R.T Monitoring
+S.M.A.R.T. (Self-Monitoring Analysis and Reporting Technology) monitors a hard drive for predictive failures. Our agent automatically monitors the S.M...
+Intelligent Alerts
+Intelligent Alerts in ConnectWise RMM are endpoint-specific and generate an appropriate alert based on a predefined set of monitoring conditions.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

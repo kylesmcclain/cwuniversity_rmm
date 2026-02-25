@@ -1,0 +1,82 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   RMM Tools   APIs
+APIs
+Last updated
+Dec 3, 2025
+Table of contents
+Overview
+Additional Resources
+Overview
+
+This guide contains documentation for ConnectWise APIs. Click the title of an article to learn more.
+
+Asio Integration API
+Managed Service Providers (MSPs) use a number of different tools and products to effectively monitor and manage their client's networks. Each of these products and tools have their own console, portal, or application where MSPs can monitor and manage them.
+Authentication and Authorization
+Managed Devices Details APIs
+Product Status APIs
+Rate Limits
+Automation API
+The API access for Automation provides a set of APIs that allow seamless integration and automation, allowing for efficient tasking and scripting functionalities.
+Retrieve Custom Templates API
+Retrieve Fusion Scripts API
+Retrieve Global Templates API
+Schedule Automation Tasks on Managed Endpoints API
+Retrieve all Scheduled Tasks API
+Show all
+Devices API
+The Devices APIs retrieve different types of information related to a specific machine or machines belonging to a specific partner or site.
+Agent Last Seen API
+Device Summary API – Retrieve All Endpoint Devices
+Exposed API for Generate Token
+Offboard/Uninstall Agent via API
+Retrieve Details of an Endpoint via API
+Retrieve Last Logged on User Information on an Endpoint via API
+Device Groups API
+The API access for Device Groups provides a set of APIs that allow seamless integration and automation with Device Groups management functionalities.
+Retrieve All Device Groups API
+Public Ticketing API
+ConnectWise's public ticketing API allows MSPs or PSA vendors to integrate with our two-way ticket synchronization system to create tickets, update ticket details (add notes, change statuses, etc.), and close tickets from either side of the integration. The API supports RESTful protocol and uses a callback mechanism for real-time synchronization
+API Exceptions
+API Integration Process
+API Operations
+Example Public Ticketing API Operations
+Getting Started with the Public Ticketing API
+User Acceptance Test
+Additional Resources
+API Access
+API Scopes Swagger File: Sign in - Developer Network
+Navigate to the ConnectWise Asio APIs
+Please reach out to rmmsupport@connectwise.com if you do not have access
+Gateway Cache Asio Integration API
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Asio Integration API
+Managed Service Providers (MSPs) use a number of different tools and products to effectively monitor and manage their client's networks. Each of these...
+Public Ticketing API
+ConnectWise's public ticketing API allows MSPs or PSA vendors to integrate with our two-way ticket synchronization system to create tickets, update ti...
+Device Groups API
+The API access for Device Groups provides a set of APIs that allow seamless integration and automation with Device Groups management functionalities.
+Automation API
+The API access for Automation provides a set of APIs that allow seamless integration and automation, allowing for efficient tasking and scripting func...
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

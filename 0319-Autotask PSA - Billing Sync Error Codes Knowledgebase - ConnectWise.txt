@@ -1,0 +1,75 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   PSA Integration   Autotask Integration Guide   Autotask PSA - Billing Sync Error Codes Knowledgebase
+Autotask PSA - Billing Sync Error Codes Knowledgebase
+Last updated
+Sep 30, 2024
+Table of contents
+Billing Sync Error Codes
+Billing Sync Error Codes
+Generic Error	Summary Error	Error Details and Steps for Correction
+
+
+Invalid username or password.
+
+OR
+
+Your password has expired.
+
+OR
+
+The user account has been locked.
+
+	
+
+Error code: 2003
+
+The API account credentials or account is not active or enabled for the integration
+
+	
+
+This error indicates that the API account credentials or account is not active or enabled for the integration.
+
+Impact:
+
+Ticket, asset, billing, and contact sync for the ConnectWise RMM™ sites will not be synced with Autotask.
+
+Troubleshooting:
+
+Make sure that the account used for the integration is an Autotask API account. 
+Make sure that the API account used for the integration is still active.
+Credentials for the API account, if changed, should be updated in the ConnectWise RMM integration.
+
+Once the necessary changes are made, try resyncing the tickets from the PSA Integration section to force the tickets to resync.
+
+If the issue persists, contact the PSA Support team for assistance
+
+ 
+
+Autotask Integration Setup Guide AutoTask Ticket Errors Knowledgebase
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Autotask Integration Setup Guide
+Autotask Integration Contact Sync
+Autotask Integration Reporting on Synchronization Status
+Include User-Defined Fields in Configuration Items
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

@@ -1,0 +1,141 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Network Monitoring and Management   Network Monitoring Alerting
+Network Monitoring Alerting
+Last updated
+Nov 3, 2025
+Table of contents
+Overview
+Editing a Network Monitoring Alert.
+How to edit an alert
+Available Alerts
+Network Monitoring Alerts 
+Premier and Advanced Network Monitoring Alerts 
+Helpful Links
+Overview
+
+All alerts will be generated from the Asio platform. In the current release, there is only one Alert, Network Element Offline.
+
+You will receive alerts from ConnectWise when a network infrastructure device goes offline.
+
+Editing a Network Monitoring Alert.
+
+You can edit a Network Monitoring Alert to better fit your needs. Some options include changing the following:
+
+Alert name
+Severity
+Entities
+Trigger conditions
+Clear conditions
+Notification channels
+How to edit an alert
+In the Asio Platform Navigate to Endpoints > Alerts > Intelligent Alerts.
+Using the search and filter options, locate the alert you need.
+
+Once you have the name of the alert you need, navigate to Endpoints > Network. Click manage to open the Auvik Portal.
+
+Under Admin > Manage Alerts, select Alerts.
+Search for the Alert that you want to edit.
+
+Select the Alert and click edit.
+
+Edit the Alert per your needs
+
+Available Alerts
+Network Monitoring Alerts 
+Network Monitoring & Management - Network Device Down
+Network Monitoring & Management - Network Probe failed to deploy
+Network Monitoring & Management - Auvik Collector Disconnected
+Network Monitoring & Management - New Network Device Discovered
+Premier and Advanced Network Monitoring Alerts 
+Network Monitoring & Management - Network Device down
+Network Monitoring & Management - Network Probe failed to deploy 
+Network Monitoring & Management - VMware Hypervisor CPU Module Degraded
+Network Monitoring & Management - VMware Hypervisor RAM Module Degraded
+Network Monitoring & Management - VMware Hypervisor Hard Drive Degraded
+Network Monitoring & Management - VMware Hypervisor Power Supply Degraded
+Network Monitoring & Management - VPN remote gateway is lost
+Network Monitoring & Management - Stack Switch Port Status Change
+Network Monitoring & Management - Stack Switch Member Status Change
+Network Monitoring & Management - Spanning Tree Changed From Forwarding
+Network Monitoring & Management - Distributed File System Replication is Degraded
+Network Monitoring & Management - Internet Connection is Lost
+Network Monitoring & Management - UPS - Possible Power Outage
+Network Monitoring & Management - UPS - Low battery Charge
+Network Monitoring & Management - High Broadcast Traffic
+Network Monitoring & Management - Auvik Collector Disconnected
+Network Monitoring & Management - VMware Hypervisor CPU Module Failed
+Network Monitoring & Management - VMware Hypervisor RAM Module Failed
+Network Monitoring & Management - VMware Hypervisor Hard Drive Failed
+Network Monitoring & Management - VMware Hypervisor Power Supply Failed
+Network Monitoring & Management - High Percentage of SSL VPN Sessions In Use
+Network Monitoring & Management - Low Number of Available SSL VPN Sessions
+Network Monitoring & Management - High Number of SSL VPN Sessions In Use
+Network Monitoring & Management - Configuration Backup
+Network Monitoring & Management - Interface Duplex Mismatch
+Network Monitoring & Management - Configuration Restored
+Network Monitoring & Management - Route Not Used
+Network Monitoring & Management - Different Subnets
+Network Monitoring & Management - Different VLAN Types
+Network Monitoring & Management - Different VLAN Number
+Network Monitoring & Management - No IP Address
+Network Monitoring & Management - Trunk Port Not Shared
+Network Monitoring & Management - Non-Routable IP
+Network Monitoring & Management - VLAN with no Interfaces
+Network Monitoring & Management - Network Element Uptime
+Network Monitoring & Management - Number of SSL VPN Sessions Has Reached The Maximum
+Network Monitoring & Management - VMware Snapshot Repository Size Exceeded
+Network Monitoring & Management - Recent VMware Snapshot Not Taken
+Network Monitoring & Management - VMware Snapshot Limit Exceeded
+Network Monitoring & Management - UPS - Battery needs to be replaced
+Network Monitoring & Management - Default Route Change
+Network Monitoring & Management - Configuration Polling
+Network Monitoring & Management - Printer - Low Ink Level
+Network Monitoring & Management - Printer - Out of Ink
+Network Monitoring & Management - Printer - Output Tray Missing
+Network Monitoring & Management - Printer - Input Tray Missing
+Network Monitoring & Management - Printer - Paper Jammed
+Network Monitoring & Management - Printer - Low Paper
+Network Monitoring & Management - Printer - Out of Paper
+Network Monitoring & Management - High Memory Utilization
+Network Monitoring & Management - High CPU Utilization
+Network Monitoring & Management - High Interface Utilization
+Network Monitoring & Management - Firmware Change on Network Element
+Network Monitoring & Management - Packet Discard
+Network Monitoring & Management - Packet Error
+Network Monitoring & Management - Auvik Collector Discovery
+Network Monitoring & Management - Interface Status Mismatch
+Network Monitoring & Management - High Storage Utilization
+Helpful Links
+
+For more information on alerting, review the following Auvik articles.
+
+https://support.auvik.com/hc/en-us/a...-each-in-Auvik
+https://support.auvik.com/hc/en-us/a...308-Alerts-FAQ
+Network Devices Network Monitoring FAQ
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Network Monitoring FAQ
+Network Devices
+Network Monitoring Getting Started
+Advanced Network Monitoring
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

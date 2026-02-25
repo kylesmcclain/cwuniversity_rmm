@@ -1,0 +1,276 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Policies and Packages   Packages
+Packages
+Last updated
+Nov 17, 2025
+Table of contents
+Overview
+Requirements
+Package List
+Create a New Package
+Duplicate a Package
+Companies List
+Sites List
+Assignments
+Default Package Assignment
+Assign a Default Package
+Remove a Default Package
+Package to Company Assignment
+Assign a Package to a Company
+Remove a Package From a Company
+Package to Site Assignment
+Assign a Package to Sites
+Remove a Package From a Site(s)
+Overview
+
+Packages in ConnectWise RMM™ allow users to group policies together for an assignment. Packages consist of pre-configured sets of scripts, policies, and configurations designed to automate routine tasks, monitor system performance, and help ensure security compliance. Packages can be assigned in multiple ways, including to Companies, to Sites, or to Policy Groups.
+
+Note: The information for creating, editing, and assigning Policy Groups is contained in the Policy Groups article.
+
+This article can help you perform the following tasks:
+
+Create a new package
+Duplicate a package
+Assign a default package
+Remove a default package
+Assign a package to a company
+Remove a package from a company
+Assign a package to a site
+Remove a package from a site
+Requirements
+
+Primary Admins, Technicians, and Managers inherit the default permission to view and edit policies and packages. For details on how to add Policy and Package permissions to custom application roles, please refer to Custom Application Roles. 
+
+Package List
+
+To view the list of existing packages on your instance, navigate to Endpoints > Packages.
+
+Important: Users can delete any package that is not assigned.
+
+The Packages List consists of the following details:
+
+Field Name
+
+	
+
+Description
+
+
+
+
+Name
+
+	
+
+User-defined name for the package, up to 200 characters. Can be clicked to edit the package.
+
+
+
+
+Last Modified
+
+	
+
+Date and time the package was last modified. Based on the user's browser time zone.
+
+
+
+
+Modified By
+
+	
+
+Name of the user who last modified the package.
+
+
+Companies	
+
+Number of companies that currently have the package assigned to them.
+
+
+
+
+Sites
+
+	
+
+Number of sites that currently have the package assigned to them.
+
+Create a New Package
+Navigate to Endpoints > Policies & Packages > Packages tab.
+Click the Add Package button.
+
+Enter the Package Name. This user-defined name can be up to 200 characters.
+(Optional) Select the Set as default checkbox to assign the package at the partner level within the RMM hierarchy. By default, this setting is turned off. When a package is set as the default, it is automatically inherited by all lower levels.
+Click the carrot icon to view the Available Policies for Devices and Sites.
+Important: Each package can only contain one (1) policy of each type. Attempting to add a second policy of the same type to the Package Builder replaces the current policy of that type.
+Hover over the icon on the left of the policy and grab the policy you want.
+Drag and drop the policy in the package building box.
+
+
+Click the Save button when you are finished. To edit an existing package, you can select the one you want to edit on the Package List page.
+
+Duplicate a Package
+
+Note: The Create Policy permission is required for this action. Otherwise, the duplicate option is not be visible without this permission.
+
+Navigate to Endpoints > Policies & Packages > Packages.
+Click the package row that you want to duplicate to open a preview of the package in the right-hand card.
+Note: This cannot be done from the edit screen.
+Click the Duplicate button.
+
+The New Package screen opens with a duplicate copy of the package.
+
+The name of the new package is pre-appended as Copy of [name of the copied package]. Edit the name of the package and add or remove policies from the package as needed.
+Click Save to create it.
+Companies List
+
+To view the Companies list for policies on your instance, navigate to Endpoints > Policies & Packages > Assignment tab then click the Companies tab.
+
+The Endpoints > Policies & Packages > Assignment tab > Companies tab allows you to assign packages to one or more sites. The Sites List consists of the following items:
+
+Field Name
+
+	
+
+Description
+
+
+Company Name	The name of the company that the site belongs to.
+No. of Sites	Displays the total number of sites under the company.
+Package Name	The package name that is currently assigned to the company. Appears blank if no package is assigned.
+Last Assigned On	Date and time a package was assigned to the site, based on the user's browser time zone. Appears blank if no package is assigned.
+Last Assigned By	Name of the user who assigned the package. Appears blank if no package is assigned.
+Overrides	
+
+This is the overrides applied to the sites under the company. Clicking on the site's name will redirect you to the Sites tab under the Company Details section.
+
+Sites List
+
+To view the Sites list for policies on your instance, navigate to Endpoints > Policies & Packages > Assignment tab, then click the Sites tab.
+
+The Endpoints > Policies & Packages > Sites tab allows you to assign packages to one or more sites. The Sites List consists of the following items:
+
+Field Name
+
+	
+
+Description
+
+
+Site Name	
+
+Displays the name of the site that is defined under Company Management.
+
+
+Company Name	The name of the company that the site belongs to.
+Package Name	The package name that is currently assigned to the site. Appears blank if no package is assigned.
+Last Assigned On	Date and time a package was assigned to the site, based on the user's browser time zone. Appears blank if no package is assigned.
+Last Assigned By	Name of the user who assigned the package. Appears blank if no package is assigned.
+Overrides	
+
+This is the overrides applied to the endpoints under the site. Clicking on the site's name will redirect you to the Sites tab under the Company Details section.
+
+Assignments
+
+Assignments allow you to manage default, site-level, and company-level package assignments.
+
+Important: Only one (1) default package can be assigned at a time. Assigning a second default package replaces the current Default Package. 
+
+Default Package Assignment
+Assign a Default Package
+
+Each Policy included in a Default Package is automatically inherited by all Sites and Devices, including ones added in the future.
+
+Navigate to Endpoints > Policies & Packages  > Packages.
+Click the Name of the Package.
+Select the Set as default package checkbox.
+
+Click Save.
+Remove a Default Package
+
+Removing the Default Package reverts all sites and devices that are not assigned a package or override to their global values.
+
+Navigate to Endpoints > Policies & Packages > Packages.
+Click the Name of the Default Package.
+Deselect the Set as default package checkbox.
+Click Save.
+Package to Company Assignment
+
+Important: A company can only be assigned one (1) package. Assigning a second package to a company will replace the company's current package
+
+Assign a Package to a Company
+
+Each Policy included in a company-assigned package is automatically inherited by all devices included in the company, including those added in the future.
+
+Navigate to Endpoints > Policies & Packages > Assignments tab > Companies tab.
+Select the checkbox for each selected site.
+Click Assign Package.
+
+Search for or select the Package Name you want to assign to the selected site.
+Click Assign.
+
+Remove a Package From a Company
+
+Removing a package from a site reverts all devices under the site that are not assigned an override to their inherited values.
+
+Navigate to Endpoints > Policies & Packages > Assignments tab > Companies tab.
+Select the checkbox for each selected site.
+Click Remove Assignment.
+
+Click Remove to confirm.
+
+
+Package to Site Assignment
+
+Important: A site can only be assigned one (1) package. Assigning a second package to a site will replace the site's current package
+
+Assign a Package to Sites
+
+Each Policy included in a site-assigned package is automatically inherited by all devices under the site, including those added in the future.
+
+Navigate to Endpoints > Policies & Packages > Assignments > Sites tab.
+Select the checkbox for each selected site.
+Click Assign Package.
+
+Search for or select the Package Name you want to assign to the selected site.
+Click Assign.
+
+Remove a Package From a Site(s)
+
+Removing a package from a site reverts all devices under the site that are not assigned an override to their inherited values.
+
+Navigate to Endpoints > Policies & Packages > Assignments > Sites tab.
+Select the checkbox for each selected site.
+Click Remove Assignment.
+
+Click Remove to confirm.
+
+Policies Policy Groups
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Policy Groups
+Evolve Recommended - Best Practices for Policies and Packages
+Policies
+Command for Networks
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

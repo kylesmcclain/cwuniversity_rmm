@@ -1,0 +1,55 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Integrations to ConnectWise RMM   Webroot   Webroot Billing
+Webroot Billing
+Last updated
+Oct 1, 2024
+Table of contents
+Overview 
+Preventing Webroot Billing Issues 
+Overview 
+
+When you install Webroot on an endpoint with an RMM desktop agent, your Webroot license is bundled as part of our RMM desktop solution. Billable Webroot licenses are those you apply to endpoints without an RMM desktop agent (called non-RMM endpoints) or that you apply to endpoints with an RMM server agent installed.
+
+Billing for Webroot occurs on an endpoint basis, calculating your Webroot use count (the number of endpoints protected by Webroot as reported in the Devices column of the Webroot Global Site Manager) and subtracting the number of endpoints with RMM desktop agents installed where the agent detected Webroot running with a ConnectWise-obtained license. The difference (plus any endpoints on which Webroot and the RMM server agent are both installed) constitutes your total billable Webroot licenses. Your Webroot non-RMM use count and endpoint Webroot detected/not detected details are available in the Asio Platform in Settings > Webroot License.
+
+Preventing Webroot Billing Issues 
+
+Because Webroot reconciliation relies on accurate reporting data from both the Webroot and RMM agents, it is important to ensure that both agents are always up-to-date and endpoints are online on a regular basis.
+
+To prevent inaccurate reporting and billing for Webroot, ensure that:
+
+The Webroot agent is up-to-date, running, and reporting to the Webroot console.
+The RMM agent version is v527 or later.
+The RMM agent is running and reporting properly to the Data Center (in Asio Platform >  Quick Access).
+Webroot has been deactivated from any endpoints where the RMM agent has been uninstalled.
+
+ 
+
+Webroot Best Practices Webroot Default Configurations
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Getting Started with Webroot Endpoint Protection
+Webroot Activation Checklist
+Webroot Best Practices
+Webroot Reporting
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

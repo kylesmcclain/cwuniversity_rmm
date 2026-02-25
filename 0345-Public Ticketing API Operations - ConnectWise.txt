@@ -1,0 +1,907 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   PSA Integration   PSA Public Ticketing API   Public Ticketing API Operations
+Public Ticketing API Operations
+Last updated
+Mar 12, 2024
+Table of contents
+Overview
+GetTicket:
+CreateTicket:
+Notes
+Syntax
+Element Descriptions for CreateTicket
+UpdateTicket:
+Notes
+Syntax
+Element Descriptions for UpdateTicket
+GetTicketCategories:
+Syntax
+Element Descriptions for GetTicketCategories
+GetTicketPriorities:
+Syntax
+Element Descriptions for GetTicketPriorities
+Static Values for GetTicketPriorities Elements
+GetTicketStatuses:  
+Syntax
+Element Descriptions for GetTicketStatuses
+Static Values for GetTicketStatuses Elements
+GetTicketTypes:
+Syntax
+Element Descriptions for GetTicketTypes
+Static Values for GetTicketTypes Elements
+GetDevices:
+Syntax
+Element Descriptions for GetDevices
+GetSites:
+Syntax
+Element Descriptions for GetSites
+GetUsers:
+Syntax
+Element Descriptions for GetUsers
+GetContact:
+Syntax
+Element Descriptions for GetContact
+Overview
+
+Below are the operations supported in ConnectWise's public ticketing API.
+
+GetTicket:
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:v1="http://www.continuum.net/its/v1_0">
+	<soap:Header xmlns:wsa="http://www.w3.org/2005/08/addressing" >
+		<UserID xmlns="TicketService"></UserID>
+		<Password xmlns="TicketService"></Password>
+		<TokenID xmlns="TicketService"></TokenID>
+		<wsa:Action>GetTicket</wsa:Action>
+		<wsa:MessageID>uuid:ecf1afb0-176a-4e55-b28e-e0773bce7dab</wsa:MessageID>
+		<wsa:To>https://services.itsupport247.net/ticketing/1.0/TicketService.svc/soap</wsa:To>
+	</soap:Header>
+	<soap:Body>
+		<v1:GetTicket>
+			<v1:request>
+				<v1:Id></v1:Id>
+			</v1:request>
+		</v1:GetTicket>
+	</soap:Body>
+</soap:Envelope>
+
+CreateTicket:
+
+Creates a ticket in the ConnectWise system
+
+Notes
+
+If a valid contact (i.e. contact is active and belongs to the same site) is passed then the contact will be associated/linked while creating the ticket.
+
+If an invalid contact id is passed or the contact is inactive, then the system will throw an error.
+
+Syntax
+
+TicketResponse responseObj = CreateTicket(Ticket ticketObj)
+
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:v1="http://www.continuum.net/its/v1_0">
+	<soap:Header xmlns:wsa="http://www.w3.org/2005/08/addressing" >
+		<UserID xmlns="TicketService"></UserID>
+		<Password xmlns="TicketService"></Password>
+		<TokenID xmlns="TicketService"></TokenID>
+		<wsa:Action>CreateTicket</wsa:Action>
+		<wsa:MessageID>uuid:ecf1afb0-176a-4e55-b28e-e0773bce7dab</wsa:MessageID>
+		<wsa:To>https://services.itsupport247.net/ticketing/1.0/TicketService.svc/soap</wsa:To>
+	</soap:Header>
+	<soap:Body>
+		<v1:CreateTicket>
+			<v1:request>
+				<v1:Id></v1:Id>
+				<v1:SiteID></v1:SiteID>
+				<v1:DeviceID></v1:DeviceID>
+				<v1:DeviceName></v1:DeviceName>
+				<v1:CategoryID></v1:CategoryID>
+				<v1:CategoryName></v1:CategoryName>
+				<v1:TypeID></v1:TypeID>
+				<v1:Subject></v1:Subject>
+				<v1:Description></v1:Description>
+				<v1:StatusID></v1:StatusID>
+				<v1:AssignTo></v1:AssignTo>
+				<v1:AssignToUserID></v1:AssignToUserID>
+				<v1:PriorityID></v1:PriorityID>
+				<v1:ReferenceTicketID></v1:ReferenceTicketID>
+				<v1:ScheduleStartDateTime></v1:ScheduleStartDateTime>
+				<v1:ScheduleEndDateTime></v1:ScheduleEndDateTime>
+				<v1:CreatedOn></v1:CreatedOn>
+				<!--Zero or more repetitions:-->
+				<v1:TicketNotes>
+					<v1:Id></v1:Id>
+					<v1:TicketID></v1:TicketID>
+					<v1:NoteDescription></v1:NoteDescription>
+					<v1:CreatedOn></v1:CreatedOn>
+					<v1:CreatedByGroup></v1:CreatedByGroup>
+					<v1:CreatedByUserID></v1:CreatedByUserID>
+				</v1:TicketNotes>
+				<v1:CreatedByGroup></v1:CreatedByGroup>
+				<v1:CreatedByUserID></v1:CreatedByUserID>
+				<v1:LastUpdatedByGroup></v1:LastUpdatedByGroup>
+				<v1:LastUpdatedByUserID></v1:LastUpdatedByUserID>
+				<v1:LastUpdatedOn></v1:LastUpdatedOn>
+				<v1:SiteCode></v1:SiteCode>
+				<v1:DeviceFriendlyName></v1:DeviceFriendlyName>
+				<v1:ContactID></v1:ContactID>
+				<v1:PSATicketID></v1:PSATicketID>
+			</v1:request>
+		</v1:CreateTicket>
+	</soap:Body>
+</soap:Envelope>
+
+Element Descriptions for CreateTicket
+Element	Description	Data Type	Read Only	Required	Reference Object
+<Id>	Unique identifier for the ConnectWise ticket	long	 	 	 
+<SiteID>	ConnectWise site ID	long	 	 	Site
+<DeviceID>	ConnectWise device ID	long	 	 	Device
+<DeviceName>	Device name to be attached. Not applicable if DeviceID is provided.	string	 	 	 
+<CategoryID>	ConnectWise Ticket Category ID (Ticket Family)	long	 	 	TicketCategory
+<CategoryName>	Category name to be attached. Not applicable if CategoryID is provided	string	 	 	 
+<TypeID>	ConnectWise ticket type ID	long	 	Yes	TicketType
+<Subject>	Ticket subject	string	 	Yes	 
+<Description>	Ticket description	string	 	Yes	 
+<StatusID>	Ticket status ID	integer	 	Yes	TicketStatus
+<AssignTo>	Ticket AssignTo group (NOC, Service Desk, MSP)	enum	 	Yes	TicketAssignTo
+<AssignToUserID>	
+
+User if AssignTo is MSP
+
+	long	 	 	User
+<Priority>	Ticket priority (Low, Medium, Emergency)	integer	 	Yes	TicketPriority
+<ReferenceTicketID>	Reference ConnectWise ticket ID	string	 	 	 
+<ScheduleStartDate>	Schedule start date and time based on site time zone (if site not available then PST by default). Mandatory if StatusID = 202 (Scheduled)	datetime	 	 	 
+<ScheduleEndDate>	Schedule end date and time based on site time zone (if site not available then PST by default). Mandatory if StatusID = 202 (Scheduled)	datetime	 	 	 
+<CreatedOn>	Date and time of ticket creation (in PST)	datetime	Yes	 	 
+<TicketNotes>	Holds information about ticket notes. Includes the following sub-elements:	TicketNote	 	 	TicketNote
+ 	<Id>: Unique identifier for single note in Asio™ Platform (ITSupport Portal) ticket	long	 	 	 
+<TicketID>: Unique identifier for ConnectWise ticket	long	 	 	 
+<NoteDescription>: Description of note in ConnectWise ticket	string	 	 	 
+<CreatedOn>: Date and time when the ticket note is added	datetime	 	 	 
+<CreatedByGroup>: Name of group who added the ticket note	string	 	 	 
+<CreatedByUserID>: ID of user who added the ticket note (If CreatedByGroup, then this is “MSP”.)	long	 	 	 
+<CreatedByGroup>	Name of group who created the ticket (NOC, Help Desk Service, MSP, System)	string	Yes	 	 
+<CreatedByUserID>	User if CreatedByGroup is MSP	long	Yes	 	 
+<LastUpdatedByGroup>	Name of group who made last update to ticket (NOC, Help Desk Service, MSP, System)	string	Yes	 	 
+<LastUpdatedByUserID>	User if LastUpdatedByGroup is MSP	long	Yes	 	 
+<LastUpdatedOn>	Date and time of last ticket update	datetime	Yes	 	 
+<SiteCode>	Unique code for site, if ticket is associated with any site	string	 	 	 
+<DeviceFriendlyName>	Friendly name given to device	string	Yes	 	 
+<ContactID>	Unique Number for Contact	long	Yes	 	Contact
+<PSATicketID>	PSA Ticket ID	string	 	 	 
+UpdateTicket:
+
+Updates an existing ticket in ConnectWise system
+
+Notes
+
+If a valid contact (i.e. contact is active and belongs to the same site) is passed then the contact will be associated/linked with the existing ticket.
+
+If the ticket is already linked to a contact, then the system will unlink the previous contact and link with a new contact id
+
+If an invalid contact id is passed or the contact is inactive, then the system will throw an error.
+
+If passed zero ("0") value into the contact id or no contact id passed and the existing ticket has already a contact associated, then the system will de-associate/unlink the contact from the existing ticket.
+
+Syntax
+
+TicketResponse responseObj = UpdateTicket(Ticket ticketObj)
+
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:v1="http://www.continuum.net/its/v1_0">
+	<soap:Header xmlns:wsa="http://www.w3.org/2005/08/addressing" ><UserID xmlns="TicketService"></UserID>
+		<Password xmlns="TicketService"></Password>
+		<TokenID xmlns="TicketService"></TokenID>
+		<wsa:Action>UpdateTicket</wsa:Action>
+		<wsa:MessageID>uuid:ecf1afb0-176a-4e55-b28e-e0773bce7dab</wsa:MessageID>
+		<wsa:To>https://services.itsupport247.net/ticketing/1.0/TicketService.svc/soap</wsa:To>
+	</soap:Header>
+	<soap:Body>
+		<v1:UpdateTicket>
+			<v1:request>
+				<v1:Id></v1:Id>
+				<v1:StatusID></v1:StatusID>
+				<v1:AssignTo></v1:AssignTo>
+				<v1:AssignToUserID></v1:AssignToUserID>
+				<v1:PriorityID></v1:PriorityID>
+				<v1:ReferenceTicketID></v1:ReferenceTicketID>
+				<v1:ScheduleStartDateTime></v1:ScheduleStartDateTime>
+				<v1:ScheduleEndDateTime></v1:ScheduleEndDateTime>
+				<!--One or more repetitions:-->
+				<v1:TicketNotes>
+					<v1:NoteDescription></v1:NoteDescription>
+				</v1:TicketNotes>
+				<v1:ContactID></v1:ContactID>
+				<v1:PSATicketID></v1:PSATicketID>
+			</v1:request>
+		</v1:UpdateTicket>
+	</soap:Body>
+</soap:Envelope>
+
+Element Descriptions for UpdateTicket
+Element	Description	Data Type	Read Only	Required	Reference Object
+<Id>	Unique identifier for the ConnectWise ticket	long	 	Yes	 
+<SiteID>	ConnectWise site ID	long	 	 	Site
+<DeviceID>	ConnectWise device ID	long	 	 	Device
+<DeviceName>	Device name to be attached. Not applicable if DeviceID is provided.	string	 	 	 
+<CategoryID>	ConnectWise Ticket Category ID (Ticket Family)	long	 	 	TicketCategory
+<CategoryName>	Category name to be attached. Not applicable if CategoryID is provided	string	 	 	 
+<TypeID>	ConnectWise ticket type ID	long	 	 	TicketType
+<Subject>	Ticket subject	string	 	 	 
+<Description>	Ticket description	string	 	 	 
+<StatusID>	Ticket status ID	integer	 	Yes	TicketStatus
+<AssignTo>	Ticket AssignTo group (NOC, Service Desk, MSP)	enum	 	Yes	TicketAssignTo
+<AssignToUserID>	
+
+User if AssignTo is MSP
+
+	long	 	 	User
+<Priority>	Ticket priority (Low, Medium, Emergency)	integer	 	 	TicketPriority
+<ReferenceTicketID>	Reference ConnectWise ticket ID	string	 	 	 
+<ScheduleStartDate>	Schedule start date and time based on site time zone (if site not available then PST by default). Mandatory if StatusID = 202 (Scheduled)	datetime	 	 	 
+<ScheduleEndDate>	Schedule end date and time based on site time zone (if site not available then PST by default). Mandatory if StatusID = 202 (Scheduled)	datetime	 	 	 
+<CreatedOn>	Date and time of ticket creation (in PST)	datetime	Yes	 	 
+<TicketNotes>	Holds information about ticket notes. Includes the following sub-elements:	TicketNote	 	Yes	TicketNote
+ 	<Id>: Unique identifier for single note in Asio™ Platform (ITSupport Portal) ticket	long	 	 	 
+<TicketID>: Unique identifier for ConnectWise ticket	long	 	 	 
+<NoteDescription>: Description of note in ConnectWise ticket	string	 	 	 
+<CreatedOn>: Date and time when the ticket note is added	datetime	 	 	 
+<CreatedByGroup>: Name of group who added the ticket note	string	 	 	 
+<CreatedByUserID>: ID of user who added the ticket note (If CreatedByGroup, then this is “MSP”.)	long	 	 	 
+<CreatedByGroup>	Name of group who created the ticket (NOC, Help Desk Service, MSP, System)	string	Yes	 	 
+<CreatedByUserID>	User if CreatedByGroup is MSP	long	Yes	 	 
+<LastUpdatedByGroup>	Name of group who made last update to ticket (NOC, Help Desk Service, MSP, System)	string	Yes	 	 
+<LastUpdatedByUserID>	User if LastUpdatedByGroup is MSP	long	Yes	 	 
+<LastUpdatedOn>	Date and time of last ticket update	datetime	Yes	 	 
+<SiteCode>	Unique code for site, if ticket is associated with any site	string	 	 	 
+<DeviceFriendlyName>	Friendly name given to device	string	Yes	 	 
+<PSATicketID>	PSA Ticket ID	string	 	 
+GetTicketCategories:
+
+Gets a list of all ticket categories from the ConnectWise system
+
+Syntax
+
+TicketCategoryResponse responseObj = GetTicketCategories()
+
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:v1="http://www.continuum.net/its/v1_0">
+	<soap:Header xmlns:wsa="http://www.w3.org/2005/08/addressing" >
+		<UserID xmlns="TicketService"></UserID>
+		<Password xmlns="TicketService"></Password>
+		<TokenID xmlns="TicketService"></TokenID>
+		<wsa:Action>GetTicketCategories</wsa:Action>
+		<wsa:MessageID>uuid:ecf1afb0-176a-4e55-b28e-e0773bce7dab</wsa:MessageID>
+		<wsa:To>https://services.itsupport247.net/ticketing/1.0/TicketService.svc/soap</wsa:To>
+	</soap:Header>
+	<soap:Body>
+		<v1:GetTicketCategories/>
+	</soap:Body>
+</soap:Envelope>
+
+Element Descriptions for GetTicketCategories
+Element	Description	Data Type	Read Only
+<Id>	Unique identifying ticket category ID	long	Yes
+<Name>	Ticket category name	string	Yes
+GetTicketPriorities:
+
+Gets a list of all ticket priorities from the ConnectWise system
+
+Syntax
+
+TicketPriorityResponse responseObj = GetTicketPriorities()
+
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:v1="http://www.continuum.net/its/v1_0">
+	<soap:Header xmlns:wsa="http://www.w3.org/2005/08/addressing" >
+		<UserID xmlns="TicketService"></UserID>
+		<Password xmlns="TicketService"></Password>
+		<TokenID xmlns="TicketService"></TokenID>
+		<wsa:Action>GetTicketPriorities</wsa:Action>
+		<wsa:MessageID>uuid:ecf1afb0-176a-4e55-b28e-e0773bce7dab</wsa:MessageID>
+		<wsa:To>https://services.itsupport247.net/ticketing/1.0/TicketService.svc/soap</wsa:To>
+	</soap:Header>
+	<soap:Body>
+		<v1:GetTicketPriorities/>
+	</soap:Body>
+</soap:Envelope>
+
+Element Descriptions for GetTicketPriorities
+Element	Description	Data Type	Read Only
+<Id>	ConnectWise ticket priority ID. Accepts the numeric values shown below.	long	Yes
+<Name>	Ticket priority name. Accepts the names shown below.	string	Yes
+Static Values for GetTicketPriorities Elements
+<ID>	<Name>
+1	Emergency
+2	Medium
+3	Low
+GetTicketStatuses:  
+
+Gets a list of all ticket statuses from the ConnectWise system.
+
+Status
+
+	
+
+Status Details
+
+
+
+
+Acknowledged
+
+	
+
+This status would be used by RMM when we would acknowledge the ticket being received on our end. Once the ticket has been acknowledged it would be assigned to a tech to work on the same.
+
+
+
+
+Approval Needed
+
+	
+
+This status would be used by RMM when we would need some approval from Partner to continue working on the issue further.
+
+
+
+
+Approved
+
+	
+
+This is a partner status and it would be used by a partner when they are providing some update on a ticket or reverting with approval to work on the issue.
+
+
+
+
+Closed
+
+	
+
+This status would be used by partner and NOC both. Ticket once closed in RMM cannot be reopened.
+
+
+
+
+Info needed / Work Assigned
+
+	
+
+This status would be used by NOC when we would need additional information from your team to continue working on a issue.
+
+
+
+
+Interim Notification
+
+	
+
+This status would be used by RMM when we are continuing to work on a issue but wanted to provide you with a interim status of the work performed and next action plan.
+
+
+
+
+New
+
+	
+
+This status would be used by us and partner. This notifies a new ticket either on either systems.
+
+
+
+
+NOC Completed
+
+	
+
+This status would be used by RMM when we would be updating the ticket once the work requested on our end has been completed. This doesn't correspond to Complete as the partner can still update on the ticket that they feel some work was missed or you would like to request additional changes for the issue.
+
+
+
+
+Not Approved/ Further Info Needed
+
+	
+
+This will be used by the partner when they do NOT approve for work to be done by ConnectWise team or he needs more information from us about the issue.
+
+
+
+
+Pending
+
+	
+
+This status is used by the partner when he is awaiting some information on their end before we can commence the work further.
+
+
+
+
+Schedule
+
+	
+
+This status would be used by NOC when we would be scheduling a ticket to be worked at a specific interval or timeframe.
+
+
+
+
+Task Missed/Not Completed
+
+	
+
+This status will be selected when the ConnectWise team was unable to complete a ticket.
+
+
+
+
+Waiting Customer
+
+	
+
+This status would be used by the partner when they are either waiting on some third party or end client to get confirmation for NOC to work on the issue further.
+
+
+
+
+Work In Progress
+
+	
+
+This status would be used by NOC when we would start working on a specific issue.
+
+Note that the following Status id numbers are internal for partners and are not used by the Asio System:
+
+Status id: 205
+Status id: 206
+Status id: 207
+Syntax
+
+TicketStatusResponse responseObj = GetTicketStatuses()
+
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:v1="http://www.continuum.net/its/v1_0">
+	<soap:Header xmlns:wsa="http://www.w3.org/2005/08/addressing" >
+		<UserID xmlns="TicketService"></UserID>
+		<Password xmlns="TicketService"></Password>
+		<TokenID xmlns="TicketService"></TokenID>
+		<wsa:Action>GetTicketStatuses</wsa:Action>
+		<wsa:MessageID>uuid:ecf1afb0-176a-4e55-b28e-e0773bce7dab</wsa:MessageID>
+		<wsa:To>https://services.itsupport247.net/ticketing/1.0/TicketService.svc/soap</wsa:To>
+	</soap:Header>
+	<soap:Body>
+		<v1:GetTicketStatuses/>
+	</soap:Body>
+</soap:Envelope>	
+
+Element Descriptions for GetTicketStatuses
+Element	Description	Data Type	Read Only
+<Id>	ConnectWise ticket status ID. Accepts the numeric values shown below.	long	Yes
+<Name>	Ticket status name. Accepts the names shown below.	string	Yes
+Static Values for GetTicketStatuses Elements
+<ID>	<Name>
+101	New
+102	Closed
+103	Acknowledge
+104	Approval needed by backoffice
+105	Approved
+106	Not Approved / Further information needed
+107	Work in progress by backoffice
+108	Info needed / Work assigned by backoffice
+109	NOC completed
+201	Under Review
+202	Scheduled
+204	Task missed / Not completed
+205	On Hold
+206	Waiting Customer
+207	Pending
+208	Interim notification from backoffice
+GetTicketTypes:
+
+Gets list of all ticket types from ConnectWise system
+
+Syntax
+
+TicketTypeResponse responseObj = GetTicketTypes()
+
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:v1="http://www.continuum.net/its/v1_0">
+	<soap:Header xmlns:wsa="http://www.w3.org/2005/08/addressing" >
+		<UserID xmlns="TicketService"></UserID>
+		<Password xmlns="TicketService"></Password>
+		<TokenID xmlns="TicketService"></TokenID>
+		<wsa:Action>GetTicketTypes</wsa:Action>
+		<wsa:MessageID>uuid:ecf1afb0-176a-4e55-b28e-e0773bce7dab</wsa:MessageID>
+		<wsa:To>https://services.itsupport247.net/ticketing/1.0/TicketService.svc/soap</wsa:To>
+	</soap:Header>
+	<soap:Body>
+		<v1:GetTicketTypes/>
+	</soap:Body>
+</soap:Envelope>
+
+Element Descriptions for GetTicketTypes
+Element	Description	Data Type	Read Only
+<Id>	ConnectWise ticket type ID. Accepts the numeric values shown below.	long	Yes
+<Name>	Ticket type name. Accepts the names shown below.	string	Yes
+<Code>	Ticket type code. Accepts the codes shown below.	string	Yes
+<Description>	Ticket type description	string	Yes
+Static Values for GetTicketTypes Elements
+<ID>	<Name>	<Code>
+1	Notification	Notification
+2	Task Approval	TaskApproval
+3	Task Assigned To MSP	TaskMSP
+4	Service Request	ServiceRequest
+5	Patch Deployment Approval	PatchDeploymentApproval
+6	Anti Virus Not Installed	AVNotInstalled
+7	Anti Virus Not Synchronized	AVNotSynchronized
+9	Internal Task	InternalTask
+10	Product Support	ProductSupportTicket
+13	Device Down	DeviceDown
+21	Server Projects	ServerProjects
+101	DesktopMaintenance	DesktopMaintenance
+GetDevices:
+
+Gets alist of all registered devices for a particular site from the ConnectWise system
+
+Syntax
+
+DeviceResponse responseObj = GetDevices(Site siteObj)
+
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:v1="http://www.continuum.net/its/v1_0">
+	<soap:Header xmlns:wsa="http://www.w3.org/2005/08/addressing" >
+		<UserID xmlns="TicketService"></UserID>
+		<Password xmlns="TicketService"></Password>
+		<TokenID xmlns="TicketService"></TokenID>
+		<wsa:Action>GetDevices</wsa:Action>
+		<wsa:MessageID>uuid:ecf1afb0-176a-4e55-b28e-e0773bce7dab</wsa:MessageID>
+		<wsa:To>https://services.itsupport247.net/ticketing/1.0/TicketService.svc/soap</wsa:To>
+	</soap:Header>
+	<soap:Body>
+		<v1:GetDevices>
+			<v1:request>
+				<v1:Id></v1:Id>
+			</v1:request>
+		</v1:GetDevices>
+	</soap:Body>
+</soap:Envelope>
+
+Element Descriptions for GetDevices
+Element	Description	Data Type	Read Only
+<Id>	Unique identifier for device registered with ConnectWise	long	Yes
+<Name>	Device name	string	Yes
+<FriendlyName>	Device Friendly Name	string	Yes
+<SiteID>	ConnectWise site ID	long	Yes
+<SiteCode>	ConnectWise site code	string	Yes
+<SiteLocation>	ConnectWise site location	string	Yes
+<DeviceType>	Device type	string	Yes
+<CreatedOn>	Date and time when the device was installed	datetime	Yes
+<IsActive>	Current status of the device	boolean	Yes
+GetSites:
+
+Gets a list of all ConnectWise sites
+
+Syntax
+
+SiteResponse responseObj = GetSites()
+
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:v1="http://www.continuum.net/its/v1_0">
+	<soap:Header xmlns:wsa="http://www.w3.org/2005/08/addressing" >
+		<UserID xmlns="TicketService"></UserID>
+		<Password xmlns="TicketService"></Password>
+		<TokenID xmlns="TicketService"></TokenID>
+		<wsa:Action>GetSites</wsa:Action>
+		<wsa:MessageID>uuid:ecf1afb0-176a-4e55-b28e-e0773bce7dab</wsa:MessageID>
+		<wsa:To>https://services.itsupport247.net/ticketing/1.0/TicketService.svc/soap</wsa:To>
+	</soap:Header>
+	<soap:Body>
+		<v1:GetSites/>
+	</soap:Body>
+</soap:Envelope>
+
+Element Descriptions for GetSites
+Element	Description	Data Type	Read Only	Reference Object
+<Id>	Unique identifier for ConnectWise site	long	 	 
+<Name>	Site name	string	Yes	 
+<Code>	Site code	string	Yes	 
+<Location>	Site location	string	Yes	 
+<Adddress1>	Site Address1	string	Yes	 
+<Adddress2>	Site Address2	string	Yes	 
+<City>	City name	string	Yes	 
+<State>	State name	string	Yes	 
+<PostalCode>	Postal code	string	Yes	 
+<Country>	Country	string	 	 
+<CreatedOn>	Date and time when the site was created (in PST)	datetime	Yes	 
+<TimeZone>	Time zone code configured on Asio™ Platform (ITSupport Portal) for site	string	Yes	 
+<IsActive>	Current status of the site	boolean	Yes	 
+<ServicePlans>	Current service plans applied on the site. Includes the following sub-elements:	ServicePlan	Yes	ServicePlan
+ 	<ID>: ConnectWise service plan ID	 	 	 
+<Name>: ConnectWise service plan name	 	 	 
+<HelpDeskPlans>	
+
+Current Help Desk plans applied to the site. Includes the following sub-elements:
+
+	HelpDeskPlan	Yes	HelpDeskPlan
+ 	<ID>: ConnectWise Help Desk plan ID	 	 	 
+<Name>: ConnectWiseHelp Desk Service plan name	 	 	 
+<ServicePlanId>: ConnectWise service plan ID	 	 	 
+GetUsers:
+
+Gets a list of all MSP's users from ConnectWise system
+
+Syntax
+
+UserResponse responseObj = GetUsers()
+
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:v1="http://www.continuum.net/its/v1_0">
+	<soap:Header xmlns:wsa="http://www.w3.org/2005/08/addressing" >
+		<UserID xmlns="TicketService"></UserID>
+		<Password xmlns="TicketService"></Password>
+		<TokenID xmlns="TicketService"></TokenID>
+		<wsa:Action>GetUsers</wsa:Action>
+		<wsa:MessageID>uuid:ecf1afb0-176a-4e55-b28e-e0773bce7dab</wsa:MessageID>
+		<wsa:To>https://services.itsupport247.net/ticketing/1.0/TicketService.svc/soap</wsa:To>
+	</soap:Header>
+	<soap:Body>
+		<v1:GetUsers/>
+	</soap:Body>
+</soap:Envelope>
+
+Element Descriptions for GetUsers
+Element	Description	Data Type	Read Only
+<Id>	Unique identifier for user registered with ConnectWise	long	Yes
+<Name>	User name	string	Yes
+<EmailID>	User Email ID	string	Yes
+<IsActive>	Current status of the user	boolean	Yes
+GetContact:
+
+Gets details of Contact from the ConnectWise system
+
+Syntax
+
+ContactResponse responseObj = GetContact ()
+
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:v1="http://www.continuum.net/its/v1_0">
+	<soap:Header xmlns:wsa="http://www.w3.org/2005/08/addressing" >
+		<UserID xmlns="TicketService"></UserID>
+		<Password xmlns="TicketService"></Password>
+		<TokenID xmlns="TicketService"></TokenID>
+		<wsa:Action>GetContact</wsa:Action>
+		<wsa:MessageID>uuid:ecf1afb0-176a-4e55-b28e-e0773bce7dab</wsa:MessageID>
+		<wsa:To>https://services.itsupport247.net/ticketing/1.0/TicketService.svc/soap</wsa:To>
+	</soap:Header>
+	<soap:Body>
+		<v1:GetContact>
+			<v1:request>
+				<v1:Id></v1:Id>
+			</v1:request>
+		</v1:GetContact>
+	</soap:Body>
+</soap:Envelope>
+Element Descriptions for GetContact
+
+Element
+
+	
+
+Description
+
+	
+
+Data Type
+
+	
+
+Read Only
+
+
+
+
+<Id>
+
+	
+
+Unique identifier for Contact
+
+	
+
+long
+
+	
+
+Yes
+
+
+
+
+< FirstName>
+
+	
+
+First Name
+
+	
+
+string
+
+	
+
+Yes
+
+
+
+
+< LastName>
+
+	
+
+Last Name
+
+	
+
+string
+
+	
+
+Yes
+
+
+
+
+< JobTitle>
+
+	
+
+Job Title
+
+	
+
+boolean
+
+	
+
+Yes
+
+
+
+
+<EmailAddress>
+
+	
+
+Email Address
+
+	
+
+string
+
+	
+
+Yes
+
+
+
+
+< PrimaryPhone>
+
+	
+
+Primary Phone Number
+
+	
+
+string
+
+	
+
+Yes
+
+
+
+
+< PrimaryPhoneExtn>
+
+	
+
+Primary Phone Numbers Extension
+
+	
+
+string
+
+	
+
+Yes
+
+
+
+
+< SecondaryPhone>
+
+	
+
+Secondary Phone Number
+
+	
+
+string
+
+	
+
+Yes
+
+
+
+
+< SecondaryPhoneExtn>
+
+	
+
+Secondary Phone Numbers Extension
+
+	
+
+string
+
+	
+
+Yes
+
+
+
+
+< MobilePhone>
+
+	
+
+Mobile Phone Number
+
+	
+
+string
+
+	
+
+Yes
+
+
+
+
+< SiteID>
+
+	
+
+Unique ID for RMM Site
+
+	
+
+long
+
+	
+
+Yes
+
+Public Ticketing API Integration Process Public Ticketing API User Acceptance Test
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Public Ticketing API Integration Process
+View an overview of the process for integrating with ConnectWise's two-way ticketing system using our public ticketing API.
+Getting Started with the Public Ticketing API
+Public Ticketing API Exceptions
+Public Ticketing API User Acceptance Test
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

@@ -1,0 +1,119 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   RMM Reporting API   Reporting API REST Resources   Agent Details
+Agent Details
+Last updated
+Jul 9, 2025
+Table of contents
+Overview
+Endpoint and URI
+Method
+Request Body
+Response Body
+Parameter Descriptions for Agent Details
+Source of Data in the Asio Platform
+Overview
+
+Retrieves agent information for the authenticated partner and the specified site.
+
+Endpoint and URI
+
+https://itsapi.itsupport247.net/repo.../agent/details
+
+Method
+
+POST
+
+Request Body
+{
+"SiteCode": "AGTSolutions"
+}
+
+Response Body
+{
+"Error": null,
+"AgentDetails": [
+{
+"FriendlyName": "Mike's PC",
+"HasWebroot": "n",
+"IPAddress": "1.1.1.1",
+"Id": 1,
+"InstallDate": "2014-02-07T16:48:20Z",
+"IsCurrent": "n",
+"IsDuplicate": "n",
+"IsGateWay": "n",
+"LastBoot": "2014-02-09T12:02:30Z",
+"LastContact": "2014-02-10T12:53:30Z",
+"MachineId": 9223372036854775807,
+"OS": "Windows 7 Professional",
+"ResourceName": "Intel-AMT1",
+"Site": "AGT Solutions",
+"Type": "Desktop, Windows",
+"Version": 522
+},
+{
+...
+},
+{
+...
+}
+]
+}
+Parameter Descriptions for Agent Details
+Parameter	Description
+"SiteCode"	Unique site code in Asio™ Platform (ITSupport Portal)
+"FriendlyName"	Machine friendly name in Asio™ Platform (ITSupport Portal)
+"HasWebroot"	Machine has Webroot installed ("y" or "n")
+"IPAddress"	Site IP address
+"Id"	Resource ID
+"InstallDate"	Agent install date
+"IsCurrent"	
+
+Agent is current ("y" or "n")
+
+
+"IsDuplicate"	Agent is duplicate ("y" or "n")
+"IsGateWay"	Agent is gateway ("y" or "n")
+"LastBoot"	Last boot date and time
+"LastContact"	Last contact date and time
+"MachineId"	Unique machine ID in ConnectWise database
+"OS"	Operating system
+"ResourceName"	Machine name in Asio™ Platform (ITSupport Portal)
+"Site"	Site name listed in Asio™ Platform (ITSupport Portal)
+"Type"	Resource type
+"Version"	Agent version
+Source of Data in the Asio Platform
+
+Reports > Asio > Agent Report
+
+Reporting API REST Resources Antivirus Ages
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Antivirus Summary
+Retrieves counts of machines having antivirus protection in the following states: Updated, Outdated, Not Installed, or Information Unavailable.
+Antivirus Version Summary
+Retrieves currently detected antivirus software and the definition version.
+BCDR Continuity Appliances
+Retrieves a list of Recover Continuity backup appliances provisioned at the given site.
+BCDR Continuity Backup Summary
+Overall summary of the percentage of Recover Continuity backups that have succeeded or failed.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

@@ -1,0 +1,65 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Automation   Tasks   Script Functions
+Script Functions
+Last updated
+Mar 10, 2025
+Table of contents
+Overview
+Current Script Functions include:
+Overview
+
+Here is a list of some of the script functions you can use.
+
+Current Script Functions include:
+Script Function	Description	Example
+Script Exit	Triggers the script to fail, stop, & log a user defined error message.	Unexpected PowerShell result detected.
+Script Log	Triggers the script to log an informational user defined message.	Powershell result: %output%.
+Set Custom Field	Triggers the script to update any Custom Field selected by the user.	Update Custom Field hasScriptRun Flag from No to Yes (aka. check the box).
+Set User Variable	Triggers the script to create a runtime variable based on what you manually enter.	Set variable PowerShellResult to %output% (so multiple Logic Conditions can check the result of a single PowerShell script).
+Set Pre-defined Variable	Triggers the script to create a runtime variable based on data available in the Asio platform.	Set variable CustomField to [select specific Custom Field] OR set the predefined variable by referring to this list of Predefined System Variables.
+
+ 
+
+Note: Variables can be called from other functions by using the @ sign before and after the Variable name.
+
+Example: @PowerShellResult@ can be used to call the User Variable Example and @CustomField@ can be used to call the Pre-defined Variable Example.
+
+Running RMM Tasks Script Sharing via User Roles
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Create and Schedule Script Type Tasks
+Create and schedule a script task.
+Running RMM Tasks
+How to run a task, create a custom script, or configure a task for the next agent check-in.
+Available Tasks
+RMM Task Reporting
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

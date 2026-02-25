@@ -1,0 +1,56 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Integrations to ConnectWise RMM   Endpoint Protection
+Endpoint Protection
+Last updated
+Jun 11, 2025
+Table of contents
+Overview
+Documentation
+Overview
+
+This guide includes articles about ConnectWise RMM™ endpoint protection and managed antivirus products.
+
+Documentation
+
+Click the title of an article below to learn more about endpoint protection in ConnectWise RMM.
+
+All articles
+Featured articles
+Identified Antivirus Products
+Managed Antivirus Products
+Removing Viruses and Other Malware
+RMM Recommended AV Server Exclusion List
+
+ 
+
+View Intune Information in the Asio™ Platform (ITSupport Portal) Identified Antivirus Products
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Automate Antivirus Exclusions for Windows
+Policies and Packages for ConnectWise SIEM, powered by Asio
+A policy and package are required to ingest data and generate alerts. Review the settings defined in this article to learn more.
+Integrate Microsoft Defender for Business with Security Dashboard
+This document provides the activation steps to connect the Microsoft Defender integration to the Security Dashboard.
+Integrate SentinelOne with Security Dashboard
+SentinelOne integration for the Security Dashboard allows you to sync data for the sites mapped in the Asio platform.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

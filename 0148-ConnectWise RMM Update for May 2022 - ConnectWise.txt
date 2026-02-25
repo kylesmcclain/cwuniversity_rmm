@@ -1,0 +1,205 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   ConnectWise RMM Release Notes   RMM Release Notes Archive   ConnectWise RMM Update for May 2022
+ConnectWise RMM Update for May 2022
+Last updated
+Feb 23, 2023
+Table of contents
+Announcements
+Automation
+Communicator
+Monitoring
+Patching
+Portal
+Ticketing / PSA Integration
+Bug Fixes
+
+Below is a summary of the new RMM features and updates released in May, 2022.
+
+Announcements
+
+Expedited 7 day Patch testing
+
+We will be expediting our patch testing from 14 days to 7 days for all security updates starting in June, 2022. Partners who wish to continue on the existing 14 day testing cycle can update their policies. For more details, please refer to Patches testing overview.
+
+Control Installation via Policies (Coming Soon)
+
+We will start rolling out the option to enable control for sites from Policies and Packages starting in the second week of June, 2022. After this change, the option to opt in for the control at the site level will be removed from the RMM Setup but will be managed by the policies that are assigned to the sites.
+
+Change to Scheduled Task behavior
+
+Completed Tasks (Tasks that have been scheduled to Run and Outcomes have been reported for all computers after the Tasks' final scheduled execution) can no longer be edited. This change is being made in preparation for backend changes next month that will improve the stability and reliability of Scheduled Tasks.
+
+New agent version
+
+We will roll out a new agent, version 2.1.801, starting May 30th, 2022. This will be released to all existing agents in phases. All existing and new agent download links will be automatically updated to offer the new agent setup.
+
+Note: This will not have any impact to the existing downloaded setups; Agent will be automatically updated after installation to the latest version.
+
+Automation
+
+Partners will be able to create Policy Groups based on familiar Dynamic Group criteria and then assign a Policy to the Policy Group. Because Policies assigned to a Group trump Policies assigned to a Site, partners that want to assign Patch Policies based on device role are strongly encouraged to use Policy Groups for Patching. This will release in late May 2022.
+
+Example: Partners can create an OS Patching Server policy and assign it to a Policy Group that contains all Windows Server 2012 R2 devices.
+
+Communicator
+
+Custom Message Box. You can now create custom message boxes within the communicator to share more information with End-users. The message box will pop-up on the end-user's desktop with all the details provided by the partner in the Policy. This will release on May 26th.
+
+Monitoring
+
+Improvements in the Preview alert for Device Down alert. Based on the feedback received from the partners, we are adding an additional check for the Control availability before triggering a device down alert for the endpoint. Refer to Intellimon alerts > Preview Alerts.
+
+Note: This improved monitoring alert will remain as a part of Preview alerts only. If you would like to opt in for receiving the device down alerts, then you need to enable the alert.
+
+VMWare Monitoring Improvements. We have improved the VMWare Monitoring conditions to generate alerts in near real time. The following alerts will be generated in near real time:
+
+VMware Host vpxa service is not running
+
+VMware Host sfcbd-watchdog service is not running
+
+VMware Host lbtd service is not running
+
+Device Down Monitor Improvement. We are improving the device down monitor to allow you to define the duration for which the system should be triggering an alert. Additionally, you can also define the monitor to trigger an alert if a specific device is reporting online.
+
+Note: We will be migrating the existing monitors created by you for device down and no changes will be needed for your existing monitors.
+
+ICMP Monitor Improvement. We are improving the ICMP monitor, which will now allow partners to define the consecutive failure cycles before triggering an alert.
+
+Note: We will be migrating the existing monitors created by you for ICMP Monitor and no changes will be needed for your existing monitors.
+
+Port Monitor Improvement. We are improving the Port monitor, which will now allow you to define the consecutive failure cycles before triggering an alert.
+
+Note: We will be migrating the existing monitors created by you for Port Monitor and no changes will be needed for your existing monitors.
+
+Quick Suspension Improvement. When you click on the manage suspension from the device details page, it will now redirect you to the suspension landing page to display all the active suspension applied to the endpoint.
+
+Extending the Suspension Screens to include other Devices. We are enhancing the Resource Selector to display the all the devices monitored or managed under the site. This will allow you to select the correct resources and configure them for suspension.
+
+We have improved the VMWare Host Event monitoring to add the following conditions under the near real-time monitoring alerts:
+
+VMware Host critical event is observed - Lost access to volume due to connectivity issues
+
+VMware Host critical event is observed - Lost Connectivity to storage device
+
+VMware Host critical event is observed - Lost Network Connectivity
+
+VMware Host critical event is observed - vSphere High Availability (HA) agent on host could not reach isolation address
+
+VMware Host critical event is observed - vCenter Server is disconnected from a master node
+
+VMware Host critical event is observed - Storage has been removed or is permanently inaccessible
+
+VMware Host critical event is observed - VMWare ESXi host not responding
+
+VMware Host critical event is observed - High Availability (HA) agent of Host cannot reach management network addresses
+
+VMware Host critical event is observed - Insufficient resources to satisfy High Availability (HA) failover level on cluster
+
+VMware Host critical event is observed - host license expired
+
+VMware Host critical event is observed - vCenter license expired
+
+VMware Host critical event is observed - Disk corrupt lock
+
+VMware Host critical event is observed - Cluster metadata corruption
+
+VMware Host critical event is observed - vSphere High Availability (HA) agent is not reachable
+
+VMware Host critical event is observed - Datastore permanent lost
+
+VMware Host non critical event is observed - Host unresponsive due to heartbeat issues
+
+VMware Host non critical event is observed - Your VMWare host license expires
+
+VMware Host non critical event is observed - Lost path redundancy to storage device
+
+VMware Host non critical event is observed - Lost uplink redundancy on virtual switch
+
+Patching
+
+Device Group Support for Patch Exclusions. You will soon be able to assign Exclusion rules to Device Groups in addition to Sites and endpoints. This will release on May 31st.
+
+End of Support OS Tickets. We will be sending tickets for Endpoints which are end-of-support from Microsoft and Apple. This will release on May 31st.
+
+End of Support OS Condition Filter. Technicians will be able use the Condition filter to get endpoints which are end-of-support from Microsoft and Apple. This will release on May 31st.
+
+Add Filtering option for the endpoints with Pending reboot status. Technicians will be able use the Condition filter to find endpoints which have patches Pending reboot. Patches pending reboot from Legacy patching will also be listed. This will release on May 31st.
+
+Portal
+
+We are adding the following Antivirus products to the detected list:
+
+Cylance Smart Antivirus
+
+Norton Antivirus Client
+
+Crowdstrike Falcon
+
+Trend Micro Apex One Endpoint Security
+
+Cisco Secure Endpoint
+
+Any endpoints that have the above antivirus solutions installed will be reflected on the Devices page under the Endpoint Protection column. If there is an Antivirus software installed on the endpoint but the Devices page section under the Endpoint protection is not reflecting correctly then please submit a feedback via the UserEcho forum. This will release on May 25th.
+
+Ticketing / PSA Integration
+
+Deactivate the PSA Integration for ConnectWise Manage. You will have the option to deactivate the ConnectWise Manage with the Asio portal. (ITSupport portal). Deactivating the PSA integration will stop pushing any tickets, assets, contacts, or billing sync. This will release on May 25th.
+
+Manage PSA Pause and Resume Functionality for Tickets, Asset Billing and Contact. We are adding a feature to pause the sync on the Asio portal (ITSupport portal) for ConnectWise Manage. The pause feature will allow you to temporarily stop the data sync between the two systems, which helps during the manage on premise server maintenance, or during another activity when there needs to be no transactions with the ConnectWise Manage instance from the Asio Portal. This will release on May 25th.
+
+Bug Fixes
+
+The following issues will be resolved with this month's release:
+
+Control Remote Access: We have resolved a bug where Control was getting stuck in the uninstall and reinstall on the endpoint.
+Control Remote Access: We have resolved a bug where if Control was uninstalled on the endpoint from Add or remove program and opted in from Control portal at later time, it was not installed on the endpoint.
+Monitoring: We have resolved an issue where some of the IntelliMon alerts for hardware were not created on Windows 2022 servers.
+PSA Integration / Ticketing: We have resolved an issue where the billing counts were not updated correctly in the AutoTask.
+PSA Integration / Ticketing: We have resolved an issue where the device counts were updated as Zero to the corresponding agreement in ConnectWise Manage if there are no endpoints monitored by ConnectWise.
+PSA Integration / Ticketing: We have resolved an intermittent issue where the duplicate contacts were created in the ITSupport Portal from AutoTask and ConnectWise Manage when contact sync was enabled.
+PSA Integration / Ticketing: We have resolved an issue where the device counts were incorrectly updated against the server counts when the Desktop machine had a Hyper-V role enabled.
+PSA Integration / Ticketing: We have resolved an issue where some tickets failed to sync with ConnectWise Manage due to the error "failed to acquire lock for ticket id."
+
+Visit Known Issues in the Doc Center for a complete list of all identified issues.
+
+ConnectWise reserves the right to remove any enhancement or fix from this update if it does not pass quality assurance tests.
+
+ 
+
+ConnectWise RMM Update for April 2022 ConnectWise RMM Update for June 2022
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ConnectWise RMM Update for April 2022
+ConnectWise RMM Update for March 2022
+ConnectWise RMM Update for February 2022
+ConnectWise RMM Update for January 2022
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

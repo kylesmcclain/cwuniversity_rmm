@@ -1,0 +1,77 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   RMM Tools   APIs   Automation API   Retrieve Task Summary at Endpoint Level API
+Retrieve Task Summary at Endpoint Level API
+Last updated
+Jul 7, 2025
+Table of contents
+API Name
+API Description
+Request and Response API
+API Name
+
+Retrieve Task Summary at Endpoint Level
+
+API Description
+
+This API allows you to retrieve information on task summary executed at an endpoint level. This represents the Automation tab on Device Details.
+
+Request and Response API
+
+You can find the Request and Response API details at this dev portal.
+
+The API Response will include the following fields:
+
+Field	Description
+executorType	Type of executor responsible for executing the task (e.g., PARTNER)
+EndpointID	Unique identifier for the endpoint associated with the task
+taskInstanceID	Unique identifier for the specific instance of the task
+canBeCancelled	Indicates whether the task can be cancelled
+canBePostponed	Indicates whether the task can be postponed
+createdOn	Date and time when the task instance was created
+description	Description or additional information about the task
+executedOn	Date and time when the task was executed
+executionStatus	Status indicating whether the task execution was successful or failed (e.g., SUCCESS, FAILED)
+modifiedOn	Date and time when the task instance was last modified
+name	Name or title of the task
+nextSchedule	Date and time of the next scheduled execution for the task
+scheduleType	Type of schedule for the task
+regularity	Specifies the regularity of the task
+state	Current state of the task
+taskID	Unique identifier for the task
+TemplateID	Unique identifier for the template associated with the task
+TemplateType	Type of template used for the task
+
+ 
+
+Note: Review the Scheduled Tasks documentation for more information.
+
+ 
+
+Retrieve Task Instance Execution Results API Device Groups API
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Retrieve Global Templates API
+Retrieve Custom Templates API
+Retrieve Fusion Scripts API
+Retrieve all Scheduled Tasks API
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

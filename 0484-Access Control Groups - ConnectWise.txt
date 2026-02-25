@@ -1,0 +1,71 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Secure Information Store   Passwords Tab   Access Control Groups
+Access Control Groups
+Last updated
+Jul 7, 2025
+Table of contents
+Overview
+How to Create Access Control Groups
+How to Edit/Assign Access Control Groups
+Overview
+
+Access Control Groups are groups you create to control user access to sensitive information such as resource passwords and client network data. Access Control manages groups much like Active Directory and Windows domain configurations. Additionally, Access Control Groups allow you to provide access to the NOC team and the Help Desk, if applicable.
+
+Note: With Access Control Groups, you can maintain different access privileges for individual users based on specific areas of the Asio platform. For example, using Access Control Groups, a user defined as an Admin in the Asio platform can have restricted access as a Normal user in the Passwords tab.
+
+Access Control Groups can be applied to other sections of the Secure Information Store, including:
+
+Passwords tab
+Network Information
+How to Create Access Control Groups
+Log in to the Asio platform and navigate to Settings > Setup > RMM > RMM Setup > Sites Using RMM > Select Site and click on the Passwords tab.
+Expand the Access Control Groups section.
+Click on the +New button.
+
+Enter a Group Name. This name is used to identify the Access Group in the Asio platform.
+Enter a description for the group in the Group Description field (optional).
+Assign users to the Group by checking users in the Admin Users and Normal Users columns.
+Click Save to create the Access Control Group.
+
+Note: A user who is defined as a User in the Asio platform cannot be added to the Passwords tab as either a Normal or Admin user.
+
+How to Edit/Assign Access Control Groups
+
+When credentials are configured, you can edit Access Control Groups or enable permissions for different functions.
+
+To edit groups or assign permissions:
+
+Log in to the Asio platform and navigate to Settings > Setup > RMM > RMM Setup > Sites Using RMM > Select Site and click on the Passwords tab.
+Expand the Server Passwords section.
+Select the Account and click Access Control.
+
+Check the group or user(s) to enable and click Save.
+
+Pre-Defined and Custom Application Passwords Custom Passwords and Properties
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Server and Desktop Passwords
+How to Change a Server Password
+Lights Out Management Passwords
+Pre-Defined and Custom Application Passwords
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

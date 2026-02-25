@@ -1,0 +1,282 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   RMM Dashboard
+RMM Dashboard
+Last updated
+Oct 21, 2025
+Overview
+
+The ConnectWise RMM dashboard provides a centralized view of all of your clients' networks and devices, giving you real-time visibility into the performance and status of these systems. This allows you to quickly identify and resolve issues before they become major problems.
+
+The RMM dashboard is located under  Dashboards > RMM.
+
+
+
+
+User Access
+
+Refer to the table below for details about default application role access to the RMM Dashboard. To grant access to this dashboard, assign RMM Dashboard permissions to the user application role. The total devices shown depends on the user's permission and resource assignment.
+
+RMM Dashboard
+
+Application Role >
+
+	
+
+Super Admin
+
+	
+
+Manager
+
+	
+
+Technician
+
+	
+
+Office Staff
+
+	
+
+Sales
+
+	
+
+Client Site Manager
+
+
+
+
+RMM
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+OFF
+
+	
+
+OFF
+
+Prerequisites
+The Company/Site feature must be enabled
+Permissions/access to the RMM Dashboard 
+Resource assignments
+Using the RMM Dashboard
+Filters
+
+The RMM Dashboard consists of two global filters, Companies and Sites. You can apply these filters to update and refresh the entire dashboard:
+
+Navigate to Dashboards > RMM.
+Click Filters.
+
+ 
+Select a Company. Optionally, select a Site to narrow down your results. You can select multiple companies and sites.
+
+Click Show Results to populate the dashboard with your results.
+Refresh
+
+You can click on the refresh button, and the information in the dashboard will be refreshed without losing the applied filters. The page also displays the last refresh time.
+
+
+Dashboard Pods
+
+RMM Dashboard has the following pods available in the system to display a holistic view of the data and information on a single page.
+
+Workstations and Servers
+
+The Workstations and Servers pod displays the number the managed endpoints by your RMM. It consists of the Windows PC, Windows Server, Mac, Linux Server, and VMWare Devices. Data for the managed devices is fetched in real time to display on the pod. The total devices shown depends on the user's permission and resource assignment.
+
+Drilldown
+
+Click on the counts for the different devices to be redirected to the Devices page with the appropriate filters applied. This will display all of the devices that are found in those counts.
+
+Network Devices
+
+The Network Devices pod lists all of the managed network endpoints by your RMM using the Network Monitoring feature. It consists of the routers, switches, firewalls, generic network devices, and other network monitors. Data for the managed devices is fetched in real time to display on the pod. The total devices shown depends on the user's permission and resource assignment.
+
+Drilldown
+
+Click on the counts for the different network devices to be redirected to the Network devices page with the appropriate filters applied. This will display all of the devices that are found in those counts.
+
+Cloud Devices
+
+The Cloud Devices pod lists all of the managed cloud infrastructure endpoints in your RMM using Cloud Monitoring and displays their status. Data for the managed devices is fetched in real time and displayed on the pod. The total number of devices shown depends on the user's permission and resource assignment.
+
+Drilldown
+
+By clicking on the counts for the different cloud devices, you will be redirected to the Cloud devices page with the appropriate filters applied. This will display all of the devices that are found in those counts.
+
+Workstation Status
+
+The Workstation Status pod lists all of the workstation endpoints managed by your RMM and their online or offline status. The data is broken into graphs based on the workstation OS type (Windows or macOS). Data for the managed devices' availability is fetched in real time and is displayed in the pod. The total devices shown depends on the user's permission and resource assignment.
+
+
+Drilldown
+Click on the counts on the percentage chart.
+You are redirected to the Devices page with appropriate filters applied. This will display the devices that make up the Workstation Status percentage.
+
+Workstation Patching Compliance
+
+The Workstation Patching Compliance pod lists displays the patch compliance status of the workstation endpoints managed by your RMM. It displays the status of your Windows Desktop and macOs endpoints. Data for this pod is fetched in real time. The chart is broken into different sections based on how compliant your endpoints are. You can select the different percentages to filter them in your chart. 
+
+
+More Options
+
+In the right corner of the pod, click the icon to open a drop-down menu with the following options:
+
+View in full screen
+Download image
+Download file
+View data
+Drilldown
+
+Click a percentage on the chart to be redirected to the Devices page with the appropriate filters applied. This will display all of the devices that fall under that percentage of compliance.
+
+Workstation Reboot 
+
+The Workstation Reboot pod lists workstation endpoints requiring a reboot. It displays the status of the endpoint for Windows Desktop if there is a reboot pending. Data is fetched in real-time. The total devices shown depends on the user's permission and resource assignment.
+
+
+More Options 
+
+In the right corner of the pod, click the icon to open a drop-down menu with the following options:
+
+View in full screen
+Download image
+Download file
+View data
+Drilldown
+
+Click on the percentage in the pod to be redirected to the Devices page with the appropriate filters applied. This will display all of the devices that fall under needing to be rebooted.
+
+Server Status
+
+The Server Status pod lists all of the server endpoints managed by your RMM and their online or offline status.  It displays the statuses of endpoint for Windows Server, Linux, and VMWare servers. Data for these managed devices' availability is fetched in real time to display on the pod. The total devices shown depends on the user's permission and resource assignment.
+
+
+Drilldown
+
+Click on the counts in the pod to be redirected to the Devices page with appropriate filters applied. This will display all of the devices that make up that percentage.
+
+Server Patching Compliance
+
+The Server Patching Compliance pod lists the patch compliance status of the server endpoints managed by your RMM. It displays the status of your Windows Servers. Data for this pod is fetched in real time. The chart is broken into different sections based on how compliant your endpoints are. You can select the different percentages to filter them in your chart. 
+
+More Options 
+
+In the right corner of the pod, click the icon to open a drop-down menu with the following options:
+
+View in full screen
+Download image
+Download file
+View data
+Drilldown
+
+Click on a percentage in this pod to be redirected to the Devices page with the appropriate filters applied. This will display all of the devices that fall under that percentage of compliance.
+
+Server Reboot
+
+The Server Reboot pod displays a gauge of server endpoints with a pending reboot. It displays the status of Windows server endpoints if there is a reboot pending. Data is fetched in real time. The total devices shown depends on the user's permission and resource assignment.
+
+More Options  
+
+In the right corner of the pod, click the icon to open a drop-down menu with the following options:
+
+View in full screen
+Download image
+Download file
+View data
+Drilldown 
+
+By clicking on the chart from the pod or the full screen, you will be redirected to the Devices page with the appropriate filters applied. This will display all of the devices that fall under needing to be rebooted.
+
+OS End of Support
+
+The OS End of support pod will list all the server and workstation endpoints that are at the OS end of support. It displays the status of the Windows Desktop endpoints and Windows Server endpoints. Data for the OS End of support is fetched in real time. The total devices shown depends on the user's permission and resource assignment.
+
+
+More Options   
+
+In the right corner of the pod, click the icon to open a drop-down menu with the following options:
+
+View in full screen
+Download image
+Download file
+View data
+Drilldown  
+
+Click on the percentage in the pod to be redirected to the Devices page with the appropriate filters applied. This will display all of the devices that fall under End of Support.
+
+Endpoint Protection
+
+The Endpoint protection pod will list all of your Server and Workstation endpoints and their endpoint protection status. It will display the status of Windows Server, Windows Desktop, and macOS endpoints. Data is fetched in real time. The total devices shown depends on the user's permission and resource assignment.
+
+More Options    
+
+In the right corner of the pod, click the icon to open a drop-down menu with the following options:
+
+View in full screen
+Download image
+Download file
+View data
+Application Updates
+
+The Application Updates pod lists all of the server and workstation endpoints and the status of third-party patching based on the policy enabled. It displays the status of Windows Server, Windows desktop, and macOS endpoints. Data is fetched in real time. The total devices shown depends on the user's permission and resource assignment.
+
+More Options     
+
+In the right corner of the pod, click the icon to open a drop-down menu with the following options:
+
+View in full screen
+Download image
+Download file
+View data
+Drilldown    
+
+Click on a status in the pod to be redirected to the Devices page with the appropriate filters applied. This will display all of the devices that fall under third-party patching.
+
+SQL Server Assessment Tool RMM Reporting API
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Command for Networks
+Secure Information Store
+Tech Advantage
+ConnectWise RMM Site Map
+Here is the list of all available ConnectWise RMM articles.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

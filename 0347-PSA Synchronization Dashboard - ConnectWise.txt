@@ -1,0 +1,58 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   PSA Integration   PSA Synchronization Dashboard
+PSA Synchronization Dashboard
+Last updated
+Oct 18, 2024
+Table of contents
+No headers
+
+The PSA synchronization dashboard displays any problem that might have occurred while synchronizing the information from the ConnectWise Asio™ platform (ITSupport Portal) ticketing system to your PSA system. PSA Synchronization is viewable from the ITSupport portal landing page Dashboard under the New Ticket section. Click Ticketing Status under the New Ticket section to see if PSA Synchronization is available. 
+
+If the synchronization is successful, a  icon will appear. If there was an error in PSA Synchronization, a  icon will appear. 
+
+Click the PSA synchronization link or status icon to display synchronization details.
+
+The following columns are shown:
+
+Site Name: Shows the name of the site.
+Transaction Type: Displays the mode of the transaction.
+Ticket ID: Shows the ticket ID comprised of date and unique ticket-Id.
+Ticket Subject: Displays the exact subject of the ticket.
+Error Description: Describes the error encountered.
+Ticket Notes: Offers a detailed description of issues. This feature was added to allow NOC notes into ConnectWise tickets such as problem description, internal analysis or resolution.  You can choose where to place the NOC notes.  
+Site Time Zone: Shows the time zone assigned to the site in the Asio™ Platform (ITSupport Portal) (Admin → Sites).
+Issues Observed On: Displays the date the issue was raised.
+
+ 
+
+Note: Partners can add defined alerts for additional monitoring of specific applications, services, and events. Partner-defined monitoring alerts added for applications/services create a ticket that appears in the tickets tab and syncs with any applicable PSA. Partner-defined alerts added for events or for performance monitoring do not create a ticket, but any user configured in the Notification Template assigned to the Site is notified via email.
+
+Public Ticketing API User Acceptance Test Tigerpaw Integration
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ConnectWise PSA (Manage) Integration
+ConnectWise RMM features the ability to integrate with the ConnectWise PSA system to sync tickets, assets, configuration items, billing data, and cont...
+Autotask Integration Guide
+Accelo Integration Guide
+Promys Integration Guide
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

@@ -1,0 +1,63 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   RMM - Network Assessment   Client Connector Tool
+Client Connector Tool
+Last updated
+Jul 10, 2025
+Table of contents
+Overview
+How to Order Client Connector Tool
+Set Up and Run the Client Connector
+Typical Use Case
+Overview
+
+The Network Assessment's Client Connector Tool is an add-on designed to be used in conjunction with the various Network Assessment data collectors to automate the regular or periodic collection of network data from multiple client sites and make the resultant scans available for download directly in the Network Detective application. The automation of scanning and uploading can be done using Windows Task Scheduler or your RMM scripting engine.
+
+
+How to Order Client Connector Tool
+
+In the Asio™ platform:
+
+Navigate to Settings > Account Administration > Products & Services > Network Assessment Tool > Client Connector Tool.
+If you previously installed a Network Assessment Tool, select the Client Connector Tool and click Update Account. If this is your first time activating a Network Assessment Tool, select the Basic Package, then select Client Connector Tool and click Activate Account.
+Set Up and Run the Client Connector
+
+Detailed instructions on setting up and running the Client Connector Tool are provided in the following RapidFire user guides. Some initial setup steps may not apply when this tool is downloaded from ConnectWise's Asio platform.
+
+Network Detective Client Connector User Guide
+Network Detective User Guide
+Typical Use Case
+
+The typical use case for the Client Connector involves four steps:
+
+Download and unzip the Network Data Collector (NDDC) and the Client Connector on the target computer. You can do this manually or via your monitoring or RMM Tool.
+Create a script or.CMD file to execute the NDDC via command line, and upon successful execution, the script should then call the Client Connector with the Connector ID to upload the file or directory (see example in command line options section).
+Set up either a task scheduler, such as Windows Task Scheduler, to run the script/.CMD on the desired schedule (e.g.-Quarterly) or program your RMM to perform the tasks.
+Run the Network Detective application. Go to the Client Connectors tab and select the Connector you referenced in your script. Double-click to download the files from the cloud.  You will be prompted to use the files to generate a report.
+Advanced Configuration Network Assessment Tool Exchange Assessment Tool
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+PCI Compliance Module
+Network Data Collector
+Advanced Configuration Network Assessment Tool
+HIPAA Compliance Module
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

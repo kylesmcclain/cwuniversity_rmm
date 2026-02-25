@@ -1,0 +1,80 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Reports   Asio Reports   Technical Details Reports   Installed Software Count Report
+Installed Software Count Report
+Last updated
+Sep 22, 2025
+Table of contents
+Overview
+User Access to Reports
+Installed Software Count Report Details
+Overview
+
+This report displays how many resources have a particular application installed.
+
+  To locate this screen, navigate to Reports > Asio > Detailed Reports > Technical Details > Installed Software Count Report.
+
+User Access to Reports
+
+Confirm user access and permissions to view this report. The following default roles have access to this report:
+
+Report	Manager	Technician	Office Staff	Sales	Client Site Manager
+Installed Software Count Report	No	Yes	Yes	Yes	Yes
+
+This additional step allows you to enable or disable access to specific reports for different user roles, giving you more control over which reports are accessible to each role.
+
+To control the visibility of endpoints on reports, you can manage site access for users. The visibility of endpoints on reports will be based on the user's permissions to sites. By controlling site access, you can determine which endpoints are visible to each user.
+
+Installed Software Count Report Details
+
+The details that the report covers are:
+
+Site Name
+Application Name
+Publisher
+Windows Desktops
+Windows Server
+MAC Desktops
+Linux Servers
+
+The report is blank initially, as shown here:
+
+To generate the report:
+
+Select Company Name from Select Company drop-down.
+Select Site Name from Select Site drop-down and click Show Results.
+The report is generated as shown below:
+
+The tools at the top right of the report allow you to filter or search for this information. You can also download the report as a CSV.
+
+Note: This report is refreshed every eight hours.
+
+ 
+
+Installed Software Change Report Installed Software Report
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Asset Change Report
+Disk Space Report
+Installed Software Change Report
+Installed Software Report
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

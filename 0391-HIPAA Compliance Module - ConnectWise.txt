@@ -1,0 +1,138 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   RMM - Network Assessment   HIPAA Compliance Module
+HIPAA Compliance Module
+Last updated
+Jul 9, 2025
+Table of contents
+Overview
+Order the HIPAA Compliance Tool
+HIPAA Compliance Overview
+What the HIPAA Compliance Module Offers
+How the HIPAA Compliance Module Works
+A. Initial Data Collection
+B. Get Secondary Data
+C. Document Exceptions
+Branded HIPAA Compliance Reports
+HIPAA Documents and Reports You Can Generate
+Overview
+
+The HIPAA Compliance Module of the Network Assessment Tool allows automatic generation of the key documents necessary to demonstrate compliance with the HIPAA Security Rule. It includes comprehensive checklists that cover the Administrative, Physical, and Technical safeguards defined in the HIPAA Security Rule.
+
+Note: You must be running Network Detective 2.2.1175.1 or later to access the HIPAA Compliance tool.
+
+Order the HIPAA Compliance Tool
+
+In the Asio™ platform, go to Settings > Account Administration > Products & Services > Network Assessment Tool > HIPAA Compliance Module. If you previously installed a Network Assessment Tool, select the HIPAA Compliance Module and click Update Account. If this is your first time activating a Network Assessment tool, select the Basic Package, then select HIPAA Compliance Module and click Activate Account.
+
+HIPAA Compliance Overview
+
+The Health Insurance Portability and Accountability Act (HIPAA) includes a set of national standards or rules for electronic health care transactions and code sets and unique health identifiers to protect the privacy and security of individuals' health information. Professionals are required to demonstrate compliance with HIPAA standards by producing compliance assessments and reports, such as a Risk Assessment report for the HIPAA Security Rule. The Risk Assessment must identify vulnerabilities to the security of electronic Protected Health Information (ePHI), including the likelihood and the impact if threats occur.
+
+For more information, visit HIPAA for Professionals on the HHS website.
+
+What the HIPAA Compliance Module Offers
+
+Network Assessment’s HIPAA Compliance module is the first professional tool to combine and integrate automated data collection with a structured framework for collecting supplemental assessment information not available through automated tools. It is the first solution to allow the automatic generation of the key documents necessary to demonstrate compliance with the Security Rule and includes comprehensive checklists that cover the Administrative, Physical, and Technical safeguards defined in the HIPAA Security Rule. More than just documents to satisfy a compliance requirement, Network Assessment provides factual evidence, expert advice, and direction to minimize or eliminate the risk of a data breach.
+
+You can compare Network Assessment’s HIPAA Compliance module to getting a medical exam. Network Assessment automates the ‘lab tests’ for the technology environment. It includes interview questionnaires to gather information manually, and it provides a recommended treatment plan.
+
+How the HIPAA Compliance Module Works
+
+Network Detective HIPAA Compliance Module is composed of the HIPAA Data Collector, Network Detective Application, Surveys, Worksheets, and the HIPAA Push Deploy Tool. The process to create a HIPAA assessment involves the following three major steps:
+
+A. Initial Data Collection
+
+One of the most challenging aspects of performing a valid comprehensive HIPAA Assessment is gathering and organizing the vast amount of data that must be collected from a variety of sources. Network Detective provides a central repository to safely and securely collect the information. First conduct a Site Interview to obtain answers to a series of pre-established questions. Network Detective includes a built-in, printable site interview questionnaire, or you can type the answers directly into the HIPAA Risk Assessment Engine.
+
+Next, conduct an on-site survey to personally observe the environment, take photographs, and check on a range of security policies. Network Detective includes a comprehensive checklist of things to look for and a place to record answers and upload images.
+
+While conducting your on-site survey, run the non-invasive Network Detective local HIPAA scanner on each office PC. This scanner runs directly from a single memory stick, and the results of all individual scans are automatically collated back into your master report. Additionally, you will kick off an External Vulnerability Scan.
+
+B. Get Secondary Data
+
+Once you have gathered the initial data and uploaded it all into the Network Detective HIPAA Risk Assessment Engine, work with your client (or organization) to complete three worksheets–a User Identification Worksheet, a Computer Identification Worksheet, and a Share Identification Worksheet. These worksheets are built automatically by the HIPAA Risk Assessment Engine once you import the automated collections. Data is then automatically cross-correlated with the data collected by the Network Detective data collector to ensure there are no anomalies.
+
+C. Document Exceptions
+
+At this point in the process, generate a Security Exception Worksheet, listing identified issues. Be sure to note any exceptions and add further explanations to complete the worksheet. Now all information gathered by you and your team is ready to be crunched, analyzed, and organized into a set of official HIPAA Compliance reports and documents.
+
+Branded HIPAA Compliance Reports
+
+As part of the HIPAA Compliance process, this module allows you to generate all of the documents needed to ensure that your clients are in compliance with the security provisions of HIPAA, including the customized interim worksheets that guide you through the data-collection process and the final branded reports that will be your HIPAA compliance deliverables.
+
+All Network Detective subscriptions include an Enhanced Branding Package, which allows you to control the overall look-and-feel of the reports generated. With the Enhanced Branding package, you can:
+
+Personalize the reports with your company name and logo.
+Change the accent colors to match your own company standards.
+Select from a number of pre-designed report templates.
+Embellish your reports with photos and images from the pre-screened, royalty-free library.
+HIPAA Documents and Reports You Can Generate
+Document	Description	Sample (click to view)
+HIPAA Policies & Procedures	
+
+The Policy and Procedures are the best practices that our industry experts have formulated to comply with the technical requirements of the HIPAA Security Rule. The policies spell out what your organization will do while the procedures detail how you will do it.
+
+In the event of an audit, the first thing an auditor will inspect are the Policies and Procedures documentation. This is more than a suggested way of doing business. The Policies and Procedures have been carefully thought out and vetted, referencing specific code sections in the Security Rule and supported by the other reports included with the HIPAA Compliance module.
+
+	
+HIPAA Risk Analysis	
+
+HIPAA is a risk-based security framework, and the production of a Risk Analysis is one of primary requirements of the HIPAA Security Rule's Administrative Safeguards. In fact, a Risk Analysis is the foundation for the entire security program. It identifies the locations of electronic Protected Health Information (ePHI) vulnerabilities to the security of the data, threats that might act on the vulnerabilities, and estimates both the likelihood and the impact of a threat acting on a vulnerability.
+
+The Risk Analysis helps HIPAA-Covered Entities and Business Associates identify the locations of their protected data and how the data moves within, and in and out of, the organization. It identifies what protections are in place and where more are needed. The Risk Analysis results in a list of items that must be remediated to ensure the security and confidentiality of ePHI.
+
+The value of a Risk Analysis cannot be overstated. Every major data breach enforcement of HIPAA, some with penalties over $1 million, have cited the absence of, or an ineffective, Risk Analysis as the underlying cause of the data breach. The Risk Analysis must be run or updated at least annually, more often if anything significant changes that could affect ePHI.
+
+	
+HIPAA Risk Profile	A Risk Analysis should be done no less than once a year. However, Network Detective has created an abbreviated version of the Risk Analysis called the HIPAA Risk Profile designed to provide interim reporting in a streamlined and almost completely automated manner. Whether performed monthly or quarterly, the Risk Profile updates the Risk Analysis and documents progress in addressing previously identified risks, finding new risks that may have otherwise been missed and resulted in a data breach.	
+HIPAA Management Plan	Based on the findings in the Risk Analysis, the organization must create a Risk Management Plan with tasks required to minimize, avoid, or respond to risks. Beyond gathering information, Network Detective provides a risk scoring matrix that an organization can use to prioritize risks and appropriately allocate money and resources and ensure that issues identified are issues solved. The Risk Management plan defines the strategies and tactics the organization will use to address its risks.	
+Evidence of HIPAA Compliance	Just performing HIPAA-compliant tasks is not enough. Audits and investigations require evidence that compliant tasks have been carried out and completed. Documentation must be kept for six years. The Evidence of Compliance includes login files, patch analysis, user and computer information, and other source material to support your compliance activities. Ultimately, the proof to proper documentation is accessibility and the detail to satisfy an auditor or investigator included in this report.	
+External Network Vulnerability Scan	Detailed reports showing security holes and warnings and informational items including CVSS scores as scanned from outside the target network. External vulnerabilities could allow a malicious attacker access to the internal network.	
+HIPAA Compliance PowerPoint	Use the generated PowerPoint presentation as a basis for conducting a meeting presenting your findings from the Network Detective. General summary information along with the risk and issue score are presented along with specific issue recommendations and next steps.	
+HIPAA On-Site Survey	The On-site Survey is an extensive list of questions about physical and technical security that cannot be gathered automatically. The survey includes questions ranging from how facility doors are locked, firewall information, how faxes are managed, and whether servers are on-site, in a data center, or in the Cloud.	
+Disk Encryption Report	Encryption is such an effective tool used to protect data that if an encrypted device is lost, it does not have to be reported as a data breach. The Disk Encryption Report identifies each drive and volume across the network, whether it is fixed or removable, and if Encryption is active.	
+File Scan Report	
+
+The underlying cause identified for many data breaches is that the organization did not know that protected data was stored on a device that was lost or stolen. After a breach of 4 million patient records, a hospital executive said, "Based on our policies, that data should not have been on those systems." The File Scan Report identifies data files stored on computers, servers, and storage devices. It does not read or access the files, but just looks at the title and file type.
+
+This report is useful to identify local data files that may not be protected. Based on this information, the risk of a breach could be avoided if the data was moved to a more secure location or be mitigated by encrypting the device to protect the data and avoid a data breach investigation.
+
+	
+User Identification Worksheet	
+
+The User Identification Worksheet takes the list of users gathered by the Data Collector and lets you identify whether they are an employee or vendor. Users who should have been terminated and should have had their access terminated also can be identified. This tool effectively determines if unauthorized users have access to protected information and is a good indicator of the efforts the organization goes to so terminated employees and vendors have their access quickly disabled.
+
+Another benefit is that you can review the user list to identify generic logins, such as Nurse, Billing Office, etc., which are not allowed by HIPAA since each user is required to be uniquely identified. To save time, the system allows you to enter default settings for all users and just change some as needed.
+
+	
+Computer Identification Worksheet	The Computer Identification Worksheet takes the list of computers gathered by the Data Collector and lets you identify those that store or access ePHI. This tool is effective for developing data management strategies including secure storage and encryption. To save time, the system allows you to enter default settings for all computers and just change some as needed.	
+Network Share Identification Worksheet	The Network Share Identification Worksheet takes the list of network shares gathered by the Data Collector and lets you identify those that store or access ePHI. This is an effective tool in developing data management strategies including secure storage and encryption. To save time, the system allows you to enter default settings for all network shares and just change some as needed.	
+HIPAA Supporting Worksheets	A set of individual documents are provided to show detailed information and the raw data that backs up the Evidence of Compliance. These include the various interviews and worksheets as well as detailed data collections on shares and login analysis.	
+Exchange Assessment Tool Network Data Collector
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+PCI Compliance Module
+Network Data Collector
+Advanced Configuration Network Assessment Tool
+Client Connector Tool
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

@@ -1,0 +1,199 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Integrations to ConnectWise RMM   ScreenConnect with RMM   Backstage Mode
+Backstage Mode
+Last updated
+Nov 10, 2021
+Table of contents
+Introduction
+Requirements
+Limitations
+Enter Backstage mode from the host client
+1. Connect to a session
+2.  Select View > Select Logon Session > [Backstage]
+3. Use the start menu and the taskbar to interact with the machine
+Enter Backstage mode directly from the Host page
+1. Right-click on an access session
+2. Select Join with Options
+3. Select [Backstage]
+4. Click Join Session
+Shortcut to Backstage mode from the Host page
+1.  Press Shift+double click on an access session
+2. Select [Backstage]
+3. Click Join Session
+Tips & tricks
+Transfer files using the ScreenConnect File Manager
+Run tools from the Toolbox menu
+Set Backstage mode as default connection type
+Exit Backstage mode
+Auto-consent when accessing Backstage
+Change the start menu icon
+Common CMD prompt commands
+Disable access to Backstage mode
+1. Open the Administration > Security page
+2. Under Roles, find a role to edit and click Edit
+3. Deselect the EnableBackstageLogonSession permission
+4. Select Save Role
+What's next
+Available for these licenses:
+Standard
+Premium
+Access
+Introduction
+
+Backstage mode allows hosts to access a remote machine without disrupting the user. While hosts can run commands from the Host page, Backstage mode provides a simple, time-saving interface to access important troubleshooting tools including:
+
+ScreenConnect File Manager – A custom file explorer that allows for copy-and-paste file transfer
+PowerShell
+Windows command prompt
+Computer Management
+Registry Editor
+Event Viewer
+Services
+Resource Monitor
+System Information
+Windows Defender Firewall
+Notepad
+
+Backstage also includes a search feature and a start menu to browse the existing applications and folders on the machine. Use the taskbar to quickly access installed applications, search, and pinned applications.
+
+Requirements
+
+Note: While we do our best to support end-of-life operating systems, we cannot guarantee successful performance of Backstage in all cases.
+
+You must also have a license that includes the logon session switching feature.
+Backstage mode is only available when you connect to Windows machines with a support or an access session.
+
+The user must have two permissions to enter backstage mode: SwitchLogonSession and EnableBackstageLogonSession.
+
+Limitations
+Backstage mode does not have the full capabilities of a normal user account.
+As this is a limited environment, some programs will not run in Backstage mode.
+We cannot guarantee how applications outside of the CMD and PowerShell windows will respond to running in Backstage mode. 
+The cursor is not visible in the CMD and PowerShell windows.
+Only 20 windows are visible on the taskbar
+If you're unable to scroll in the Powershell window, try adjusting the buffer size.
+Right-click the Powershell icon in the toolbar and select Properties.
+Click the Layout tab.
+Adjust the screen buffer size by increasing the height, width, or both.
+
+Click OK.
+
+ 
+
+Enter Backstage mode from the host client
+1. Connect to a session
+
+Connect to a support session or an access session.
+
+2.  Select View > Select Logon Session > [Backstage]
+
+Enter Backstage mode from the host client's View menu. Under Select Logon Session, select [Backstage].
+
+Note: Switching to Backstage will unblank a guest's screen and unblock the guest's input.
+
+3. Use the start menu and the taskbar to interact with the machine
+
+Note: Using the Advanced Configuration Editor, you can set which programs open automatically in Backstage mode.
+
+Enter Backstage mode directly from the Host page
+1. Right-click on an access session
+2. Select Join with Options
+
+3. Select [Backstage]
+
+4. Click Join Session
+
+ 
+
+Shortcut to Backstage mode from the Host page
+1.  Press Shift+double click on an access session
+2. Select [Backstage]
+
+3. Click Join Session
+
+ 
+
+Tips & tricks
+Transfer files using the ScreenConnect File Manager
+
+To transfer files to a specific directory, open the ScreenConnect File Manager from the toolbar. Navigate to the desired folder, and then copy-and-paste files to and from the file manager window. 
+
+Run tools from the Toolbox menu
+
+Store single executables, such as a file manager or batch file, in your personal or shared toolbox to assist you in Backstage mode.
+
+Set Backstage mode as default connection type
+
+Use the Advanced Configuration Editor to set backstage as the default connection type. When joining a session from the host page, it will automatically connect in Backstage mode.
+
+Exit Backstage mode
+
+To exit Backstage mode, close your session or switch to another logon session from the View menu.
+
+Auto-consent when accessing Backstage
+
+By default, if the consent-to-connect prompt is enabled, a user grants consent, and a technician switches a session to Backstage mode, a technician will not be able to connect. To solve this, administrators can turn on the Auto Consent To Backstage setting in the Advanced Configuration Editor.
+
+Change the start menu icon
+
+If you have uploaded your own image for the resource string ApplicationIcon32, you’ll see your own image for the start menu. If you change your icon later, you’ll need to send a reinstall to the machine, terminate the process ScreenConnect.WindowsBackstageShell.exe on the machine, and then reconnect.
+
+Common CMD prompt commands
+
+Here are some common commands that you can use to open system applications in Backstage mode.
+
+Application	Command
+Computer Management	@start compmgmt
+Disk Cleanup	@start cleanmgr
+Event Viewer	@start eventvwr
+Registry Editor	@start regedit
+Resource Monitor	@start resmon
+User Management	@start lusrmgr
+
+ 
+
+Disable access to Backstage mode
+
+To disable the Backstage feature, remove the EnableBackstageLogonSession permission from a user's role.
+
+1. Open the Administration > Security page
+
+From the Host page, click Admin, and then select Security.
+
+2. Under Roles, find a role to edit and click Edit
+3. Deselect the EnableBackstageLogonSession permission
+4. Select Save Role
+What's next
+
+Learn about some Backstage mode tips and tricks!
+
+ 
+
+Advanced Configuration Editor False positive from antivirus software
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ScreenConnect Installation Status and Error Codes
+Enable or Disable Connection Consent for ScreenConnect
+ScreenConnect Dashboard for RMM
+ScreenConnect 1-Click for RMM
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

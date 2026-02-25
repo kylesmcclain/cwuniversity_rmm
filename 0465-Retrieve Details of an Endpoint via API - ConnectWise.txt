@@ -1,0 +1,1155 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   RMM Tools   APIs   Devices API   Retrieve Details of an Endpoint via API
+Retrieve Details of an Endpoint via API
+Last updated
+Jul 7, 2025
+Table of contents
+Overview
+API Details
+Overview
+
+The Devices APIs retrieve different types of information related to a specific machine or machines belonging to a specific partner or site.
+
+API Details
+
+Below is a list of Devices API that are available within our developer portal for API integration.
+
+Method
+
+	
+
+API
+
+	
+
+Description
+
+	
+
+Parameter Required
+
+	
+
+Parameter Type
+
+
+
+
+GET
+
+	
+
+/api/platform/v1/device/endpoints
+
+	
+
+Get details of devices at a partner level
+
+	
+
+No
+
+	
+
+ 
+
+
+
+
+GET
+
+	
+
+/api/platform/v1/device/clients/{clientID}/endpoints
+
+	
+
+Get details of a devices of a specific company
+
+	
+
+Yes – client ID
+
+	
+
+string
+
+
+
+
+GET
+
+	
+
+/api/platform/v1/device/clients/{clientID}/sites/{siteID}/endpoints
+
+	
+
+Get details of devices of a specific site
+
+	
+
+Yes  - client ID, site ID
+
+	
+
+string
+
+
+
+
+Response Field Descriptions:
+ 
+
+Field Name
+
+	
+
+Description
+
+	
+
+Type
+
+	
+
+Example/Sample value
+
+
+
+
+clientID
+
+	
+
+A unique identifier of a company
+
+	
+
+string
+
+	
+
+436f6d6d-616e-6420-4944-6a200a0a2c75
+
+
+
+
+siteID
+
+	
+
+A unique identifier of a site
+
+	
+
+string
+
+	
+
+436f6d6d-616e-6420-4944-6a200a0a2c75
+
+
+
+
+endpointID
+
+	
+
+A unique identifier of an endpoint
+
+	
+
+string
+
+	
+
+436f6d6d-616e-6420-4944-6a200a0a2c75
+
+
+
+
+endpointType
+
+	
+
+Type of endpoint
+
+	
+
+string
+
+	
+
+“Desktop”, “Server”
+
+
+
+
+osType
+
+	
+
+Type of Operating System
+
+	
+
+string
+
+	
+
+“Windows 10”
+
+ 
+
+
+
+
+GET
+
+	
+
+/api/platform/v1/device/endpoints/{endpointID}
+
+	
+
+Get details of a specific device
+
+	
+
+Yes – endpoint ID
+
+	
+
+string
+
+
+
+
+Response Field Descriptions:
+ 
+
+Field Name
+
+	
+
+Description
+
+	
+
+Type/Format
+
+	
+
+Example/Sample value
+
+
+
+
+createTimeUTC
+
+	
+
+Time stamp of endpoint creation in UTC
+
+	
+
+2023-12-26T17:12:11.994Z
+
+	
+
+2024-09-28T16:41:11.965Z
+
+
+
+
+agentInstalledUTC
+
+	
+
+Timestamp for agent installation date/time in UTC
+
+	
+
+2023-12-26T17:12:11.994Z
+
+	
+
+2024-09-28T16:41:11.965Z
+
+
+
+
+endpointID
+
+	
+
+A unique identifier of an endpoint
+
+	
+
+string
+
+	
+
+436f6d6d-616e-6420-4944-6a200a0a2c75
+
+
+
+
+clientID
+
+	
+
+A unique identifier of a company
+
+	
+
+string
+
+	
+
+436f6d6d-616e-6420-4944-6a200a0a2c75
+
+
+
+
+siteID
+
+	
+
+A unique identifier of a site
+
+ 
+
+	
+
+string
+
+	
+
+436f6d6d-616e-6420-4944-6a200a0a2c75
+
+
+
+
+friendlyName
+
+	
+
+Friendly name for the endpoint
+
+	
+
+string
+
+	
+
+"LAPTOP-123456”,
+
+
+
+
+resourceType
+
+	
+
+Type of resource
+
+	
+
+string
+
+	
+
+“Desktop”
+
+
+
+
+endpointType
+
+	
+
+Type of Endpoint
+
+	
+
+string
+
+	
+
+“Desktop”
+
+
+
+
+rolesFeatures
+
+	
+
+Information about roles and features enabled on the machine. This field contains multiple sub-attributes
+
+	
+
+string
+
+	
+
+"rolesFeatures": [
+
+        "WCF Services",
+
+        "TCP Port Sharing",
+
+        "Media Features",
+
+        "Windows Media Player",
+
+        "Microsoft Print to PDF",
+
+        "Microsoft XPS Document Writer",
+
+        "Windows Search",
+
+        "Remote Differential Compression API Support",
+
+        "Internet Explorer 11",
+
+        "Work Folders Client",
+
+        "Print and Document Services",
+
+        "Internet Printing Client",
+
+        "Windows PowerShell 2.0",
+
+        "Windows PowerShell 2.0 Engine",
+
+        ".NET Framework 3.5 (includes .NET 2.0 and 3.0)",
+
+        ".NET Framework 4.8 Advanced Services"
+
+    ],
+
+
+
+
+baseBoard
+
+	
+
+Information about baseboard. This field contains multiple sub-attributes
+
+	
+
+string
+
+	
+
+"baseBoard": {
+
+        "product": "Lenovo G40-80",
+
+        "manufacturer": "LENOVO",
+
+        "serialNumber": "PF0L4X4D",
+
+        "version": "SDK0J40679 WIN",
+
+        "name": "Base Board",
+
+        "installDate": "0001-01-01T00:00:00Z"
+
+    },
+
+
+
+
+bios
+
+	
+
+BIOS information. This field contains multiple sub-attributes
+
+	
+
+string
+
+	
+
+    "bios": {
+
+        "product": "BIOS Date: 01/08/2016 Ver: B0CN97WW",
+
+        "manufacturer": "LENOVO",
+
+        "version": "B0CN97WW",
+
+        "serialNumber": "PF0L4X4D",
+
+        "smbiosVersion": "2.7"
+
+    },
+
+
+
+
+drives
+
+	
+
+Information about the physical drives on the machine. This field contains multiple sub-attributes
+
+	
+
+string
+
+	
+
+"drives": [
+
+        {
+
+            "product": "ST1000LM024 HN-M101MBB",
+
+            "manufacturer": "(Standard disk drives)",
+
+            "logicalName": "PHYSICALDRIVE0",
+
+            "serialNumber": "S30YJ9EH624233",
+
+            "sizeBytes": 1000204886016,
+
+            "numberOfPartitions": 0,
+
+            "partitionData": [
+
+                {
+
+                    "name": "C:\\",
+
+                    "label": "Windows",
+
+                    "fileSystem": "NTFS",
+
+                    "description": "Local Fixed Disk",
+
+                    "sizeBytes": 951366709248,
+
+                    "writable": "rw.compress",
+
+                    "mountPoint": "C:\\",
+
+                    "dfsize": 0,
+
+                    "freeSpaceBytes": 0,
+
+                    "usedSpaceBytes": 0,
+
+                    "version": "",
+
+                    "vendor": ""
+
+                },
+
+}
+
+
+
+
+physicalMemory
+
+	
+
+Information about the physical memory of the machine. This field contains multiple sub-attributes
+
+	
+
+string
+
+	
+
+"physicalMemory": [
+
+        {
+
+            "manufacturer": "Samsung",
+
+            "serialNumber": "21202223",
+
+            "sizeBytes": 4294967296,
+
+            "totalwidth": 64,
+
+            "datawidth": 64
+
+        }
+
+
+
+
+Networks
+
+	
+
+Network information available on the devices. This field contains multiple sub-attributes
+
+	
+
+ 
+
+	
+
+"networks": [
+
+        {
+
+            "vendor": "Realtek",
+
+            "product": "Realtek PCIe GBE Family Controller",
+
+            "dhcpEnabled": true,
+
+            "dhcpServer": "0.0.0.0",
+
+            "dhcpLeaseObtained": "0001-01-01T00:00:00Z",
+
+            "dhcpLeaseExpires": "0001-01-01T00:00:00Z",
+
+            "ipEnabled": false,
+
+            "ipv4": "0.0.0.0",
+
+            "ipv4List": [
+
+                "0.0.0.0"
+
+            ],
+
+            "ipv6": "::",
+
+            "subnetMask": "0.0.0.0",
+
+            "subnetMasks": [
+
+                "0.0.0.0"
+
+            ],
+
+            "defaultIPGateway": "0.0.0.0",
+
+            "defaultIPGateways": [
+
+                "0.0.0.0"
+
+            ],
+
+            "macAddress": "C8:5B:76:36:6E:8C",
+
+            "winsPrimaryServer": "0.0.0.0",
+
+            "winsSecondaryServer": "0.0.0.0",
+
+            "logicalName": "Realtek PCIe GBE Family Controller",
+
+            "interfaceIndex": 11,
+
+            "speed": 0,
+
+            "dhcpLeaseDuration": 0
+
+        },
+
+
+
+
+Os
+
+	
+
+Current Operating system of the machine. This field contains multiple sub-attributes
+
+	
+
+string
+
+	
+
+"os": {
+
+        "product": "Windows 10 Home Single Language",
+
+        "manufacturer": "Microsoft Corporation",
+
+        "osLanguage": "English (India)",
+
+        "serialNumber": "00327-30407-66427-AAOEM",
+
+        "version": "10.0.19045",
+
+        "installDate": "2024-08-11T07:38:27Z",
+
+        "type": "windows",
+
+        "arch": "64-bit",
+
+        "servicePack": "",
+
+        "osInstalledDrive": "C:",
+
+        "buildNumber": "19045",
+
+        "productID": "00327-30407-66427-AAOEM",
+
+        "productKey": "9NTGG-QF28R-472YT-JXQCR-YTDFC",
+
+        "releaseID": "2009",
+
+        "displayVersion": "22H2",
+
+        "installationType": "Client"
+
+    },
+
+
+
+
+Processors
+
+	
+
+The processor of the machine. This field contains multiple sub-attributes.
+
+	
+
+string
+
+	
+
+"processors": [
+
+        {
+
+            "product": "Intel(R) Core(TM) i3-5005U CPU @ 2.00GHz",
+
+            "numberOfProcessors": 1,
+
+            "numberOfCores": 2,
+
+            "clockSpeedMhz": 1995,
+
+            "family": 206,
+
+            "manufacturer": "Intel",
+
+            "processorType": "Central Processor",
+
+            "level": 6,
+
+            "numberOfLogicalProcessors": 4,
+
+            "version": ""
+
+        }
+
+
+
+
+raidController
+
+	
+
+Information about raid controllers. This field contains multiple sub-attributes
+
+	
+
+string
+
+	
+
+ 
+
+
+
+
+system
+
+	
+
+Entire system information. This field contains multiple sub-attributes
+
+	
+
+string
+
+	
+
+"system": {
+
+        "product": "LENOVO",
+
+        "model": "80E4",
+
+        "timeZone": "+0530",
+
+        "timeZoneDescription": "IST",
+
+        "serialNumber": "PF0L4X4D",
+
+        "systemName": "LAPTOP-AE5MBVKQ",
+
+        "domain": "WORKGROUP",
+
+        "domainRole": 0,
+
+        "chassisTypes": [
+
+            10
+
+        ],
+
+        "chassis": "Laptop",
+
+        "hypervisorName": "",
+
+        "timeZoneLocation": "Asia/Calcutta"
+
+    },
+
+
+
+
+installedSoftware
+
+	
+
+List of installed softwares on the machine. This field contains multiple sub-attributes
+
+	
+
+string
+
+	
+
+"installedSoftwares": [
+
+        {
+
+            "name": "Adobe Acrobat Reader",
+
+            "publisher": "Adobe Systems Incorporated",
+
+            "version": "24.003.20112",
+
+            "installDate": "2024-09-18T00:00:00Z",
+
+            "userName": "Everyone",
+
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+
+        },
+
+
+
+
+Keyboards
+
+	
+
+Information about the keyboard connected to the machine. This field contains multiple sub-attributes
+
+	
+
+string
+
+	
+
+"keyboards": [
+
+        {
+
+            "deviceID": "ACPI\\IDEA0100\\4&402BD3E&0",
+
+            "name": "Standard PS/2 Keyboard",
+
+            "description": "Standard PS/2 Keyboard"
+
+        }
+
+ 
+
+
+
+
+Mouse
+
+	
+
+Information about the mouse connected to the machine. This field contains multiple sub-attributes
+
+	
+
+string
+
+	
+
+"mouse": [
+
+        {
+
+            "manufacturer": "ELAN",
+
+            "name": "ELAN pointing device",
+
+            "deviceId": "ACPI\\ETD0623\\4&402BD3E&0",
+
+            "deviceInterface": 4,
+
+            "pointingType": 3,
+
+            "buttons": 0
+
+        }
+
+
+
+
+Monitors
+
+	
+
+Information about the monitor connected to the machine. This field contains multiple sub-attributes
+
+	
+
+string
+
+	
+
+"monitors": [
+
+        {
+
+            "name": "Generic PnP Monitor",
+
+            "deviceID": "DISPLAY\\AUO323C\\4&179E531B&0&UID265988",
+
+            "manufacturer": "(Standard monitor types)",
+
+            "screenHeight": 768,
+
+            "screenWidth": 1024
+
+        }
+
+
+
+
+Physicaldrive
+
+	
+
+List and information about the physical drives connected to the machine. This field contains multiple sub-attributes
+
+	
+
+ 
+
+	
+
+ 
+
+
+
+
+Users
+
+	
+
+Information about the users having access to the machine. This field contains multiple sub-attributes
+
+	
+
+ 
+
+	
+
+"users": [
+
+        {
+
+            "userid": "S-1-5-21-333614971-1097959036-752736501-500",
+
+            "username": "Administrator",
+
+            "domainName": "LAPTOP-AE5MBVKQ",
+
+            "userType": "Administrator",
+
+            "userDisabled": true,
+
+            "userLockout": false,
+
+            "passwordRequired": true,
+
+            "passwordChangeable": true,
+
+            "passwordExpires": false,
+
+            "passwordComplexityEnabled": false,
+
+            "remoteDesktopAllowed": false,
+
+            "lockoutThreshold": 0,
+
+            "lockoutDurationMins": 0,
+
+            "lastLogonTimestamp": 0,
+
+            "remoteAccessAllowed": false
+
+        },
+
+ 
+
+
+
+
+Services
+
+	
+
+List and information about the services running on the machine. This field contains multiple sub-attributes
+
+	
+
+string
+
+	
+
+"services": [
+
+        {
+
+            "serviceName": "AJRouter",
+
+            "displayName": "AllJoyn Router Service",
+
+            "executablePath": "C:\\WINDOWS\\system32\\svchost.exe -k LocalServiceNetworkRestricted -p",
+
+            "startupType": "Manual",
+
+            "isNewService": false,
+
+            "serviceStatus": "Stopped",
+
+            "logOnAs": "NT AUTHORITY\\LocalService",
+
+            "stopEnableAction": false,
+
+            "delayedAutoStart": false,
+
+            "win32ExitCode": 1077,
+
+            "serviceSpecificExitCode": 1077,
+
+            "winServiceType": 0
+
+        },
+
+
+
+
+shares
+
+	
+
+List and information about the different shares on the machine. This field contains multiple sub-attributes
+
+	
+
+string
+
+	
+
+"shares": [
+
+        {
+
+            "name": "ADMIN$",
+
+            "caption": "Remote Admin",
+
+            "description": "Remote Admin",
+
+            "path": "C:\\WINDOWS",
+
+            "type": [
+
+                "Disk Drive Admin"
+
+            ]
+
+        },
+
+
+
+
+softwareLicenses
+
+	
+
+List and information about the product licenses. This field contains multiple sub-attributes
+
+	
+
+ 
+
+	
+
+"softwareLicenses": [
+
+        {
+
+            "productName": "Internet Explorer",
+
+            "productID": "00327-30407-66427-AAOEM",
+
+            "productKey": "9NTGG-QF28R-472YT-JXQCR-YTDFC"
+
+        }
+
+ 
+
+
+Note: The response fields fetched by this API are not limited to only these. Based on your machine, the response fields and attributes may vary.
+
+Offboard/Uninstall Agent via API Retrieve Last Logged on User Information on an Endpoint via API
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Retrieve Last Logged on User Information on an Endpoint via API
+Offboard/Uninstall Agent via API
+Exposed API for Generate Token
+Device Summary API – Retrieve All Endpoint Devices
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

@@ -1,0 +1,100 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Integrations to ConnectWise RMM   ScreenConnect with RMM   ScreenConnect 1-Click for RMM
+ScreenConnect 1-Click for RMM
+Last updated
+Nov 13, 2024
+Table of contents
+Overview
+1-Click for ConnectWise RMM
+Minimum OS Product Requirements
+How to enable ScreenConnect 1-Click
+Overview
+
+ScreenConnect 1-click enables you to connect to the remote servers and desktops without re-entering login credentials through a single click of the ScreenConnect icon.
+
+1-Click for ConnectWise RMM
+
+Sites can be opted-in for 1-click connection via Endpoints > Polices > select your Remote Access policy.
+
+Note: You can review the ScreenConnect Integration with ConnectWise RMM article for information on creating this policy if needed.
+
+Under the Remote Access Settings section, enable ScreenConnect 1-Click for Server, for Desktop, or for both.
+
+Click Save.
+
+Once a site is opted-in, 1-click connection will use server or desktop-specific login credentials stored in the site-level Passwords tab. If these credentials are unavailable, Automatic Server or Desktop Credentials will be used if enabled for the site. If neither of these server or desktop credential types are available, 1-click connection will not function, and the server-specific credentials will need to be manually entered to access ScreenConnect.
+
+If multiple sets of credentials with user access are located in the site's Passwords tab, ScreenConnect 1-click will not function and the technician will be required to enter credentials.
+
+Note: When credentials are configured, a user must have appropriate permissions set up through Access Control. A command gets executed in the backend if 1-Click option is enabled during the process of login.
+
+Auto Log-on Is Performed Using:	Server or Desktop login credentials available in Passwords tab	Automatic Server or Desktop Credentials available	Site is Opted-In for 1-Click Connect Feature
+Credentials in Passwords tab.			
+Automatic Server or Desktop Credentials.	 		
+Credentials in Passwords tab.		 	
+No auto log-on. Credentials must be manually entered.	 	 	
+
+ 
+
+Minimum OS Product Requirements
+Minimum supported client - Windows Vista [desktop apps only].
+Minimum supported server - Windows Server 2008 [desktop apps only].
+How to enable ScreenConnect 1-Click
+
+Sites can be opted-in for 1-click connection via Endpoints > Polices > select your Remote Access policy.
+
+Note: You can review the  ScreenConnect Integration with ConnectWise RMM article for information on creating this policy.
+
+Under the Remote Access Settings section, enable ScreenConnect 1-Click for Server, for Desktop, or for both.
+
+Click Save.
+
+Once a site is opted-in, 1-click connection will use server or desktop-specific login credentials stored in the site-level Passwords tab. If these credentials are not available, Automatic Server or Desktop Credentials will be used if enabled for the site. If neither of these server or desktop credential types are available, 1-click connection will not function, and the server-specific credentials will need to be manually entered to access ScreenConnect .
+
+If multiple sets of credentials with user access are located in the site's Passwords tab, ScreenConnect 1-click will not function and the technician will be required to enter credentials.
+
+Caution: When credentials are configured, a user must have appropriate permissions set up through Access Control. Visit Access Control Groups for details on creating and enabling a technician’s access.
+
+Auto Log-on Is Performed Using:	Server or Desktop login credentials available in Passwords tab	Automatic Server or Desktop Credentials available	Site is Opted-In for 1-Click Connect Feature
+Credentials in Passwords tab.			
+Automatic Server or Desktop Credentials.	 		
+Credentials in Passwords tab.		 	
+No auto log-on. Credentials must be manually entered.	 	 	
+
+Important: The 1-Click framework has the following minimum OS Product requirements:
+
+Minimum supported client	Windows Vista [desktop apps only]
+Minimum supported server	
+
+Windows Server 2008 [desktop apps only]
+
+The OS which are below than the above-mentioned OS will not support 1-Click framework.
+
+Remote View ScreenConnect Dashboard for RMM
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ScreenConnect Installation Status and Error Codes
+Enable or Disable Connection Consent for ScreenConnect
+ScreenConnect Dashboard for RMM
+ScreenConnect Integration for ConnectWise RMM
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

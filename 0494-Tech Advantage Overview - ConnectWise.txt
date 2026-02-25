@@ -1,0 +1,654 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Tech Advantage   Tech Advantage Overview
+Tech Advantage Overview
+Last updated
+Oct 1, 2024
+Table of contents
+Tech Advantage Overview
+Standard Projects
+Custom Projects
+Popular Projects
+Server Projects
+Desktop Projects
+Cloud-Based Projects
+Getting Started
+Steps to a Successful Tech Advantage Project
+Tech Advantage Desktop Projects
+How to Request a Standard Desktop Project
+Standard Desktop Projects
+Step 1: Select Desktops
+Step II - Select schedule
+Step III - Confirmation
+When Your Project Work Is Complete
+How to Request a Custom Desktop Project
+Custom Desktop Projects
+Tech Advantage Desktop Projects: Tips and Best Practices
+Desktop Project Prerequisites
+Tips and Best Practices for Ensuring a Successful Desktop Project
+TIP 1: Select the Project Type That is the Best Fit
+TIP 2: Order Your Project Well in Advance of the Date You Want the Work to Be Performed
+Additional Notes
+TIP 3: Provide Off-Hours and Backup Contact Details
+TIP 4: Set Necessary Client Expectations Before Your Project Begins
+Additional Notes and Guidelines
+Price Quotes for Custom Desktop Projects
+Client Involvement in Your Desktop Project
+Concerns or Escalation Management
+Desktop Project Closure and Billing
+Rejecting a Project
+Contacting the Desktop Projects Team
+Tech Advantage Server Projects
+How to Request a Standard Server Project
+Server Project Notes and Disclaimers
+Cost Adjustment if Third-Party Tools Are Required for Your Project
+Partial Advance Payment for Projects Estimated at $5000 and Above
+Partner Review Period
+Project Invoicing
+How to Request a Custom Server Project
+Tech Advantage Server Projects: Tips and Best Practices
+Server Project Prerequisites
+Tips and Best Practices for Ensuring a Successful Server Project
+TIP 1: Select the Best Fitting Project Type
+Project Types Available in the Asio platform (ITSupport Portal)
+TIP 2: Order Your Project Well in Advance of the Date You Want the Work to Be Performed
+Server Project review and scheduling guidelines:
+TIP 3: Review the Project Statement of Work with Our Server Project Experts
+TIP 4: Ensure That All Server and LOM Credentials Are Up-to-Date in the Secure Information Store
+TIP 5: Provide Off-hours and Backup Contact Details
+TIP 6: Set Necessary Client Expectations Before Your Project Begins
+TIP 7: Monitor Ticket Updates While Your Project is In-Progress
+TIP 8: Verify That the Project is Complete Before Client Business Hours Resume
+Additional Notes and Guidelines
+Upgrade a Site to Elite Servers to Take Advantage of the Lowest Project Cost
+Price Quotes for Custom Server Projects
+Selecting the Appropriate Number of Users/Devices for your Project
+Client Involvement in Your Server Project
+Concerns or Escalation Management
+Server Project Closure and Billing
+How to mark a Server Project as Successfully Completed
+Project billing
+Canceling or Rejecting a Project
+Contacting the Server Projects Team
+Tech Advantage Linux Projects
+Supported Linux Distributions
+Linux Projects
+Rebranding Impact 
+Tech Advantage Overview
+
+Tech Advantage is a value-add service available to all partners with sites monitored by our RMM solution. Tech Advantage enables MSPs to leverage the expertise of ConnectWise's nearly 600 certified engineers and technicians and expand the scope of services and projects they deliver to clients.
+
+Note: Microsoft has renamed Azure Active Directory (Azure AD) to Microsoft Entra ID. For details on how this rebranding impacts the following conditions, please see Rebranding Impact section. 
+
+Standard Projects
+
+With Tech Advantage, you can easily request many low-cost server and desktop Standard Projects from the ITSupport Portal.
+
+Custom Projects
+
+Non-standard projects that are not listed in the Project Submission form may be considered and undertaken as Custom Projects. These projects are always initiated and requested by sending an email to the relevant Projects team:
+
+For custom desktop projects, email: DesktopProjects@connectwise.com
+For custom server projects, email: ServerProjects@connectwise.com
+Popular Projects
+Server Projects
+Microsoft Office 365 Migration
+Microsoft Exchange Migration including Cross Forest
+Microsoft Hyper-V & VMware Implementation
+Active Directory Setup & Migration including Cross Forest
+SharePoint / SQL Migration
+Desktop Projects
+Microsoft Office 365 Application Suite Installation / Microsoft Office Upgrade
+Installation of Applications
+Fixing System Performance Issues
+Antivirus Scanning or Installation / Uninstallation.
+Cloud-Based Projects
+Office 365 Migration and Setup
+Azure RMS for Email encryption
+Intune Implementation
+Azure IT Infrastructure Migration and Setup
+New VM creation
+File/Print Server migration
+P2V/V2V migration to Azure Cloud
+Azure Active Directory Migration and Setup
+Azure SQL Server Migration and Setup
+Azure SharePoint Migration and Setup
+Microsoft Remote Desktop Services Setup on Public Cloud Providers
+Desktop-level activities surrounding these projects can also be accommodated by the Projects Team.
+Getting Started
+
+To get started with Tech Advantage, log on to the Asio™ platform (ITSupport Portal) and navigate to:
+
+Settings > Account Administration > Products & Services > Tech Advantage
+
+Note: Before submitting desktop or server projects, make sure administrator credentials are entered into the Secure Information Store’s Password Vault and Off-Hours Desktop Maintenance.
+
+Steps to a Successful Tech Advantage Project
+
+Our Tech Advantage Project Teams work to ensure a smooth, seamless, hassle-free, and successful completion of projects that partners offload to us. Learn more about standard and custom projects and related best practices:
+
+Desktop Projects
+Server Projects
+Linux Projects
+
+Tech Advantage Desktop Projects
+
+Desktop Projects are scheduled on a first come, first serve basis. You can select from a wide range of Desktop Projects and schedule a maintenance window from the list of available time slots. You can check the status of your Project on the Asio platform.
+
+Desktop Projects can be either Standard or Custom in nature. Standard Desktop Projects can be ordered directly from the Asio platform, whereas Custom Projects can be requested via email and are managed through Service Request Tickets.
+
+Learn more about Best Practices for ensuring successful completion of your Desktop Projects by ConnectWise's Tech Advantage team.
+
+How to Request a Standard Desktop Project
+Standard Desktop Projects
+
+To request a Standard Desktop Project, log on to the Asio platform (ITSupport Portal) and go to Settings > Account Administration > Products & Services > Tech Advantage > Desktop Projects and click on Create Desktop Project.
+
+Step 1: Select Desktops
+Make the following selections:
+Select Site
+Select Operating System: Optional. Select which desktop operating systems the project will apply to. If the project is not OS-specific, leave this setting on ALLOperating Systems. You will still have the option to filter devices by OS on the next page.
+Select Project Window: Select an available time slot for the project. Time slots are first-come, first-serve. You can fine-tune the time slot later on in the request process.
+
+Note: Times displayed in the Project Window menu are Pacific Standard Time (PST).
+
+Click Go to proceed. When you click Go, the page will refresh to display the list of desktops at the site (you can use the Select Operating System drop-down menu to filter the list by OS, if desired). Select the desktop machines you want to add to this project.
+Under Select Project, choose a project from the drop-down menu for each desktop. (If the same project will be applied to more than one desktop, use the Copy to Selected Desktops option in the far-right column to apply that project to all currently selected desktops.) As you select projects, the Service Price column will update with the applicable project fee for each desktop .
+
+Note: Projects can differ from desktop to desktop, but only one project can be selected for each desktop.
+
+When you have made your selections, click Next to continue.
+
+Step II - Select schedule
+Make selections for the following components:
+Start/End Times and Maintenance Window: You can limit the time slot by adjusting the start and end times and/or Maintenance Window as desired. Changes to one section are automatically updated in the other.
+Comments: If you have any specific comments or directions for the NOC, you can enter them for each desktop. If the comment applies to all desktops you can use the Copy Comments to All option on the right to apply it to all desktops.
+If machine is locked by User: If a user account is already logged onto the desktop when the NOC goes to perform the project work, select how the NOC should proceed:
+Forcefully logoff User and work on this Desktop Project:The NOC will log the user off the machine and begin work on the project.
+Do not work on this Desktop Project: The NOC will abandon the project for the desktop if a user is logged on. The task will be updated to include that information.
+Wake on LAN configuration: If the desktops support Wake-on-LAN, and if Wake-on-LAN is configured on the desktop, you can schedule the desktops to power-on before the Project time slot. To use Wake-on-LAN, you must select a management system (Desktop or Server).
+
+The Wake-on-LAN manager is required so that the appropriate commands can be sent to power on the machines. Those commands cannot be sent directly from the ITSupport Portal.
+
+Contact Notification: Select Yes or No based on whether the project contact can be notified during non-business hours.
+Click Next to proceed to the final screen.
+Step III - Confirmation
+The final screen will show you a summary of the Tech Advantage service ordered and the selected configuration and notification settings.
+I agree to be invoiced. You must acknowledge that you agree to be invoiced for the work by selecting the check box and then clicking Submit. An acknowledgment window will appear.
+When Your Project Work Is Complete
+For services completed, fees will appear on the next month’s invoice. Invoices are created during the first week of the month for the previous month.
+You have three days to review the work done after the NOC has completed a project. During that time you can send the request back to the NOC if you believe the project has not been fully completed.
+How to Request a Custom Desktop Project
+
+Custom desktop projects are typically Windows-based, but the Tech Advantage team is also capable of undertaking Mac and Linux desktop project activities. 
+
+Follow these steps to request a Custom Desktop Project:
+
+Send an email to DesktopProjects@connectwise.com that includes a detailed description of your project requirements.
+The Project Team will acknowledge the request.
+After reviewing your project requirements, the Project Team will respond to your email request to confirm if your project can be undertaken. A price quote and/or applicable rates will be provided.
+
+Note: For some requests, a partner/technician phone call may be necessary to clarify the project scope before a price quote can be provided.
+
+If you wish to proceed with the project, reply to the price quote email indicating your approval.
+The Project Team will work with you to gather required information and create an execution schedule based on resource availability.
+The project will be executed according to the agreed-upon schedule window. You will receive project status updates at regular intervals.
+When the project work has been completed, you will be asked to certify the Project as complete and approve billing for the project.
+Once you have confirmed that the project is complete, the project ticket will be marked as Completed by the NOC and a separate invoice (not included in the monthly invoice) will be generated and sent to you.
+Custom Desktop Projects
+
+Some examples of Custom Desktop Projects you can order for Tech Advantage are:
+
+User Profile Verification & Map Drive
+User Profile Migration along with Outlook
+User Profile Migration without Outlook
+Windows 10 Version Upgrade
+Windows 7 to Windows 10
+Tech Advantage Desktop Projects: Tips and Best Practices
+
+Tips and best practices that will help ensure successful completion of your projects by ConnectWise’s Desktop Projects Team.
+
+Desktop Project Prerequisites
+Any site for which you order a Tech Advantage Desktop Project must have the RMM Agent installed.
+After installing the RMM Agent on a desktop, you should allow a minimum of four hours before requesting a Desktop Project on the ITSupport Portal.
+Tips and Best Practices for Ensuring a Successful Desktop Project
+TIP 1: Select the Project Type That is the Best Fit
+
+When you order your Tech Advantage Desktop Project, selecting the correct project type is important; it helps our Desktop Projects Team coordinate your project with the technicians whose expertise is the best match for the work you require, and also ensures that you will be accurately invoiced.
+
+Order your Tech Advantage Desktop Project by selecting a project from the list. If you don't see the project you want, you can select Other and then provide details about the project.
+
+The most commonly-requested projects are available in the Project Type menu on the Asio platform. If you don't see a project type that matches your need (for example: Installing Windows 10 version upgrade, Profile Verification, Office 365 Desktop activity, or any custom activity that has more than one task involved), a Custom Desktop Project is typically the best bet.
+
+Contact our Desktop Projects Team (DesktopProjects@connectwise.com) and one of our Desktop Projects Experts will be happy to review your project requirements and recommend a project type.
+
+TIP 2: Order Your Project Well in Advance of the Date You Want the Work to Be Performed
+
+Ordering your Desktop Project well in advance of when you want the work to be performed allows proper lead time and helps ensure that:
+
+The Desktop Projects Team has sufficient time to review the project details and accept the project.
+The Desktop Projects Team has sufficient time to determine if there if additional information is required. If additional information is needed, one of our Desktop Project Team experts will call you.
+Additional Notes
+Once the project is accepted, we will work on the project as per the provided scheduled.
+Projects that require desktop downtime or multiple reboots during one or more phases of execution, will be scheduled for off-hours or during the weekend.
+Weekend Custom Desktop Projects are typically planned out at least a week in advance in coordination with our Desktop Projects Team.
+
+For Custom Desktop Projects, partners are typically required to fill out an Excel sheet with user details and provide any additional project documentation to the Desktop Projects Team.
+
+TIP 3: Provide Off-Hours and Backup Contact Details
+
+As a general rule, we do not contact Partners outside of normal business hours. In the course of executing your project, however, it may become necessary for one of our Desktop Projects Experts to contact you during business off-hours if an emergency situation arises. To ensure that an appropriate contact can be reached in the event of an emergency, we request that you provide the following information before your project is scheduled to be executed:
+
+A mobile phone number for the primary partner contact.
+A mobile phone number for a backup partner contact (if the primary contact cannot be reached).
+TIP 4: Set Necessary Client Expectations Before Your Project Begins
+
+Some projects (projects related to system performance issues, for example) may require additional time or escalation to our expert team to complete. If this becomes necessary, the Desktop Projects Team will create a service request ticket and schedule additional work as required.
+
+Additional Notes and Guidelines
+Price Quotes for Custom Desktop Projects
+
+Though some Custom Desktop Projects have a fixed price (Office 365 Desktop activity and Profile Verification projects, for example), other Custom Desktop Projects may need to be reviewed by the Desktop Projects Team before a price quote can be provided. Once a quote has been provided, you will need to approve the quote before project work can begin.
+
+Client Involvement in Your Desktop Project
+
+As a general rule, and to ensure that sensitive project information (such as project hours and project cost) is always kept confidential, ConnectWise's Desktop Projects Team will not communicate directly with client site personnel to discuss project technical details. Similarly, when communicating with the Desktop Projects Team via email, we recommend that you refrain from copying client site employees on any project-related correspondence. A recommended alternative is to communicate directly with client personnel, as needed, on a separate email thread.
+
+In certain situations, (for example, if you feel strongly that a conference call involving you, the client, and one of our Desktop Project Experts is necessary to ensure a successful project) an exception can be made. In a situation such as this, you should indicate before the call occurs whether our subject matter expert should represent as a ConnectWise employee or as an employee of your company.
+
+Concerns or Escalation Management
+
+To raise a concern or request escalation of an issue, contact the Desktop Projects Team at DesktopProjects@connectwise.com.This email is a distribution list that is monitored 24/7/365 by the NOC, technical leaders, and their respective management personnel, ensuring that you will always receive timely responses to any project-related questions or escalation requests.
+
+Desktop Project Closure and Billing
+
+When your Desktop Project has been completed, the following steps occur:
+
+For Standard Desktop Projects, the status will be changed to Work Completed. You have 10 days to mark the project as Satisfactory or Work Incomplete, otherwise the project status becomes AutoComplete.
+For Custom Desktop Projects, the ticket status will be changed to NOC Completed and you will receive an email notifying you that the project is complete. Reply to the email indicating your approval and an invoice will be created and sent to you.
+Rejecting a Project
+
+If you need to cancel a project, either because it was incorrectly submitted or because our Desktop Projects Team has identified it as the incorrect project type based on your requirements, follow these steps:
+
+In the Asio platform (ITSupport Portal), navigate to Settings > Account Administration > Products & Services and select Tech Advantage.
+On the Tech Advantage dashboard, click on the Desktop Projects tab.
+In the New Project column, click on the Project count number for the corresponding Project row.
+Select the Project, provide a reason for the rejection, and click the Reject button.
+Contacting the Desktop Projects Team
+
+For Desktop Project questions; whether to order a new project or to request information about a project you have already ordered, contact the Desktop Projects Team at DesktopProjects@connectwise.com.
+
+Tech Advantage Server Projects
+
+ConnectWise offers standard and custom Server Projects for:
+
+Microsoft Windows-based products and technologies
+Azure Cloud-based solutions
+Linux environments
+
+For all Server Project requests, the ConnectWise's Server Projects Team will contact you to go over the project details and will keep you updated throughout the entire process as and when necessary via emails or calls.
+
+How to Request a Standard Server Project
+On the Asio platform (ITSupport Portal), go to Settings > Account Administration > Products & Services > Tech Advantage > Server Projects and click Create Server Project.
+Populate all fields with details as requested in the project submission form:
+Project Overview: The Project Overview section contains a summary and description of the Project you would like to create and on which site the work will be performed. The Project Type field lists our current Project offerings and the Number of Users/Devices is required for Project selection.
+Partner Contact section is where you provide your contact information. These sections will change depending on the Project Type you have selected. For example, for an Exchange Server Migration, we need source and destination Server details but for a VMware vCenter installation and configuration, we will need Server and VMware vCenter management machine network information. Required fields are marked with an asterisk; however, the more information you provide, the better we will be able to complete the Project to your satisfaction.
+Schedule: In the Schedule section, indicate the start date the NOC will review this Project.
+Confirmation: The Confirmation section is where you specify if you are a Microsoft Certified Partner and that you agree to be invoiced for this Project. If you are a Microsoft Certified Partner and if Microsoft’s support is needed on a project, we can work with Microsoft on your behalf after you raise a support ticket with them.
+Click Submit to continue. An acknowledgment window will briefly appear.
+Server Project Notes and Disclaimers
+Cost Adjustment if Third-Party Tools Are Required for Your Project
+Though partners will typically see a fixed cost for Standard Projects based on applicable selections, it is possible that some projects will require the use of third-party tools. If third-party tools are required as part of your project, the project cost will be revised. You will be informed of this revised cost during the project review phase.
+For projects that require use of third-party tools, advance partial payment will be required via partial invoice. The partial payment amount will be determined by the Tech Advantage team.
+Partial Advance Payment for Projects Estimated at $5000 and Above
+For projects assessed at $5000 (USD) and above, advance partial payment will be required via partial invoice. The partial payment amount will be determined by the Tech Advantage team.
+Partner Review Period
+MSPs will have fifteen days to review projects after the NOC has completed work. During this time, you can send the request back to the NOC if you believe the project is not fully completed.
+Project Invoicing
+For completed projects, fees will appear on the next month’s invoice (generated during the first week of the month for the previous month).
+How to Request a Custom Server Project
+
+Custom Server Projects are typically Windows-based, but the Tech Advantage team is also capable of undertaking project activities for Linux servers. Learn more about custom Linux projects.
+
+Send an email to ServerProjects@connectwise.com with the detailed description of the project requirement or submit a Custom Server Project from the Asio platform.
+The Projects Team will acknowledge the request on email or Project Ticket, and then contact you to confirm if the Team will undertake the Project and provide a quote or rates.
+If you approve the quote, you will be advised to submit a Custom Server Project, if one wasn't submitted previously.
+
+For some Custom Server Project requests, a second call (with a team member who has expert knowledge of the specific technology required for your project) may be necessary to better understand the project scope, clarify expectations, and create the Statement of Work (SOW).
+
+The turnaround time for sharing the SOW depends on the nature, size, and technology involved in the Project.
+Once you sign off on the SOW and Project cost over email, the Projects Team will gather any additional information needed and draft a project execution schedule based on your preference and NOC resource availability. Based on partners sign off on the SOW and Project Cost over an email reply, we take the conversation forward to gather any more information that may be required and then mutually agree on the execution schedule based on Partners preference and our resource availability.
+When the project execution schedule has been mutually agreed upon, the project is scheduled and executed. Status updates will be provided to you at regular intervals.
+The partner verifies the project work to ensure that objectives are met. The partner notifies the Projects Team if there are issues with any of the work being performed.
+When the project is complete, the partner certifies the project as completed and approves billing for the project.
+The project ticket is marked as completed by the NOC, confirmed as completed by partner, and a separate invoice (not included in the monthly invoice) is generated and sent to you.
+
+Note: For large projects, a percentage of the project cost may be required to be paid in advance, with the balance to be paid after completion of individual project phases.
+
+Tech Advantage Server Projects: Tips and Best Practices
+
+Tips and best practices that will help ensure successful completion of your projects by ConnectWise's Server Projects Team
+
+Server Project Prerequisites
+Any Tech Advantage Server Project site must contain at least one server with an RMM Server Agent installed.
+After installing the RMM Server Agent on a server, allow a minimum of four hours before ordering a Server Project on the ITSupport Portal.
+
+Note: When creating a new Tech Advantage Server Project, if the site name is not listed in the Project Creation/Submission Form, the RMM Server Agent is not installed on any servers at the site or the site itself is not yet created. It may also indicate that more time is needed for the agent installation to be reflected in the ITSupport Portal if the server agent was recently installed.
+
+Tips and Best Practices for Ensuring a Successful Server Project
+TIP 1: Select the Best Fitting Project Type
+
+When you order your Tech Advantage Server Project, selecting the correct project type is important; it helps our Server Projects Team coordinate your project with the technicians whose expertise is the best match for the work you require, and also ensures you will be accurately invoiced.
+
+The most commonly-requested projects are available in the Project Type menu on the Asio platform. If you do not see a project type that matches your need (for example: installing Windows on a physical server, file share/data migration, or Remote Desktop Services deployment), a Custom Server Project is typically the best bet. Contact our Server Projects Team (at ServerProjects@connectwise.com), and one of our Server Projects Experts will gladly review your project requirements and recommend a project type.
+
+Project Types Available in the Asio platform (ITSupport Portal)
+Active Directory Migration
+Active Directory Setup
+BlackBerry Enterprise Server for Microsoft Exchange Migration
+BlackBerry Enterprise Server for Microsoft Exchange Setup
+Custom Server Project
+Exchange Server Migration
+Exchange Server Setup
+Office 365 Migration
+Physical to Virtual (P2V) Machine Conversion using VMware vCenter Converter
+Server Service Pack Installation
+Small Business Server Migration
+Small Business Server Setup
+VMware vCenter Server Setup
+Windows Operating System Installation or Hypervisor
+Windows Server Hyper-V Setup
+Windows Server Hyper-V with SCVMM Setup
+TIP 2: Order Your Project Well in Advance of the Date You Want the Work to Be Performed
+
+Ordering your Server Project well in advance is a recommended best practice. Allowing proper lead time helps ensure that:
+
+The Server Projects Team has sufficient time to review the project environment and prepare the Statement of Work (SOW).
+You have sufficient time to review the SOW internally then review it with the Server Projects Team and/or your client.
+The appropriate Server Projects Team experts (those server experts whose areas of expertise are the best fit for your project) can be scheduled for your project.
+Server Project review and scheduling guidelines:
+Before we can provide you with the detailed SOW for any project (provided the cost of the project has been approved), ConnectWise's Server Projects Team typically requires 3 to 4 days to review the project environment and related servers.
+Projects that require server downtime or multiple reboots during one or more phases of execution will be scheduled for off-hours or during the weekend.
+Projects that involve new server implementation, such as Active Directory Setup, Exchange Server Setup, and Remote Desktop Services Deployment, do not typically impact a running production environment, and can generally be scheduled during normal business hours.
+Weekend projects are typically planned out at least a week in advance. Scheduling of server project experts for weekend projects is frozen on Wednesday.
+Submit your weekend project execution request no later than the end of Wednesday: If you have already reviewed and approved the project cost and SOW and you would like your project to be executed on a weekend, submitting your request no later than Wednesday of the same week helps minimize potential scheduling conflicts.
+TIP 3: Review the Project Statement of Work with Our Server Project Experts
+
+The Statement of Work (SOW) document our Server Projects Team creates is a comprehensive overview of your project, including step-by-step details of how the project work will be performed during the execution phase. Reviewing the SOW internally and with our Server Projects Team before your project begins helps ensure that:
+
+The work outlined in the SOW satisfies your project requirements.
+The SOW is updated to include any necessary corrections or clarifications.
+Accurate client expectations are set.
+Any specific client instructions necessary to execute the project can be relayed to you and communicated to the client.
+TIP 4: Ensure That All Server and LOM Credentials Are Up-to-Date in the Secure Information Store
+
+Because any server in the client project environment may need to be accessed during the project execution phase (or may need to be powered ON in the event of a power failure at the site), it is crucial to verify that all server and Lights Out Management credentials are accurate and up-to-date in the Asio platform's Secure Information Store. Outdated credentials could lead to unnecessary delays in completing your project.
+
+To add or update credentials, navigate to Settings > Setup > RMM > RMM Setup > Sites Using RMM and select the site. Then, click the Passwords tab and use the arrows to expand the Server Passwords and Lights Out Management Passwords sections.
+
+TIP 5: Provide Off-hours and Backup Contact Details
+
+As a general rule, we do not contact Partners outside normal business hours. In the course of executing your project, however, it may become necessary for one of our Server Project Experts to contact you during business off-hours if an emergency situation arises. To ensure that an appropriate contact can be reached in the event of an emergency, provide the following information before your project is scheduled to be executed:
+
+A mobile phone number for the primary partner contact.
+A mobile phone number for a backup partner contact (if the primary contact cannot be reached).
+TIP 6: Set Necessary Client Expectations Before Your Project Begins
+
+After reviewing and discussing the Statement of Work with our Server Projects Team, you must set project expectations with your client in advance of the scheduled project execution window, including:
+
+Communicating with your client regarding any expected downtime that may occur during the project execution phase.
+Ensuring your client has completed any action items necessary to execute the project. For example, providing a list of workstations mapped with user names and credentials and ensuring that client users leave machines powered ON during the scheduled project execution window.
+TIP 7: Monitor Ticket Updates While Your Project is In-Progress
+
+While your project is in-progress, our Server Project Experts will update the project ticket with the current work status. Typically, because many partner's ticketing systems are not configured to generate email alerts when a ticket is updated, a Server Projects Expert will also reach out to you via email to keep you up-to-date on the current status of the project.
+
+While your project is in-progress, you may also email the Server Projects Team (at ServerProjects@connectwise.com) to request a project status update. Typically, ConnectWise's Advance Technical Services Team (ATS@connectwise.com) will be copied on email replies you receive.
+
+TIP 8: Verify That the Project is Complete Before Client Business Hours Resume
+
+The project Statement of Work review/approval process is designed to ensure the smoothest possible execution of your Server Project, but there is always the possibility that unexpected issues will arise. We strongly recommend that you actively monitor email/ticket updates from the Server Projects Team while your project is in progress, particularly if your project is being executed on a weekend. Verifying that the project has been completed to your satisfaction before client business hours resume, reduces the potential for unintended downtime at the client site.
+
+Additional Notes and Guidelines
+Upgrade a Site to Elite Servers to Take Advantage of the Lowest Project Cost
+
+Server Project pricing is discounted for sites on the Elite Servers plan (as compared to project pricing for the Essential Servers plan). Upgrading a site to Elite before you order a Server Project allows you to take advantage of the lowest cost for your project.
+
+Price Quotes for Custom Server Projects
+
+Though some Custom Server Projects have a fixed price (for example, Printer Migration and Remote Desktop Services (RDS) Deployment projects) or a standard hourly rate (Data/File Share Migration, Exchange Server Uninstallation), other custom projects may require a review of the project environment or server before a price quote can be provided. Once a quote has been provided, you will need to approve the quote before the project Statement of Work can be provided.
+
+Selecting the Appropriate Number of Users/Devices for your Project
+
+As project cost is based on user and/or device quantity, it is important that you select the correct quantity/slab while submitting the project. During the project review phase, the Server Projects Team may advise you to adjust the number of users and/or devices selected when you ordered the project, based on the specific Project Type and other environment variables. This adjustment may not be applicable to all Project Types.
+
+Client Involvement in Your Server Project
+
+As a general rule and to ensure that sensitive project information (such as project hours and project cost) is always kept confidential, ConnectWise's Server Projects Team will not communicate directly with client site personnel to discuss project technical details. Similarly, when communicating with the Server Projects Team via email, we recommend you refrain from copying client site employees on any project-related correspondence. A recommended alternative is to communicate directly with client personnel, as needed, on a separate email thread.
+
+In certain situations (for example, if you feel strongly that a conference call involving you, the client, and one of our Server Project Experts is necessary to ensuring a successful project), an exception can be made. In these situations, you should indicate (before the call occurs) whether our subject matter expert should represent as a ConnectWise employee or as an employee of your company.
+
+Concerns or Escalation Management
+
+To raise a concern or request escalation of an issue, contact the Server Projects Team at ServerProjects@connectwise.com. ServerProjects@connectwise.com is a distribution list that is monitored 24/7/365 by the NOC Team, Technical Leaders, and their respective management personnel, ensuring you will always receive timely responses to any project-related questions or escalation requests.
+
+Server Project Closure and Billing
+
+When your Server Project has been completed as per the previously agreed-upon Statement of Work, the following steps occur:
+
+The project ticket status changes to NOC Completed: One of our Server Projects Experts marks the Server Project ticket as NOC Completed.
+You have 15 days to review the project: During this time period, you can confirm the server project as Completed in the Tech Advantage section of the ITSupport Portal(which will trigger billing for the project), or raise any post-execution issues that you feel need to be addressed.
+After 15 days, the Project ticket status automatically changes to Closed and billing is triggered.
+
+Note: A Server Project ticket can only be closed (designated as Successfully Completed) from the Tech Advantage section of the ITSupport Portal. If you update the project ticket status in your PSA system or via the Tickets tab on the ITSupport Portal, the status update will not be successfully applied and the project will not be marked as Successfully Completed.
+
+How to mark a Server Project as Successfully Completed
+Project billing
+In the Asio platform (ITSupport Portal), navigate to Settings > Account Administration > Products & Services and select Tech Advantage in the list
+In the Tech Advantage dashboard, click on the Server Projects tab.
+Click on the project count number that appears in the Completed by NOC column for the corresponding project row.
+Select the project you wish to confirm as Completed by checking the Yes option. Click on the Confirm button to finish.
+
+Billing for your Server Project is triggered when:
+
+You confirm the project ticket status as Successfully Completed from the Tech Advantage section of the Asio platform.
+
+or
+
+15 days elapse after the project ticket status has been updated by the Server Projects Team to NOC Completed. After 15 days, the project ticket status will auto-update to Closed, indicating that the project has been successfully completed.
+
+Once billing is triggered, your Server Project charge will appear on the monthly invoice that corresponds to the date the project ticket status was updated to Closed. For example, if the project ticket status was updated to Closed on May 12, billing for your Server Project would appear on your May invoice.
+
+Canceling or Rejecting a Project
+
+If you need to cancel a project because it was incorrectly submitted or because our Server Projects Team has identified it as the incorrect project type based on your requirements, follow these steps:
+
+Navigate to Settings > Account Administration > Products & Services and select Tech Advantage in the Asio platform.
+Click the Server Projects tab on the Tech Advantage dashboard.
+Click the project count number for the corresponding project row in the New Project column.
+Select the project, provide a reason for the rejection, and click Reject.
+
+If for some reason you are unable to reject the project, you may request that the Server Projects team reject the project on your behalf.
+
+Note: Because of the effort required to review your project environment and prepare the project Statement of Work, we strongly encourage you to order a server project only when you are certain that the project work will be performed.
+
+Contacting the Server Projects Team
+
+For Server Project questions (to inquire about a new project, about ordering a Server Project, or to request information about a project already ordered), contact the Server Projects Team at ServerProjects@connectwise.com.
+
+Tech Advantage Linux Projects
+
+Linux projects are undertaken as Custom Desktop or Server projects. To request a Linux project, send a project request to the Desktop Projects (DesktopProjects@connectwise.com) or Server Projects (ServerProjects@connectwise.com) team with your project requirements. A price quote will be provided once the team reviews the scope of your project.
+
+Supported Linux Distributions
+Ubuntu 8.04 or later
+Red Hat Enterprise Linux 5.3 or later
+CentOS 5 or later
+Fedora release 16 or later
+Linux Projects
+OS Installation and configuration (only if Lights Out Management available)
+RMM agent Installation
+LVM configuration
+File system configuration
+mdadm RAID arrays configuration
+Installation and configuration of below applications
+SAMBA
+DNS, DHCP, FTP
+Apache Web Server (LAMP)
+Apache Tomcat Application Server
+PostFix / Sendmail
+MySQL / MariaDB
+iSCSI target / iSCSI Server
+Server Hardening
+Performance Troubleshooting
+Standard Patches / Update Installation
+Grub / Grub 2 Troubleshooting (only if LOM access is available)
+VirtualBox
+ZFS configuration
+Rebranding Impact 
+
+Use this table as guidance for details on the rebranding of Azure Active Directory to Microsoft Entra ID:
+
+Sr. No.
+
+	
+
+Software Name
+
+	
+
+Display Name
+
+	
+
+Service Name
+
+	
+
+Under Monitoring
+
+	
+
+Comments
+
+
+
+
+1
+
+	
+
+DirSync
+
+	
+
+Windows Azure Active Directory Sync Service
+
+	
+
+MSOnlineSyncScheduler
+
+	
+
+Yes
+
+	
+
+Software deprecated in favor of 'Azure AD Connect'
+
+
+
+
+2
+
+	
+
+Azure AD Connect
+
+	
+
+Microsoft Azure AD Sync
+
+	
+
+ADSync
+
+	
+
+Yes
+
+	
+
+Software deprecated in favor of 'Microsoft Entra Connect'
+
+
+
+
+3
+
+	
+
+Microsoft Entra Connect
+
+	
+
+Microsoft Azure AD Sync
+
+	
+
+ADSync
+
+	
+
+Yes
+
+	Manage from on-premise: Cloud Sync
+
+
+Microsoft Azure AD Connect ProvisioningAgent
+
+	
+
+AADConnectProvisioningAgent
+
+	No, under development	Manage from the cloud: Connect Sync
+
+
+Microsoft Azure AD Connect Agent Updater
+
+	
+
+AzureADConnectAgentUpdater
+
+	
+
+No, under development
+
+	Manage from the cloud: Connect Sync
+Microsoft Entra Connect Health Agent	AzureADConnectHealthAgent	No, under development	Manage from the cloud: Connect Sync
+Tech Advantage Linux Projects Tech Advantage Reporting
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Project List
+Desktop Projects
+Desktop Projects: Tips and Best Practices
+Server Projects
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

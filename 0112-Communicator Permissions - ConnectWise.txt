@@ -1,0 +1,65 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Communicator User Guide   Communicator Permissions
+Communicator Permissions
+Last updated
+Sep 30, 2024
+Table of contents
+To adjust permissions:
+
+You can adjust the permissions level of the Communicator, which lets you allow or deny access based on roles in the Asio Platform.
+
+To adjust permissions:
+
+Navigate to Settings > Account Administrations > Users > Default Users.
+
+Select ON or OFF for the Communicator toggle. This allows you to hide or display the Communicator menu on the left navigation menu for this role. The following permissions can also be selected:
+
+View: This allows a user to view sent messages on the Communicator page
+
+Super Admins can view messages sent by all users
+
+Other user roles can view messages sent only by a logged-in user.
+
+Create: This allows a user to send messages from the Device page and the Communicator page
+
+Delete: This allows a user to delete messages on the Communicator page.
+
+ 
+
+Communicator Messaging Communicator Scripting
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Communicator Configuration
+Communicator Assignment
+Communicator Default Menus
+Communicator Branding
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

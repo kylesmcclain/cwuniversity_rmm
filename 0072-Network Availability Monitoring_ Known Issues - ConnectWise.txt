@@ -1,0 +1,67 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Alerts   Network Availability Monitoring   Network Availability Monitoring: Known Issues
+Network Availability Monitoring: Known Issues
+Last updated
+Jul 24, 2023
+Table of contents
+Overview
+Network Availability Monitoring: Known Issues
+Overview
+
+Beginning January 1, 2019, Network Availability Monitoring will be provided as a free service to all partners currently using it while ConnectWise develops an improved version that fixes existing bugs and adds additional partner-requested features. Network Availability Monitoring v2.0 is expected to be released later.
+
+Network Availability Monitoring: Known Issues
+
+A number of known issues currently exist with Network Availability Monitoring, primarily around reliability in determining online/offline statuses and related alerting behavior (false alerts, missed alerting, and failure to auto-close tickets when a change in IP online status occurs).
+
+Until the redesigned Network Availability Monitoring is released, partners who use the service should expect to encounter some or all of these core issues:
+
+Intermittent reporting of incorrect statuses for Public IPs; devices may occasionally be determined as Online or Offline incorrectly.
+False alerts may be generated that incorrectly report Public IP down.
+Alerts might not be generated for a Public IP that is offline (status incorrectly detected as Online).
+Tickets generated for Public IP down events may fail to auto-close when the network is later detected to be back online.
+Other issues related to intermittent reliability in determining online/offline status.
+
+Note: These issues are being addressed as part of the Network Availability Monitoring redesign effort. These bugs, and any related issues, should be expected for partners who use the current iteration of Network Availability Monitoring
+
+Network Availability Monitoring S.M.A.R.T Monitoring
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Custom Monitors
+Build your own alert monitors using the variety of monitor templates in ConnectWise RMM. Monitors use these templates to trigger alerts when issues ar...
+S.M.A.R.T Monitoring
+S.M.A.R.T. (Self-Monitoring Analysis and Reporting Technology) monitors a hard drive for predictive failures. Our agent automatically monitors the S.M...
+Intelligent Alerts
+Intelligent Alerts in ConnectWise RMM are endpoint-specific and generate an appropriate alert based on a predefined set of monitoring conditions.
+Suspensions
+Implement suspension rules if you want to stop generating alerts, either temporarily or indefinitely. The alert suspension feature is useful to accomm...
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

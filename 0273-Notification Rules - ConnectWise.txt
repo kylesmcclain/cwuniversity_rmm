@@ -1,0 +1,42 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Notification Rules
+Notification Rules
+Last updated
+Jul 1, 2025
+Table of contents
+Overview
+Overview
+
+Notification Rules (in Settings > Setup > RMM > Notification Rules) specify how you would like the NOC to handle alerts received from your RMM agents based on criticality, service level, and date/time. Rules must be set up for an entire week. The Notifications window displays the agent’s service level, site count, created by date/time/user, and modified by date/time/user details.
+
+All articles
+Notifications and Servers Levels
+Set Notification Rules
+Premier Network Monitoring Features Notifications and Servers Levels
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Notifications and Servers Levels
+Set Notification Rules
+Command for Networks
+Secure Information Store
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

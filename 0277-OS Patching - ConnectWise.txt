@@ -1,0 +1,247 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Patching   OS Patching
+OS Patching
+Last updated
+Dec 12, 2025
+Table of contents
+Overview
+Patch Assessment
+Automating OS Patching
+Policy Compliance Score
+Patch Reports
+Patch Approvals and Patch Exclusions
+Patch Approvals
+Manual Patch Deployment
+Manual Patch Deployment Flow
+Patch Exclusions
+Tasks
+Tickets
+OS Patching Intelligent Alerts
+OS Patching Preview Alerts
+How to enable OS Patching preview alerts
+OS Patching Default Permissions
+Documentation
+Overview
+
+OS patching is a critical feature that helps to keep your managed endpoints up to date on the many security and non-security patches released every month. An effective OS Patching strategy is an important first line of defense to minimize your endpoint risk to security vulnerabilities. Patches also release new features and bug fixes that help ensure your client's operating system is running smoothly.
+
+The OS patching solution simplifies patching and allows you to fully automate the deployments as per your patching requirements.
+
+Patch Assessment
+
+Patch Assessment is a process run by the agent to get the complete inventory of installed and missing updates. It is important that the patch assessment from an endpoint is recent for OS patching to work properly and show the accurate Patch Compliance score. Patch assessments are run on endpoints as follows:
+
+Automatically every four hours
+Automatically after the endpoint restarts
+Automatically after patch installation (Manual or Auto-deployment)
+Manually running an On-demand assessment on the endpoint from the Device Details > OS Patching
+Scheduling the automation task to Run OS Patch Assessment
+Automating OS Patching
+
+OS patching can be automated using Policies and Packages. The Policy configuration defines the type of updates and the schedule for deploying the updates. The Policy assigned to an endpoint is also used to calculate the OS Patch Policy compliance score of the endpoint. For complete details of each OS patching Policy setting, please refer to OS Patching Policies.
+
+For a quick guide to understand the Policies and Packages feature, refer to Policies and Packages.
+
+Policy Compliance Score
+
+The OS Patch Policy Compliance score provides a quick view of how far behind your managed endpoints are with respect to the patches available on them. The policy compliance score is calculated for endpoints based on the policy assigned to them and the patches' approvals and exclusions. Review OS Patching Compliance for detailed information on Patch Policy Compliance scoring.
+
+Policy Compliance Score = (Installed Patches / (Installed + Pending Reboot + Missing)) x 100
+
+To view the patch compliance score for a device:
+
+Navigate to Endpoints > Devices and select a device.
+On the endpoint details page, click the OS Patching tab.
+Your score is displayed in the OS Patch Policy Compliance pod. Click the actions icon in this pod to view patch details or download the score as an image or PDF.
+
+Patch Reports
+The Patch Compliance Report in Asio contains information on the compliance status of endpoints based on the patching policy applied.
+RMM and BrightGauge integration datasets provide summarized data for all sites in the form of scores. Please refer to the Monthly Site Scores Dataset in BrightGauge and the Application Patch Deployment Dataset.
+Patch Approvals and Patch Exclusions
+
+Patches can be controlled for automated deployment using the Patch Approvals page and the Patch Exclusions page. The Patch Approvals page can be used to approve or block updates across all sites for Automated deployment as per policy. The Patch Exclusions page is used for a more granular blocking of patches at specific sites or endpoints.
+
+Patch Approvals
+
+Navigate to Endpoints > Patches > Approvals to view this page.
+
+The Patch Approvals page lists all the installed and missing patches applicable to your managed endpoints. The results of the NOC Patch testing for Security updates are also automatically added to this page. All updates are collated and listed based on the KB number. Selecting the KB Number shows all the different updates available under the given KB Number.
+
+The actions on the page are audited to show which user has taken the action and the date when the action was taken.
+
+For more on the Patch Approval page, please review Patch Approvals.
+
+
+Manual Patch Deployment
+
+Manual patch deployment is available from the Approvals page to deploy specific updates on endpoints that are missing the update.
+
+Manual Patch Deployment Flow
+Navigate to Endpoints > Patches > Approvals
+Click on the patch you want to deploy manually.
+If this patch is missing on endpoints, the information card to the right shows the Manually deploy on endpoint button and includes the number of missing endpoints. This button is not visible if there are no eligible endpoints.
+
+Click the Manually deploy on endpoint button. The Install Available Patch to Missing Endpoints window opens.
+Select either Deploy patch now or Schedule deployment.
+
+If you choose Schedule deployment, you are able to select local machine time or the required time zone when choosing your date and time of deployment.
+
+
+Click Next and choose the endpoints to deploy the patch.
+
+You can select if you want to reboot the endpoints after the deployment.
+
+
+Click Next. A window will open and ask you to confirm the deployment.
+Click the checkbox and then click Confirm.
+
+
+The Summary window appears. From here, you can click to view your scheduled task history to see if the the deployment was successful or failed.
+
+If you scheduled the deployment for later, you can navigate to the scheduled tasks by clicking View in scheduled tasks.
+
+Patch Exclusions
+
+Navigate to Endpoints > Patches > Exclusions to view this page.
+
+The Patch Exclusions page allows you to create a rule-based blocking of updates for specific Sites and Endpoints. Rules can be created based on the Update Title or a KB number match. Multiple criteria can be provided within the same rule to be matched in an OR combination.
+
+For more on the Patch Exclusions page, please review Patch Exclusions.
+
+
+Tasks
+
+In Automation > Tasks, tasks are available to take actions on multiple endpoints to get them up to compliance.
+
+Deploy missing OS patches by policy – This task can be used to deploy all missing updates as per the Policy. The task checks for Patch approvals and Exclusions prior to deployment.
+
+
+Run OS Patching Assessment – This task runs on-demand Assessment on multiple endpoints to get the latest Patch assessment data.
+
+
+Tickets
+
+Alerts create tickets for OS patching. Some alerts for patching are already configured out of the box, while others may need to be enabled.
+
+OS Patching Intelligent Alerts
+
+The following conditions are available for OS Patching out of the box. These are located under Endpoints > Alerts > Intelligent Alerts. 
+
+OS Patching Assessment Failure (Desktop)
+OS Patching Assessment Failure (Server)
+OS Patching Download Failure
+OS Patching Download Failures
+OS Patching Installation Failure - Consolidation (Desktop)
+OS Patching Installation Failure - Consolidation (Server)
+OS Patching Installation Failure (Desktop)
+OS Patching Installation Failure (Server)
+
+These alerts are on by default. Click on an alert to customize which service board the ticket is mapped to, add automation to the alert, or change whether the alert produces a ticket as an output. 
+
+
+OS Patching Preview Alerts
+
+For more OS patching alerts, navigate to Endpoints > Alerts > Intelligent Alerts > Preview Alerts tab and search for OS Patching. These are disabled by default. 
+
+OS Patching Endpoint Never Assessed
+OS Patching Feature Update Installation Failure
+OS Patching Out of Support Status
+
+How to enable OS Patching preview alerts
+
+For more information, please review Preview Alerts.
+
+To enable these alerts, click on the name of the alert you want to enable.
+Click the toggle to switch the alert from disabled to enabled.
+Change any other settings, such as the Mapper, add automation, or change how you receive the alert's output.
+
+Note: To add automation to the alert, you must select targets for the automation.
+
+Click Save to enable the Alert.
+
+OS Patching Default Permissions
+
+The following table outlines which roles have permission to use OS patching.
+
+Role
+
+	
+
+Patch Compliance details on Device Details and Devices pages
+
+	
+
+Quick Patch Actions from Device Details page
+
+	
+
+OS Patching - Patch Approvals
+
+	
+
+OS Patching - Patch Exclusions
+
+	
+
+Description
+
+
+Primary Super Admin	Full Access	Full Access	Full Access	Full Access	Complete control of OS Patching.
+Super Admin	Full Access	Full Access	Full Access	Full Access	Complete control of OS Patching.
+Manager	Full Access	Full Access	Full Access	Full Access	Complete control of OS Patching.
+Technician	Full Access	Full Access	Read Only	Read Only	Can view patch compliance, approvals, and exclusions. Can perform update actions on devices.
+Office Staff	No Access	No Access	No Access	No Access	No Access by default to OS patching.
+Sales	No Access	No Access	No Access	No Access	No Access by default to OS patching.
+Client Site Manager	Full Access	Full Access	No Access	No Access	Can view patch compliance and perform update actions on devices.
+Client End User	No Access	No Access	No Access	No Access	No Access by default to OS patching
+
+ 
+
+Documentation
+
+Click the title of an article below to learn more about patching.
+
+All articles
+Featured articles
+OS Patching Getting Started Settings
+OS Feature Updates (Windows)
+OS Patching Compliance
+OS Patching Error Codes
+OS Patching FAQs
+OS Patching Policies
+OS Patching Reboot
+OS Patch Approvals
+OS Patch Automation System Level Changes
+OS Patch Exclusions
+OS Upgrades (Windows and Mac)
+
+ 
+
+Patching OS Patching Getting Started Settings
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+OS Patching Compliance
+OS Patching Getting Started Settings
+OS Patch Approvals
+OS Patch Exclusions
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

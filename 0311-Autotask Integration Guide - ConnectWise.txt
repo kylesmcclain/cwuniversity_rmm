@@ -1,0 +1,156 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   PSA Integration   Autotask Integration Guide
+Autotask Integration Guide
+Last updated
+Sep 30, 2024
+Table of contents
+Overview
+User Access
+Asio Platform and Autotask Terminology
+Data Synchronization Overview
+Ticket Purging Policy
+Documentation
+Overview
+
+ConnectWise RMM™ offers the ability to integrate with the Autotask PSA system to sync tickets, assets and configuration items, and billing data and contacts.
+
+To locate PSA Integration screens, in the ConnectWise Asio™ platform navigate to Settings > Account Administration > Integration > PSA Integration
+
+User Access
+
+The following users in the system have access to the PSA Integration section for setup and modification:
+
+User Role
+
+	
+
+Super Admin
+
+	
+
+Manager
+
+	
+
+Technician
+
+	
+
+Office Staff
+
+	
+
+Sales
+
+	
+
+Client Site Manager
+
+	
+
+Client End-User
+
+
+PSA Integration	Always ON	ON by default	ON by default	Always OFF	OFF by default	Always OFF	N/A
+
+ 
+
+Please refer to Changing Access Rights for information on changing the user access and permissions.
+
+Asio Platform and Autotask Terminology
+
+Asio Platform Terminology
+
+	
+
+Autotask Terminology
+
+
+Site	
+
+Company
+
+Account
+
+Client
+
+Business unit
+
+
+Asset	
+
+Configuration item
+
+Installed Asset
+
+Installed Product
+
+
+Ticket	Ticket
+Contact	Contact
+Data Synchronization Overview
+
+The following table provides a quick overview on data synchronization
+
+Data Synchronized	Sync Direction	Frequency
+
+Sites	One Way	Sites are mapped on the Autotask Company mapping page in the Asio™ platform (ITSupport Portal). After the initial setup is complete, you can map the new sites with the corresponding Company in Autotask on the Create Site page.
+Assets	One Way	Within 24 hours after initial integration, the new agents that are installed are pushed in the corresponding PSA as soon as we are able to collect the basic data and information required for the configuration item creation.
+
+Existing devices are updated only if there are any changes to the configuration item.
+Servers
+Desktops
+VMware hosts
+Mobile devices
+Recover Continuity Appliances
+Tickets	Two Way	All open tickets in ConnectWise RMM sync with corresponding tickets in Autotask within two or three hours after initial integration. New tickets created will be synced within three minutes of creation or and update on either side.
+Contact	One Way	All contacts added in the Company in Autotask are pushed to the corresponding ConnectWise RMM Sites in near real time.
+Ticket Purging Policy
+
+Our PSA integration system follows a purging policy for the removal of failed tickets from the sync program. We are following this policy to improve the performance of the overall system.
+
+We are purging failed tickets from the PSA integration sync program based on the following conditions:
+
+Both incoming and outgoing tickets with transactions or conversations that have been ongoing for one year (365 days) from the creation date will be removed. If the PSA integration system receives an update on a purged ticket, it will produce a new ticket based on the most recent update, but the previous notes will be purged and will no longer be available.
+Incoming and outgoing tickets that fail due to incorrect authorization or incorrect keys will be removed from the fault table after 45 days of the ticket creation. 
+Incoming and outgoing tickets which were updated by the NOC team as closed after 30 days of inactivity will be removed from the PSA integration sync program after a 15 day buffer period. In other words, tickets closed by NOC will be removed after 45 days from creation.
+Documentation
+Topic hierarchy
+Autotask - Policies Integration
+PSA Policies define how tickets, configuration items, Contacts, and Notifications will sync from RMM to Autotask PSA or vice versa.
+Autotask Asset Errors Knowledgebase
+Autotask Integration Contact Sync
+Autotask Integration Error Messages
+Autotask Integration Reporting on Synchronization Status
+Autotask Integration Setup Guide
+Autotask PSA - Billing Sync Error Codes Knowledgebase
+AutoTask Ticket Errors Knowledgebase
+Include User-Defined Fields in Configuration Items
+Accelo Integration Guide Autotask - Policies Integration
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Autotask Integration Setup Guide
+Autotask Integration Contact Sync
+Autotask Integration Reporting on Synchronization Status
+Include User-Defined Fields in Configuration Items
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

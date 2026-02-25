@@ -1,0 +1,83 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   ConnectWise RMM Release Notes   ConnectWise RMM Update for April 2025
+ConnectWise RMM Update for April 2025
+Last updated
+May 5, 2025
+Table of contents
+Overview 
+What's new in ConnectWise RMM?
+April 29, 2025
+Alerting
+Issues Addressed
+April 25, 2025
+ScreenConnect
+April 23, 2025
+Issues Addressed
+April 21, 2025
+Issues Addressed
+April 17, 2025
+Issues Addressed
+April 11, 2025
+Ticketing / PSA Integration
+Issues Addressed
+April 10, 2025
+Issues Addressed
+April 9, 2025
+Automation
+System Uptime
+April 8, 2025
+Issues Addressed
+April 1, 2025
+Issues Addressed
+Overview 
+
+This page provides information on the latest enhancements and features for ConnectWise RMM.
+
+What's new in ConnectWise RMM?
+April 29, 2025
+April 25, 2025
+April 23, 2025
+April 21, 2025
+April 17, 2025
+April 11, 2025
+April 10, 2025
+April 9, 2025
+April 8, 2025
+April 1, 2025
+ConnectWise RMM Update for March 2025 ConnectWise RMM Update for May 2025
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ConnectWise RMM Latest Release Notes
+ConnectWise RMM Update for January 2024
+ConnectWise RMM Update for February 2024
+ConnectWise RMM Update for March 2024
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

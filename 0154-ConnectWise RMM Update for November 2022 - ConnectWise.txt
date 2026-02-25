@@ -1,0 +1,199 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   ConnectWise RMM Release Notes   RMM Release Notes Archive   ConnectWise RMM Update for November 2022
+ConnectWise RMM Update for November 2022
+Last updated
+Dec 3, 2022
+Table of contents
+Announcements
+Deprecation notice for the legacy Quick Access > Devices page and Monitoring Devices page
+Networking Tab on the Devices Page
+New agent download and smaller agent size for Windows
+Deprecation notice for the legacy Quick Access > Devices page and Monitoring Devices page
+Alerts for MS Intune
+Additional Admin users in BrightGauge
+ConnectWise RMM
+Agent and Platform
+Automation
+Patching
+Portal
+Reporting
+Bug Fixes / Known Issues
+Announcements
+Deprecation notice for the legacy Quick Access > Devices page and Monitoring Devices page
+
+On November 30th, the legacy features for adding and viewing devices for VMware, SNMP, and ICMP will be deprecated from Quick Access > Devices.
+
+Networking Tab on the Devices Page
+
+There is a new tab on the Devices > Computers screen that will list additional information for the endpoint. You will also be able to view the following fields on the Networking tab:
+
+Domain/Workgroup Name
+
+IP Address
+
+Public Gateway
+
+Serial Number
+
+New agent download and smaller agent size for Windows
+
+A new feature is available to download the RMM agent from the Devices page. You can select the site and the agent download URL will be available for Windows, MAC, and Linux endpoints.
+
+The new Agent Download page has an efficient setup installer for the Windows endpoints. The smaller setup size provides you with a faster download and installation on the endpoint. After the agent is deployed, it will be reflected in the Asio portal within five minutes.
+
+Deprecation notice for the legacy Quick Access > Devices page and Monitoring Devices page
+
+On November 30th, the legacy features for adding and viewing devices for VMware, SNMP, and ICMP will be deprecated from Quick Access > Devices.
+
+Alerts for MS Intune
+
+You will now receive an alert when an endpoint managed in MS Intune moves to a Not Compliant state.
+
+Additional Admin users in BrightGauge
+
+We will be adding additional users for all partners in BrightGauge so that they will have a total of 10 Admin licenses provided as a part of Command and ConnectWise RMM.
+
+ConnectWise RMM
+Agent and Platform
+
+New Agent Download Experience. We have upgraded the Agent Download experience, and moved it into the Devices > Computers Page, to make it easy for our users to access and download our Agent. Users can now visit the Devices > Computers Page, to access the Manage menu in the Action Bar and select Download Agent to be able to easily download the Agent.
+
+Enhancements to the Export feature. Based on feedback, we have added a column for Last online, where we will provide the data of when the device was last online, beside the Availability Column, which shows true or false. We have also updated the columns, to reflect the data provided in the Portal UI (expect where additional columns are added like Last online or Last login).
+
+Automation
+
+Client Site Managers (CSMs) will be able to use any Task they created or ConnectWise provided.
+
+How it works:
+
+Tasking permissions are available for Client Site Managers in Settings > Admin > Users > Default Access
+
+Tasking permissions for Client Site Managers is OFF by default
+
+After you set Tasking permissions for Client Site Managers to ON:
+
+CSMs will be able to create any Task they desire in Automation > Tasks
+
+CSMs will be able to schedule any Task they created in Automation > Tasks to run on any device/site/group* the CSM has access to
+
+CSMs will be able to schedule any Action in Automation > Tasks to run on any device/site/group* the CSM has access to
+
+*Groups honor Site access. If a CSM has access to one site and schedules a Task to run on a Server 2022 group, the Task will only be scheduled to run on Server 2022 devices for the one site the CSM has access to.
+
+Admins will be able to see and edit any Task or Scheduled Task created by a CSM
+
+Note: CSMs will not be able to use Tasks created by other CSMs. A CSM will only be able to use Tasks created by themselves or ConnectWise.
+
+Patching
+
+Application updates supported applications. Notepad++ will now be supported for Update and install using Application updates.
+
+Error Logging for OS Patching Improvements. We are improving the Error logging for OS patching failures during Assessment. Download instructions and Installation will be more clear moving forward.
+
+Portal
+
+Deprecation of legacy Devices screens for Adding and Monitoring. The legacy screens related to adding devices and monitoring devices in ConnectWise RMM will be deprecated on November 30, 2022.
+
+The legacy Quick Access > Other Devices > Devices screen, that was used to view non-agent devices will be deprecated.
+
+VMware devices are now visible on the Devices > Computers screen.
+
+SNMP devices are now visible on the Devices > Computers > Other Devices screen.
+
+The legacy Monitoring > Devices section, that was used to add non-agent devices for monitoring, and defining alerts/configurations will be deprecated.
+
+Adding, editing, removing VMware devices can be performed on the Devices > Computers > Other Devices screen.
+
+Adding ICMP devices can directly be configured using the ICMP monitor.
+
+For any partner-defined Alerts, you can use the Monitors to create and update the criteria to generate tickets.
+
+Security Dashboard. Fixes for the data inconsistency from Webroot API on the Security Dashboard under the Admin > Product & Services
+
+Network Detective Tool Improvement. We will be making following changes to the Network detective tool available in the Asio Platform:
+
+Branding will now show ConnectWise.
+
+You no longer need to sync all of the Super Admin accounts in the Network detective tool application but only the initial user will need to be synced.
+
+We've enabled Independent user management in the Network detective tool and will no longer sync passwords between two solutions.
+
+The download of the Network detective tool using Amazon S3 is now faster.
+
+We've removed custom user creation from the Asio Platform.
+
+There will be no changes to the login ID or password for existing users in the system.
+
+Once the Asio Platform password is changed by an existing user, it will no longer be synced with Rapidfire. This user can use the forgot password functionality in Rapidfire tool to update the password.
+
+New users will be forced to use the forgot password in Rapidfire tool to set a password of their choice in the application.
+
+Reporting
+
+Deprecation of legacy reports for CW RMM
+
+IntelliMon Suspension Report
+
+Product Usage Report
+
+MAC Time machine backup Report
+
+Preventive Maintenance Report
+
+Help Desk Ticket Report (beta)
+
+Deprecation of legacy reports for Command
+
+Perf & App monitoring
+
+Warranty Report
+
+Help Desk Ticket Report (beta
+
+Legacy Executive Report & Custom Report Deprecation
+
+On January 6th, We will be deprecating the Legacy custom report and Executive reports for the ConnectWise RMM partners which is available from the legacy reports section.
+
+Bug Fixes / Known Issues
+
+The following issues will be resolved with this month's release:
+
+Agent: We have fixed an issue where the RMM Scanning tool was not able to detect the endpoints in the network correctly resulting in failure to deploy agents.
+
+ConnectWise RMM Update for October 2022 ConnectWise RMM Update for December 2022
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ConnectWise RMM Update for April 2022
+ConnectWise RMM Update for March 2022
+ConnectWise RMM Update for February 2022
+ConnectWise RMM Update for January 2022
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

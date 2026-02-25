@@ -1,0 +1,58 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Integrations to ConnectWise RMM   ScreenConnect with RMM   Remote View
+Remote View
+Last updated
+Jul 15, 2025
+Table of contents
+Overview
+Permissions
+How to Access Remote View
+Overview
+
+This article provides information about the Remote View functionality in the Asio® platform. Similar to Remote Support, it is now available in Asio.
+
+Permissions
+
+To access this functionality, assign the following permissions from ConnectWise Home.
+
+Remote View
+
+Note: In the ScreenConnect portal, this functionality is available as ScreenConnect View™. However, in Asio, this functionality is available to partners who already have View in ScreenConnect.
+
+How to Access Remote View
+Log in to Asio.
+Navigate to the top right navigation bar and click on the Remote View option.
+
+After you click Remote View, the following screen displays:
+
+
+All the features applicable to ScreenConnect View™ are available by default in Asio. 
+
+How to Launch ScreenConnect ScreenConnect 1-Click for RMM
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ScreenConnect Installation Status and Error Codes
+Enable or Disable Connection Consent for ScreenConnect
+ScreenConnect Dashboard for RMM
+ScreenConnect 1-Click for RMM
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

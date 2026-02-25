@@ -1,0 +1,185 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Devices Page   Device Groups
+Device Groups
+Last updated
+Dec 19, 2025
+Table of contents
+Overview
+Default Permissions for Device Groups
+Audit Tracking
+API Documentation
+More Device Groups Documentation
+Overview
+
+Device Groups enable you to create and manage groupings across sites, machines, and other entities, and then update the group based on a specific set of criteria. There are two types of device groups that can be configured:
+
+Dynamic groups - These are configured by filter criteria. After you define the filter criteria, the platform dynamically manages the addition or removal of resources from the group without requiring your intervention.
+
+Dynamic Groups are created in near real-time.
+Any changes to the endpoint automatically trigger changes to Dynamic Groups. Devices that meet the criteria stay in the group, and those that do not are removed. Other devices that meet the criteria are added to the group.
+
+Static groups - These are configured by manually selecting device resources (machines). Static group filters out a list of specific machines that were manually selected during the creation of the static group. To add new machines or remove existing ones from the created static group, you must manually update the group configuration by adding or removing machines from the group.
+
+ To locate Device Groups, navigate to Endpoints > Groups in the Asio platform.
+
+ 
+
+Default Permissions for Device Groups
+
+Device Groups permission includes rights to view, create, and perform other actions on endpoints managed in the ConnectWise Asio® platform. Refer to Application Roles to learn how to customize permissions and application roles in ConnectWise Home.
+
+Note: *Limited access - Device group data is limited to only machines for which the user has access, system-created groups, and groups they have created. Users with limited access can not read, update, or delete device groups created by other users.
+
+Application Role
+
+	
+
+Primary/Super Admin
+
+	
+
+Manager
+
+	
+
+Technician
+
+	Office Staff	
+
+Sales
+
+	
+
+Client Site Manager
+
+
+Permission	 	 	 	 	 	 
+
+
+Devices > Device Groups > View (Read Access)
+
+	Yes	Yes	Yes	
+
+Yes
+
+*limited access
+
+	No	
+
+Yes
+
+*limited access
+
+
+
+
+Devices > Device Groups > Create
+
+	Yes	Yes	Yes	
+
+Yes
+
+*limited access
+
+	No	
+
+Yes
+
+*limited access
+
+
+
+
+Devices > Device Groups > Update
+
+	Yes	Yes	Yes	
+
+Yes
+
+*limited access
+
+	No	
+
+Yes
+
+*limited access
+
+
+
+
+Devices > Device Groups > Delete
+
+	Yes	Yes	Yes	
+
+Yes
+
+*limited access
+
+	No	
+
+Yes
+
+*limited access
+
+
+Devices > Device Groups > Limited Access (Self)	No	No	No	Yes	No	Yes
+Audit Tracking
+
+Audit Tracking for Device Groups has been added, providing you with greater visibility and accountability across your environment. These changes can be accessed by navigating to Reports > Audit Trail. We have added Audit Tracking for:
+
+Updates made to the Device Group configurations.
+
+Endpoints automatically exiting the Device Group based on the configurations.
+
+Device Groups that are referenced in other configurations, such as Monitors, Suspensions, and Automated Tasks.
+
+Device Groups references removed in other configurations, such as Monitors, Suspensions, and Automated Tasks.
+
+API Documentation
+
+For more info on Device Groups API, review this Device Groups API documentation.
+
+More Device Groups Documentation
+Device Groups Dynamic Attributes
+Device Groups Management 
+
+ 
+
+Device Details Screen Device Groups Dynamic Attributes
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Device Groups Dynamic Attributes
+Device Groups Management
+Devices Overview
+The information on the Device list provides a high-level view of all sites or filtered sites and includes easy-to-view details for applicable endpoint...
+Device Details Screen
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

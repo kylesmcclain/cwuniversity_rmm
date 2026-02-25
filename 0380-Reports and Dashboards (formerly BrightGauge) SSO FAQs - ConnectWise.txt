@@ -1,0 +1,143 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Reports   BrightGauge in ConnectWise RMM   Reports and Dashboards (formerly BrightGauge) SSO FAQs
+Reports and Dashboards (formerly BrightGauge) SSO FAQs
+Last updated
+Nov 12, 2025
+Table of contents
+Overview
+Why is Connect﻿﻿Wise Single Sign-On (SSO) being enabled for Reports and Dashboards partners?
+When does this go into effect?
+Is ConnectWise SSO mandatory?
+When was I migrated?
+Why is my account not enabled with ConnectWise SSO and how do I enable it?
+What will change after ConnectWise SSO is enabled? 
+How do I enable ConnectWise SSO?
+Do I need to change my username and password?
+Will my clients need to enable SSO to view reports if I enable SSO?
+What if I or any other user from my account is not able to log into my domain?
+Do account admins have to do anything to enable users of my account to use ConnectWise SSO?  
+If I do not use ConnectWise SSO, will any features be impacted?  
+How do clients enable ConnectWise SSO? What should I tell my clients about this change?
+Overview
+
+This document provides answers to frequently asked questions about the Reports and Dashboards (formerly BrightGauge) Single Sign-On (SSO) process.
+
+Tip: Learn more at Getting Started with ConnectWise Home and Single Sign-On.
+
+Why is ConnectWise Single Sign-On (SSO) being enabled for Reports and Dashboards partners?
+
+Multi-factor authentication (MFA) is critical to combat cyber attacks in today’s ever-evolving threat landscape. MFA helps strengthen your overall business security, reduces security risks surrounding user data, improves user experience, and streamlines login processes. Ensuring the security of our products and services is a top priority at ConnectWise, and this begins with streamlining and securing our login process.
+
+When does this go into effect?
+
+ConnectWise SSO authentication is enabled to most of our partners. Mandatory SSO activation will roll out in batches, starting on April 22, 2024. Please contact Support for additional questions. 
+
+Note: All client viewers using your Reports and Dashboards domain to log in will also be migrated automatically. Your client viewers must also log in with ConnectWise SSO like other users in your domain.
+
+Is ConnectWise SSO mandatory?
+
+ConnectWise SSO is mandatory for all new partners. Additionally, ConnectWise SSO is mandatory for all Reports and Dashboards partners in all regions.
+
+When was I migrated?
+
+You may have been migrated internally within our system, but it does not affect the behavior of the system until your ConnectWise SSO is enabled. We recommend activating your account. We are initiating force activation to take place in phases starting from April 22, 2024.
+
+Why is my account not enabled with ConnectWise SSO and how do I enable it?
+
+Most of our partners are migrated to ConnectWise SSO. If your account is not yet enabled with ConnectWise SSO, it may be because you have multiple users in different accounts, which is not supported by ConnectWise SSO. Please contact Support to enable SSO in your account. You may need to create new user accounts for users who exist in multiple accounts.
+
+What will change after ConnectWise SSO is enabled? 
+
+Partners can log in to their domain with ConnectWise SSO after it is enabled. 
+
+Admins still need to invite new users, edit, or delete existing users from Reports and Dashboards. However, ConnectWise Home admins with access to user management will be able to see users in the User & Application Settings of ConnectWise Home.
+
+After you enable ConnectWise SSO in Reports and Dashboards, you must change your MFA to email instead of SMS. You can set it to either email or authenticator app in the individual user profile in ConnectWise Home. Follow the steps below to make changes to your MFA.
+
+Open ConnectWise Home.
+Click on your user profile in the bottom left corner of the screen. 
+
+Click the Update profile and preferences link. 
+
+In the Multi-Factor Authentication section, click on the ellipsis (...) and change the MFA used. Then click Save.
+
+How do I enable ConnectWise SSO?
+
+Please contact Support to enable SSO in your account. After SSO is enabled, your login screen shows the SSO option below:
+
+
+Do I need to change my username and password?
+
+You do not need to change your username and password as we will port them over when your account is migrated. You may need to update your password if it does not meet the ConnectWise SSO password requirements. 
+
+Will my clients need to enable SSO to view reports if I enable SSO?
+
+If your clients use your Reports and Dashboards domain to log in, they are migrated automatically and must enable ConnectWise SSO similar to all users in your domain.
+
+What if I or any other user from my account is not able to log into my domain?
+
+ConnectWise SSO does not allow one user to log into multiple accounts for security reasons. During migration, any user who was previously in multiple accounts may have been moved into a single account. For these users, we recommend that an admin completes the following steps: 
+
+Check if the user exists in the account that they are trying to log into.
+If the user does not exist in the desired account, try to add the user into that account from ConnectWise Home.
+If the user cannot be added, they may have been moved into a different account during migration. The user must request the admin of the account they were moved into to remove them from that account.
+After they are removed from the secondary account, the admin of their desired account can add them in ConnectWise Home.
+If you have any difficulties in identifying the account you or another user may be associated with, please open a Support ticket.
+Do account admins have to do anything to enable users of my account to use ConnectWise SSO?  
+
+No, you do not have to change any security settings in ConnectWise Home. After activating ConnectWise SSO for your account, all users can log in with their current passwords via ConnectWise SSO. Users with a password that does not match the ConnectWise SSO password policy must follow the prompt to reset their password at that time.
+
+If I do not use ConnectWise SSO, will any features be impacted?  
+
+Not today. However, many features may soon require ConnectWise SSO to configure new integrations and take other actions.
+
+How do clients enable ConnectWise SSO? What should I tell my clients about this change?
+
+If you enable ConnectWise SSO, your client must be in ConnectWise Home with the appropriate Reports and Dashboards role. To help you communicate this change to your end users, we’ve provided a sample template you can customize and share with them:
+
+Hi [Partner Client/ End User],
+
+We're rolling out a new technology—ConnectWise Single Sign-On (SSO)—for the BrightGauge platform to help reduce security risks surrounding user data, improve user experience, and streamline IT management and login processes. Both our team at [Company Name] and yours will need to use ConnectWise SSO from [DATE] onward to log in and view your dashboards on BrightGauge.
+
+The process is simple and easy. The next time you log-in to BrightGauge, click on “ConnectWise SSO Log In” at the log-in screen, then type in your BrightGauge username and password.
+
+Please note, if you are an existing user and the password is not working, click on “Forgot Password” to reset your password. Your old password may not be compliant with the new SSO password policy, so you may be required to make this update to your password. If you are new user, you will need to set up your username and password.
+
+SSO is the best-in-class method for log in today, both in terms of security and user experience. We're sure that upon implementation of your new log in method, you will find the experience seamless.
+
+For additional details, please reach out to us at [help desk contact email].
+
+Thank you,
+
+[Your company / Name of company designee]
+
+ 
+
+BrightGauge in ConnectWise RMM Security Reports
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Asio Reports
+Security Reports
+Command for Networks
+Secure Information Store
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

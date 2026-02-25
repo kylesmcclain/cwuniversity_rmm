@@ -1,0 +1,54 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   RMM Reporting API
+RMM Reporting API
+Last updated
+Jul 9, 2025
+Overview
+
+The ConnectWise RMM Reporting API provides access to more than 200 data fields ranging from basic machine information to patching, endpoint protection, and backup data, allowing you to use raw reporting data to build custom reports in-house or through third-party vendors. Vendor integration opportunities with this open API are expansive, from reporting tools to documentation systems to lead generation. Our current integrations include BrightGauge and IT Glue™.
+
+This API supports REST protocol, uses JSON format for data exchange, and currently responds mostly to HTTP POST requests. A future Reporting API will adhere to common REST standards such as HTTP GET for resource retrieval. Additional reporting data exposed in future releases will be integrated as new resources in future updates to this API.
+
+Click on the title of an article linked below and learn more about ConnectWise RMM reporting APIs.
+
+The All articles tab lists each article published within this guide.
+
+Reporting API REST Resources
+Below are the REST resources supported in ConnectWise's Reporting API.
+Agent Details
+Antivirus Ages
+Antivirus Summary
+Antivirus Version Summary
+BCDR Continuity Backup Summary
+Show all
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Getting Started with the Reporting API
+Below are authentication prerequisites and API endpoints that are important to review before configuring your API operations.
+Reporting API REST Resources
+Below are the REST resources supported in ConnectWise's Reporting API.
+Agent Details
+Retrieves agent information for the authenticated partner and the specified site.
+Antivirus Summary
+Retrieves counts of machines having antivirus protection in the following states: Updated, Outdated, Not Installed, or Information Unavailable.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

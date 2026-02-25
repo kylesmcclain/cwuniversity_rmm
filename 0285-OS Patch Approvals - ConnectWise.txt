@@ -1,0 +1,148 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Patching   OS Patching   OS Patch Approvals
+OS Patch Approvals
+Last updated
+Jan 16, 2026
+Table of contents
+Overview
+Approving and Blocking Patches
+Approve or Block at the KB Level
+Approve or Disapprove at the OS level
+Auditing Feature
+Data Grid
+Manual Patch Deployment
+Manual Patch Deployment flow
+Filter by Upgrade Classification
+Overview
+
+The Patch Approvals page can be used to Approve or Block updates across all sites for Automated deployment as per policy. Patch Approvals lists all the installed and missing patches applicable for your managed endpoints. The results of the NOC Patch testing for Security updates are also added automatically to this page. All updates are collated and listed based on the KB number. Selecting the KB Number will show all the different updates available under the given KB Number.
+
+To locate this screen, navigate to Endpoints > Patches > Approvals.
+
+ 
+
+Important: We do not recommend granting Update permissions to limited site users (for example, Technicians or Client Site Managers) on the Patch Approvals page. Any actions taken by a limited site user will apply to all sites.
+
+Note: Approving and Blocking patches does not automate them, install them, or block them from your endpoints. You must create Policies and Packages for Patch Updates in order to automate this process. View OS Patching Policies for more information.
+
+When the landing page (Patch Approvals page) loads, it is pre-filtered for updates that have been released in the last 90 days.
+
+At the top of this page are all of the patches that are labeled New and In Progress.
+
+New - These patch updates need to be reviewed by you or your team for approval.
+
+In Progress - These patch updates are not yet fully reviewed.
+
+Following these patch updates are all of the patches that have been reviewed. Under the results column you can see the approval status of the patch.
+
+Approved means that all of the patch updates have been approved.
+
+Partially Approved means that some of the patch updates have been approved and some have been blocked.
+
+Blocked means that all of the patch updates for a KB have been blocked.
+
+Approving and Blocking Patches
+
+Navigate to Endpoints > Patches > Approvals.
+
+Select the patch you want to review.
+
+You can approve or block the patch at a KB level or you can approve by the OS of a patch update.
+
+Approve or Block at the KB Level
+
+Note: By approving or blocking at the KB Level, you can approve or block multiple patch updates at the same time.
+
+Select the checkbox next to the KB you are taking an action for.
+
+Select Approve or Block at the top of the page.
+
+Approve or Disapprove at the OS level
+
+Click on the specific KB you want to take an action for.
+
+Review the update details to the right of the page.
+
+You can select Approve or Block for each OS, or you can Approve All or Block All.
+
+Note: Selecting all patches does not select patches which are already reviewed. See screenshot below for reference.
+
+
+Auditing Feature
+
+We have included some auditing features as well. Once a patch has been approved or disapproved, the email address of the user who reviewed the patch will be listed along with the date it was reviewed.
+
+Data Grid
+
+The data grid helps you display, sort, filter, and manipulate large datasets with ease. Customize your view by rearranging and resizing columns to suit your needs.
+
+Data Grid Option	Description
+Search	Use the search bar to look for a specific item in the list.
+Show Filters	Filter the list by the fields in the grid.
+Manage Columns	Choose which columns of the grid you want to display.
+Manage View	Choose between the different views of the grid.
+Manual Patch Deployment
+
+Manual Patch Deployment is available from the Patch Approvals page to deploy specific update on endpoints which are missing the update.
+
+Manual Patch Deployment flow
+
+Navigate to Endpoints > Patches > Approvals.
+
+Select the patch you want to deploy manually.
+
+If this patch is missing on endpoints, the information card to the right will show the number of missing endpoints on the Manually Deploy button.
+
+Click the Manually Deploy button. The Install Available Patch to Missing Endpoints window will open.
+
+Select either Deploy patch now or Schedule deployment.
+
+If you choose Schedule deployment, you are able to select local machine time or required time zone when choosing your date and time of deployment.
+
+Click Next to select the endpoint(s).
+
+You can select if you want to reboot the endpoints after the deployment.
+
+Click Next. A window will open and ask you to confirm the deployment.
+
+Click Confirm Deployment.
+
+Filter by Upgrade Classification
+
+From the Patch Approvals Page, you can filter by upgrade classification to approve feature updates.
+
+Navigate to Endpoints > Patches > Approvals.
+Click on Filters.
+Under the Columns dropdown, select Classification.
+Under the Value dropdown, select Upgrades. 
+
+Click outside of the filter pop-up to dismiss it.
+Select the upgrades you want to approve and then click Approve.
+OS Feature Updates (Windows) OS Patch Automation System Level Changes
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+OS Patching Compliance
+OS Patching Getting Started Settings
+OS Patch Exclusions
+OS Patching Policies
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

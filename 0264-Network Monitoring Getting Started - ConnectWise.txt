@@ -1,0 +1,640 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Network Monitoring and Management   Network Monitoring Getting Started
+Network Monitoring Getting Started
+Last updated
+Nov 3, 2025
+Table of contents
+Overview
+Deploying Network Probes
+Steps to deploy a Network Probe
+Multiple Probe Deployment
+Uninstalling a Network Probe
+Network Device Credentials
+Company and Site Provisioning
+User Provisioning
+User Permissions and Feature Summary
+Asio Platform Permissions 
+Auvik Portal Permissions
+Other features
+Network Topology Map
+Remote Management
+Documentation
+Branding
+Integrations
+Overview
+
+This article covers how to get started using your network probes. It covers the following topics:
+
+Deploying Network Probes
+Unistalling Network Probes
+Network Device Credentials
+User Provisioning
+Other features
+
+Note: To access these features, please use an Admin role or a custom role that has access to Network Devices.
+
+Deploying Network Probes
+
+The first step to begin discovering devices is to designate at least one of your Site's RMM agents as the Network Probe.
+
+The Network probe is a service that uses several protocols to gather information about your network, such as topology details, configurations, and network statistics. The Network probe is configured to be associated with the Company and Site where the RMM agent is installed.
+
+When an RMM device is designated as a Network Probe, the Company and Site associated with that RMM agent are automatically created within Auvik.
+
+Steps to deploy a Network Probe
+Navigate to the Asio Platform > Endpoints > Devices.
+On the Devices page, select the Windows device that you want to be designated as the Network Probe for the site.
+Click on Manage > Network Probe.
+
+On the confirmation screen, click Confirm.
+
+You will receive a message when the Network Probe deployment is successfully initiated.
+
+The Network Probe deployment takes around ten minutes to complete on the endpoint.
+
+RMM Devices where the Network Probe is successfully installed and running shows under the Device Type.
+Multiple Probe Deployment
+
+A site can have multiple Network Probes to maximize coverage of all Networks and Devices. However, you can only create one Network Probe at a time. For sites where the Network Probe deployment is initiated for the first time, immediately adding another collector will fail as the Company or Site registration within Auvik is in progress. After this process is finished you can create another. 
+
+If you have multiple probes at a site, you will need to complete the following process:
+
+In the Asio Portal, navigate to Endpoints > Network. 
+In the top right corner of the page, click the Manage button.
+
+In the Auvik Portal, navigate to Admin > Auvik Collectors.
+Search for and select the probes you have created.
+
+Then click APPROVE.
+
+Uninstalling a Network Probe
+To uninstall a network probe, navigate to the Asio Platform > Endpoints > Devices.
+On the Devices page, select the device that you want to remove the Network Probe from.
+Click on Manage > Network Probe.
+In the pop-up, uncheck the enable network probe box.
+Click Confirm.
+
+
+Note: When you remove a probe from a site in Asio, the probe entry will not be removed in the Auvik portal. This probe will show as disconnected, but will no longer be collecting any data. 
+
+Network Device Credentials
+
+You must log in to the Auvik UI to provide device credentials. The Device credentials are needed to get complete details from the Network Devices.
+
+You can also see a prompt within the Auvik UI to add SNMP credentials when SNMP supported devices are discovered. Click on Manage Credentials to add SNMP credentials.
+
+You can directly add Credentials at a Partner, Company, or Site level from Admin > Discovery > Manage credentials.
+
+ 
+
+Company and Site Provisioning
+
+You can start using the solution once the Account registration is completed. The provisioning and mapping of ConnectWise Companies (Called Multi-site in Auvik) and Connectwise Sites (Called Sites in Auvik) will happen automatically.
+
+The registration of the Companies and Sites is triggered when the User designates machines as a Network Probe on the Site. More details on Network Probe deployment can be found in the Network Management section.
+
+User Provisioning
+
+When a CW RMM User is added to Asio and has permission to Network Devices, that user is also added to the network monitoring solution based on the following criteria:
+
+Primary Super Admin / Super Admin (by Default)
+Manager (based on permission)
+Technician (based on permission)
+
+When a user is granted access to Network Devices, they will start to see the new Network Devices menu and login to Auvik from the hyperlinks of Network Devices.
+
+Each role within the Asio platform corresponds to a custom role in Auvik with pre-defined permissions.
+
+For example:
+
+The Super Admin or Manager role can modify Alert Threshold within Auvik.
+the Technician role can only view the values of the Alert Threshold within Auvik.
+
+Users are also viewable in the Auvik UI. However, users, roles, and authorizations can only be managed in the Asio platform.
+
+CW RMM Users are authenticated to the Auvik UI when the user clicks on a Device on the Network Devices page. Users can only access Auvik from the Asio Platform > Endpoints > Network. The authentication only works from the Asio platform; direct access to the Auvik Portal will fail.
+
+User Permissions and Feature Summary
+Asio Platform Permissions 
+Network Devices & Probes
+Vendor Administration
+Site Management
+User Management
+Organization Settings
+Read
+Update
+Vendor Alerts
+Alerts
+Read
+Update
+Manage Alerts
+Read
+Update
+Vendor Device Management
+Remote Access
+Discovery Settings
+Read
+Update
+Device Management
+Read
+Update
+Other Settings
+Read
+Update
+Vendor Reports
+Notes
+Reports
+Audit Logs
+Hardware Lifecycle
+Auvik Portal Permissions
+
+Auvik Feature
+
+	
+
+Super Admin
+
+	
+
+Manager
+
+	
+
+Technician
+
+
+
+
+Login Permission
+
+	
+
+YES
+
+	
+
+Based on Permission
+
+	
+
+Based on Permission
+
+
+
+
+Manage Devices
+
+	
+
+Full Access
+
+	
+
+Full Access
+
+	
+
+View Only
+
+
+
+
+Manage Network
+
+	
+
+Full Access
+
+	
+
+Full Access
+
+	
+
+View Only
+
+
+
+
+Manage Credentials
+
+	
+
+Full Access
+
+	
+
+Full Access
+
+	
+
+View Only
+
+
+
+
+Manage Cloud Controllers
+
+	
+
+Full Access
+
+	
+
+Full Access
+
+	
+
+View Only
+
+
+
+
+Discovery Settings
+
+	
+
+Full Access
+
+	
+
+Full Access
+
+	
+
+View Only
+
+
+
+
+Services
+
+	
+
+Full Access
+
+	
+
+Full Access
+
+	
+
+View Only
+
+
+
+
+Debug Details
+
+	
+
+Full Access
+
+	
+
+Full Access
+
+	
+
+Full Access
+
+
+
+
+Data Export
+
+	
+
+Full Access
+
+	
+
+Full Access
+
+	
+
+Full Access
+
+
+
+
+Alerts
+
+	
+
+Full Access
+
+	
+
+Full Access
+
+	
+
+View Only
+
+
+
+
+Manage Alerts
+
+	
+
+Full Access
+
+	
+
+Full Access
+
+	
+
+View Only
+
+
+
+
+Remote Tunnel
+
+	
+
+Full Access
+
+	
+
+Full Access
+
+	
+
+Full Access
+
+
+
+
+Remote Command
+
+	
+
+Full Access
+
+	
+
+Full Access
+
+	
+
+Full Access
+
+
+
+
+Remote Terminal
+
+	
+
+Full Access
+
+	
+
+Full Access
+
+	
+
+Full Access
+
+
+
+
+Remote Browser
+
+	
+
+Full Access
+
+	
+
+Full Access
+
+	
+
+Full Access
+
+
+
+
+Site Management
+
+	
+
+View Only
+
+	
+
+View Only
+
+	
+
+No Access
+
+
+
+
+User Management
+
+	
+
+View Only
+
+	
+
+View Only
+
+	
+
+No Access
+
+
+
+
+Collectors
+
+	
+
+Full Access
+
+	
+
+Full Access
+
+	
+
+No Access
+
+
+
+
+Organization Settings
+
+	
+
+Full Access
+
+	
+
+Full Access
+
+	
+
+No Access
+
+
+
+
+Notes
+
+	
+
+Full Access
+
+	
+
+Full Access
+
+	
+
+Full Access
+
+
+
+
+Reports
+
+	
+
+Full Access
+
+	
+
+Full Access
+
+	
+
+Full Access
+
+
+
+
+Audit Logs
+
+	
+
+Full Access
+
+	
+
+Full Access
+
+	
+
+Full Access
+
+
+
+
+Hardware Lifecycle
+
+	
+
+Full Access
+
+	
+
+Full Access
+
+	
+
+Full Access
+
+
+
+
+Billing
+
+	
+
+NO ACCESS
+
+
+
+
+Role Management
+
+	
+
+NO ACCESS
+
+
+
+
+Integrations
+
+	
+
+NO ACCESS
+
+
+
+
+API
+
+	
+
+NO ACCESS
+
+Other features
+Network Topology Map
+
+You can navigate from the Asio platform to the Auvik device dashboard to view the topology map for a device.
+
+Remote Management
+
+You can remotely access supported network infrastructure devices by navigating to the Auvik UI.
+
+Documentation
+
+You can access documentation,  reports, notes, audit logs, in the Auvik UI with the appropriate role.
+
+Branding
+
+You can manage Auvik organization settings in the Auvik UI with the appropriate role.
+
+Integrations
+
+Integrations with Third-party systems will be handled exclusively in Asio. 
+
+Network Monitoring and Management Advanced Network Monitoring
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Network Monitoring FAQ
+Network Devices
+Network Monitoring Alerting
+Advanced Network Monitoring
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

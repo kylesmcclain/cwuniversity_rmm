@@ -1,0 +1,144 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Automation   Scheduled Tasks   Details for Scheduled Task Triggers
+Details for Scheduled Task Triggers
+Last updated
+Feb 20, 2025
+Table of contents
+Overview
+Available Task Triggers
+Overview
+
+The following table lists the triggers that you can use to activate your tasks and their descriptions
+
+Available Task Triggers
+Trigger	Applicable On	Description 
+Critical - Average processor utilization	Endpoints	Trigger is executed when the 'Average processor utilization of your machine' alert is triggered.
+
+
+Endpoint Entering Dynamic Group
+
+	Dynamic Group	Trigger is executed when the endpoint enters a Dynamic Group.
+
+
+Endpoint Leaving Dynamic Group
+
+	Dynamic Group	Trigger is executed when the endpoint leaves a Dynamic Group.
+
+
+Error on Disk FileSystem
+
+	Endpoints	Trigger is executed when 'Error on Disk File System' alert is triggered.
+
+
+First check-in
+
+	Site, Company	Trigger is executed when endpoints get added to the site or company and an agent is installed on them and it comes online for the very first time.
+
+
+Low Server disk space
+
+	Endpoints	Trigger is executed when 'Low Server Disk Space' alert is triggered.
+
+
+Machine Restart is Required
+
+	Endpoints	Trigger is executed when 'Machine Restart is Required' alert is triggered.
+
+
+Non-Critical - Average processor utilization
+
+	Endpoints	Trigger is executed when 'Non-Critical - Average processor utilization' alert is triggered.
+
+
+Proactive server care
+
+	Endpoints	Trigger is executed when 'Proactive server care' alert is triggered.
+
+
+System is low on performance due to HIGH paging
+
+	Endpoints	Trigger is executed when 'System is low on performance due to HIGH paging' alert is triggered.
+System running out of disk space	Endpoints	Trigger is executed when 'System running out of disk space' alert is triggered.
+
+
+System running out of disk space (RECOVERY)
+
+	Endpoints	Trigger is executed when 'System running out of disk space (RECOVERY)' alert is triggered.
+
+
+System startup
+
+	Site, Company, Dynamic Group, Endpoints	Trigger is executed when an endpoint is started. This does not apply to a restart.
+
+
+Time
+
+	Site, Company, Dynamic Group, Endpoints	Various scheduling options available against Time trigger - Daily, Weekly, Monthly, etc.
+
+
+Unexpected reboot
+
+	Endpoints	Trigger is executed when 'Unexpected reboot' alert is triggered.
+
+
+Unexpected reboot with memory dump (BSOD)
+
+	Endpoints	Trigger is executed when 'Unexpected reboot with memory dump (BSOD)' alert is triggered.
+
+
+Uninterruptible Power Supply
+
+	Endpoints	Trigger is executed when 'Uninterruptible Power Supply' alert is triggered.
+
+
+User Login
+
+	Site, Company, Dynamic Group, Endpoints	Trigger is executed when a user logs in to the endpoint.
+
+
+User Logout
+
+	Site, Company, Dynamic Group, Endpoints	Trigger is executed when a user logs out of the endpoint.
+
+ 
+
+Note: First Agent Check-in triggers do not work on Device Groups.
+
+Scheduled Tasks Tasks
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Tasks
+The tasks feature is an automation tool used to address issues on managed devices. You can also sequence tasks with if/then/else logic to streamline w...
+Command for Networks
+Secure Information Store
+Tech Advantage
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

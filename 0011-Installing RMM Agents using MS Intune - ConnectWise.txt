@@ -1,0 +1,142 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Getting Started with ConnectWise RMM   Installing RMM Agents using MS Intune
+Installing RMM Agents using MS Intune
+Last updated
+Oct 10, 2025
+Table of contents
+Overview
+Requirements
+Prerequisites
+Deploy Asio Agent Using Intune
+Overview
+
+This article helps technicians and administrators set up Microsoft® Intune™ to deploy an Asio Agent.
+
+Requirements
+Sign in to Intune as a Global administrator or an Intune Service administrator.
+Prerequisites
+
+The following image shows the applications already mapped to deploy on the endpoint:
+
+
+Microsoft Intune allows Win32 app management capabilities. Please refer to the Win32 app management features and any other related information.
+
+Before you can add a Win32 app to Microsoft Intune, you must prepare the app using the Microsoft Win32 Content Prep tool. Using the Content Prep tool, convert the Setup file (.msi) to .intunewin format.
+
+Tip: Use Windows 10 version 1607 or later to create the .intunewin file.
+Tip: Before pushing the agent to the endpoint:
+.Net Framework 2.0 and above should be installed on Windows machines.
+Windows Installer v4.0 or above is required on Windows machines.
+Deploy Asio Agent Using Intune
+Convert the MSI setup to an Intune package:
+Download the Intune packaging tool from the download link.
+After the download, copy the agent setup into a new folder.
+Run the IntuneWinAppUtil.exe tool to create INTUNEWIN package file.
+
+Download Link: 
+
+https://github.com/Microsoft/Microsoft-Win32-Content-Prep-Tool
+
+Syntax:
+
+IntuneWinAppUtil.exe -c <source location> -s <setup file name> -o <destination location>
+
+Example:
+
+D:\Intune>IntuneWinAppUtil.exe -c D:\RMMSetup -s Continuum-continuum_DPMA_ITSPlatform_XXXXXXXX-XXX-XXXX-XXX-XXXXXXXXXXXX.msi -o D:\RMMSetup
+After the package file is created in the .intunewin format, add the converted app package file to Intune admin center.
+
+Select the .intunewin package file and click OK.
+
+ 
+Specify the program behavior and provide the Install Command: msiexec /i "<setup file name>"
+
+
+Proceed to the Requirements step and enter your OS parameters in the required Operating system architecture and the Minimum operating system fields.
+
+
+Proceed to the Detection rules step to configure the rules to detect the presence of the app. You can choose to add multiple rules:
+
+Rules format: Select how the presence of the app will be detected. You can choose to either manually configure the detection rules or use a custom script to detect the presence of the app. You must choose at least one detection rule.
+
+You can select one of the following rule types:
+
+MSI: Verify based on an MSI version check. This option can be added only one time. When you choose this rule type, you have two settings:
+
+MSI product code: Add a valid MSI product code for the app.
+MSI product version check: Select Yes to verify the MSI product version in addition to the MSI product code.
+
+
+
+File or folder exists: Verify based on file or folder detection, date, version, or size.
+
+Path: Enter the full path of the folder that contains the file or folder to detect. This shouldn't include special characters such as , or ".
+File or folder: Enter the file or folder to detect.
+Detection method: Select the type of detection method used to validate the presence of the app.
+Associated with a 32-bit app on 64-bit clients: Select Yes to expand any path environment variables in the 32-bit context on 64-bit clients. Select No (default) to expand any path variables in the 64-bit context on 64-bit clients. 32-bit clients will always use the 32-bit context.
+
+Example of file-based detection:
+
+Rule type – File
+
+Path - C:\Program Files (x86)\ITSPlatform\agentcore
+
+File or Folder – platform-agent-core.exe
+
+Detection method – File or folder exists
+
+Associated with a 32-bit app on 62-bit clients – Yes
+
+There should be no results under dependencies.
+
+
+In the Assignments section, select the device group where the app needs to be pushed.
+
+The status of deployment can be viewed.
+
+
+On successful configuration, the app information can be viewed.
+
+
+If the file is renamed, return to the admin center to specify the renamed token in the Install Command field (step 7).
+
+ 
+
+Installing Asio Agents Installing the RMM Scanning Tool
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Creating Users
+Creating Notification Rules
+Create Client Sites
+Installing Asio Agents
+This article provides information and instructions about how to download and install an agent on your device.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

@@ -1,0 +1,75 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Expert Services   ConnectWise Network Operations Center - NOC   Setting NOC Access Levels
+Setting NOC Access Levels
+Last updated
+Jan 15, 2025
+Table of contents
+Overview
+Prerequisite for Access Level 3: Create a Reboot Schedule
+To create a Reboot schedule:
+To set NOC access for your entire site or for specific resources:
+Overview
+
+Use the following documentation to Set the level to which the NOC has access to your sites.
+
+Prerequisite for Access Level 3: Create a Reboot Schedule
+
+To configure the maximum Fix and Reboot (NOC Access Level 3, requiring the Elite Servers level), you must assign a reboot schedule to designated sites when setting NOC access. If the schedule is not already created, you must create one before moving on.
+
+To create a Reboot schedule:
+Go to Settings > RMM Setup > Reboot Schedules > New.
+Configure time blocks for the Reboot time tab (after-hours recommended). By scheduling reboot times as suggested here, the NOC can more efficiently work through issues for you while minimally impacting your productive work hours.
+
+Only a one-time block range can be configured and applied to days in the Reboot time tab. When you add a new time block to a schedule, it replaces any existing time blocks.
+
+If you want your time block to span multiple days (say, from 8pm of one day to 5pm of the next day), you must assign it to all days of the week. For example, a time block range from 8pm Thursday to 5pm Friday is not supported. However, a time block range of 8pm - 5pm that is assigned to all days of the week is supported.
+
+To set NOC access for your entire site or for specific resources:
+Go to Settings > RMM Setup > Sites Using RMM > [site name] > Support Access.
+Select the Default NOC Access option per the Servers level.
+
+Levels 0–1 are available for Essential Servers, and levels 0–3 are available for Elite Servers.
+
+For Elite, we recommend selecting 3 Fix and Reboot. With this level, the NOC will diagnose and fix all issues and inform you of work done. With all other NOC access levels, a reboot schedule is not required since no reboot will occur.
+
+Next, select the appropriate Default Reboot Schedule (if level 3).
+To apply this access level to all resources at the site, select the Apply this configuration to complete site check box.
+
+To apply this access level to specific resources, select the resources from the list provided.
+
+ 
+
+ 
+
+ 
+
+ 
+
+NOC Service Statement of Work Using the NOC Chat Support Feature
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+NOC Access Levels
+NOC Service Statement of Work
+Enabling Automatic Credentials for Servers and Desktops
+Changes to NOC Proactive Remediation
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

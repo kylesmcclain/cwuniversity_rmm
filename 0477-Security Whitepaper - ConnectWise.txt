@@ -1,0 +1,161 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Secure Information Store   Security Whitepaper
+Security Whitepaper
+Last updated
+Oct 18, 2024
+Table of contents
+Overview
+ConnectWise Philosophy
+Best Practices
+Employee Security Measures
+Background Verification and Standards
+Roles and Responsibilities
+Information Security Training Program
+Company Security Measures
+Data Center Credentials
+Secure Remote Connection Feature
+Security Audit Program
+Access Control
+Product Security Measures
+ITSupport Portal
+Help Desk
+What Partners Can Expect
+Network Operations Center (NOC) Protocols
+Help Desk Protocols
+Conclusion
+Overview
+
+ConnectWise provides a leading SaaS-based managed services platform that Managed Service Providers (MSPs) use to efficiently backup, monitor, and troubleshoot desktops, servers, and other endpoints for small- and medium-sized businesses. Our comprehensive platform provides an intelligent remote monitoring and management (RMM) solution and an advanced backup and disaster recovery (BDR) offering, all integrated with an industry-leading Network Operations Center (NOC) and world-class Help Desk, delivering a single, unified managed services experience.
+
+Partners and their clients' trust ConnectWise with remote monitoring and management of their most critical systems. ConnectWise employees are responsible for managing and analyzing various types of systems and associated logs that process or store sensitive information and must be protected at all times. To ensure this protection, ConnectWise has implemented security policies, procedures, and controls for our Network Operations Center (NOC) and Help Desk personnel, which are outlined in the following sections.
+
+ConnectWise Philosophy
+
+ConnectWise strives to provide MSP partners and their clients with the highest level of security and protection where critical systems and sensitive information are concerned. Because you entrust ConnectWise with this information and access, we have developed and implemented various layers of security policies, protocols, and controls to be sure sensitive and protected information is secure at all times. These policies, protocols, and controls comprise the company’s Information Security Management Systems (ISMS) that govern the Help Desk and NOC.
+
+Best Practices
+
+ConnectWise provides our partners with Health Insurance Portability and Accountability Act (HIPAA) and Massachusetts Privacy Regulation 201 CMR 17.00-compliant products and services. ConnectWise was found compliant by an independent third-party auditing firm for security posture and controls against the requirements defined in HIPAA, Massachusetts Privacy Regulation 201 CMR 17.00, and SOC 2 (Type 2) standard.
+
+ConnectWise has also adopted this Privacy Shield Policy as part of its overall Privacy Notice to establish and maintain an adequate level of privacy protection. ConnectWise has taken steps to align business practices, processes, and policies with the GDPR’s data protection obligations to help our customers meet GDPR compliance.
+
+Employee Security Measures
+Background Verification and Standards
+
+Background checks are performed on all ConnectWise employees, including Help Desk and NOC. In the United States, criminal records search and SSN verifications are performed. In India, a criminal records search and verification checks for education and employment occur. All employees must sign a Non-Disclosure Agreement as a condition of employment.
+
+Roles and Responsibilities
+
+Every team member has a job description with detailed roles and responsibilities associated with Standard Operating Procedures (SOPs) that are used daily. SOPs are in place to define how each employee must perform their day-to-day work. These procedures are reviewed and updated on a regular basis to take advantage of improvements to our systems and maximize both security and efficiency. This practice restricts partner exposure to sensitive information and provides guidelines internally to employees coming into contact with sensitive information.
+
+Information Security Training Program
+
+Security awareness is a top priority for ConnectWise employees. To this end, a rigorous training program is actively managed by our Chief Information Security Officer. All employees, regardless of position, are required to complete the program and successfully pass all related tests. The comprehensive program includes topics such as Information Security, Endpoint Protection Policy, Data Security, Information Sensitivity, Password Policy, and Destruction of Electronic Media. Each module of the program contains both a training document and an exam. Refresher courses are required on an annual basis. Records are verified and maintained for course completion, and annual refreshers are completed by each employee.
+
+Company Security Measures
+Data Center Credentials
+
+For information security, we apply industry-leading practices and processes. Only a select few individuals have administrative access to our servers and databases. All other access is at the application level. Information sent to our databases is first processed by a forwarding server, then imported into the database. Databases are not directly accessible from the Internet.
+
+ConnectWise’s infrastructure is hosted in Markley Group’s Data Center, an SSAE-16-certified facility. This data center is a fully redundant facility. For more information, see www.markleygroup.com. A copy of the SSAE-16 report is available upon request.
+
+Secure Remote Connection Feature
+
+Access to our managed systems is performed using ScreenConnect. Screenconnect remote access products use a proprietary remote desktop protocol transmitted via Secure Socket Layer (SSL). An SSL certificate is created for each remote desktop and is used to cryptographically secure communications between the remote desktop and the accessing computer.
+
+All NOC and Help Desk systems are updated regularly with Microsoft Patches, third-party software, and definitions for Antivirus and Anti-malware Solutions. Our agents ensure that endpoint protection software is properly installed and verified and that the latest definition files have been updated and applied.
+
+ConnectWise’s Preventative Maintenance Team tests all security patches. Once tested, Microsoft security patches are classified as Whitelisted (passed), Blacklisted (failed and not recommended for installation), Conditional Blacklisted (failed under certain conditions and not recommended for installation), and In Progress (undergoing testing). A Patch Evaluation Report provides partners with the classification.
+
+Security Audit Program
+
+ConnectWise was found compliant by an independent third-party auditing firm for security posture and controls against the requirements defined in HIPAA, Massachusetts Privacy Regulation 201 CMR 17.00, and SOC 2 (Type 2) standard. To maintain compliance and to continually improve the existing security program, ConnectWise has adopted the SOC 2 framework.
+
+Access Control
+
+ConnectWise provides all employees, contractors, and third parties with the information they need to carry out their responsibilities effectively and efficiently. Access is granted through IT account request procedures is based on the principle of least privilege, and must be approved by ConnectWise management before granting access. When an employee separates from ConnectWise, Human Resources notifies IT to remove access at the end of the employee’s last day.
+
+In addition to controlling access to sensitive information, ConnectWise has a strict Password Management Policy that is applied and enforced for all ConnectWise users. This policy is applicable to Active Directory domains, hosted applications, and to internal and customer-facing portals. Users are required to have a minimum password length that includes complexity and expires every 90 days.
+
+Product Security Measures
+
+Our various product offerings each house their own set of security features and measures that provide MSP partners with confidence where information security is concerned.
+
+ITSupport Portal
+
+ConnectWise uses state-of-the-art firewalls and only allows incoming traffic on ports 80 and 443. Our firewalls are multi-threat security systems that enable secure communications and deliver the best security and performance.
+
+Our RMM platform operates entirely over secured connections. Our agents send only asset data and performance information to our data center. All agent information is sent either over HTTPS or encrypted using AES 128-bit encryption.
+
+Agents communicate with the data center by using a local system account. The server agents send a keep-alive request to the data center every minute over port 80.
+
+All data sent from the agents to the data center is compressed at the client-side using a compression key, encrypted, then sent over a secure 128-bit encrypted tunnel.
+
+In the unlikely event of a data center outage, we have a limited functionality backup portal available so partners can access Quick Access for Servers, Support, LogMeIn, and the Partner Support Portal. The controldr.itsupport247.net portal is accessible from any smartphone or tablet.
+
+Remote Management Console - The remote management console allows authorized ConnectWise employees to connect securely and take remote control over client machines in the event that LogMeIn is unavailable. This connection is established using a Secure Shell 2 (ssh2) tunnel over port 443. Remote Desktop Protocol (RDP) is used through this tunnel for remote access to end-points. The partner’s machine initiates the connection and generates the encryption key. The connection is routed through our data center, which acts as a pass-through tunnel, and the connection is then made to the end-point.
+Password Vault (Secure Information Store) - The Secure Information Store is a web-based password vault designed to help our partners securely store and manage sensitive information. The Secure Information Store allows the secure transfer of server credentials to the NOC and desktop credentials to the Help Desk. Additionally, the Secure Information Store provides secure storage of critical client information for access by onsite technicians and secure storage of Lights Out Management credentials for remotely re-starting downed servers.
+
+The Secure Information Store password vault resides in-house on our servers. Data stored within the Secured Information Store is delivered securely by HTTPS or by 256-bit AES encryption at both the database and column level, using the same technology as banks, credit card processors, hospitals, and government agencies.
+
+The Secure Information Store allows secure transfer of credentials to NOC and Help Desk technicians and provides a secure, central location for partner technicians to access vital information on their clients’ networks. When a technician accesses these credentials, information such as user name, date/time, system IP address, and any additional information provided by the technician is captured and logged for accountability.
+
+For more information about the Secure Information Store Password Vault, refer to Passwords tab in our Doc Center.
+
+Help Desk
+
+RightAnswers is a cloud-based knowledge management system our Help Desk uses for issue tracking and troubleshooting. RightAnswers uses an SSL-encryption connection between a technician’s browser and RightAnswers servers. User authentication is performed on ConnectWise’s servers. The username and group are then encrypted and passed to RightAnswers’ servers. The encryption is accomplished through the use of GET requests with digested tokens. Digested tokens are passed from the application performing the authentication to the RightAnswers portal and are used to validate a single sign-on session request so it will not be usurped by anyone, validating the intended authenticated user is the one generating the request. This validation is accomplished by passing an HTTP query string parameter value containing the digesting token. To avoid a man-in-the-middle or replay type attack, the token is generated with a varying timestamp value added to make the final digested value unique for each use and to produce a request with a very limited lifespan.
+
+What Partners Can Expect
+
+When contacting the Help Desk or NOC, MSP Partners can expect additional layers of security around partner identification and authentication as detailed below.
+
+Network Operations Center (NOC) Protocols
+
+Approval is a pre-requisite for initial access to a client system if the partner is directly contacting the NOC to perform specific tasks. This layer of security provides MSPs the ability to predetermine system access and provides a level of access control.
+
+NOC Access Levels 0-3 are selected to designate how you would like proactive troubleshooting to be performed for your servers. For example, you might want the NOC Technician to log in to the server, diagnose the problem, but avoid fixing anything until they receive permission from you (Access Level 1).
+
+Help Desk Protocols
+
+As with the NOC, approval is a prerequisite for initial access to a client system if the partner is directly contacting the Help Desk to perform specific tasks.
+
+When clients call in, the Help Desk can see the incoming phone number as well as the name (be it site, partner, or user) associated with the number, allowing for a more secure and personalized interaction with the Help Desk.
+
+Help Desk personnel are not authorized to change site-level administrator passwords or credentials filed in the Partner Portal’s password vault. User passwords at contracted sites can only be changed with the authorization of the partner unless personnel authorized to approve security-related requests (such as password resets) are pre-documented by the partner on the Partner Portal. Calls will be made to the appropriate parties using phone numbers documented by the partner when requesting authorization for security-related changes. If the user is not reached, a voicemail will be left and an email sent.
+
+Two-Factor authentication is available upon request of the partner for client sites. For such sites, a text message will be sent to the security-related change requestor. The partner is responsible for supplying mobile numbers of personnel at the site prior to activating the two-factor option. When no mobile number is available, the ticket will be escalated to the partner for completion per normal procedures.
+
+Conclusion
+
+ConnectWise strives to provide MSP partners and their clients with the highest level of security and protection of critical systems and sensitive information. We have implemented security policies, procedures, and controls for our hardware and software, Network Operations Center (NOC), Help Desk personnel, and for all employees. Please contact your Account Management team if you have any questions.
+
+Secure Information Store Secure Information Store Overview
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Secure Information Store Overview
+Passwords Tab
+The site-level Passwords tab area enables the creation and storage of passwords that allow the NOC and Help Desk to access client machines for trouble...
+Enabling Automatic Credentials for Servers and Desktops
+Server and Desktop Passwords
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

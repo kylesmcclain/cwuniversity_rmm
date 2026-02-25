@@ -1,0 +1,83 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   RMM Reporting API   Getting Started with the Reporting API
+Getting Started with the Reporting API
+Last updated
+Jul 9, 2025
+Table of contents
+Important: The RMM Reporting API is scheduled for deprecation and will be considered a legacy feature. For instructions on setting up the new API access feature on the Asio platform, please refer to the Partner API Access User Guide. You can access your reporting data securely through your Snowflake instance via Private Listing, a service provided by Snowflake for ConnectWise partners. For more information, refer to the Asio - Snowflake documentation.
+Overview
+Authentication Prerequisites
+Retrieve Your Reporting API Key
+Retrieve Site Codes and Machine IDs
+Reporting API Endpoints
+Important: The RMM Reporting API is scheduled for deprecation and will be considered a legacy feature. For instructions on setting up the new API access feature on the Asio platform, please refer to the Partner API Access User Guide. You can access your reporting data securely through your Snowflake instance via Private Listing, a service provided by Snowflake for ConnectWise partners. For more information, refer to the Asio - Snowflake documentation.
+Overview
+
+Below are authentication prerequisites and API endpoints that are important to review before configuring your API operations.
+
+Authentication Prerequisites
+
+All communication with the API is conducted over a secure channel using SSL, which provides bidirectional encryption to protect against eavesdropping and tampering with the contents of API requests and responses.
+
+API clients must provide an API key via HTTP Basic Access Authentication. Basic authentication is a standard mechanism to provide credentials using a specific HTTP header. For more information, see HTTP Authentication: Basic and Digest Access Authentication.
+
+The Reporting API expects a valid, Base64-encoded API key to be supplied in the HTTP “Authorization” header in the following format:
+
+“Basic [your Base64-encoded API key]"
+
+Example: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==
+
+Failure to provide credentials in the expected format, or failure to provide valid credentials, results in a failed API request.
+
+Retrieve Your Reporting API Key
+
+To retrieve your Reporting API key, log in to the Asio™ Platform and go to Settings > Account Administration > Integration > Reporting API.
+
+Note: Use this API key as the password for authenticating all Reporting API REST requests with a blank username. Although the HTTP Basic Authentication spec calls for the Base64 encoding of both a username and password, separated by a colon character (:), the Reporting API authentication process does not require a username, and authentication fails if anything other than an empty string for the username is entered.
+
+Retrieve Site Codes and Machine IDs
+
+In addition to a valid API key, most API requests require a unique Site Code to identify the site where data is being requested, and some requests (such as Endpoint Protection Version Summary, Installed Software, and System Information) also optionally accommodate a unique Machine ID to identify a specific device. If an invalid site or machine is specified, the API request fails.
+
+To retrieve Site Codes, run the Sites resource or go to Settings > Account Administration > Sites in the Asio™ platform.
+
+To retrieve Machine IDs, run the Agent Details resource using the retrieved Site Code of the site where the device is located and note the IDs in the returned data.
+
+Reporting API Endpoints
+
+This API currently uses the Legacy endpoint listed below for all REST resources except Sites and Devices, which require a separate endpoint. The required endpoint and URI combinations are listed with each of the REST resources.
+
+REST (Legacy):https://itsapi.itsupport247.net/reportingapi/ReportingAPIService.svc/json
+REST (Sites and Devices):https://api.itsupport247.net/reporting/v1/Sites
+RMM Reporting API Reporting API REST Resources
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Reporting API REST Resources
+Below are the REST resources supported in ConnectWise's Reporting API.
+Agent Details
+Retrieves agent information for the authenticated partner and the specified site.
+Antivirus Summary
+Retrieves counts of machines having antivirus protection in the following states: Updated, Outdated, Not Installed, or Information Unavailable.
+Antivirus Version Summary
+Retrieves currently detected antivirus software and the definition version.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

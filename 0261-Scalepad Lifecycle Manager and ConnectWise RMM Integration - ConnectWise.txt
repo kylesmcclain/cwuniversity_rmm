@@ -1,0 +1,103 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Integrations to ConnectWise RMM   Scalepad Lifecycle Manager and ConnectWise RMM Integration
+Scalepad Lifecycle Manager and ConnectWise RMM Integration
+Last updated
+Jul 7, 2025
+Table of contents
+Overview
+Prerequisites
+Integration steps in ConnectWise RMM
+Create an API key
+Integration steps in Lifecycle Manager
+Add ConnectWise RMM API credentials to Lifecycle Manager
+Disabling an integration
+Overview
+
+Lifecycle Manager syncs your hardware assets from ConnectWise RMM via API. This article provides instructions on how to integrate ConnectWise RMM to Lifecycle Manager.
+
+Prerequisites
+
+The following is required for integrating ConnectWise RMM with Lifecycle Manager:
+
+You must have Administrator user credentials for your ConnectWise RMM account
+
+You must have Administrator user credentials for your Lifecycle Manager account or member permissions of Manage Sync Settings selected
+
+Important: Do not reuse Existing API keys. If you have already generated one for another system other than Lifecycle Manager do not use them for this integration.
+
+Integration steps in ConnectWise RMM
+Create an API key
+
+Sign in to the Asio Platform.
+
+Navigate to Integrations > Asio Integrations.
+
+On the Integrations page, search for ScalePad (or Lifecycle Manager) and click it to open the API Credentials page.
+
+
+From the API screen, click the Generate button to generate a Client ID and a Client secret key. The generated API credentials appear beside the relevant labels. The Client secret key will be hidden for security reasons after navigating away from this page. After the keys are generated, take note and copy the API credentials.
+
+
+Click Proceed to continue.
+
+In case you forget your API credentials, navigate to Integrations and return to the API screen and click Regenerate. Any previously generated Client ID and Client secret keys will be invalidated.
+
+Integration steps in Lifecycle Manager
+Add ConnectWise RMM API credentials to Lifecycle Manager
+
+From Lifecycle Manager, navigate to Integrations and click Add integration.
+
+The Add integration page will open. Select ConnectWise RMM.
+
+Enter your Client ID and Client Secret into  the CW RMM add integration page.
+
+Click Save ConnectWise RMM Setup. When you click Save ConnectWise RMM Setup, Lifecycle Manager performs a full sync. When finished, you should be able to view your hardware assets in your account.
+
+Note: Two-way synchronization of Purchase Dates and Warranty Expiration Dates is supported by ConnectWise RMM. These dates are queried by Lifecycle Manager and written back into ConnectWise RMM.
+
+Tip: In-app edited dates: If you use our In-app edit feature to manually edit purchase / expiration dates, Lifecycle Manager will push these manually edited dates back into ConnectWise RMM.
+
+Disabling an integration
+
+Navigate to Integrations > Asio Integrations.
+
+On the Integrations page, search for ScalePad (or Lifecycle Manager).
+
+Click on the toggle to deactivate the integration. This revokes access and previously generated API keys will be invalidated.
+
+Important: The integration's data and configurations will only be deleted if the integration in Lifecycle Manager is also removed.
+
+When adding the ConnectWise RMM Integration credentials to Lifecycle Manager, you will need to add the Client ID and Client secret to the ConnectWise RMM integration page.
+
+Bitdefender Integration Configuring the ConnectWise–Auvik Integration: Legacy Method
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ScreenConnect with RMM
+This guide contains all relevant articles for using ScreenConnect with ConnectWise RMM.
+ConnectWise RMM Intune Integration
+Integration with Microsoft Intune allows multi-tenant management of customer end-points in ConnectWise RMM™. This solution has simplified the complex ...
+Endpoint Protection
+This guide includes articles about ConnectWise RMM™ endpoint protection and managed antivirus products.
+Webroot
+Webroot Endpoint Protection is included in our ConnectWise RMM™ desktop agent to help you protect your resources against viruses. (A fee is associated...
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

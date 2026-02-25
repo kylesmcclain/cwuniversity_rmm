@@ -1,0 +1,657 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   RMM Tools   APIs   Asio Integration API   Managed Devices Details APIs
+Managed Devices Details APIs
+Last updated
+Jul 7, 2025
+Table of contents
+Overview
+Get List of Clients
+Request
+Headers
+Response
+Headers
+Body
+Get List of Sites
+Request
+Parameters
+Headers
+Response
+Headers
+Body
+Get List of Endpoints
+Request
+Parameters
+Headers
+Response
+Headers
+Body
+Get Endpoint Details
+Request
+Parameters
+Headers
+Response
+Headers
+Body
+Overview
+
+These APIs return details of your MSP network – Clients, Sites, and Endpoints.  
+
+This information is used to correctly map organizations, companies, and sites between ConnectWise RMM and the vendor's product. We have 4 different GET APIs: 
+
+Get List of Clients - Returns a list of all the clients for an MSP (Client Name and Client ID).
+Get List of Sites - Returns a list of sites for a given client (Site Name and Site ID).
+Get List of Endpoints - Returns a list of all the endpoints for a given client and site (Endpoint ID and Endpoint Type).
+Get Endpoint Details - Returns details of endpoints for a given Endpoint ID.
+Get List of Clients
+
+Returns a list of all the clients for an MSP (Client Name and Client ID).
+
+Request
+
+Sandbox: GET https://openapi.sandbox.use1.cwcmddev.cwnet.io/v1/clients 
+
+Production: GET https://openapi.service.itsupport247.net/v1/clients 
+
+Headers
+
+Authorization:Bearer i9OpjK8IBYYNbV9VGJo6APG224I 
+
+Response
+
+200
+
+Headers
+
+Content-Type:application/json
+
+Body
+
+[
+
+{
+
+"clientName": "NSC",
+
+"clientId": "xWtguxurixSAcxCx",
+
+}
+
+]
+
+Get List of Sites
+
+Returns a list of sites for a given client (Site Name and Site ID).
+
+Request
+
+Sandbox: GET https://openapi.sandbox.use1.cwcmddev.cwnet.io/v1/clients/clientID/sites 
+
+Production: GET https://openapi.service.itsupport247.net/v1/clients/clientID/sites 
+
+Parameters
+clientID	Example Client Id: 2lUrtru6uvuVs7 	String
+Headers
+
+Authorization:Bearer i9OpjK8IBYYNbV9VGJo6APG224I
+
+Response
+
+200
+
+Headers
+
+Content-Type:application/json
+
+Body
+
+[
+
+{
+
+"siteId": "xWtguxurixSAcxCx",
+
+"siteName": "North Star Coms"
+
+}
+
+]
+
+Get List of Endpoints
+
+Returns a list of all the endpoints for a given client and site (Endpoint ID and Endpoint Type).
+
+Request
+
+Sandbox: GET https://openapi.sandbox.use1.cwcmddev.cwnet.io/v1/clients/clientID/sites/siteID/endpoints 
+
+Production: GET https://openapi.service.itsupport247.net/v1/clients/clientID/sites/siteID/endpoints 
+
+Parameters
+clientID	Example clientID: 2lUrtru6uvuVs7 	String
+siteID	Example siteID: wOCDc3uZu7upuZ 	String
+
+ 
+
+Headers
+
+Authorization:Bearer i9OpjK8IBYYNbV9VGJo6APG224I
+
+Response
+
+200
+
+Headers
+
+Content-Type:application/json
+
+Body
+
+[
+
+{
+
+"endpointID": "4a9caa07-d45a-4c14-aa36-8c1c26e7a029",
+
+"endpointType": "Desktop",
+
+}
+
+]
+
+Get Endpoint Details
+
+Returns details of endpoints for a given Endpoint ID.
+
+Request
+
+Sandbox: GET https://openapi.sandbox.use1.cwcmddev.cwnet.io/v1/clients/clientID/sites/siteID/endpoints/endpointID 
+
+Production: GET https://openapi.service.itsupport247.net/v1/clients/clientID/sites/siteID/endpoints/endpointID 
+
+Parameters
+clientID	Example clientID: 2lUrtru6uvuVs7 	String
+siteID	site id Example: wOCDc3uZu7upuZ	String
+endpointID	endpoint id Example: 4a9caa07-d45a-4c14-aa36-8c1c26e7a029	String
+Headers
+
+Authorization:Bearer i9OpjK8IBYYNbV9VGJo6APG224I 
+
+Response
+
+200
+
+Headers
+
+Content-Type:application/json
+
+Body
+
+{ 
+
+  "baseBoard": { 
+
+    "product": "string", 
+
+    "manufacturer": "string", 
+
+    "model": "string", 
+
+    "serialNumber": "string", 
+
+    "name": "string", 
+
+    "version": "string", 
+
+    "installDate": "2019-01-16T14:01:12.883Z" 
+
+  }, 
+
+  "bios": { 
+
+    "product": "string", 
+
+    "manufacturer": "string", 
+
+    "version": "string", 
+
+    "serialNumber": "string", 
+
+    "smbiosVersion": "string" 
+
+  }, 
+
+  "drives": [ 
+
+    { 
+
+      "product": "string", 
+
+      "manufacturer": "string", 
+
+      "mediaType": "string", 
+
+      "interfaceType": "string", 
+
+      "logicalName": "string", 
+
+      "serialNumber": "string", 
+
+      "partitions": [ 
+
+        "string" 
+
+      ], 
+
+      "sizeBytes": 0, 
+
+      "numberOfPartitions": 0, 
+
+      "partitionData": [ 
+
+        { 
+
+          "name": "string", 
+
+          "label": "string", 
+
+          "fileSystem": "string", 
+
+          "description": "string", 
+
+          "sizeBytes": 0 
+
+        } 
+
+      ] 
+
+    } 
+
+  ], 
+
+  "physicalMemory": [ 
+
+    { 
+
+      "manufacturer": "string", 
+
+      "serialNumber": "string", 
+
+      "sizeBytes": 0 
+
+    } 
+
+  ], 
+
+  "networks": [ 
+
+    { 
+
+      "vendor": "string", 
+
+      "product": "string", 
+
+      "dhcpLeaseDuration": 0, 
+
+      "dhcpEnabled": true, 
+
+      "dhcpServer": "string", 
+
+      "dhcpLeaseObtained": "2019-01-16T14:01:12.884Z", 
+
+      "dhcpLeaseExpires": "2019-01-16T14:01:12.884Z", 
+
+      "dnsServers": [ 
+
+        "string" 
+
+      ], 
+
+      "ipEnabled": true, 
+
+      "ipv4": "string", 
+
+      "ipv4List": [ 
+
+        "string" 
+
+      ], 
+
+      "ipv6": "string", 
+
+      "ipv6List": [ 
+
+        "string" 
+
+      ], 
+
+      "subnetMask": "string", 
+
+      "subnetMasks": [ 
+
+        "string" 
+
+      ], 
+
+      "defaultIPGateway": "string", 
+
+      "defaultIPGateways": [ 
+
+        "string" 
+
+      ], 
+
+      "macAddress": "string", 
+
+      "winsPrimaryServer": "string", 
+
+      "winsSecondaryServer": "string", 
+
+      "logicalName": "string" 
+
+    } 
+
+  ], 
+
+  "os": { 
+
+    "product": "string", 
+
+    "manufacturer": "string", 
+
+    "osLanguage": "string", 
+
+    "serialNumber": "string", 
+
+    "version": "string", 
+
+    "installDate": "2019-01-16T14:01:12.884Z", 
+
+    "type": "string", 
+
+    "arch": "string", 
+
+    "servicePack": "string", 
+
+    "productId": "string", 
+
+    "productKey": "string" 
+
+  }, 
+
+  "processors": [ 
+
+    { 
+
+      "product": "string", 
+
+      "numberOfCores": 0, 
+
+      "clockSpeedMhz": "string", 
+
+      "family": 0, 
+
+      "manufacturer": "string", 
+
+      "processorType": "string", 
+
+      "serialNumber": "string", 
+
+      "level": 0 
+
+    } 
+
+  ], 
+
+  "raidController": { 
+
+    "softwareRaid": "string", 
+
+    "hardwareRaid": "string", 
+
+    "vendor": "string" 
+
+  }, 
+
+  "system": { 
+
+    "product": "string", 
+
+    "model": "string", 
+
+    "timeZone": "string", 
+
+    "timeZoneDescription": "string", 
+
+    "serialNumber": "string", 
+
+    "systemName": "string", 
+
+    "domain": "string", 
+
+    "domainRole": 0, 
+
+    "category": "string" 
+
+  }, 
+
+  "installedSoftwares": [ 
+
+    { 
+
+      "name": "string", 
+
+      "version": "string", 
+
+      "publisher": "string", 
+
+      "installDate": "2019-01-16T14:01:12.884Z", 
+
+      "userName": "string", 
+
+      "lastAccessDateTime": "2019-01-16T14:01:12.884Z" 
+
+    } 
+
+  ], 
+
+  "keyboards": [ 
+
+    { 
+
+      "deviceID": "string", 
+
+      "name": "string", 
+
+      "description": "string" 
+
+    } 
+
+  ], 
+
+  "mouse": [ 
+
+    { 
+
+      "manufacturer": "string", 
+
+      "name": "string", 
+
+      "deviceId": "string", 
+
+      "deviceInterface": 0, 
+
+      "pointingType": 0, 
+
+      "buttons": 0 
+
+    } 
+
+  ], 
+
+  "monitors": [ 
+
+    { 
+
+      "deviceID": "string", 
+
+      "name": "string", 
+
+      "manufacturer": "string", 
+
+      "screenHeight": 0, 
+
+      "screenWidth": 0 
+
+    } 
+
+  ], 
+
+  "physicalDrive": [ 
+
+    { 
+
+      "type": "string", 
+
+      "partitions": [ 
+
+        { 
+
+          "name": "string", 
+
+          "label": "string", 
+
+          "fileSystem": "string", 
+
+          "description": "string", 
+
+          "sizeBytes": 0 
+
+        } 
+
+      ] 
+
+    } 
+
+  ], 
+
+  "users": [ 
+
+    { 
+
+      "username": "string", 
+
+      "userType": "string", 
+
+      "userDisabled": true, 
+
+      "userLockout": true, 
+
+      "passwordRequired": true 
+
+    } 
+
+  ], 
+
+  "services": [ 
+
+    { 
+
+      "serviceName": "string", 
+
+      "displayName": "string", 
+
+      "executablePath": "string", 
+
+      "startupType": "string", 
+
+      "serviceStatus": "string", 
+
+      "logOnAs": "string", 
+
+      "stopEnableAction": true, 
+
+      "delayedAutoStart": true, 
+
+      "win32ExitCode": 0, 
+
+      "serviceSpecificExitCode": 0 
+
+    } 
+
+  ], 
+
+  "shares": [ 
+
+    { 
+
+      "name": "string", 
+
+      "caption": "string", 
+
+      "description": "string", 
+
+      "path": "string", 
+
+      "access": "string", 
+
+      "userAccess": [ 
+
+        "string" 
+
+      ], 
+
+      "type": [ 
+
+        "string" 
+
+      ] 
+
+    } 
+
+  ], 
+
+  "softwareLicenses": [ 
+
+    { 
+
+      "productName": "string", 
+
+      "productId": "string", 
+
+      "productKey": "string" 
+
+    } 
+
+  ] 
+
+} 
+
+Authentication and Authorization Product Status APIs
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Rate Limits
+Product Status APIs
+Authentication and Authorization
+Public Ticketing API
+ConnectWise's public ticketing API allows MSPs or PSA vendors to integrate with our two-way ticket synchronization system to create tickets, update ti...
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

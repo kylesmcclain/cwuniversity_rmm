@@ -1,0 +1,50 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Reports   Asio Reports   Agent Reports   RMM Scan Configuration Report
+RMM Scan Configuration Report
+Last updated
+Sep 22, 2025
+Table of contents
+Overview
+RMM Scan Configuration Report Details
+Overview
+
+The RMM Scan Configuration page displays configuration details for the RMM Scanning Tool based on the Site selected.
+
+ 
+
+To locate this screen, navigate to 
+
+Reports > Asio > Detailed Reports > Agents > RMM Scan Configuration.
+
+RMM Scan Configuration Report Details
+
+Select a Site from the Select Site drop-down list. If the Site contains an agent schedule that was configured in the Remote Agent Deployment IP Scanner, the configuration details will appear below the Site Name field.
+
+Probe Devices Report RMM Scan Details Report
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Agent Report
+Agent Uninstall Report
+Network Devices Report
+Probe Devices Report
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

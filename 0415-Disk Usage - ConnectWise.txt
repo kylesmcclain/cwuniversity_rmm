@@ -1,0 +1,130 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   RMM Reporting API   Reporting API REST Resources   Disk Usage
+Disk Usage
+Last updated
+Jul 9, 2025
+Table of contents
+Overview
+Endpoint and URI
+Method
+Request Body
+Response Body
+Parameter Descriptions for Disk Usage
+Source of Data in the Asio Platform
+Overview
+
+Returns the monthly minimum, maximum, and average disk space utilization, as well as average daily disk space utilization for each server.
+
+Endpoint and URI
+
+https://itsapi.itsupport247.net/repo...ance/diskusage
+
+Method
+
+POST
+
+Request Body
+
+{
+
+"Month":4,
+
+"SiteCode":"AGTSolutions",
+
+"Year":2015,
+
+}
+
+Response Body
+
+{
+
+"diskUsageSummary":[
+
+{
+
+"average":0,
+
+"dailyAverages":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+
+"friendlyName":"Windows Server 2008_1",
+
+"iPAddresses":null,
+
+"MachineId": 9223372036854775807,
+
+"max":0,
+
+"min":0,
+
+"server":"WS2008_1"
+
+},
+
+{
+
+...
+
+},
+
+{
+
+...
+
+}
+
+]
+
+"error": null
+
+}
+
+Parameter Descriptions for Disk Usage
+Parameter	Description
+"Month"	Requested month (numerical)
+"SiteCode"	Unique site code listed in Asio™ Platform (ITSupport Portal)
+"Year"	Requested year
+"average"	Average disk usage for the specified month
+"dailyAverages"	Average disk usage for each day of the month
+"friendlyName"	Machine friendly name in Asio™ Platform (ITSupport Portal)
+"iPAddresses"	Machine IP address
+"MachineId"	Unique machine ID in ConnectWise database
+"max"	Maximum disk usage for the month
+"min"	Minimum disk usage for the month
+"server"	Server name
+Source of Data in the Asio Platform
+
+Reports > Asio > Executive Report > Server Data > Performance Analysis > Disk Usage
+
+Disk Space Utilization Expiring Warranties
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Agent Details
+Retrieves agent information for the authenticated partner and the specified site.
+Antivirus Summary
+Retrieves counts of machines having antivirus protection in the following states: Updated, Outdated, Not Installed, or Information Unavailable.
+Antivirus Version Summary
+Retrieves currently detected antivirus software and the definition version.
+BCDR Continuity Appliances
+Retrieves a list of Recover Continuity backup appliances provisioned at the given site.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

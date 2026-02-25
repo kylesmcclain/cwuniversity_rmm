@@ -1,0 +1,82 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Integrations to ConnectWise RMM   ScreenConnect with RMM   Enable Reason for Remote Access
+Enable Reason for Remote Access
+Last updated
+Nov 22, 2024
+Table of contents
+Overview
+Enable the ScreenConnect Join Reason Integration
+Edit your Remote Access Policy
+After the integration is set up and enabled
+Viewing the reason entered for remote access
+Overview
+
+This feature allows you to show a popup window when one of your users initiates a ScreenConnect session so that the reason can be maintained for your audit records. This is a separate integration from the ScreenConnect integration, but once that integration is enabled, you can add this setting to your Remote Access Policy.
+
+Note: A User will not be able to take remote access of a machine without entering a reason.
+
+Enable the ScreenConnect Join Reason Integration
+In the Asio Platform, navigate to Integrations > Asio Integrations.
+Locate the ScreenConnect Join Reason integration and click on the three dots icon and select Integrate.
+
+A screen will appear, here you can click the pencil icon to change the connection name. Once you are happy with the Connection Name, click test connection.
+
+Once the connection is successful, click the Save and Proceed button.
+
+Click the Complete Setup button.
+
+Edit your Remote Access Policy
+
+Once the feature is entitled, you can see the option in your Remote Access policy settings.
+
+Note: If you do not already have a Remote Access Policy, follow the instructions in Setting up your Policies and Packages to create one.
+
+Navigate to Endpoints > Policies.
+Locate your Remote access Policy and click on it to Edit it.
+Set the Reason for Remote Access toggle to Enabled.
+
+After the integration is set up and enabled
+
+Once the setting is enabled in your Remote access policy, the popup will ask for a reason, when a remote session is initiated for all affected sites. A user must enter the reason for connecting to the machine or they will not be able to access it.
+
+Note: This popup will appear no matter how the user launches the ScreenConnect session. The following paths to connect to an endpoint will all show the popup:
+
+Endpoints > Devices > Log In Icon > Select ScreenConnect Remote Access or ScreenConnect Backstage
+Endpoints > Devices > Select the endpoint to open device details >  Log In Button in top right > Select ScreenConnect Remote Access or ScreenConnect Backstage
+
+For more information, review the How to Launch ScreenConnect documentation.
+
+Viewing the reason entered for remote access
+
+For better auditing purposes, you can also view the reasons entered in our Remote Access reports in Brightguage and In-console reports.
+
+ 
+
+Enable or Disable Connection Consent for ScreenConnect How to Launch ScreenConnect
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ScreenConnect Installation Status and Error Codes
+Enable or Disable Connection Consent for ScreenConnect
+ScreenConnect Dashboard for RMM
+ScreenConnect 1-Click for RMM
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

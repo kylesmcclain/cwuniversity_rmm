@@ -1,0 +1,115 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   RMM Reporting API   Reporting API REST Resources   Noncompliant Mobile Devices
+Noncompliant Mobile Devices
+Last updated
+Jul 8, 2025
+Table of contents
+Overview
+Endpoint and URI
+Method
+Request Body
+Response Body
+Parameter Descriptions for Noncompliant Mobile Devices
+Source of Data in the Asio Platform
+Overview
+
+Returns a list of mobile devices that are not in compliance with corporate policies.
+
+Endpoint and URI
+
+https://itsapi.itsupport247.net/repo...s/noncompliant
+
+Method
+
+POST
+
+Request Body
+
+{
+
+"Month":4,
+
+"SiteCode":"AGTSolutions",
+
+"Year":2015,
+
+}
+
+Response Body
+
+{
+
+"devices":[
+
+{
+
+"details":"Passcode not required",
+
+"MachineId": 9223372036854775807,
+
+"name":"iPhone_1"
+
+},
+
+{
+
+...
+
+},
+
+{
+
+...
+
+}
+
+]
+
+"error": null
+
+}
+
+Parameter Descriptions for Noncompliant Mobile Devices
+Parameter	Description
+"Month"	Requested month (numerical)
+"SiteCode"	Unique site code listed in Asio™ Platform (ITSupport Portal)
+"Year"	Requested year
+"details"	Reason for noncompliance
+"MachineId"	Unique machine ID in ConnectWise database
+"name"	Device name in Asio™ Platform (ITSupport Portal)
+Source of Data in the Asio Platform
+
+Reports > Asio > Executive Report > Mobile Device Data > Noncompliant Devices
+
+Missing Patches Summary Operating System Summary
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Agent Details
+Retrieves agent information for the authenticated partner and the specified site.
+Antivirus Summary
+Retrieves counts of machines having antivirus protection in the following states: Updated, Outdated, Not Installed, or Information Unavailable.
+Antivirus Version Summary
+Retrieves currently detected antivirus software and the definition version.
+BCDR Continuity Appliances
+Retrieves a list of Recover Continuity backup appliances provisioned at the given site.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

@@ -1,0 +1,84 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Reports   Asio Reports   Agent Reports   Agent Uninstall Report
+Agent Uninstall Report
+Last updated
+Sep 22, 2025
+Table of contents
+Overview
+User Access to Reports
+Agent Uninstall Report Details
+Overview
+
+This report is used to summarize information on any agent uninstalled across a particular site over the past year.
+
+ 
+
+ To locate this screen, navigate to 
+
+Reports > Asio > Detailed Reports > Agents > Agent Uninstall Report.
+
+ 
+
+User Access to Reports
+
+Confirm user access and permissions to view this report. The following default roles have access to this report:
+
+Report	Manager	Technician	Office Staff	Sales	Client Site Manager
+Agent Uninstall Report 	No	Yes	Yes	Yes	Yes
+
+This additional step allows you to enable or disable access to specific reports for different user roles, giving you more control over which reports are accessible to each role.
+
+To control the visibility of endpoints on reports, you can manage site access for users. The visibility of endpoints on reports will be based on the user's permissions to sites. By controlling site access, you can determine which endpoints are visible to each user.
+
+Agent Uninstall Report Details
+
+The details that the report covers are:
+
+Agent Name
+Friendly Name
+Device Type
+Company Name
+Company Friendly Name
+Site Name
+Site Friendly Name
+OS
+Removed By
+Uninstallation Date
+Reason
+Additional Comments
+Device Time Zone
+
+All of this information can be filtered or searched by using the tools at the top right of the report. You can also download the report as CSV.
+
+Note: This report is refreshed every 8 hours.
+
+ 
+
+Agent Report Network Devices Report
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Agent Report
+Network Devices Report
+Probe Devices Report
+RMM Scan Configuration Report
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

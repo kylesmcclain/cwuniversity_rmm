@@ -1,0 +1,46 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Patching   OS Patching   OS Patching Getting Started Settings
+OS Patching Getting Started Settings
+Last updated
+May 2, 2025
+Table of contents
+Overview
+Overview
+
+These examples provide a way to get started with OS patching. For more information, refer to OS Patching documentation.
+
+Policy Type	Policy Settings
+Default Desktop Policy	
+Default Server Policy	
+Policy with No Delay for NOC testing and Daily patch deployments	
+
+ 
+
+OS Patching OS Feature Updates (Windows)
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+OS Patching Compliance
+OS Patch Approvals
+OS Patch Exclusions
+OS Patching Policies
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

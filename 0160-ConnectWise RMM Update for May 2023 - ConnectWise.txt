@@ -1,0 +1,268 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   ConnectWise RMM Release Notes   RMM Release Notes Archive   ConnectWise RMM Update for May 2023
+ConnectWise RMM Update for May 2023
+Last updated
+Jun 16, 2023
+Table of contents
+Announcements
+ConnectWise ScreenConnect (Control) Rebranding
+ConnectWise PSA - Integration via policies
+Migration of Clones
+Ability to Switch endpoint type from Server to Desktop or vice-versa
+Sequences silently converted to Script Editor Scripts.
+Adding Visual Studio Code to the list of Supported Applications for Third-Party Patching.
+Duo MFA available for CW SSO Migrated Partners
+Company/Site Feature Enablement
+SentinelOne Integration
+ConnectWise RMM
+Agent and Platform
+Automation
+Device Groups
+Intune Integration
+Monitoring / Alerting
+Patching
+Reporting
+Third-Party Patching
+Ticketing / PSA Integration
+Bug Fixes / Known Issues
+Announcements
+ConnectWise ScreenConnect (Control) Rebranding
+
+ConnectWise Control will be rebranded to ConnectWise ScreenConnect. We will be making these changes in both the product and documentation, but expect this update to take some time to complete.
+
+ConnectWise PSA - Integration via policies
+
+We are excited to announce that we will be adding an option for you to enable the ConnectWise PSA sync configurations that helps to define Ticket, Configuration items, and Notifications using policies. These policies can be included in your packages and applied to the sites using the package assignment option.
+
+There will be no migration performed for the existing configuration, but the policies will be in effect if they are assigned or applied to a site. You will initially have a toggle button to either enable or disable the policies based configuration and continue using the old method for now.
+
+We would stop supporting the older configuration method by the end of June 2023.
+
+For more information, review the following articles:
+
+ConnectWise PSA - Policy Integration
+
+ConnectWise PSA - Policy Integration - FAQ
+
+Migration of Clones
+
+With the announcement of the Supporting Golden Image, we needed to resolve the issue with existing endpoints that were cloned but not getting properly processed for billing.
+
+With the next release, we would be making the following changes so that the existing clone devices will be processed to be considered as an independent endpoint on the UI and billing.
+
+The Agent will reprocess these duplicate clone devices as a separate device (the Devices page still shows them as individual devices)
+
+Clone Machines that are reporting keep alive will be re-registered as a separate Endpoint.
+
+Migrated machines in the Devices page will no longer be seen in the Clones Tab.
+
+These machines will be considered as new device in billing.
+
+The Migration will occur in a phased manner starting May 5th.
+
+Ability to Switch endpoint type from Server to Desktop or vice-versa
+
+With this release, we are adding the ability to switch and endpoints type.
+
+You will be able to swap the endpoint type without the need for uninstalling and reinstalling the agent.
+
+This feature will be enabled for Windows OS.
+
+It will be available to users who have permission / access to Install an Agent.
+
+The change will be reported in two to three minutes on the Devices page.
+
+If you want to revert back when a user switches the Endpoint / device type, this should be done with a gap of 15 minutes between the switches.
+
+This Feature will be released on June 29th.
+
+Sequences silently converted to Script Editor Scripts.
+
+With this release, Sequences will be silently converted to Script Editor scripts to provide you with your own personal library of Script examples. In addition, any Scheduled Task configured to execute a Sequence will be updated to execute your converted Script Editor Script. No action is required from you. This is planned to roll out from May 16th until June 30th.
+
+Note: Invalid Sequences (ie. a sequence that in its current configuration cannot be executed) will not be migrated.
+
+Adding Visual Studio Code to the list of Supported Applications for Third-Party Patching.
+
+We are now adding Visual Studio Code to the list of Supported Applications for Third-Party Patching.
+
+Duo MFA available for CW SSO Migrated Partners
+
+Partners using Duo as an Authenticator tool are now eligible for the ConnectWise SSO migration. We would be migrating the partners in batches and You will be notified when your account should be migrated to ConnectWise SSO.
+
+Company/Site Feature Enablement
+
+Partners who are already migrated to the ConnectWise SSO will now be notified of Company/Site being enabled for their ASIO portal. Once the feature is enabled, Partners should be able to create Companies and Sites for deploying the agent.
+
+SentinelOne Integration
+
+We are pleased to announce that the integration between SentinelOne and CW RMM & Command will be available starting in June 2023.
+
+Seamlessly deploy, manage, and monitor SentinelOne instances within the Connectwise Asio Platform. With this integration, you will gain enhanced visibility and control, enabling you to map SentinelOne to Asio sites. This new integration offers streamlined workflows, simplified management, and heightened cybersecurity capabilities.
+
+Expect to receive an in-app notification in your Asio™ Platform (ITSupport Portal) once the integration is ready
+
+ConnectWise RMM
+Agent and Platform
+
+Agent Update. A new agent, version 3.0.6, will be rolled out on May 25th. Windows, MAC, and Linux agents will be updated to the latest version automatically.
+
+Update to the identified Antivirus list that shows up in Endpoint protection. Our team has reviewed more antivirus solutions and have updated the Identified Antivirus Products list.
+
+Legacy Portal Improvements. We have made the following legacy portal improvements:
+
+Backend improvement for RMM Scanning tool
+
+Backend changes for updating domain prefix for COntrol instances in NA and EU
+
+All sites will be visible for applying notification template irrespective of site service level
+
+We have made changes to stop generating alerts/tickets for Agent Malfunction alert.
+
+Deprecation of Agent uninstall under RMM setup. An Agent uninstall option is available for use under the Devices page > Computers page under the Manage menu in Asio portal. For more details visit Uninstalling an Agent from a Desktop or Server from the Devices Page.
+
+With this new option available, we will soon be deprecating the Agent uninstall option under RMM Setup > Sites using RMM > Agents > Uninstall Agents.
+
+Automation
+
+Automation Task Improvements:
+
+Updated the "Uninstall Bitdefender Endpoint security tools" task to uninstall latest version of the software
+
+We are improving the "Perform File/Folder Operation - Updated" task that will check in script for Delete File option to check the Destination File instead of Destination Path.
+
+These changes are planned for May 26th.
+
+Device Groups
+
+Option to select existing device groups. We have added an option to select an existing device group when creating a policy. You can find the list of all the device groups available to you and you can select any device group (Static, Dynamic, or predefined) and assign a policy and create a policy group. This will release on June 23rd.
+
+Custom Attributes. We are adding the ability to choose custom attributes at the site level when creating dynamic groups. This is planned for July 5th.
+
+Intune Integration
+
+Managed Application details to display in Device Details. From the Device Details screen, partners will see Managed Applications and their status from Intune / Microsoft Endpoint Manager. This is planned for May 25th.
+
+Monitoring / Alerting
+
+Monitor with no target is visible to the limited site access users. Monitors that have no target endpoints are currently visible to all users. We are now validating user's site permissions and based on the access, the system will be displayed to the correct users. This is planned for May 29th.
+
+Monitors getting disabled. We are removing the function where the monitors were automatically being disabled in case there is any entitlement changes or there was configuration issue with profile configurations. This is planned for May 29th.
+
+Support for selecting a company as a target for Monitors. We are extending support for selecting a company as a target while defining your Custom monitors. Once applied the monitor will be applicable for all sites and endpoints under them. This is planned for May 29th.
+
+Note: This will be applicable for partners enabled with Company/Site feature only.
+
+Support for selecting a company as a target for Suspensions. We are extending support for selecting a company as a target while defining your Suspension for Intelligent Alert & Custom monitors. Once applied the suspension rule will be applicable for all sites and endpoints under them. This is planned for May 29th.
+
+Note: This will be applicable for partners enabled with Company/Site feature only.
+
+Support for selecting a company as a target for Automation against Intelligent Alerts. We are extending support for selecting a company as a target while defining Intelligent Automation. Once applied the Automation will be applicable for all sites and endpoints under them. This is planned for May 29th.
+
+Note: This will be applicable for partners enabled with Company/Site feature only.
+
+Patching
+
+Customize Reboot Prompt Behavior. We have released a new functionality for you customize reboot prompt behavior that appears after receiving a reboot request from the portal. The new set of configuration will live under Policies > OS Patching Desktop/OS Patching Server > Notify User Before Initiating Reboot (toggle).
+
+Releasing a UI improvement for the Devices > Patching Tab. We will be showing additional columns to show important details on the devices page so that users don't have to visit device details page to review this information. This is planned for June 7th.
+
+Reporting
+
+A new Agent uninstall Report has been added in BrightGauge. The report currently shows only data of Endpoints uninstalled from the option in Devices page.
+
+Note: The historical data can be viewed in the Reports Home in uninstalled Agent report.
+
+Third-Party Patching
+
+Visual Studio Code Windows support. Visual Studio Code has been added to the list of Supported applications for Third-Party Patching.
+
+Ticketing / PSA Integration
+
+Public Ticketing API Improvement - Contact Association. We are releasing an updated functionality so that contacts can be associated with the tickets via the Public Ticketing API. The changes will be done in CreateTicket and UpdateTicket API.
+
+ConnectWise PSA - Notification Emails for Asset/Billing/Ticket sync failures. Users that have opted/not opted for Policies for configuring PSA will be receiving the failure notification for Ticket/Asset/Billing sync.
+
+Open Beta GA Release in ConnectWise PSA. We are doing an Open BETA release for the ConnectWise PSA - Integration via policies. After this release partners will be able to configure Ticket, Assets, Notifications, and Billing sync with the help of Policy and Packages. This feature is going to be available on Opt-in basis. By enabling toggle on the PSA Integration page, you will be able to configure ConnectWise PSA - Integration via Policies.
+
+All the ConnectWise PSA partners who have configured PSA Integration will be able to see the Toggle option on the portal and will be able use Policies and Packages for configuring PSA.
+
+Bug Fixes / Known Issues
+
+The following issues will be resolved with this month's release:
+
+Agent and Platform - Fixed an issue where the Chat description was not getting passed to Five9 Application when initiated via Communicator.
+
+Agent and Platform - Fixed the issue where Communicator messages sent by other staff members are not visible to Super Admin.
+
+Agent and Platform - Fixed the issue where Communicator Messages Sent from Portal do not get processed when Machine comes Online from offline..
+
+Agent and Platform - Fixed the issue where the macOS: Serial number not reflecting on the Asio Platform for macOS version 13.2.
+
+Automation - We have resolved an issue where the Recent Tasks window was showing an error. You can now view the Recent tasks after the schedule is created successfully.
+
+Automation - We have resolved an issue where task history will now show the correct date for the next scheduled task and previously executed tasks.
+
+Automation - We have resolved an issue where canceled tasks were going into running state.
+
+Automation - Fixed issue in the "Add Local User - Updated" task to address the issue with "Overwrite if the user already exists" option.
+
+Device Groups - If a parent policy group does not have a policy assigned and the corresponding child group has a policy assigned, the policy was not getting applied on those endpoints. This issue has been fixed.
+
+Patching - We have resolved an issue where the OS Patch Assessment was failing on macOS-based endpoints due to an error in the software update tool from Apple.
+
+Patching - Releasing UI/UX bug fixes and improvements for Patch Approvals and Patch Exclusions Page to enhance user experience.
+
+Portal - We have resolved an issue where the Desktop options box on the Legacy page was visible even if a partner is not entitled for Webroot.
+
+Portal - We have resolved an issue where the filters applied on the devices page would be lost when clicking on endpoints.
+
+Portal - Fixed a bug where AV definition was showing an outdated version instead of latest one.
+
+Portal - Fixed a bug where the option to re-install RMM Scanning tool via UI was not getting enabled despite the tool being uninstalled at the endpoint
+
+Third-Party Patching - Releasing a bug fix for CCleaner not updating to latest version on some of the endpoints.
+
+ 
+
+ConnectWise reserves the right to remove any enhancement or fix from this update if it does not pass quality assurance tests.
+
+ 
+
+ConnectWise RMM Update for April 2023 ConnectWise RMM Update for June 2023
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ConnectWise RMM Update for January 2023
+ConnectWise RMM Update for February 2023
+ConnectWise RMM Update for March 2023
+ConnectWise RMM Update for April 2023
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

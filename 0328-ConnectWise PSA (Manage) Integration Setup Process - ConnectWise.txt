@@ -1,0 +1,416 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   PSA Integration   ConnectWise PSA (Manage) Integration   ConnectWise PSA (Manage) Integration Setup Process
+ConnectWise PSA (Manage) Integration Setup Process
+Last updated
+Dec 22, 2025
+Table of contents
+Overview
+Step 1: Create API Keys in ConnectWise PSA
+1a. Service Boards
+1b. Service Board Statuses
+Ticket Status Sync
+Step 2: Configure the Integration in the Asio Platform
+2a. Keys
+2b. Sites
+2c. Billing (Optional)
+Multi-Site Mapping
+2d. Finish
+Step 3:  ConnectWise PSA Contact Sync
+Email Notifications
+Additional Resources
+Appendix
+Creating Custom Security Roles
+Security Modules and Access Permission
+Additional Granularity (optional for the modules below)
+Overview
+
+The ConnectWise RMM–ConnectWise PSA integration consists of the steps below.
+
+Note: To learn how to configure the PSA Policies, refer to the Configure ConnectWise PSA Policies document.
+
+Step 1: Create API Keys in ConnectWise PSA
+
+Note: If you have already created API keys for the integration, skip this step and proceed to Step 2.
+
+Your public and private API keys in ConnectWise PSA are part of what enables the integration to identify and access your member account to sync data correctly between ConnectWise RMM and ConnectWise PSA . You must enter these keys during the Keys stage of the configuration process in the Asio platform (ITSupport Portal).
+
+To create API keys:
+
+From ConnectWise PSA, navigate to System > Members > API Member > [member name] > API Keys.
+Click the New Item icon.
+Enter a Description for the API keys and click Save to generate the keys.
+Copy the API keys to a safe, temporary location to be used during the configuration process in the Asio platform (ITSupport Portal). Refer to the following image as a reference:
+Warning: ConnectWise PSA will not display this Private Key after you have navigated away from this page. Copy this key before you navigate away from the screen.
+
+Note: Best practice for RMM-CW PSA Integration — the API member being used for RMM-PSA Integration should be standalone and should not be used for any other third-party integration as it might affect Ticket/Asset/Billing Sync.
+
+1a. Service Boards
+Note: Skip this step if you intend to use existing service boards for this integration. Your ConnectWise PSA service boards can be thought of as the "buckets" that hold all of your service tickets. During the Tickets stage of the configuration process in the Asio platform (ITSupport Portal), you must assign a ConnectWise PSA service board for NOC tickets, and optionally the same or a separate service board for Help Desk Service tickets.
+Note: If you intend to use the existing Service board for the PSA sync with the Asio platform then any tickets that are created on the board which match our ticket status will be pushed to ConnectWise NOC/Help Desk team for action. This could result in tickets being touched or worked by them.
+
+ 
+
+To create a service board:
+
+In ConnectWise PSA, navigate to System > Setup Tables.
+Locate Service Board in the Tables column and select the service board setup.
+Click the New Item button to create a new service board. Alternatively, select an existing service board from the list provided.
+Complete all the desired service board details for either NOC or Help Desk Service tickets (or both) and click Save to finish. Refer to the image below for more detail:
+
+Recommendation or Tip: Please refer to the following video which can provide details for fields required for the Service board creation: https://university.connectwise.com/University/training/videolibrary.aspx?CourseID=485.
+ 
+Note: The service board requires a Team to be assigned so that the tickets get created correctly on the service board.
+Before navigating away from the Service Board window, click the Teams tab and ensure a default value is assigned to a Team for the tickets created in ConnectWise PSA .
+
+If no default value is assigned, enter a Team Description, select a Team Leader, select the Default checkbox and click Save. If no teams yet exist, click the New icon to create the team before entering the information.
+
+Note: Make sure you do not select the user zAdmin as the team leader as it breaks the ticket sync.
+
+Note: You can move tickets between any service board once created by RMM as PSA Integration system would track the ticket with the Ticket number.
+
+Ticket updates are processed in two steps:
+
+Status update – RMM System will attempt to update the status on the board where the ticket is present, if no matching status is found then the status update will be skipped.
+Notes update – RMM System will attempt to update or add notes on the new board where the ticket is present (if there are any restrictions applied then the ticket update process will fail).
+
+Note: If you are configuring any of the service boards in policy or mapper, then you shouldn't be configuring the same service board in the Restrict Board Access section as shown here:
+
+1b. Service Board Statuses
+
+We automatically create the following statuses in the service board(s) you assign to the NOC and Help Desk Service during integration. 
+
+Service Board Status
+
+	
+
+Direction of Ticket Flow
+
+	
+
+Description
+
+
+Assigned to Help Desk	MSP to HelpDesk Team	This status will assign the ticket to the ConnectWise HelpDesk Team.
+Assigned to NOC	MSP to NOC	This status will assign the ticket to the ConnectWise NOC Team.
+New	Common for both NOC/HelpDesk & MSP	New ticket created by NOC or Help Desk Service. (Once the NOC or Help Desk Service works the ticket, the status changes to Assigned to NOC or Assigned to Help Desk Service.)
+Resolved	NOC/HelpDesk to MSP	This status will be used when the issue is resolved by the NOC/HelpDesk team
+Closed	MSP	
+
+This status will be used to close the ticket, This also closes the corresponding ticket in the ConnectWise system.
+
+Note:
+
+Reopening a ticket in ConnectWise PSA  creates a new ticket in NOC/HelpDesk as a ticket cannot be reopened if closed in ConnectWise System.
+>Closed status is not the same as the "Closed" status listed above and using ">Closed" status will not close the ticket in the ConnectWise system
+
+Needs-Info	NOC/HelpDesk to MSP	NOC/HelpDesk team needs additional approval or information from the partner to work further.
+In-progress by MSP	MSP	This status will be used when the partner would like to take over the ticket and doesn’t wish the NOC/HelpDesk team to work on the issue
+
+ 
+
+Ticket Status Sync
+Scenario	Use Case	Direction of Flow	Desired Sync Behaviour
+Update Ticket	
+
+Ticket is synced and is on the mapped Service Board.
+
+Status change was made using NON CW Default Status.
+
+	PSA to Asio	No changes in ticket status.
+Update Ticket	
+
+Ticket is synced and it's moved on a different service board.
+
+Status change was made on NON mapped service board using one of the CW RMM Default statuses.
+
+	
+
+PSA to Asio
+
+	
+Apart from New, if the partner assigns any of the 7 statuses to the ticket, sync that status to the RMM/Asio ticket as well.
+If the ticket is moved to a non-mapped board and updated with status New, then drop that status sync to the RMM/Asio ticket.
+
+ 
+
+Note: For partners who are using ConnectWise PSA OnPremise instance, please make sure that you have the necessary certificates installed on the server where it is hosted.
+
+Step 2: Configure the Integration in the Asio Platform
+
+Access the PSA integrations via one of the following navigation paths in the Asio platform (ITSupport Portal):
+
+ Settings > Account Administration > Integration > PSA Integration
+
+To configure the integration:
+
+Select ConnectWise PSA from the drop-down list to start the ConnectWise PSA integration process with the Asio platform, the wizard provides you with step-by-step instructions.It is important to note that if you are using any existing PSA integrations, they should be disabled as you can have only one PSA integration enabled with the Asio platform.
+2a. Keys
+
+Follow the instructions in this section to enable the Asio platform to identify your ConnectWise PSA account by providing the following:
+
+ConnectWise PSA Site: Enter your ConnectWise PSA login URL (varies depending on cloud or on-premise configuration).
+Tip: Your PSA console URL may or may not list "api" in the prefix. The integration will work with or without this prefix.
+For example, You can have the URL listed as api-na.myconnectwise.netor na.myconnectwise.net.
+ConnectWise PSA Login Company: Enter your company login code.
+ConnectWise PSA Public/Private Key: Enter the API keys that you created in ConnectWise PSA.
+
+Click Authorize to continue.
+
+2b. Sites
+
+After the ConnectWise PSA keys are successfully authorized, the Sites section lists all of your ConnectWise RMM sites and their accompanying ConnectWise RMM site codes.
+
+For each ConnectWise RMM Site, select the corresponding ConnectWise PSA Company Name from the drop-down menu (enter the first two characters of a company name to generate a list of possible matches in your ConnectWise PSA system). If multiple ConnectWise RMM sites are assigned to the same company name in ConnectWise PSA, use the same ConnectWise PSA Company Name for each but be sure to specify the individual PSA site names. Regardless, the Site Name field for each ConnectWise RMM site should be different, so you may need to add new sites in PSA under the parent company since two ConnectWise RMM sites cannot have the same Site Name in PSA.
+
+For example, if you have 10 sites listed in ConnectWise RMM, and three are part of the same company, seven of your ConnectWise RMM sites will correspond to seven different ConnectWise PSA  company names, each with their own ConnectWise PSA site names (Main is the default). Three ConnectWise RMM sites will correspond to the same ConnectWise PSA company name with three different ConnectWise PSA site names.
+
+Note: For a company with multiple Site Names, you must assign a default or Primary site in ConnectWise PSA before completing the integration to ensure tickets are sent to the correct site.
+
+For simple one-to-one correlations, you can leave the ConnectWise PSASite Name as Main (default) or the custom name the site has been given.
+
+Note: In the snapshot below, ConnectWise RMM Sites mapping with corresponding ConnectWise PSA Company and Site is 1:1 relationship whereas some ConnectWise RMM Sites are mapped to the same ConnectWise PSA Company with a different ConnectWise PSA Site Name.
+
+If any RMM sites are not mapped, you will be asked to either return and map the skipped sites or to continue without mapping.
+
+Click Next to continue.
+
+2c. Billing (Optional)
+
+If you use ConnectWise PSA for billing, you first need to enable the billing option in the Asio platform (ITSupport Portal). Once enabled, you can use this section to specify Agreement and Product details from ConnectWise PSA for device billing for each ConnectWise RMM site in your ConnectWise PSA system. The ConnectWise PSA integration updates the billing counts in the corresponding agreements whenever there is either addition or removal of a monitoring agent from endpoints.
+
+Note: Unified Billing Intake (UBI) is the new way of configuring Billing Sync. For using UBI, you will have to turn off the Billing sync from the wizard section and then turn on the UBI. To learn more, refer this UBI documentation.
+
+By default, the billing option is disabled. Once you enable this option, you will see a mapping table for each of your ConnectWise RMM Sites and you can select this to map the corresponding Agreement, Addition, and Product for the three categories of Server, Desktop, and Backup. Once the Billing option has been enabled, the screen below is displayed:
+
+Click on the + sign that corresponds to the row to update billing details for ConnectWise RMM Sites.
+
+For the screen above you would need to select the Agreement for Server, Addition Type (e.g., Billing, Do not Bill, No charge), and the product against which the RMM agent counts need to be updated. Similarly, this needs to be done for the Desktops and Backup sections, as well. Click Save to save your selections.
+
+This activity needs to be completed for each site in ConnectWise RMM to complete the billing integration process.
+
+Important things to keep in mind:
+
+You can have different/same agreements selected for the Server, Desktop, and Backup products on the page. ConnectWise RMM will update the billing quantities based on the selection on the page.
+Selecting VMWare Hosts will count the Esxi host devices managed by ConnectWise RMM as a server and the counts will be updated along with managed servers
+Selecting Hyper-V Hosts will count the Hyper-V host devices managed by ConnectWise RMM as a server and the counts will be updated along with managed servers
+Backups refer to the Recover backup appliances only for the count of devices
+After enabling the billing for the first time, the counts will be updated once in the corresponding agreements
+Any new device addition or removal will trigger the update process to the billing counts. If there are no changes detected, no changes will be pushed in the ConnectWise PSA agreements
+The billing sync is executed twice in 12 hour intervals each
+
+Click Next to continue.
+
+Multi-Site Mapping
+
+If multiple sites under an RMM Company are mapped to a single ConnectWise PSA company then the PSA integration system will sync the aggregated product-wise count of configuration items to the respective PSA company.
+
+Note: If you are using multi-site mapping for billing sync, you should use a single product for similar configuration items (for ex. Desktop, Server, backup etc.) 
+
+Example 1:
+
+Billing sync is configured with all sites having the same "Product" configured. The CW RMM-PSA Integration allows you to map multiple RMM Sites to a single CW PSA company.
+
+"Company 1" in RMM has three Sites which are "Site 1", "Site 2", "Site 3". The sites under Company 1 are mapped to a single CW PSA company - "PSA Company".
+
+CW RMM Company
+
+	
+
+CW RMM Site 
+
+	
+
+CW PSA Company
+
+	
+
+CW PSA Site
+
+
+
+Company 1	Site 1	PSA Company 	Main
+Site 2	PSA Site 1
+Site 3	PSA Site 2
+
+The Company/Site mapping with this configuration is referred to as "Multi-site mapping". 
+
+The Billing Sync in the PSA Integration is responsible for syncing RMM agent counts to PSA on daily basis. In the "Multi-Site" mapping scenario PSA Integration system syncs the cumulative agent count of all the RMM sites to PSA Company.
+
+CW RMM Company
+
+	
+
+CW RMM Site 
+
+	
+
+Server Agent Count
+
+	
+
+CW PSA Company
+
+	
+
+CW PSA Site
+
+	
+
+Server Agent Count
+
+
+
+Company 1	Site 1	5	PSA Company 	Main	15
+Site 2	5	PSA Site 1	 
+Site 3	5	PSA Site 2	 
+
+The Server agent counts for Site 1/2/3 are 5 respectively, in a multi-site mapping scenario - the PSA integration system will push the cumulative count of all sites as 15 to CW PSA.
+
+Example 2:
+
+The Billing sync is configured with the different sites have different "Product" configured
+
+CW RMM Company
+
+	
+
+CW RMM Site
+
+	
+
+Agreement
+
+	
+
+Addition
+
+	
+
+Server Product
+
+	
+
+Server Count
+
+
+
+Company 1	Site 1	XYZ	Billable	Elite Server	2
+Site 2	XYZ	Billable	Elite Server	3
+Site 3	XYZ	Billable	Premium Server	4
+
+Sync count mechanism in CW PSA: 
+
+Elite Server: 2+3 = 5
+Premium Server: 4
+2d. Finish
+
+Once all integration details are provided/Updated, click Activate in this section to begin syncing tickets and assets between ConnectWise RMM and ConnectWise PSA .
+
+Existing tickets from both systems will be synced within 2 to 3 hours, depending on volume. Going forward, new tickets will be synced every 2 minutes. Assets will be synced within 24 hours, and new assets going forward will be synced every hour.
+
+Step 3:  ConnectWise PSA Contact Sync
+
+ConnectWise PSA integration supports syncing of contacts from ConnectWise PSA Company/Site to the corresponding ConnectWise RMM Sites. This allows automatically adding/updating/deleting contacts added in the ConnectWise PSA in near real time so that the contacts data can be made available in case of support requirement with the ConnectWise HelpDesk team.
+
+Note: Contact sync function will only be activated against the ConnectWise RMM site only if the site is enabled for the ConnectWise HelpDesk.
+
+Steps to activate the Contact Sync for a specific site:
+
+Navigate to the ConnectWise RMM Site you want to enable Contact Sync on. 
+For ConnectWise RMM Partners: In the Asio platform, navigate to Settings > Setup > RMM and select the Site Name.
+Click on the Help Desk tab.
+Expand the Client Profiles section.
+Enable the Enable syncing with ConnectWise PSA feature.
+
+Enabling the contact sync initiates a one-time sync of all contacts from ConnectWise PSA to ConnectWise RMM site. The initial sync will take around four hours. After the one-time sync, any new changes in ConnectWise PSA are pushed or synced with ConnectWise RMM Site in near real time.
+
+Email Notifications
+
+We have resumed the email notification for sync failure for the tickets, assets, and billing. Users defined in the Email notification will receive notifications for tickets, assets, and Billing sync failures. User actions required to resolve the issue will be available in the email.
+
+Additional Resources
+
+Videos and Webinars
+
+Appendix
+Creating Custom Security Roles
+
+To create a custom security role, navigate to System > Security Roles in ConnectWise PSA and refer to the tables below:
+
+Security Modules and Access Permission
+
+Module	Action	Permission
+Add	Edit	Delete	Inquire
+Companies	Company Maintenance	ALL	ALL	ALL	ALL
+*Companies	Configurations	ALL	ALL	ALL	ALL
+Companies	Contacts	ALL	ALL	ALL	ALL
+Companies	Management	ALL	ALL	ALL	ALL
+Finance	Agreements	ALL	ALL	ALL	ALL
+Procurement	Products	 	 	 	ALL
+Procurement	Product Catalog	 	 	 	ALL
+Projects	Project Tickets	 	 	 	ALL
+Service Desk	Close Service Tickets	ALL	ALL	ALL	ALL
+Service Desk	Service Tickets	ALL	ALL	ALL	ALL
+**Service Desk	Service Tickets - Finance	ALL	ALL	ALL	ALL
+Service Desk	SLA Dashboard	 	 	 	ALL
+System	API Reports	 	 	 	ALL
+System	Member Maintenance	 	 	 	ALL
+*System	TableSetup	ALL	ALL	ALL	ALL
+Time & Expense	TimeEntry	ALL	ALL	ALL	ALL
+*Optional: Additional granularity can be configured for these modules if you do not want to use the ALL setting. Refer to the table below for customization options.
+**Required for ConnectWise v2017.5 and above.
+
+ 
+
+Additional Granularity (optional for the modules below)
+
+Module	Action	Customization
+Companies	Configurations	
+
+Allow Access to:
+
+Backup Stats
+Managed Server
+Managed Workstation
+
+System	TableSetup	
+
+Allow Access to:
+
+Company / Company Status
+Company / Configuration
+Company / Configuration Status
+Service / Priority
+Service / Service Board
+Service / Source
+General / Manage Hosted API
+Products / Manufacturers
+ConnectWise PSA (Manage) Help Desk Contact Sync ConnectWise PSA (Manage) REST API Integration Troubleshooting
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Configure ConnectWise PSA Policies
+PSA Policies define how tickets, configuration items, Contacts, and Notifications sync from RMM to ConnectWise PSA or vice-versa.
+ConnectWise PSA - Policies Integration - FAQ
+ConnectWise PSA - Tech Efficiency Devices Pod
+ConnectWise PSA (Manage) REST API Integration Troubleshooting
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

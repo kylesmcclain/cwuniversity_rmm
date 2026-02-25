@@ -1,0 +1,139 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   PSA Integration   ConnectWise PSA (Manage) Integration   ConnectWise PSA (Manage) Help Desk Contact Sync
+ConnectWise PSA (Manage) Help Desk Contact Sync
+Last updated
+Jul 24, 2025
+Table of contents
+Overview
+How ConnectWise PSA Contact Sync Works
+For Tickets Created by the Help Desk
+How to Activate ConnectWise PSA Contact Sync
+Important Notes:
+Field Mappings of Client Profile to Contact Fields in ConnectWise PSA
+HD ticket sync redirect to the NOC
+Overview
+
+The ConnectWise PSA Contact Sync feature helps to synchronize ConnectWise PSA™ contacts with the ConnectWise RMM™ Help Desk.
+
+Note: This feature is only for sites that are enabled for ConnectWise Help Desk Services™.
+
+How ConnectWise PSA Contact Sync Works
+
+After the Contact Sync is activated for a site, the help desk contacts from ConnectWise PSA sync into the ConnectWise Asio™ platform and ConnectWise PSA becomes the source of truth for contacts.
+
+Help Desk technicians can search for and locate ConnectWise PSA contact information in the Help Desk system.
+
+Help Desk technicians can see the contact associated with a ticket and follow up with the appropriate contact assigned in the ConnectWise PSA ticket.
+
+For tickets without an associated contact created in ConnectWise PSA and assigned to the Help Desk, a Help Desk technician can link the ticket to a contact. The ticket-to-contact association updates in the ConnectWise PSA system.
+
+For Tickets Created by the Help Desk
+
+If a contact is manually created in the Help Desk system by a technician and an associated ticket is generated, contact information displays in the partner note and synced to ConnectWise PSA as system notes.
+
+For Help Desk tickets where one of your ConnectWise PSA contacts is linked, the associated ConnectWise PSA ticket reflects the linked contact.
+
+How to Activate ConnectWise PSA Contact Sync
+
+Note: The steps below are for the legacy product. For updated steps, refer to Enable ConnectWise PSA Policies.
+
+In the Asio platform, navigate to Settings > Setup > RMM.
+
+Select a site and click the Help Desk tab.
+
+Expand the Client Profiles section.
+
+Delete any contacts that were created manually. This can be done either before selecting the checkbox to start the sync process, or after that by identifying the manual contacts based on the last column in that table.
+
+Select the Enable syncing with ConnectWise PSA checkbox in the upper-right corner.
+
+
+After selecting the checkbox to enable ConnectWise PSA contact sync, ConnectWise PSA Contacts syncs to the Asio platform within 30 minutes and displays at the Client Profiles section. The PSA Contact column indicates whether the contact was synced from ConnectWise PSA.
+
+Note: If you have opted for Policy-based configuration for configuring RMM-PSA integration, please review the Policies documentation to know more.
+
+Important Notes:
+
+ConnectWise PSA Contact Sync is a one-way sync from ConnectWise PSA to the Asio platform.
+
+ConnectWise PSA Contacts are synced based on the Asio platform to ConnectWise PSA Site mapping that has been configured in the PSA Integration Section.
+
+Although contacts may be associated in ConnectWise PSA to either a company or a company site, only contacts of a company site will be synced into the Asio platform.
+
+Contact information is synchronized within 10 minutes from your ConnectWise PSA system to the Help Desk. Updates made to existing ConnectWise PSA contact information (whether to update existing details or to add new details) are synced to the Help Desk system.
+
+If the contact associated with a ticket is updated by Help Desk technicians (i.e., a phone number change), the updated contact information is not synced to ConnectWise PSA . Instead, the update is displayed in ConnectWise PSA system notes; you must review and decide whether to make the update manually in ConnectWise PSA. Partners need to ensure this info is up to date; the integration does not update contact details in ConnectWise PSA.
+
+If a contact is removed or deactivated from ConnectWise PSA , the contact is also removed from the Help Desk system and any associated tickets.
+
+If a deactivated contact is activated in your ConnectWise PSA system, it is synced to the Help Desk system as a new contact.
+
+If the PSA contact associated with a ticket created in either system (ConnectWise PSA or Help Desk) is changed in the ticket, the updated contact information syncs to the Help Desk Team.
+
+Contact details are not synchronized for accounts in your ConnectWise PSA system that are mapped to non-Help Desk sites.
+
+Before turning on contact sync, be sure to review the Asio platform contact information and ensure that your ConnectWise PSA information is up to date. After you turn on contact sync, all contacts from ConnectWise PSA are created in the Asio platform; therefore, unless current contacts are removed from Asio, the initial sync process may result in duplicate contacts. A PSA Contact column on the Help Desk Service Client Profile page helps distinguish between contacts created using the PSA integration and those created manually in the Asio platform.
+
+Field Mappings of Client Profile to Contact Fields in ConnectWise PSA
+Client Profile Field	ConnectWise PSA Contact Field
+Name	First Name
+Last Name
+Email Address	Email
+Job Title	Title
+
+
+Desk Phone
+
+	
+
+Direct
+Phone - Direct
+Direct Phone
+
+
+Ext	Ext
+Mobile Phone	
+
+Cell
+Mobile
+Phone - Mobile
+Cell Phone
+
+
+Other Phone	Company
+
+ 
+
+HD ticket sync redirect to the NOC
+
+If one of your sites isn't enabled for the Help Desk Services but a ticket is assigned the "Assigned to HelpDesk" status, the system will automatically check if the site is a non-HD site and reassign it to the NOC team with the status "Assigned to NOC". This will allow the NOC team to look into the situation further.
+
+ConnectWise PSA - Tech Efficiency Devices Pod ConnectWise PSA (Manage) Integration Setup Process
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ConnectWise PSA (Manage) Integration Setup Process
+Configure ConnectWise PSA Policies
+PSA Policies define how tickets, configuration items, Contacts, and Notifications sync from RMM to ConnectWise PSA or vice-versa.
+ConnectWise PSA - Policies Integration - FAQ
+ConnectWise PSA - Tech Efficiency Devices Pod
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

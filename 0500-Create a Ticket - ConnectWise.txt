@@ -1,0 +1,95 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Tickets   Create a Ticket
+Create a Ticket
+Last updated
+Jul 3, 2025
+Table of contents
+Overview
+Site Details
+Ticket Details
+Ticket Configuration
+Overview
+
+To create a new ticket, navigate to Service Delivery > Tickets (Legacy) in the Asio™ Platform (ITSupport Portal) and select New Ticket from the top of the navigation bar on the left to open the New Ticket page, which is made up of three sections:
+
+Site Details
+Ticket Detail
+Ticket Configuration and Notifications
+Site Details
+
+For the ticket, select the Site (required field) and Machine Name (if applicable). The Machine Name drop-down menu auto-populates based on the selected site. Use a friendly name for the device instead of the IP address or machine name to easily see what device the ticket is created for. Add the friendly name in the empty box next to Machine Name.
+
+Ticket Details
+
+The Ticket Detail window consists of the following fields:
+
+Ticket Type:
+Service Request – All requests pertaining to desktop and server preventative maintenance or monitoring/troubleshooting.
+Internal Task – Assign the task to another engineer at your company.
+Product Support – All product-related issues (like Network tools, Portal, etc.)
+Adhoc Service Request – This option disables the Site and Machine Name drop-down menus. Use this option when creating a ticket not specific to a site or machine, such as when you want some information or you need support related to a portal, etc.
+Family Name: Select the appropriate category for which you are generating a ticket or type in your own name in the Family Name field.
+Subject: Enter a subject in the Subject field (required).
+Description: Enter a description in the Description field (required).
+Ticket Configuration
+
+Ticket Configuration consists of the following fields:
+
+Status: The default ticket status is set to New. You can change this value from the Status drop-down menu to any of the available queues:
+New
+Assigned
+Scheduled
+In Progress
+Waiting Response
+Approval/Info Needed
+Resolved
+Re-Opened
+Assign To: Select the Assign To drop-down menu (required) to forward the ticket to any user setup in your portal, to the NOC, or to the Help Desk Service (if applicable).
+Priority: Select from the Priority drop-down menu: Low, Medium, and Emergency.
+Reference Ticket / Reference Alert: Reference tickets or alerts already flagged in the Asio™ platform. Click the icon next to either Reference Ticket or Reference Alert to open a ticket (or alert) list for the site:(selected site). You can then filter tickets (or alerts) by From Date, To Date, Ticket Type, or Status. Click View to apply the filter. You can also do a search by Ticket ID. Click the Filter icon to hide or view the filter options at the top of the screen.
+
+From the Notification section, you can set up who should be notified when the ticket is updated. Click the icon to open the User Email List window. From the window, set the contacts scheduled for escalation for this site.
+
+
+
+In the Text field, add a message to be included when ticket updates are emailed.
+
+
+
+Click Submit to create the ticket in the Asio™ Platform. You can set all fields to default by clicking Clear. Cancel without submitting a ticket by clicking Close.
+
+When you generate a ticket, the ticket is seen only by you and the NOC; your end users are not included in the information chain. You must close out tickets marked NOC Completed by the NOC. When you close out a ticket, you create a Work Status Summary ticket. The Work Status Summary ticket is designed to be between you and your end users and is a summary of what steps were taken to resolve the issue.
+
+The Help Desk Service completely closes out a ticket for issues they can resolve. The Help Desk Service completes both the Generated Ticket (yours) and the Work Status Ticket (the end user's). If the ticket is forwarded to and resolved by you, you must close out the ticket and create the Work Status Ticket. 
+Service Plans and Ticket Lifecycles Edit a Ticket
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Best Practices for Going Green
+Are you looking to impress a client with a solid green dashboard? Regardless of your reasons for wanting to go green, we will help you get there. But ...
+Service Plans and Ticket Lifecycles
+The lifecycle of a ticket depends on the subscribed service plan of the site generating an alert. Service plans and their respective ticket lifecycles...
+Edit a Ticket
+To edit a ticket, browse to the ticket queue on the left navigation bar and select an appropriate container.
+Work Status Update
+A work status update is exactly what it implies: an update to a ticket's status.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

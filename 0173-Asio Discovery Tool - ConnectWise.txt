@@ -1,0 +1,262 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Devices Page   Devices (Preview) Page   Asio Discovery Tool
+Asio Discovery Tool
+Last updated
+Feb 4, 2026
+Table of contents
+Overview
+Prerequisites
+Table of Contents
+Enable the Asio Discovery tool
+New Scan Configuration
+Scan Data
+Latest Scan Details Tab
+Subnet Details Tab
+Executing a scan from the Subnet Details tab
+Deleting a scan from the Subnet Details tab
+Editing a scan from the Subnet Details tab
+Installing an Agent via the Asio Discovery Tool
+Deployment Prerequisites
+Deployment Process
+How to Remove the Asio Discovery Tool
+FAQ
+What operating systems does the Asio Discovery Tool support?
+What operating systems does the Asio Discovery Tool allow for pushing agents to?
+What features are planned for future releases?
+Will you migrate the configuration of the existing scanning tool?
+Overview
+
+Important: This feature is only available in Early Access - Limited Availability for now.
+
+The Asio Discovery Tool is a fully integrated feature of ConnectWise Asio®, allowing you to scan endpoints and install platform agents without the need for a separate application. 
+
+Prerequisites
+
+The feature can be enabled only on Windows machines that have the Platform Agent installed, belong to a respective Company, and are associated with a specific site.
+
+Windows - Windows 10 and above
+Windows Server - Windows Server 2012 and above
+Table of Contents
+Enable the Asio Discovery Tool
+New Scan Configuration
+Latest Scan Details Tab
+Subnet Details Tab
+Installing an Agent via the Asio Discovery Tool
+How to Remove the Asio Discovery Tool
+FAQ
+Enable the Asio Discovery tool
+Navigate to Endpoints > Devices (Preview) and select the device you want to run the tool on.
+Click Actions.
+Select the Manage Tab.
+
+Click Asio Discovery Tool.
+Click Enable Asio Discovery Tool.
+
+The discovery tool will be configured. Wait 5-10 minutes until the setup is complete.
+New Scan Configuration
+
+Once the setup is complete, you can perform a new scan.
+
+Navigate to Endpoints > Devices (Preview) and select the device you want to run the new scan on.
+Click Actions.
+Select the Manage Tab.
+Click Asio Discovery Tool.
+Select New Scan.
+
+Enter a name for your new scan.
+Enter an IP range in the Start IP and End IP fields.
+Note: You can add more IP ranges if needed.
+
+A user account with administrator privileges is required. The user account can be a local or a domain account. Enter the appropriate credentials in the Username and Password fields.
+
+Note: If you need multiple credentials for the selected endpoints, you can click Add Credentials and add as many as you need.
+
+Note: You can select the device types for which the credentials are to be used.
+
+Select the type of OS the credentials are for.
+
+
+ Click Next.
+
+Select your scan settings. You can set the scan to run once or on a recurring basis in a dayly, weekly, or monthly schedule.
+
+
+Click Save and wait a few minutes for the scan to finish.
+Scan Data
+
+From the Asio Disovery Tool page, you can view data about your latest scan.
+
+
+The widgets at the top of the Asio Discovery Tool page provide data about your last scan.
+
+The Latest Scanned Devices widget provides information on the OS of the devices that have been scanned recently.
+The Latest Deployment Status widget shows a donut chart listing the outcome of agent installation.
+The Latest Scan widget provides the last subnet scan details.
+The Upcoming Scan widget provides information about the upcoming scan, if any, configured by the User.
+Latest Scan Details Tab
+
+To view the scan details, navigate to the Asio Discovery Tool and select the Latest Scan Details tab.
+
+This tab will show the following data:
+
+IP Address	The IP address of the endpoint
+Host Name	The name for the endpoint
+Mac Address	The Mac address of the endpoint
+Operating System	The OS version of the endpoint
+Agent Status	Displays if an agent has been installed on the endpoint or not
+Resource Type	Displays the kind of resource the endpoint is
+Machine Status	Displays if the machine is online or not
+Last Scanned On	Shows the date and time of the last scan
+Description	Gives the reason an agent installation failed
+
+From this tab, you use the following options to customize your view or give you better insights:
+
+Search	You can search for specific scans.
+Filters	You can filter by Last Scan time, Last Scan Status, Recurrence, Scan Name, or Schedule Details.
+Columns	You can add or remove columns from the grid.
+Density	This allows you to adjust the level of data compactness on the grid.
+Export	This option allows you to download a CSV file containing the data currently displayed in the grid.
+Subnet Details Tab
+
+The Subnet Details tab shows all of the subnets that are defined within a given scan. The Details about your scans will display under the Asio Discovery Tool > Subnet Details tab. 
+
+Note: While a scan is in progress, this is the only place where you can find the data for it.
+
+This tab shows the following data:
+
+Scan Name	The name of the scan
+Last Scan Status	The status of the last scan
+Last Scan	The start time of the last scan
+Recurrence	Displays whether the scan is one-time or recurring
+Schedule Details	Shows details about the chosen schedule for the scan
+Actions	Allows you to edit the scan
+
+
+From this tab, you use the following options to customize your view or give you better insights:
+
+Search	You can search for specific scans.
+Filters	You can filter by Last Scan time, Last Scan Status, Recurrence, Scan Name, or Schedule Details.
+Columns	You can add or remove columns from the grid.
+Density	This allows you to adjust the level of data compactness on the grid.
+Export	This option allows you to download a CSV file containing the data currently displayed in the grid.
+
+
+After the scan is complete, you will see its status update to completed.
+
+Note: Once the scan is completed, you can also see more data about the endpoint under the Asio Discovery Tool > Latest Scan Details tab. 
+
+Executing a scan from the Subnet Details tab
+
+You can re-run a scan from this tab.
+
+Select the previous scan you would like to run.
+Click Execute Scan.
+
+Confirm the scan by clicking Execute in the pop-up window.
+
+Deleting a scan from the Subnet Details tab
+
+You can delete a scan from this tab.
+
+Select the previous scan you would like to run.
+Click Delete.
+
+Confirm the deletion by clicking Delete in the pop-up window.
+Editing a scan from the Subnet Details tab
+
+Note: You can edit a scheduled or recurring scan from this tab.
+
+Select the scan you would like to edit.
+Click the actions icon menu.
+Click Edit.
+
+Installing an Agent via the Asio Discovery Tool
+Deployment Prerequisites
+The probe machine, having the Asio discovery tool, uses a Windows Management Instrumentation (WMI) call to check the status of an installed agent or to deploy the agent.
+The WMI service should be in a running state on the target machine (Windows).
+For macOS or Linux devices, SSH must be enabled and accessible for communication from the probe (Windows machine) to Linux or macOS.
+Remote Login must be enabled and can be found by browsing to System Preferences > Sharing > Remote Login.
+If a firewall is enabled on the target machine, the WMI service must be added to the firewall exclusion list.
+File and Printer sharing services should be added to the firewall exclusion list. (This service is required only during the agent deployment process since WMI does not support file copy processes between two systems.
+WMI uses domain administrator credentials.
+All systems marked for deployment must be pingable from the system within the subnet where the Asio Discovery Tool is enabled.
+All systems marked for deployment must have the exclusions listed below (WMI service, file and printer sharing services) to ensure smooth deployment.
+A user account with administrator privileges must be used for deployment. The user account can have local or domain privileges. Domain accounts should be in the format DOMAIN / USERNAME.
+Deployment Process
+Navigate to Endpoints > Devices (Preview) and select a device on which you have enabled the Asio Discovery Tool.
+Click Actions.
+Select the Manage Tab.
+Click Asio Discovery Tool.
+On the Latest Scan Details tab, select the machines that you want to install the agent on and click Install Agent.
+
+Confirm the agent installation by clicking Install on the confirmation screen.
+Wait a few minutes for the installation.
+How to Remove the Asio Discovery Tool
+
+You can remove Asio discovery if you plan to remove the endpoint.
+
+Navigate to Endpoints > Devices (Preview) and select the device on which you want to remove the Asio Discovery Tool.
+Click Remove Asio Discovery Tool.
+
+Confirm the removal in the pop-up window.
+FAQ
+What operating systems does the Asio Discovery Tool support?
+
+The Asio discovery tool can be opted in only on Windows OS.
+
+What operating systems does the Asio Discovery Tool allow for pushing agents to?
+
+The Asio discovery tool will allow the deployment of agents on Windows, Linux, and macOS.
+
+What features are planned for future releases?
+We plan to release many new exciting features over the next few months, including:
+Adding one or more subnets
+The ability to manage and schedule scans
+Concurrent scanning
+Widgets for at-a-glance views
+Scan History
+Auto-deploy on schedule
+Reporting
+Will you migrate the configuration of the existing scanning tool?
+This is planned for a future release.
+
+ 
+
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Devices Overview
+The information on the Device list provides a high-level view of all sites or filtered sites and includes easy-to-view details for applicable endpoint...
+Device Details Screen
+Custom Fields
+Custom Fields are additional data points you can create in the ConnectWise Asio® platform to record information not collected by the agent or unavaila...
+Device Groups
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

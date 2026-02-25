@@ -1,0 +1,82 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   PSA Integration   Promys Integration Guide
+Promys Integration Guide
+Last updated
+Jan 8, 2025
+Table of contents
+Overview
+1. Configure Continuum Settings
+2. Configure Promys
+Overview
+
+Software-for-technology solution provider Promys automates operational business processes for MSPs, including recurring billing for managed services and subscriptions as well as real-time contract profitability tracking.
+
+Platform integration provides robust and flexible billing and forecasting as well as access to CRM, Quoting, Project Management, and Help Desk Service business software.
+
+Below are the steps required to configure the Promys/ConnectWise Integration. For assistance, contact your Promys Project Manager or helpdesk@promys.com.
+
+Note: 
+
+Enabling a PSA integration disables email notifications through Notification Rules.
+Promys integration is not available in EU and AU.
+1. Configure Continuum Settings
+
+To allow Promys to connect and sync with ConnectWise:
+
+Log in to the ConnectWise Asio™ platform (ITSupport Portal) (control.itsupport247.net) with Super Admin credentials.
+Go to Settings > Account Administration > Integration > PSA Integration.
+Select Promys from the drop-down.
+Write down the provided API Token.
+
+Complete the fields for Integrator Username and Password.
+Confirm the Integrator Password.
+
+Note: Be sure to write down the defined Username and Password. You will need this information in the next step when you configure Promys.
+
+Leave this window open.
+Log in to your Promys account through promys.com and copy the URL from the address bar before /My/Dashboard/Index to the clipboard.
+Return to the PSA Integration page on the Asio platform.
+Paste the URL selection from the clipboard into the Callback URL and add /EndPoint/ContinuumPull at the end.
+Select GET from the drop-down menu for Callback Method.
+
+Go to the next section and configure Promys.
+
+Note: DO NOT click Activate until you configure Promys; otherwise, your existing tickets will not be integrated into Promys.
+
+2. Configure Promys
+
+Promys configuration requires a brief, one-time set up requiring minor software changes. To complete the integration, contact your Promys Project Manager or the Promys Help Desk for assistance making the appropriate changes in Promys and completing the integration configuration steps.
+
+Contact helpdesk@promys.com for any questions.
+
+ 
+
+Kaseya BMS Integration Guide PSA Public Ticketing API
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ConnectWise PSA (Manage) Integration
+ConnectWise RMM features the ability to integrate with the ConnectWise PSA system to sync tickets, assets, configuration items, billing data, and cont...
+Autotask Integration Guide
+Accelo Integration Guide
+PSA Synchronization Dashboard
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

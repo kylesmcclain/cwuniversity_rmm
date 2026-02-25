@@ -1,0 +1,106 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Integrations to ConnectWise RMM   ScreenConnect with RMM   Enable or Disable Connection Consent for ScreenConnect
+ Expand/collapse global location
+Enable or Disable Connection Consent for ScreenConnect
+Last updated
+Aug 12, 2025
+Table of contents
+Overview
+Prerequisites
+Using the Tasks
+Creating a Rule for Consent
+Advantage
+Disadvantage
+ScreenConnect Consent FAQs
+How does the end client consent feature work with ScreenConnect?
+What happens if someone is connected to the end point, but they do not respond to the consent request?
+What happens if there’s nobody active on the endpoint?
+Overview
+
+This page describes how to enable or disable connection consent for ScreenConnect™. Client end-users may be required to provide consent prior to a technician connecting to their device with ScreenConnect. This gives the end-users an opportunity to close proprietary information before the tech takes over.
+
+We have two ways of modifying the Connection Consent requirements:
+
+You can use the tasks outlined below; this will allow you to set Consent for specific endpoints.
+You can use ScreenConnect portal's Administrator role-based permissions to set the default behavior for all endpoints. More information for this process can be found here: Define user roles and permissions.
+Prerequisites
+
+To use the tasks outlined below, go through this documentation for enabling a guest to require consent.
+
+Using the Tasks
+
+The user consent task allows the host to manage consent for specific endpoints or sites. The default behavior will be set for every endpoint in the ScreenConnect portal's Administrator role based permissions.
+
+There are two tasks which will allow the host to manage this setting:
+
+Enable user consent for Control connections - This will turn on the Consent requirement if it is disabled on the agent system, or if it has been disabled in the ScreenConnect portal Administrator role based permissions.
+
+This task when executed will set the value IsConsentRequired in the ScreenConnect user.config file to be True. The user.config file is located in the C:\ProgramData\ScreenConnect Client folder.
+
+Upon successful completion of the task the Task should return a standard output of Consent has been Enabled for ConnectWise ScreenConnect.
+
+When this task is enabled, the user is prompted to allow a remote control session before the session is visible to the technician.
+
+Disable user consent for Control connections - This will turn off the Consent requirement if it has been enabled on the agent system, or if it has been enabled in the ScreenConnect portal Administrator role based permissions.
+
+The task should set the value IsConsentRequired in the ScreenConnect user.config to be False.
+
+Upon successful completion of the task the Task should return standard output of Consent has been Disabled. Technicians using ScreenConnect will be allowed Remote Access without end-user permission.
+
+When this task is disabled, the technician has access to the remote control session without prompting the user.
+
+The new Tasks are added under the Automation tab on the Task page.
+
+Creating a Rule for Consent
+
+Another way to set up consent requirement for endpoints is to go to the ScreenConnect portal and define a rule that will affect current and future devices, by editing the Security role of Administrator.
+
+Advantage
+
+The advantage is that you are not restricted to online devices and the rule will affect future devices as long as there is a way to uniquely identify those devices.
+
+Disadvantage
+
+The disadvantage is it is more work to set up, and the setup is not straightforward. You will need to change the default role based permission for all session groups to require consent for all devices, and then create session groups to define which set of devices will not be required to provide consent, and for those session groups set the role to not require consent. Please refer to the following images and the Create a session group article.
+
+ScreenConnect Consent FAQs
+How does the end client consent feature work with ScreenConnect?
+
+Unless you have made changes to the ScreenConnect configuration settings, end users are not currently required to provide consent before your tech connects with ScreenConnect. If needed, you may change your global settings to request consent from all endpoints, as explained in Prompt guest for consent before connecting to a remote machine. If you only want to require consent for specific sites/endpoints, you can use the new task outlined above. Later in the year we plan to add consent options to Policies, which would simplify and automate this setup of consent for current and new endpoints, instead of running a task against specific ones.
+
+What happens if someone is connected to the end point, but they do not respond to the consent request?
+
+By default, the connection will not be established to the remote device unless end-user consent is provided. If you would like to change that and have the tech connect to the device if no response is given, please see instructions on how to do so at Automatically grant consent after a countdown.
+
+What happens if there’s nobody active on the endpoint?
+
+By default, the connection will not be established to the remote device unless end-user consent is provided. If you’d like to change that and automatically connect to endpoints where end user is inactive, please see instructions on how to do so at Automatically grant consent if a user is inactive.
+
+Define user roles and permissions for ScreenConnect Enable Reason for Remote Access
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ScreenConnect Installation Status and Error Codes
+ScreenConnect Dashboard for RMM
+ScreenConnect 1-Click for RMM
+ScreenConnect Integration for ConnectWise RMM
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

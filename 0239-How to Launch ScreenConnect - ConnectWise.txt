@@ -1,0 +1,51 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Integrations to ConnectWise RMM   ScreenConnect with RMM   How to Launch ScreenConnect
+How to Launch ScreenConnect
+Last updated
+May 14, 2025
+Table of contents
+Overview
+How to Launch ScreenConnect
+Overview
+
+Follow the steps documented below to launch ScreenConnect. 
+
+How to Launch ScreenConnect
+Navigate to the Endpoint > Devices.
+Locate the machine that you want to launch ScreenConnect on.
+Under Log In, choose either ScreenConnect Remote Access or ScreenConnect Backstage.
+
+
+
+Note: The same launch options are available in the device details page.
+
+ 
+
+Enable Reason for Remote Access Remote View
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ScreenConnect Installation Status and Error Codes
+Enable or Disable Connection Consent for ScreenConnect
+ScreenConnect Dashboard for RMM
+ScreenConnect 1-Click for RMM
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

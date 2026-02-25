@@ -1,0 +1,94 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Reports   Asio Reports   Technical Details Reports   Installed Software Report
+Installed Software Report
+Last updated
+Sep 22, 2025
+Table of contents
+Overview
+User Access to Reports
+Installed Software Report Details
+Overview
+
+This report lists the software installed on each machine, including publisher, version, and installation date.
+
+  To locate this screen, navigate to Reports > Asio > Detailed Reports > Technical Details > Installed Software Report.
+
+User Access to Reports
+
+Confirm user access and permissions to view this report. The following default roles have access to this report:
+
+Report	Manager	Technician	Office Staff	Sales	Client Site Manager
+Installed Software Report	No	Yes	Yes	Yes	Yes
+
+This additional step allows you to enable or disable access to specific reports for different user roles, giving you more control over which reports are accessible to each role.
+
+To control the visibility of endpoints on reports, you can manage site access for users. The visibility of endpoints on reports will be based on the user's permissions to sites. By controlling site access, you can determine which endpoints are visible to each user.
+
+Installed Software Report Details
+
+The details that the report covers are:
+
+Name
+Friendly Name
+Device Type
+Company Name
+Company Friendly Name
+Site Name
+Site Friendly Name
+OS
+IP Address
+Application Name
+Version
+Publisher
+Last Logged On User
+Install Date
+Date Checked
+Device Time Zone
+
+The report is blank initially, as shown here:
+
+To generate the report:
+
+Select Company Name from Select Company drop-down.
+Select Site Name from Select Site drop-down and click Show Results.
+The report will be generated as shown below:
+
+
+
+If, after the selection, a large number of rows are detected, the UI automatically displays a message as shown below:
+
+Click Download to initiate a download of the selected dataset in a zip format containing multiple .csv files named Reports.
+
+Note: 
+
+This report is refreshed every 8 hours.
+The tools at the top right of the report allow you to filter or search for this information. You can also download the report as a CSV.
+Based on the size of the data, the compressed folder may contain a large number of CSV files.
+Installed Software Count Report System Information Report
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Asset Change Report
+Disk Space Report
+Installed Software Change Report
+Installed Software Count Report
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

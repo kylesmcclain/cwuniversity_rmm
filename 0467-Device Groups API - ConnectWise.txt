@@ -1,0 +1,47 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   RMM Tools   APIs   Device Groups API
+Device Groups API
+Last updated
+Nov 4, 2025
+Table of contents
+Overview
+Overview
+
+The API access for Device Groups provides a set of APIs that allow seamless integration and automation with Device Groups management functionalities. 
+
+Note: To access OpenAPI, follow the Authentication and Authorization process outlined here.
+
+The following APIs fall under this category:
+
+Retrieve All Device Groups API
+Retrieve Task Summary at Endpoint Level API Retrieve All Device Groups API
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Retrieve All Device Groups API
+Asio Integration API
+Managed Service Providers (MSPs) use a number of different tools and products to effectively monitor and manage their client's networks. Each of these...
+Public Ticketing API
+ConnectWise's public ticketing API allows MSPs or PSA vendors to integrate with our two-way ticket synchronization system to create tickets, update ti...
+Automation API
+The API access for Automation provides a set of APIs that allow seamless integration and automation, allowing for efficient tasking and scripting func...
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

@@ -1,0 +1,182 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   RMM Reporting API   Reporting API REST Resources   Devices
+Devices
+Last updated
+Jul 9, 2025
+Table of contents
+Overview
+Endpoint and URI
+Method
+Request Body
+Response Body
+Parameter Descriptions for Devices
+Overview
+
+Retrieves a list of devices for any given site.
+
+Note: This is planned for deprecation.
+
+Endpoint and URI
+
+https://itsapi.itsupport247.net/reporting/v1/sites/{SiteCode}/devices/ {MachineID}
+
+Method
+
+GET
+
+Request Body
+
+NA
+
+Response Body
+
+[
+
+{
+
+"assetType": "Member Server",
+
+"companyId": "50000001",
+
+"companyName": "IT Solutions, Inc.",
+
+"cpu": "Intel(R) Xeon(R) CPU E5-2695 v2 @ 2.40GHz",
+
+"disks": [
+
+{
+
+"name": "C",
+
+"used": "20562436096",
+
+"total": "26838036480"
+
+},
+
+{
+
+...
+
+},
+
+{
+
+...
+
+},
+
+]
+
+"friendlyName": "ITS-TA-SRV7M",
+
+"hostName": "its-ta-srv7m",
+
+"ipAddresses": ["10.2.30.66"],
+
+"lastLoginUser": "Administrator",
+
+"lastReboot": "2014-06-20T14:42:11Z",
+
+"lastSeenOnline": "2014-07-21T11:48:18Z",
+
+"lastUpdated": "2014-07-21T11:00:38Z",
+
+"macAddresses": ["00:15:5D:1E:0B:29"],
+
+"machineID": "50000064",
+
+"machineName": "ITS-TA-SRV7M",
+
+"manufacturerName": "American Megatrends Inc.",
+
+"memoryTotal": "1073112678",
+
+"modelNumber": "Virtual Machine",
+
+"modelSKU": "Default System BIOS",
+
+"operatingSystem": "Microsoft(R) Windows(R) Server 2003 Enterprise x64 Edition (Service Pack 2) ",
+
+"siteCode": "AGTSolutions",
+
+"siteId": "50000003",
+
+"siteName": "AGT Solutions",
+
+"supportSerialNumber": "6206-6397-8132-8580-0160-5015-35"
+
+},
+
+{
+
+...
+
+},
+
+{
+
+...
+
+}
+
+]
+
+Parameter Descriptions for Devices
+Parameter	Description
+"assetType"	Type of device ("Member Server", "Standalone Server", "Member Workstation", etc.)
+"companyId"	Unique ID for MSP company in ConnectWise database
+"companyName"	MSP company name in Asio™ Platform (ITSupport Portal)
+"cpu"	Device CPU
+"disks"	Disk details for the device, including drive name and used vs. total available memory (in bytes)
+"friendlyName"	Device friendly name in Asio™ Platform (ITSupport Portal)
+"hostName"	Device hostname
+"ipAddresses"	Device IP address(es)
+"lastLoginUser"	Last user of the device
+"lastReboot"	Date and time of last reboot for the device
+"lastSeenOnline"	Date and time last seen online by ConnectWise Data Center
+"lastUpdated"	Date and time of last device update
+"macAddresses"	Device Mac address(es)
+"machineID"	Unique machine ID in ConnectWise database
+"machineName"	Machine name listed in Asio™ Platform (ITSupport Portal)
+"manufacturerName"	Device manufacturer name
+"memoryTotal"	Total device memory
+"modelNumber"	Device model
+"modelSKU"	Device model SKU
+"operatingSystem"	Device OS
+"siteCode"	Unique site code listed in Asio™ Platform (ITSupport Portal)
+"siteId"	Unique site ID in ConnectWise database
+"siteName"	Site name in Asio™ Platform (ITSupport Portal)
+"supportSerialNumber"	Serial number for device support
+Daily Server Utilization Disk IO Utilization
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Agent Details
+Retrieves agent information for the authenticated partner and the specified site.
+Antivirus Summary
+Retrieves counts of machines having antivirus protection in the following states: Updated, Outdated, Not Installed, or Information Unavailable.
+Antivirus Version Summary
+Retrieves currently detected antivirus software and the definition version.
+BCDR Continuity Appliances
+Retrieves a list of Recover Continuity backup appliances provisioned at the given site.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

@@ -1,0 +1,98 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Patching   OS Patching   OS Feature Updates (Windows)
+OS Feature Updates (Windows)
+Last updated
+Nov 7, 2025
+Table of contents
+Overview
+Feature Update Policy
+Step 1: Feature Update Installation
+Prerequisites
+Step 2 : Feature Update Finalization
+Prerequisites for Auto-Reboot
+Step 3: Feature Update Success
+Overview
+
+The automated Feature Update Deployment option allows partners to keep machines at the Supported Windows 10 OS version. This setting targets Windows 10 endpoints that are on End of Support OS version and automatically upgrades them to a supported OS version.
+
+Important: Keep all of your machines on a supported OS version to ensure Security Updates are received regularly from Microsoft.
+
+Feature Update Policy
+
+With Policies and Packages the partner can automate the Feature Update deployment flow. A new Classification option for Feature Update is now available within Desktop Policy. Partners can change the option from "Do not Deploy" to "Deploy All" or "Deploy only Partner approved".
+
+The options work similarly to any other classification.
+
+The Feature Update setting also has a separate deployment schedule which will need an open window at least for 10 hours. During this schedule, the download and installation of the Feature update occurs.
+
+Feature update deployment re-uses the Reboot schedule defined within the Policy schedule.
+
+Important: Feature updates or OS Upgrades might fail if reboots are not configured.
+
+ 
+
+Step 1: Feature Update Installation
+Prerequisites
+
+Patch with Upgrade Classification (Feature Update) is applicable for the endpoint and is currently missing
+
+Feature Updated automation is configured on Policy and the machine is online at the start of the Installation schedule
+
+If the setting in Policy for Feature update is "Deploy partner approved" then the patch must be approved from the Patch Approvals page
+
+Step 2 : Feature Update Finalization
+
+After the Feature update installation is completed, the machine needs to be rebooted to finalize the Feature update. This is a critical process where the new OS version is loaded and the machine boots into the new version.
+
+Prerequisites for Auto-Reboot
+
+Download and Installation of Feature update must be completed prior to the start of the Reboot schedule
+
+A reboot schedule must be configured within the Policy
+
+Manual Reboot (not recommended)
+
+If the machine does not have a reboot schedule, the user on the machine can still see the option in the Start Menu > Power option to Update and Restart.
+
+Step 3: Feature Update Success
+
+The Feature update is considered successful only if all of the following are true:
+
+The OS Version after Finalization is greater than the initial version
+
+You can refer to your BrightGauge report to view the feature update patches that got successfully installed on the machine.
+
+BrightGauge Report Name: Installed Updates Report V2.0
+
+Section: Installed OS Patches by Classification V.20
+
+Feature Updates are classified as Upgrades
+
+OS Patching Getting Started Settings OS Patch Approvals
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+OS Patching Compliance
+OS Patching Getting Started Settings
+OS Patch Approvals
+OS Patch Exclusions
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

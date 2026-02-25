@@ -1,0 +1,391 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Patching   Third-Party Patching   Supported Third-Party Applications
+Supported Third-Party Applications
+Last updated
+Nov 20, 2025
+Table of contents
+No headers
+
+The following are the Third-Party applications that are supported by our Patching.
+
+Note: The following list relates to the legacy third-party patching. For improved Third-Party Patching, navigate to Endpoints > Patches > Approvals and click the Third-Party Patching tab.
+
+Application Name	macOS	Windows
+32-bit	64-bit	32-bit	64-bit	arm64
+7-Zip	 	 	YES	YES	 
+8GadgetPack	 	 	YES	YES	 
+ABDownloadManager	 	 	 	YES	 
+AdMobilize Desktop UI	 	 	 	YES	 
+Adobe Acrobat Reader	 	YES	YES	YES	 
+Advanced Sage Password Recovery	 	 	YES	YES	 
+Advanced SQL Password Recovery	 	 	YES	YES	 
+Agilent Lab Advisor	 	 	 	YES	 
+Airtame	 	 	 	YES	 
+aleph	 	 	 	YES	 
+Amazon Corretto 11	 	YES	YES	YES	 
+Amazon Corretto 17	 	YES	YES	YES	 
+Amazon Corretto 8	 	YES	YES	YES	 
+Amazon Corretto JRE 8	 	 	YES	YES	 
+Amazon WorkSpaces	 	 	 	YES	 
+AMP Instance Manager	 	 	 	YES	 
+Android11React	 	 	 	YES	 
+AntiMicro	 	 	 	YES	 
+ArdorQuery	 	 	 	YES	 
+Arduino CLI	 	 	 	YES	 
+Audacity	 	YES	YES	YES	 
+Authme	 	 	 	YES	 
+AWS VPN Client	 	 	 	YES	 
+AXIS Video Capture Driver	 	 	YES	YES	 
+Azul Zulu JDK 7	 	 	YES	YES	 
+Azul Zulu JDK 8	 	 	YES	YES	 
+Azul Zulu JDK 11	 	 	YES	YES	 
+Azul Zulu JDK 13	 	 	 	YES	 
+Azul Zulu JDK 15	 	 	 	YES	 
+Azul Zulu JDK 17	 	 	YES	YES	 
+Azul Zulu JDK 19	 	 	 	YES	 
+Azul Zulu JDK 20	 	 	 	YES	 
+Azul Zulu JDK 21	 	 	 	YES	 
+Azul Zulu JDK 22	 	 	 	YES	 
+Azul Zulu JRE 7	 	 	YES	YES	 
+Azul Zulu JRE 8	 	 	YES	YES	 
+Azul Zulu JRE 9	 	 	 	YES	 
+Azul Zulu JRE 11	 	 	YES	YES	 
+Azul Zulu JRE 13	 	 	 	YES	 
+Azul Zulu JRE 15	 	 	YES	YES	 
+Azul Zulu JRE 17	 	 	YES	YES	 
+Azul Zulu JRE 18	 	 	YES	YES	 
+Azure Data Studio	 	 	 	YES	 
+Azure Developer CLI	 	 	 	YES	 
+Azure Monitor Agent	 	 	 	YES	 
+Azure Storage Explorer	 	 	 	YES	 
+BAS21	 	 	 	YES	 
+BestNotes	 	 	 	YES	 
+binjr	 	 	 	YES	 
+BITS Manager	 	 	 	YES	 
+Bitwarden	 	 	YES	YES	 
+bottom	 	 	 	YES	 
+Brackets	 	 	 	YES	 
+Brosix App	 	 	 	YES	 
+Brows	 	 	 	YES	 
+calibre	 	 	 	YES	 
+Camtasia	 	 	 	YES	 
+CCleaner	 	 	YES	YES	 
+CertDump	 	 	 	YES	 
+ChefDK	 	 	 	YES	 
+Chocolatey GUI	 	 	 	YES	 
+Chrome Remote Desktop Host	 	 	YES	YES	 
+ChucK	 	 	 	YES	 
+Cisco Jabber	 	 	 	YES	 
+Cisco Webex Meetings	 	 	 	YES	 
+Citrix Workspace	 	 	YES	YES	 
+ClamAV	 	 	 	YES	 
+clarinet	 	 	 	YES	 
+ClipSock	 	 	YES	YES	 
+Clockify	 	 	 	YES	 
+CloudApp for Windows	 	 	 	YES	 
+Cloudflare WARP	 	 	 	YES	 
+cloudflared	 	 	YES	YES	 
+CMake	 	 	YES	YES	 
+Compose Generator	 	 	YES	YES	 
+CORSAIR iCUE 4 Software	 	 	 	YES	 
+Cppcheck	 	 	 	YES	 
+CrowdSec	 	 	 	YES	 
+DaMtech Password Generator	 	 	 	YES	 
+Dapr CLI	 	 	 	YES	 
+DarkThumbs	 	 	 	YES	 
+Devolutions Workspace	 	 	 	YES	 
+DevPod	 	 	 	YES	 
+Dimension 4	 	 	 	YES	 
+dnGREP	 	 	YES	YES	 
+Docker Desktop	 	 	 	YES	 
+Dolt	 	 	 	YES	 
+Double Commander	 	 	YES	YES	 
+Dropbox	 	YES	YES	YES	 
+Duo Device Health	 	 	YES	YES	 
+Duplicati 2	 	 	YES	YES	 
+EasyConnect	 	 	 	YES	 
+Easy Connection to Screen	 	 	 	YES	 
+Eclipse Temurin JRE with Hotspot 18	 	 	YES	YES	 
+Eclipse Temurin JRE with Hotspot 20	 	 	 	YES	 
+Eclipse Temurin JRE with Hotspot 22	 	 	YES	 	 
+Eclipse Temurin 11	 	YES	 	YES	 
+Eclipse Temurin 17	 	YES	 	YES	 
+Eclipse Temurin 8	 	YES	 	YES	 
+EduMIPS64	 	 	 	YES	 
+Egnyte WebEdit	 	 	YES	YES	 
+Elasticsearch	 	 	 	YES	 
+Elevate UC	 	 	 	YES	 
+Elgato 4K Capture Utility	 	 	 	YES	 
+Elgato Camera Hub	 	 	 	YES	 
+enarx	 	 	 	YES	 
+eSpeak NG	 	 	YES	YES	 
+Evernote	 	 	YES	YES	 
+Expresso	 	 	 	YES	 
+Far Manager 3	 	 	YES	YES	 
+fedistar	 	 	 	YES	 
+fend	 	 	 	YES	 
+ffftp	 	 	YES	YES	 
+FileBot	 	 	 	YES	 
+fio	 	 	YES	YES	 
+Flameshot	 	 	 	YES	 
+Foobar2000	 	 	YES	YES	YES
+FutureRestore GUI	 	 	 	YES	 
+GeoGebra Classic	 	 	YES	YES	 
+GeoStudio	 	 	 	YES	 
+GIMP	 	 	YES	YES	 
+GitButler	 	 	 	YES	 
+gitg	 	 	 	YES	 
+GitHub CLI	 	 	YES	YES	 
+GLPI Agent	 	 	 	YES	 
+Google Ads Editor	 	 	 	YES	 
+Google Chrome	 	YES	YES	YES	 
+Google Chrome Dev	 	 	 	YES	 
+Google Drive	 	YES	 	YES	 
+Google Earth Pro	 	YES	YES	YES	 
+GoToAssist Agent Desktop Console	 	 	YES	YES	 
+GrafanaEnterprise	 	 	 	YES	 
+GrafanaOSS	 	 	 	YES	 
+grate	 	 	 	YES	 
+Grunt	 	 	 	YES	 
+gsudo	 	 	YES	YES	 
+Halloy	 	 	 	YES	 
+HandBrake	 	 	 	YES	YES
+HashHash	 	 	 	YES	 
+Helm	 	 	 	YES	 
+Hoppscotch	 	 	 	YES	 
+Hover	 	 	 	YES	 
+HP Cloud Recovery Tool	 	 	 	YES	 
+HTTP downloader	 	 	 	YES	 
+HvManager	 	 	 	YES	 
+IcedTea-Web	 	 	 	YES	 
+ILSpy	 	 	 	YES	 
+ImageGlass	 	 	 	YES	 
+Image Sort	 	 	YES	YES	 
+ImHex	 	 	 	YES	 
+ImPlay	 	 	 	YES	 
+InSpec	 	 	 	YES	 
+Interactive Data Editor	 	 	 	YES	 
+IntunePrepTool	 	 	 	YES	 
+Invo Connect	 	 	 	YES	 
+IO Ninja	 	 	YES	YES	 
+IrfanView	 	 	YES	YES	 
+IronPython 3	 	 	 	YES	 
+IsWiX	 	 	 	YES	 
+iTunes	 	 	YES	YES	 
+JabRef	 	 	 	YES	 
+Janet	 	 	 	YES	 
+Jira StopWatch	 	 	YES	YES	 
+JPEGView	 	 	YES	YES	 
+k6	 	 	YES	 	 
+Keboola CLI	 	 	 	YES	 
+KeePass Password Safe	 	 	YES	YES	 
+KeePassXC	 	 	 	YES	 
+keymapper	 	 	 	YES	 
+K-Lite Codec Pack	 	 	YES	YES	 
+ksnip	 	 	 	YES	 
+Lapce	 	 	 	YES	 
+LastPass	 	 	YES	YES	 
+Lettura	 	 	 	YES	 
+Liberica JDK 11	 	 	YES	YES	 
+Liberica JDK 16	 	 	 	YES	 
+Liberica JDK 22 Full	 	 	 	YES	 
+Liberica JRE 13 Full	 	 	YES	YES	 
+Liberica JRE 14 Full	 	 	YES	YES	 
+Liberica JRE 15	 	 	YES	YES	 
+Liberica JRE 20 Full	 	 	YES	YES	 
+Liberica JRE 21 Full	 	 	YES	YES	 
+Libgen Desktop	 	 	YES	YES	 
+LibreOffice	YES	YES	YES	YES	 
+Lightform Creator	 	 	 	YES	 
+Logbert	 	 	YES	YES	 
+Logisim-evolution	 	 	 	YES	 
+LuaJIT	 	 	 	YES	 
+ManicTime	 	 	YES	YES	 
+MasterVolumeSync	 	 	 	YES	 
+Mattermost	 	 	 	YES	 
+Meld	 	 	 	YES	 
+Mercurial	 	 	YES	YES	 
+Microsoft Build of OpenJDK with Hotspot 17	 	 	 	YES	 
+Microsoft Small Basic	 	 	 	YES	 
+Microsoft System CLR Types for SQL Server 2019	 	 	 	YES	 
+Mixxx	 	 	 	YES	 
+Modern CSV	 	 	 	YES	 
+Momento CLI	 	 	 	YES	 
+MongoDB Tools	 	 	 	YES	 
+Mozilla Firefox	 	YES	YES	YES	 
+Mozilla Thunderbird	 	YES	YES	YES	 
+mRemoteNG	 	 	 	YES	 
+MSIX Core	 	 	YES	YES	 
+MuseScore 3	 	 	YES	YES	 
+MyHarmony	 	 	 	YES	 
+MySQL Shell	 	 	 	YES	 
+myViewBoard Display	 	 	 	YES	 
+NAPS2	 	 	YES	YES	 
+Neovide	 	 	 	YES	 
+neovim-qt	 	 	 	YES	 
+Nitropy	 	 	 	YES	 
+NormCap	 	 	 	YES	 
+NoteHighlight2016	 	 	YES	YES	 
+Notepad++	 	 	YES	YES	 
+Npackd	 	 	YES	YES	 
+NVC VHDL Simulator	 	 	 	YES	 
+O&O Defrag Professional	 	 	 	YES	 
+Octopus Deploy Tentacle	 	 	YES	YES	 
+Office 365 on Electron	 	 	 	YES	 
+Office Tab Enterprise	 	 	 	YES	 
+ojdkbuild OpenJDK JRE 17	 	 	 	YES	 
+okapi	 	 	 	YES	 
+omsi-launcher	 	 	 	YES	 
+OneCommander	 	 	 	YES	 
+OneWare Studio	 	 	 	YES	 
+OpenOffice	 	YES	 	 	 
+OpenRPA	 	 	 	YES	 
+OpenSC smartcard framework	 	 	YES	YES	 
+OpenVPN Connect	 	 	YES	YES	 
+Opera	 	 	 	YES	 
+Opera Stable	 	 	YES	YES	YES
+osquery	 	 	 	YES	 
+Outlook for Office365	 	 	 	YES	 
+Overlayed	 	 	 	YES	 
+OwlPlug	 	 	 	YES	 
+Pandoc	 	 	 	YES	 
+Paprika Recipe Manager 3	 	 	 	YES	 
+Passcovery Suite	 	 	 	YES	 
+pdfarranger	 	 	 	YES	 
+PDFsam	 	 	 	YES	 
+PharoLauncher	 	 	 	YES	 
+pixi	 	 	 	YES	 
+Proximity	 	 	 	YES	 
+Pulumi	 	 	 	YES	 
+Puppet Bolt	 	 	 	YES	 
+Puppet Development Kit	 	 	 	YES	 
+puppetry	 	 	 	YES	 
+Pure Writer	 	 	 	YES	 
+PuTTY	 	 	YES	YES	YES
+PyAudio	 	 	 	YES	 
+pyftpsync	 	 	 	YES	 
+pympress	 	 	YES	YES	 
+Qalculate!	 	 	YES	YES	 
+Quarto	 	 	 	YES	 
+QuickFixMyPic	 	 	 	YES	 
+QuickLook	 	 	 	YES	 
+QuickTime	 	 	YES	YES	 
+QuPath	 	 	 	YES	 
+RapidCRC	 	 	YES	YES	 
+ReacType	 	 	 	YES	 
+Reginald	 	 	 	YES	 
+Remote Desktop Manager	 	 	 	YES	 
+Royal Server	 	 	 	YES	 
+RipShout	 	 	 	YES	 
+RxView	 	 	 	YES	 
+SapMachine 11 JDK	 	 	 	YES	 
+SapMachine 17 JDK	 	 	 	YES	 
+SapMachine 21 JDK	 	 	 	YES	 
+SapMachine 22 JDK	 	 	 	YES	 
+SapMachine 11 JRE	 	 	 	YES	 
+SapMachine 17 JRE	 	 	 	YES	 
+SapMachine 21 JRE	 	 	 	YES	 
+SapMachine 22 JRE	 	 	 	YES	 
+Scala CLI	 	 	 	YES	 
+SceneBuilder	 	 	 	YES	 
+SchemaCrawler	 	 	 	YES	 
+ScreenCloud	 	 	 	YES	 
+Screenpresso	 	 	YES	YES	 
+ScreenRecorder	 	 	 	YES	 
+ScreenToGif	 	 	YES	YES	 
+Seafile	 	 	 	YES	 
+SeaMonkey	 	 	YES	YES	 
+Seq	 	 	 	YES	 
+ShareX	 	 	YES	YES	 
+Sharik	 	 	 	YES	 
+Simple DNSCrypt	 	 	YES	YES	 
+Slack	 	YES	 	 	 
+SmartFTP Client	 	 	 	YES	 
+SmartRename	 	 	YES	YES	 
+Snagit 2023	 	 	 	YES	 
+SnakeTail	 	 	 	YES	 
+SoftMaker Office 2024	 	 	YES	YES	 
+Space Thumbnails	 	 	 	YES	 
+spacedesk Windows DRIVER	 	 	YES	YES	 
+Speedtest by Ookla	 	 	YES	YES	 
+Standard ML of New Jersey	 	 	 	YES	 
+Stele	 	 	 	YES	 
+stressor	 	 	 	YES	 
+SUMO	 	 	 	YES	 
+Synology Drive Client	 	 	YES	YES	 
+Tableau Reader	 	 	 	YES	 
+tastytrade	 	 	 	YES	 
+TeamViewer	 	 	YES	YES	 
+TeraCopy	 	 	YES	YES	 
+Testcontainers Desktop	 	 	 	YES	 
+Texmaker	 	 	 	YES	 
+Texnomic SecureDNS Terminal	 	 	 	YES	 
+Thetis	 	 	 	YES	 
+TightVNC	 	 	YES	YES	 
+Topaz Photo AI	 	 	 	YES	 
+TortoiseHg	 	 	YES	YES	 
+Treasure Agent	 	 	 	YES	 
+UltraVnc	 	 	YES	YES	 
+Umbrella Roaming Client	 	 	YES	YES	 
+Universal Adb Driver	 	 	 	YES	 
+UsbDk	 	 	YES	YES	 
+Viana	 	 	YES	YES	 
+Violin	 	 	 	YES	 
+VirtualBox	 	 	YES	YES	 
+Visual Studio Code	YES	YES	YES	YES	 
+VisualSVN Server	 	 	YES	YES	 
+VLC media player	 	YES	YES	YES	 
+VMware Horizon Client	 	 	 	YES	 
+Volta	 	 	 	YES	 
+WasmEdge	 	 	 	YES	 
+Wasmtime	 	 	 	YES	 
+Weasis	 	 	 	YES	 
+WHONET Automation Tool	 	 	YES	YES	 
+Winlogbeat	 	 	 	YES	 
+WinMerge	 	 	YES	YES	YES
+WinRAR	 	 	YES	YES	 
+WireGuard	 	 	YES	YES	 
+WinSCP	 	 	YES	YES	 
+WinSSHTerm	 	 	 	YES	 
+Wireshark	 	YES	 	YES	 
+WizTree	 	 	YES	YES	 
+workspacer	 	 	 	YES	 
+XBatteryStatus	 	 	 	YES	 
+XCA	 	 	 	YES	 
+Zeal	 	 	 	YES	 
+Zoom	 	YES	YES	YES	 
+Zulu 10	 	 	 	YES	 
+Zulu 12	 	 	 	YES	 
+
+ 
+
+Improved Third-Party Patching Windows 11 Patch Assessment issue
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Improved Third-Party Patching
+To utilize Improved Third-Party patching on your sites, you must create a policy, add it to a package, and then assign it to your sites.
+OS Patching
+OS patching is a critical feature that helps to keep your managed endpoints up to date on the many security and non-security patches released every mo...
+Patch Testing
+Windows 11 Patch Assessment issue
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

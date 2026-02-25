@@ -1,0 +1,82 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Reports   Asio Reports   Audit Reports   Remote Access Report
+Remote Access Report
+Last updated
+Sep 22, 2025
+Table of contents
+Overview
+User Access to Reports
+Remote Access Report Details
+Overview
+
+Use this report to get a detailed record of remote sessions on your devices.
+
+ To locate this screen, navigate to Reports > Asio > Detailed Reports > Audits > Remote Access Report.
+
+ 
+
+User Access to Reports
+
+Confirm user access and permissions to view this report. The following default roles have access to this report:
+
+Report	Manager	Technician	Office Staff	Sales	Client Site Manager
+Remote Access Report	No	Yes	Yes	Yes	Yes
+
+This additional step allows you to enable or disable access to specific reports for different user roles, giving you more control over which reports are accessible to each role.
+
+To control the visibility of endpoints on reports, you can manage site access for users. The visibility of endpoints on reports will be based on the user's permissions to sites. By controlling site access, you can determine which endpoints are visible to each user.
+
+Remote Access Report Details
+
+The details that the report covers are:
+
+Name
+Friendly Name
+Device Type
+Site Name
+Site Unique Id
+User Name
+Reason
+Session Start Time
+Session End Time
+Device Time Zone
+
+The tools at the top right of the report allow you to filter or search for this information. Use the column button to add or remove columns to your report. You can also download the report as a CSV.
+
+Notes:
+
+This report is refreshed every eight hours.
+Users can search for data for up to 30 days at a time.
+Data can be accessed going back one year. 
+Data is loaded for the last 30 days on page load.
+Audit Reports User Login Report
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+User Login Report
+Agent Reports
+Review the articles in this guide to learn more about Agent Reports in Asio Reports.
+Automation Execution Reports
+Review the articles in this guide to learn more about the Automation Execution Detail Report and the Automation Execution Summary Report.
+Patches Reports
+Click the title of an article below to learn more about the Patch Assessment Report, Patch Compliance Report, and Patch Deployment Report in Asio.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

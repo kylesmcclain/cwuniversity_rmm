@@ -1,0 +1,488 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Integrations to ConnectWise RMM   ScreenConnect with RMM   Advanced Configuration Editor
+Advanced Configuration Editor
+Last updated
+Nov 10, 2021
+Table of contents
+Introduction
+Advanced Configuration Editor installation
+1. Navigate to your Administration page
+2. Navigate to the Extensions page
+3. Open the Extension Marketplace
+4. Search for “Advanced Configuration Editor”
+5. Click the Advanced Configuration Editor thumbnail image and click Install
+6. Close the Extension Marketplace
+Change settings with the Advanced Configuration Editor
+Application Configuration
+Quick Settings
+Other Settings
+Bitmask Settings
+Disable Host Client Menu Items
+View, Sound, and Messages
+Essentials
+Annotation and Helper
+Participant and Screen Capture
+Toolbox and File Transfer
+System Options
+Web Configuration
+Settings
+Quick Settings
+Session Settings
+Page Settings
+Other Settings
+Server Information
+Advanced Configuration Editor
+
+Author(s)	ConnectWise Labs
+Latest version	1.3.13
+Required server version	23.6+
+
+ 
+
+Introduction
+
+The Advanced Configuration Editor adds a simplified way of editing advanced settings for ScreenConnect™. The extension adds a new Advanced tab to the Administration page. 
+
+Note: This extension replaces the legacy extensions Edit Web.Config AppSettings and Edit App.Config Settings.
+
+Advanced Configuration Editor installation
+1. Navigate to your Administration page
+
+Log into your ScreenConnect instance and click the gear icon to navigate to your Administration page.
+
+2. Navigate to the Extensions page
+
+Click the Extensions tab to open the Extensions page.
+
+3. Open the Extension Marketplace
+
+Click the Browse Extension Marketplace button to open the Extension Marketplace.
+
+4. Search for “Advanced Configuration Editor”
+
+Enter the phrase “Advanced Configuration Editor” in the search box.
+
+5. Click the Advanced Configuration Editor thumbnail image and click Install
+
+Click the Advanced Configuration Editor image. Next, click the Install button.
+
+6. Close the Extension Marketplace
+
+Click the X to close the Extension Marketplace. You’ll return to the Extensions page, where you should see the Advanced Configuration Editor under Installed Extensions and Active.
+
+Change settings with the Advanced Configuration Editor
+
+Once you've installed the app, you'll see a new Advanced tab on the Administration page. Select Advanced to open the editor.
+
+The Advanced tab is organized into three sections: Application Configuration, Disable Host Client Menu Items, and Web Configuration.
+
+Application Configuration
+
+These settings affect the ScreenConnect client. 
+
+Important: After changing any of these settings, you'll need to apply your changes to your access agents.
+
+Navigate to the Access tab, select at least one machine, and then right-click and select Reinstall. Your machines will temporarily disconnect and reconnect with your changes applied.
+
+Learn more about reinstalling your access agents.
+
+Quick Settings
+
+Turn some of the most popular client settings on and off.
+
+Setting	Description	Default Value
+Hide Guest Wallpaper	Hide the user's desktop wallpaper in a session.	Support, Access, All
+Show Notification Balloon On Connect	Display the notification balloon from system tray icon when hosts connect to guest machines.	Support, Access, All
+Show Notification Balloon On Hide	Show the notification balloon when minimizing the guest client.	Support, Access
+Auto Consent	Automatically consent to control if no user process is running on the guest machine.	Support, Access, All
+Auto Consent to Backstage	Enable switching to the backstage logon session without another consent prompt.	All
+Is Backstage Default	Join into the backstage logon session by default.	All
+Lock Guest Machine	Locks guest machine when host disconnects.	Support, Access
+Show Close Session Dialog	Display the dialog to delete the session upon support session disconnect.	Enabled
+Show Host Feedback Survey	Randomly display a small feedback survey for hosts at the end of a session. This survey appears sporadically and will help us improve the product.	Enabled
+Other Settings
+
+Edit more advanced settings such as timeouts, automatically locking a machine, and directory locations.
+
+Setting	Description	Default Value
+Lock Machine On Connect	Automatically lock the guest machine when a host connects.	Support, Access
+Always On Top	Keep the host and guest client windows on top of other windows.	Guest, Host, All
+Disable Clipboard Capture	Disable clipboard capture in a session.	Disabled
+Beep On Connect	Make the host client beep when a guest connects to the session.	Disabled
+Suspend Host Control	
+
+Prevent the host from controlling the guest's keyboard and mouse upon initial connection.
+
+
+Options:
+
+Support
+Access
+Meeting
+	Disabled
+Always Delete Session	Automatically delete support sessions on exit.	Disabled
+Full Screen When Maximized	View guest machines in full screen mode when host client is maximized.	Disabled
+Support And Access Full Screen	Enable full-screen mode when client maximized in support and access sessions.	Enabled
+Allow Guest Initiated File Transfer	Allow the guest to initiate file transfers to the host machine.	Enabled
+Allow Login Credentials Storage	Shows an item within the tray icon's context menu clicking on which would open a form that would help guests to store their Windows login credentials.	Disabled
+Retry Interval	Time delay before a client attempts to reconnect to the server.	1800000 milliseconds
+Client Service Timeout	Sets the delay before the end-of-session dialog disappears.	15000 milliseconds
+Auto Consent Countdown	Enable a countdown before the consent-to-connect prompt disappears and the host is automatically connected to a session.	0 seconds
+Is User Allowed to Require Consent	Enables the "Require Consent" toggle in the guest client UI.	Disabled
+Help Provider Name	Specifies the default help provider.	Google
+Directory Settings	Directory settings change the directory to which files are saved. Directories can be specified using absolute or relative file paths.	
+Captures Directory: Captures
+Toolbox Directory: Toolbox
+Files Directory: Files
+
+ 
+
+
+Host Client Color Theme	Sets the application color theme for the host client.	Dark
+Default Backstage Programs	Specifies the programs that are automatically started upon entering the backstage logon session.	powershell.exe;cmd.exe;regedit.exe
+
+
+Automatic Disabling/Deletion of Ephemeral Users
+
+	
+
+For ScreenConnect Privileged Access: 
+
+Allow Privileged Access to disable and delete temporary local administrative users that it has created. When unchecked, CAM-created ephemeral users will be left enabled on end-machines once created.
+
+	 
+Ephemeral User Disable Day Count	
+
+For ScreenConnect Privileged Access:
+
+Set the number of days before a disabled temporary local administrative user is fully deleted. Set value to `0` to skip the disabled period, such that an ephemeral user is fully deleted as soon as there are no processes running under it.
+
+	30 days
+Credential Provider User Name Format	
+
+For ScreenConnect Privileged Access:
+
+Set the name of the temporary local administrative users created by Privileged Access. `{0}` is replaced with an 8-character random string to uniquify the user name. To comply with Windows user name restrictions, the resulting user name is truncated to a maximum of 20 characters and disallowed special characters are replaced with `_`.
+
+	TempAdmin-{0}
+Bitmask Settings
+
+Edit bitmasks to change the appearance of different panels on the host and guest clients. 
+
+ 	Any Client Window	Support & Access Guest Window	Support & Access Guest Render (Shared desktop window)	Support & Access Guest Render With Dock	Support & Access Host Window	Meeting Host Attendee Window	Meeting Host Presenters Window	Support & Access Guest Render Without Dock	Meeting Guest Attendees Window
+Share My Desktop	Enabled	Not applicable	Not applicable	Not applicable	Not applicable	Enabled	Not applicable	Not applicable	Not applicable
+View	Enabled	Not applicable	Not applicable	Not applicable	Enabled	Not applicable	Not applicable	Not applicable	Not applicable
+Essentials	Enabled	Not applicable	Not applicable	Not applicable	Enabled	Not applicable	Not applicable	Not applicable	Not applicable
+Toolbox	Enabled	Not applicable	Not applicable	Not applicable	Enabled	Not applicable	Not applicable	Not applicable	Not applicable
+File Transfer	Enabled	Not applicable	Not applicable	Not applicable	Enabled	Not applicable	Not applicable	Not applicable	Not applicable
+Screen Capture	Enabled	Not applicable	Enabled	Not applicable	Enabled	Not applicable	Enabled	Not applicable	Not applicable
+Sound	Enabled	Enabled	Enabled	Not applicable	Enabled	Not applicable	Enabled	Not applicable	Not applicable
+Annotations	Enabled	Not applicable	Not applicable	Not applicable	Enabled	Enabled	Enabled	Not applicable	Not applicable
+Participants	Enabled	Not applicable	Enabled	Enabled	Enabled	Enabled	Enabled	Not applicable	Enabled
+Messages	Enabled	Enabled	Enabled	Enabled	Enabled	Enabled	Enabled	Not applicable	Enabled
+Helper	Enabled	Not applicable	Not applicable	Not applicable	Enabled	Not applicable	Not applicable	Not applicable	Not applicable
+Status	Enabled	Enabled	Enabled	Not applicable	Enabled	Enabled	Enabled	Not applicable	Not applicable
+Disable Host Client Menu Items
+
+Disable functionality for specific menu items and menus. Changing these settings will affect all your hosts and guests. 
+
+Important: After changing any of these settings, you'll need to apply your changes to your access agents.
+
+Navigate to the Access tab, select at least one machine, and then right-click and select Reinstall. Your machines will temporarily disconnect and reconnect with your changes applied.
+
+Learn more about reinstalling your access agents.
+
+View, Sound, and Messages
+
+Disable buttons and menu items for the View, Sound, and Messages host client menus.
+
+Setting	Description
+Share My Desktop	Begin sharing one or more of the host's monitors with the connected guest.
+Unshare My Desktop	Stop sharing the host's monitor(s) with the connected guest.
+Select Quality	Selects the screen capture quality of a session (High, Medium, Low).
+Select Sound Capture Mode	Selects a method of capturing sound (Silent, Speakers, HostMicrophone, AllMicrophones).
+Mute Microphone	Mutes the host's microphone.
+Select Logon Session	Allows the host to choose which guest logon session to view.
+
+ 
+
+ 
+
+Essentials
+
+Disable buttons and menu items for the Essentials client menu.
+
+Setting	Description
+Send Ctrl-Alt-Del	Sends a CTRL+ALT+DEL signal to the connected guest.
+Reboot	Reboot the computer to either normal or safe mode.
+Manage Credentials	Stores credentials to enter at a login screen.
+Suspend My Input	Prevents the host from controlling the guest machine's mouse and keyboard.
+Block Guest Input	Blocks the guest's input when the host shares their screen.
+Blank Guest Monitor	Blanks the guest's monitor(s) and displays a blank screen message.
+Acquire Wake Lock	Prevent sleep, auto-locking, screen savers, and inactivity disconnection while you're idle.
+Share Clipboard	Syncs clipboard content between host and guest.
+Send Clipboard Keystrokes	Sends your clipboard to the remote machine as keystrokes
+
+ 
+
+ 
+
+Annotation and Helper
+
+Disable buttons and menu items for the Annotation and Helper host client menus.
+
+Setting	Description
+Select Annotation Mode	Allows for the selection of an annotation mode (Invisible, ViewOnly, HostDraw, AllDraw).
+Select Tool (Annotation)	Selects the annotation tool.
+Select Stroke Thickness (Annotation)	Changes the stroke thickness of the annotation tool.
+Clear Annotations	Clears any annotations from the screen.
+Enable Clipboard Help (Helper)	Let the helper automatically search using the text in the host's clipboard.
+Select Tool (Helper)	Select the active helper tool.
+Select Provider (Helper)	Select which help provider to use for the Helper.
+
+ 
+
+Participant and Screen Capture
+
+Disable buttons and menu items for the Participant and Screen Capture host client menus.
+
+Setting	Description
+Disconnect Participant	Force disconnects a participant from a session.
+Request Participant Share	Requests that a guest share their screen.
+Stop Participant Share	Stops a participant from sharing their screen.
+Take Screenshot To Clipboard	Captures the guest's screen and saves the image to the clipboard.
+Take Screenshot To File	Captures the guest's screen and saves the image to a file.
+Pause Video	Pauses the recording of the current session.
+Record Video	Records video of the current session.
+Stop Video	Stops the recording of the current session.
+
+ 
+
+ 
+
+Toolbox and File Transfer
+
+Disable buttons and menu items for the Toolbox and File Transfer host client menus.
+
+Setting	Description
+Manage Shared Toolbox	Opens dialog to manage the shared toolbox.
+Navigate Toolbox Folder	Navigates to the toolbox folder from the client window.
+Run Tool	Runs a tool from the toolbox on the guest machine.
+Run Tool Elevated	Runs a tool from the toolbox on the guest machine with elevated privileges.
+Send Files	Sends specific files to the guest machine via the session.
+Send Folder	Sends entire folders to the guest machine via the session.
+Receive Files	Retrieves one or more files from the guest machine via the session.
+Receive Folder	Retrieves entire folders from the guest machine via the session.
+
+ 
+
+System Options
+
+Disable additional menu items such as Keep Client On Top, Specify Proxy Server, and Dock Control Panel.
+
+Setting	Description
+Specify Proxy Server	Allows the guest client to store proxy server information and credentials.
+Dock Control Panel	Docks various control panel windows.
+Undock Control Panel	Undocks various control panel windows from the side of the screen.
+Keep Client On Top	Selects whether or not the status window is always on top.
+Beep On Connect	Make the host client beep when a guest connects to the session.
+Open (Connection Banner)	Enables the "Open" option in the connection banner's menu.
+
+ 
+
+Web Configuration
+
+These items are controlled by the web service. 
+
+Settings
+Quick Settings
+
+Turn some of the most popular web interface settings on and off, including automatic agent updates, disabling remote printing, and changing the default screen quality level.
+
+Setting	Description	Default Value
+Disable Remote Printing	Controls whether or not users can print remotely.	 
+Automatically Update Agent Version	Enables the server to automatically update old clients upon server upgrade.	Disabled
+Default Session Settings	
+
+Specifies whether the given feature is automatically toggled `on` by default for all sessions
+
+Options are:
+
+Black Guest Monitor: Support, Access
+Block Guest Input: Support, Access
+Share Clipboard: Support, Access
+Keep Device Awake: Support, Access
+Activate Remote Printing: Support, Access
+
+Important:If Activate Remote Printing is selected, all printers are shared.
+
+ 
+
+	
+
+ 
+
+
+Default Screen Quality Level	Determines the default screen capture quality level.	High
+Default Sound Mode	Sets the default sound mode for all sessions of a session type.	
+Support: Silent
+Access: Silent
+Meeting: All Microphones
+
+Guest Screen Preview	Controls the quality and size of the guest desktop screenshot displayed on the host page.	
+Set Preview Screen Quality: 30000 pixels
+Set Preview Screen Size: 20 percent
+
+Command Execution Timeout	Determines how long after execution to kill a command.	10000 milliseconds
+
+ 
+
+Session Settings
+
+Change session disconnection and access token times. 
+
+Setting	Value	Default Value
+Access Token Expire Seconds	Specifies the period before a host will have to relaunch a session (Support, Access, or Meeting). Also determines how long a downloaded launcher file can be used to connect to a session.	7200 seconds
+Should Revalidate Access Token	Force a host reauthenticate after the Access Token Expire Seconds timer has expired	Yes
+Input Idle Disconnect Time Seconds	Disconnects an idle host from session after a certain number of seconds.	3600 seconds
+Session Expire Seconds	Number of seconds before which a disconnected session expires from the list of sessions.	
+Support: 0 seconds
+Access: 0 seconds
+Meeting: 0 seconds
+
+ 
+
+Page Settings
+
+Edit page-specific settings, such as blocked IP addresses and page idle timeouts. These settings can apply to the Host page, the Administration page, the Page Service, or all three.  
+
+Setting	Description	Default Value
+Page Idle Timeout	Idle users will be logged out of the Host and Administration pages after this many seconds.	
+Host Page: 36000 seconds
+Admin Page: 1800 seconds
+
+Minimum Authentication Factor Count	Determines the minimum number of authentication factors that must be associated with a user in order for the user to log into the Host and/or Administration page.	
+Host Page: No required minimum
+Admin Page: No required minimum
+
+Block IP Addresses	Block one or more IP addresses in a comma-separated list, or specify a range of IP addresses by using CIDR notation.	
+Host Page: None
+Admin Page: None
+Page Service: None
+
+Restrict to IP Addresses	Allow access to the Host and/or Admin pages from one or more IP addresses only. You can name multiple IP addresses in a comma-separated list, or you can specify a range of IP addresses by using CIDR notation.	
+Host Page: None
+Admin Page: None
+Page Service: None
+Login Page: None
+Guest Page: None
+
+ 
+
+Other Settings
+
+Edit additional and more advanced settings such as enabling SSL for SMTP, editing video audit clip length, and consent timeout.
+ 
+
+Setting	Description	Default Value
+Allow Password Auto-Complete	Enables password auto-complete for user logins.	Disabled
+Use Persistent Cookies	Specifies whether to use persistent cookies vs session cookies for authentication.	Enabled
+SameSite Cookie Attribute	Specifies the value of the SameSite attribute for browser cookies set by Control. Options include None, Lax, or Strict. 	Lax
+Host Authentication Duration	Determines the length for which authentication tickets are issued/reissued.	600 seconds
+Agent Keep Alive Interval	Governs the keep alive signal interval for access client.	1250 seconds
+Application Keep Alive Interval	Determines how often a client will send application-level keep alives to the server.	1250 seconds
+Video Audit Clip Length	Determines the length of each segment when capturing video.	1800 seconds
+Max Command Character Return Count	Determines the max number of characters returned for commands ran via the Commands tab.	5000 characters
+Consent Timeout	When a partner provides consent to control, that consent will expire after this many seconds.	3600 seconds
+Host Transfer Timeout	Specifies how long a Host must be logged out of the ScreenConnect web portal before they are ineligible to receive a transferred session.	86400 seconds
+Guest Information Refresh Interval	
+
+Controls the number of seconds between refreshes of guest information in the General tab on the Host page.
+
+Important: Setting this value lower than 300 seconds may adversely affect performance.
+
+	1200 seconds
+Auto Reinstall Minimum Interval	
+
+Minimum amount of time after automatically reinstalling an access agent before it can be automatically reinstalled again.
+
+	345600 seconds
+Host Session Display Limit	Specifies the maximum number of sessions to display on the host page.	1000
+Session Type Display Order	Specifies the top-to-bottom order of session type tabs on the navigation bar.	Support,Meeting,Access
+"Trust this device" Duration	Specifies the number of days to skip the 2FA prompt after an authentication with "Trust this device" checked.	30 days
+
+
+Host Client Device Fingerprint Validation Level
+
+	
+
+Specifies if incoming connections should be rejected if the IP address doesn't match the one in the included access token. 
+
+Possible values:
+
+None: The connection always passes
+High: passes if the access token IP address matches the connection IP address
+Medium: like High, but will also pass if the IP address from either the access token or the connection is unavailable
+Low: like Medium, but will also pass if access token and connection IP addresses are from different address families (ex. IPv4 vs IPv6)
+	None
+Web Server Addressable URI	Specifies the addressable host URI of the web server	 
+Relay Addressable URI	Specifies the addressable host URI of the relay.	 
+Duo 2FA Settings	
+
+DuoIntegrationKey, DuoSecretKey, DuoApiHostname
+
+Once configured with a Duo account, ScreenConnect will send a login request to a user's mobile device when that user attempts to log into the instance. Once the user approves the login request on their mobile device, the user can proceed to the ScreenConnect Host page.
+
+	 
+Exclude Client Installer Components	
+
+Exclude specified components from client installers. When a component is newly excluded, its associated files and registry entries are removed from clients upon reinstall.
+
+Warning: Excluding ANY components can cause undesirable results, including preventing clients from connecting back to the server. We do NOT recommend excluding any components. 
+
+Components include:
+
+Client Core Files
+Windows Backstage Shell
+Windows Credential Provider
+Client Service
+	 
+Response Headers	Sets the response headers for all requests. By default, this setting will prevent your instance from being indexed in search engines. 
+ 
+
+Important: This setting can be overridden by the Security Toolkit extension's "RobotsTagString" setting. RobotTagString might be deprecated in the future, so we recommend using this Response Headers setting instead of RobotTagString.
+
+	X-Robots-Tag: noindex
+Server Information
+
+This is your instance identifier fingerprint. This can be used to identify if an access agent corresponds with your instance.
+
+ 
+
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ScreenConnect Installation Status and Error Codes
+Enable or Disable Connection Consent for ScreenConnect
+ScreenConnect Dashboard for RMM
+ScreenConnect 1-Click for RMM
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

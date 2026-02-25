@@ -1,0 +1,623 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Alerts   Custom Monitors   SNMP Monitor
+SNMP Monitor
+Last updated
+Dec 1, 2025
+Table of contents
+Overview
+Prerequisites
+Alert Management - Monitors
+SNMP Monitors
+Add SNMP via Other Devices
+How to create an SNMP Device Availability Monitor
+How to create an SNMP OID Monitor
+How to create an SNMP OID Monitor via Other Devices
+Deactivate a Monitor
+List of Monitor Variables
+Overview
+
+SNMP Monitors allow you to define the device availability and other data presented on the endpoint. Before creating a monitor, you will need to register devices. Please review the Other Devices Page documentation for more information.
+
+Prerequisites
+For ICMP and TRACERT, requests must be permitted to pass through the network and device.
+Before creating a monitor, you must register the endpoint and install the agent. Please review the Other Devices Page documentation for more information.
+Primary or Super Admin, Manager, or Technician default application role or a custom application role with Alert Management - Monitors > View and Create permissions. Refer to the table below for more information about the default application role access for Custom Monitors. 
+Alert Management - Monitors
+
+Application Role >
+
+	
+
+Super Admin
+
+	
+
+Manager
+
+	
+
+Technician
+
+	
+
+Office Staff
+
+	
+
+Sales
+
+	
+
+Client Site Manager
+
+
+
+
+All eligible endpoints
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+OFF
+
+	
+
+OFF
+
+
+
+
+Read
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+OFF
+
+	
+
+OFF
+
+
+
+
+Update
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+OFF
+
+	
+
+OFF
+
+
+
+
+Device Groups
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+OFF
+
+	
+
+OFF
+
+
+
+
+Create
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+OFF
+
+	
+
+OFF
+
+
+
+
+Delete
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+OFF
+
+	
+
+OFF
+
+	
+
+OFF
+
+
+
+
+Mapper
+
+	
+
+Always ON
+
+	
+
+ON
+
+	
+
+OFF
+
+	
+
+OFF
+
+	
+
+OFF
+
+	
+
+OFF
+
+SNMP Monitors
+
+Navigate to Endpoints > Devices > Other Devices to add a new SNMP Monitor.
+
+SNMP (Simple Network Management Protocol) monitors are tools or configurations that use SNMP to collect and track data from network devices such as routers, switches, firewalls, and servers. They allow you to monitor device health, performance, and availability in real time.
+Versions Supported:
+SNMP v1/v2c: Community string-based authentication.
+SNMP v3: Adds encryption and authentication for security.
+Add SNMP via Other Devices
+Navigate to Endpoints > Devices > Other Devices.
+
+Click Add Device.
+
+To monitor a Network Device, select SNMP.
+
+Select the Company and Site first to determine the Monitoring Devices options.
+
+Select the Monitoring Devices from the drop-down.
+
+Fill in the IP address of the selected device that supports the SNMP protocol. The port data is automatically completed. 
+Enter the Device Type.
+The version of the protocol is preselected but can be modified.
+Enter the username for the device and select the optional Authentication Algorithm and Additional Parameters.
+Enter a Privacy Password.
+Click Test. As soon as the connection between the probe machine and the device that supports the SNMP protocol is established, the Save button becomes active.
+Click Save. This completes the monitoring setup for SNMP device.
+How to create an SNMP Device Availability Monitor
+Navigate to  Endpoints > Alerts > Monitors.
+Click Add Monitor.
+Provide a Name and Description of your new monitor.
+Select the Type as SNMP from the drop-down to create the appropriate monitor.
+
+Select the Family and Severity from the drop-down menus.
+Turn on the Mapper toggle to map the alert to a specific service board. To learn more about the Mapper functionality, review this documentation.
+Select the Device Availability from the Metric Type drop-down.
+Select the down condition and specify the interval. 
+
+In the Targeted Resources section, you can select the target endpoints to which you want to apply the conditions. You can select specific machines, Sites, or a Dynamic or a Static group. Refer to the Dynamic Group documentation for more information. Click Select Targets to choose the device, site, or group.
+ Condition section,
+State: allows you to select the state of the device for the alert
+Down. This can be used to define the "Down" state of the endpoint for monitoring.
+Up. This can be used to define the "Up" state of the endpoint for monitoring.
+Define the duration for which the system should be waiting before triggering an alert.
+Ticket Resolution
+State allows you to select the state of the device for the alert
+Down 
+Up
+Define the duration for which the system should be waiting before triggering an alert  
+You can select specific machines in the sites using a device type filter.  The machine name and friendly name will automatically fetch from device.
+Click Save to create and apply the monitor to the targets.
+How to create an SNMP OID Monitor
+Navigate to  Endpoints > Alerts > Monitors.
+Click Add Monitor.
+Enter a Name and Description of your new monitor.
+Select the Type as SNMP from the drop-down.
+Select the Family and Severity from the drop-down menus.
+Targeted Resources allows you to select the target endpoint on which the alerts should be triggered. You can select specific machines in the sites using a device type filter. The machine name and friendly name are automatically fetched from the device.
+Enable the Mapper toggle to direct the alert to a specific service board and specify type, priority, and status. To learn more about the Mapper functionality, review this documentation.
+Select OID from the Metric Type drop-down.
+
+Conditions include the specific device parameters or object identifier (OID e.g., 1.3.6.2.11.2.16)
+Contains/ Does not contain - can be used to define whether OID has or does not have a specific text.
+Greater than/ Less than - can be used to define whether the OID is bigger or smaller than a defined value for a specified period of time before triggering the alert. 
+Equal/does not equal - can be used to define whether the OID matches or does not match the defined value for a specified period of time before triggering the alert. 
+Is between / is not between - can be used to define whether the OID falls within or outside the defined range for a specified period of time before triggering the alert. 
+Select OID from the Ticket Resolution > Metric Type drop-down.
+Enter the OID and select conditions to verify the resolution.
+Select a Monitor Output: 
+Do not Generate Ticket
+Generate Ticket
+Generate Ticket with Delay
+Click Save to create and apply the monitor to the targets.
+How to create an SNMP OID Monitor via Other Devices
+
+Object Identifiers (OID) represent specific device parameters in numeric form. For example, 1.3.6.1.2.1.43.10.2.1.4.1.1 represents the number of printed pages for the HP LaserJet P2055dn printer. Correlation between OID and metrics can be found in the device manual.
+
+Note: Alerts are triggered based on the configuration set/defined by the monitor.
+
+Navigate to Endpoints > Devices > Other Devices.
+
+Select the SNMP device you want to create the new Monitor for. 
+Click on the Add SNMP Monitor button
+You are redirected to Alert Management > Monitor > Create Monitor section.
+Select the Family and Severity from the drop-down menus. The Type and Targeted Resource or endpoint are preselected.
+Enable the Mapper toggle to direct the alert to a specific service board and specify type, priority, and status. To learn more about the Mapper functionality, review this documentation.
+Select OID from the Metric Type drop-down.
+
+Conditions include the specific device parameters or object identifier (OID e.g., 1.3.6.2.11.2.16)
+Contains/ Does not contain - can be used to define whether OID has or does not have a specific text.
+Greater than/ Less than - can be used to define whether the OID is bigger or smaller than a defined value for a specified period of time before triggering the alert. 
+Equal/does not equal - can be used to define whether the OID matches or does not match the defined value for a specified period of time before triggering the alert. 
+Is between / is not between - can be used to define whether the OID falls within or outside the defined range for a specified period of time before triggering the alert. 
+Select OID from the Ticket Resolution > Metric Type drop-down.
+Enter the OID and select conditions to verify the resolution.
+Select a Monitor Output: 
+Do not Generate Ticket
+Generate Ticket
+Generate Ticket with Delay
+Click Save to create and apply the monitor to the targets.
+Deactivate a Monitor
+Navigate to Endpoints > Alerts > Monitors.
+Select the monitor you want to deactivate.
+Switch the Enabled toggle to turn off the monitor.
+
+The toggle shows deactivated, and a confirmation message appears.
+
+Click Save.
+
+ 
+
+List of Monitor Variables
+
+Here is a list of variables which you can use as per your requirement when creating your own customized ticket template:
+
+Monitor Type
+
+	
+
+Variable Name
+
+	
+
+Supported OS Type
+
+	
+
+Sample Data/Values
+
+	
+
+Variable Definition
+
+
+
+
+Generic
+
+
+
+
+ 
+
+	
+
+ObservedDate
+
+	
+
+Windows, MAC, Linux
+
+	
+
+"2020-09-02T15:35:42.969926103Z"
+
+	
+
+Time stamp when the issue was observed
+
+
+
+
+ 
+
+	
+
+MonitorDesc
+
+	
+
+Windows, MAC, Linux
+
+	
+
+Add local palmtech account and add it to the local administrators group
+
+	
+
+Description added on the portal while creating a monitor
+
+
+
+
+ 
+
+	
+
+MonitorName
+
+	
+
+Windows, MAC, Linux
+
+	
+
+Local PalmTech Account with Local Admin
+
+	
+
+Name of the monitor
+
+
+
+
+ 
+
+	
+
+MonitorSummary
+
+	
+
+Windows, MAC, Linux
+
+	
+
+(Run PowerShell script every 1 minute(s) AND Run PowerShell script every 1 minute(s))
+
+	
+
+Summary information for the monitor
+
+
+
+
+ICMP
+
+
+
+
+ 
+
+	
+
+IcmpHostName
+
+	
+
+ICMP Supported Devices
+
+	
+
+192.168.254.220
+
+	
+
+ICMP host to be configured
+
+
+
+
+ 
+
+	
+
+IcmpPeriod
+
+	
+
+ICMP Supported Devices
+
+	
+
+Minute(s)
+
+	
+
+Status check time period
+
+
+
+
+ 
+
+	
+
+IcmpPingStatus
+
+	
+
+ICMP Supported Devices
+
+	
+
+inversefailed
+
+	
+
+ICMP status
+
+
+
+
+ 
+
+	
+
+IcmpVerify
+
+	
+
+ICMP Supported Devices
+
+	
+
+5
+
+	
+
+Status check time period
+
+
+
+
+ 
+
+	
+
+IcmpTrycount
+
+	
+
+ICMP Supported Devices
+
+	
+
+1
+
+	
+
+Retry count
+
+Custom Monitors: Service Exclusion List VMware Monitor
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Service Monitor
+Process Monitor
+Event Monitor
+CPU Monitor
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

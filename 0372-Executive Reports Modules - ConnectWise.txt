@@ -1,0 +1,151 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Reports   Asio Reports   Executive Reports Modules
+Executive Reports Modules
+Last updated
+Feb 3, 2025
+Table of contents
+Overview
+Server Endpoint Protection Definitions: Daily Status
+Server Operating Systems: Number of Machines
+Server Availability: Monthly Averages
+Server Patch Updates: By State
+Server Utilization: Disk Space Per Volume
+Server Utilization: Per Server
+Server Warranty: Status
+Desktop Endpoint Protection Definitions: Monthly Status
+Desktop Operating Systems: Number of Machines
+Desktop Malware: Threats Summary
+Desktop Patch Updates: By State Per Desktop
+Desktop Patch Updates: By State
+Desktop Patch Updates: By Severity
+Desktop Utilization: Disk Space Per Volume
+Desktop Warranty: Status
+Mobile Operating Systems: Number of Machines
+Windows Temporary File Deletion: Total Size
+Work Status: Summary of Work
+Definition of Terms
+Overview
+
+This page will detail some of the many Executive Reports modules available to be added to your own reports.
+
+Server Endpoint Protection Definitions: Daily Status
+
+This provides details on daily endpoint protection definition updates for individual servers at a site.
+
+Server Operating Systems: Number of Machines
+
+Reports the number of server machines detected at a site, categorized by installed Windows operating system.
+
+Server Availability: Monthly Averages
+
+This report provides details on the average percentage of server uptime (the time the server was available to our data center) over the course of a defined month.
+
+Server Patch Updates: By State
+
+This provides summary details for the patch state of all servers at a site, grouped by individual patch state categories, as depicted below.
+
+Server Utilization: Disk Space Per Volume
+
+This provides details on the disk space utilization percentage for all server volumes under management at a site, broken down by individual volume.
+
+Server Utilization: Per Server
+
+This report provides per-server details on CPU, Disk Space, and Memory utilization percentage for all servers at a site.
+
+Server Warranty: Status
+
+This provides summary details on the warranty status of all servers at a site, broken down by category as depicted below:
+
+Desktop Endpoint Protection Definitions: Monthly Status
+
+This report provides summary details on the endpoint protection definition status of all desktops at a site, broken down by category as depicted below.
+
+Note: A desktop's monthly status is its status as of the last day of the selected month.
+
+Desktop Operating Systems: Number of Machines
+
+Reports the number of desktop machines detected at a site, categorized by installed Windows operating system.
+
+Desktop Malware: Threats Summary
+
+This provides a monthly summary of malware threats detected and removed per desktop. The top (teal) bar for each desktop indicates malware infections, and the bottom bar indicates malware threats that have been removed.
+
+Desktop Patch Updates: By State Per Desktop
+
+This report provides per-desktop patch state details for every desktop at a site, represented by individual categories as depicted in the image below:
+
+Desktop Patch Updates: By State
+
+This report provides summary details for the patch state of all desktops at a site, grouped by individual patch state categories.
+
+Desktop Patch Updates: By Severity
+
+This provides summary details for the number of Low, Moderate, Important, and Critical patches installed on desktops at a site compared to the number of desktops missing patches in the same categories.
+
+Desktop Utilization: Disk Space Per Volume
+
+Provides details on the disk space utilization percentage of all desktop volumes under management, by individual volume.
+
+Desktop Warranty: Status
+
+This report provides details on the warranty status of desktop machines at a site.
+
+Mobile Operating Systems: Number of Machines
+
+This report provides details on all mobile devices under management at a site, represented individually by device type.
+
+Windows Temporary File Deletion: Total Size
+
+This report provides details on the number of Windows temp files deleted across resources under management at a site and the disk space freed as a result. The chart data is represented weekly.
+
+Work Status: Summary of Work
+
+This report provides a detailed summary of work performed for a customer on all desktops and servers. This module itemizes problems encountered at client sites, the resolutions performed by your company to solve those problems, whether an on-site visit was performed, and the number of time blocks required to resolve the issue.
+
+Definition of Terms
+Endpoint Protection Definition: A method used to identify, prevent, and remove viruses. A high number of out-of-date endpoint protection definitions could mean your machines are at risk for a security breach.
+Availability: A measure of how much time your servers were available on the network. A lower percentage indicates you experienced more downtime.
+CPU Utilization: A measure of how hard your machines are working. The higher the percentage, the harder your machine is working.
+Disk Space / Disk Utilization: This is a measure of available storage space on a machine. When usage is high, less space exists to store files, and processing efficiency can be negatively affected.
+Malware: Software threats designed to disrupt computer operation or gain access to and gather private information.
+Memory Utilization: A measure of how much memory a machine uses in its operation. The higher the percentage, the harder the machine is working.
+Patches: Software designed to fix or update a computer program, such as to fix security vulnerabilities.
+Temporary Files: Files used by computer programs during operation. A large number of temporary files left on a machine can slow down its performance.
+Warranty: A manufacturer's agreement that covers the cost to repair or replace items if within a specified time period. After the warranty expires on a machine, you are responsible for all costs associated with its repair or replacement.
+
+ 
+
+ 
+
+Automation Execution Summary Report Patches Reports
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Agent Reports
+Review the articles in this guide to learn more about Agent Reports in Asio Reports.
+Automation Execution Reports
+Review the articles in this guide to learn more about the Automation Execution Detail Report and the Automation Execution Summary Report.
+Audit Reports
+Audit Reports provide a detailed record of remote access reports and Asio™ platform user logs. The Audit category contains the Remote Access Report an...
+Patches Reports
+Click the title of an article below to learn more about the Patch Assessment Report, Patch Compliance Report, and Patch Deployment Report in Asio.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

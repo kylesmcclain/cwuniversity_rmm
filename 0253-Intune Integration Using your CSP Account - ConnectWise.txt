@@ -1,0 +1,78 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Integrations to ConnectWise RMM   ConnectWise RMM Intune Integration   Intune Integration Using your CSP Account
+ Expand/collapse global location
+Intune Integration Using your CSP Account
+Last updated
+Mar 7, 2025
+Table of contents
+Overview
+Setup
+Disable Intune Integration
+Alerting for Not-Compliant Devices
+Overview
+
+We have added the ability to set up a secure working connection between ConnectWise RMM and tenants managed in MS Intune, by integrating with your Cloud Solutions Provider (CSP) account. A one-time secure setup with the CSP account enables the integration of MS Intune tenants with CW RMM. 
+
+Note:
+
+The Microsoft Intune integration only works with a CSP account.
+Our Integration only provides support for customers with a reseller-type relationship. This means that in the Microsoft Intune sites dropdown for mapping, you will only see customers who have a reseller-type relationship.
+
+The following process illustrates the steps required to set up a new integration with a CSP account: 
+
+Setup
+Navigate to Integrations > Asio Integrations.
+Enable the Microsoft Intune integration.
+
+Enter a Connection Name and click Generate Token.
+
+You will be redirected to a Microsoft Sign-in page. Enter your credentials for Microsoft CSP Account.
+A token will be automatically generated for you and will redirect you to the Marketplace Integration page.
+Click Test Connection.
+Once the connection is successful, click Save and Proceed.
+Map your ConnectWise Sites to Microsoft Tenants. Only choose sites with Microsoft Intune tenants.
+You can also leverage the Find Matches feature that will automatically try and match the Company/Site record with the corresponding site names in the Microsoft Intune sites.
+Click Save and Proceed.
+Click Continue to confirm the number of mapped sites.
+Click Complete Setup.
+Disable Intune Integration
+
+You can disable (delete) the Intune integration by navigating to Integrations > Asio Integrations.
+
+Next to the Intune Integration, click Disable. Click Submit.
+
+Alerting for Not-Compliant Devices
+
+An alert will be generated for the partner when a device goes to a Not-Compliant state in MS Intune. This alert will be auto-closed when the device moves out of the Not-Compliant state.
+
+ConnectWise RMM Intune Integration View Intune Information in the Asio™ Platform (ITSupport Portal)
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+View Intune Information in the Asio™ Platform (ITSupport Portal)
+ScreenConnect with RMM
+This guide contains all relevant articles for using ScreenConnect with ConnectWise RMM.
+Scalepad Lifecycle Manager and ConnectWise RMM Integration
+Lifecycle Manager syncs your hardware assets from ConnectWise RMM via API. This article provides instructions on how to integrate ConnectWise RMM to L...
+Endpoint Protection
+This guide includes articles about ConnectWise RMM™ endpoint protection and managed antivirus products.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

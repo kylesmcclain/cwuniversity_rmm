@@ -1,0 +1,325 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Integrations to ConnectWise RMM   Endpoint Protection   Identified Antivirus Products
+Identified Antivirus Products
+Last updated
+Jan 23, 2026
+Table of contents
+Overview
+List of Identified Antivirus Products
+Overview
+
+Antivirus (AV) and endpoint protection vendors often release software updates. Managed AV products are hard-coded into the RMM agent, allowing us to identify the AV product when updates are received and verify the definition file to make any necessary changes. Conversely, identified AV products (below) are not yet hard-coded in our agent, so we identify the AV product with our data center only and do not provide a definition update (meaning we do not yet manage these products).
+
+List of Identified Antivirus Products
+
+The identified AV products below appear because they were detected by the RMM agent:
+
+Acronis Cyber Protect
+
+Avast Business
+
+Avast Business Agent
+
+Avast Business Antivirus
+
+Avast Business CloudCare
+
+Avast Business Security
+
+Avast Free Antivirus
+
+Avast Internet Security
+
+Avast Mac Security
+
+Avast Premium Security
+
+AVG 2011
+
+AVG 2012
+
+AVG 2013
+
+AVG 2014
+
+AVG 2015
+
+AVG 2016
+
+AVG 2017
+
+AVG AntiVirus
+
+AVG Business Security
+
+AVG Internet Security
+
+AVG Protection
+
+Avira AntiVir
+
+Avira Security
+
+Avira Server Security
+
+BitDefender Antivirus Plus
+
+BitDefender Business Client
+
+BitDefender Endpoint Security Tools
+
+BitDefender Internet Security
+
+BitDefender Managed Antivirus
+
+BitDefender Total Security
+
+BullGuard Antivirus
+
+BullGuard Internet Security
+
+BullGuard Premium Protection
+
+CA eTrust Antivirus
+
+Carbon Black
+
+Cbeyond Secure
+
+Check Point
+
+Cisco Secure Endpoint
+
+ClamWin Free Antivirus
+
+COMODO Antivirus
+
+COMODO Internet Security Premium
+
+COMODO Internet Security Pro
+
+Coro Endpoint Protection
+
+Cortex XDR
+
+Covalence
+
+Crowdstrike Falcon
+
+Cylance
+
+CylancePROTECT
+
+Cylance Smart Antivirus
+
+CynetEPS
+
+Deep Instinct Antivirus
+
+eScan Internet Security for Windows
+
+eScan Total Security for Windows
+
+ESET Endpoint Antivirus
+
+ESET Endpoint Security
+
+ESET Internet Security
+
+ESET NOD32 Antivirus
+
+ESET Server Security
+
+EZ Antivirus
+
+F-Secure Client Security
+
+F-Secure Computer Protection
+
+F-Secure E-mail and Server Security Premium
+
+F-Secure Internet Security
+
+F-Secure PSB Workstation Security
+
+F-Secure Server Security
+
+Field Effect MDR
+
+FortiClient
+
+GFI Business Agent
+
+Heimdal Thor Antivirus
+
+Huntress Antivirus
+
+Immunet
+
+Kaspersky Anti-Virus
+
+Kaspersky Endpoint Agent
+
+Kaspersky Endpoint Security
+
+Kaspersky Internet Security
+
+Kaspersky Security
+
+Kaspersky Total Security
+
+Malwarebytes
+
+McAfee Agent
+
+McAfee AntiVirus
+
+McAfee Endpoint Protection
+
+McAfee Endpoint Protection for Mac
+
+McAfee Endpoint Security for Mac
+
+McAfee Endpoint Security Platform
+
+McAfee Internet Security
+
+McAfee LiveSafe
+
+McAfee Total Protection
+
+McAfee Virus and Spyware Protection Service
+
+McAfee VirusScan Enterprise
+
+Microsoft Defender for Endpoint
+
+Microsoft Forefront Client Security
+
+Microsoft Security Essentials
+
+Norton Antivirus Client
+
+Norton Internet Security
+
+Norton Security Suite
+
+OpenText Core Endpoint Protection
+
+Panda Endpoint Agent
+
+Panda Endpoint Protection
+
+Panda Internet Security
+
+Panda Security for Desktops
+
+Panda Security Protection
+
+PC Matic Super Shield 3.0.42.0
+
+PC-cillin for Mac
+
+Secure Endpoint Connector
+
+Sentinel Agent
+
+Solarwinds Bitdefender Antivirus
+
+Sophos Anti-Virus
+
+Sophos Endpoint Agent
+
+Sophos SafeGuard
+
+Sophos SafeGuard Client
+
+Sunbelt Enterprise Agent
+
+Symantec AntiVirus Server
+
+Symantec Endpoint Protection
+
+Symantec Endpoint Protection Cloud
+
+System Center 2012 Endpoint Protection
+
+System Center Endpoint Protection
+
+ThreatDown Endpoint Agent
+
+Trend Micro Antivirus
+
+Trend Micro Apex One Endpoint Security
+
+Trend Micro Apex One Security Agent
+
+Trend Micro Client/Server Security Agent
+
+Trend Micro Deep Security Agent
+
+Trend Micro Internet Security
+
+Trend Micro Security
+
+Trend Micro Titanium
+
+Trend Micro Worry-Free
+
+Trend Micro Worry-Free Business Security Agent
+
+Vexira Antivirus
+
+VIPRE Antivirus
+
+VIPRE Business
+
+VIPRE Business Premium
+
+VIPRE Enterprise
+
+VIPRE Endpoint Security
+
+VIPRE Internet Security
+
+VirusBuster
+
+WatchGuard EPP
+
+WatchGuard EPDR
+
+WatchGuard Advanced EPDR
+
+Webroot SecureAnywhere
+
+Windows Defender / Microsoft Defender
+
+Endpoint Protection Managed Antivirus Products
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+RMM Recommended AV Server Exclusion List
+Removing Viruses and Other Malware
+Managed Antivirus Products
+ScreenConnect with RMM
+This guide contains all relevant articles for using ScreenConnect with ConnectWise RMM.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

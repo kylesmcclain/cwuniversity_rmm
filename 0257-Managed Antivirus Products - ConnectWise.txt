@@ -1,0 +1,356 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Integrations to ConnectWise RMM   Endpoint Protection   Managed Antivirus Products
+Managed Antivirus Products
+Last updated
+Jul 7, 2025
+Table of contents
+Overview
+Managed AV Products in ConnectWise RMM
+AVG
+Avast!
+Avira
+Bitdefender
+ClamXav
+Cbeyond
+COMODO
+eScan
+ESET
+F-Secure
+GFI Max
+Kaspersky
+McAfee
+Microsoft
+Sophos
+Symantec
+Toydo
+Trend Micro
+Vipre Antivirus
+Webroot
+Misc
+Overview
+
+Antivirus (AV) vendors often release software updates. Managed AV products are hard-coded into the ConnectWise RMM agent so we can identify the AV product when updates are received and check the definition file to make any needed changes. Identified AV products are those not yet hard-coded in our agent, so we identify the AV product with our data center only and do not provide a definition update (meaning we do not yet manage these products).
+
+Note: Since our agent is updated quarterly, it cannot include all of the latest AV product updates.
+
+Managed AV Products in ConnectWise RMM
+AVG
+Monitored Antivirus solutions from Agent	Version
+AVG	
+
+9
+
+8.5
+
+
+AVG Antivirus	
+
+2016
+
+2017
+
+
+AVG Antivirus Business Edition	
+
+2016
+
+2013
+
+2012
+
+2011
+
+
+AVG Cloud Care	2014
+AVG Free	
+
+9
+
+8.5
+
+
+AVG Free Edition	
+
+2014
+
+2012
+
+2011
+
+
+AVG Internet Security	
+
+2016
+
+2014
+
+
+AVG Internet Security Business Edition	2016
+Avast!
+Monitored Antivirus solutions from Agent	Version
+avast! Antivirus	4.8
+avast! Antivirus	6
+avast! Free Antivirus	8.x
+avast! Free Antivirus	7.x
+avast! Free Antivirus	6
+avast! Free Antivirus	4.8
+avast! Pro Antivirus	7.x
+avast! Server Edition	4.8
+Avast! Free Antivirus	7.x
+Avast! Internet Security	8.x
+Avast! Internet Security	7.x
+Avast! Pro Antivirus	7.x
+Avira
+Monitored Antivirus solutions from Agent	Version
+Avira Antivirus Personal - Free Antivirus	 
+Avira Antivirus Professional	10
+Avira Antivirus Premium	10
+Avira Premium Security Suite	10
+Avira Antivirus Server	10
+Avira Antivirus Premium 2012	12.x
+Avira Free Antivirus	12.x
+Avira Internet Security 2012	12.x
+Bitdefender
+Monitored Antivirus solutions from Agent	Version
+Bitdefender Antivirus 2008	11.x
+Bitdefender Antivirus 2009	12.x
+Bitdefender Antivirus Plus v10	10.x
+Bitdefender Antivirus v10	10.x
+Bitdefender Antivirus Plus 2012	15.x
+Bitdefender Antivirus Plus 2013	16.x
+Bitdefender Antivirus Plus 2014	17.x
+Bitdefender Antivirus Pro 2011	14.x
+Bitdefender Antivirus for Mac	2.x
+Bitdefender Business Client	11.0.17
+Bitdefender Client Professional Plus	8.0.220
+Bitdefender Client Security	3.x
+Bitdefender Free Edition v10	10.x
+Bitdefender Internet Security 2010	13.0.15
+Bitdefender Internet Security 2011	14.x
+Bitdefender Internet Security 2013	16.x
+Bitdefender Internet Security 2014	17.x
+Bitdefender Security for Windows Servers	3.3.54
+Bitdefender Total Security 2010	13.0.16
+Bitdefender Total Security 2011	14.x
+Bitdefender Total Security 2012	15.x
+Bitdefender Total Security 2013	16.x
+Bitdefender Total Security 2014	17.x
+Bitdefender Windows 8 Security	16.x
+Cloud Security For Endpoint Client by Bitdefender	 
+ClamXav
+Monitored Antivirus solutions from Agent	Version
+ClamXav (Mac OSX)	2.x
+Cbeyond
+Monitored Antivirus solutions from Agent	Version
+Cbeyond Secure Desktop	 
+COMODO
+Monitored Antivirus solutions from Agent	Version
+COMODO Endpoint Security	6.x
+COMODO Antivirus for Servers	6.x
+COMODO Antivirus	6.x
+COMODO Antivirus Advanced 2013	6.x
+COMODO Internet Security Premium	6.x
+COMODO Internet Security Pro 2013	6.x
+eScan
+Monitored Antivirus solutions from Agent	Version
+eScan Antivirus	11.x
+eScan Internet Security for SMB	11.x
+eScan Anti-Virus (AV) Edition for SMB	11.x
+eScan Anti-Virus (AV) Edition for SMB	14.x
+eScan Anti-Virus (AV) Edition for Windows	14.x
+eScan Internet Security for Windows	14.x
+ESET
+Monitored Antivirus solutions from Agent	Version
+ESET NOD32 Antivirus	3.x
+ESET NOD32 Antivirus	4.x
+ESET NOD32 Antivirus 6	6.x
+ESET NOD32 Antivirus 7	7.x
+ESET Smart Security	3.x
+ESET Smart Security	4.x
+ESET Smart Security 6	6.x
+ESET Smart Security 7	7.x
+ESET File Security	4.3.x
+ESET Endpoint Security	5.x
+ESET Endpoint Antivirus	5.x
+
+ 
+
+F-Secure
+Monitored Antivirus solutions from Agent	Version
+F-Secure Client Security	9.x
+F-Secure Antivirus for Workstations	9.x
+F-Secure Internet Security	9.x
+F-Secure Email and Server Security	9.x
+F-Secure Antivirus for Windows Server	9.x
+F-Secure Client Security	10.x
+F-Secure Antivirus for Workstations	10.x
+F-Secure Internet Security	10.x
+F-Secure Email and Server Security	10.x
+F-Secure Antivirus for Windows Server	10.x
+GFI Max
+Monitored Antivirus solutions from Agent	Version
+GFI Max Managed Antivirus	5.x.x
+
+ 
+
+Kaspersky
+Monitored Antivirus solutions from Agent	Version
+Kaspersky Anti-Virus	14.x
+Kaspersky Endpoint Security 8 for Windows	8.x
+Kaspersky Internet Security	14.x
+Kaspersky Security 10 for Windows Server	10.x	 
+McAfee
+Monitored Antivirus solutions from Agent	Version
+McAfee Total Protection Agent Service	4.9.0
+McAfee Total Protection	4.x
+McAfee Virus and Spyware Protection Service	4.x
+McAfee Virus and Spyware Protection Service	5.x
+McAfee VirusScan	4.5.1
+McAfee Managed VirusScan	 
+McAfee Total Protection for Small Business	4.x
+Microsoft
+Monitored Antivirus solutions from Agent	Version
+Microsoft Security Essentials	2.1.1116
+Microsoft Forefront Endpoint Protection 2010	2010
+Microsoft Forefront Client Security	2010
+Windows Defender	 
+
+
+System Center 2012 Endpoint Protection
+
+	4.x
+System Center 2012 Endpoint Protection (Microsoft Security Client)	4.x
+Sophos
+Monitored Antivirus solutions from Agent	Version
+Sophos Antivirus Small Business Edition	1.x
+Sophos Antivirus	9.x
+Sophos Antivirus for Macintosh	8.x
+Sophos Endpoint Security and Control	10.x
+Symantec
+Monitored Antivirus solutions from Agent	Version
+Norton 360	1.x
+Norton 360	2.x
+Norton 360	3.x
+Norton 360 Premier Edition (Symantec Corporation)	2.x
+Norton AntiVirus	14.x
+Norton AntiVirus	15.x
+Norton AntiVirus	16.x
+Norton AntiVirus	17.x
+Norton AntiVirus (Symantec Corporation)	14.x
+Norton AntiVirus (Symantec Corporation)	15.x
+Norton AntiVirus 2003	9.x
+Norton AntiVirus 2005	11.0.1
+Norton AntiVirus 2006	12.x
+Norton AntiVirus Corporate Edition	7.x
+Norton Internet Security	1.x
+Norton Internet Security	10.x
+Norton Internet Security	16.x
+Norton Internet Security	5.2
+Norton Internet Security	7.x
+Norton Internet Security	9.x
+Norton Internet Security	22.10.1.10	 
+Norton Internet Security 2005 (Symantec Corporation)	8.x
+Norton Internet Security 2006	9.0.3.4
+Norton Internet Security Bonus Pack	10.x
+Norton Internet Security Professional	7.x
+Norton 360	6.x
+Norton Antivirus 2012	19.x
+Norton Internet Security 2012	19.x
+Norton Business Suite	4.x
+Norton Business Suite	5.x
+Norton Business Suite	6.x
+Norton Security Suite	4.x
+Norton Security Suite	5.x
+Norton Security Suite	6.x
+Symantec AntiVirus Client	8.x
+Symantec AntiVirus Server	8.x
+Symantec Endpoint Protection	14.x
+Symantec Endpoint Small Business Protection	22.9.3.13 and 22.11.2.7
+Symantec Client Security	12.x
+Symantec Endpoint Protection Cloud Antivirus	
+
+2.x or later and 22.10.1.10
+
+Toydo
+Monitored Antivirus solutions from Agent	Version
+SGN Connect	 
+Trend Micro
+Monitored Antivirus solutions from Agent	Version
+Trend Micro AntiVirus	15.x.x
+Trend Micro AntiVirus	16.x.x
+Trend Micro Client/Server Security Agent	15.x.x
+Trend Micro Client/Server Security Agent	16.x.x
+Trend Micro Client/Server Security Agent	3.x.x
+Trend Micro Client/Server Security Agent	8.x.x
+Trend Micro Deep Security	 	 
+Trend Micro OfficeScan Client	8.x.x
+Trend Micro PC-cillin Internet Security 2007	15.x
+Trend Micro Worry Free Business Security	7.0 and above
+Trend Micro WorryFreeConventional	5.x,6.x,7.x
+Trend Micro WorryFreeSmart	5.x,6.x,7.x
+Trend Micro PC-cillin Internet Security 2007	 
+Trend Micro Internet Security	17.5
+Trend Micro Internet Security Pro	17.5
+Trend Micro Titanium Internet Security 2012	5.x
+Trend Micro Titanium Maximum Security 2012	5.x
+Vipre Antivirus
+Monitored Antivirus solutions from Agent	Version
+Sunbelt Enterprise Agent	4.x
+VIPRE Antivirus + Antispyware	4.x
+GFI Business Agent	5.x
+VIPRE Internet Security	2012
+VIPRE Business Premium	5.x
+VIPRE Antivirus (for Windows)	2012
+VIPRE Enterprise for Macintosh	1.x
+VIPRE Business for Macintosh	2.x
+
+
+VIPRE Business
+
+Features include Central Management for MAC OSX Agents
+
+	7.x
+
+
+VIPRE Business Premium
+
+Features include Central Management for MAC OSX Agents
+
+	6.x
+VIPRE Business Online	5.x.x
+Webroot
+Monitored Antivirus solutions from Agent	Version
+Webroot SecureAnywhere Endpoint Protection	 
+Misc
+Monitored Antivirus solutions from Agent	Version
+WinIntune	2.x
+Immunet (Clam AV)	3.x
+Identified Antivirus Products Removing Viruses and Other Malware
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+RMM Recommended AV Server Exclusion List
+Removing Viruses and Other Malware
+Identified Antivirus Products
+ScreenConnect with RMM
+This guide contains all relevant articles for using ScreenConnect with ConnectWise RMM.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

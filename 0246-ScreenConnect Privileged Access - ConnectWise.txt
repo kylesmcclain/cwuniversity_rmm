@@ -1,0 +1,228 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Integrations to ConnectWise RMM   ScreenConnect with RMM   ScreenConnect Privileged Access
+ScreenConnect Privileged Access
+Last updated
+Nov 4, 2024
+Table of contents
+Introduction
+What is Privileged Access?
+Requirements
+Frequently asked questions
+How is Privileged Access billed?
+How to purchase Privileged Access?
+Where is Privileged Access in RMM?
+How is Privileged Access configured?
+What about my ScreenConnect instance?
+Where do I set Privileged Access rules?
+Where do I approve and deny Privileged Access requests?
+Can I still use integrations?
+Is Privileged Access available for all endpoints?
+Enable the integration in ConnectWise RMM
+1. Navigate to Integrations > Asio Integrations
+2. Locate the ScreenConnect Privileged Access integration
+3. Click the toggle to activate ScreenConnect Privileged Access
+4. Review the terms and conditions and the pricing for Privileged Access
+5. Click Save and Proceed to continue to step 3 of the wizard
+6. Close the setup window
+Applying Privileged Access by site
+1. Navigate to Endpoints > Policies
+2. Edit an existing policy of type Remote Access
+3. Turn on Privileged Access
+4. Customize Privileged Access settings
+Administrative Logon
+UAC Elevation
+5. Click Save to save the changes to your policy
+Reviewing Privileged Access alerts
+Privileged Access with Integrated Expert Services
+What's next
+Introduction
+
+This article details the integration with ConnectWise RMM and ScreenConnect Privileged Access™.
+
+What is Privileged Access?
+
+ScreenConnect Privileged Access gives partners the tools to secure, monitor, and control access across their environment. This solution can handle User Agent Control (UAC) requests, and it also allows an end user to sign into Windows with administrator privileges.
+
+For more about Privileged Access, see our quick-start guide.
+
+Requirements
+Integration between RMM and ScreenConnect
+The Privileged Access extension for ScreenConnect
+Frequently asked questions
+How is Privileged Access billed?
+
+Billing is applied per endpoint with an Privileged Access policy applied to them.
+
+How to purchase Privileged Access?
+
+Billing is self-serviced; when you apply Privileged Access to an endpoint, you will be billed for that endpoint via policy. Volume discounts apply. Contact your account manager for additional information.
+
+Where is Privileged Access in RMM?
+
+Find Privileged Access settings under Remote Access policies.
+
+How is Privileged Access configured?
+
+Configure Privileged Access settings from within the Privileged Access policy. By default, Privileged Access is only visible on endpoints when a host is connected.
+
+What about my ScreenConnect instance?
+
+Privileged Access configurations from inside a policy in RMM are communicated back to the ScreenConnect instance.
+
+Where do I set Privileged Access rules?
+
+Privileged Access auto-approve, auto-deny rules are created, edited, and deleted from the ScreenConnect instance. Create rules from the Privileged Access tab, edit and delete from the Triggers page.
+
+Where do I approve and deny Privileged Access requests?
+
+Approve or deny requests from inside the ScreenConnect instance.
+
+Can I still use integrations?
+
+Yes! ConnectWise PSA, Slack, and Microsoft Teams integrations are available.
+
+Is Privileged Access available for all endpoints?
+
+This functionality is only available for access agents that are installed on 64-bit Windows machines. 
+
+Enable the integration in ConnectWise RMM
+1. Navigate to Integrations > Asio Integrations
+2. Locate the ScreenConnect Privileged Access integration
+3. Click the toggle to activate ScreenConnect Privileged Access
+
+4. Review the terms and conditions and the pricing for Privileged Access
+
+When you have finished, select the I agree option from the Agreement Consent menu.
+
+5. Click Save and Proceed to continue to step 3 of the wizard
+6. Close the setup window
+
+You have successfully activated the integration. Click Close to return to your integrations.
+
+Applying Privileged Access by site
+
+Privileged Access settings are controlled by the Remote Access policy type. You should already have a Remote Access policy with the ScreenConnect integration, and so you will just need to apply Privileged Access within that policy.
+
+To limit the machines that have Privileged Access, you can create a policy and apply that policy to a specific site.
+
+Note: With this integration, you must configure Privileged Access from within RMM, not via the Privileged Access page in ScreenConnect.
+
+1. Navigate to Endpoints > Policies
+2. Edit an existing policy of type Remote Access
+
+ You already have a Remote Access policy with the ScreenConnect integration.
+
+3. Turn on Privileged Access
+
+Under ScreenConnect for Servers, ScreenConnect for Desktops, or both, click the toggle for Privileged Access.
+
+Important: By toggling Privileged Access on, you will be billed for Privileged Access usage.
+
+ 
+
+4. Customize Privileged Access settings
+
+Customize Privileged Access by selecting from the following settings:
+
+Administrative Logon
+Show on Host Connections only	
+
+Show the credential provider only when one or more ScreenConnect hosts are connected.
+
+
+
+
+Default selected provider on lock screen
+
+	
+
+This setting determines whether the Privileged Access credential provider is the default option for administrative logon requests on the lock screen.
+
+
+Reason input field visible on lock screen	
+
+This setting determines whether the reason input field is available in the Privileged Access credential provider on the lock screen.
+
+Once enabled, you can toggle the Required slider to require your user to specify a reason for the elevation request.
+
+UAC Elevation
+Show on Host Connections only	
+
+Show the credential provider only when one or more ScreenConnect hosts are connected.
+
+
+
+
+ Default selected provider in UAC prompt
+
+	
+
+This setting determines whether the Privileged Access credential provider is the default selected provider within UAC dialogs.
+
+
+
+
+Reason input field available in UAC prompt
+
+	
+
+This setting determines whether the reason input field is available in the Privileged Access credential provider within UAC dialogs.
+
+Once enabled, you can toggle the Required slider to require your end user to specify a reason for the elevation request.
+
+5. Click Save to save the changes to your policy
+
+If your policy has been applied to a site, your changes should take effect across that site.
+
+Reviewing Privileged Access alerts
+Review Privileged Access alerts in the ScreenConnect Host page, where your endpoints will be marked with a dot icon when there is a pending alert. Select a machine and click the Privileged Access tab to approve or deny a request.
+If you add a default mailing address in the ScreenConnect Mail page, you’ll receive an email when there is an Privileged Access request pending.
+Receive real-time notifications by integrating Privileged Access with Slack or Teams.
+Receive a ticket by integrating Privileged Access with ConnectWise PSA.
+Privileged Access with Integrated Expert Services
+
+Privileged Access can be used in conjunction with Integrated Expert Services. It allows partners to provide administrative access and permission to NOC Services and Help Desk Services without adding additional device credentials.
+
+When using Privileged Access with Integrated Expert Services, follow these suggestions:
+
+Enable the Reason input field visible option in the ScreenConnect for Servers and ScreenConnect for Desktops groups. Technicians place the ticket number in this reason field, allowing for easier cross-referencing.
+Enable the Reason input field available in UAC prompt option in the UAC Elevation group. Technicians place the ticket number in this reason field, allowing for easier cross-referencing. 
+Create a reference that states Privileged Access should be used in place of traditional credentials.
+What's next
+
+Explore more Privileged Access features:
+
+Automatically accept, elevate, or deny an elevation request
+Receive elevation requests in Microsoft Teams
+Receive requests in Slack
+
+ 
+
+ScreenConnect Integration for ConnectWise RMM ScreenConnect Remote Support
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ScreenConnect Installation Status and Error Codes
+Enable or Disable Connection Consent for ScreenConnect
+ScreenConnect Dashboard for RMM
+ScreenConnect 1-Click for RMM
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

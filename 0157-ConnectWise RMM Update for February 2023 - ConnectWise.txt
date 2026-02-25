@@ -1,0 +1,155 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   ConnectWise RMM Release Notes   RMM Release Notes Archive   ConnectWise RMM Update for February 2023
+ConnectWise RMM Update for February 2023
+Last updated
+Feb 22, 2023
+Table of contents
+Announcements
+Monitors on Devices Page
+ConnectWise RMM
+Agent and Platform
+Automation
+Intune Integration
+Ticketing / PSA Integration
+Bug Fixes / Known Issues
+Announcements
+Monitors on Devices Page
+
+We are releasing a new feature that allows users to see the monitors that are applicable per endpoint. A new tab for monitoring will be added under the device details page and it will display monitors which are applicable per endpoint via assignments from Device, Site, Partner or Device Group (Static and Dynamic). This will be released in the first week of March.
+
+ConnectWise RMM
+Agent and Platform
+
+Agent Update. A new agent, version 3.0.4, will be rolled out on February 20th. Windows, MAC, and Linux agents will be updated to the latest version automatically.
+
+Automation
+
+Automation Support for Custom Field Variables from Company/Site. When searching for Custom Fields using the Script Functions Set Custom Field and Set Pre-Defined Value, partners can see a new column called "Source" that displays whether the Custom Field exists on the Endpoint, Site, or Company level.
+
+Note: Script Functions Set Custom Field and Set Pre-Defined Value already support all Custom Fields.
+
+Intune Integration
+
+New Intune Hyperlink. On the Device > Computers screen, a new column / hyperlink will be added to the table for Microsoft Intune that takes partners directly to the device in Intune.
+
+Intune information added to Device Details. From the Device Details screen, partners will see which Compliance Policy has caused an Intune / Microsoft Endpoint Manager device to fall out of compliance
+
+Ticketing / PSA Integration
+
+ConnectWise Manage Contact Sync mechanism improvements. With this change, RMM fetches all contacts from Manage company to the corresponding RMM site as it’s a 1:1 mapping with RMM Sites. Validation has been removed for this scenario for contact fetching.
+
+No changes have been made to the multi-site mapping for the contact sync functionality.
+
+Bug Fixes / Known Issues
+
+The following issues will be resolved with this month's release:
+
+Agent - We've fixed an issue where the agent component reported High CPU on the server where the Active Directory /domain controller is configured. One of the Agent components " platform-sysevents-plugin" reported high CPU consumption.
+
+Agent - We've fixed an issue where the disk space report was showing fluctuating data (Free disk space is NULL).
+
+Agent - CPU usage was reporting 0 intermittently on Windows 2008 machine, this has been corrected.
+
+Agent - Communicator messages were showing as "DATE IS NOT AVAILABLE" on specific machines for few messages. This has been fixed.
+
+Agent - Fixed an issue where if Gateway was getting enabled on a different drive (having multiple disk) was showing error.
+
+Agent - We've fixed an issue where ESET server security was not reflecting in the Endpoint protection column in Devices page.
+
+Agent - We've added a "CrowdStrike Windows sensor" to the identified AV list. This solves an issue where the AV was not detecting in the Device tab on desktop.
+
+Alerting - Resolved an issue where the ICMP Monitor might not autoclose the ticket even when the closing criteria is met
+
+Alerting - Resolved an issue where the Port Monitor might not generate a ticket even when the criteria is met
+
+Automation - Fixed an issue where partners were unable to Deactivate Scheduled Task when Next Scheduled Date is in the past.
+
+Automation - Fixed a Tasking Error: "can’t validate input data" when scheduling Task to run sooner than negative UTC offset for selected timezone.
+
+Automation - Fixed an issue where partners were unable to Customize Tasking Access Rights for individual Technician.
+
+Automation - Fixed a tasking Error "The time should be in future" for device where scheduled local time is in future.
+
+Automation - Fixed an issue where the Scheduled Task displays as Failed before scheduled Start Date and Time.
+
+Automation - Fixed a tasking Error "error_invalid_endpoint_status" when sending trigger First Check-in for execution.
+
+Automation - Fixed an issue where the Next Scheduled task will intermittently display as NONE in Automation > Scheduled Tasks.
+
+Automation - Fixed an issue where the partner was unable to customize Tasking Permissions for Technician and Manager Default Access.
+
+Automation - Fixed an issue where Sequences not created by CSM were visible to CSM.
+
+Automation - Fixed an Issue where the partner was unable to customize Tasking Access Rights for individual users.
+
+Automation - We fixed an issue where there was no option to Delete Scheduled Task that is scheduled to never end.
+
+Automation - We fixed an issue where the Next Scheduled displays as NONE for certain recurring tasks in Automation > Scheduled Tasks.
+
+Automation - We fixed an issue where Scheduled Tasks were not consistently honoring a user's Site access.
+
+Automation - Fixed an issue where the download from Sharepoint URL for the Task "Create Own Application" was not working as expected.
+
+Automation - Improved the "Enable user consent for Control connection" and "Disable user consent for Control connection"
+
+Automation - Resolved an issue with the SentinelOne agent installation task where the setup was downloaded in each scheduled task execution. System will now skip the download if the SentinelOne agent is already installed with latest version.
+
+Device Groups - While selecting a criteria in Device Groups, the count that appears did not match with the filtered options and when the user clicked on the Select All option selects all the options rather than filtered options. This has been fixed.
+
+Device Groups - Users were unable to create new dynamic groups with the custom attribute as its criteria. This has been fixed.
+
+Device Groups - The dropdown values for the "Gateway Status" criteria was incorrect.
+
+Patching - Resolved a bug where the endpoints were not rebooting endpoints if there were no missing patches.
+
+Patching - Resolved a bug where the following Alert Conditions were not getting triggered:
+
+OS Patching Assessment Failure (Desktop)
+
+Endpoint has never sent an assessment
+
+Third-Party Patching - Resolved issues with CSMs able to see Application update tasks not created by them.
+
+Third-Party Patching - Resolved a bug with the Scheduling Application update where the resource selector for site/endpoint does not grey-out if it has an existing Application update task. Due to this partner's were facing errors such as - Site/Endpoint not found
+
+ 
+
+ConnectWise reserves the right to remove any enhancement or fix from this update if it does not pass quality assurance tests.
+
+ConnectWise RMM Update for January 2023 ConnectWise RMM Update for March 2023
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ConnectWise RMM Update for January 2023
+ConnectWise RMM Update for March 2023
+ConnectWise RMM Update for April 2023
+ConnectWise RMM Update for May 2023
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

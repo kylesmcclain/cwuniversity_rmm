@@ -1,0 +1,179 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   PSA Integration   Autotask Integration Guide   Autotask - Policies Integration
+Autotask - Policies Integration
+Last updated
+Nov 2, 2025
+Table of contents
+Overview 
+Create Autotask PSA Policies 
+Autotask PSA Policies Configuration 
+Assigning PSA Policies to Packages 
+Overview 
+
+PSA policies define how tickets, configuration items, contacts, and notifications sync from ConnectWise RMM™ to Autotask PSA or vice versa.
+
+Create Autotask PSA Policies 
+Navigate to Endpoints > Policies. Click Add Policy.
+Under the Category drop-down select Sites. 
+For Type, select Autotask PSA Integration. 
+Enter a Name for your PSA Policy. 
+
+
+Autotask PSA Policies Configuration 
+
+Policy Attribute
+
+	
+
+Details
+
+	Benefits	
+
+Screenshot for Policies
+
+
+
+
+Ticket Sync Configurations
+
+	
+
+Turning this toggle ON displays various ticket information:
+
+Default Ticket Queue
+Select the default ticket queue that should be used to push tickets created by RMM.
+Outgoing TicketNote mapping for NOC
+Set and define the Note Type and the Publish Type
+Outgoing TicketNote mapping for Help Desk
+Set and define the Note Type and the Publish Type
+Outgoing TicketNote mapping for MSP
+Set and define the Note Type and the Publish Type
+RMM to Autotask PSA ticket priority mapping
+Set and Define the priority mapping between PSA and RMM (Autotask PSA → RMM)
+RMM to Autotask PSA ticket status mapping
+Set and Define the status mapping between RMM and PSA (RMM → Autotask PSA)
+Block incoming ticket sync
+Select this option if you do not wish any notes added in Autotask to be synced with RMM. This option will disable both new ticket creation and updates, including closed ticket status changes.
+Tickets created by RMM will still be synced/pushed in Autotask
+Incoming TicketNote mapping
+Set the Note Types and the Publish Types to be mapped
+Autotask PSA to RMM ticket priority mapping
+Set and Define the priority mapping between PSA and RMM (Autotask PSA → RMM)
+Autotask PSA to RMM ticket status mapping
+Set and Define the status mapping between PSA and RMM (Autotask PSA → RMM)
+
+Note: If you are facing issues with Ticket Sync with errors like Ticket Status is not available / Ticket priority is not available, then resave your Ticket Status / Priorities from Asio and click the Test Configuration button provided in Asio. After that, trigger a resync from Asio to sync the failed tickets.
+
+Note: RMM tickets that are created for RMM sites that have a PSA Policy applied via a package but do not have Company/Site mapping are synced into the Autotask Catchall Company.
+
+Make sure that the Autotask Company that you are selecting as your Catchall Company is mapped to the RMM Company/Site and the PSA policy is applied for that RMM Company/Site. The settings that are configured in your PSA policy for that site are used for Ticket sync.
+	
+Legacy provided an option to configure options for the tickets but it was applicable for all existing and new sites.
+There were no options to set exceptions and use different service board, priority, syncing tickets etc at site level.
+Additionally, blocking incoming ticket sync for specific site was not an option.
+In the Legacy configuration, only 3 note types (Task detail, Task summary, Task Notes) were available for sync. In Policy-based configuration, you will be able to select custom note types as well for incoming/outgoing Note Sync.
+In Policy-based configuration, we have provided a multiselect option for selecting multiple notes for incoming note sync. RMM-PSA Integration system will sync notes based on the selection made in this section.
+	
+
+
+Asset Sync Configurations
+
+	
+
+If the configuration in policy is kept off then Asset/Configuration items from RMM will not be pushed in Autotask PSA.
+
+Turning this toggle ON will display various asset/Configuration items options.
+
+Default Material Cost Code 
+Select the Default Material Cost Code you want to use for this integration
+Managed Server
+Turning this toggle ON will push the Server configuration items from RMM to Autotask
+You can choose the fields that should be pushed from RMM to Autotask
+Managed Workstation/Desktop
+Turning this toggle ON will push the Workstation/Desktop configuration items from RMM to Autotask
+Partners can choose the fields that should be pushed from RMM to Autotask
+Backup Devices (Recover Appliances)
+Turning this toggle ON will push the Recover Appliances configuration items from RMM to Autotask
+You can choose the fields that should be pushed from RMM to Autotask
+
+Note: You need to configure the Default Material Cost Code field from your policy. Otherwise, Asset Sync will not stop working.
+
+	
+Legacy provided an option to configure options for the assets but it was applicable for all existing and new sites.
+There were no options to set exceptions and sync specific asset types for each site.
+Additionally, blocking asset sync for specific sites was not an option.
+We have added "Friendly Name" asset attribute in Policy-based configuration to sync, this attribute is not available in the Legacy configuration.
+	
+
+
+Billing Sync Configurations
+
+	
+
+If the configuration in policy is kept off then VMWare and Hyper-V host devices items from RMM will NOT be pushed in Autotask PSA
+
+Turning this toggle ON the VMWare and Hyper-V host devices items from RMM will be pushed in Autotask PSA
+
+ 
+
+	
+The option was applicable for each site and no option to make bulk changes to all sites.
+	
+
+
+Contact Sync Configurations
+
+	
+
+If the configuration in policy is kept off then contacts from Autotask PSA mapped to sites will not be pushed or synced with RMM.
+
+Turning this configuration ON will push the contacts created/updates under the corresponding sites will be created in RMM
+
+ 
+
+Note: Contacts created in RMM are not synced to Autotask PSA.
+
+ 
+
+	
+Partners can define if the contact sync can be enabled for a specific site but it was in the helpdesk tab for each site.
+There was no option to make bulk changes for each site.
+The legacy configuration would not allow enabling contact syncing, unless HelpDesk is enabled for the site.
+	
+Assigning PSA Policies to Packages 
+
+After the PSA policy is created, you need to include the Autotask PSA policy in a package to be applied to the sites.
+
+Navigate to Endpoints > Packages.
+Click the package name you want to add the policy to.
+Click the ^ (caret) icon to expand the Sites menu in the Available policies pod on the right.
+Drag the AutotaskPSA Policy to the package builder.
+Click Save.
+Autotask Integration Guide Autotask PSA - Policies Integration FAQs
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Autotask PSA - Policies Integration FAQs
+Autotask Integration Setup Guide
+Autotask Integration Contact Sync
+Autotask Integration Reporting on Synchronization Status
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

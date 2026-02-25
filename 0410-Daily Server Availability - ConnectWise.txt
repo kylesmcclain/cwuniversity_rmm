@@ -1,0 +1,118 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   RMM Reporting API   Reporting API REST Resources   Daily Server Availability
+Daily Server Availability
+Last updated
+Jul 9, 2025
+Table of contents
+Overview
+Endpoint and URI
+Method
+Request Body
+Response Body
+Parameter Descriptions for Daily Server Availability
+Source of Data in the Asio Platform
+Overview
+
+Returns average daily availability for all servers at the given site.
+
+Endpoint and URI
+
+https://itsapi.itsupport247.net/repo...lability/daily
+
+Method
+
+POST
+
+Request Body
+
+{
+
+"Month":4,
+
+"SiteCode":"AGTSolutions",
+
+"Year":2015,
+
+}
+
+Response Body
+
+{
+
+"dailyServerAvailability":[
+
+{
+
+"averageDailyAvailability":[100,100,100,100,100,100,100,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,100,100,100],
+
+"MachineId": 9223372036854775807,
+
+"server":"WS2008_1"
+
+},
+
+{
+
+...
+
+},
+
+{
+
+...
+
+}
+
+]
+
+"error": null
+
+}
+
+Parameter Descriptions for Daily Server Availability
+Parameter	Description
+"Month"	Requested month (numerical)
+"SiteCode"	Unique site code listed in Asio™ Platform (ITSupport Portal)
+"Year"	Requested year
+"averageDailyAvailability"	Percentage of server availability*
+"MachineId"	Unique machine ID in ConnectWise database
+"server"	Server name
+
+* For details about how server availability is calculated, see the "Overall Score Calculation" table in the Executive Reports page.
+
+Source of Data in the Asio Platform
+
+Reports > Asio > Executive Report > Server Data > Availability > Daily Averages
+
+Daily Antivirus Status Daily Server Utilization
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Agent Details
+Retrieves agent information for the authenticated partner and the specified site.
+Antivirus Summary
+Retrieves counts of machines having antivirus protection in the following states: Updated, Outdated, Not Installed, or Information Unavailable.
+Antivirus Version Summary
+Retrieves currently detected antivirus software and the definition version.
+BCDR Continuity Appliances
+Retrieves a list of Recover Continuity backup appliances provisioned at the given site.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

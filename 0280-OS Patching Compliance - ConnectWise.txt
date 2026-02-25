@@ -1,0 +1,199 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Patching   OS Patching   OS Patching Compliance
+OS Patching Compliance
+Last updated
+Feb 11, 2025
+Table of contents
+Overview
+Patch Compliance Scoring Logic
+Details Page – OS Patching Tab
+Summary
+OS Patching Schedule Summary
+OS Patch Policy Compliance
+Patch Details
+Overview
+
+ To locate this screen, navigate to Endpoints > Devices.
+
+On the Devices page, the Patching tab includes the following columns:
+
+OS - This shows the installed operating system on the endpoint. It will also indicate whether your device is at the end of the support state.
+Compliance - Compliance displays a scoring percentage based on patches installed or missing per the policy configuration.
+Missing - This shows a number of patches missing on the endpoint. This count includes all the applied conditions such as Excluded and blocked patches which we do not consider.
+Pending Reboot - This shows the patches pending reboot, this includes updates that require reboot to be fully installed on the system.The UI shows Pending reboot as True based on an an endpoint requiring reboot. The logic for checking Pending Reboot has been updated to also identify if the endpoint is pending reboot due to any component-based Servicing.
+True - If endpoints are flagged as pending reboot
+Blank - If the endpoint is not pending reboot or we do not the assessment data
+NA - For OS which are not supported
+Last Assessed - Last assessment displays the time at which the device was last checked for patching compliance.
+
+You can also filter your sites using the following criteria:
+
+Patch Assessment
+
+Assessment Pending
+
+Older than 1 week
+
+Older than 2 weeks
+
+Older than a month
+
+Compliance Score
+
+Less than 50%
+
+Between 51% to 75%
+
+Between 76% to 99%
+
+100%
+
+No Policy Assigned
+
+Pending
+
+Patch Compliance Scoring Logic
+
+The OS Patch Policy compliance score refers to the percentage of updates installed on the endpoint against the total number of patches that are supposed to be installed on the machine. The Patch policy assigned to the endpoint determines the patches which would be installed on the machine automatically.
+
+Policy Compliance Score = (Installed Patches / (Installed + Pending Reboot + Missing)) x 100
+
+The compliance score is calculated based on the Last Assessment which was received from the endpoint.
+
+Patches which are Excluded are not considered in the calculation.
+
+When the policy is set to Deploy Only Partner or NOC Approved, patches that are blocked by the partner or NOC are not considered in the calculation.
+
+Under Review patches are considered for Compliance score calculation.
+
+Note: The compliance score would be lower in the beginning of the month since new patches are released on second Tuesday of every Month (Patch Tuesday).
+
+Example:
+
+Consider the following patches:
+
+Installed: 10
+
+9 are Approved
+
+1 is Blocked by partner
+
+Pending reboot: 1
+
+1 is approved
+
+Missing: 5
+
+1 is Approved
+
+1 is Under Review
+
+3 are blocked
+
+The Policy Compliance score should be = [9/(9 + 2 + 1) ]X 100=75%
+
+Details Page – OS Patching Tab
+
+Detailed information of an Endpoint’s patch compliance is shown on the Device Details > OS Patching tab. The information on the page is populated based on the Assessment received for the new solution.
+
+Note: Patches will show up in the Non-Policy tab if Patches are set to 'Do not Deploy' in Policy or if Patch Automation is turned off.
+
+If the Assessment has not been received, the page will show the message - The OS Patching assessment for this device is pending.
+
+The assessment can be run from Quick Patch Action > Run OS Patch Assessment
+
+The solution only supports Windows and macOS devices for now, Device details of Linux endpoints will not have this tab
+
+Summary
+
+OS – The operating system of the Endpoint
+
+Last Assessed – The date and timestamp of when the assessment was received from the endpoint.
+
+Assessments are run every 4 hours.
+
+Currently shown in UTC + 00 time zone.
+
+Last Restart - The date and timestamp of when the endpoint was last restarted.
+
+No Policy Assigned – When Patch Automation is turned off, users will see No Policy Assigned message in Devices > Patching > Compliance and Device Details > OS Patching > Compliance Area.
+
+OS Patching Schedule Summary
+
+This card allows you to view patching details about the next restart. The following are examples of information you will see:
+
+Next Download At
+Next Install At
+Next Feature Update Install At
+
+Next Restart at
+Notified at
+Postponed by
+OS Patch Policy Compliance
+
+A graphical representation of the Patch Policy Compliance score with the count of Installed, Missing and Pending reboot patches considered for score calculation.
+
+The legends can be clicked to quickly filter the list in the Patch Details grid below the chart.
+
+Patch Details
+
+Shows complete details of each patch from Assessment was received from the endpoint.
+
+Patch classifications which are selected in the policy for deployment are Policy Patches. Patch classifications set to 'Do not deploy' in policy are non-Policy patches.
+
+Details of Policy and non-Policy patches can be seen in the grid by navigating to the relevant tab as shown here:
+
+KB Number – The Knowledge Base Article ID as defined by Microsoft
+
+Description – Name of the update. For Windows, this will show the Update Title
+
+Status – The status of the patch on the endpoint. It can be Installed, Missing or Pending Reboot
+
+NOC Recommendation – The outcome of the NOC patch testing. The recommendation will be shown as
+
+Approved
+
+Blocked
+
+Conditionally Approved
+
+Under review
+
+Classification – The classification of the patch as provided by Microsoft/Apple
+
+Severity – Refers to the MSRC Severity from Microsoft for the patch
+
+Reboot behavior – If a patch would require a reboot after installation. This is provided by Microsoft
+
+Size of Package – The size of the update
+
+ 
+
+OS Patch Exclusions OS Patching Error Codes
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+OS Patching Getting Started Settings
+OS Patch Approvals
+OS Patch Exclusions
+OS Patching Policies
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

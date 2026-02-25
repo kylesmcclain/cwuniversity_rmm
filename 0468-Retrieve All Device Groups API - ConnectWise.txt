@@ -1,0 +1,79 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   RMM Tools   APIs   Device Groups API   Retrieve All Device Groups API
+Retrieve All Device Groups API
+Last updated
+Jul 7, 2025
+Table of contents
+API Name
+API Description
+Request and Response API
+API Name
+
+Retrieve All Device Groups for a Partner
+
+API Description
+
+This API allows you to retrieve information about all device groups associated with the partner account.
+
+Request and Response API
+
+You can find the Request and Response API details at this dev portal.
+
+The API Response will include the following fields:
+
+Field	Description
+id	Device Group ID
+name	Device Group Name
+description	Description of the Device Group
+createdAt	Timestamp indicating when the Device Group was created
+updatedAt	Timestamp indicating when the device group was last updated. If a Device Group was created and never updated, the createdAt and updatedAT fields will have the same value. 
+predefined, static	These are conditional fields, note for which is given below
+
+ 
+
+Note:
+
+If the static field is present and set to true, it indicates that the device group is static. 
+If the predefined field is present and set to true, it indicates that the device group is predefined dynamic. 
+If neither the predefined nor the static field is present, it indicates that the device group is dynamic. 
+
+Note: Review the Device Groups documentation for more information on creating static and dynamic groups.
+
+ 
+
+ 
+
+ 
+
+Device Groups API Devices API
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Asio Integration API
+Managed Service Providers (MSPs) use a number of different tools and products to effectively monitor and manage their client's networks. Each of these...
+Public Ticketing API
+ConnectWise's public ticketing API allows MSPs or PSA vendors to integrate with our two-way ticket synchronization system to create tickets, update ti...
+Automation API
+The API access for Automation provides a set of APIs that allow seamless integration and automation, allowing for efficient tasking and scripting func...
+Devices API
+The Devices APIs retrieve different types of information related to a specific machine or machines belonging to a specific partner or site.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

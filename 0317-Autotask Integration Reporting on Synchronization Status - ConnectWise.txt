@@ -1,0 +1,39 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   PSA Integration   Autotask Integration Guide   Autotask Integration Reporting on Synchronization Status
+Autotask Integration Reporting on Synchronization Status
+Last updated
+Aug 16, 2024
+Table of contents
+Overview
+Overview
+
+Use this feature to identify and fix sync issues if the initial configuration fails testing or if you experience sync issues at any point after completing the integration. Click on The View Sync Status Reports button to view the summary sync status of each category. A Details option allows you to drill down for additional information on individual sites, tickets, and assets.
+
+Autotask Integration Error Messages Autotask Integration Setup Guide
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Autotask Integration Setup Guide
+Autotask Integration Contact Sync
+Include User-Defined Fields in Configuration Items
+Autotask Integration Error Messages
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

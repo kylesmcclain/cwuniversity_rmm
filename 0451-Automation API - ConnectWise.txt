@@ -1,0 +1,52 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   RMM Tools   APIs   Automation API
+Automation API
+Last updated
+Nov 4, 2025
+Table of contents
+Overview
+Overview
+
+The API access for Automation provides a set of APIs that allow seamless integration and automation, allowing for efficient tasking and scripting functionalities.
+
+Note: To access OpenAPI, follow the Authentication and Authorization process outlined here.
+
+The following APIs fall under this category:
+
+All articles
+Retrieve Custom Templates API
+Retrieve Fusion Scripts API
+Retrieve Global Templates API
+Schedule Automation Tasks on Managed Endpoints API
+Retrieve all Scheduled Tasks API
+Retrieve Task Instance Summary for a Task API
+Retrieve Task Instance Execution Results API
+Retrieve Task Summary at Endpoint Level API
+Rate Limits Retrieve Custom Templates API
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Retrieve Global Templates API
+Retrieve Custom Templates API
+Retrieve Fusion Scripts API
+Retrieve all Scheduled Tasks API
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

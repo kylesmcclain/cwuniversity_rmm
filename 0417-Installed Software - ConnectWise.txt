@@ -1,0 +1,123 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   RMM Reporting API   Reporting API REST Resources   Installed Software
+Installed Software
+Last updated
+Jul 9, 2025
+Table of contents
+Overview
+Endpoint and URI
+Method
+Request Body
+Response Body
+Parameter Descriptions for Installed Software
+Source of Data in the Asio Platform
+Overview
+
+Lists the software installed on a specified machine including publisher, version, and installation date.
+
+Endpoint and URI
+
+https://itsapi.itsupport247.net/repo...ware/installed
+
+Method
+
+POST
+
+Request Body
+
+{
+
+"SiteCode":"AGTSolutions"
+
+}
+
+Response Body
+
+{
+
+"Error": null,
+
+"InstalledSoftware": [
+
+{
+
+"Application": "Windows Media Player",
+
+"DateChecked": "2015-08-27",
+
+"FriendlyName": "Mike's PC",
+
+"IPAddress": "1.1.1.1",
+
+"InstallDate": "2015-01-16",
+
+"MachineId": 9223372036854775807,
+
+"MachineName": "Intel-AMT1",
+
+"OperatingSystem": "Microsoft Windows 8.1 Pro",
+
+"Publisher": "Unavailable",
+
+"Version": "9.0"
+
+}
+
+]
+
+}
+
+ 
+
+Parameter Descriptions for Installed Software
+Parameter	Description
+"SiteCode"	Unique site code listed in Asio™ Platform (ITSupport Portal)
+"Application"	Software application name
+"DateChecked"	Last date checked by RMM agent
+"FriendlyName"	Machine friendly name in Asio™ Platform (ITSupport Portal)
+"IPAddress"	Machine IP address
+"InstallDate"	Application install date
+"MachineId"	Unique machine ID in ConnectWise database
+"MachineName"	Machine name
+"OperatingSystem"	Machine OS
+"Publisher"	Application publisher
+"Version"	Application version
+
+ 
+
+Source of Data in the Asio Platform
+
+Reports > Asio > Technical Details > Installed Software Report
+
+Expiring Warranties Memory Utilization
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Agent Details
+Retrieves agent information for the authenticated partner and the specified site.
+Antivirus Summary
+Retrieves counts of machines having antivirus protection in the following states: Updated, Outdated, Not Installed, or Information Unavailable.
+Antivirus Version Summary
+Retrieves currently detected antivirus software and the definition version.
+BCDR Continuity Appliances
+Retrieves a list of Recover Continuity backup appliances provisioned at the given site.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

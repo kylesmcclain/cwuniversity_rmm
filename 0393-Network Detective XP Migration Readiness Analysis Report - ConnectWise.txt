@@ -1,0 +1,80 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   RMM - Network Assessment   Network Detective XP Migration Readiness Analysis Report
+Network Detective XP Migration Readiness Analysis Report
+Last updated
+Jul 9, 2025
+Table of contents
+Overview
+Running the Report
+Upgrade Readiness Summary
+Upgrade Readiness Detail
+Application Compatibility
+Driver Compatibility
+Overview
+
+Note: To use the XP Migration Readiness Analysis Report, be sure that you are running v2.1.1135.1 of the Network Detective Reports Builder.
+
+The Network Detective XP Migration Readiness AnalysisReport, part of our Network Assessment Tool Premium Add On Package, helps identify and preliminarily determine the systems ready for migration from Windows XP to Windows 8.1.
+
+An XP system should meet the Minimum System Requirements for Windows 8.1 to be ready for Windows 8.1. To ensure full compatibility, Application and Driver compatibility should be evaluated (or at least documented). Microsoft should ensure its drivers are compatible moving forward, but there is no guarantee that any particular application or device vendor will help ensure the same.
+ 
+The readiness assessment is based on information gathered by the Network Detective Data Collector. On Active Directory domains, only computers currently active (defined as connecting to the domain within the last 30 days) are scanned. Readiness is determined by comparing the collected information against the minimum system requirements for Windows 8.1. Other factors may lead to incompatibility, and this report should only be used as a guide to identify potential upgrade candidates. Each computer should be further evaluated for suitability as an upgrade candidate.
+ 
+Because of the nature and variety of applications and device drivers, this report does not state the compatibility of any individual application or driver version. The list is provided as a convenient way to gather information for review.
+
+Running the Report
+
+To run the report, select the check box for XP Migration Readiness Report from Network Detective's Network Assessments tab.
+
+The generated report will provide the following data:
+
+Upgrade Readiness Summary
+
+The Upgrade Readiness Summary reports the number of XP Computers discovered on the network and the number considered Very Good or Excellent candidates for migration to Windows 8.1.
+
+ 
+
+Upgrade Readiness Detail
+
+The Upgrade Readiness Detail section grades individual computer systems on upgrade readiness. Grades are given for overall system readiness (Figure 4) and for individual components within each system.
+
+ 
+
+Application Compatibility
+
+The Application Compatibility section of the report provides a list of non-Windows applications that should be investigated for Windows 8.1 compatibility (Figure 7).
+
+Driver Compatibility
+
+The Driver Compatibility section of the report provides a list of drivers that should be investigated for Windows 8.1 compatibility. Only non-Microsoft drivers are listed.
+
+ 
+
+Network Data Collector PCI Compliance Module
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+PCI Compliance Module
+Network Data Collector
+Advanced Configuration Network Assessment Tool
+Client Connector Tool
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

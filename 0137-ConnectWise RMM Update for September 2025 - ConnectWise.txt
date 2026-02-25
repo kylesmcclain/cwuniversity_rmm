@@ -1,0 +1,204 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   ConnectWise RMM Release Notes   ConnectWise RMM Update for September 2025
+ConnectWise RMM Update for September 2025
+Last updated
+Oct 9, 2025
+Table of contents
+Overview 
+Announcements
+ConnectWise Asio® Performance Enhancements
+What's new in ConnectWise RMM?
+September 30, 2025
+Integrated Expert Services
+September 26, 2025
+Issues Addressed
+September 24, 2025
+Automation
+September 22, 2025
+Automation
+September 19, 2025
+PSA Integration
+ConnectWise NOC Services
+September 17, 2025
+Device Groups Criteria
+September 9, 2025
+Automation
+September 5, 2025
+Device Groups
+September 4, 2025
+Alerting
+Overview 
+
+This page provides information on the latest enhancements and features for ConnectWise RMM.
+
+Announcements
+ConnectWise Asio® Performance Enhancements
+
+Note: This will be released in the second week of September 2025.
+
+We’re changing the default data collection for the CPU, Memory, and Disk from managed endpoints to align with other solutions and bring uniformity in data collection and how the information is used for displaying on UI/Alerting processes.
+
+Previously, this data was captured every 3 minutes. Starting the second week of September 2025, the collection interval will be updated to every 5 minutes.
+
+There is no change to how performance data appears on the Device Details page.
+All metrics will continue to be displayed as they are today.
+
+Tip: If you have configured custom monitors for CPU, Disk, and Memory, we recommend reviewing and updating the Condition/Ticket resolution section to align with the new 5-minute interval for data collection from the endpoints.
+
+For any questions or assistance, reach out to your ConnectWise RMM support teams.
+
+What's new in ConnectWise RMM?
+Release Dates:	Relevant Modules:
+
+September 30, 2025
+September 26, 2025
+September 24, 2025
+September 19, 2025
+September 17, 2025
+September 9, 2025
+September 5, 2025
+September 4, 2025
+	
+Device Groups Criteria
+Automation
+Device Groups
+Alerting
+September 30, 2025
+Integrated Expert Services
+
+DUO Authentication Integration
+
+The ConnectWise Network Operations Center (NOC) now supports DUO TOTP authentication. This new capability allows the NOC to securely access endpoints protected by DUO, enhancing security and operational efficiency.
+
+Refer to the Enabling DUO Authentication for Endpoint Access article for step-by-step instructions on enabling this integration.
+
+For assistance, please contact srt@connectwise.com.
+
+September 26, 2025
+Issues Addressed
+Known Issue	Description
+ISSUE-9126	Fixed an issue where a few Technician role users could not see the 'Run' option under the Devices tab.
+September 24, 2025
+Automation
+
+We've enhanced the Script Editor to support script sharing across different user roles in the Asio platform, making it easier for team members to collaborate and reuse automation. This capability is available to Primary Super Admins and Super Admins only.
+
+For more information, please review the Script Sharing via User Roles documentation.
+
+September 22, 2025
+Automation
+
+We've enhanced our out-of-the-box avaiable tasks. The following task templates in the system have been added or improved.
+
+Task Name	Release Type	Supported OS	Paramertized	Description
+
+
+Fetch top 10 Files/Folders on endpoint
+
+	New	Windows	Yes	
+
+This task can be executed on the endpoint to help identify file or folder on the endpoint that are huge in size.
+
+
+Toggle Check for Updates for Windows	New	Windows	Yes	
+
+This task can be used to Enable/Disable Check for updates based on OS Type.
+
+
+Windows 11 Readiness Check	Improvement	 	 	 
+Uninstall CCleaner	Improvement	 	 	 
+Putty	Improvement	 	 	 
+Windows 11 Upgrade 24H2	Improvement	 	 	 
+Windows 11 23H2 feature update	Improvement	 	 	 
+
+
+Webroot SecureAnywhere (MAC)
+
+	Improvement	 	 	 
+
+For more information, please review the Available Tasks documentation.
+
+September 19, 2025
+PSA Integration
+We have introduced the ability to map custom PSA configuration types for each agent type supported by ConnectWise RMM. This enhances your integration with ConnectWise PSA. For more information, review this Asset Sync documentation.
+ConnectWise NOC Services
+
+ConnectWise NOC Services SOW Update – NOC Service Delivery (09/19/2025)
+
+We’ve made targeted updates to our NOC Statement of Work to improve operational clarity and partner experience:
+
+Credential Handling: Tickets now require passwords in the Password Vault for NOC action; missing credentials will escalate tickets to your team, reducing delays.
+Expanded Platform Support: NOC now covers Microsoft Hyper-V and has broadened support for Exchange/O365, Entra Connect Sync, DFS, Azure, and VMware—enabling faster, more comprehensive incident response.
+Clearer Ad Hoc Request Handling: Sections for Exchange, Azure, and VMware have been streamlined for easier partner engagement.
+
+These changes mean quicker ticket routing, broader technical coverage, and more predictable support outcomes for your teams.
+
+For the full list of updates, please review the Revision History in the SOW document.
+
+September 17, 2025
+Device Groups Criteria
+
+New criteria support for Device Group
+
+We have included the OS Patch compliance score and Pending Reboot for the Device Group criteria definitions. Review this documentation for all supported criteria for Device Groups.
+September 9, 2025
+Automation
+Enhanced the Script Editor to include a new 'Add Note' option on every script step. Now, you can document the purpose or logic behind each step, making scripts easier to understand, maintain, and troubleshoot. Documentation to be updated soon.
+Enhanced the Script Editor to allow enabling or disabling individual script steps, so you can test and troubleshoot scripts more flexibly without deleting or modifying step logic. This feature is available on the overflow menu (three dots) or on selection of one or more steps in the script editor. Documentation to be updated soon.
+Extended Script Editor support for running steps in the Current Logged-In User context to Linux and macOS—initially available only for Windows.
+September 5, 2025
+Device Groups
+
+Device Groups Neon Theme Updates
+
+We have updated the Device Groups landing and the new Device Group pages to align with the Asio Neon theme. These changes bring additional features as follows:
+Alignment of the pages with other Asio pages
+Paginated responses for faster page loading
+Improved user interface for easier accessibility for creating/viewing data for Device Groups
+Column pickers on the grid to view data
+Downloading the Device Groups created
+
+Support for the Category field for Device Groups
+
+Device Groups now support the Category field for all existing and new Device Groups created. You will be presented with the new device group category option to select as a drop-down or create a new category for the Device Groups.
+The Category field is visible on the side card on the Device Groups page, but it also supports filtering to make data easier to access.
+September 4, 2025
+Alerting
+Partners can now edit conditions for Default Automation in Intelligent Alerts, allowing them to opt in or out as needed. Partners have the flexibility to apply or exclude automation for specific target endpoints.
+You can now configure workflows in ConnectWise Asio® to trigger when an Alert is created for selected monitor types or individual monitors. This gives you more control over how alerts are handled and allows you to define actions that follow alert generation. For more information, review the Alert created as a Trigger section in the Custom Monitors article.
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ConnectWise RMM Latest Release Notes
+ConnectWise RMM Update for January 2024
+ConnectWise RMM Update for February 2024
+ConnectWise RMM Update for March 2024
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

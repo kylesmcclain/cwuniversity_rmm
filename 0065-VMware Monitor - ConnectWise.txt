@@ -1,0 +1,190 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Alerts   Custom Monitors   VMware Monitor
+VMware Monitor
+Last updated
+Jun 2, 2025
+Table of contents
+Overview
+How to create a VMware Host Availability Monitor
+How to create a VMware Guest / VM Monitor
+List of Monitor Variables
+Overview
+
+VMware Monitors allow you to define a VMware Host and VMware Guest data to monitor a target endpoint.
+
+How to create a VMware Host Availability Monitor
+
+Navigate to Endpoints > Devices > Alerts > Monitors.
+
+Click Add Monitor.
+
+Provide a Name for the new monitor. Optionally you can provide a Description of your new monitor.
+
+Select the Type as VMware from the drop-down to create the appropriate monitor.
+
+Select the Family and Severity from the drop-down menus.
+
+To enable the Mapper functionality, you need to turn on the toggle. To learn more about the Mapper functionality review this documentation.
+
+Under the Condition section:
+Machine Type: This allows you to select the Machine Type as Host or VM. For host-based monitoring, select the value from the dropdown as Host.
+Type: Select the type of monitoring to be defined against the host device.
+Status: Select the status for which the monitor should trigger the alert.
+Running This allows you to define the host status as Running.
+Not Running This allows you to define the host status as Not Running.
+You can also select a custom Automation Task to be executed when the condition is met on the endpoint.
+
+Note: System will reflect only selective Automation tasks that do not need parameters. Refer these OOTB tasks which needs parameters. All Custom Scripts created will be available for selection.
+
+Under the Ticket Resolution section you can define if the ticket should be updated as Resolved once the following criteria is met:
+
+Machine Type: This allows you to select the Machine Type as Host or VM. For host-based monitoring, select the value from the dropdown as Host.
+Type: Select the type of monitoring to be defined against the host device.
+Status: Select the status for which the monitor should trigger the alert.
+Running This allows you to define the host status as Running.
+Not Running This allows you to define the host status as Not Running.
+
+Under the Resources section, you can select the target endpoints on which the alerts should be triggered. You can select specific machines, Sites, or a Dynamic or a Static group.
+
+Click Save to create and apply the monitor to the targets.
+
+ 
+
+How to create a VMware Guest / VM Monitor
+
+Navigate to Endpoints > Devices > Alerts > Monitors.
+
+Click Add Monitor.
+
+Provide a Name for the new monitor. Optionally you can provide a Description of your new monitor.
+
+Select the Type as VMware from the drop-down for creating the appropriate monitor.
+
+Select the Family and Severity from the drop-down menus.
+
+To enable the Mapper functionality, you need to turn on the toggle. To learn more about the Mapper functionality review this documentation.
+
+Under the Condition section:
+Machine Type: This allows you to select the Machine Type as Host or VM. For guest-based monitoring, select the value from the dropdown as VM.
+Monitoring Type: Select the type of monitoring to be defined.
+State Monitoring: This allows you to define the state monitoring of the VM.
+Condition: This allows you to define the state of the VM.
+Running: This allows you to define the condition for the VM as Running for triggering an alert.
+Not Running: This allows you to define the condition for the VM as Not Running for triggering an alert.
+Number of Snapshots: This allows you to define the snapshot for VM.
+ Condition: This allows you to define the condition of the snapshot for VM.
+Above: This allows you to define the condition for the snapshot to be above a specific value.
+Below:  This allows you to define the condition for the snapshot to be below a specific value.
+Equals to: This allows you to define the condition for the checkpoints to be equal to a specific value.
+Size of Snapshot: This allows you to define the snapshot size for VMs (This will be the size of each separate snapshot.)
+Condition: This allows you to define the condition of the snapshot size of the VM.
+Above: This allows you to define the condition for the size of the snapshot to be Above a specific value.
+Below:  This allows you to define the condition for the size of the snapshot to be below a specific value.
+Value This allows you to define the value that should be used for triggering the alert.
+Unit This allows you to define the values for the Unit to be used for comparing.
+MB: This allows you to set the values in MB.
+GB: This allows you to set the values in GB.
+You can also select a custom Automation Task to be executed when the condition was met on the endpoint
+
+Note: System will reflect only selective Automation tasks that do not need parameters. Refer these OOTB tasks which needs parameters. All Custom Scripts created will be available for selection.
+
+Under the Ticket Resolution section you can define if the ticket should be updated as Resolved once the following criteria is met:
+
+Machine Type: This allows you to select the Machine Type as Host or VM. For guest-based monitoring, select the value from the dropdown as VM.
+Monitoring Type: Select the type of monitoring to be defined.
+State Monitoring: This allows you to define the state monitoring of the VM.
+Condition: This allows you to define the state of the VM.
+Running: This allows you to define the condition for the VM as Running for triggering an alert.
+Not Running: This allows you to define the condition for the VM as Not Running for triggering an alert.
+Number of Snapshots: This allows you to define the snapshot for VM.
+ Condition: This allows you to define the condition of the snapshot for VM.
+Above: This allows you to define the condition for the snapshot to be above a specific value.
+Below:  This allows you to define the condition for the snapshot to be below a specific value.
+Equals to: This allows you to define the condition for the checkpoints to be equal to a specific value.
+Size of Snapshot: This allows you to define the Snapshot size for VM's (This will be the sum of all snapshots.)
+Condition: This allows you to define the condition of the snapshot size of VM.
+Above: This allows you to define the condition for the size of the snapshot to be Above a specific value.
+Below:  This allows you to define the condition for the size of the snapshot to be below a specific value.
+Value This allows you to define the value that should be used for triggering the alert.
+Unit This allows you to define the values for the Unit to be used for comparing.
+MB: This allows you to set the values in MB.
+GB: This allows you to set the values in GB.
+
+Under the Resources section, you can select the target endpoints on which the alerts should be triggered. You can select specific machines, Sites, or a Dynamic or a Static group.
+
+Click Save to create and apply the monitor to the targets.
+
+Note:
+
+For Virtual machine monitoring, the alert will be generated for machines where the agent is installed.
+
+For Virtual machine checkpoint-size monitoring, the alert will be generated for each snapshot separately.
+
+For the monitor to work correctly, a metric in the condition section needs to be the same as in the resolution section, otherwise alert will not be generated.
+
+Note: Monitors are triggered based on the defined configuration.
+
+List of Monitor Variables
+
+Here is a list of variables which you can use as per your requirement when creating your own customized ticket template:
+
+Monitor Type	Variable Name	Supported OS Type	Sample Data/Values	Variable Definition
+Generic
+ 	ObservedDate	
+
+Windows, MAC, Linux
+
+	
+
+"2020-09-02T15:35:42.969926103Z"
+
+	Time stamp when the issue was observed
+ 	MonitorDesc	Windows, MAC, Linux	Add local palmtech account and add it to the local administrators group	Description added on the portal while creating a monitor
+ 	MonitorName	Windows, MAC, Linux	Local PalmTech Account with Local Admin	Name of the monitor
+ 	MonitorSummary	Windows, MAC, Linux	(Run PowerShell script every 1 minute(s) AND Run PowerShell script every 1 minute(s))	Summary information for the monitor
+VMware
+ 	MachineType	VMWare Esxi 5.5 and above	host	Current machine type configured
+ 	State	VMWare Esxi 5.5 and above	poweredOn	Current state for machine
+ 	MachineType	VMWare Esxi 5.5 and above	vm	Current machine type configured
+ 	State	VMWare Esxi 5.5 and above	poweredOff	Current state for machine
+ 	NumberOfSnapshots	VMWare Esxi 5.5 and above	1	Value for number of snapshots
+ 	SizeOfSnapshot	VMWare Esxi 5.5 and above	120	Snapshot size
+ 	SnapshotName	VMWare Esxi 5.5 and above	VEEAM BACKUP TEMPORARY SNAPSHOT	Name for snapshot
+ 	Unit	VMWare Esxi 5.5 and above	GB	 
+SNMP Monitor Intelligent Alerts
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Service Monitor
+Process Monitor
+Event Monitor
+CPU Monitor
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

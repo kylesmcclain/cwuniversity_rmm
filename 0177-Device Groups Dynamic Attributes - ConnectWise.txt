@@ -1,0 +1,812 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Devices Page   Device Groups   Device Groups Dynamic Attributes
+Device Groups Dynamic Attributes
+Last updated
+Sep 17, 2025
+Table of contents
+List of supported attributes
+List of supported attributes
+Parent display name	Child display name	Description	Type
+Compliance Score	 	OS Patch compliance score for the endpoint	INT
+Pending Reboot	 	Shows if the endpoint needs a reboot	BOOLEAN
+site	 	Site Name to which objects are assigned in the platform.	TREE
+External IP Address	 	 	IPv4
+Internal IP Address	 	 	IPv4
+Bios	Bios Manufacturer	
+
+Manufacturer of this software/BIOS element.
+
+	STRING
+Bios Version	
+
+The BIOSVersion  contains the complete System BIOS version information
+
+	STRING
+Bios Serial Number	
+
+BIOS Serial number assigned to this software element
+
+	STRING
+Bios Smbios Version	
+
+The SMBIOSBIOSVersion property contains the BIOS version as reported by SMBIOS.
+
+	STRING
+Bios Product	
+
+The name used to identify this software element
+
+	STRING
+Installed Softwares Group	Installed Software Intel 64Bit	
+
+Only applicable to Linux and MAC
+
+	STRING
+Installed Software Location	
+
+Path where software in installed (Only applicable for Linux and MAC)
+
+	STRING
+Installed Software Name	
+
+Application or Software Name
+
+	STRING
+Installed Software Version	
+
+Version of the software
+
+	STRING
+Installed Software User Name	
+
+Under which user the software is installed, if for everyone of for specific user.
+
+	STRING
+Installed Software Kind	
+
+This specifies runtime environment (MAC specific)
+
+	STRING
+Installed Software Get Info String	
+
+Information about the software (MAC specific)
+
+	STRING
+Installed Software App Store	
+
+Is the software obtained from AppStore, values are “Yes” or “No”, (MAC specific)
+
+	STRING
+Installed Software Publisher	
+
+Publisher of the software.
+
+	STRING
+Installed Software Install Date	
+
+Software Install date.
+
+	DATETIME
+Installed Software Last Access Date Time	
+
+Software last access date by the user.
+
+	DATETIME
+Installed Software	 	TREE
+Physical Drives	Physical Drives Type	
+
+This is referring to a deprecated field. Refer AssetDrive instead
+
+	STRING
+Physical Drives Partition Data	Physical Drives Partition Data Size Bytes	
+
+Allocated size (in bytes) of the drive partition
+
+	LONG
+Physical Drives Partition Data Writable	
+
+For example rw.compress
+
+	STRING
+Physical Drives Partition Data Mount Point	
+
+Path where the partition is mounted
+
+	STRING
+Physical Drives Partition Data Name	 	STRING
+Physical Drives Partition Data Label	
+
+For example "Recovery", "New Volume"
+
+	STRING
+Physical Drives Partition Data File System	
+
+For example "NTFS"
+
+	STRING
+Physical Drives Partition Data Description	
+
+For example "Local Fixed Disk"
+
+	STRING
+Keyboards	Keyboards Device ID	
+
+Some Id, for example "HID\\VID_046D&PID_C534&MI_00\\7&2967CD93&0&0000"
+
+	STRING
+Keyboards Name	
+
+For example "HID Keyboard Device"
+
+	STRING
+Keyboards Description	
+
+example "HID Keyboard Device"
+
+	STRING
+Monitors	Monitors Resolution	
+
+Monitor resolution (MAC specific)
+
+	STRING
+Monitors Name	
+
+Generic name given for the monitor like
+
+“Generic PnP Monitor”
+
+	STRING
+Monitors Manufacturer	
+
+the name of the monitor manufacturer
+
+	STRING
+Monitors Builtin	
+
+Built in display name (MAC specific)
+
+	STRING
+Thunderbolts	Thunderbolts Vendor Name	
+
+The Vendor name (MAC specific).
+
+	STRING
+Thunderbolts Device Name	
+
+Name of the device (MAC specific).
+
+	STRING
+Thunderbolts UID	
+
+Unique ID in hexadecimal format (MAC specific).
+
+	STRING
+Thunderbolts Firmware Version	
+
+Version of the Firmware (MAC specific).
+
+	STRING
+Thunderbolts Port Status	
+
+Port status, whether it is connected or not (MAC specific).
+
+	STRING
+Thunderbolts Port Link	
+
+Decimal number of port link (MAC specific).
+
+	STRING
+Thunderbolts Port Firmware Version	
+
+Version of the port firmware (MAC specific).
+
+	STRING
+Machine Friendly Name	 	 	STRING
+Machine Name	 	 	STRING
+Firewall	Firewall Logging	
+
+Logging is enabled or not. For e.g "Yes" or "No"
+
+	STRING
+Firewall Stealth Mode	
+
+Stealth Mode is ON or OFF, stealth mode means whether inbound connections are permitted or not.
+
+	STRING
+Firewall Mode	Firewall mode for e.g "spfirewall_globalstate_allow_all"	STRING
+Processors	Processors Manufacturer	
+
+The Manufacturer property specifies the name of the processor's manufacturer.
+
+	STRING
+Processors Processor Type	
+
+The ProcessorType property specifies the processor's primary function.
+
+ 
+
+       Possible Enumeration Values:
+
+       1 - Other
+
+       2 - Unknown
+
+       3 - Central Processor
+
+       4 - Math Processor
+
+       5 - DSP Processor
+
+       6 - Video Processor
+
+	STRING
+Processors Level	
+
+The Level property further defines the processor type. The value depends on the architecture of the processor.
+
+	INT
+Processors L2Cache	
+
+Size of L2Cache (MAC specific)
+
+	STRING
+Processors Boot Rom	
+
+Boot ROM version like VMW71.00V.13989454.B64.1906190538 (MAC specific)
+
+	STRING
+Processors Product	
+
+Product name like
+
+Intel(R) Core(TM) i7-6500U CPU @ 2.50GHz
+
+	STRING
+Processors Clock Speed Mhz	
+
+The maximum speed (in MHz) of this processor.
+
+	DOUBLE
+Processors Family	
+
+       The processor family type. For example, values include "Pentium(R) processor with MMX(TM) technology" (14) and "68040" (96).
+
+ 
+
+       Possible Enumeration Values:
+
+       1 - Other
+
+       2 - Unknown
+
+       3 - 8086
+
+       4 - 80286
+
+       5 - 80386
+
+       6 - 80486
+
+       7 - 8087
+
+       8 - 80287
+
+       9 - 80387
+
+       10 - 80487
+
+       11 - Pentium(R) brand
+
+       12 - Pentium(R) Pro
+
+       13 - Pentium(R) II
+
+       14 - Pentium(R) processor with MMX(TM) technology
+
+       15 - Celeron(TM)
+
+       16 - Pentium(R) II Xeon(TM)
+
+       17 - Pentium(R) III
+
+       18 - M1 Family
+
+       19 - M2 Family
+
+       24 - K5 Family
+
+       25 - K6 Family
+
+       26 - K6-2
+
+       27 - K6-3
+
+       28 - AMD Athlon(TM) Processor Family
+
+       29 - AMD(R) Duron(TM) Processor
+
+       30 - AMD29000 Family
+
+       31 - K6-2+
+
+       32 - Power PC Family
+
+       33 - Power PC 601
+
+       34 - Power PC 603
+
+       35 - Power PC 603+
+
+       36 - Power PC 604
+
+       37 - Power PC 620
+
+       38 - Power PC X704
+
+       39 - Power PC 750
+
+       48 - Alpha Family
+
+       49 - Alpha 21064
+
+       50 - Alpha 21066
+
+       51 - Alpha 21164
+
+       52 - Alpha 21164PC
+
+       53 - Alpha 21164a
+
+       54 - Alpha 21264
+
+       55 - Alpha 21364
+
+       64 - MIPS Family
+
+       65 - MIPS R4000
+
+       66 - MIPS R4200
+
+       67 - MIPS R4400
+
+       68 - MIPS R4600
+
+       69 - MIPS R10000
+
+       80 - SPARC Family
+
+       81 - SuperSPARC
+
+       82 - microSPARC II
+
+       83 - microSPARC IIep
+
+       84 - UltraSPARC
+
+       85 - UltraSPARC II
+
+       86 - UltraSPARC IIi
+
+       87 - UltraSPARC III
+
+       88 - UltraSPARC IIIi
+
+       96 - 68040
+
+       97 - 68xxx Family
+
+       98 - 68000
+
+       99 - 68010
+
+       100 - 68020
+
+       101 - 68030
+
+       112 - Hobbit Family
+
+       120 - Crusoe(TM) TM5000 Family
+
+       121 - Crusoe(TM) TM3000 Family
+
+       122 - Efficeon(TM) TM8000 Family
+
+       128 - Weitek
+
+       130 - Itanium(TM) Processor
+
+       131 - AMD Athlon(TM) 64 Processor Family
+
+       132 - AMD Opteron(TM) Family
+
+       144 - PA-RISC Family
+
+       145 - PA-RISC 8500
+
+       146 - PA-RISC 8000
+
+       147 - PA-RISC 7300LC
+
+       148 - PA-RISC 7200
+
+       149 - PA-RISC 7100LC
+
+       150 - PA-RISC 7100
+
+       160 - V30 Family
+
+       176 - Pentium(R) III Xeon(TM)
+
+       177 - Pentium(R) III Processor with Intel(R) SpeedStep(TM) Technology
+
+       178 - Pentium(R) 4
+
+       179 - Intel(R) Xeon(TM)
+
+       180 - AS400 Family
+
+       181 - Intel(R) Xeon(TM) processor MP
+
+       182 - AMD AthlonXP(TM) Family
+
+       183 - AMD AthlonMP(TM) Family
+
+       184 - Intel(R) Itanium(R) 2
+
+       185 - Intel Pentium M Processor
+
+       190 - K7
+
+       200 - IBM390 Family
+
+       201 - G4
+
+       202 - G5
+
+       203 - G6
+
+       204 - z/Architecture base
+
+       250 - i860
+
+       251 - i960
+
+       260 - SH-3
+
+       261 - SH-4
+
+       280 - ARM
+
+       281 - StrongARM
+
+       300 - 6x86
+
+       301 - MediaGX
+
+       302 - MII
+
+       320 - WinChip
+
+       350 - DSP
+
+       500 - Video Processor
+
+	INT
+Processors Number Of Logical Processors	
+
+Number of logical processors
+
+	INT
+Processors L3Cache	
+
+L3Cache size (MAC specific)
+
+	STRING
+Processors Number Of Processors	
+
+Physical Processors
+
+	INT
+Processors Number Of Cores	
+
+Number of cores
+
+	INT
+Processors Serial Number	
+
+Serial number of the processor
+
+	STRING
+Raid Controller	Raid Controller Software Raid	
+
+Software RAID details configured on the system.
+
+	STRING
+Raid Controller Hardware Raid	
+
+Hardware RAID details configured on the system.
+
+	STRING
+Raid Controller Vendor	
+
+Vendor name of the RAID controller
+
+	STRING
+System	System Model	
+
+The Model property indicates the product name of the computer given by the manufacturer. For e.g "HP ProBook 440 G3"
+
+	STRING
+System Time Zone	
+
+Example like "+0530". Field represents difference of machine time zone from UTC.
+
+	STRING
+System Time Zone Description	
+
+It gives abbreviated time zone name like “CET”, “IST”
+
+	STRING
+System Domain	
+
+The Domain property indicates the name of the domain to which the computer belongs.
+
+	STRING
+System Domain Role	
+
+The DomainRole property indicates the role this computer plays within its assigned domain-workgroup. The domain-workgroup is a collection of computers on the same network.  For example, the DomainRole property may show this computer is a "Member Workstation" (value of [1]).
+
+Reference: https://www.powershellbros.com/get-d...ote-computers/      
+
+       Possible Enumeration Values:
+
+       Standalone Workstation (0)
+
+       Member Workstation (1)
+
+       Standalone Server (2)
+
+       Member Server (3)
+
+       Backup Domain Controller (4)
+
+       Primary Domain Controller (5)
+
+	INT
+System Product	
+
+Contains the name of the manufacturer like “HP”
+
+	STRING
+System Serial Number	
+
+Serial number of the system
+
+	STRING
+System System Name	
+
+System name
+
+	STRING
+System Category	
+
+This field is not being used.
+
+	STRING
+Software Licenses	Software Licenses Product Name	
+
+Software or Product name.
+
+	STRING
+Software Licenses Product ID	
+
+Product ID like “00342-50493-95523-AAOEM”
+
+	STRING
+Software Licenses Product Key	
+
+Product key like “97D4X-NHMB2-HVHWP-H3P3C-XTPTC”
+
+	STRING
+Card Readers	Card Readers Vendor ID	
+
+Vendor ID (MAC specific)
+
+	STRING
+Card Readers Product ID	
+
+Product ID (MAC specific)
+
+	STRING
+Card Readers Revision	
+
+Revision (MAC specific)
+
+	STRING
+OS Group	OS Manufacturer	
+
+The Manufacturer property indicates the name of the operating system manufacturer.  For Win32 systems this value will be Microsoft Corporation.
+
+	STRING
+OS Arch	
+
+“64-bit” or “32-bit”
+
+	STRING
+OS Language	
+
+OS Language like "English (United States)"
+
+	STRING
+OS Version	
+
+OS Version like "10.0.18363"
+
+	STRING
+OS Install Date	
+
+OS Install date
+
+	DATETIME
+OS Type	
+
+OS type like “windows”
+
+	STRING
+OS Build Number	
+
+OS build number like “18363”
+
+	STRING
+OS Boot Volume	
+
+Boot volume name like "Macintosh HD" (MAC Specific)
+
+	STRING
+OS Product	
+
+OS Product name like “Windows 10 Pro"
+
+	STRING
+OS Service Pack	
+
+Name of Service Pack installed
+
+	STRING
+OS Product ID	
+
+Product ID like "00342-50493-95523-AAOEM"
+
+	STRING
+OS Boot Mode	
+
+Boot mode like "installer_boot" (MAC Specific)
+
+	STRING
+OS Boot Duration	
+
+Boot duration like "up 3:1:29:40" (MAC Specific)
+
+	STRING
+OS Serial Number	
+
+Serial number like "00342-50493-95523-AAOEM"
+
+	STRING
+OS Installed Drive	
+
+OS Installed drive like "C:"
+
+	STRING
+OS Product Key	
+
+Product key like "97D4X-NHMB2-HVHWP-H3P3C-XTPTC"
+
+	STRING
+OS User Name	
+
+User name like "System Administrator (root)" (MAC Specific)
+
+	STRING
+OS Virtual Memory	
+
+Secure VM enabled or not like "secure_vm_enabled" (MAC Specific)
+
+	STRING
+OS Bit Ker Ext	
+
+Checks for 64bit kernel and kexts mode
+
+	STRING
+OS Kernel Version	
+
+Kernel Version like “Darwin 19.3.0" (MAC & Linux specific)
+
+	STRING
+OS Release ID	
+
+OS Release ID like "1909"
+
+	TREE
+Display Version	
+
+Indicates the display version of the device.
+
+For e.g. If the OS name is Microsoft Windows 11 Pro 23H2, then Display version is 23H2.
+
+	STRING
+Drives	Drive Product 	Indicates Product details of disk eg:"SAMSUNG MZNLN128HAHQ-000H1"	STRING
+Drive Manufacturer 	Indicates manufacturer of the disk	STRING
+Drive Logical Name 	Indicates Disk Logical Nameeg- PHYSICALDRIVE0,PHYSICALDRIVE1	STRING
+Drive Name Of Partition	Indicates Disk Name of partition, for ex. "C", "D"	STRING
+Drive Size in Bytes	Indicates Disk Size in bytes (Total disk size)	LONG
+Drive Interface Type	Indicates Disk Interface type (eg - IDE ,IDE, SATA, SCSI, SAS)	STRING
+Networks	Network Vendor 	NA eg."Microsoft"	STRING
+Network Product 	NA - eg: "WAN Miniport (L2TP)","WAN Miniport (PPTP)"	STRING
+Network Dhcp Enabled 	Indicates whether DCHP is enabled or not	BOOLEAN
+Network IPEnabled 	Indicates if IPEnabled is enabled for that endpoint or not	BOOLEAN
+Network Dhcp Servers	Provides DHCP ip address which is in network 	IPv4
+Network DnsServers  	Provides an array of DNS server ip address	IPv4
+Network Default IP Gateways 	Indicates an array  gateway ip address (routers ip address)	IPv4
+Network Subnet Masks 	Indicates to identify an array network and  host device operating on that network	IPv4
+Hardware	Chassis Type	
+
+Specifies the type of chassis for the device.
+
+Note: For chassis types below, some additional information when value is -
+
+Other: This code is used when the chassis type does not fit into any of the predefined categories provided by the SMBIOS specification. It indicates that the chassis type is known but does not match any of the standard types listed.
+Unknown: This code is used when the chassis type is not known. It indicates that the system is unable to determine the type of chassis.
+	STRING
+Subresource Type	Indicates whether the device is physical or virtual.	STRING
+TPM Enabled	
+
+Determines if the Trusted Platform Module (TPM) is enabled on Windows devices.
+
+Note:
+
+Sometimes, no information is available related to TPM chip, in this case the device will neither fall under enabled = true or enabled = false.
+Applies to windows endpoints only.
+	BOOLEAN
+
+ 
+
+Device Groups Device Groups Management
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Device Groups Management
+Devices Overview
+The information on the Device list provides a high-level view of all sites or filtered sites and includes easy-to-view details for applicable endpoint...
+Device Details Screen
+Custom Fields
+Custom Fields are additional data points you can create in the ConnectWise Asio® platform to record information not collected by the agent or unavaila...
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

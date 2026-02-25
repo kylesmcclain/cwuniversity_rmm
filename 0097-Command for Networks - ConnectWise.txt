@@ -1,0 +1,65 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Command for Networks
+Command for Networks
+Last updated
+Dec 8, 2022
+Table of contents
+Overview
+Overview
+
+ConnectWise has integrated the Auvik network management product into the Asio™ Platform (ITSupport Portal) to provide market-leading network monitoring functionality along with ConnectWise NOC support.
+
+As the number of computers on a client site grows, the network used to connect them can become very complex. When a network grows to the point of having more than a couple of switches or routers, the infrastructure and performance of the network becomes very important to the overall performance of end clients' computer platforms. With ConnectWise's support for Auvik, you can rest assured that your networks are functioning smoothly and that any issues are identified early.
+
+With the ConnectWise-Auvik integration, you are able to:
+
+Consolidate Auvik network management data and alerts with all other ConnectWise RMM data and alerts in the Asio Platform (ITSupport Portal).
+Consolidate your Auvik and ConnectWise billing in a single invoice.
+Receive NOC support for networks. All Auvik alerts will be routed through our NOC support team, who will then either attempt to resolve the issue on your behalf and alert you (depending on the type of alert), or will generate a ticket assigned to you. For details, see our full list of Auvik Predefined Alerts and NOC Support.
+
+For more information about Auvik functionality and benefits, visit the Auvik website or Auvik knowledge base.
+
+Topics
+Onboarding and Configuring the ConnectWise–Auvik Integration
+Auvik Pre-Defined Alerts and NOC Support
+Command for Networks Service Levels
+Auvik Device Management
+Auvik TrafficInsights
+Auvik TrafficInsights FAQs
+Contact Management Onboarding and Configuring the ConnectWise–Auvik Integration
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Onboarding and Configuring the ConnectWise–Auvik Integration
+Auvik Pre-Defined Alerts and NOC Support
+Command for Networks Service Levels
+Auvik Device Management
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

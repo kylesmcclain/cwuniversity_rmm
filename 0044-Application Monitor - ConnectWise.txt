@@ -1,0 +1,199 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Alerts   Custom Monitors   Application Monitor
+Application Monitor
+Last updated
+Oct 23, 2025
+Table of contents
+Overview
+How to create an Application Monitor from Alert Management
+How to create an Application Monitor from Device Details for endpoint
+Use Case: Ensuring Critical Application Presence During Endpoint Onboarding
+Objective
+Steps to Implement Application Monitor
+Benefits for Partners
+List of Monitor Variables
+Overview
+
+Application Monitors allow you to trigger an alert and create a ticket for applications that you want to be monitored on the endpoint. Application Monitor can be applied on Windows, Linux, and macOS endpoints.  
+
+How to create an Application Monitor from Alert Management
+
+Navigate to Endpoints > Alerts > Monitors.
+
+Click Create Monitor.
+
+Provide a Name for the new monitor. Optionally, you can provide a Description of your new monitor.
+
+Select the Type as Application from the drop-down.
+
+Select the Family and Severity.
+
+To enable the Mapper functionality, you need to turn on the toggle. To learn more about the Mapper functionality review this documentation.
+
+Under the Condition section:
+Application Status: This allows you to select the application status that will trigger an alert.
+Installed: Selecting this means that if the application is installed on the resource, it will trigger an alert.
+Not Installed: Selecting this means that if the application is not installed on the resource, it will trigger an alert.
+Application Name State: This allows you to define if the monitor is looking for an exact name or if the name contains the entered name.
+Equals: This will check for the actual name of the application to be verified.
+Contains: This will check if the application name contains the entered name.
+Application Name: Enter the application name to be monitored.  
+You can also select a custom Automation Task to be executed when the condition is met on the endpoint
+
+Note: The system will display only specific automation tasks that do not require parameters. Please refer to these out-of-the-box (OOTB) tasks that do require parameters. All custom scripts created will be available for selection.
+
+Under the Ticket Resolution section you can define if the ticket should be updated as Resolved after the monitor either finds or does not find the application on the endpoint using the following criteria:
+Application Status: This allows you to select the application status that resolves the ticket.
+Installed: Select to resolve the ticket if the application is installed on the resource.
+Not Installed: Selecting this means that if the application is installed on the resource, it will resolve the ticket.
+Application Name State: This allows you to define if the monitor is looking for an exact name or if the name contains the entered name.
+Equals: This will check for the actual name of the application to be verified.
+Contains: This will check if the application name contains the entered name.
+Application Name: Enter the application name to be monitored.  
+
+In the Resources section, you can choose the target endpoints where the alerts should be triggered. You can select specific machines, sites, or a dynamic or a static group.
+
+Click Save to create and apply the monitor to the targets.
+
+How to create an Application Monitor from Device Details for endpoint
+
+Navigate to Endpoints > Devices.
+
+Select the Computer you want to create the new Monitor for. The device details page will open.
+
+Click Applications.
+
+Under Actions for the Application, you want to create the monitor for, select the Actions icon.
+
+Note: The action button will be visible and enabled only if the user has permission to create a monitor.
+
+The Monitor Name and application name should be pre-selected on the monitor creation page.
+
+Note: The endpoint from which the application was selected will be selected automatically.
+
+Select the Family and Severity. Optionally provide a Description.
+
+To enable the Mapper functionality, you need to turn on the toggle. To learn more about the Mapper functionality review this documentation.
+
+Under the Condition section:
+Application Status: This allows you to select the application status that will trigger an alert.
+Installed: Selecting this means that if the application is installed on the resource, it will trigger an alert.
+Not Installed: Selecting this means that if the application is installed on the resource, it will trigger an alert.
+Application Name State: This allows you to define if the monitor is looking for an exact name or if the name contains the entered name.
+Equals: This will check for the actual name of the application to be verified.
+Contains: This will check if the application name contains the entered name.
+Application Name: Enter the application name to be monitored.  
+You can also select a custom Automation Task to be executed when the condition is met on the endpoint
+
+Note: System will reflect only selective Automation tasks that do not need parameters. Refer these OOTB tasks which needs parameters. All Custom Scripts created will be available for selection.
+
+Under the Ticket Resolution section you can define if the ticket should be updated as Resolved once the monitor either finds or does not find the application on the endpoint using the following criteria:
+Application Status: This allows you to select the application status that will resolve the ticket.
+Installed: Selecting this means that if the application is installed on the resource, it will resolve the ticket.
+Not Installed: Selecting this means that if the application is installed on the resource, it will resolve the ticket.
+Application Name State: This allows you to define if the monitor is looking for an exact name or if the name contains the entered name.
+Equals: This will check for the actual name of the application to be verified.
+Contains: This will check if the application name contains the entered name.
+Application Name: Enter the application name to be monitored.  
+
+Under the Resources section, you can select the target endpoints on which the alerts should be triggered. You can select specific machines, Sites, or a Dynamic or a Static group.
+
+Click Save to create and apply the monitor to the targets.
+
+Note: Monitors will be triggered based on the configuration set/defined
+
+Use Case: Ensuring Critical Application Presence During Endpoint Onboarding
+Objective
+
+To verify whether a required application (e.g., Microsoft Teams, antivirus software, or a custom business application) is installed on newly onboarded endpoints. If not present, automatically trigger an installation workflow.
+
+Steps to Implement Application Monitor
+
+Create an Application Monitor
+
+Navigate to Monitors > Create Monitor > Application Type.
+
+Specify the application name (e.g., Microsoft Teams) and version (optional).
+
+Choose the scope: All endpoints or specific device groups.
+
+Set Alert Conditions
+
+Configure the monitor to alert when the application is not found.
+
+Choose alert frequency: Continuous or Once per device.
+
+Link to Automation
+
+Create an automation that installs the missing application.
+
+Link this automation to the alert so that when the application is missing, the installation is triggered automatically.
+
+Benefits for Partners
+
+Ensures consistent software deployment across all endpoints.
+
+Reduces manual effort during onboarding.
+
+Enhances compliance and readiness for end-users.
+
+Enables proactive remediation without technician intervention.
+
+List of Monitor Variables
+
+Here is a list of variables that you can use as per your requirement when creating your own customized ticket template:
+
+Monitor Type	Variable Name	Supported OS Type	Sample Data/Values	Variable Definition
+Generic
+ 	ObservedDate	
+
+Windows, MAC, Linux
+
+	
+
+"2020-09-02T15:35:42.969926103Z"
+
+	Time stamp when the issue was observed
+ 	MonitorDesc	Windows, MAC, Linux	Add local palmtech account and add it to the local administrators group	Description added on the portal while creating a monitor
+ 	MonitorName	Windows, MAC, Linux	Local PalmTech Account with Local Admin	Name of the monitor
+ 	MonitorSummary	Windows, MAC, Linux	(Run PowerShell script every 1 minute(s) AND Run PowerShell script every 1 minute(s))	Summary information for the monitor
+Application
+ 	applicationStatus	Windows, MAC, Linux	"installed"	Status of the application
+ 	name	Windows, MAC, Linux	"AVG Antivirus"	Application name that was been monitored
+Custom Monitors Asset Monitor
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Service Monitor
+Process Monitor
+Event Monitor
+CPU Monitor
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

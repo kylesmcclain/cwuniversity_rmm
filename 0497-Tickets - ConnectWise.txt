@@ -1,0 +1,90 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Tickets
+Tickets
+Last updated
+Jul 3, 2025
+Overview
+
+When our monitoring encounters an issue on a Desktop or Server, it generates an Alert message. Ticketing is how Alert information is communicated between you and the Network Operations Center (NOC). Depending on your service plan, ticketing is also how you assign work to the NOC for troubleshooting and issue resolution. 
+
+Service Plans Determine Ticketing
+
+Tickets are actionable items designed to facilitate the flow of information and to track the status of issues and service requests. Your service plan determines how tickets are created and how they are handled in the event of an Alert.
+
+Service Plan	Service Details
+Essential Servers	When an alert is generated, the NOC first verifies the Alert is valid. The NOC then creates a ticket and notifies the appropriate personnel in your Escalation Management Template. From here, the ticket is marked as NOC Completed if the monitoring agent determines the Alert issue has been resolved. Otherwise, you must manually close the ticket.
+Elite Servers	
+
+Elite Servers provides support for Server issues, whether agent-generated Alerts or issues raised by your team through the ticketing system. Additional service benefits include the expertise of the NOC Critical Notification, Remediation, and Troubleshooting teams for service requests.
+
+
+Desktops	Desktops offers back-end support for Desktop maintenance, including patch management, endpoint protection, spyware, and product support.
+Help Desk Service	Desktop management is handled by ConnectWise's Help Desk Service. Your clients can call Help Desk Service support directly, and the Help Desk Service makes a best effort to resolve client Desktop issues.
+Accessing Tickets
+
+To access the ticketing tool in the Asio™ platform, navigate to Service Delivery > Tickets (Legacy) > Tickets Home. To include the NOC Technician's name on tickets, select that checkbox from Admin > My Company.
+
+Consult the other documents in this section to learn more about ticket lifecycles and how to create, edit, and close tickets.
+
+Note: We have eliminated the creation of multiple tickets for the same issue. If an issue persists after a ticket has been created, the existing ticket is updated.
+
+Documentation
+
+Click on the title of an article linked below and learn more about RMM ticketing.
+
+The All articles tab lists each article published within this guide. The Featured articles tab organizes those articles into the following categories: most popular, highest rated, recently updated, and recently added. 
+
+All articles
+Featured articles
+Best Practices for Going Green
+Are you looking to impress a client with a solid green dashboard? Regardless of your reasons for wanting to go green, we will help you get there. But first, we recommend you go green the correct way.
+Service Plans and Ticket Lifecycles
+The lifecycle of a ticket depends on the subscribed service plan of the site generating an alert. Service plans and their respective ticket lifecycles include Essential Servers Ticket Lifecycle, Elite Servers Ticket Lifecycle, and Desktops Ticket Lifecycle.
+Create a Ticket
+To create a new ticket, click the Tickets tab in the Asio™ Platform (ITSupport Portal) and select New Ticket from the top of the navigation bar on the left to open the New Ticket page.
+Edit a Ticket
+To edit a ticket, browse to the ticket queue on the left navigation bar and select an appropriate container.
+Work Status Update
+A work status update is exactly what it implies: an update to a ticket's status.
+Close a Ticket
+An alternate method to close tickets is to select multiple tickets, right-click, and choose Work on Multiple Tickets. A new window opens containing only the tickets selected.
+Quick-Close a Ticket
+Quick-closing a ticket allows you to immediately close out a ticket without making updates or filling out the information in the Work Status Update ticket. When quick-closing a ticket, a blank Work Status Update ticket is created, which can be updated by you later.
+Ticket Clean-Up
+The Ticket Clean-Up tool helps you close bulk tickets. Filters can be applied to close tickets for a particular Site or Device.
+Ticketing Reporting
+Several reporting resources in the Tickets > Report help monitor and manage ticket and alert data, including Ticket List, Alert List, Ticket closed from inactivity > 30 days.
+Ticket Queue
+Tickets are stored in queues. Queues are grouped together into different views.
+Tech Advantage Sample Project: Microsoft Exchange Setup Best Practices for Going Green
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Best Practices for Going Green
+Are you looking to impress a client with a solid green dashboard? Regardless of your reasons for wanting to go green, we will help you get there. But ...
+Service Plans and Ticket Lifecycles
+The lifecycle of a ticket depends on the subscribed service plan of the site generating an alert. Service plans and their respective ticket lifecycles...
+Create a Ticket
+To create a new ticket, click the Tickets tab in the Asio™ Platform (ITSupport Portal) and select New Ticket from the top of the navigation bar on the...
+Edit a Ticket
+To edit a ticket, browse to the ticket queue on the left navigation bar and select an appropriate container.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

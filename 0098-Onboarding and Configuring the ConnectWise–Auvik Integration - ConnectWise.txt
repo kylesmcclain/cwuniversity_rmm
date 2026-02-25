@@ -1,0 +1,188 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Command for Networks   Onboarding and Configuring the ConnectWise–Auvik Integration
+Onboarding and Configuring the ConnectWise–Auvik Integration
+Last updated
+Mar 24, 2025
+Table of contents
+Overview
+Prerequisites
+Perform the Command for Networks Integration
+1. Select Your Integration Method
+2. Perform the Integration
+A. Generate and Copy an API Key from the Auvik portal
+B. Copy Your Auvik API Key into the ITSupport Portal and Authenticate Your Auvik Account
+C. Set Up the Integration
+D. Add Passwords and Network Information in the Asio Platform (ITSupport Portal)
+Important Network Information to Add
+Billable Devices
+Integration is Complete
+3. Map Sites in Your Auvik Portal
+Prerequisites
+How to Map Sites in Your Auvik Portal
+The ConnectWise Notification Channel in the Auvik Portal
+Steps to Manually Configure the Notification Channel
+Support
+Overview
+
+This document describes how to set up a Command for Networks integration to include network management data in the Asio™ Platform (ITSupport Portal) and begin receiving ConnectWise NOC support for your clients' networks.
+
+Prerequisites
+
+Use the instructions below to configure a Command for Networks integration if you already have an Auvik account and have not previously enabled an Auvik integration in the Asio™ Platform (ITSupport Portal).
+
+Important: If you previously enabled Command for Networks in the Asio™ Platform (ITSupport Portal) but did not complete integration between your Auvik and ITSupport portals, you need to follow a separate process to perform the integration. Refer to the Command for Networks Legacy Integration page for instructions.
+
+To determine if Command for Networks has already been enabled in your Asio™ Platform (ITSupport Portal), navigate to Settings > Account Administration > Products & Services > Networks. If you see the Integrator TokenID field, Auvik has been enabled.
+
+Perform the Command for Networks Integration
+1. Select Your Integration Method
+Log on to the Asio™ Platform (ITSupport Portal) and navigate to Settings > Account Administration > Products & Services > Networks.
+Read and agree to the Addendum of the Master License Agreement.
+Select the I have an existing Auvik account I want to integrate option.
+Click Next.
+2. Perform the Integration
+A. Generate and Copy an API Key from the Auvik portal
+Click Manage Users in the left navigation pane of the Auvik portal.
+Select the user in the Users table.
+Click the API Key icon and select Generate from the drop-down menu.
+
+Copy the API key.
+
+ 
+B. Copy Your Auvik API Key into the ITSupport Portal and Authenticate Your Auvik Account
+Paste the key into the Auvik API Token Key field on the Asio™ Platfom (ITSupport Portal).
+Enter a URL prefix and the email address for an Auvik account admin user in the URL Prefix and Email Address fields, then click Next.
+The progress wheel appears while the system validates your Auvik account details. When validation completes, a Your Auvik account has been authenticated message appears on the next screen.
+C. Set Up the Integration
+ConnectWise Integration populates by default in the Integration Name field. Enter a new name if you prefer a different name for the integration.
+Click Set Up Integration. The progress wheel appears while the system processes integration setup.
+A Success message appears when the integration setup completes. The Site List table populates with sites once mapped in your Auvik portal in the next section.
+D. Add Passwords and Network Information in the Asio Platform (ITSupport Portal)
+
+At this point, be sure you have added required passwords and network information in the Asio Platform as well as any necessary credentials for corresponding sites you map in the Auvik portal.
+
+Important Network Information to Add
+
+To help the NOC perform proactive troubleshooting, you should provide as much information as possible in the following Network Information fields:
+
+Firewall: Located at Network Info > Security > Firewall.
+Router information: Located at Network Info > Network > Router information.
+Switches: Located at Network Info > Network > Switches.
+
+Note: Make sure to add read/write credentials for network infrastructure devices where applicable. The NOC's ability to troubleshoot these devices is severely limited without the necessary credentials.
+
+Billable Devices
+
+Billable devices are:
+
+Routers
+Switches, including Layer 3, VoIP switches, and switch stacks
+Firewalls
+Controllers
+Load balancers
+Packet processors
+
+Note: Each switch identified in a stack counts as a separate billable device, a feature that affects billing. More information about stackable switch support is available on Auvik's Manage Discovery Settings. See Auvik Device Management in our Doc Center for more information on managing and unmanaging devices.
+
+Integration is Complete
+
+Integration between the ConnectWise and Auvik portals is now complete. The next step is to go to your Auvik portal and map client sites. Refer to the instructions for Mapping Client Sites in the section below.
+
+Important Note: As a best practice, ensure the NOC user account nms@connectwise.com has access to each of the clients/sites.
+
+The next step is to go to your Auvik portal and map client sites. Refer to the instructions for Mapping Client Sites in the section below.
+
+3. Map Sites in Your Auvik Portal
+Prerequisites
+
+Before you begin this step, you should have already completed the following setup tasks:
+
+Users new to Auvik 
+Complete the Auvik signup and integration process in the Asio™ Platform (ITSupport Portal).
+Deploy the Auvik collector on your client sites.
+Note: Download the Auvik's Deployment Guide for help deploying the Auvik collector on your client sites.
+Existing Auvik users 
+Complete the Auvik integration process in the Asio™ Platform (ITSupport Portal).
+All users
+Add required passwords and network information in the Asio™ Platform ITSupport Portal as well as any necessary credentials for corresponding sites in the Auvik portal.
+How to Map Sites in Your Auvik Portal
+In your Auvik portal, click Integrations in the left navigation pane.
+In the Integration window, click ConnectWise Integration (or the custom name you assigned to your ConnectWise Integration). All synced ConnectWise sites display. Note that sites may take up to 20 minutes to appear hereafter the integration completes.
+
+Map the ConnectWise sites to the corresponding Auvik Client one site at a time following this procedure:
+Select a site.
+Click Edit.
+From the drop-down list, select the Auvik client that corresponds to the ConnectWise site name.
+Click SAVE.
+
+
+Update the site mapping on this page at any time by selecting a site and clicking Edit.
+
+Important: Make sure all of your Auvik sites are mapped to the ConnectWise portal. If a site is not mapped, alerts for that site bypass the NOC and are sent directly to you.
+
+After all sites are mapped in the Auvik portal, they begin to appear in Settings > Account Administration > Products & Services > Networks in the Asio™ Platform (ITSupport Portal).
+
+The ConnectWise Notification Channel in the Auvik Portal
+
+A ConnectWise notification channel is created in your Auvik portal during the automated integration process. The name of this notification channel is identical to the Integration Name provided during integration setup. This notification channel allows alerts to sync with the ConnectWise system.
+
+By default, all available alerts in this channel are selected so ConnectWise can generate alerts and tickets for all available conditions triggered in the Auvik portal. The ConnectWise NOC can then review all Auvik alerts and either attempt to resolve the issue on your behalf and alert you (depending on the type of alert) or generate a ticket assigned to you. Any alerts that are not selected here are not generated or supported by ConnectWise if that condition is ever triggered.
+
+For more details on NOC-supported Auvik alerts, see Auvik Predefined Alerts and NOC Support in our Doc Center.
+
+Steps to Manually Configure the Notification Channel
+
+In isolated instances, the Notification Channel may need to be manually configured if not automatically created during the integration process. Follow the steps below to create the Notification Channel if necessary:
+
+Note: Be sure to perform Notification Channel setup at the multi-client level to ensure notifications are enabled for all client accounts.
+
+In the Auvik portal, go to Manage Alerts > Notification Channels > Add Notification Channel.
+
+Enter a channel Name and select ConnectWise from the Contact Method options, then click Save to finish.
+
+On the Manage Alerts page, select the new notification channel, click Associate with Alerts, select all available alerts, and click Save. ConnectWise can now generate alerts and tickets for all available conditions triggered in the Auvik portal. The ConnectWise NOC reviews all Auvik alerts and either attempt to resolve the issue on your behalf and alert you (depending on the type of alert) or generates a ticket assigned to you. Any alerts not selected here are not generated or supported by ConnectWise if that condition is ever triggered.
+
+For more details on NOC-supported Auvik alerts, see Auvik Predefined Alerts and NOC Support in the Doc Center.
+
+
+Support
+
+For help configuring your ConnectWise – Auvik integration, start a support chat with the NOC through the Asio™ Platform (ITSupport Portal) Support option. Click Support (top-right corner of the ITSupport Portal) and select Auvik Support from the drop-down menu.
+
+Command for Networks Auvik Pre-Defined Alerts and NOC Support
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Auvik Pre-Defined Alerts and NOC Support
+Command for Networks Service Levels
+Auvik Device Management
+Auvik TrafficInsights
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

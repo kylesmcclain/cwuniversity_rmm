@@ -1,0 +1,342 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Policies and Packages   Evolve Recommended - Best Practices for Policies and Packages   Evolve Recommended - Communicator Policy
+ Expand/collapse global location
+Evolve Recommended - Communicator Policy
+Last updated
+Oct 28, 2025
+Table of contents
+Overview
+Policy Details
+Policy Settings
+Overview
+
+This article covers the recommended settings to employ for your Communicator Policy. These best practice settings for different RMM configurations are based on the feedback and analysis of policies used by partners.
+
+Policy Details
+Policy Usage	Communicator policies allow the partner to define the list of options available on the system tray menu for endpoints.
+Policy Type	Communicator
+Policy Name	Evolve Recommended - Communicator Policy
+Policy Applies To	
+
+These settings will be applied to the following types of agents:
+
+RMM Enabled Windows Desktop
+
+RMM Enabled MAC Desktop
+
+RMM Enabled Windows Server
+
+Policy Settings
+Section	Field Name	Value
+
+
+Communicator Enabled/Disabled
+
+	
+
+ 
+
+	
+
+Yes
+
+
+
+
+Default Menu
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+	
+
+HelpDesk Chat
+
+	
+
+No
+
+
+
+
+Create Ticket
+
+	
+
+Yes
+
+
+
+
+System information
+
+	
+
+Yes
+
+
+
+
+Send ticket to
+
+	
+
+Partner
+
+
+
+
+Add a ticket Prefix
+
+	
+
+No
+
+
+
+
+System Information
+
+	
+
+Yes
+
+
+
+
+Contact Details
+
+	
+
+No
+
+
+
+
+Windows Maintenance Tasks
+
+	
+
+Yes
+
+
+
+
+Delete Temporary Files
+
+	
+
+Yes
+
+
+
+
+Delete Temporary Internet Files
+
+	
+
+Yes
+
+
+
+
+Flush DNS cache
+
+	
+
+No
+
+
+
+
+Update Group Policy
+
+	
+
+No
+
+
+
+
+Run Check Disk
+
+	
+
+No
+
+
+
+
+MAC Maintenance Tasks
+
+	
+
+No
+
+
+
+
+Branding
+
+ 
+
+ 
+
+	
+
+Mouse Over Description
+
+	
+
+Default
+
+
+
+
+Windows Taskbar Icon Setting
+
+	
+
+Default
+
+
+
+
+MAC Taskbar Icon Setting
+
+	
+
+Default
+
+
+
+
+Custom Menu
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+	
+
+Custom URL 1
+
+	
+
+No
+
+
+
+
+Custom URL 2
+
+	
+
+No
+
+
+
+
+Custom URL 3
+
+	
+
+No
+
+
+
+
+Parent Custom Menu 1
+
+	
+
+No
+
+
+
+
+Parent Custom Menu 2
+
+	
+
+No
+
+
+
+
+Custom Message Menu
+
+	
+
+No
+
+
+
+
+Custom Scripts
+
+	
+
+Scripts
+
+	
+
+No
+
+Evolve Recommended - Best Practices for Policies and Packages Evolve Recommended - Network Monitoring Configurations
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Evolve Recommended - RMM Site Configuration Policy
+Evolve Recommended - Network Monitoring Configurations
+Evolve Recommended - OS Patching Desktop Policy
+Evolve Recommended - OS Patching Server Policy
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

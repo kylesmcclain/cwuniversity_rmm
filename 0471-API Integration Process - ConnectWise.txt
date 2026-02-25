@@ -1,0 +1,97 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   RMM Tools   APIs   Public Ticketing API   API Integration Process
+API Integration Process
+Last updated
+Jul 7, 2025
+Table of contents
+Overview
+Integration Illustrations
+Phase 2: Integration Testing
+Phase 4: Integration Go-Live
+Overview
+
+Below is an overview of the process for integrating with ConnectWise PSA's two-way ticketing system using the RMM public ticketing API.
+
+Note: Professional Services Automation (PSA) references also apply to MSPs who synchronize their own ticketing system with ConnectWise.
+
+ 
+
+Phase	Driven by	Tasks
+1. PSA Qualification and Configuration	ConnectWise and PSA	
+ConnectWise and PSA align expectations of the following:
+Business objectives
+Integration process (this document)
+API specifications
+User Acceptance Test (proactive review only, executed in Phase 3)
+PSA configures its portal with RMM based on public ticketing API specifications.
+
+
+
+2. Integration Testing
+
+(See Phase 2 illustration below)
+
+	PSA	
+PSA uses RRM's test bench to verify integration.
+Continuum Engineering provides development support for the testing.
+
+3. PSA Authorization	PSA	
+PSA demonstrates integration by successfully completing the User Acceptance Test.
+RMM approves the integration.
+
+
+
+4. Integration Go-Live
+
+(See Phase 4 illustration below)
+
+	PSA	
+PSA enables MSPs to configure ConnectWise as an RMM vendor and provides any onboarding documentation and support.
+
+ConnectWise enables MSPs to configure PSA vendor and updates documentation to reflect PSA as authorized vendor.
+
+MSPs configure PSA and ConnectWise in respective portals and successfully run ticketing workflow.
+
+5. Support	PSA	
+Partners reach out to PSA when tickets do not flow.
+ConnectWise's NOC provides support to PSA.
+
+6. Ongoing Upgrades	ConnectWise	
+
+ConnectWise continues to improve API and provide updated information to partners via monthly product release notices.
+
+Integration Illustrations
+Phase 2: Integration Testing
+
+ 
+
+Phase 4: Integration Go-Live
+
+API Exceptions API Operations
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Getting Started with the Public Ticketing API
+API Operations
+API Exceptions
+User Acceptance Test
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

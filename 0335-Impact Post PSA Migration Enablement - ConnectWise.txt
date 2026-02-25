@@ -1,0 +1,223 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   PSA Integration   ConnectWise PSA (Manage) Integration   Impact Post PSA Migration Enablement
+Impact Post PSA Migration Enablement
+Last updated
+Nov 20, 2025
+Table of contents
+Overview
+Post PSA Migration Enablement Details
+Overview
+
+This document provides information about the impact related to the PSA migration enablement from the legacy RMM-PSA, introducing automation and simplifying integration between ConnectWise Asio® and ConnectWise PSA.
+
+Post PSA Migration Enablement Details
+Area	What you need to know	What you need to do	Additional Notes
+Authorization	
+
+As part of your transition from the legacy RMM-PSA sync to the new PSA Migration, an important update is the automatic creation of an API Member in ConnectWise PSA.
+
+Previously, you manually created and configured an API Member to enable RMM-PSA integration.
+
+The system will now create a new API Member in PSA specifically for syncing Tickets and Assets between Asio and PSA.
+
+	
+
+No manual setup is required for this new API Member—it will be created automatically during onboarding.
+
+This API Member is essential for maintaining sync between Asio and PSA.
+
+Important:
+
+Do not delete or modify the API member created because of the PSA Migration.
+Removing it will break the sync between Asio and PSA, affecting the flow of ticket and asset data.
+	
+
+If you have existing Workflows in PSA that reference your previously created API Member, you’ll need to update those workflows to include the newly created API Member.
+
+This ensures that your workflows continue to function correctly with the updated integration.
+
+Member ID: CWRMM Sync
+
+Member Name: CWRMM-PSA Integration
+
+
+Company and Site Mapping	
+
+After the PSA Migration is enabled and you’ve successfully migrated your Company, Site, and Contact data, review the following details about company and site mapping:
+
+The legacy integration menu and site mapping options will no longer be visible.
+Your existing mappings between RMM and PSA Companies/Sites are already available as a part of the PSA Migration. You do not need to re-map them.
+A new Company or Site created in Asio or PSA will be automatically mapped—no manual action is required.
+Any currently unmapped Company or Site in Asio or PSA will also be auto-mapped through PSA Migration.
+	
+
+The allowed mapping is a one-to-one correspondence between Asio Companies and PSA Companies, and vice versa.
+
+Asio Company
+
+	
+
+Asio Site
+
+	
+
+PSA Company
+
+	
+
+PSA Site
+
+
+
+
+Alpha Company 1
+
+	
+
+Beta
+
+	
+
+Omega Company 1
+
+	
+
+Theta
+
+
+Alpha Company 2	
+
+Gamma
+
+	
+
+Omega Company 2
+
+	
+
+Lambda
+
+
+Alpha Company 3	
+
+Delta
+
+	
+
+Omega Company 3
+
+	
+
+Zeta
+
+Important: If you previously had a single Asio Company mapped to multiple PSA Companies, or a single PSA Company mapped to multiple Asio Companies, these multi-mapping configurations are not supported in the PSA Migration.
+
+	 
+Policy	
+
+Once PSA Migration is enabled and completed, you will no longer see the Contact Sync and Billing Sync Options within the Policy settings.
+
+Contact Sync will be automatically enabled as part of the PSA Migration process.
+
+You do not need to manually configure Contact Sync after migration.
+
+The removal of these options from Policy reflects the shift to a more streamlined and centralized sync experience as a part of PSA Migration.
+
+This change helps reduce manual configuration and ensures that contact data is consistently synced as part of the new onboarding flow.
+
+	
+No updates needed
+	 
+Ticket and Asset Sync	
+
+After PSA Migration is enabled, no changes are required from your side. All existing Policy and Mapper configurations will remain intact.
+
+A new API Member will appear in the PSA Ticket audit logs for any ticket-related actions. This replaces the API Member you previously configured during the legacy PSA integration setup.
+
+The same applies to Asset Sync; you will see the new API Member reflected in the audit logs for Configuration Items in PSA.
+
+API member that you will be seeing in the audit logs is:
+
+Member ID: CWRMM Sync
+
+Member Name: CWRMM-PSA Integration
+
+	
+
+No updates are needed in your PSA Policy settings.
+
+These changes are purely at the audit level and do not affect functionality or sync behavior.
+
+	 
+Contact Sync	
+
+If you have already enabled Contact Sync in your PSA Policy, no action is required from your side. All previously synced contacts will remain unchanged.
+
+Contacts from companies or sites that were not previously selected for sync will now begin syncing into Asio automatically.
+
+Post PSA Migration enablement, two-way contact sync will be active:
+
+Contacts created in Asio will sync to PSA.
+
+Contacts created in PSA will sync to Asio.
+
+This enhancement ensures that contact data remains consistent across both platforms without requiring manual intervention.
+
+	
+No updates needed
+	 
+Ticket and Asset Sync Reporting	
+
+After PSA Migration is enabled, you will start seeing Ticket and Asset Sync failures directly on the Home dashboard. This dashboard widget provides visibility into sync issues and includes actionable options to help you manage them.
+
+A list of failed Ticket and Asset syncs, along with corresponding error codes, to help identify the issue.
+
+Two key actions available within the widget:
+
+Resync: Retries syncing the failed entities.
+
+
+
+Pause: Temporarily stops the sync between Asio and PSA.
+
+
+
+	
+No updates needed
+	
+
+What happens when you resume Sync:
+
+Once you select Resume, all previously queued entities that were not successfully synced will be automatically reattempted.
+
+ 
+
+ConnectWise PSA Ticket Error Code Knowledgebase PSA and RMM Integration Checklist
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ConnectWise PSA (Manage) Integration Setup Process
+Configure ConnectWise PSA Policies
+PSA Policies define how tickets, configuration items, Contacts, and Notifications sync from RMM to ConnectWise PSA or vice-versa.
+ConnectWise PSA - Policies Integration - FAQ
+ConnectWise PSA - Tech Efficiency Devices Pod
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

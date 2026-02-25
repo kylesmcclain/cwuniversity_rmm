@@ -1,0 +1,178 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   ConnectWise RMM Release Notes   ConnectWise RMM Update for October 2025
+ConnectWise RMM Update for October 2025
+Last updated
+Dec 26, 2025
+Table of contents
+Overview 
+What's new in ConnectWise RMM?
+October 23, 2025
+Device Groups, Policies, and Packages
+October 16, 2025
+RMM- PSA Integration
+Platform Alerting
+October 15, 2025
+OS Patching
+Improved Third-Party Patching
+Automation
+October 14, 2025
+Centralized Audit Trail
+October 7, 2025
+RMM- PSA Integration
+October 6, 2025
+Issues Addressed
+Overview 
+
+This page provides information on the latest enhancements and features for ConnectWise RMM.
+
+What's new in ConnectWise RMM?
+Release Dates:	Relevant Modules:
+
+October 23, 2025
+October 16, 2025
+October 15, 2025
+October 14, 2025
+October 7, 2025
+October 6, 2025
+	
+Device Groups, Policies, and Packages
+RMM-PSA Integration
+Platform Alerting
+OS Patching
+Third-Party Patching
+Automation
+Centralized Audit Trail
+October 23, 2025
+Device Groups, Policies, and Packages
+
+Audits for Device Groups
+
+We have added Audit Tracking for key actions on Device Groups to give you greater visibility and accountability across your environment. This can be accessed by navigating to Reports > Audit Trail.
+
+You will now be able to view audit logs for the following events for Device Groups actions:
+
+Newly created Device Groups
+
+Deleted Device Groups
+
+Note: This is a Limited Availability feature.
+
+Audits for Policies
+
+We have added Audit Tracking for key actions on Policies to give you greater visibility and accountability across your environment. This can be accessed by navigating to Reports > Audit Trail.
+
+You will now be able to view audit logs for the following events for Device Groups actions:
+
+Newly created Policies
+
+Updates on Policy
+
+Note: This is a Limited Availability feature.
+
+Package Assignment at Company Level
+
+We have introduced a new level for package assignments, which will reduce the extra step required from partners when creating a new site under a company. Now, users can apply packages at the company level, which will enable the automatic inheritance of packages to all sub-sites created. For more information, review the Packages Documentation.
+
+Note: Site-level package assignment override is also available.
+
+Assignments as a Sub Tab under Packages
+
+We have now introduced a new tab under Packages called Assignments. This tab allows users to view all assignment levels simultaneously in a single section. The Assignment tab allows users to view packages applied at the company level, with the option to view overrides at the site level.
+
+Sites will display the packages that have been applied or inherited from the company.
+Policy groups will allow policy assignments to existing or newly created groups.
+October 16, 2025
+RMM- PSA Integration
+
+We have introduced support for network devices in the PSA sync process. This enhancement ensures that network devices and their attributes are now included in the asset sync. This feature is available in PSA Policy for RMM Premium and Pro partners under the 'Configuration Item Sync Configurations' section. To learn more, review the Asset Sync documentation.
+
+Platform Alerting
+
+We have introduced the audit data population on the common Audit Trails UI for Early Access partners. This enhancement ensures that your actions performed via the Monitor and Suspension UI are now captured and logged, improving traceability.
+
+We have added additional intelligent alert information to the respective alert pages to improve context and usability. Each alert will now include a detailed description, impact analysis, root cause, and links to relevant external articles—enabling quicker understanding for respective conditions.
+
+October 15, 2025
+OS Patching
+
+The OS Patch Approvals experience has been upgraded with a refreshed interface built using the latest UI Components, making the layout cleaner and navigation more intuitive for everyone. Behind the scenes, we’ve optimized backend workflows to deliver much faster page load times.
+
+Approvals are now simpler and more flexible—actions are streamlined to give you greater control while cutting unnecessary steps. To prevent accidental bulk approvals or disapprovals, the patch list filter ensures you can only select one status—either Approved or Disapproved—at a time. These improvements help you complete tasks more efficiently, reduce the number of actions needed, and lower the risk of unintended mass updates to your patch approvals
+
+Improved Third-Party Patching
+
+We've enhanced our third-party patching to support over 7000 applications. These patching features are utilized by creating a new Improved Third-Party Patching Policy, adding it to a package, and then assigning it to sites. After this policy is created, you can customize which applications you want to patch and view reporting for third-party patching. 
+
+For more information, please review the Improved Third-Party Patching article.
+
+Important:
+
+This feature is only available for Windows 10 and Windows 11 endpoints at this time.
+Automation
+
+We have added Audit Tracking for key actions on Tasks and Scheduled Tasks to give you greater visibility and accountability across your environment. This can be accessed by navigating to Reports > Audit Trail.
+
+You will now be able to view audit logs for the following events for Tasks and Scheduled Task events:
+
+Create
+
+Modify
+
+Delete
+
+Note: This is a limited release.
+
+October 14, 2025
+Centralized Audit Trail
+
+Audits related to switching agents from Desktop to Server and vice versa are now available in Centralized Audit Trail reports.
+
+Note: This feature is EA only.
+
+October 7, 2025
+RMM- PSA Integration
+
+We have discontinued the legacy RMM-PSA Integration for both Autotask and ConnectWise PSA partners. With this release, all partners who had not yet opted for the PSA Policy have been transitioned to the policy-based configuration. To ensure continued synchronization of the RMM-PSA integration, please create and assign a PSA Policy to the appropriate sites.
+
+October 6, 2025
+Issues Addressed
+Known Issue	Description
+ISSUE-9171	Fixed an issue where editing a script and modifying role-based access was unintentionally deselecting previously selected roles.
+ISSUE-9149	Fixed an issue where using the Create Ticket function within the Script Editor was resulting in tickets not being created, causing the entire script to fail.
+ConnectWise RMM Update for September 2025 ConnectWise RMM Update for November 2025
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ConnectWise RMM Latest Release Notes
+ConnectWise RMM Update for January 2024
+ConnectWise RMM Update for February 2024
+ConnectWise RMM Update for March 2024
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

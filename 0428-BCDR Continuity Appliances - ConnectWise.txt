@@ -1,0 +1,129 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   RMM Reporting API   Reporting API REST Resources   BCDR Continuity Appliances
+BCDR Continuity Appliances
+Last updated
+Jul 8, 2025
+Table of contents
+Overview
+Endpoint and URI
+Method
+Request Body
+Response Body
+Parameter Descriptions for BCDR Continuity Appliances
+Source of Data in the Asio Platform
+Overview
+
+Retrieves a list of BCDR Continuity backup appliances provisioned at the given site.
+
+Endpoint and URI
+
+https://itsapi.itsupport247.net/repo...247/appliances
+
+Method
+
+POST
+
+Request Body
+
+{
+
+"Month":4,
+
+"SiteCode":"AGTSolutions",
+
+"Year":2015,
+
+}
+
+Response Body
+
+{
+
+"appliances": [
+
+{
+
+"error": null,
+
+"freeSpace": 5972925119201,
+
+"machineCount": 4,
+
+"MachineId": 9223372036854775807,
+
+"name": "Intel-AMT1",
+
+"provisionDate": "4/16/2015 4:15:53 PM",
+
+"totalOffsiteStorage": 4273492459,
+
+"totalSpace": 11899421641932
+
+},
+
+{
+
+...
+
+},
+
+{
+
+...
+
+}
+
+]
+
+"error": null
+
+}
+
+Parameter Descriptions for BCDR Continuity Appliances
+Parameter	Description
+"Month"	Requested month (numerical)
+"SiteCode"	Unique site code listed in Asio™ Platform (ITSupport Portal)
+"Year"	Requested year
+"freeSpace"	Machine free space (in bytes)
+"machineCount"	Number of machines
+"MachineId"	Unique machine ID in the ConnectWise database
+"name"	Machine name
+"provisionDate"	Machine provision date and time
+"totalOffsiteStorage"	Total off-site storage (in bytes)
+"totalSpace"	Total space (in bytes)
+Source of Data in the Asio Platform
+
+Reports > Asio > Executive Report > Recover Continuity Backup Data > Appliances
+
+Patch Summary by State Score Summary
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Agent Details
+Retrieves agent information for the authenticated partner and the specified site.
+Antivirus Summary
+Retrieves counts of machines having antivirus protection in the following states: Updated, Outdated, Not Installed, or Information Unavailable.
+Antivirus Version Summary
+Retrieves currently detected antivirus software and the definition version.
+BCDR Continuity Backup Summary
+Overall summary of the percentage of Recover Continuity backups that have succeeded or failed.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

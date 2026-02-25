@@ -1,0 +1,621 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Alerts   Suspensions
+Suspensions
+Last updated
+Jan 8, 2026
+Table of contents
+Overview
+User Access
+Manage Suspensions
+All Endpoint Suspensions
+Download a Visualization
+Company and Site Suspensions
+Endpoint Suspensions
+Column Descriptions
+View Options
+Add Rule
+Suspension Card/Quick View
+Archiving of Suspension Rules
+Intelligent Alerts Suspension Rules
+Creating Intelligent Alerts Suspension Rule from the Suspension Section
+Creating a Suspension rule from the Intelligent Alerts section
+Editing Intelligent Alerts Suspension Rules
+Deleting Intelligent Alerts Suspension Rule
+Duplicating Intelligent Alerts Suspension Rule
+Custom Monitor Suspension Rule
+Creating Custom Monitor Suspension Rule
+Editing Custom Monitor Suspension Rule
+Deleting Custom Monitor Suspension Rule
+Duplicating Custom Monitor Suspension Rule
+Default Automation Suspension Rules
+Creating Default Automation Suspension Rule
+Editing Default Automation Suspension Rule
+Deleting Default Automation Suspension Rule
+Duplicating Default Automation Suspension Rule
+Quick Suspend
+Navigation Path
+Creating Quick Suspension
+Managing Quick Suspend Rules
+Overview
+
+Intelligent Alerts monitoring of ConnectWise RMM® provides out-of-the-box monitoring conditions that trigger a ticket on the endpoints when specific issues are detected. However, based on scenarios, you may want to temporarily or indefinitely stop the system from generating alerts. The alert suspension feature is useful to accommodate the suspension of alerts during periods of maintenance or testing.
+
+User Access
+
+Refer to Application Roles for more information about adding suspension permissions to a custom application role. The following users in the system will have access to the Suspension screen, enabling them to take appropriate actions for creating, updating, or deleting suspension rules.
+
+Action	Super Admin	Manager	Technician	Office Staff	Sales	Client Site Manager	Client End User
+Create	
+
+Enabled by Default
+
+	
+
+Enabled by Default
+
+	
+
+Enabled by Default
+
+	
+
+Disabled by Default
+
+	
+
+NOT AVAILABLE
+
+	
+
+Disabled by Default
+
+	
+
+NOT AVAILABLE
+
+
+Update	
+
+Enabled by Default
+
+	
+
+Enabled by Default
+
+	
+
+Enabled by Default
+
+	
+
+Disabled by Default
+
+	
+
+NOT AVAILABLE
+
+	
+
+Disabled by Default
+
+	
+
+NOT AVAILABLE
+
+
+View	
+
+Enabled by Default
+
+	
+
+Enabled by Default
+
+	
+
+Enabled by Default
+
+	
+
+Disabled by Default
+
+	
+
+NOT AVAILABLE
+
+	
+
+Disabled by Default
+
+	
+
+NOT AVAILABLE
+
+
+Delete	
+
+Enabled by Default
+
+	
+
+Enabled by Default
+
+	
+
+Enabled by Default
+
+	
+
+Disabled by Default
+
+	
+
+NOT AVAILABLE
+
+	
+
+Disabled by Default
+
+	
+
+NOT AVAILABLE
+
+Manage Suspensions
+
+The Suspensions page provides centralized visibility and control over suspension rules across endpoints, companies, and sites. You can access this feature from multiple areas of the platform, each offering a different scope of visibility.
+
+Note: The displayed suspensions data is context-sensitive based on the navigation path. However, changes made in the Edit Suspension page apply across all applicable endpoints and devices.
+
+Scope
+
+	
+
+Path
+
+
+
+
+All endpoint suspensions
+
+	
+
+Endpoints > Alerts > Suspensions
+
+
+
+
+Company and site suspensions
+
+	
+
+Clients > Companies > [select a company] > Monitoring > Suspensions
+
+
+
+
+Endpoint suspensions
+
+	
+
+Endpoints > Devices > [select a device] > Monitoring > Suspensions
+
+All Endpoint Suspensions
+
+Note: You and your users will need at least view permission to view this page or the information it contains. Data will be visible according to the sites/endpoints accessible to each user.
+
+ Navigate to Endpoints > Alerts > Suspensions to access this view.
+
+This section provides a unified list of all suspensions created by the user. It serves as the central hub for managing alert suspension rules. To learn more, refer to the Descriptions sections below.
+
+Click the suspension rule name to edit, delete, or duplicate the rule.
+Changes made in Edit Suspension apply across all applicable endpoints and devices.
+
+Download a Visualization
+Navigate to Endpoints > Alerts > Suspensions.
+Click the Actions icon.
+
+Select your preferred file type from the drop-down.
+Company and Site Suspensions
+
+After the agent is installed for a device associated with an Asio company, you can navigate to the company detail page and manage the suspensions for all endpoints within the company.
+
+ Navigate to Clients > Companies > [select a company] > Monitoring > Suspensions to access this view.
+
+To manage at the site level, first select a company and then select the site. From the site detail page, click Monitoring > Suspensions.
+Click the suspension rule name to edit, delete, or duplicate the rule.
+Changes made in Edit Suspension apply across all applicable endpoints and devices.
+From this view, you can also manage Intelligent Alerts and Custom Monitors for the company level.
+
+Endpoint Suspensions
+
+After the agent is installed on a device, you can access a detailed view of suspensions specific to that endpoint. To learn more, refer to the Descriptions sections below.
+
+ Navigate to Endpoints > Devices > Device Detail > Monitoring > Suspensions to view this page.
+
+This page provides a highly targeted view of alerting suspensions for the selected endpoint. Technicians and users with access to Suspensions can:
+
+Review the suspensions assigned to the endpoint. 
+Edit, delete, or duplicate suspensions for the endpoint.
+
+Column Descriptions
+
+Column
+
+	
+
+Description
+
+
+
+
+Name
+
+	
+
+Refers to the name of the suspension rules created.
+
+
+
+
+Alerts
+
+	
+
+Refers to the monitoring conditions or family (group of conditions) selected to suspend the alert.
+
+
+
+
+Target Endpoints
+
+	
+
+These refer to the endpoints configured under the rule to which the suspension will be applied. 
+
+
+
+
+Schedule
+
+	
+
+This refers to the type of configuration defined (One-Time refers to the rule being active for the defined duration and expiring after the end time; recurring refers to repeating the same scheduled duration over a period of time).
+
+
+
+
+Status
+
+	
+
+Refers to the current status of the suspension rule (Active refers to an active rule. Expired refers to a suspension rule that is no longer active but was active in the past).
+
+
+
+
+Type
+
+	
+
+Refers to the type of Suspension rule, whether it is Intelligent Alerts, Custom Monitors, or Default Automation.
+
+View Options
+
+Option
+
+	
+
+Description
+
+
+
+
+Search
+
+	
+
+Search for the Suspension rules created in the system. It can also search for Active and Expired rules.
+
+
+
+
+Filter
+
+	
+
+Apply filters by alerts, name, schedule, or status.
+
+
+
+
+Columns
+
+	
+
+Show/hide columns based on preference.
+
+
+
+
+View
+
+	
+
+Adjust row height (Standard, Compact, Comfortable).
+
+
+
+
+Export
+
+	
+
+Download visible suspensions as CSV.
+
+Note: This feature enables you to export filtered data. Clear all filters if you need to export all suspension rules.
+
+
+
+
+Edit View
+
+	
+
+Customize layout and pod visibility.
+
+
+
+
+Export Charts
+
+	
+
+Click the Actions icon next to the visualization pods to export the chart as a JPEG or PNG file.
+
+Add Rule
+
+The Add Rule button allows you to create a new suspension rule in the system. Click Add to open a menu, from which you can select Intelligent Alerts, Custom Monitors, or Default Automation.
+
+Intelligent Alerts allow you to create suspension rules against the Predefined monitoring conditions.
+Custom Monitors allow you to create suspension rules against the Custom Monitors created in the system.
+Default automation allows you to create suspension for Intelligent Alert conditions where default automation is associated.
+Suspension Card/Quick View
+
+Selecting or highlighting any row for the suspension rule will display the Suspension Card/Quick information. Suspension Card/Quick view allows you to see the details of the suspension rules.
+
+The header includes the name of the suspension rule
+Detailed information added against the suspension rule
+Condition/Family included in the suspension rule
+Start Date/time of the suspension rule
+End Date/time of the suspension rule
+Reoccurrence displays if the rule is configured to be one-time or if multiple executions are defined
+Created by displays the user information who created the rule
+Last modified by displays the user information who edited/updated the rule 
+
+Important: Suspension rules can be viewed by users who have at least view permissions for Suspension. Super Admin users will be able to see suspension rules created for all sites, but for other users, the rules will be displayed based on the site access for the user.
+
+Archiving of Suspension Rules
+
+Suspension rules that have expired for more than 30 days will not be reflected in the listing screen. They will be available in a report only.
+
+Intelligent Alerts Suspension Rules
+Creating Intelligent Alerts Suspension Rule from the Suspension Section
+
+Intelligent Alerts monitoring allows you to create suspension rules so that the system will not generate ticket notifications, and in turn, you will also not get emails or calls for the issue. 
+
+Click on the Add Rule button and select Intelligent Alerts to open a window that allows you to create suspension rules.
+
+Name: Add the appropriate name for the suspension rule to be created
+Description: This section allows you to add information for other users to get more details on the suspension rule
+Targeted Resources: This section allows you to select the target endpoints on which the suspension rule will be effective or applied. You can select sites, endpoints, or Dynamic Groups while creating the suspension rules. Selecting the option of all future sites will apply the suspension to current and all future sites as well. Clicking Select Targets opens a new window where you can select your resources based on type.
+Schedule: This allows you to select the scheduled timeframe when the suspension should be effective. Select the Timezone first, select the start date/time, and the End date/time for the suspension rules. Start dates cannot be backdated values; they can be either current or future date/time
+Note: The end date/time can also be selected as Never, which means that the suspension rules will never expire
+Recurrence: This is an optional field and can be used only if recurring scheduled maintenance is needed for sites/endpoints or specific conditions are to be ignored at specific intervals. Recurrence can be set as days, weeks, or months.
+For recurrence-based suspension rules, the Duration defined in the recurrence window will be used for suspending the rules on target endpoints. 
+Suspended Alerts: This allows you to select the monitoring conditions that need to be suspended. You can either select specific monitoring conditions or family for suspensions. Conditions will be grouped by the family in the condition selector pop-up menu
+
+For selecting conditions that offer additional configuration, like Low Disk Space, VMware Datastore, etc.
+
+Click on the pencil icon.
+Update the values.
+Click OK.
+
+Alerts will not be generated for conditions where the values match the alert generation request.
+
+Suspension rules can be created only if the user has permission to create new rules. Users who do not have the create permission will not be allowed to create new suspension rules
+
+Creating a Suspension rule from the Intelligent Alerts section
+
+Users can also create suspension rules from the Intelligent Alerts section. This allows them to view additional details about the condition before deciding on creating suspension rules.
+
+Navigate to the Alert Management > Intelligent Alerts
+Select the monitoring conditions from the listing page and click on Suspension Rule.
+The system will navigate you to the suspension creation page with the conditions selected from the previous page.
+
+Editing Intelligent Alerts Suspension Rules
+
+Rules created by users can be edited by users who have update permissions assigned to them. 
+
+Note: If the suspension rule is created and assigned to multiple sites, then users who have permissions that are equal to or greater than the sites included in the suspension rules can edit the rules; otherwise, the user will see the rule as view only. 
+
+To edit an existing rule, a user can click on the Suspension rule created from the list of rules displayed on the Suspension landing page. The Last updated information for the suspension rule will be displayed to the user. Any changes will be processed as an update, and the suspension rule will be modified to process the alerts accordingly.
+
+Note: Any changes to suspension will be allowed at the current time, and a backdated start date/time will not be allowed.
+
+Deleting Intelligent Alerts Suspension Rule
+
+Suspension rules can be deleted from the system if they are no longer needed or relevant. You can delete suspension rules from the listing screen and from individual suspension rules by clicking on editing.
+
+To delete the suspension rule from the listing screen, you need to select the rule and click Delete.
+
+To delete an individual suspension rule, click on the suspension rule, which will take you to the edit page for the suspension rule. Click Delete.
+
+Duplicating Intelligent Alerts Suspension Rule
+
+Suspension rules can be duplicated in case you do not want to edit an existing rule defined in the system. To duplicate the suspension rule, click on the suspension rule and click Duplicate.
+
+Note: Duplicating suspension will be allowed for users who have Create permissions only. 
+
+Duplicating the suspension rule will retain the target resources and conditions selected for the suspension. You need to update the schedule information (Start date/time and End date/time) for the new suspension rule. Duplicating the suspension rule will also add a prefix of "copy of" to the existing suspension rule name, but it can be edited as needed.
+
+Custom Monitor Suspension Rule
+Creating Custom Monitor Suspension Rule
+
+A suspension rule against monitors needs to be created to prevent Custom Monitors from triggering tickets during a specific window. 
+
+Click on the Add Rule button and select Custom Monitors to open the window that allows you to create suspension rules.
+
+Name: Add the appropriate name for the suspension rule to be created.
+Description: This section allows you to add information for other users to get more details on the suspension rule.
+Target Resources: This allows you to select the target endpoint on which the suspension rule will be effective or applied. You can select sites, endpoints, or Dynamic Groups while creating the suspension rules. Selecting the option of all future sites will apply the suspension to all current and future sites as well.
+Schedule: This allows you to select the scheduled timeframe when the suspension should be effective. Select the Timezone first. Next, select the start date/time and End date/time for the suspension rules. Start dates cannot be backdated values; they can be either current or a future date/time.
+Note: The End date/time can also be selected as Never, which means that the suspension rules will never expire.
+Recurrence: This is an optional field and can only be used if recurring scheduled maintenance is needed for sites/endpoints or specific conditions are to be ignored at specific intervals. Recurrence can be set as days, weeks, or months.
+For recurrence-based suspension rules, the duration defined in the recurrence window will be used for suspending the rules on target endpoints. 
+Suspended Alerts: This allows you to select the custom monitors that need to be suspended. You can either select a specific type of monitor or individual monitors for suspensions. Monitors created will be grouped by type in the condition selector pop-up menu
+
+Suspension rules can be created only if the user has permission to create new rules. Users who do not have the create permission will not be allowed to create new suspension rules
+
+Editing Custom Monitor Suspension Rule
+
+Rules created by users can be edited by any users who have update permissions assigned to them. 
+
+Note: If the suspension rule is created and assigned to multiple sites, users who have permissions equal to or greater than those of the sites included in the suspension rules can edit the rule; otherwise, the user will see the rule as view only. 
+
+To edit an existing rule, a user can click on the Suspension rule created from the list of rules displayed on the Suspension landing page. The last updated information for the suspension rule will be displayed to the user. Any changes will be processed as an update, and the suspension rule will be modified to process the alerts accordingly.
+
+Note: Any changes to suspension will be allowed at the current time and; hence, a backdated start date/time will not be allowed.
+
+Deleting Custom Monitor Suspension Rule
+
+Suspension rules can be deleted from the system if they are no longer needed or relevant. Deleting suspension rules can be performed from the listing screen as well as from individual suspension rules by clicking on editing.
+
+To delete the suspension rule from the listing screen, you need to select it and click on the delete button.
+
+To delete an individual suspension rule, click on the suspension rule, which will take you to the edit page for the suspension rule. Click Delete.
+
+Duplicating Custom Monitor Suspension Rule
+
+Suspension rules can be duplicated in case you do not wish to edit an existing rule defined in the system. In order to duplicate the suspension rule, click on the suspension rule and click on the duplicate button.
+
+Note: Duplicating suspension will only be allowed for users who have create permissions.
+
+Duplicating the suspension rule will retain the resource selected as well as the conditions selected for the suspension. The user needs to update the schedule information (Start date/time and End date/time) for the new suspension rule. A prefix of "copy of" will be added to the existing suspension rule name but can be edited as needed.
+
+Default Automation Suspension Rules
+Creating Default Automation Suspension Rule
+
+In order to suspend the Default Automation present in the system from executing, a suspension rule against intelligent alerts needs to be created.
+
+You can view the list of monitoring conditions in which Default Automation is present by applying a filter as shown here:
+
+Click on the Add Rule button and select Default Automation to open the following window that allows you to create suspension rules.
+
+Name: Add the appropriate name for the suspension rule to be created.
+Description: This section allows you to add information for other users to get more details on the suspension rule.
+Target Resources: This allows you to select the target endpoint on which the suspension rule will be effective or applied. You can select sites, endpoints, or Dynamic Groups while creating the suspension rules. Selecting the option of all future sites will apply the suspension to all current and future sites as well.
+
+Schedule: This allows you to select the scheduled timeframe when the suspension should be effective. Select the Timezone first. Next, select the start date/time and End date/time for the suspension rules. Start dates cannot be backdated values; they can be either current or a future date/time.
+Note: The End date/time can also be selected as Never, which means that the suspension rules will never expire.
+Recurrence: This is an optional field and can only be used if recurring scheduled maintenance is needed for sites/endpoints or specific conditions are to be ignored at specific intervals. Recurrence can be set as days, weeks, or months.
+For recurrence-based suspension rules, the duration defined in the recurrence window will be used for suspending the rules on target endpoints. 
+Suspended Alerts: This allows you to select the intelligent alerts that need to be suspended. You can either select a specific type of intelligent alert or intelligent alert families for suspensions. Alerts created will be grouped by type in the condition selector pop-up menu. To learn more about which monitoring conditions have the default automation set to 'Enabled', review this documentation.
+
+
+Important:
+
+In the case of the Default Automation Suspension Rule, the default automation suspension suspends only the default automation execution and not the monitoring.
+Suspension rules can be created only if the user has permission to do so. Users who do not have the create permission will not be allowed to create new suspension rules.
+Editing Default Automation Suspension Rule
+
+Rules created by users can be edited by any users who have update permissions assigned to them. 
+
+Note: If the suspension rule is created and assigned to multiple sites, users who have permissions equal to or greater than those of the sites included in the suspension rules can edit the rule; otherwise, the user will see the rule as view only.
+
+To edit an existing rule, a user can click on the Suspension rule created from the list of rules displayed on the Suspension landing page. The last updated information for the suspension rule will be displayed to the user. Any changes will be processed as an update, and the suspension rule will be modified to process the alerts accordingly.
+
+Note: Any changes to suspension will be allowed at the current time and; hence, a backdated start date/time will not be allowed.
+
+Deleting Default Automation Suspension Rule
+
+Suspension rules can be deleted from the system if they are no longer needed or relevant. Deleting suspension rules can be performed from the listing screen as well as from individual suspension rules by clicking on editing.
+
+To delete the suspension rule from the listing screen, select it and click the Delete button.
+
+To delete an individual suspension rule, click on the suspension rule, which will take you to the edit page for the suspension rule. Click Delete.
+
+Duplicating Default Automation Suspension Rule
+
+Suspension rules can be duplicated in case you do not want to edit an existing rule defined in the system. In order to duplicate the suspension rule, click on the suspension rule and click on the duplicate button.
+
+Note: Duplicating suspension will only be allowed for users who have create permissions.
+
+Duplicating the suspension rule will retain the resource selected and the conditions selected for the suspension. The user needs to update the schedule information (Start date/time and End date/time) for the new suspension rule. A prefix of "copy of" will be added to the existing suspension rule name, but can be edited as needed.
+
+Quick Suspend
+
+Quick suspend allows you to create quick suspension rules for any immediate need of maintenance for the endpoint right from the devices page. Quick suspend will suspend all monitoring conditions available for a required duration.
+
+Navigation Path
+
+The quick suspend option is available under the Devices page. 
+
+Endpoints > Devices > Select the server (Click on the name) > Quick Suspend
+
+Note: The Quick Suspend button will be visible only to users who have permission to create new suspension rules in the system. 
+
+Creating Quick Suspension
+
+Clicking on the Quick Suspend button will open a modal popup allowing you to provide the duration for the Suspension rule creation.
+
+The Timezone will be preselected on the modal popup; however, you can change the values based on your requirements.
+
+The Start Date/Time and End Date/Time will be preselected (the difference is 6 hours by default). Both times can be edited based on your requirements.
+
+Clicking on the save button will save the suspension rule with the naming convention as "Quick Suspend for <<Endpoint_Name>>". Endpoint_Name will be replaced as per the resource selected for the suspension.
+
+Managing Quick Suspend Rules
+
+If there are any active Quick suspensions created against the endpoint, the Quick suspend will actually show the Manage suspension button. Clicking on the Manage suspension button will redirect the user to the edit suspension page. Values can be updated or modified based on the user's permissions.
+
+S.M.A.R.T Monitoring Automation
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Custom Monitors
+Build your own alert monitors using the variety of monitor templates in ConnectWise RMM. Monitors use these templates to trigger alerts when issues ar...
+S.M.A.R.T Monitoring
+S.M.A.R.T. (Self-Monitoring Analysis and Reporting Technology) monitors a hard drive for predictive failures. Our agent automatically monitors the S.M...
+Intelligent Alerts
+Intelligent Alerts in ConnectWise RMM are endpoint-specific and generate an appropriate alert based on a predefined set of monitoring conditions.
+Network Availability Monitoring
+If our Data Center cannot reach the device after three consecutive tries (using Windows ICMP), a Device Down ticket is generated.  The agent pings the...
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

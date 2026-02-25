@@ -1,0 +1,50 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Command for Networks   Auvik TrafficInsights
+Auvik TrafficInsights
+Last updated
+Mar 9, 2021
+Table of contents
+Overview
+Overview
+
+Auvik TrafficInsights™, a new network bandwidth monitoring feature, is now available. TrafficInsights provides visibility into applications used on the network, the users of those applications, and where the data is going. The feature is planned to be available for an additional cost published separately, but for now, is offered free of charge and can be enabled from the Auvik portal.
+
+For more information, see Auvik TrafficInsights.
+
+Auvik Device Management Auvik TrafficInsights FAQs
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Onboarding and Configuring the ConnectWise–Auvik Integration
+Auvik Pre-Defined Alerts and NOC Support
+Command for Networks Service Levels
+Auvik Device Management
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

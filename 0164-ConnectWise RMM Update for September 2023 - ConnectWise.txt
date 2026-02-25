@@ -1,0 +1,101 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   ConnectWise RMM Release Notes   RMM Release Notes Archive   ConnectWise RMM Update for September 2023
+ConnectWise RMM Update for September 2023
+Last updated
+Dec 11, 2023
+Table of contents
+Overview
+Announcements
+Deprecation of Legacy Desktop monitoring configurations
+App Updates Retirement
+ConnectWise PSA - Integration via policies EA
+What's new in ConnectWise RMM?
+September 28th, 2023
+September 27th, 2023
+September 26th, 2023
+September 21st, 2023
+September 20th, 2023
+September 5th, 2023
+Overview
+
+This page provides information on the latest enhancements and features for ConnectWise RMM.
+
+Announcements
+Deprecation of Legacy Desktop monitoring configurations
+
+We are deprecating the option for configuring desktop monitoring conditions to a desired threshold. This option will now be available on the Intelligent alerts page.
+
+You can click on the monitoring conditions that are updated as configurable and define the default or customized alert configuration for the alert generation process.
+
+Path: Devices > Manage > Alert Thresholds
+
+This feature will be deprecated on October 20th, 2023.
+
+App Updates Retirement
+
+We will be retiring Application Updates option from Automation > Tasks > Application Updates on October 15th. We recommend moving to the new and improved Third-Party Patching via policies to avoid third-party applications becoming out-of-date.
+
+Partner Impact:
+
+You won’t be able to create new Third-Party Patching tasks via Tasking.
+
+Existing tasks will remain active until further notice.
+
+ConnectWise PSA - Integration via policies EA
+
+We are excited to announce that we will be adding an option for you to enable the ConnectWise PSA sync configurations that helps to define Tickets, Configuration items, and Notifications using policies. These policies can be included in your packages and applied to the sites using the package assignment option.
+
+There will be no migration performed for the existing configuration, but the policies will be in effect if they are assigned or applied to a site. You will initially have a toggle button to either enable or disable the policies based configuration and continue using the old method for now.
+
+We will stop supporting the older configuration method by December 15th.
+
+For more information, review the following articles:
+
+ConnectWise PSA - Policy Integration
+
+ConnectWise PSA - Policy Integration - FAQ
+
+What's new in ConnectWise RMM?
+September 28th, 2023
+September 27th, 2023
+September 26th, 2023
+September 21st, 2023
+September 20th, 2023
+September 5th, 2023
+ConnectWise RMM Update for August 2023 ConnectWise RMM Update for October 2023
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ConnectWise RMM Update for January 2023
+ConnectWise RMM Update for February 2023
+ConnectWise RMM Update for March 2023
+ConnectWise RMM Update for April 2023
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

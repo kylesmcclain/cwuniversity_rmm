@@ -1,0 +1,250 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   PSA Integration   ConnectWise PSA (Manage) Integration   ConnectWise PSA - Tech Efficiency Devices Pod
+ConnectWise PSA - Tech Efficiency Devices Pod
+Last updated
+Jun 12, 2025
+Table of contents
+Overview
+Device Details
+Requirements for Devices Pod 
+Technician Efficiency Pod Checkbox
+Overview
+
+This pod shows the list of all configured devices related to the service ticket and pulls device information in realtime from ConnectWise RMM. Select a device from the list for troubleshooting-related information about that device. This information is displayed in the Device Details section.
+
+Important: This feature is currently available for SSO Migrated Partners.
+
+Column Title	Description
+
+
+Name
+
+	
+
+Displays the name of the device (Configuration item).
+
+
+
+
+Last User
+
+	
+
+Displays the last user to access the device.
+
+
+
+
+Type
+
+	
+
+Displays the type of device.
+
+
+
+
+IP Address
+
+	
+
+Displays the Internal IP address associated with the device. 
+
+
+
+
+Tickets
+
+	
+
+Displays the number of open tickets associated with the device. Click to open the service ticket list. 
+
+
+
+
+Actions
+
+	
+
+Control Icon
+
+	
+
+Click to select one of the following actions:
+
+ScreenConnect Remote Access 
+ScreenConnect Dashboard
+ScreenConnect Backstage
+
+
+
+Actions Menu
+
+	
+
+Click to select one of the following actions:
+
+Device Summary (Navigates to Asio Portal)
+Delete (Remove device from Pod in ticket)
+
+Device Details
+Column Title	Description
+
+
+Name
+
+	
+
+Displays the name of the device and device availability
+
+Green – Device is online
+
+Red – Device is offline
+
+
+
+
+Friendly Name
+
+	
+
+Displays the user selected friendly name of the device in RMM. 
+
+
+
+
+Last User
+
+	
+
+Displays the last user to access the device.
+
+
+
+
+Site
+
+	
+
+Displays the location of the device. 
+
+
+
+
+Type
+
+	
+
+Displays the type of agent installed on the endpoint.
+
+
+
+
+Model
+
+	
+
+Displays the model of the device. 
+
+
+
+
+Processor
+
+	
+
+Displays the device's processor.
+
+
+
+
+RAM
+
+	
+
+Displays the RAM for the device (in GB)
+
+
+
+
+CPU Usage
+
+	
+
+Displays the device's CPU usage.
+
+
+
+
+Memory Usage
+
+	
+
+Displays the device's memory usage. 
+
+
+
+
+Hard Drive
+
+	
+
+Displays the device's hard drive size. 
+
+
+
+
+Operating System Displays the device's operating system.
+
+	
+
+Operating System Displays the device's operating system.
+
+
+OS Installed On 	Displays the date and time the operating system was installed.  
+Last Restart Time 	Displays the date and time the last restart was performed. 
+IP Address 	Displays the device's IP address and Type (Static or Dynamic).  
+MAC Address 	Displays the device's MAC address.  
+Serial Number 	Displays the device's serial number. 
+RMM Agent Version	Displays the associated RMM agent version from ConnectWise RMM. 
+Requirements for Devices Pod 
+
+To use this pod you must have: 
+
+ConnectWise RMM
+ConnectWise SSO (ConnectWise Home) enabled for authentication to ConnectWise RMM™ and ConnectWise PSA™. Also logged in from the same user to view the information on the Device Pod.
+Have configured integration between PSA and RMM as well as enabled syncing of assets and tickets between RMM and PSA.
+ConnectWise PSA version 2022.2 or above
+Technician Efficiency Pod Checkbox
+
+We are providing the option for you to Opt In or Opt Out for Technician Efficiency. There will be a checkbox visible on the Site mapping page under the PSA Integration wizard. If you click on the checkbox and finish the wizard, the technician efficiency pod will be visible on the CW PSA Ticketing page. If you want to opt out you can then uncheck the checkbox and complete the wizard again.
+
+ConnectWise PSA - Policies Integration - FAQ ConnectWise PSA (Manage) Help Desk Contact Sync
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ConnectWise PSA (Manage) Integration Setup Process
+Configure ConnectWise PSA Policies
+PSA Policies define how tickets, configuration items, Contacts, and Notifications sync from RMM to ConnectWise PSA or vice-versa.
+ConnectWise PSA - Policies Integration - FAQ
+ConnectWise PSA (Manage) REST API Integration Troubleshooting
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

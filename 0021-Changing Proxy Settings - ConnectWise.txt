@@ -1,0 +1,78 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Agents   Agent Management   Changing Proxy Settings
+Changing Proxy Settings
+Last updated
+Oct 1, 2024
+Table of contents
+Overview
+Change Proxy Settings
+Update the Agents
+Overview
+
+This document describes how to change proxy settings for the RMM agent. A network proxy, filter, or firewall can prevent direct communication and monitoring between the installed agent and the data center. Supplying a proxy address at the site level allows the agent to route itself accordingly and properly communicate. Ports 80 and 443 are required for the RMM agent to communicate with the data center; these ports must be open for the agent to function properly.
+
+Change Proxy Settings
+
+Note: If you change proxy settings for your server, you must update the Asio™ platform and the downloaded agents.
+
+To change agent proxy settings:
+
+Navigate to Settings > Setup > RMM > Sites Using RMM.
+Select the desired site.
+Select the Proxy Server tab. 
+Change the settings as desired.
+
+Note: Changing the proxy settings disables the connection between agents already installed at this site and the data center. The connection is disabled within 10 minutes of saving the new settings.
+
+Click Save when finished.
+Update the Agents
+
+After the proxy settings are changed, the agents must be updated.
+
+To update the agents from Settings > Setup > RMM > Sites Using RMM:
+
+Verify you are on the site you want to update the agents for.
+Select the Agents tab.
+Expand the Manage Installed Agents section.
+
+Request a setup and update each agent. After the setup creation is complete, URLs are displayed for the .EXE and the .MSI files.
+
+Download and execute the files for each desktop and server with the agent.
+Assign device to another site (Move Agent) Golden Image Support
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Switching the device type for an Endpoint
+Assign device to another site (Move Agent)
+Golden Image Support
+Asio Agent Requirements
+The article includes the currently supported operating systems for agent installations.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

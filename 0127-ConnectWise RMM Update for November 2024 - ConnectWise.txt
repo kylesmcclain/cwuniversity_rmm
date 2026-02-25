@@ -1,0 +1,73 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   ConnectWise RMM Release Notes   ConnectWise RMM Update for November 2024
+ConnectWise RMM Update for November 2024
+Last updated
+Mar 11, 2025
+Table of contents
+Overview 
+Announcements
+Asio Workflows are available to RMM Partners
+What's new in ConnectWise RMM?
+November 15, 2024
+Automation
+Issues Addressed
+November 14, 2024
+Alerting
+Issues Addressed
+November 13, 2024
+Automation
+Overview 
+
+This page provides information on the latest enhancements and features for ConnectWise RMM.
+
+Announcements
+Asio Workflows are available to RMM Partners
+
+With this month's release we've added the Asio Workflow tab to all RMM Partners' instances. Workflows are sequences of steps that are executed to achieve specific outcomes and automate a number of tasks such as ticket handling, procurement orders, and billing functions. ​
+
+The new Asio Workflow Engine enables seamless execution whether working tickets, handling customer requests or integrating with other solutions.
+
+For more information refer to the Asio Workflow Engine documentation
+
+ 
+
+What's new in ConnectWise RMM?
+November 15, 2024
+November 14, 2024
+November 13, 2024
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ConnectWise RMM Update for January 2024
+ConnectWise RMM Update for February 2024
+ConnectWise RMM Update for March 2024
+ConnectWise RMM Update for April 2024
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

@@ -1,0 +1,151 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   RMM Reporting API   Reporting API REST Resources   Warranty Details
+Warranty Details
+Last updated
+Jul 8, 2025
+Table of contents
+Overview
+Endpoint and URI
+Method
+Request Body
+Response Body
+Parameter Descriptions for Warranty Details
+Source of Data in Asio
+Overview
+
+Retrieves warranty information for the authenticated partner and the specified site.
+
+Endpoint and URI
+
+https://itsapi.itsupport247.net/repo...rranty/details
+
+Method
+
+POST
+
+Request Body
+
+{
+
+"IncludeWarrantyHistory": "0"
+
+"SiteCode": "AGTSolutions"
+
+}
+
+Response Body
+
+{
+
+"Error": null,
+
+"WarrantyDetails": [
+
+{
+
+"Description": "Next Business Day Support",
+
+"ExpirationDate": "2016-05-04",
+
+"FriendlyName": "Mike's PC",
+
+"LastContactDate": "2016-01-01T14:12:42Z"
+
+"LastUpdateDate": "2015-03-03T14:12:42Z",
+
+"MachineId": 9223372036854775807,
+
+"Manufacturer": "Dell",
+
+"NextUpdateDate": "2016-02-03T10:00:00Z",
+
+"OperatingSystem": "Windows7",
+
+"Provider": "Dell",
+
+"PurchaseDate": "2014-03-03T14:12:42Z",
+
+"ResourceName": "Intel-AMT1",
+
+"ResourceType": "Desktop",
+
+"SerialNumber": "12345-6789",
+
+"ServiceTag": "ABC789",
+
+"SiteName": "AGT Solutions",
+
+},
+
+{
+
+...
+
+},
+
+{
+
+...
+
+}
+
+]
+
+}
+
+Parameter Descriptions for Warranty Details
+Parameter	Description
+"IncludeWarrantyHistory"	0 or 1 (For no or yes)
+"SiteCode"	Unique site code listed in Asio™ Platform (ITSupport Portal)
+"Description"	Warranty description
+"ExpirationDate"	Warranty expiration date
+"FriendlyName"	Machine friendly name in Asio™ Platform (ITSupport Portal)
+"LastContactDate"	Last agent contact date
+"LastUpdateDate"	Date and time of last warranty update
+"MachineId"	Unique machine ID in ConnectWise database
+"Manufacturer"	Machine manufacturer
+"NextUpdateDate"	Date and time of next warranty update
+"OperatingSystem"	Machine operating system
+"Provider"	Warranty provider
+"PurchaseDate"	Date machine was purchased
+"ResourceName"	Machine name in Asio™ Platform (ITSupport Portal)
+"ResourceType"	Desktop or server
+"SerialNumber"	Machine serial number
+"ServiceTag"	Machine service tag
+"SiteName"	Site name in Asio™ Platform (ITSupport Portal)
+Source of Data in Asio
+
+Reports > Asio > Technical Details > Warranty Report
+
+Unsupported Antivirus Warranty Summary
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Agent Details
+Retrieves agent information for the authenticated partner and the specified site.
+Antivirus Summary
+Retrieves counts of machines having antivirus protection in the following states: Updated, Outdated, Not Installed, or Information Unavailable.
+Antivirus Version Summary
+Retrieves currently detected antivirus software and the definition version.
+BCDR Continuity Appliances
+Retrieves a list of Recover Continuity backup appliances provisioned at the given site.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

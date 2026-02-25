@@ -1,0 +1,219 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   RMM Tools   APIs   Asio Integration API   Product Status APIs
+Product Status APIs
+Last updated
+Jul 7, 2025
+Table of contents
+Overview
+Get Status Schema
+Request
+Headers
+Response
+Headers
+Body
+Post Endpoint Status
+Request
+Parameters
+Headers
+Response
+Headers
+Body
+Overview
+
+These APIs allow product vendors to push monitoring data from their products per endpoint into the ConnectWise RMM. This data is shown against each device in a dedicated device list of the Asio Portal. 
+
+Get Status Schema
+Post Endpoint Status
+
+The following steps must be performed in order to push data: 
+
+The vendor will have to work offline with ConnectWise to create a data schema for their product. An example schema is shown with the GET Statuses Schema API.
+Data for the product will then be accepted only as per the defined schema.
+Data schema can be edited on request. 
+
+Method for uniquely identifying an endpoint to push data for: 
+
+The Get Clients, Sites, and Endpoints (with Endpoint Details) APIs will give Endpoint ID details. Vendors can post data using the Endpoint ID received via these APIs. There are two methods via which vendors can identify the Endpoint for which they need to push data: 
+
+Method 1: (Recommended Method) Endpoint ID is exposed by the ITS Platform agent locally in each partner's machine. Vendors can directly fetch this Endpoint ID from the machine via their products and systems. Vendors can fetch the Endpoint IDs from the following sources in the machine: (Recommended Method) 
+For Windows machines, Endpoint ID is available in the Registry "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\ITSPlatform".
+For LINUX machines, Endpoint ID is available in the config file "/opt/itsplatform.conf".
+For MAC machines, Endpoint ID is available in the plist file "/Library/Preferences/com.itsplatform.plist".
+Method 2: Using the Get Endpoint Details API, certain hardware parameters for the machines are available (like System Name, Serial number, MAC address, etc.). Vendors may use a combination of one or more of these parameters to uniquely identify a machine.
+Get Status Schema
+Request
+
+Sandbox: GET https://openapi.sandbox.use1.cwcmddev.cwnet.io/v1/statuses/schemas 
+
+Production: GET https://openapi.service.itsupport247.net/v1/statuses/schemas 
+ 
+
+Headers
+
+Authorization:Bearer i9OpjK8IBYYNbV9VGJo6APG224I 
+
+Response
+
+200
+
+Headers
+
+Content-type:application/json
+
+Body
+
+{ 
+
+  "vendor_id": "dd3788ae-c755-11ea-8ac1-acde48001122", 
+
+  "product_id": "bc691cd7-4c1b-4883-9f38-8069ff25b706", 
+
+  "definition": [ 
+
+    { 
+
+      "name": "scanning_status", 
+
+      "required": true, 
+
+      "type": "text", 
+
+      "title": "status", 
+
+      "description": "third party product`s status name, how it will be shown to partners on widgets", 
+
+      "maxLength": 100 
+
+    }, 
+
+    { 
+
+      "name": "threat_count", 
+
+      "required": true, 
+
+      "type": "integer", 
+
+      "title": "threats", 
+
+      "description": "third party product`s status name, how it will be shown to partners on widgets" 
+
+    } 
+
+  ], 
+
+  "schema": { 
+
+    "$schema": "http://json-schema.org/draft-07/schema#", 
+
+    "description": "ROOT level validation schema - Third party status", 
+
+    "type": "object", 
+
+    "properties": { 
+
+      "scanning_status": { 
+
+        "type": "string", 
+
+        "title": "status", 
+
+        "description": "third party product`s status name, how it will be shown to partners on widgets", 
+
+        "maxLength": 100 
+
+      }, 
+
+      "threat_count": { 
+
+        "type": "integer", 
+
+        "title": "threats", 
+
+        "description": "third party product`s status name, how it will be shown to partners on widgets" 
+
+      } 
+
+    }, 
+
+    "required": [ 
+
+      "scanning_status", 
+
+      "threat_count" 
+
+    ] 
+
+  }, 
+
+  "enabled": false 
+
+} 
+
+Post Endpoint Status
+Request
+
+Sandbox: POST https://openapi.sandbox.use1.cwcmddev.cwnet.io/v1/clients/clientID/sites/siteID/endpoints/endpointID/statuses 
+
+Production: POST https://openapi.service.itsupport247.net/v1/clients/clientID/sites/siteID/endpoints/endpointID/statuses 
+
+Parameters
+clientID	Example clientID: 2lUrtru6uvuVs7 	String
+siteID	Example siteID: wOCDc3uZu7upuZ 	String
+endpointID	Example endpointID: 4a9caa07-d45a-4c14-aa36-8c1c26e7a029 	String
+Headers
+
+Authorization:Bearer i9OpjK8IBYYNbV9VGJo6APG224I 
+
+Response
+
+201
+
+Headers
+
+Content-Type:application/json 
+
+Body
+
+{ 
+
+  "scanning_status": "in progress", 
+
+  "threat_count": 4, 
+
+  "version": "v1", 
+
+  "updated_at": "2019-02-05T12:48:39.632Z" 
+
+} 
+
+Managed Devices Details APIs Rate Limits
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Rate Limits
+Managed Devices Details APIs
+These APIs return details of your MSP network – Clients, Sites, and Endpoints.
+Authentication and Authorization
+Public Ticketing API
+ConnectWise's public ticketing API allows MSPs or PSA vendors to integrate with our two-way ticket synchronization system to create tickets, update ti...
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

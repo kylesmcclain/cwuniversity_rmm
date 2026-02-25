@@ -1,0 +1,65 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Communicator User Guide   Communicator Assignment
+Communicator Assignment
+Last updated
+Jun 27, 2025
+Table of contents
+No headers
+
+The communicator tray could be assigned to endpoints in two ways:
+
+Packages:
+
+Create a Communicator Policy: Endpoints > Policies > Add
+Create a new package or add the Corresponding Communicator Policy to an existing package.
+Assign the package with a Communicator Policy to the required site.
+Communicators will be assigned to all endpoints within the site.
+
+For more information refer to the Policies and Packages article.
+
+Device Details:
+
+Go to Endpoints > Devices > Select the endpoint you want to assign the communicator to > Settings > Devices.
+Select the default Communicator Policy.
+Enable the Communicator.
+Communicators will be assigned only to the exact endpoint.
+
+ 
+
+Communicator User Guide Communicator Branding
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Communicator Configuration
+Communicator Default Menus
+Communicator Branding
+Communicator Customization
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

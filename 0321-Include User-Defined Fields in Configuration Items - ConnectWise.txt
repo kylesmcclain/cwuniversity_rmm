@@ -1,0 +1,96 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   PSA Integration   Autotask Integration Guide   Include User-Defined Fields in Configuration Items
+Include User-Defined Fields in Configuration Items
+Last updated
+Nov 13, 2024
+Table of contents
+Overview
+Overview
+
+After completing migration/synchronization, you need to include the new User-Defined Fields in Autotask.
+
+To add the User-Defined Fields in Autotask, go to Admin > Products and Services > Products > Configuration Item Types and select the checkbox in the Include column to select the User-Defined Fields that are synchronized with each Configuration Item Type.
+
+Please contact Autotask Support if you need help with including User-Defined Fields.
+
+Note: While creating UDF in Autotask PSA, you should not be creating those UDFs in protected state.
+
+The Assets and/or User-Defined Fields in the table below need to be included in order to view the Configuration Types.
+
+  Configuration Item Type	User-Defined Fields
+Server, Desktop & VMware Host	
+Linux Server
+Macintosh Desktop
+Macintosh Server
+VMware Host
+Windows Desktop
+Windows Server
+	
+CPU Count
+CPU Detail
+Device ID
+Hardisk Info
+IP Address
+LastLoginBy
+Manufacturer
+Memory Size
+No of Security Patches Missing
+OS Name
+OSType
+ProductKey Info
+
+Backup	
+ConnectWise BDR
+	
+DeviceID
+
+Protected Machines Details
+
+Successful Local Backups
+
+Failed Local Backups
+
+Last Local Backup
+
+Successful Cloud Backups
+
+Failed Cloud Backups
+
+Last Cloud Backup
+
+Billable Space
+
+Purchase Date
+
+Model Number
+
+ 
+
+AutoTask Ticket Errors Knowledgebase CommitCRM Integration Guide
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Autotask Integration Setup Guide
+Autotask Integration Contact Sync
+Autotask Integration Reporting on Synchronization Status
+Autotask Integration Error Messages
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

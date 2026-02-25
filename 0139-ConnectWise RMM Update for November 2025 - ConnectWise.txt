@@ -1,0 +1,150 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   ConnectWise RMM Release Notes   ConnectWise RMM Update for November 2025
+ConnectWise RMM Update for November 2025
+Last updated
+Dec 26, 2025
+Table of contents
+Overview 
+What's new in ConnectWise RMM?
+November 24, 2025
+ConnectWise Help Desk Services
+Change in Process on Initial Email Response from ConnectWise Help Desk Services
+November 20, 2025
+Centralized Audit Trail
+November 17, 2025
+Agent
+Issues Addressed
+November 14, 2025
+Centralized Audit Trail
+November 11, 2025
+Automation
+Issues Addressed
+November 10, 2025
+Device Groups, Policies, and Packages
+Issues Addressed
+Overview 
+
+This page provides information on the latest enhancements and features for ConnectWise RMM.
+
+What's new in ConnectWise RMM?
+Release Dates:	Relevant Modules:
+
+November 24, 2025
+November 20, 2025
+November 17, 2025
+November 14, 2025
+November 11, 2025
+November 10, 2025
+	
+Help Desk
+Agent
+Automation
+Centralized Audit Trail
+Device Groups, Policies, and Packages
+November 24, 2025
+ConnectWise Help Desk Services
+Change in Process on Initial Email Response from ConnectWise Help Desk Services
+
+We are introducing an enhancement to the Help Desk process to improve efficiency and provide better support for end users.
+
+Current Process:
+
+When a ticket is received via email, the Help Desk replies to confirm a convenient time to speak and troubleshoot the issue.
+
+New Process (Effective 11/24):
+
+The Help Desk reply will continue to request a convenient time for troubleshooting.
+Additionally, the same email will now include:
+Context-specific self-help instructions for resolving similar issues
+Details on information the technician will need to expedite troubleshooting (e.g., screenshots, error messages, system details)
+
+Benefits:
+
+Faster resolution by empowering users with actionable steps
+Reduced back-and-forth communication before scheduling
+Improved clarity on what is required for effective troubleshooting
+November 20, 2025
+Centralized Audit Trail
+
+Audits related to remote access session initiation on a machine are now available in the Centralized Audit Trail reports.
+
+Note: This feature is EA only.
+
+November 17, 2025
+Agent
+
+We've released a new agent version (4.0.6) with key updates that will be rolled out in a phased manner starting on November 17th, 2025.
+
+Note: Always use the latest version of the platform agent when installing to access new functionalities and ensure you have the most up-to-date features.  Make sure to update the GPO, MS Intune, or any other method used to install the Agent.​
+
+Issues Addressed
+Known Issue	Description
+ISSUE-9087	Fixed an issue where both the Old and New Webroot branding were visible on the portal as separate endpoint protection solutions.
+November 14, 2025
+Centralized Audit Trail
+
+Audits related to moving an agent from one company and site to another are now visible in the Centralized Audit Trail reports.
+
+Note: This feature is EA only.
+
+November 11, 2025
+Automation
+
+Added auditing for all user-initiated state operations on Scheduled Tasks (e.g., Deactivate, Disable, Cancel, Postpone) to help ensure accountability and traceability.
+
+Note: This feature is EA only.
+
+Issues Addressed
+Known Issue	Description
+ISSUE-9344	Fixed an issue where running the 'Add a Persistent Task' action from the Devices page caused a white screen after entering field values and selecting 'Performs Task'.
+ISSUE-8968	Fixed an issue where OpenAPI request and response field values were case-sensitive; they are now case-insensitive.
+ISSUE-9490	Fixed an issue where scheduling a vendor script (e.g., ESET On-Demand Scan) via the Run menu on the Device page failed after selecting required parameters.
+November 10, 2025
+Device Groups, Policies, and Packages
+
+Audit for Devices added to a Device Group
+
+We have added Audit Tracking for devices added to the Device Group, providing you with greater visibility and accountability across your environment. This can be accessed by navigating to Reports > Audit Trail.
+
+Note: This feature is EA only.
+
+Issues Addressed
+Known Issue	Description
+ISSUE-8985	Device Groups - Fixed an issue where, if multiple values were added in the criteria builder for the group, the creation was not visible
+ISSUE-8982	Device Groups - Fixed an issue where the installed software criteria did not automatically open the list references.
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ConnectWise RMM Latest Release Notes
+ConnectWise RMM Update for January 2024
+ConnectWise RMM Update for February 2024
+ConnectWise RMM Update for March 2024
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

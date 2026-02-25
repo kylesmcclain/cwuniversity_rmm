@@ -1,0 +1,182 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   ConnectWise RMM Release Notes   RMM Release Notes Archive   ConnectWise RMM Update for February 2022
+ConnectWise RMM Update for February 2022
+Last updated
+Apr 28, 2022
+Table of contents
+Overview
+Announcements
+New Monitor for Windows Performance Metrics
+New Monitors for Application Performance Metrics
+New Monitors for Hyper-V & VMWare Performance Metrics
+Deprecation of the Legacy Partner Defined Alerts (Performance)
+Deprecation of Legacy disk space monitoring (IntelliMon)
+VMWare Monitoring
+Gateway Cache
+ConnectWise RMM
+Portal
+Automation
+Intune Integration
+Communicator
+Patching
+PSA Integration
+Virtualization
+Monitoring
+Bug Fixes
+Overview
+
+Below is a summary of the new ConnectWise RMM features and updates released February 16th, 2022.
+
+Announcements
+New Monitor for Windows Performance Metrics
+
+We are adding the capability to create monitors for Windows Performance metrics. The system will display all the available windows performance object and counter data to define the monitor condition. Based on the configuration we will start collecting the data from defined endpoint and trigger an alert based on the configuration for the monitor.
+
+This feature would be enabled by the end of February.
+
+New Monitors for Application Performance Metrics
+
+We are adding the capability to create monitors for Application Performance metrics (Exchange, SQL, Sharepoint). The system will display all the available windows performance object and counter data to define the monitor condition. Based on the configuration we will start collecting the data from defined endpoint and trigger an alert based on the configuration for the monitor.
+
+This feature would be enabled by the end of February.
+
+New Monitors for Hyper-V & VMWare Performance Metrics
+
+We are adding the capability to create monitors for HyperV & VMWare Performance metrics. The system will display all of the available windows performance object and counter data to define the monitor condition. Based on the configuration we will start collecting the data from a defined endpoint and trigger an alert based on the configuration for the monitor.
+
+This feature will be enabled on February 9th, 2022.
+
+Deprecation of the Legacy Partner Defined Alerts (Performance)
+
+Since we have added or provided new capabilities to collect performance metrics for triggering an alert in the system, we will be deprecating the complete legacy partner defined alerts. Existing configurations will not be migrated in the new monitors section for the Partner defined alerts.
+
+These capabilities will be removed from the portal on April 1st, 2022.
+
+Deprecation of Legacy disk space monitoring (IntelliMon)
+
+We are removing the following monitoring condition in the legacy IntelliMon monitoring as they were jointly processed as a part of the Partner defined alerts.
+
+Server Disk Space Low
+
+Server % Disk Space
+
+Partners can use the disk monitor functionality to create the corresponding alerts and apply to multiple endpoint, Sites and Dynamic groups.
+
+Note: Existing configuration will not be migrated from IntelliMon to Monitors for the above alerts for disk space.
+
+VMWare Monitoring
+
+We have added a simplified and unified process to add, modify, and remove the VMWare Esxi & Vcenter devices under monitoring. This should help in quickly adding devices for monitoring and simplifying the overall process. This new unified view will allow the addition or removal of probe machines (Windows machines only) for monitoring VMWare Hosts. More information can be found in the virtualization documentation.T his will be available in production in the last week of March.
+
+Gateway Cache
+
+The Gateway cache is responsible to cache all preventive maintenance updates and security patches for the desktop machines at the end client's site.
+
+Installing the Gateway Software reduces the amount of Internet traffic at the end client's site by downloading and caching preventive maintenance updates and security patches then distributing them to desktops.
+
+We have added the ability to configure an Endpoint as Gateway cache. The Gateway cache can be enabled on a machines that has the MSMA or DPMA currently installed. The functionality can be enabled with simple steps on Devices page, no separate installation to configure Gateway cache.
+
+The feature to enable Gateway cache in the Devices page to be released on March 1st, 2022. The Legacy Gateway will be deprecated on April 1st, 2022.
+
+ConnectWise RMM
+Portal
+
+New agent version. An agent update, v 2.1.798, will be released starting February 21st.
+
+Updated Display endpoints. Display endpoints will now communicate with the gateway cache on the details page, when clicked on Gateway cache endpoint.
+
+Automation
+
+We've added the Ability to filter devices in the Resource Selector to identify Virtual Machines (VMs) and VM Hosts. Now you can see if a device is a VM or VM host when selecting resources, so that you are less likely to select a non-applicable device when scheduling a VM related task or applying a VM related monitor.
+
+Intune Integration
+
+We will be adding key device and compliance information for MS Intune managed devices on the Integration page on Devices Summary page. This page will provide actionable information (identify out of compliance devices in Intune) for partner technicians to log in to MS Intune and take necessary corrective measures for devices that are out of compliance.
+
+Note: This integration is only for ConnectWise RMM Standard and ConnectWise RMM Advanced.
+
+Communicator
+
+This month we have a variety of Communicator updates:
+
+Technicians can provide a static reply option to the messages sent via Communicator, and the end-user can only choose between the options provided by techs when replying to the messages.
+
+Technicians can now delete any sent or scheduled messages .
+
+Patching
+
+Automatic deployment of mac patches via policies. This month we've added the capability to automatic deploy patches to macOS machines.
+
+UI Improvement. We've added a pop-up window to notify the user if edit has been successful.
+
+PSA Integration
+
+Ability to reuse configuration items for Manage integration. A new Manage PSA Integration feature provides partners the option to select whether to reuse pre-existing Configuration Items when a new RMM agent is deployed and synced to the PSA, instead of creating a Configuration Item duplicate in Manage PSA. This feature will be release on February 28th.
+
+Virtualization
+
+We have added a simplified & unified Virtualization monitoring capability to the 2.0 architecture. This capability in 1.0 will be deprecated along with release. A unified view that will allow addition/removal of probe machines (Windows machines only) for monitoring VMWare Hosts. This will be available in production in the last week of March.
+
+We have added a simplified & unified Virtualization monitoring capability to the 2.0 architecture. This capability in 1.0 will be deprecated along with release. A unified view that will allow addition/removal of probe machines (Windows machines only) for monitoring VMWare hosts managed via VCenters. This will be available in production in the last week of March.
+
+Export Functionality Enhancement. We will be enhancing the existing Export functionality to include key information & performance metrics for Virtual machines present on HyperV hosts and VMWare hosts.
+
+Monitoring
+
+Searching of IntelliMon Alerts in Condition Selector. We have improved the functionality to search the monitoring conditions while opening the condition selector to narrow down to find the correct condition for suspension rule.
+
+Quick Suspension Improvements. We have improved the quick suspension functionality which allows you to create new IntelliMon Alerts suspension functionality from the devices page. The new interface is simplified, prompt response to actions and creates suspension in near real time.
+
+Bug Fixes
+
+The following issues will be resolved with this month's release:
+
+An issue that used to cause the Reporting API to fail to retrieve information is addressed this month
+
+ 
+
+ 
+
+ 
+
+ConnectWise reserves the right to remove any enhancement or fix from this update if it does not pass quality assurance tests.
+
+ 
+
+ConnectWise RMM Update for January 2022 ConnectWise RMM Update for March 2022
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ConnectWise RMM Update for April 2022
+ConnectWise RMM Update for March 2022
+ConnectWise RMM Update for January 2022
+ConnectWise RMM Update for May 2022
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

@@ -1,0 +1,94 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Network Monitoring and Management   Network Devices
+Network Devices
+Last updated
+Sep 30, 2024
+Table of contents
+Overview  
+Filters 
+Using the Auvik Portal
+Discovery Administration
+Overview  
+
+As soon as the Network Probe is installed, it begins to scan any available network and start pulling the details of any Devices it has identified. All newly discovered network Devices are listed on the  Endpoint > Network page. 
+
+Note: Existing network devices like ICMP, SNMP devices will not be listed here. This page only fetches data from the Network Probe.
+
+The card at the top of the page shows a summary of all of the devices that have been discovered by Auvik. These devices are categorized as one of the following:
+
+Router
+Switch
+Firewall
+Generic (not detected)
+Other
+
+All discovered devices make up the table in the dashboard. The table can be sorted by the columns and filters.You can find the following information on this page:
+
+Column Heading	Description and Notes
+Company Name	Name of the company 
+Site Name	Name of the site
+Status	Status of the device (Online or Offline)
+Device Name	Name of the device as discovered by Auvik
+Type	Type of the device
+Make/Model	Make and model of the device
+IP Address	IP address of the device (multiple can be found)
+Interfaces	The number of device interfaces. You can click the number to open a drill down for more information.
+
+Networks	The number of device Networks found. You can click the number to open a drill down for more information.
+
+Vendor	Vendor of the device
+Last Reported	The date and time Auvik last reported information. 
+
+Note: All of this information is populated by the information discovered by Auvik. ConnectWise and the Asio Platform does populate this table.
+
+Filters 
+
+To find the devices you are looking for, it is recommended to use our filters. By clicking the icon filter icon on the top right of the table you can filter by:
+
+Company Name
+Site Name
+Status
+Type
+
+Using the Auvik Portal
+
+Details of Networks, Interfaces, and Services are also collected by the Network Probe. To see more information and access the Auvik UI, you can click the manage button at the top of the Network Devices page. This takes you to the main partner tenant in Auvik.
+
+Note: Network monitoring follows the ConnectWise RMM hierarchy for organizing devices: Partner > Companies > Sites. For each partner, one tenant is created. During Network Probe deployment, your company and sites will be automatically mapped in Auvik to mirror how they are mapped in CW RMM.
+
+
+
+You can also click on the Device Name. This redirects you to the Auvik Portal within the Dashboard of that device.
+
+Discovery Administration
+
+With the exception of the SNMP Poller, which is not part of Network Monitoring Basic, discovery administration can be managed in the Auvik UI.
+
+Advanced Network Monitoring Features Network Monitoring Alerting
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Network Monitoring FAQ
+Network Monitoring Alerting
+Network Monitoring Getting Started
+Advanced Network Monitoring
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

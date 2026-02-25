@@ -1,0 +1,364 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Reports   Security Reports   Risk Assessment Reports   Generate and Download an Assessment
+Generate and Download an Assessment
+Last updated
+Jan 21, 2025
+Table of contents
+  Overview
+Requirements 
+Generate an Assessment
+Video: Deploy the ConnectWise Risk Assessment Assess Utility
+Reactivate a Client Assessment Link 
+Regenerate a Client Assessment Link 
+Download a Client Risk Assessment Report  
+Risk Assessment Logs 
+Troubleshooting Steps 
+End-users Pre-Check-Log file Errors
+Scan-Log.log Files
+Broadband Issues
+Admin Rights Issues
+Generic Errors
+ 
+Overview
+
+Complete these instructions to generate an assessment through ConnectWise Risk Assessment™ and share the assessment with your client.
+
+To review the client process, visit Risk Assessment from the Client Perspective.  
+
+On this page, learn to:
+
+Generate an Assessment Link 
+Reactivate a Client Assessment Utility Tool Link 
+Regenerate a Client Assessment Utility Tool Link 
+Download a Client Risk Assessment Report  
+Troubleshooting Steps 
+Requirements 
+
+When generating and downloading an assessment, keep these requirements in mind: 
+
+You must have Administrator privileges. 
+When downloading the Assessment, do not change the filename. 
+The recommended configuration for the host machine is 8 core CPUs and a minimum of 4 GB of RAM for optimal performance. 
+Review the Supported Applications
+
+Note: You may need to whitelist the assessment utility binaries in their respective Antivirus solution or EDR (Endpoint Detection and Response) solution. 
+
+Generate an Assessment
+
+Important: Your client’s unique link is valid initially for up to three days (72 hours); however, it can be extended for an additional three days. (See the section below on Reactivating a Client Assessment Link.) The link expires after six days (144 hours). Then you must regenerate the link. See the section below on Regenerating a Client Assessment Link. 
+
+To generate an assessment and share it with a client: 
+
+Log into the Asio™ platform and navigate to Security > Assessment.
+Click Create Assessment and fill in the Assessment Configurations as follows: (* required fields)
+  
+Client Name*: Provide the client/prospect site name. This information is used to customize the cover page of the report. 
+Recipient Email (optional): Enter a list of End-user email ID(s) you are targeting to run the assessment to (comma separated). 
+Domain Name*: Provide the domain name(s) for performing dark web and anti-spam assessment (The domain(s) you enter must be owned by the client/site. Separate multiple domain names with a comma.)  
+Click Generate. This generates a unique assessment link for your prospective client. 
+
+If you have entered some end-user email IDs, you can click Send Email. This automatically sends an invitation link email to your client’s selected end-users. 
+
+If your client prefers to manage the link distribution themselves, then click Copy Link.
+Click Finish. 
+Video: Deploy the ConnectWise Risk Assessment Assess Utility
+
+Reactivate a Client Assessment Link 
+
+To extend your client's access to the assessment tool by three days, reactivate the link: 
+
+Log into the Asio platform and navigate to Security > Assessment.
+Select and click on the client with a deactivated link.
+
+Update as necessary the Recipient Email or Domain Name fields and click Reactivate Link.  
+
+If you have added new email IDs, you can click Send Email to automatically send an invitation link email to the client’s newly added end-users. 
+
+If your client still prefers to manage the link distribution themselves, then click the COPY LINK icon and email it to your client.  
+
+Note: A reactivated link is valid for up to three more days (72 hours), then it expires. An expired link can be regenerated.
+
+Regenerate a Client Assessment Link 
+
+If a reactivated link has again expired after six days, regenerate the link: 
+
+Log into the Asio platform and navigate to Security > Assessment.
+Select and click on the client with an expired link. Update as necessary the Recipient Email or Domain Name fields and click Regenerate Link.
+
+If you have added new email IDs, you can click Send Email to automatically send an invitation link email to your client’s newly added end-users.  
+
+If your client still prefers to manage the link distribution themselves, then click the COPY LINK icon. 
+
+Note: Your client’s regenerated link is valid for up to three more days (72 hours.) 
+
+Download a Client Risk Assessment Report  
+
+When downloading the Assessment Utility Tool, do not change the filename. 
+
+To download an assessment: 
+
+Log into the Asio platform and navigate to Security > Assessment.
+To download the reports, look for a Client Name with a Completed assessment status, and click on the Download icon from the Actions column. The file “Assessment Report.zip” is available in your browser’s download location folder.  
+
+You find two types of reports: 
+Assessment Summary: High-level report for a C-suite audience, containing vulnerability discovery and remediation priorities. 
+
+Assessment Detailed: A tactical report for an IT audience, containing a detailed vulnerabilities list. 
+
+Risk Assessment Logs 
+
+While our assessment tool runs on your client’s end-user machines, it creates two log files under the logfiles folder. 
+
+Pre-Check-Log: This contains information about the assessment token validation prerequisite.  
+On a successful pre-check: 
+
+On a failing pre-check with an invalid token:  
+
+Scan-Log: This contains information about the assessment scanning of machines.
+Once execution is successful, you get the following message: 
+
+See the Troubleshooting Steps section below for failed execution. 
+Troubleshooting Steps 
+If clients’ end-user Scan-Log file reports “ConnectWise-Assessment-Utility Execution Completed with Errors,” we advise them to timestamp the logfiles folder (so as not to lose older logs) and run the utility again. If the issue persists, contact our Support team.
+If the Scan-Log or pre-check-log files report “Token is not valid”, you need to reactivate or regenerate a new link for your end-users (see Reactivating or Regenerating a Client Assessment Link sections.) 
+
+If the downloaded utility link was renamed, we advise the end-user to download the utility again with the default name.   
+
+End-users Pre-Check-Log file Errors
+For any of the following errors	Suggested Action
+
+
+Technical Error:
+Error in creating precheck Logger.
+Error in creating scan Logger.
+Error while creating a log file.
+
+	
+
+End-user should move the utility to a different location (shouldn’t be a shared/network drive) and ensure the tool is run with admin rights.
+
+If the issue persists, contact our Support team.
+
+
+
+
+Technical Error:
+Error in getting the absolute path the of the current working directory
+
+	
+
+End-user should check if there are no dots or spaces in the execution directory path and ensure the tool is run with admin rights.
+
+
+
+
+Invalid Name of the utility file.
+Error: The name of the utility is modified.
+Token is modified
+
+	
+
+End-user should download the utility again with the default name.
+
+
+
+
+Invalid Token.
+Error: Token is invalid.
+
+	
+
+End-user needs an active assessment link. Partner must reactivate the link. End-user must run the utility again.
+
+
+
+
+callPOSTValidateTokenAPI: Error in POST Request to RMS, Error in calling Validate Token API
+
+	
+
+Ensure a broadband connection is available and try again.
+
+Scan-Log.log Files
+
+If self-scan fails with any of the below details.
+
+Broadband Issues
+
+Error while fetching IP address of self-machine
+
+	Contact our Support team.
+
+
+Error while calling UpdateExecutionStatus API.
+
+
+
+
+Error in Get API for contentDefinition.URL
+
+	
+
+End-user must run the utility again. If the issue persists, contact our Support team.
+
+
+
+
+Error in receiving S3 URL
+
+
+
+
+Error in Downloading OVAL File from S3URL.
+
+
+
+
+Error in Downloading %s from S3URL.
+
+
+
+
+Error in Getting OVAL File for OS
+
+
+
+
+Error occurred on calling rest API in /utilitydata?type
+
+
+
+
+Error occurred while reading response. API: /v1/utilitydata
+
+
+
+
+CallPOSTEndpointDetailsAPI: Error in POST Request to send runtime error
+
+Admin Rights Issues
+
+Error in Creating Scanner input file
+
+	
+
+Ensure the tool is run with admin rights. If the issue persists, contact our Support team.
+
+
+
+
+Error in creating directory to zip
+
+
+
+
+Error in creating file
+
+
+
+
+Error in reading directory
+
+
+
+
+Error in copying data to file
+
+	
+
+Ensure a broadband connection is available and the tool is run with admin rights. If the issue persists, contact our Support team.
+
+
+
+
+Error in executing scripts on machine - <IP address>
+
+
+
+
+Cannot run scanner on machine
+
+Generic Errors
+
+Error in encrypting source value
+
+	Contact our Support team.
+
+
+Error in encrypting partner value
+
+
+
+
+Error occurred while unzipping JRE
+
+	
+
+End-user must run the utility again. If the issue persists, contact our Support team.
+
+
+
+
+Error in copying scanner-jar to zip-dir
+
+
+
+
+Error in marshalling struct
+
+
+
+
+Error in unmarshalling ContentDefinition response.
+
+
+
+
+Error in unmarshalling script output data.
+
+
+
+
+Process Killed with PID
+
+
+
+
+error in wait on machine
+
+	
+
+End-user reboot, then run the utility again. If the issue persists, contact our Support team.
+
+ 
+
+Enable Dark Web Monitoring with Risk Assessment Understanding Risk Assessment Reports
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Enable Dark Web Monitoring with Risk Assessment
+Understanding Risk Assessment Reports
+ConnectWise Endpoint Policy Management: Reports
+This article provides information on the available reports for ConnectWise Endpoint Policy Management™.
+BrightGauge in ConnectWise RMM
+Reports for RMM are available in BrightGauge. These reports are in the form of templates and you can use these to create reports for your clients or f...
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

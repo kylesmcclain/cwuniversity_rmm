@@ -1,0 +1,123 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Tech Advantage   Desktop Projects: Tips and Best Practices
+Desktop Projects: Tips and Best Practices
+Last updated
+Oct 1, 2024
+Table of contents
+Overview
+Desktop Project Prerequisites
+Tips and Best Practices for Ensuring a Successful Desktop Project
+Tip 1: Select the Project Type That is the Best Fit
+Tip 2: Order Your Project Well in Advance of the Date You Want the Work to Be Performed
+Additional Notes
+Tip 3: Provide Off-Hours and Backup Contact Details
+Tip 4: Set Necessary Client Expectations Before Your Project Begins
+Additional Notes and Guidelines
+Price Quotes for Custom Desktop Projects
+Client Involvement in Your Desktop Project
+Concerns or Escalation Management
+Desktop Project Closure and Billing
+Rejecting a Project
+Contacting the Desktop Projects Team
+Overview
+
+This article provides tips and best practices that help ensure successful completion of your projects by the Desktop Projects Team.
+
+Desktop Project Prerequisites
+
+Any site for which you order a Tech Advantage Desktop Project must have the RMM Agent installed. After installing the RMM Agent on a desktop, you should allow a minimum of four hours before requesting a Desktop Project on the ITSupport Portal.
+
+Tips and Best Practices for Ensuring a Successful Desktop Project
+Tip 1: Select the Project Type That is the Best Fit
+
+When you order your Tech Advantage Desktop Project, selecting the correct project type is important. It helps our Desktop Projects Team coordinate your project with the technicians whose expertise is the best match for the work you require. It also ensures that you will be accurately invoiced.
+
+Order your Tech Advantage Desktop Project by selecting a project from the list. If you don't see the project you want, you can select Other and then provide details about the project.
+
+The most commonly requested projects are available in the Project Type menu on the ITSupport Portal. If you don't see a project type that matches your need (for example: Installing Windows 10 version upgrade, Profile Verification, Office 365 Desktop activity, or any custom activity that has more than one task involved), a Custom Desktop Project is typically the best bet.
+
+Contact our Desktop Projects Team (DesktopProjects@connectwise.com) and one of our Desktop Projects Experts will be happy to review your project requirements and recommend a project type.
+
+Tip 2: Order Your Project Well in Advance of the Date You Want the Work to Be Performed
+
+Ordering your Desktop Project well in advance of when you want the work to be performed allows proper lead time and helps ensure that:
+
+The Desktop Projects Team has sufficient time to review the project details and accept the project.
+The Desktop Projects Team has sufficient time to determine if there is additional information is required. If additional information is needed, one of our Desktop Project Team experts will call you.
+Additional Notes
+Once the project is accepted, we will work on the project as per the provided schedule.
+Projects that require desktop downtime or multiple reboots during one or more phases of execution are scheduled for off-hours or during the weekend.
+Weekend Custom Desktop Projects are typically planned out at least a week in advance in coordination with our Desktop Projects Team.
+For Custom Desktop Projects, partners are typically required to fill out an Excel sheet with user details and provide any additional project documentation to the Desktop Projects Team.
+Tip 3: Provide Off-Hours and Backup Contact Details
+
+As a general rule, we do not contact Partners outside of normal business hours. In the course of executing your project, however, it may become necessary for one of our Desktop Projects Experts to contact you during business off-hours if an emergency situation arises. To ensure that an appropriate contact can be reached in the event of an emergency, we request that you provide the following information before your project is scheduled to be executed:
+
+A mobile phone number for the primary partner contact.
+A mobile phone number for a backup partner contact (if the primary contact cannot be reached).
+Tip 4: Set Necessary Client Expectations Before Your Project Begins
+
+Some projects (projects related to system performance issues, for example) may require additional time or escalation to our expert team to complete. If this becomes necessary, the Desktop Projects Team will create a service request ticket and schedule additional work as required.
+
+Additional Notes and Guidelines
+Price Quotes for Custom Desktop Projects
+
+Though some Custom Desktop Projects have a fixed price (Office 365 Desktop activity and Profile Verification projects, for example), other Custom Desktop Projects may need to be reviewed by the Desktop Projects Team before a price quote can be provided. Once a quote has been provided, you need to approve the quote before project work can begin.
+
+Client Involvement in Your Desktop Project
+
+As a general rule, and to ensure that sensitive project information (such as project hours and project cost) is always kept confidential, ConnectWse's Desktop Projects Team does not communicate directly with client site personnel to discuss project technical details. Similarly, when communicating with the Desktop Projects Team via email, we recommend that you refrain from copying client site employees on any project-related correspondence. A recommended alternative is to communicate directly with client personnel, as needed, on a separate email thread.
+
+In certain situations, (for example, if you feel strongly that a conference call involving you, the client, and one of our Desktop Project Experts is necessary to ensure a successful project) an exception can be made. In a situation such as this, you should indicate before the call occurs whether our subject matter expert should represent a ConnectWise employee or an employee of your company.
+
+Concerns or Escalation Management
+
+To raise a concern or request escalation of an issue, contact the Desktop Projects Team at DesktopProjects@connectwise.com.This email is a distribution list that is monitored 24/7/365 by the NOC, technical leaders, and their respective management personnel, ensuring that you will always receive timely responses to any project-related questions or escalation requests.
+
+Desktop Project Closure and Billing
+
+When your Desktop Project has been completed, the following steps occur:
+
+For Standard Desktop Projects, the status changes to Work Completed. You have 10 days to mark the project as Satisfactory or Work Incomplete, otherwise the project status becomes AutoComplete.
+For Custom Desktop Projects, the ticket status will be changed to NOC Completed and you will receive an email notifying you that the project is complete. Reply to the email indicating your approval and an invoice will be created and sent to you.
+Rejecting a Project
+
+If you need to cancel a project, either because it was incorrectly submitted or because our Desktop Projects Team has identified it as the incorrect project type based on your requirements, follow these steps:
+
+In the Asio platform (ITSupport Portal), navigate to Settings > Account Administration > Products & Services.
+Select Tech Advantage.
+On the Tech Advantage dashboard, click on the Desktop Projects tab.
+In the New Project column, click on the Project count number for the corresponding Project row.
+Select the Project, provide a reason for the rejection, and click the Reject button.
+Contacting the Desktop Projects Team
+
+For Desktop Project questions; whether to order a new project or to request information about a project you have already ordered, contact the Desktop Projects Team at DesktopProjects@connectwise.com.
+
+Desktop Projects Project List
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Project List
+Desktop Projects
+Server Projects
+Server Projects Best Practices
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

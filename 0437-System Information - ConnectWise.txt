@@ -1,0 +1,169 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   RMM Reporting API   Reporting API REST Resources   System Information
+System Information
+Last updated
+Jul 8, 2025
+Table of contents
+Overview
+Endpoint and URI
+Method
+Request Body
+Response Body
+Parameter Descriptions for System Information
+Source of Data in the Asio platform
+Overview
+
+Retrieves system information gathered from a specified machine, including hardware, OS, and BIOS information.
+
+Endpoint and URI
+
+https://itsapi.itsupport247.net/repo...teminformation
+
+Method
+
+POST
+
+Request Body
+
+{
+
+"SiteCode": "AGTSolutions"
+
+}
+
+Response Body
+
+{
+
+"Error": null,
+
+"SystemInformation": [
+
+{
+
+"BIOSManufacturer": "IBM",
+
+"BIOSName": "Phoenix FirstBios(tm) Desktop Pro Version 2.0 for IBM ThinkCentre.",
+
+"BIOSSerialNumber": "KLVAH37",
+
+"BIOSVersion": "PTLTD - 60400d0",
+
+"BaseBoardManufacturer": "IBM",
+
+"DiskInterfaceType": "SCSI",
+
+"DiskManufacturer": "Toshiba",
+
+"DiskModel": "L200",
+
+"DiskVolume": "320082437734",
+
+"ExternalIPAddress": "1.1.1.1",
+
+"FriendlyName": "Mike's PC",
+
+"IPAddress": "1.1.1.1",
+
+"LastCheckDate": "Oct 17 2015 10:02PM",
+
+"MachineId": 9223372036854775807,
+
+"MachineName": "Intel-AMT1",
+
+"Model": "Windows7",
+
+"OSInstallDate": "Sep 15 2015 5:13PM",
+
+"OperatingSystem": "Windows",
+
+"Partitions": 4,
+
+"ProcessorCount": 1,
+
+"ProcessorType": "Intel(R)Core(TM)",
+
+"Product": "IBM",
+
+"RAM": 8482560409,
+
+"SerialNumber": "12345678",
+
+"SystemType": "X86-based PC",
+
+"TimeZone": "EST",
+
+"Type": "desktop"
+
+}
+
+]
+
+}
+
+Parameter Descriptions for System Information
+Parameter	Description
+"SiteCode"	Unique site code listed in Asio™ Platform (ITSupport Portal)
+"BIOSManufacturer"	BIOS manufacturer name
+"BIOSName"	BIOS name
+"BIOSSerialNumber"	BIOS serial number
+"BIOSVersion"	BIOS version
+"BaseBoardManufacturer"	BaseBoard manufacturer name
+"DiskInterfaceType"	Type of disk interface
+"DiskManufacturer"	Disk manufacturer name
+"DiskModel"	Disk model name
+"DiskVolume"	Disk volume (in bytes)
+"ExternalIPAddress"	Resource external IP address
+"FriendlyName"	Resource friendly name in Asio™ Platform (ITSupport Portal)
+"IPAddress"	Resource local IP address
+"LastCheckDate"	Last agent check date
+"MachineId"	Unique machine ID in ConnectWise database
+"MachineName"	Resource name in Asio™ Platform (ITSupport Portal)
+"Model"	Resource model name
+"OSInstallDate"	OS install date and time
+"OperatingSystem"	Resource OS
+"Partitions"	Number of partitions
+"ProcessorCount"	Number of processors
+"ProcessorType"	Type of processors
+"Product"	BaseBoard product name
+"RAM"	RAM (in bytes)
+"SerialNumber"	Resource serial number
+"SystemType"	Resource system type
+"TimeZone"	Local time zone of resource
+"Type"	Desktop or server
+Source of Data in the Asio platform
+
+Reports > Asio > Technical Details > System Information Report
+
+SNMP Devices Unsupported Antivirus
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Agent Details
+Retrieves agent information for the authenticated partner and the specified site.
+Antivirus Summary
+Retrieves counts of machines having antivirus protection in the following states: Updated, Outdated, Not Installed, or Information Unavailable.
+Antivirus Version Summary
+Retrieves currently detected antivirus software and the definition version.
+BCDR Continuity Appliances
+Retrieves a list of Recover Continuity backup appliances provisioned at the given site.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

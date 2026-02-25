@@ -1,0 +1,57 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Integrations to ConnectWise RMM   Webroot
+Webroot
+Last updated
+Jun 11, 2025
+Table of contents
+Overview
+Documentation
+Overview
+
+Webroot Endpoint Protection is included in our ConnectWise RMM™ desktop agent to help you protect your resources against viruses. (A fee is associated with using Webroot on server agents and non-RMM endpoints.) You can keep track of the number of endpoints from the Webroot dashboard and from the Asio platform dashboard.
+
+Documentation
+
+Click the title of an article below to learn more about the Webroot integration.
+
+All articles
+Featured articles
+Getting Started with Webroot Endpoint Protection
+Webroot Activation Checklist
+Webroot Best Practices
+Webroot Billing
+Webroot Default Configurations
+Webroot Integration 2.0 - Bundled Integration
+Webroot Integration 2.0 – Non-bundled Integration
+Webroot Reporting
+
+ 
+
+Integrations to ConnectWise RMM Getting Started with Webroot Endpoint Protection
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Getting Started with Webroot Endpoint Protection
+Webroot Activation Checklist
+Webroot Best Practices
+Webroot Billing
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

@@ -1,0 +1,119 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   RMM Reporting API   Reporting API REST Resources   Service Requests by Month
+Service Requests by Month
+Last updated
+Jul 8, 2025
+Table of contents
+Overview
+Endpoint and URI
+Method
+Request Body
+Response Body
+Parameter Descriptions for Service Requests by Month
+Source of Data in the Asio Platform
+Overview
+
+Returns counts of service requests that have been opened and/or closed over the last 6 months.
+
+Endpoint and URI
+
+https://itsapi.itsupport247.net/repo...quests/monthly
+
+Method
+
+POST
+
+Request Body
+
+{
+
+"Month":4,
+
+"SiteCode":"aAGTSolutions",
+
+"Year":2015,
+
+}
+
+Response Body
+
+{
+
+"error":null,
+
+"serviceRequestSummary":[
+
+{
+
+"Month":"2015-04",
+
+"closed":3,
+
+"opened":4
+
+},
+
+{
+
+...
+
+},
+
+{
+
+...
+
+}
+
+]
+
+}
+
+Parameter Descriptions for Service Requests by Month
+Parameter	Description
+"Month"	Requested month (numerical)
+"SiteCode"	Unique site code listed in Asio™ Platform (ITSupport Portal)
+"Year"	Requested year
+
+
+"Month"
+
+	1 of the 6 previous months shown
+"closed"	Number of closed requests in the specified month
+"opened"	Number of opened requests in the specified month
+Source of Data in the Asio Platform
+
+Reports >  Asio > Executive Report > Service Request Data > Open / Closed > By Month
+
+Server Utilization Service Requests by Week
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Agent Details
+Retrieves agent information for the authenticated partner and the specified site.
+Antivirus Summary
+Retrieves counts of machines having antivirus protection in the following states: Updated, Outdated, Not Installed, or Information Unavailable.
+Antivirus Version Summary
+Retrieves currently detected antivirus software and the definition version.
+BCDR Continuity Appliances
+Retrieves a list of Recover Continuity backup appliances provisioned at the given site.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

@@ -1,0 +1,157 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   RMM Tools   APIs   Automation API   Retrieve Custom Templates API
+Retrieve Custom Templates API
+Last updated
+Dec 5, 2025
+Table of contents
+API Name
+API Description
+Request and Response API
+API Name
+
+Retrieve Custom Templates created by Partner
+
+API Description
+
+This API allows you to retrieve information about custom templates that you have created.
+
+Request and Response API
+
+You can find the Request and Response API details at this dev portal.
+
+The API Response will include the following fields:
+
+Field
+
+	
+
+Description
+
+
+
+
+name
+
+	
+
+The name of the script 
+
+
+
+
+type
+
+	
+
+Specifies the type of the script
+
+
+
+
+categories
+
+	
+
+Categories associated with the script 
+
+
+
+
+description
+
+	
+
+Description of the template (string) 
+
+
+
+
+operatingSystem
+
+	
+
+Supported operating systems for the script template
+
+
+
+
+executorEngine
+
+	
+
+type
+
+
+
+
+createdAt
+
+	
+
+The timestamp indicating when the script was created
+
+
+
+
+updatedAt
+
+	
+
+The timestamp indicating when the script was last updated
+
+
+
+
+userParameters
+
+	
+
+Additional parameters or inputs required by the script, specified as a JSON object
+
+
+
+
+JSONSchema
+
+	
+
+The JSON schema that defines the structure and validation rules for the script's parameters and inputs
+
+ 
+
+Review the Tasking documentation for more information.
+
+Note: This API is planned to be deprecated soon.
+
+ 
+
+ 
+
+Automation API Retrieve Fusion Scripts API
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Retrieve Global Templates API
+Retrieve Fusion Scripts API
+Retrieve all Scheduled Tasks API
+Retrieve Task Instance Summary for a Task API
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

@@ -1,0 +1,118 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   RMM Reporting API   Reporting API REST Resources   Daily Antivirus Status
+Daily Antivirus Status
+Last updated
+Jul 9, 2025
+Table of contents
+Overview
+Endpoint and URI
+Method
+Request Body
+Response Body
+Parameter Descriptions for Daily Antivirus Status
+Source of Data in the Asio Platform
+Overview
+
+Returns the status of antivirus software on each machine for each day in the given month.
+
+Endpoint and URI
+
+https://itsapi.itsupport247.net/repo...ntivirus/daily
+
+Method
+
+POST
+
+Request Body
+
+{
+
+"Month":4,
+
+"SiteCode":"AGTSolutions",
+
+"Year":2015,
+
+"ResourceType":"desktop"
+
+}
+
+Response Body
+
+{
+
+"dailyAntivirusSummary":[
+
+{
+
+"dailyAntivirusStatus":["Running/Synchronized","Information not available","Information not available","Not Synchronized","Information not available","Information not available","Information not available","Information not available","Information not available","Information not available","Information not available","Information not available","Information not available","Not Supported/Installed","Information not available","Information not available","Information not available","Information not available","Information not available","Information not available","Not Applicable","Information not available","Information not available","Information not available","Information not available","Information not available","Information not available","Information not available","Information not available","Information not available"],
+
+"MachineId": 9223372036854775807,
+
+"resource":"Intel-AMT1"
+
+},
+
+{
+
+...
+
+},
+
+{
+
+...
+
+}
+
+]
+
+"error": null
+
+}
+
+Parameter Descriptions for Daily Antivirus Status
+Parameter	Description
+"Month"	Requested month (numerical)
+"SiteCode"	Unique site code listed in Asio™ Platform (ITSupport Portal)
+"Year"	Requested year
+"ResourceType"	Desktop or server
+"dailyAntivirusStatus"	Daily statuses for the resource for each day of the month
+"MachineId"	Unique machine ID in ConnectWise database
+"resource"	Resource name
+Source of Data in the Asio Platform
+
+Reports > Asio > Executive Report > Desktop Data / Server Data > Antivirus Definitions > Daily Status
+
+CPU Utilization Daily Server Availability
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Agent Details
+Retrieves agent information for the authenticated partner and the specified site.
+Antivirus Summary
+Retrieves counts of machines having antivirus protection in the following states: Updated, Outdated, Not Installed, or Information Unavailable.
+Antivirus Version Summary
+Retrieves currently detected antivirus software and the definition version.
+BCDR Continuity Appliances
+Retrieves a list of Recover Continuity backup appliances provisioned at the given site.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

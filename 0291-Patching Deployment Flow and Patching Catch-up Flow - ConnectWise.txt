@@ -1,0 +1,90 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Patching   Patching Deployment Flow and Patching Catch-up Flow
+Patching Deployment Flow and Patching Catch-up Flow
+Last updated
+Jun 2, 2025
+Table of contents
+Overview
+Patching Deployment Flow
+Patching Catch-up Flow
+Overview
+
+This article outlines how the process for the patching deployment and patching catch-up flow work. 
+
+The patching deployment flow tries up to three attempts to install any patch, including any new patches found after the start of the schedule or during deployments.  
+The patching catch-up flow allows you to patch endpoints that are coming back online even if they were offline for a long time.
+Patching Deployment Flow
+
+The patching deployment flow tries up to three attempts to install any patch, including any new patches found after the start of the schedule or during deployments.  
+
+The patching deployment flow works in the following phases:
+
+Deployment Start
+Download - The patches are downloaded.
+Install (1) - The installation is attempted. 
+Assessment - An assessment is run to determine if any patches are missing. 
+Install (2) (Optional) - The installation is attempted again.
+Assessment - An assessment is run to determine if any patches are missing. 
+Install (3) (Optional) - The installation is attempted again.
+Assessment - An assessment is run to determine if any patches are missing.  
+Deployment End
+
+Note: Please make sure that the patching window is large enough (more than one hour) to accommodate all three attempts. If it is not, then not all three of the attempts will be completed. 
+
+Patches failed to install
+New patches were found in between attempts
+Patching Catch-up Flow
+
+If an endpoint is offline for up to 90 days and then comes online, the catch-up flow initiates to bring the endpoint up-to-date with its patches. Patching catch-up reviews the patching policy and adds any additional patches found due to policy changes or newly released patches to the installation queue. Patching catch-up will attempt three installation attempts to bring the endpoint up-to-date with its patches. 
+
+Important: This flow will only activate if an endpoint misses its scheduled patching window and patching catchup is turned on for that endpoint in the policy.
+
+ 
+
+Important: Any attempts to deploy manual patches will be blocked if patching catch-up is active.
+
+The patching catch-up flow works in the following phases:
+
+Endpoint comes online (within 90 days)
+Assessment (Policy) - An assessment is run to determine if any patches are missing. This assessment also reviews the policy to make sure that if, anything has changed in the policy, the correct patches can be queued for installation on the endpoint. 
+Install (1)  - The installation is attempted. 
+Assessment - An assessment is run to determine if any patches are missing. 
+Install (2)  - The installation is attempted again. 
+Assessment - An assessment is run to determine if any patches are missing. 
+Install (3) - The installation is attempted again. 
+Assessment - An assessment is run to determine if any patches are missing. 
+Deployment end
+
+Note: If an endpoint goes offline during an attempt, the next time the endpoint comes online another installation starts (within a 90-day period).
+
+For example, if after the first attempt, the endpoint goes offline, the next time it comes back online then the second installation attempt starts.
+
+Patch Testing Reports Third-Party Patching
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+OS Patching
+OS patching is a critical feature that helps to keep your managed endpoints up to date on the many security and non-security patches released every mo...
+Patch Testing
+Third-Party Patching
+Windows 11 Patch Assessment issue
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

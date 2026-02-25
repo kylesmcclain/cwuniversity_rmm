@@ -1,0 +1,319 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   PSA Integration   Autotask Integration Guide   Autotask Asset Errors Knowledgebase
+Autotask Asset Errors Knowledgebase
+Last updated
+Aug 16, 2024
+Table of contents
+Asset Errors
+Asset Errors
+
+Generic Error
+
+	
+
+Summary Error
+
+	
+
+Error Details and Steps for Correction
+
+
+
+
+Partner call rate limit reached.
+
+OR
+
+The autotask api request threshold of 10000 requests per 60 minutes has been exceeded.
+
+	
+
+Error code : 2000
+
+The Autotask API limit for the account has been exceeded.
+
+	
+
+This error indicates that the Autotask API account access limit has been exceeded and no further API calls can be initiated for the account.
+
+Impact:
+
+No transaction can be executed for the API account unless the suspension for the API account is released from Autotask
+
+Troubleshooting:
+
+Contact Autotask support for assistance.
+
+Refer Autotask documentation for details.
+
+
+Failed to retrieve zoneinfo.	
+
+Error code: 2002
+
+The API account used for the integration is unable to fetch the Autotask details. 
+
+	
+
+This error indicates that the API account used for the integration is unable to fetch the Autotask details for sync.
+
+Impact:
+
+Ticket, asset, billing, and contact sync for the ConnectWise RMM sites will not be synced with Autotask
+
+Troubleshooting:
+
+Make sure that the account used for the integration is an Autotask API account. 
+Make sure that the API account used for the integration is still active.
+Credentials for the API account if changed should be updated in the ConnectWise RMM integration.
+
+Once the necessary changes are made, please try resyncing the tickets from the PSA Integration section to force the tickets to resync.
+
+If the issue persists, please contact the PSA Support team for assistance.
+
+
+
+
+Invalid username or password.
+
+OR
+
+Your password has expired.
+
+OR
+
+The user account has been locked.
+
+	
+
+Error code: 2003
+
+The API account credentials or account is not active or enabled for the integration.
+
+	
+
+This error indicates that the API account credentials or account is not active or enabled for the integration.
+
+Impact:
+
+Ticket, asset, billing, and contact sync for the ConnectWise RMM sites will not be synced with Autotask.
+
+Troubleshooting:
+
+Make sure that the account used for the integration is an Autotask API account. 
+Make sure that the API account used for the integration is still active.
+Credentials for the API account, if changed, should be updated in the ConnectWise RMM integration.
+
+Once the necessary changes are made, please try resyncing the tickets from the PSA Integration section to force the tickets to resync.
+
+If the issue persists, please contact the PSA Support team for assistance.
+
+
+Your autotask service has been cancelled.	
+
+Error code: 2005
+
+The Autotask account mapped for the integration is canceled.
+
+	
+
+Impact:
+
+ConnectWise RMM integration with Autotask is broken.
+
+Troubleshooting:
+
+Verify if the Autotask account mapped for the ConnectWise RMM integration is still available. If you have a new Autotask instance created, please update the same in the ConnectWise RMM integration. Refer to the Autotask Integration Setup Guide documentation for assistance.
+If you have canceled the Autotask PSA then please disable the Autotask integration with ConnectWise RMM.
+
+Once the necessary changes are made, please try resyncing the tickets from the PSA Integration section to force the tickets to resync.
+
+If the issue persists, please contact the PSA Support team for assistance.
+
+
+autotask.net failed to respond.	
+
+Error code: 2006
+
+The Autotask instance is not available or accessible.
+
+	
+
+Impact:
+
+The Autotask instance is not available or accessible for the ConnectWise RMM to sync information.
+
+Troubleshooting:
+
+Make sure that there is no planned maintenance from Autotask.
+
+Once the Autotask instance is accessible and functioning correctly, please try resyncing the tickets from the PSA Integration section to force the tickets to resync.
+
+If the issue persists, please contact the PSA Support team for assistance.
+
+
+Version 1.6 of the API is only accessible to API only users.	
+
+Error code: 2008
+
+The account used for the integration is not an API user.
+
+	
+
+This error indicates that the account used for the integration is not an API user.
+
+Impact:
+
+Ticket or asset data will not be synced as the integration requires an API user.
+
+Troubleshooting:
+
+Create a Autotask API user and use the same user for the ConnectWise RMM integration.
+Complete the setup process as outlined in the Autotask Integration Guide documentation.
+
+If the issue persists, please contact the PSA Support team for assistance.
+
+
+The logged in resource does not have the adequate permissions to create this entity type.	
+
+Error code: 2010
+
+The account used for the integration doesn't have appropriate permissions.
+
+	
+
+This error indicates that the API user doesn't have permissions to complete the transaction.
+
+Impact:
+
+Ticket and asset sync will be impacted.
+
+Troubleshooting:
+
+Make sure that the account used for the integration is an Autotask API account. 
+Make sure that the API account used has appropriate permissions as defined in the Autotask Integration Setup Guide documentation.
+
+Once the necessary changes are made, please try resyncing the tickets from the PSA Integration section to force the tickets to resync.
+
+If the issue persists, please contact the PSA Support team for assistance.
+
+
+Encrypted udfs cannot be queried.	
+
+Error code: 2011
+
+The asset cannot be created or updated as the encrypted UDF (User Defined Fields) data is not retrieved or accessible.
+
+	
+
+This error indicates that the asset cannot be created or updated as the encrypted UDF (User Defined Fields) data is not retrieved or accessible.
+
+Impact:
+
+Asset updates will fail to be synced.
+
+Troubleshooting:
+
+Make sure that all the UDF data used for the configuration item sync are not encrypted or protected.
+
+Once the necessary changes are made, please try resyncing the tickets from the PSA Integration section to force the tickets to resync.
+
+If the issue persists, please contact the PSA Support team for assistance.
+
+
+This installedproduct can not be associated with a this contractid because the contract is inactive.	
+
+Error code: 2011
+
+The contract mapped against the configuration item is inactive.
+
+	
+
+This error indicates that the contract mapped against the configuration item is inactive.
+
+Impact:
+
+The configuration item will not be synced.
+
+Troubleshooting:
+
+Make sure that the contract that is associated to and mapped to the configuration item is active.
+Remove the contract that is mapped to the configuration items so that the system can attempt to sync again.
+
+Once the necessary changes are made, please try resyncing the tickets from the PSA Integration section to force the tickets to resync.
+
+If the issue persists, please contact the PSA Support team for assistance.
+
+
+An installedproduct may be associated with either a serviceid or a servicebundleid, but not both.	
+
+Error Code: 2012
+
+The service ID or bundle is not correctly mapped or associated with the configuration item.
+
+	
+
+This error indicates that the service ID or bundle is not correctly mapped or associated with the configuration item.
+
+Impact:
+
+The configuration items will not be synced
+
+Troubleshooting:
+
+Make sure that the Service Id or Service bundle that is associated and mapped to the configuration item is active.
+Remove the contract that is mapped with the configuration items so that the system can attempt to sync again.
+
+Once the necessary changes are made, please try resyncing the tickets from the PSA Integration section to force the tickets to resync.
+
+If the issue persists, please contact the PSA Support team for assistance.
+
+
+Service unavailable.	
+
+Error Code: 2013
+
+The Autotask instance is not available or accessible.
+
+	
+
+Impact:
+
+The Autotask instance is not available or accessible for the ConnectWise RMM to sync information.
+
+Troubleshooting:
+
+Make sure that there is no planned maintenance from Autotask.
+
+Once the necessary changes are made, please try resyncing the tickets from the PSA Integration section to force the tickets to resync.
+
+If the issue persists, please contact the PSA Support team for assistance.
+
+Autotask PSA - Policies Integration FAQs Autotask Integration Contact Sync
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Autotask Integration Setup Guide
+Autotask Integration Contact Sync
+Autotask Integration Reporting on Synchronization Status
+Include User-Defined Fields in Configuration Items
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

@@ -1,0 +1,121 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   RMM Reporting API   Reporting API REST Resources   SNMP Devices
+SNMP Devices
+Last updated
+Jul 8, 2025
+Table of contents
+Overview
+Endpoint and URI
+Method
+Request Body
+Response Body
+Parameter Descriptions for SNMP Devices
+Source of Data in the Asio Platform
+Overview
+
+Retrieves a list of SNMP devices at the given site.
+
+Endpoint and URI
+
+https://itsapi.itsupport247.net/repo...n/snmp/devices
+
+Method
+
+POST
+
+Request Body
+
+{
+
+"Month":4,
+
+"SiteCode":"AGTSolutions",
+
+"Year":2015,
+
+}
+
+Response Body
+
+{
+
+"devices":[
+
+{
+
+"friendlyName":"TP-Link_1",
+
+"MachineId": 9223372036854775807,
+
+"name":"TP_1",
+
+"type":"router"
+
+},
+
+{
+
+...
+
+},
+
+{
+
+...
+
+}
+
+]
+
+"error":null
+
+}
+
+Parameter Descriptions for SNMP Devices
+Parameter	Description
+"Month"	Requested month (numerical)
+"SiteCode"	Unique site code listed in Asio™ Platform (ITSupport Portal)
+"Year"	Requested year
+"friendlyName"	Device friendly name in Asio™ Platform (ITSupport Portal)
+"MachineId"	Unique machine ID in ConnectWise database
+"name"	Device name in Asio™ Platform (ITSupport Portal)
+"type"	Device type (router, switch, etc.)
+
+Note: You need to pass the month and the year to get the data for the SNMP devices. These two properties are not optional.
+
+Source of Data in the Asio Platform
+
+Reports >  Asio > Executive Report > SNMP Monitoring > Device Details
+
+Sites System Information
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Agent Details
+Retrieves agent information for the authenticated partner and the specified site.
+Antivirus Summary
+Retrieves counts of machines having antivirus protection in the following states: Updated, Outdated, Not Installed, or Information Unavailable.
+Antivirus Version Summary
+Retrieves currently detected antivirus software and the definition version.
+BCDR Continuity Appliances
+Retrieves a list of Recover Continuity backup appliances provisioned at the given site.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

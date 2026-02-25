@@ -1,0 +1,57 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Tech Advantage   Tech Advantage Sample Project: Microsoft Exchange Setup
+Tech Advantage Sample Project: Microsoft Exchange Setup
+Last updated
+Jul 3, 2025
+Table of contents
+Overview
+Tech Advantage Sample Project
+Overview
+
+This article provides an example of a Tech Advantage project. 
+
+Tech Advantage Sample Project
+
+John Martin from Ace Computers created a request in the Asio platform for an Exchange Server Setup Tech Advantage project. The following transcript details the project flow:
+
+Raj Singh, a NOC Team Leader, received the request and emailed John to let him know the next steps.
+
+The Request was reviewed by the NOC Team Leader and a Senior Technician, who then prepared a summary of work.  They reviewed the environment to ensure project success.
+
+A project scope was created and assigned to John to review.
+
+A meeting was scheduled with John to review all aspects of the project.
+The project scope was approved and the job was assigned back to the NOC.
+
+The NOC team completes the project. 
+
+ 
+
+Tech Advantage Reporting Tickets
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Project List
+Desktop Projects
+Desktop Projects: Tips and Best Practices
+Server Projects
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

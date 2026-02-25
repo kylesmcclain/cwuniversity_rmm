@@ -1,0 +1,522 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Tech Advantage   Project List
+Project List
+Last updated
+Oct 18, 2024
+Table of contents
+Overview
+Cloud-based Projects
+Desktop Projects
+Server Projects
+Prerequisites
+Active Directory Migration
+Active Directory Setup
+BlackBerry Enterprise Server for Microsoft Exchange Migration
+BlackBerry Enterprise Server for Microsoft Exchange Setup
+Custom Server Project
+Exchange Server Migration
+Exchange Server Setup
+Physical to Virtual (P2V) Machine Conversion using VMware vCenter Converter
+Server Service Pack Installation
+Small Business Server Migration
+Small Business Server Setup
+VMware vCenter Server Setup
+Webroot Deployment
+Windows Operating System Installation on Hypervisor
+Windows Server Hyper-V Setup
+Windows Server Hyper-V with SCVMM Setup
+Webroot Projects
+Rebranding Impact 
+Overview
+
+The following projects are available through ConnectWise's Tech Advantage program.
+
+Note: Microsoft has renamed Azure Active Directory (Azure AD) to Microsoft Entra ID. For details on how this rebranding impacts the following conditions, please see Rebranding Impact section. 
+
+Cloud-based Projects
+Office 365 Migration and Setup
+Azure RMS for Email encryption
+Intune Implementation
+Azure IT Infrastructure Migration and Setup
+New VM creation
+File/Print Server migration
+P2V/V2V migration to Azure Cloud
+Azure Active Directory Migration and Setup
+Azure SQL Server Migration and Setup
+Azure SharePoint Migration and Setup
+Microsoft Remote Desktop Services Setup on Public Cloud Providers
+Desktop-level activities surrounding these projects can also be accommodated by the Projects Team.
+Desktop Projects
+Adobe Flash Player ActiveX Installation
+Adobe Flash Player Installation
+Adobe Reader Installation
+Anti-Spyware or Anti-Malware Scan Request - Our Tech Advantage team will schedule a scan for Anti-Spyware or Anti-Malware
+Ask Toolbar Installation
+CCleaner Installation / Removal
+Compatibility Pack for the 2007 Office system
+Defrag Windows Disk
+DST Patch Installation
+Endpoint Protection Installation / Rollout
+Endpoint Protection Scan Request - We will scan for endpoint protection issues
+Endpoint Protection Software Corruption - We will work with you to fix an endpoint protection software corruption issue or other endpoint protection issues
+Google Chrome Installation
+Google Earth Installation
+Internet Explorer 8 Installation
+Internet Explorer 9 Installation
+Internet Explorer troubleshooting - We will help troubleshoot issues with Internet Explorer.
+iTunes Installation
+Java 2 Runtime Environment Installation
+Java 6 Installation
+Java ™ SE Runtime Environment 6 Update
+Klickerz Installation
+Microsoft .NET Framework 1.1 Installation
+Microsoft .NET Framework 2.0 Service Pack 1 (32 bit) Installation
+Microsoft .NET Framework 2.0 Service Pack 1 (64 bit) Installation
+Microsoft .NET Framework 2.0 Service Pack 2 (32 bit) Installation
+Microsoft .NET Framework 2.0 Service Pack 2 (64 bit) Installation
+Microsoft .NET Framework 2.0 (32 bit) Installation
+Microsoft .NET Framework 2.0 (64 bit) Installation
+Microsoft .NET Framework 3.0 Service Pack 1 Installation
+Microsoft .NET Framework 3.0 (32 bit) Installation
+Microsoft .NET Framework 3.0 (64 bit) Installation
+Microsoft .NET Framework 2.0 (32 bit) Installation
+Microsoft .NET Framework 3.5 Installation
+Microsoft .NET Framework 4.0 Installation
+Microsoft Calculator Plus troubleshooting
+Microsoft Office 2003 Service Pack 3 Installation
+Microsoft Office 2003 Web Components
+Microsoft Office 2007 Service Pack 2 Installation
+Microsoft Office Corrupt/Installation/Troubleshooting - We will troubleshoot Microsoft Office installation and corruption issues.
+Microsoft Outlook Issue (All Versions)
+Microsoft Silverlight
+Mozilla Firefox Installation
+Outlook Express Issue
+Patch Installation Request
+PDFCreator Installation
+Picasa 3.5 Installation
+Putty Installation
+RealPlayer Installation
+Safari Installation
+SaveAsPDF Installation
+Shadow Copy Client Installation
+Shockwave Installation
+Skype Installation
+Symantec Endpoint Protection
+Symantec LiveUpdate
+System Performance Issues - We will troubleshoot system performance issues.
+TeamViewer Installation
+TightVNC Installation/Update
+USB Driver for USB Adapter Cable - We will troubleshoot USB driver issues.
+User Profile Hive Cleanup Service - We will install and troubleshoot User Profile Hive Cleanup Service problems. User Profile Hive Cleanup Service helps with slow log-off and reconciled profile problems.
+VLC media player Installation
+VNC Free Edition Installation
+Webroot Deployment
+Windows 7 Service Pack 1 Installation
+Windows Defender (32/64 Bit) Installation/Troubleshooting
+Windows Media Player (32/64 Bit) Installation/Troubleshooting
+Windows Vista Service Pack 1 Installation
+Windows Vista Service Pack 2 Installation
+Windows XP Service Pack 2 Installation
+Windows XP Service Pack 3 Installation
+WinRAR archiver (32/64 Bit) - We will install and troubleshoot WinRAR archiver issues.
+YAHOO! Toolbar Installation
+Server Projects
+Active Directory Migration
+Active Directory Setup
+BlackBerry Enterprise Server for Microsoft Exchange Migration
+BlackBerry Enterprise Server for Microsoft Exchange Setup
+Custom Server Project
+Exchange Server Migration
+Exchange Server Setup
+Physical to Virtual (P2V) Machine Conversion using VMware vCenter Converter
+Server Service Pack Installation
+Small Business Server Migration
+Small Business Server Setup
+VMware vCenter Server Setup
+Webroot Deployment
+Windows Operating System Installation on Hypervisor
+Windows Server Hyper-V Setup
+Windows Server Hyper-V with SCVMM Setup
+Prerequisites
+
+For Server Projects, in addition to any prerequisites listed below, please make sure you have the following:
+
+Administrator (Root) or Domain Administrator credentials.
+The RMM Agent installed on the server in question.
+Software licenses for new installs or migration.
+
+Active Directory Migration
+
+When you want to upgrade your Active Directory to a newer version, our Tech Advantage team performs the following steps:
+
+Health check of existing domain environment
+Forest Schema preparation
+Domain Schema preparation
+Install Active Directory on Windows Server 2008/R2/2012
+Transfer FSMO roles to new ADC
+Transfer DNS, DHCP, WINS roles
+Keep old Domain Controller offline for a week and observe the environment for any impact
+Decommission the old Domain Controller
+In addition, our team can customize the migration based on your client’s requirements.
+Active Directory Setup
+
+For Active Directory Setup, our Tech Advantage team performs the following steps:
+
+Health check of existing environment
+Install Active Directory and DNS server role
+Verify replication
+Configure the PDC emulator for the forest root Authoritative Time server
+Configure DC as Global catalog server
+Install DHCP, WINS roles (optional)
+
+In addition, our team can customize the setup based on your client’s requirements.
+
+BlackBerry Enterprise Server for Microsoft Exchange Migration
+
+For the Blackberry Enterprise Server for Microsoft Exchange Migration, our Tech Advantage team performs the following steps:
+
+Review and scope production environment
+Detect issues and recommend actions
+Assign permissions for the new BlackBerry service account according to Windows (AD)
+Install the Blackberry Application
+Create new database with existing users configured
+Perform migration from old Bes to new Bes server
+Verify functionality
+Decommission the old server
+
+In addition, our team can customize this project based on your client’s requirements.
+
+BlackBerry Enterprise Server for Microsoft Exchange Setup
+
+For the Blackberry Enterprise Server for Microsoft Exchange Setup, our Tech Advantage team performs the following steps:
+
+Health check of existing environment
+Creating BlackBerry Service account (besadmin) with permissions according to the Windows (AD)
+Assign permissions to BlackBerry service account according to the Exchange server version
+Install Blackberry Application
+Create BlackBerry configuration database (besmgmt) or using the existing database
+Configure and check the permissions for the BlackBerry configuration database
+Verify the necessary ports for BES are open on the server
+Activate the users from server-side
+Verify the windows account (besadmin) can access the users mailbox in Exchange server
+
+In addition, our team can customize this project based on your client’s requirements.
+
+Custom Server Project
+
+For unique server projects not listed, select this option and complete the required fields instead of submitting the request via email to the NOC. This step will provide the information the NOC needs upfront to begin working on the project as efficiently as possible.
+
+Exchange Server Migration
+
+For the Exchange Server Migration, our Tech Advantage team will migrate and test the Exchange environment and complete the following:
+
+Review of current production environment
+Pre-deployment analysis to ensure Exchange compatibility
+Prepare environment for an exchange migration
+Install and configure new version Exchange into client environment
+Run a complete test suite on the Exchange server
+Migrate existing Mailboxes and public folders
+Configuration of Active Sync and OWA
+Autodiscover Configuration*
+Testing of complete new environment*
+Decommission the old server
+
+Note: Since the auto discovery feature is being migrated to a new server, the SAN certificate needs to be modified in order to generate a new certificate; ConnectWise partners need to provide details so that NOC can generate a certificate file, which the partner would use to generate a certificate from their provider such as GoDaddy or VeriSign. If you select a third-party SAN Certificate, please provide details below for generating a certificate request file.
+
+Organization
+Organization Unit
+Country/Region City/Locality State/Province
+
+In addition, our team can customize this project based on your client’s requirements.
+
+Note: For Exchange 2003 to 2013 migrations, if there is no direct upgrade path, additional charges may be applied due to an increase in service hours.
+
+Exchange Server Setup
+
+For the Exchange Server Setup, our Tech Advantage team performs the following steps:
+
+Health check of existing environment
+Detect issues and give recommendations
+Install Exchange in client environment
+Configure the Exchange required features
+Test the Exchange server functionality
+Active Sync configuration
+OWA configuration
+Autodiscover configuration
+
+In addition, our team can customize this project based on your client’s requirements.  To see a sample of this project, go to:  Tech Advantage Sample Project: Microsoft Exchange Setup.
+
+Physical to Virtual (P2V) Machine Conversion using VMware vCenter Converter
+
+For the Physical to Virtual (P2V) Machine Conversion using VMware vCenter Converter, our Tech Advantage team performs the following steps:
+
+Assessment of existing physical server for storage, network, and compute capacity
+Stage vCentre for new virtual machine requirement for network (port group), compute (vCPU) and storage (vmdk) based on requirement
+Use P2V converter tool to perform block level replication to destination virtual machine instance
+Health check for network connectivity; verify required services and functionality for application
+Shut down old server
+Bring destination server in production and check errors and warning; perform required corrections; check server for optimal performance
+
+In addition, our team can customize this project based on your client’s requirements.
+
+Server Service Pack Installation
+
+For the Server Service Pack Install, our Tech Advantage team performs the following steps:
+
+Download Service Pack
+Perform backup of Registry, Applications etc.
+Install the Service Pack
+Reboot the Server
+Check for any error messages in Event Logs
+Ensure all applications are working properly; e.g., if we installed Exchange Service Pack, we will ensure all Exchange services are up and running and test mail flow and check mail queue to ensure everything is running properly.
+
+In addition, our team can customize this project based on your client’s requirements.
+
+Small Business Server Migration
+
+For the Small Business Server Migration, our Tech Advantage team performs the following steps:
+
+Perform check of existing small business server, check upgrade prerequisites
+Upgrade Active Directory to support new SBS version
+Stage the small business server installation in migration mode
+Configure new server with features required; move existing configuration from old SBS Server (DHCP Server, Offline Address Book, recipient email address policy)
+Move mailboxes and replicate public folder to new server
+Ensure routing of emails is changed to new server
+Ensure new version of small business server is functional with all roles required such as Active Directory, DHCP, active Sync, Outlook anywhere etc.
+
+In addition, our team can customize this project based on your client’s requirements.
+
+Small Business Server Setup
+
+For the Small Business Server Setup, our Tech Advantage team performs the following steps:
+
+Configure Active Directory, DHCP Server service with group policies setting if required
+Configure Small business Server with features and policies required for Exchange role
+Run Windows update to make sure security patches and upgrades are proper
+Test functionality of features requested such as Outlook web access, Outlook anywhere, Active Sync, remote web workplaces as requested
+Test mail flow from multiple domains
+Run best practice analyzer for small business server to perform health check and do correction if required
+Verify end-user connectivity to Exchange Server is functionally working
+
+In addition, our team can customize this project based on your client’s requirements.
+
+VMware vCenter Server Setup
+
+For vCenter setup, our Tech Advantage team performs the following steps:
+
+Verify prerequisites to deploy vCenter
+Install vCenter with required prerequisites such as .Net, SQL database configuration
+Add all ESX hosts to vCenter inventory and verify all information related to ESX hardware, events and performance of ESX host server are visible
+Configure and tests vCenter features that were part of installation request for high availability
+Check VMware network setting as per best practice for network redundancy, management network and storage connectivity
+Check for errors and warning under alarms and correct those if required
+Make sure update is done on vCentre suite for any bug fixes if applicable
+
+In addition, our team can customize this project based on your client’s requirements.
+
+Webroot Deployment
+All communications with the MSP are updated in the ticket.
+The ticket is scheduled as agreed upon with the MSP.
+When work is complete, the ticket is marked as NOC Completed.
+
+For Webroot deployment, our Tech Advantage team performs the following steps:
+
+Configures the Webroot console (Creating sites, policies, exclusions etc.)
+Installs Webroot using scripts and a defined schedule.
+Identifies Windows systems and MAC systems using ITSupport Portal.
+For Windows desktops, scripts used are run at next agent check-in so that all the agents/desktops that are not reporting (most likely offline) will get Webroot the next time they are online. This job runs for 7 days for it to capture as many online desktops as possible.
+For MAC systems, the NOC manually installs Webroot.
+Webroot install using site selected policy.
+NOC observes for 45 minutes to check if there are any valid/invalid files being reported as threats by Webroot.
+If there are threats reported, the NOC contacts you for information about the files being detected as threats.
+If you provide information then the NOC validates/invalidates the files. 
+Once finished, the NOC uninstalls the existing AV solution using a script. 
+If threats were not reported, the NOC proceeds with uninstalling the existing AV solution using a script.
+If applicable, the NOC uninstalls the Viper console from servers.
+Windows Operating System Installation on Hypervisor
+
+For the Windows OS on VMware or Hyper-V - Installation and Configuration, our Tech Advantage team performs the following steps:
+
+Configure virtual desktop or Server instance with required settings based on requirement i.e. vCPU, vdisk, memory settings
+Install operating System, hyper-v client, service packs and run Windows update for security updates and optional updates
+Perform Windows product activation by adding serial number
+Configure Windows for security and desktops settings as per requirement mentioned
+Install any roles on Server as per requirement mentioned
+
+In addition, our team can customize this project based on your client’s requirements.
+
+Windows Server Hyper-V Setup
+
+For the Windows Server Hyper-V Infrastructure - Installation and Configuration, our Tech Advantage team performs the following steps;
+
+Verify network infrastructure before implementing Hyper-V setup, e.g. network, storage, Hyper-v host server for virtualization support
+Add Hyper-V roles and configure Virtual Networks with selected LAN adapters that will be shared with guest sessions, management and live migration (if clustered)
+Run Windows Update to confirm that all patches and updates are installed and applied for Hyper-V server
+Configure Hyper-V server for storage configuration and cluster configuration
+Run best practice analyzer for Hyper-V to check for optional configuration
+
+In addition, our team can customize this project based on your client’s requirements.
+
+Windows Server Hyper-V with SCVMM Setup
+
+For the Windows Server Hyper-V with SCVMM, our Tech Advantage team performs the following steps:
+
+Install and configure System Center Virtual machine manager with prerequisites such as winrm, .net framework, PowerShell, IIS, Microsoft baseline configuration analyzer and SQL server settings
+Install VMM administrative console and add windows Hyper-V host
+Run system center configuration analyzer and verify that the settings are optimal
+
+In addition, our team can customize this project based on your client’s requirements.
+
+Webroot Projects
+Migration of (AVG, Vipre or Bitdefender) Antivirus to Webroot
+Migration of (Other) Endpoint Protection to Webroot
+New Installation of Webroot Endpoint Protection
+Rebranding Impact 
+
+Use this table as guidance for details on the rebranding of Azure Active Directory to Microsoft Entra ID:
+
+Sr. No.
+
+	
+
+Software Name
+
+	
+
+Display Name
+
+	
+
+Service Name
+
+	
+
+Under Monitoring
+
+	
+
+Comments
+
+
+
+
+1
+
+	
+
+DirSync
+
+	
+
+Windows Azure Active Directory Sync Service
+
+	
+
+MSOnlineSyncScheduler
+
+	
+
+Yes
+
+	
+
+Software deprecated in favor of 'Azure AD Connect'
+
+
+
+
+2
+
+	
+
+Azure AD Connect
+
+	
+
+Microsoft Azure AD Sync
+
+	
+
+ADSync
+
+	
+
+Yes
+
+	
+
+Software deprecated in favor of 'Microsoft Entra Connect'
+
+
+
+
+3
+
+	
+
+Microsoft Entra Connect
+
+	
+
+Microsoft Azure AD Sync
+
+	
+
+ADSync
+
+	
+
+Yes
+
+	Manage from on-premise: Cloud Sync
+
+
+Microsoft Azure AD Connect ProvisioningAgent
+
+	
+
+AADConnectProvisioningAgent
+
+	No, under development	Manage from the cloud: Connect Sync
+
+
+Microsoft Azure AD Connect Agent Updater
+
+	
+
+AzureADConnectAgentUpdater
+
+	
+
+No, under development
+
+	Manage from the cloud: Connect Sync
+Microsoft Entra Connect Health Agent	AzureADConnectHealthAgent	No, under development	Manage from the cloud: Connect Sync
+Desktop Projects: Tips and Best Practices Server Projects
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Desktop Projects
+Desktop Projects: Tips and Best Practices
+Server Projects
+Server Projects Best Practices
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

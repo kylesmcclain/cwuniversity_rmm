@@ -1,0 +1,106 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Expert Services   ConnectWise Network Operations Center - NOC   Using the NOC Chat Support Feature
+Using the NOC Chat Support Feature
+Last updated
+Apr 7, 2025
+Table of contents
+Overview
+Getting Started
+Available Support Teams
+Contact NOC Services via Chat
+Overview
+
+This document describes the process for starting a chat with ConnectWise NOC Services™ through the ConnectWise Asio® portal.
+
+Getting Started
+
+Before attempting to create a chat session, ensure that you are using ConnectWise Single Sign-On (SSO) and that you have enabled the new Asio ticket experience. This enables ticket creation through chat sessions.
+
+Available Support Teams
+
+NOC Services chat allows for real-time assistance related to data protection, network monitoring and management, and server and desktop incident escalation. Experts are available to answer your questions 24/7.
+
+Partners that are already familiar with the process can use the links below to jump directly to the NOC Chat support page for their region:
+
+NA partners: https://control.itsupport247.net/QADashB/ContactUs
+EU partners: https://euplatform.connectwise.com/QADashB/ContactUs
+AU partners: https://auplatform.connectwise.com/QADashB/ContactUs 
+Contact NOC Services via Chat
+
+Follow the steps below to contact NOC from within Asio:
+
+In the top-right corner of the Asio portal, click Support.
+
+Click the CHAT NOW button in the bottom-right corner of the ConnectWise Service & Support page. 
+In the chat flyout, complete the following fields:
+
+Note: There is a brief wait before the chat window loads.
+
+First Name
+Last Name
+Primary Email
+Support Area: Select Using ConnectWise Products & Experiencing Technical Issues.
+Type: Select Technical Issues.
+Product Line: Select BCDR or NOC Services.
+Subject: Enter a brief description of your issue.
+
+Click Next.
+On the next screen, click the appropriate Support link for your region:
+NA: https://control.itsupport247.net/QADashB/ContactUs
+EU: https://euplatform.connectwise.com/QADashB/ContactUs
+AU: https://auplatform.connectwise.com/QADashB/ContactUs
+
+On the Support page, under What can we help you with?, select the appropriate category for support.
+Click the second drop-down to select the subcategory for support
+
+Click Start a chat.
+
+On the Expert Services Chat screen, complete the following fields:
+Subject: Provide a short, high-level description of your issue.
+Description: Provide additional details about your issue.
+Company Name: This must match your Asio Company name.
+Site Name: This must match the site's Asio Site name.
+Name: Enter your first and last name.
+Email: Enter the email address associated with ConnectWise Home and SSO.
+Phone: Enter the phone number associated with ConnectWise Home.
+
+Click Start Chat Session.
+Click the minimized chat window to open it.
+
+
+Important: Do not click the chat pop-out icon. This abandons your current chat and creates a new chat.
+
+
+The next available engineer will address your issue.
+After the issue has been addressed, click End in the top-right corner of the chat window.
+
+If you want to leave feedback about your chat experience, click Yes! Otherwise, click Not today.
+
+Setting NOC Access Levels Expert Services Documentation Sitemap
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+NOC Access Levels
+NOC Service Statement of Work
+Setting NOC Access Levels
+Enabling Automatic Credentials for Servers and Desktops
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

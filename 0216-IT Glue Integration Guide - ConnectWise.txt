@@ -1,0 +1,151 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Expert Services   Help Desk   IT Glue Integration Guide
+IT Glue Integration Guide
+Last updated
+Aug 13, 2025
+Table of contents
+Overview
+IT Glue Integration Best Practices
+Prerequisites
+Enter your RMM credentials
+Sync Data
+Organization matching
+Configuration matching
+RMM Logic
+Configure IT Glue with Help Desk Services
+Overview
+
+ConnectWise offers integration with IT Glue, an IT documentation management software designed to help maximize efficiency, transparency, and consistency for users.
+
+With the integration, both your in-house and ConnectWise Help Desk Service technicians can access the same device information and knowledge in IT Glue to consistently service clients with confidence. Other IT Glue integration benefits include:
+
+Provides a single source of truth for smooth and consistent IT support.
+Eliminates time wasted looking for data across multiple systems and platforms.
+Offers granular security control over selected organizations shared with the Help Desk.
+Gives full visibility into Help Desk technician activities with detailed activity logs.
+Prevents redundancy and improves single-source documentation management.
+
+See the sections below to start integrating with IT Glue.
+
+IT Glue Integration Best Practices
+
+Below are some items to remember when integrating IT Glue with RMM:
+
+Only the following Core Asset items are viewable by the Help Desk:
+Passwords
+Configurations
+Contacts
+Locations
+Documents
+
+Only these five assets are mapped and viewable by the Help Desk. Contacts cannot be imported.
+
+Flexible Assets are currently only supported as a best effort and are not searchable outside the IT Glue portal, so be sure all content is a Document. In addition, flags can be used to identify incomplete or missing content and to suggest changes. For the Help Desk to review content, invite Continuum with the Creator role.
+
+Note: The Help Desk Service cannot update or create new documentation for a site and can only flag items in the Documents section for errors if Creator access is given. Any new documentation created must be migrated over to a site on the user’s end.
+
+Help Desk technicians will search Flexible Assets on a best effort basis. If the correct information is not found in the Core Assets or References, technicians will attempt to search the IT Glue portal for Flexible Assets related to the issue. We recommend converting Flexible Assets to Core Assets for best results. Technicians must have access and credentials for the IT Glue portal to search Flexible Assets, and any Flexible Assets must have easily identifiable names for searching.
+
+Prerequisites
+An SSL connection with a valid certificate (not self-signed) from a trusted authority is required. The following are the certificate requirements:
+Certificate must be signed by a valid issuer (not a self-signed certificate).
+SSL chain including the intermediate certificates must be complete.
+The FQDN for the server hosting the RMM instance must match one of the certificate's common names.
+Note:  Use an online SSL checker such as SSL Shopper to check your certificate status.
+Manager or Administrator level access to IT Glue.
+Administrator-level access to the Asio Platform.
+If you're integrating with a PSA and an RMM, you will want to first sync your RMM to your PSA and your PSA to IT Glue to make sure that the required data is available for matching.
+A Manager role will only be able to see RMM matched/unmatched data for organizations that they have explicit access to. 
+Enter your RMM credentials
+You need to generate a dedicated API key for IT Glue from the  Asio Platform. To create the API key, navigate to Settings > Account Administration > Integration > Reporting API and then click the Create API Key button.
+Log in to IT Glue and navigate to Account > Integrations. Then, click on the green + New button and then on the Continuum icon.
+
+
+
+
+Enter your Asio Platform API (secret) key and then click on the Connect button.
+
+
+
+
+Note: If the credentials fail for any reason, syncing will stop until you re-enter your credentials.
+
+Sync Data
+From the Account  Integrations screen, click Actions > Start Manual Sync.
+
+
+
+
+When the sync is complete, the Status column changes from "Syncing..." to "OK".
+Organization matching
+
+IT Glue discovers organizations and configurations and tries to match them to data in your account. The matching logic can be found in the Introduction section of this article. Anything that isn't automatically matched will need to be manually actioned.
+
+From the Account Integrations screen, find your RMM in the list and click on Actions > Matching.
+In the Unmatched tab, review the unmatched organizations.
+If you're happy with a suggested match, click Accept Suggestion to accept it.
+
+
+
+
+If there is no suggested match, or it is incorrect, you can search for and choose a different organization using the Match To field.
+If no organization exists in IT Glue, you can choose to create an organization. You can also choose to ignore groups, which means they won't count as unmatched items in subsequent syncs.
+
+Warning: Before creating an organization from the matching screen, ensure that no corresponding organization already exists, otherwise a duplicate will be created.
+
+If any matches are incorrect, click on Actions > Change Match and select a different organization to match to.
+Configuration matching
+
+Once all organizations have been matched, the same process should be followed for any unmatched configurations.
+
+From the Matched tab, choose any organization that has unmatched configurations, click the Actions button, and select Match Devices.
+
+
+For any unmatched configurations, you can either accept the suggested match, search for an IT Glue configuration by entering the name in the Match To column, or create a new configuration by clicking Actions > Create Configuration.
+Before you create configurations, first match any of the devices based on MAC addresses or serial number, for example, virtual servers. When you're done matching, you can create (in bulk or individually) any of the remaining devices coming in from your RMM.
+
+Important. We don't recommend that you create configurations from your RMM if you'd like to then have them populate from IT Glue to your PSA. New items created from such data will not sync with your PSA unless you choose to do so manually by editing and saving each and every item. This is absolutely manual and is not recommended.
+
+Repeat for each organization until all configurations are actioned.
+
+Once everything is matched, the RMM setup is complete. At any time, you can come back to these instructions to discover and match new organizations and configurations from your RMM.
+
+RMM Logic
+
+Before an organization, site, location, or company in an RMM tool can sync with IT Glue to create an IT Glue organization, you must add at least one configuration to it. If there are none and the organization does not already exist in IT Glue from any other source, then it will not appear in IT Glue. In this case, you will need to create it manually.
+
+Only RMM companies with at least one RMM record will sync into IT Glue.
+
+Configure IT Glue with Help Desk Services
+
+To configure IT Glue with ConnectWise Help Desk Services™, refer to the IT Glue documentation.
+
+Help Desk Success Checklist User Onboarding and Termination
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Help Desk Activation Checklist
+Help Desk Best Practices
+Help Desk Success Checklist
+Use this checklist to help successfully integrate Help Desk to your operations and ensure seamless support for your end users.
+Activating Help Desk
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

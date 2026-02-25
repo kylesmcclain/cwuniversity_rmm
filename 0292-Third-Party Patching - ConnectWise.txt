@@ -1,0 +1,123 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Patching   Third-Party Patching
+Third-Party Patching
+Last updated
+Dec 30, 2025
+Table of contents
+Overview
+Creating a New Policy
+Create a New Package with Your Policies
+Endpoint Specific Policies and Overrides
+Third-Party Patching Status
+Useful Links
+Overview
+
+You can use Third-Party Patching to update your third-party applications by creating patching policies to automate updates. These policies can be used for both Desktops and Servers.
+
+To use Third-party patching, you need to create your policy or policies and add them to your package or packages.
+
+Note: Third-party patching has been enhanced with a policy-based approach, providing access to over 7,000 supported applications. This feature is available for Windows 10 and 11 machines. For more details, refer to the Improved Third-Party Patching article.
+
+Creating a New Policy
+
+Navigate to Endpoints > Policies and click Add Policy.
+
+Under Type, select Third-Party Patching.
+
+Name the new policy.
+
+Switch the Third-Party Patching Automation toggle to ON.
+
+Choose the applications you want your policy to manage. You have the following options to choose from:
+
+Do not deploy
+
+Update Only
+
+Update & Install If Missing
+
+Select the Schedule settings for your policy. Deploy Schedule is applicable for both Download and Installation.
+
+After you have finished selecting your settings, click Save.
+
+Create a New Package with Your Policies
+
+Navigate to Endpoints > Packages and click Add Package.
+
+Enter a Package Name.
+
+Add the new policies to your package.
+
+Click Save.
+
+From the Packages page, click on the Sites tab.
+
+Select all of the sites you want to assign your package to.
+
+Endpoint Specific Policies and Overrides
+
+Policy overrides can be used to turn Third-Party patching automation ON or OFF for specific endpoints or to apply settings different from the Site packages.
+
+Navigate to Endpoints > Devices and click the name of the device you want to modify.
+
+Click on the Settings tab.
+
+Click the ^ (caret) icon to open the Devices menu, then click on Third-Party Patching.
+
+Click Edit to make changes to the settings.
+
+After making your changes, click Save.
+
+Note: The Compliance score is re-calculated as per the last Assessment after the settings are saved.
+
+Third-Party Patching Status
+
+The 'Application Updates' column on the Devices page indicates that the application update status is driven by policies. To review the status of third-party application updates scheduled by policies, you can refer to the Application Updates column.
+
+Navigate to Endpoints > Devices. Click the Patching tab to see the Application Updates column.
+
+Here are the available statuses:
+
+No Policy Assigned: When there is no third-party patching policy assigned to an endpoint.
+
+Scheduled: When the policy is assigned to the endpoint, and there are applications waiting to be deployed in the next schedule.
+
+Up-to-date: When applications selected in the policy are up-to-date with the latest version on the endpoint.
+
+Not Applicable: Displays for OS types that don't support third-party patching.
+
+Useful Links
+
+Policies and Packages
+
+ 
+
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Supported Third-Party Applications
+Improved Third-Party Patching
+To utilize Improved Third-Party patching on your sites, you must create a policy, add it to a package, and then assign it to your sites.
+OS Patching
+OS patching is a critical feature that helps to keep your managed endpoints up to date on the many security and non-security patches released every mo...
+Patch Testing
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

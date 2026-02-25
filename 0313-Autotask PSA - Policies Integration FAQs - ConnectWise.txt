@@ -1,0 +1,135 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   PSA Integration   Autotask Integration Guide   Autotask - Policies Integration   Autotask PSA - Policies Integration FAQs
+ Expand/collapse global location
+Autotask PSA - Policies Integration FAQs
+Last updated
+Mar 12, 2024
+Table of contents
+What is changing? 
+Can I enable the Autotask PSA Policies for just one site and use other sites with the old mechanism? 
+Do I need to change this right away? 
+How does this change affect me? 
+I am an existing partner, do I need to change anything? 
+Is there any other way I can get Autotask PSA configured for Tickets, Configuration items, and Notifications? 
+Can I change the Autotask PSA Configuration that is already configured for a site via policies? 
+Is there any limit to different policy creation? 
+Can I assign multiple packages to a site? 
+Can I set overrides for a site? 
+Will the new Autotask PSA policies be added to a default package? 
+I have assigned a package to a site, now once I deploy a new agent will that have used the same Configurations for tickets, Configuration items, and Notifications? 
+What steps do I need to take when a new site is created? 
+Can I apply the package at the Dynamic Group or via Policy Group? 
+I made some changes to the PSA configuration Policy, how long until those changes take effect? 
+I am trying to create a new site and have a package that is marked as default, do I still need to perform any additional action? 
+What happens to my existing PSA Configurations? Would it be repopulated if I opt-out from Policy- Asset/Ticket/Notification? 
+Are the policies applicable only to RMM Sites? 
+Can I apply same package to multiple sites? 
+What is changing? 
+
+We are moving the options for Autotask PSA configurations related to Tickets, Configuration items, and Notifications from the PSA Integration section to Policies & Packages. Policies will now define how and what will be synced and pushed in the PSA system.
+
+Autotask PSA Integration features are currently available in following section:
+
+ConnectWise RMM Partner: Asio Portal > Settings > Admin > Integration > PSA Integration
+
+Can I enable the Autotask PSA Policies for just one site and use other sites with the old mechanism? 
+
+No, once you enable the Autotask PSA policies then it will be enabled across all sites. Tickets will sync based on the policies that are applied to the sites.
+
+Do I need to change this right away? 
+
+No, we will initially offer a toggle button at the top of the integration wizard. You can opt in and use the new policies feature. However, the toggle will only be active for a limited time and you will need to eventually move to the new policies-based integration.
+
+How does this change affect me? 
+
+The new policies-based mechanism offers additional options for you to define how the tickets, Configuration items, and Notification will work per site instead of what is enabled today at a partner level (the setting applies to all sites). You can now configure different policies and include them in their respective packages which are applied to individual sites.
+
+I am an existing partner, do I need to change anything? 
+
+Yes, we are not performing any automated migration. However, you will have the option to create new policies and include them in packages. Policies will be in effect as soon as they are applied to the site. Sites that the policies is not enabled on will not be synced.
+
+Is there any other way I can get Autotask PSA configured for Tickets, Configuration items, and Notifications? 
+
+Once the policies are enabled, Policies will be the only setting or configuration that will be used for the sync of Tickets, Configuration items, and Notifications.
+
+Can I change the Autotask PSA Configuration that is already configured for a site via policies? 
+
+Yes, you can either change the policy but that will apply that to all the sites where the policy is applied. If the change is explicitly required for one site then a new policy should be created and applied via a package to that site.
+
+Is there any limit to different policy creation? 
+
+No, you can create as many policies with different configurations as you want. However, there can only be one single package assigned to a site and each package can have only one PSA policy.
+
+Note: The Policy that is applied to the site via packages will be the on that is used for syncing of tickets, Configuration items, and Notifications.
+
+Can I assign multiple packages to a site? 
+
+No, each site can only be assigned with a single package. However, you can create a new one and replace the existing package that is assigned to a site.
+
+Can I set overrides for a site? 
+
+Currently, we do not allow setting overrides at the site level. However, you can create a new policy and include it in a package and apply it to the site.
+
+Will the new Autotask PSA policies be added to a default package? 
+
+No, we will not add the Autotask PSA policy to any default package. Association of the policy to the package will be defined and decided by you.
+
+I have assigned a package to a site, now once I deploy a new agent will that have used the same Configurations for tickets, Configuration items, and Notifications? 
+
+Autotask PSA policies are applied at site level which means any endpoints added under the site will be processed as per the Autotask PSA policy that is applied to the site via packages.
+
+What steps do I need to take when a new site is created? 
+
+You will need to make sure that there is a package applied to the site which includes the Autotask PSA policy. If you have a package marked as Default and it includes a Autotask PSA policy then it will be automatically applied to the site and no additional action will be required.
+
+Can I apply the package at the Dynamic Group or via Policy Group? 
+
+Currently, we support policies that are used at the endpoint level. In the future, we will extend the functionality to support Policy Groups.
+
+I made some changes to the PSA configuration Policy, how long until those changes take effect? 
+
+Once the policy changes are made, any new ticket, configuration item, and notifications will be processed with your new settings.
+
+I am trying to create a new site and have a package that is marked as default, do I still need to perform any additional action? 
+
+No, default packages will be applied to all sites unless there is any specific policy that is being applied to them.
+
+What happens to my existing PSA Configurations? Would it be repopulated if I opt-out from Policy- Asset/Ticket/Notification? 
+
+ Yes, if you disabled the PSA Policies feature then the old configuration options and data will be repopulated in the UI. Policies created will no longer be reflected in the policies configuration.
+
+Are the policies applicable only to RMM Sites? 
+
+Currently, Autotask PSA Integration via Policies is applicable for RMM Sites only.
+
+Can I apply same package to multiple sites? 
+
+Yes, the same package can be applied to multiple Sites or the package can be marked as Default which will automatically apply the settings to the newly created sites.
+
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Autotask Integration Setup Guide
+Autotask Integration Contact Sync
+Autotask Integration Reporting on Synchronization Status
+Include User-Defined Fields in Configuration Items
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

@@ -1,0 +1,105 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Integrations to ConnectWise RMM   ScreenConnect with RMM   False positive from antivirus software
+False positive from antivirus software
+Last updated
+Nov 10, 2021
+Table of contents
+Introduction
+Background information
+White-listing ScreenConnect
+Access agent files and directories
+Windows
+Mac and Linux
+On-premises server files
+Reporting a false-positive
+What's next
+Introduction
+
+In some case, users may see the ScreenConnect™ software falsely-flagged as malicious. This page explains how to handle false positives from antivirus software.
+
+Background information
+
+To prevent false detection, the ScreenConnect files are signed with code-signing certificates wherever possible. Some files cannot be signed since they are generated on-the-fly for each session. Occasionally, an antivirus may flag these files as suspicious.
+
+White-listing ScreenConnect
+
+In case your antivirus blocks ScreenConnect, you can try adding exceptions for the following files and directories.
+
+Tip: See your antivirus's documentation for instructions for white-listing or creating exceptions for certain files.
+
+Access agent files and directories
+
+If an access agent is being flagged as suspicious, try white-listing the following directories:
+
+Windows
+C:\Program Files (x86)\ScreenConnect Client (xxxxxxxxxxxxxx)
+Mac and Linux
+/Applications/connectwisecontrol-xxxxxxxxxxxxxx
+
+Or:
+
+/opt/screenconnect-xxxxxxxxxxxxxx
+
+Or:
+
+/opt/connectwisecontrol-xxxxxxxxxxxxxx
+On-premises server files
+
+Note: For on-premises installations, these items are found in the \Bin folder of your ScreenConnect installation directory.
+
+ScreenConnect.ClientSetup.exe
+ScreenConnect.Core.dll
+ScreenConnect.ClientBootstrap.exe
+ScreenConnect.Client.zip
+Reporting a false-positive
+
+We recommend reporting a false-positive directly to your anti-virus vendor.
+
+Here is a list of some vendors and their instructions for reporting false-positives:
+
+Avast
+AVG
+Bitdefender
+ESET
+Kaspersky
+McAfee
+Norton Antivirus
+SonicWall
+Symantec
+Trend Micro
+Webroot
+Windows Defender
+What's next
+
+See our troubleshooting steps if you are still having trouble joining a session as a host.
+
+ 
+
+Backstage Mode Define user roles and permissions for ScreenConnect
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ScreenConnect Installation Status and Error Codes
+Enable or Disable Connection Consent for ScreenConnect
+ScreenConnect Dashboard for RMM
+ScreenConnect 1-Click for RMM
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

@@ -1,0 +1,221 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   ConnectWise RMM Release Notes   RMM Release Notes Archive   ConnectWise RMM Update for October 2022
+ConnectWise RMM Update for October 2022
+Last updated
+Dec 3, 2022
+Table of contents
+Overview
+Announcements
+Alerts for MS Intune
+ConnectWise RMM
+Agent and Platform
+Automation
+Intune Integration
+Monitoring
+Patching
+Portal
+Patching
+Policies
+Reporting
+Ticketing / PSA Integrations
+Bug Fixes / Known Issues
+Overview
+
+The following enhancements, updates, and bug fixes are included in the October 2022 RMM Release.
+
+Announcements
+
+Dedicated Section for Known Issues
+
+There is a new dedicated location for all Known Issues for ConnectWise RMM. You will be able to view and subscribe to all known issues. When you subscribe to a known issue, you'll be notified when there are changes to its status.
+
+Navigate to: https://www.connectwise.com/knownissues
+
+Networking Tab on the Devices Page
+
+There is a new tab on the Devices > Computers screen that will list additional information for the endpoint. You will also be able to view the following fields on the Networking tab:
+
+Domain/Workgroup Name
+IP Address
+Public Gateway
+Serial Number
+
+New agent download and smaller agent size for Windows
+
+A new feature is available to download the RMM agent from the Devices page. You can select the site and the agent download URL will be available for Windows, MAC, and Linux endpoints.
+
+The new Agent Download page has an efficient setup installer for the Windows endpoints. The smaller setup size provides you with a faster download and installation on the endpoint. After the agent is deployed, it will be reflected in the Asio™ portal within five minutes.
+
+Deprecation notice for the legacy Quick Access > Devices page and Monitoring Devices page
+
+On November 30th, the legacy features for adding and viewing devices for VMware, SNMP, and ICMP will be deprecated from Quick Access > Devices.
+
+Improved user interface on the Asio portal Integrations page
+
+There is a new look and feel for the Asio portal Integrations page. Integrations are now listed in a visual grid layout. This new format sets the groundwork for advanced features in the future as well as an improved user experience.
+
+Alerts for MS Intune
+
+You will now receive an alert when an endpoint managed in MS Intune moves to a Not Compliant state.
+
+ConnectWise RMM
+Agent and Platform
+
+Agent Update. A new agent, version: 3.0.1, will be released for the partners for the Windows, MAC and Linux endpoints. This is scheduled for November 14th.
+
+Automation
+
+SSO Partners will be able to see their companies in the Resource Selector. We are adding the functionality to select your Companies from the resource selector when building your automation. This will be released on October 31st.
+
+Intune Integration
+
+Improvements to the Intune Integration. Endpoints between MS Intune and ConnectWise RMM are now mapped automatically when you complete the integration setup. In addition, the cap of 100 tenants for the integration has been removed.
+
+Monitoring
+
+Priority changes from Critical Non-Impact Alert to Critical Impact Alert for the Multiple services reporting down condition.
+
+Patching
+
+Definition updates will be removed from OS Patching policy auto-deployment. Definition updates will still be available for Manual deployment from the Patch approvals page and Quick patch actions. This will be released on October 31st.
+
+Portal
+
+Time Reduction in Loading Devices on the Resource Selector. For partners facing high waiting times for loading devices under Device Groups on the Resource selector, we have made performance improvements that will significantly decrease the wait time in loading devices.
+
+Deprecation of legacy Devices screens for Adding and Monitoring. The legacy screens related to adding devices and monitoring devices in ConnectWise RMM will be deprecated on November 30, 2022.
+
+The legacy Quick Access > Other Devices > Devices screen, that was used to view non-agent devices will be deprecated.
+
+VMware devices are now visible on the Devices > Computers screen.
+
+SNMP devices are now visible on the Devices > Computers > Other Devices screen.
+
+The legacy Monitoring > Devices section, that was used to add non-agent devices for monitoring, and defining alerts/configurations will be deprecated.
+
+Adding, editing, removing VMware devices can be performed on the Devices > Computers > Other Devices screen.
+
+Adding ICMP devices can directly be configured using the ICMP monitor.
+
+For any partner-defined Alerts, you can use the Monitors to create and update the criteria to generate tickets.
+
+Please use the new Devices page.
+
+Network Detective Tool Improvement. We will be making following changes to the Network detective tool available in the Asio Platform:
+
+Branding will now show ConnectWise.
+
+You no longer need to sync all of the Super Admin accounts in the Network detective tool application but only the initial user will need to be synced.
+
+We've enabled Independent user management in the Network detective tool and will no longer sync passwords between two solutions.
+
+The download of the Network detective tool using Amazon S3 is now faster.
+
+We've removed custom user creation from the Asio Platform.
+
+There will be no changes to the login ID or password for existing users in the system.
+
+Once the Asio Platform password is changed by an existing user, it will no longer be synced with Rapidfire. This user can use the forgot password functionality in Rapidfire tool to update the password.
+
+New users will be forced to use the forgot password in Rapidfire tool to set a password of their choice in the application.
+
+These changes will be released on November 1st.
+
+Patching
+
+Definition updates will be removed from OS Patching policy auto-deployment. Definition updates will still be available for Manual deployment from Patch approvals page and Quick patch actions
+
+Policies
+
+Partners will view the UI common library v 2.2 components instead of the currently used v 2.1 for Policies.
+
+Reporting
+
+The following reports will be deprecated from the Reports tab in the Asio Platform as the reports are for legacy features that are already deprecated in the system:
+
+Legacy Patching reports
+
+Legacy Communicator reports
+
+Legacy Scripts report
+
+Perf & App Monitoring
+
+Warranty Report
+
+Remember that you can continue to use reports in BrightGauge. These changes will be released on November 1st.
+
+Ticketing / PSA Integrations
+
+ConnectWise Manage - Email notification for partners when PSA is Paused/Resumed
+
+Partners will be notified if the user attempted to Pause or resume the sync process.
+
+Data will be added to the audit as well as email notification will be triggered for the configured users.
+
+The email will be sent in near real time of action performed by the user.
+
+ConnectWise Manage - Email notification for the partners when Configuration items failed to sync
+
+Partners will be notified if the configuration items in Manage failed to sync.
+
+The email will be sent once in every 24 hours if failures exist.
+
+ConnectWise Manage - Email notification for the partners when Billing configuration failed to sync
+
+Partners will be notified if the billing items in Manage failed to sync.
+
+Email will be sent once in every 24 hours if failures exist
+
+Bug Fixes / Known Issues
+
+The following issues will be resolved with this month's release:
+
+Agent: The OS version on the Communicator System information is displaying incorrect version.
+
+Legacy Portal: Resolved an issue when you click on the "Not Qualified" Account Status for Automated account creation does not open the Docs Center link and returns a 404 error (directory not found).
+
+Legacy Portal: Fixed an issue with tickets quick close feature. You can now close up to 25 tickets in a single click.
+
+Patching: We've fixed an Deployment issue faced on Monterey OS due to system error "XType: com.apple.fonts is not accessible."
+
+Monitoring: We will be resolving an issue where some of the tickets generated against the endpoint where not visible under the tickets tab for the device details.
+
+Virtualization: We fixed an issue where partners were unable to Add VCenter and VM host in the Virtualization monitoring tab. The error reported as "There is a timeout processing your request. please try again after some time". When trying to add VCenter"
+
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ConnectWise RMM Update for April 2022
+ConnectWise RMM Update for March 2022
+ConnectWise RMM Update for February 2022
+ConnectWise RMM Update for January 2022
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

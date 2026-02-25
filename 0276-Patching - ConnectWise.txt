@@ -1,0 +1,59 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Patching
+Patching
+Last updated
+Sep 23, 2025
+Table of contents
+Overview
+View More Articles About Patching
+Overview
+
+Patching allows you to control how your RMM updates your endpoints. By utilizing policies and packages, you can create a custom plan for how best to patch your machines.
+
+OS Patching
+OS patching is a critical feature that helps to keep your managed endpoints up to date on the many security and non-security patches released every month. An effective OS Patching strategy is an important first line of defense to minimize your endpoint risk to security vulnerabilities. Patches also release new features and bug fixes that help ensure your client's operating system is running smoothly.
+OS Patching Getting Started Settings
+OS Feature Updates (Windows)
+OS Patching Compliance
+OS Patching Error Codes
+OS Patching FAQs
+Show all
+Patch Testing
+Patch Testing Reports
+Third-Party Patching
+Improved Third-Party Patching
+View More Articles About Patching
+Patching Articles
+Patching Deployment Flow and Patching Catch-up Flow
+
+​
+
+Set Notification Rules OS Patching
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+OS Patching
+OS patching is a critical feature that helps to keep your managed endpoints up to date on the many security and non-security patches released every mo...
+Patch Testing
+Third-Party Patching
+Windows 11 Patch Assessment issue
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

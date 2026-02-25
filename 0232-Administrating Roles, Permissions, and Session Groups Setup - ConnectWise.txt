@@ -1,0 +1,229 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Integrations to ConnectWise RMM   ScreenConnect with RMM   Administrating Roles, Permissions, and Session Groups Setup
+ Expand/collapse global location
+Administrating Roles, Permissions, and Session Groups Setup
+Last updated
+Jul 24, 2023
+Table of contents
+Overview
+Roles and Permissions Setup in ScreenConnect
+How to create Session Groups Safely
+How to Re-create Machine By Site Session Group
+Overview
+
+This documentation includes details on administrating roles, permissions, and Session Groups setup in ScreenConnect. 
+
+Roles and Permissions Setup in ScreenConnect
+
+Each ScreenConnect instance created for an RMM partner will have the following user security roles and permissions by default
+
+Asio Platform role	ScreenConnect Role	Default Permissions
+Primary Super Admin	ScreenConnect Administrator Role	Default ScreenConnect Administrator Permission
+Super Admin	ScreenConnect Administrator Role	Default ScreenConnect Administrator Permission
+Technician	ITS Technician	
+
+Global permissions:
+
+CreateSupportSession
+
+BuildAccessInstaller
+
+All Scoped Permissions enabled except for the below permissions:
+
+PrintInSession
+
+DeleteSession
+
+EditSession
+
+
+Manager	ITS Manager	
+
+Only following Global Permissions:
+
+CreatedSupportSession
+
+BuildAccessInstaller
+
+All scoped permission enabled except for the below:
+
+PrintInSession
+
+DeleteSession
+
+EditSession
+
+
+Client Site Manager	ITS Client Site Manager	
+
+Only following Global Permission:
+
+BuildAccessInstaller
+
+All scoped permission enabled except for the below:
+
+PrintInSession
+DeleteSession
+EditSession
+RunSharedToolInSession
+
+Client End-User	ITS Client End User	
+
+Only following Global Permission:
+
+BuildAccessInstaller
+
+All scoped permission enabled except for the below:
+
+DeleteSession
+EditSession
+RunSharedToolInSession
+SwitchLogonSession
+
+Office Staff	ITS Office Staff	
+
+Only following Global Permission:
+
+BuildAccessInstaller
+
+All scoped permission enabled except for the below:
+
+PrintInSession
+DeleteSession
+EditSession
+RunSharedToolInSession
+SwitchLogonSession
+TransferFileInSession
+
+Sales	ITS Sales	
+
+Only following Global Permission:
+
+BuildAccessInstaller
+
+All scoped permission enabled except for the below:
+
+PrintInSession
+DeleteSession
+EditSession
+RunSharedToolInSession
+SwitchLogonSession
+TransferFileInSession
+
+NOC / HelpDesk	ITS NOC HelpDesk User	
+
+Only following Global Permissions:
+
+BuildAccessInstaller
+
+All scoped permission enabled except for the below:
+
+PrintInSession
+DeleteSession
+EditSession
+RunSharedToolInSession
+
+Important: We do not recommend creating users inside the ScreenConnect portal. This way, the ScreenConnect integration handles the authentication and there are not multiple authentication methods for reaching the ScreenConnect portal.
+
+In order to avoid permissioning mistakes as a result of creating a session group without assigning any explicit visibility rules, the top level permissions to AllSessionGroups is removed, and new session groups will only be visible to users if you chose to permission those new session groups explicitly.
+
+Session groups organize long lists of sessions into smaller, more manageable groups. Each session group has a name and a filter. If a session matches your filter, it's added to your group. If you add another machine to your instance that matches a filter, that device is automatically added to your existing group. Here is a list of session groups:
+
+All Machine by OS
+
+Outdated Clients
+
+Host Connected
+
+Guest Connected
+
+Recently Accessed
+
+Offline
+
+All Machines by Site
+
+For more information about Session groups, review the Session Groups documentation.
+
+Important: We advise against creation of new ScreenConnect security roles because those roles will not affect any remote session or SSO request from the ITSupport Portal or from the Backup portal. Instead, a Super Admin can edit existing ITS roles and assign permissions in ScreenConnect by navigating to Admin > Security > Edit Role. The following screen will appear where Super Admin can enter Role name and define Global and Scope Permissions for that role.
+
+Tip: While assigning the permission, the Super Admin should avoid checking the checkbox on Global Permissions section as it will result in invoking the following Admin level rights to the newly created role:
+
+Administer
+
+CreateSupportSession
+
+ManageSessionGroups
+
+CreateMeetingSession
+
+ManageSharedToolBox
+
+How to create Session Groups Safely
+
+Device visibility in the ScreenConnect portal is a result of matching the list of sites that the logged-in user has access to see from the ITSupport portal, and the site that each endpoint is automatically associated to in the ScreenConnect portal.
+
+Super Admin users who log in to ScreenConnect Portal will see all sites by default. They have permission to create new session groups and add an expression in the session group to ensure proper session group visibility to different users as well as device visibility to those users.
+
+The filter below will make the session group only include devices whose site assignment matches the user’s ITSupport portal site assignment. It is important to not remove these session filters and add them to new session groups that are being created.
+
+The following Filter needs to be entered in the Session Filter while creating the session group:
+
+($USERATTRIBUTESITEIDS='-1' OR (CustomProperty5 <> '' AND (',' + $USERATTRIBUTESITEIDS + ',') LIKE ('*,' + CustomProperty5 + ',*')))
+
+Use session groups to dynamically organize your sessions. From the Administration page, administrators can also use session groups to restrict access to certain sessions and features.
+
+Clicking the Create button will list the new session group on the Access page in the Session group column.
+
+By default, any session group created by the Super Admin will be visible only to the Super Admin. If the Super Admin wants to allow that session group to be visible to other roles, they can navigate to Admin > Security > Edit Roles and update the permission. This will only work if session group has been created with proper session group filter expression, otherwise all the roles who can see that session group, can see all the endpoints.
+
+How to Re-create Machine By Site Session Group
+
+If you have accidentally deleted Machine By Site Session Group, you can follow below steps to recreate it.
+
+Check to make sure you have the following permission in order to create a Session Group.
+
+ManageSessionGroups
+
+Users with Administrative rights can grant or revoke above permission for a role from the Create / Edit Role page as shown below. This permission is visible under Global Permissions section.
+
+In the session group panel, click Create Session Group.
+
+The following screen appears.
+
+Enter the following values.
+
+Name:	All Machines by Site
+Session Filter:	($USERATTRIBUTESITEIDS='-1' OR (CustomProperty5 <> '' AND (',' + $USERATTRIBUTESITEIDS + ',') LIKE ('*,' + CustomProperty5 + ',*')))
+Subgroup Expressions:	CustomProperty2
+
+Click Create.
+
+ScreenConnect with RMM Advanced Configuration Editor
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ScreenConnect Installation Status and Error Codes
+Enable or Disable Connection Consent for ScreenConnect
+ScreenConnect Dashboard for RMM
+ScreenConnect 1-Click for RMM
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

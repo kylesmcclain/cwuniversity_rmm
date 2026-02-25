@@ -1,0 +1,91 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Communicator User Guide   Communicator Configuration
+Communicator Configuration
+Last updated
+Nov 17, 2025
+Table of contents
+Overview
+Editing the Communicator Policy
+Communicator Policy Configurations
+Default Menus
+Branding
+Custom Menus
+Overview
+
+You can configure the Communicator while creating or editing the Communicator Policy.
+
+Editing the Communicator Policy
+
+You can edit the Communicator Policy in two ways:
+
+You can update the Communicator Policy assigned to the site from the Policy Page:
+Endpoints > Policies & Packages >  Select Required Policy > Edit.
+You can update the Communicator Policy for a separate endpoint within the site from the Devices Page:
+Endpoints > Devices > Select required endpoint > Settings > Devices > Communicator > Edit.
+
+You can also remove all custom changes to a separate endpoint within the site by clicking Remove Overrides
+Communicator Policy Configurations
+
+The Communicator can be configured as part of the Policy settings. You can enable or disable default menus, apply tray branding, or configure custom menus.
+
+Default Menus
+
+These are a set of default menus which can be enabled to customize features of Communicator as shown here:
+
+Branding
+
+By enabling the Communicator tray branding features, you can customize the icon settings and the related text.
+
+Note:
+
+A valid 32x32 pixels, ICO or PNG file must be uploaded for the icon to work correctly on Windows.
+A valid 16x16 pixels, PNG file must be uploaded for the icon to work correctly on Mac.
+Custom Menus
+
+Enabling custom menus allows you to customize the menu names and URLs associated with them.
+
+All Policy configuration is reflected on the Communicator desktop tray in three to five minutes.
+
+Note: You can execute custom tasks using Communicator.
+
+ 
+
+ 
+
+Communicator Branding Communicator Customization
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Communicator Assignment
+Communicator Default Menus
+Communicator Branding
+Communicator Customization
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

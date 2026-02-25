@@ -1,0 +1,346 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   PSA Integration   ConnectWise PSA (Manage) Integration   ConnectWise PSA Asset Error Code Knowledgebase
+ConnectWise PSA Asset Error Code Knowledgebase
+Last updated
+Aug 19, 2024
+Table of contents
+Asset Error Code Knowledgebase
+Asset Error Code Knowledgebase
+Generic Error	Summary Error	Error Details and steps for correction
+
+
+Member is inactive and cannot use these keys.
+
+OR
+
+Incorrect public/private key.
+
+OR
+
+Member is inactive and cannot use these keys.
+
+OR
+
+The set of specified public/private keys have been inactivated.
+
+	
+
+Error code : 1000
+ 
+
+Details: The API Account or Member used for the integration is inactive, deleted, or doesn’t have permissions to perform this activity.
+
+	
+
+This error indicates that the API member used for the integration is no longer active or is deleted or doesn't have necessary permissions to perform the transaction.
+
+Impact:
+
+The API member is used for executing all transactions in the ConnectWise PSA :
+
+Create, fetch, or update ticket information once they are updated in the ConnectWise RMM
+Create or update Configuration items in PSA
+Fetch contact information when they are created, updated, or deleted in ConnectWise PSA
+Create or update the agreements for the additions count for endpoints
+
+Troubleshooting steps:
+
+Please validate the API member used for the integration is active. Review the ConnectWise PSA Integration documentation.
+n case the API member is inactive or deleted, please refer to the Details Tab - API Members documentation for help creating a new member.
+Make sure that there are no restrictions applied to the member account for updating tickets on a specific boards. If the ticket is moved to a board to which the API member doesn't have access then the specific tickets will be failed to sync. 
+
+After the necessary permissions are provided, Please try resyncing the tickets from the PSA Integration section to force the tickets to resync.
+
+If the issue persists, please contact the PSA Support team for assistance via an online chat session. Follow the steps below to initiate a chat session,
+
+Login to the ConnectWise Asio™ platform.
+Click Support.
+Select the option - PSA Support.
+Select ConnectWise PSA.
+
+You do not have security permission to perform this action.	
+
+Error code : 1001
+
+Details: The RMM Integration doesn't have the appropriate permission to complete the transaction.
+
+	
+
+This error indicates that the integration doesn't have appropriate permission to complete the transaction. This error can be surfaced while performing multiple different operations like:
+
+Creating ticket
+Updating ticket
+Creating configuration item
+Updating configuration item
+Updating agreement
+
+Troubleshooting steps:
+
+Tickets:
+
+Make sure that the company status allows tickets to be created or updated 
+Make sure that the API account is not restricted to performing transactions on a specific company or service board
+
+Configuration item:
+
+Make sure that the company status allows configuration items to be created or updated
+
+Agreements:
+
+Make sure that the company status allows agreement changes to be performed
+
+After the necessary permissions are provided, please try resyncing the tickets from the PSA Integration section to force the tickets to resync.
+
+If the issue persists, please contact the PSA Support team for assistance via an online chat session. Follow the steps below to initiate a chat session,
+
+Login to the Asio platform.
+Click Support.
+Select the option - PSA Support.
+Select ConnectWise PSA.
+
+Error sending http request.	
+
+Error code : 1002
+
+This error indicates that the RMM integration is unable to access your ConnectWise PSA instance.
+
+	
+
+This error indicates that the RMM integration is unable to access your ConnectWise PSA instance.
+
+Troubleshooting steps:
+
+Make sure that the PSA instance is accessible and that your firewall is not blocking it. Refer to the Firewall Exclusions documentation for reference on how to allow specific URL/IP addresses to be excluded.
+
+After the necessary changes are done, please try resyncing the tickets from the PSA Integration section to force the tickets to resync.
+
+If the issue persists, please contact the PSA Support team for assistance via an online chat session. Follow the steps below to initiate a chat session,
+
+Login to the Asio platform.
+Click Support.
+Select the option - PSA Support.
+Select ConnectWise PSA.
+
+You do not have security permission to board.	
+
+Error code : 1003
+
+This error indicates that the API member used for the integration doesn't have the necessary permission to make updates to tickets on the service board.
+
+	
+
+This error indicates that the API member used for integration doesn't have the necessary permission to make updates to tickets on the service board.
+
+Troubleshooting steps:
+
+Make sure that the API member created for the ConnectWise RMM integration has the necessary permissions to create and update tickets on the service board.
+
+After the necessary permissions are provided, please try resyncing the tickets from the PSA Integration section to force the tickets to resync.
+
+If the issue persists, please contact the PSA Support team for assistance via an online chat session. Follow the steps below to initiate a chat session,
+
+Login to the Asio platform.
+Click Support.
+Select the option - PSA Support.
+Select ConnectWise PSA.
+
+You do not have security permission to company.	
+
+Error code : 1004
+
+This error indicates that the API member used for the integration doesn't have the necessary permission to create or update tickets for the company.
+
+	
+
+This error indicates that the API member used for the integration doesn't have the necessary permission to create or update tickets for the company.
+
+Troubleshooting steps:
+
+Tickets:
+
+Make sure that the company status allows tickets to be created and updated 
+Make sure that the API account is not restricted to perform transactions on the specific company or service board
+
+Configuration item:
+
+Make sure that the company status allows configuration items to be created and updated.
+
+Agreements:
+
+Make sure that the company status allows for agreement changes to be performed.
+
+After the necessary permissions are provided, please try resyncing the tickets from the PSA Integration section to force the tickets to resync.
+
+If the issue persists, please contact the PSA Support team for assistance via an online chat session. Follow the steps below to initiate a chat session,
+
+Login to the Asio platform.
+Click Support.
+Select the option - PSA Support.
+Select ConnectWise PSA.
+
+No site identified.	
+
+Error code : 1005
+
+This error indicates that the site against the Company in ConnectWise PSA is not available anymore to sync tickets or configuration items.
+
+	
+
+This error indicates that the site against the Company in ConnectWise PSA is not available anymore to sync tickets or configuration items.
+
+Troubleshooting steps:
+
+Make sure that the PSA site mapped to the ConnectWise RMM site is available
+Company status in PSA allows tickets to be created against the site
+
+After the necessary permissions are provided, please try resyncing the tickets from the PSA Integration section to force the tickets to resync.
+
+If the issue persists, please contact the PSA Support team for assistance via an online chat session. Follow the steps below to initiate a chat session,
+
+Login to the Asio platform.
+Click Support.
+Select the option - PSA Support.
+Select ConnectWise PSA.
+
+
+
+Could not find client configuration.
+
+or
+
+Incorrect or disabled client id.
+
+	
+
+Error code : 1007
+
+This error will be returned when the ConnectWise RMM Site is not mapped with the corresponding Company or Site.
+
+	
+
+This error indicated that the RMM site against which the ticket is generated is not mapped to the corresponding Company or Site for syncing.
+
+Impact:
+
+Tickets/Assets for the sites will not be pushed in the corresponding Company in ConnectWise PSA
+
+Troubleshooting Steps:
+
+Please make sure that the ConnectWise RMM Site is mapped to the corresponding Company and Site
+Refer to the Sites sub-section under the ConnectWise PSA Integration documentation.
+
+After the necessary changes are made, please try resyncing the tickets from the PSA Integration section to force the tickets to resync.
+
+If the issue persists, please contact the PSA Support team for assistance via an online chat session. Follow the steps below to initiate a chat session,
+
+Login to the Asio platform.
+Click Support.
+Select the option - PSA Support.
+Select ConnectWise PSA.
+
+
+
+A timeout has occured. Please try again.
+
+	
+
+Error code : 1010
+
+This error will be returned when the ConnectWise PSA instance was unavailable while trying to push tickets, configuration items, or agreements.
+
+	
+
+This error will be returned when the ConnectWise PSA instance was unavailable while trying to push tickets, configuration items, or agreements.
+
+Impact:
+
+Tickets, configuration items, or agreements for all ConnectWise RMM sites will not be pushed in ConnectWise PSA.
+
+Troubleshooting Steps:
+
+After the ConnectWise PSA instance is available, please try resyncing the tickets from the PSA Integration section to force the tickets to resync.
+
+If the issue persists, please contact the PSA Support team for assistance via an online chat session. Follow the steps below to initiate a chat session,
+
+Login to the Asio platform.
+Click Support.
+Select the option - PSA Support.
+Select ConnectWise PSA.
+
+"code": "notfound",	
+
+Error code : 1011
+
+This error will be returned when the ConnectWise RMM integration is not able to find the corresponding object to push data.
+
+	
+
+This error will be returned when the ConnectWise RMM integration is not able to find the corresponding object to push data.
+
+Troubleshooting Steps:
+
+Refer to the actual error message received while pushing data in ConnectWise PSA
+Make sure that the corresponding entity is available in ConnectWise PSA
+
+After the ConnectWise PSA instance is available, please try resyncing the tickets from the PSA Integration section to force the tickets to resync.
+
+If the issue persists, please contact the PSA Support team for assistance via an online chat session. Follow the steps below to initiate a chat session,
+
+Login to the Asio platform.
+Click Support.
+Select the option - PSA Support.
+Select ConnectWise PSA.
+
+questionid field is required.	
+
+Error code : 1012
+
+This error will be returned when the ConnectWise RMM is attempting to either create or update the configuration item but there is a required field mapped which is not available with the sync.
+
+	
+
+This error will be returned when the ConnectWise RMM is attempting to either create or update the configuration item but there is a required field mapped which is not available with the sync.
+
+Troubleshooting Steps:
+
+Error indicates that there is a mandatory field mapped for the creation/update of a configuration item
+These fields are not pushed via the PSA but due to configuration in PSA, system will reject the creation as mandatory field is not available
+Remove such field from mandatory field or set some default value so that sync can complete the transaction
+
+After the necessary changes are done in ConnectWise PSA for the configuration item, please try resyncing the tickets from the PSA Integration section to force the tickets to resync.
+
+If the issue persists, please contact the PSA Support team for assistance via an online chat session. Follow the steps below to initiate a chat session,
+
+Login to the Asio platform.
+Click Support.
+Select the option - PSA Support.
+Select ConnectWise PSA.
+ConnectWise PSA (Manage) REST API Integration Troubleshooting ConnectWise PSA Ticket Error Code Knowledgebase
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ConnectWise PSA (Manage) Integration Setup Process
+Configure ConnectWise PSA Policies
+PSA Policies define how tickets, configuration items, Contacts, and Notifications sync from RMM to ConnectWise PSA or vice-versa.
+ConnectWise PSA - Policies Integration - FAQ
+ConnectWise PSA - Tech Efficiency Devices Pod
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

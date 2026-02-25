@@ -1,0 +1,399 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   ConnectWise RMM Release Notes   ConnectWise RMM Update for January 2026
+ConnectWise RMM Update for January 2026
+Last updated
+Feb 9, 2026
+Table of contents
+Overview
+Announcements
+API Migration: V1 to V2 Transition
+New Guide – Configuring DUO TOTP for Help Desk Services User Administration
+Upcoming Change: Auto-Closure of Inactive Help Desk and NOC Tickets
+RMM Site Enablement
+What's New in ConnectWise RMM?
+January 28, 2026
+Asio Community Exchange
+January 27, 2026
+Automation
+Issues Addressed
+January 23, 2026
+Endpoint Protection
+January 22, 2026
+Alerting
+Issues Addressed
+January 21, 2026
+Policies and Packages
+Agent Self-Heal
+January 20, 2026
+Devices API
+Agent
+Issues Addressed
+January 14, 2026
+Issues Addressed
+Overview
+
+This page provides information on the latest enhancements and features for ConnectWise RMM™.
+
+Announcements
+API Migration: V1 to V2 Transition
+
+In the past, when partners accessed ConnectWise Asio® data for endpoints, each device used a public identifier as its unique reference. However, these IDs wouldn’t match the data exposed to them via ConnectWise PSA™ (Manage), Asio console, Snowflake Syndication, Reports and Dashboards (formerly BrightGauge™), etc., which would cause confusion. 
+
+Hence, to ensure consistency in the system for device identifiers, we have now made sure that every system or solution connected to Asio will use a common identifier (Private IDs).  
+
+To support this change, we have migrated several APIs from V1 to V2 to align with the new framework and improve consistency across services.  
+
+For partners who have stored or maintained the device's data, we will add an additional API that allows you to retrieve Public-to-Private or vice versa to support this transition. 
+
+Note: Not all API endpoints have changed from V1 to V2, and some can continue to operate or be functional. Older API endpoints that are updated will be deprecated soon.
+
+Key Details
+
+Endpoint IDs shared with partners will now be private (public-to-private mapping is discontinued). 
+A conversion API is available under Devices on the developer portal to help update integrations: 
+Convert private → public and public → private endpoint IDs. 
+Partners must update their systems to use only private endpoint IDs going forward.
+
+Migration Guidance
+
+Stop using public endpoint IDs in all API calls. 
+Use the conversion API under Devices on the developer portal to update your systems: 
+Convert public → private and private → public IDs as needed during migration. 
+Update all integrations to consume only V2 APIs.
+
+Developer Portal Links
+
+The following link provides access to all API Swagger specifications, including both V1 and V2:
+
+Partner APIs: https://developer.connectwise.com/Products/ConnectWise_Asio/Asio_Vendors/APIs_and_Callbacks/REST_API
+
+Timeline
+
+Complete migration by April 30, 2026. 
+Start consuming V2 APIs immediately. 
+V1 APIs and Legacy Reporting APIs will be deprecated by April 30, 2026.
+New Guide – Configuring DUO TOTP for Help Desk Services User Administration
+
+We have published a new guide that walks you through configuring a DUO Time-based One-Time Password (TOTP) account specifically for Help Desk Services (HDS). This configuration enables HDS to securely perform user administration tasks in DUO on behalf of your organization.
+
+Why this matters
+Partners can now rely on a standardized, documented process for setting up DUO access for HDS. This helps:
+
+Ensure secure and compliant DUO user administration by HDS.
+Reduce onboarding time when enabling HDS to support DUO.
+Minimize configuration errors and support delays.
+
+What’s included in the guide
+The documentation covers:
+
+Prerequisites to enable DUO user administration by HDS.
+Step‑by‑step instructions to configure a DUO TOTP account for HDS.
+Recommended settings and considerations for security and access control.
+How to validate that HDS can successfully manage users in DUO.
+
+Access the guide here: Help Desk Services - DUO User Administration
+
+Upcoming Change: Auto-Closure of Inactive Help Desk and NOC Tickets
+
+Expert Services is planning to introduce an automatic closure process for inactive Help Desk tickets and reinforce the existing auto-closure process for NOC tickets. The details are as below. 
+
+Note: This change applies only to accounts with ConnectWise Help Desk Services™ and ConnectWise NOC Services™.
+
+What’s Changing?
+
+Starting January 19, 2026, tickets that meet specific criteria will be automatically closed after a defined period of inactivity:
+
+Help Desk tickets will auto-close after 365 days of inactivity.
+NOC tickets will auto-close after 30 days of inactivity (as originally intended).
+
+This update ensures consistency and helps maintain an efficient and responsive support environment.
+
+Which Tickets Will Be Auto-Closed?
+
+Tickets will be auto-closed if:
+
+They are assigned to partners for a site with Help Desk or NOC enabled.
+The ticket is not already closed.
+The ticket did not originate from an alert.
+There have been no updates for:
+365 days (Help Desk)
+30 days (NOC)
+
+When a ticket is auto-closed, the following notification displays:
+
+"This ticket has been closed due to inactivity. If further action is needed, please create a new ticket."
+
+Note: This change is planned for release on January 19, 2026.
+
+Important Impact for Partners with Both NOC and Help Desk Services
+
+Historically, NOC tickets did not auto-close after 30 days as intended. With this release, partners who have both Help Desk and NOC services will see NOC tickets begin closing after 30 days of inactivity. This may result in older NOC tickets being closed automatically going forward.
+
+RMM Site Enablement
+
+Starting January 29, 2026, RMM Products and Capabilities will only be available on machines through the RMM Site Configuration policy. To maintain RMM capabilities, ensure the RMM Site Configuration policy is enabled at the sites. Refer to RMM Site Enablement for details on the impact of not enabling this policy.
+
+Note:
+
+This change will take effect for partners in the European region only.
+These changes are currently live in the Australian region.
+For North America, the effective date would be communicated later.
+What's New in ConnectWise RMM?
+Release Dates:	Relevant Modules:
+
+January 28, 2026
+January 27, 2026
+January 23, 2026
+January 22, 2026
+January 21, 2026
+January 20, 2026
+January 14, 2026
+	
+Asio Community Exchange
+Automation
+Endpoint Protection
+Alerting
+Policies and Packages
+Agent Self-Heal
+Devices API
+Agent
+January 28, 2026
+Asio Community Exchange
+
+The Community Exchange, built on the Asio platform, is now live for all the RMM Essentials, RMM Pro, and RMM Premium partners. Community Exchange is a purpose-built hub where MSPs, Technical Service Providers, and small and mid-sized partners can install, upload, and share production-ready content across communities and partners. See more details on the Community Exchange docs homepage. 
+
+January 27, 2026
+Automation
+Added line numbers to the PowerShell and Bash script editors in the Script Editor to improve readability and make debugging easier for technicians.
+Issues Addressed
+
+Known Issue
+
+	
+
+Description
+
+
+
+
+ISSUE-9928
+
+	
+
+Fixed an issue where duplicated 'Add Local User – Updated' tasks failed on endpoints due to an incorrect password mismatch error during scheduling.
+
+
+
+
+ISSUE-9690
+
+	
+
+Fixed an issue where tasks that were deleted or not visible in the task list continued executing on endpoints, preventing partners from disabling them.
+
+
+
+
+ISSUE-9473
+
+	
+
+Fixed an issue where re‑enabling a task on one endpoint blocked partners from re‑enabling the same multi‑endpoint task on the remaining endpoints.
+
+
+
+
+ISSUE-9474
+
+	
+
+Fixed an issue in the Automation tab where tasks disabled for a specific endpoint still showed only a 'Disable' option, preventing partners from re‑enabling them.
+
+January 23, 2026
+Endpoint Protection
+
+Added new identified antivirus to the list of Endpoint Protection. Endpoints having this Antivirus will start reporting under Endpoint Protection in the ConnectWise Platform Devices page. To view the list of antivirus products, review the Identified Antivirus Products documentation.
+
+Covalence from Field Effect
+
+Check Point Endpoint Security
+
+January 22, 2026
+Alerting
+
+We’re enhancing the new Device Down alerts for AU region partners so that partners have clearer context for Probe machine details, applicable for the following two conditions:
+
+Virtual Server Endpoint reporting offline (Host under monitoring OR Light Out Management configured)
+
+
+
+
+VMWare Host Endpoint reporting offline (Light Out Management configured)
+
+Issues Addressed
+
+Known Issue
+
+	
+
+Description
+
+
+
+
+ISSUE-9980
+
+	
+
+Fixed an issue where Custom Script Monitor tickets could auto-close too early when multiple resolution strings were configured in Monitor.
+
+
+
+
+ISSUE-9531
+
+	
+
+Fixed an issue where tickets created by the Device Down Custom Monitor did not auto-close even after the device recovered. Tickets will now close as expected when the device is up again.
+
+
+
+
+ISSUE-9850
+
+	
+
+Fixed an issue where alerts for the condition 'System crash or unexpected reboot with memory dump' were not being generated for the AU region.
+
+January 21, 2026
+Policies and Packages
+
+We have added Audit Tracking for Packages:
+
+assigned to the targets (Company/Site)
+removed from the targets (Company/Site)
+updated from the targets (Company/Site)
+
+This improvement provides you with greater visibility and accountability across your environment. This can be accessed by navigating to Reports > Audit Trail.
+
+Agent Self-Heal
+
+Agent Self-Heal is now available with new Agent installations for Windows OS. This ensures that newly installed Agents automatically receive an update that includes a schedule for regular health checks and automatic remediation of common issues without manual intervention.
+
+The Agent is updated to the latest version, and you receive a new task in Windows Task Scheduler. A Windows task is defined in the task scheduler for Windows Server (Version 2008 and above) and Desktop (Windows 8 and above).
+
+To learn more, review the Agent Self-Heal documentation.
+
+January 20, 2026
+Devices API
+API to retrieve last online information is now available via OpenAPI. Log in to the developer portal to access the API details. To learn more about the API, review the Agent Last Seen API documentation.
+Agent
+New agent version - 4.0.7 with key updates would be rolled out in a phased manner starting January 23, 2026.
+
+Note: Always use the latest version when installing Platform Agent to access new features and ensure it has the most up-to-date functionality. Make sure to update the GPO, MS Intune, or any other method followed to install the Agent.​
+
+Issues Addressed
+
+Known Issue
+
+	
+
+Description
+
+
+
+
+ISSUE-9652
+
+	
+
+Fixed an issue where newly added devices were not syncing Privileged Access settings into ScreenConnect.
+
+
+
+
+ISSUE-6686
+
+	
+
+Fixed an issue where not all IP addresses are populating.
+
+
+
+
+ISSUE-9610
+
+	
+
+Fixed an issue where a ticket is getting generated in 2.0 with an observation date older than a year.
+
+January 14, 2026
+Issues Addressed
+
+Known Issue
+
+	
+
+Description
+
+
+
+
+ 
+
+	
+
+Fixed an issue where a Client Site Manager was unable to create/edit/schedule a task.
+
+
+ 	
+
+Fixed an issue where a Client Site Manager was unable to edit/schedule a task.
+
+
+ 	
+
+Fixed an issue where the edit icon disappeared after updating a script intermittently.
+
+
+ 	
+
+Fixed an issue where the Create Ticket function was available in the script editor when the user role did not have Ticketing permissions.
+
+ConnectWise RMM Update for December 2025 ConnectWise RMM Update for February 2026
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ConnectWise RMM Latest Release Notes
+ConnectWise RMM Update for January 2024
+ConnectWise RMM Update for February 2024
+ConnectWise RMM Update for March 2024
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

@@ -1,0 +1,132 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   PSA Integration   Kaseya BMS Integration Guide
+Kaseya BMS Integration Guide
+Last updated
+Jan 8, 2025
+Table of contents
+1. Prepare Kaseya BMS for RMM Tickets
+2. Add RMM Integration to Kaseya BMS
+3. Map the Ticket Status
+4. Map the Account
+5. Complete Integration and Activation
+
+Kaseya® BMS™is a back-end service for billing and project management that integrates with ConnectWise to enable remote monitoring and management of systems. After the integration is complete, you can monitor machines and devices and manage corresponding tickets in Kaseya BMS. Linked ConnectWise assets are synced in Kaseya BMS as the tickets are created.
+
+Perform the following steps to configure and activate the Kaseya BMS integration.
+
+Note: 
+
+Enabling a PSA integration disables email notifications through Notification Rules.
+Kaseya BMS integration is not available in EU and AU.
+1. Prepare Kaseya BMS for RMM Tickets
+
+Add the following recommended records in Kaseya BMS to support data provided by ConnectWise RMM™:
+
+Navigate to Admin > Service Desk Folder > Ticket Statuses and add the following statuses:
+Pending
+NOC Completed
+Navigate to Admin > Service Desk Folder > Priorities and add the following priorities:
+Low
+Emergency
+Navigate to Admin > Service Desk Folder > Queues and add the following queue:
+Monitoring Alert Tickets
+2. Add RMM Integration to Kaseya BMS
+
+Continuing in Kaseya BMS:
+
+Navigate to Admin > Service Desk > RMM Integration Settings and click New to create the integration.
+
+
+Enter the following under General Settings > Configuration Options:
+Integration Name – Enter an easy-to-understand name.
+Integration Type – Select ConnectWise from the drop-down list.
+Integrator Username – Create a user name you will use later to integrate with ConnectWise.
+Integrator Password – Create an integrator password.
+API Token – Enter the API token provided by ConnectWise. Follow the steps below to receive the token:
+Log in to the ConnectWise Asio™ platform (ITSupport Portal) (control.itsupport247.net) with admin credentials.
+
+Go to Settings > Account Administration > Integration > PSA Integration.
+
+Select Kaseya BMS from the drop-down.
+
+Write down the API Token and enter it on the Kaseya BMS integration page as indicated above.
+
+Back on the Kaseya BMS integration page, navigate to General Settings > Ticket Defaults and enter:
+Priority – Select a default priority.
+Queue – Select the queue to assign tickets created from ConnectWise monitoring alerts, i.e. Monitoring Alert from the first section above.
+Ticket Type - Select a default ticket type.
+Ticket Note Type - Select a default note type, i.e. General Notes.
+Ticket Source - Select a default ticket source. Monitoring System is recommended.
+Click Save.
+3. Map the Ticket Status
+
+To map ticket statuses in Kaseya BMS, navigate to Admin > Service Desk > RMM Integration > Continuum Integration > Ticket Status Mapping.
+
+Under Ticket Status Mapping From, map ConnectWise ticket statuses to Kaseya BMS ticket statuses.
+Under Ticket Status Mapping To, map Kaseya BMS ticket statuses to ConnectWise ticket statuses.
+
+4. Map the Account
+
+Now you need to perform account mapping.
+
+Navigate to Asio > Settings > Account Administration > Sites and copy the Site Code for a given Site Name. (A site code in ConnectWise equates to an account in Kaseya BMS.)
+
+In Kaseya BMS, navigate to the CRM > Accounts page and double-click to open the account that matches the Site Code.
+
+Click the RMM Integration tab in Kaseya BMS and paste the ConnectWise Site Code into the ConnectWise Location Code field.
+
+Click Save.
+5. Complete Integration and Activation
+
+Now you are ready to configure ConnectWise to use Kaseya BMS as a PSA integration solution.
+
+Important: Do NOT perform this step until all other steps are completed. When you enter the Callback URL and click Activate, ConnectWise starts sending alerts into Kaseya BMS and the ticket creation process starts.
+
+Go to Asio > Settings > Account Administration > Integration > PSA Integration.
+Select Kaseya BMS and enter the following options:
+Integrator User - Enter the Integrator Username specified in RMM Integration Setup.
+Integrator Password - Enter the Integrator Password specified in RMM Integration Setup.
+Confirm Integrator Password - Re-enter the Integrator Password.
+Callback URL - Enter a URL such as: https://bms.kaseya.com/ContinuumCall...t=Company_Name
+
+Note: You can identify the Callback URL in Kaseya BMS by navigating to the Admin > Service Desk > RMM Integration Settings page. Open the RMM Integration Settings record you created and copy the value in the Callback URL field.
+
+Callback Method - Select POST from the drop-down list.
+
+Click Activate.
+A ticket originates in ConnectWise and is created in Kaseya BMS.
+Linked ConnectWise assets are created in Kaseya BMS as tickets are created.
+Updates to the status and notes of a Kaseya BMS ticket are posted back to its corresponding ticket in ConnectWise.
+If a new ticket is manually created in Kaseya BMS, ConnectWise is not updated.
+
+ 
+
+Harmony PSA Integration Promys Integration Guide
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ConnectWise PSA (Manage) Integration
+ConnectWise RMM features the ability to integrate with the ConnectWise PSA system to sync tickets, assets, configuration items, billing data, and cont...
+Autotask Integration Guide
+Accelo Integration Guide
+PSA Synchronization Dashboard
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

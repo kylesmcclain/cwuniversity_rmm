@@ -1,0 +1,106 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   RMM Tools   APIs   Asio Integration API   Authentication and Authorization
+Authentication and Authorization
+Last updated
+Jul 7, 2025
+Table of contents
+Overview
+Client Credentials Grant Type
+Authorization
+OAuth Apps Access Scope
+Authorize with Credentials
+Post Authorize with Credentials
+Request
+Overview
+
+The ConnectWise RMM Integration API platform uses OAuth2.0 protocol for authentication.
+
+Client Credentials Grant Type
+
+Client Credentials is a simple authentication type, where Vendor client will have to use OAuth2.0 Application Identifiers (client_id/client_secret pairs) to generate an access token and use this token to communicate and integrate with ConnectWise Command Integration APIs. Client Credentials grant type Integration Set Up consists of the following steps:
+
+After Registration of the vendor and product is complete, the product will be listed in the Asio platform.
+Navigate to the Integrations menu.
+Click on Asio Integrations to show a list of all available products.
+Click on the product and click Integrate. 
+Generate the Client credentials (Client ID and Client Secret).
+In the Asio Portal, MSP generates Client_Id and Client_Secret for the respective product integration.
+MSP shares these identifiers with the Vendor client.
+The vendor client uses these identifiers to generate an access token.
+After the access token is generated, the Vendor client can make authenticated calls to open APIs.
+Authorization
+
+Authorization scopes define which APIs are accessed by vendors and what level of data is accessible through the APIs. As part of the initial integration set up for a vendor, Authorization scopes will be assigned depending on what they may need for their integration. Following scopes are available for the APIs.
+
+OAuth Apps Access Scope
+Name	Description
+topology	Grants access to view topology information for the given partner
+asset:all	Grants access to view all Endpoint's asset data
+asset:baseboard	Grants access to view asset baseboard data of the Endpoint
+asset:bios	Grants access to view asset bios data of the Endpoint
+asset:drives	Grants access to view all Endpoint's asset data
+asset:networks	Grants access to view asset network data of the Endpoint
+asset:os	Grants access to view asset os data of the Endpoint
+asset:system	Grants access to view asset system data of the Endpoint
+asset:software	Grants access to view asset users of the Endpoint
+asset:users	Grants access to view asset users of the Endpoint
+asset:services	Grants access to view asset available services of the Endpoint
+asset:shares	Grants an access to view asset shares data of the Endpoint
+statuses	Grants write access to product status API of the Endpoint, and read access of the Json schema for the product status
+Authorize with Credentials
+Post Authorize with Credentials
+
+Sandbox: 
+
+https://openapi.sandbox.use1.cwcmddev.cwnet.io/v1/token
+
+Production: 
+
+https://openapi.service.itsupport247.net/v1/token
+
+Request
+
+To authorize with credentials:
+
+{
+
+"grant_type": "client_credentials",
+
+"client_id": "6500023",
+
+"client_secret": "some_client_secret",
+
+"scope": "topology statuses"
+
+ 
+
+Asio Integration API Managed Devices Details APIs
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Rate Limits
+Managed Devices Details APIs
+These APIs return details of your MSP network – Clients, Sites, and Endpoints.
+Product Status APIs
+Public Ticketing API
+ConnectWise's public ticketing API allows MSPs or PSA vendors to integrate with our two-way ticket synchronization system to create tickets, update ti...
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

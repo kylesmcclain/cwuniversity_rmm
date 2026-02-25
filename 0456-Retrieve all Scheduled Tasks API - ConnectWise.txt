@@ -1,0 +1,82 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   RMM Tools   APIs   Automation API   Retrieve all Scheduled Tasks API
+Retrieve all Scheduled Tasks API
+Last updated
+Jul 8, 2025
+Table of contents
+API Name
+API Description
+Request and Response API
+API Name
+
+Retrieve all Scheduled Tasks for Partner
+
+API Description
+
+This API allows you to retrieve information about all of your Scheduled Tasks and their related information. This represents the Scheduled Tasks page on UI.
+
+Request and Response API
+
+You can find the Request and Response API details at this dev portal.
+
+The API Response will include the following fields:
+
+Field	Description
+executorType	Specifies the type of executor for the task
+CreatedOnDay	Represents the day when the task last ran 
+taskID	Unique identifier for the task
+nextSchedule	Date and time of the next scheduled execution for the task
+noncancelled	Indicates whether the task has been cancelled or not
+canBePostponed	Indicates whether the task can be postponed or not
+createdOn	Date and time when the task was created
+description	Description of the task
+executedOn	Date and time when the task was last executed
+endpointStatuses	Statuses of the endpoints associated with the task
+executionStates	Contains information about the execution states of the task, including the number of devices, successful executions, and failed executions
+executionStatus	Current status of the task execution
+modifiedOn	Date and time when the task was last modified
+name	Name or title of the task
+scheduleType	Type of schedule for the task
+regularity	Specifies the regularity of the task (e.g., recurrent, one-time)
+state	Current state of the task (e.g., active, inactive)
+taskInstanceId	Unique identifier for the task instance
+TemplateID	Unique identifier for the template associated with the task
+TemplateType	Type of template associated with the task
+TimeZone	Timezone used for scheduling the task
+triggeredBy	Information about the trigger that initiated the task.If triggered Manually, then value is empty, if triggered by system, then value is System
+is_deactivated	Indicates whether the task is deactivated or not
+
+ 
+
+Notes: Review the Scheduled Tasks documentation for more information.
+
+ 
+
+Schedule Automation Tasks on Managed Endpoints API Retrieve Task Instance Summary for a Task API
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Retrieve Global Templates API
+Retrieve Custom Templates API
+Retrieve Fusion Scripts API
+Retrieve Task Instance Summary for a Task API
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

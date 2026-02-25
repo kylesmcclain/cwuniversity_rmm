@@ -1,0 +1,398 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Integrations to ConnectWise RMM   Bitdefender Integration
+Bitdefender Integration
+Last updated
+Sep 15, 2025
+Table of contents
+Overview
+Integration Features
+Prerequisites
+Configuring the Integration
+Getting the API key and the access URL
+Configuration Steps in the Asio Platform
+Bitdefender GravityZone installation package for ConnectWise Asio Integration
+Configuring Policies and Packages to install the Bitdefender Agent
+Configuring Policies
+Configuring Packages
+Assigning Packages
+Checking Deployment Status
+Ticketing
+Ticketing Aggregation
+Handling Installation Failures
+Uninstalling the Bitdefender Agents
+Verifying and Troubleshooting Bitdefender Deployment in ConnectWise Asio
+How to confirm that your ConnectWise Asio Package includes Bitdefender Cloud Security for MSP
+Where to find more information if the Bitdefender installation fails
+Common causes of Bitdefender deployment failures
+Overview
+
+Bitdefender GravityZone is a business security solution built from ground-up for virtualization and cloud to deliver security services to physical endpoints, virtual machines in public cloud, and Exchange mail servers.
+
+Through Control Center, the GravityZone security management console, you can remotely install and manage security for any endpoint, in any location and environment. A local agent is deployed on each endpoint.
+
+By integrating with Bitdefender GravityZone, you are able to manage security in your inventory right from the ConnectWise Asio™ Platform (ITSupport Portal). The synchronization between GravityZone companies and your ConnectWise Asio sites is possible through an integration called Bitdefender Cloud Security for MSP. The integration provides function-based methods to move data in and out from the ConnectWise Asio platform through the API Web Service.
+
+This guide describes how to configure and use the integration. For the release notes covering the Bitdefender plugin versions, refer to ConnectWise Asio integration.
+
+This guide includes the following:
+
+Integration Features
+Prerequisites
+Configuring the integration
+Configuring policies and packages to install the Bitdefender agent
+Checking the Status of Deployment
+Verifying and troubleshooting Bitdefender deployment in Asio
+Integration Features
+
+The integration comes with features as detailed in the table below:
+
+Feature	Description
+
+
+Inventory mapping
+
+	
+
+Creates a new GravityZone company corresponding to the respective ConnectWise Asio site, or associates an existing GravityZone company to an existing ConnectWise Asio site. All devices in the site will be managed according to the mapped site.
+
+
+
+
+Automatic agent deployment
+
+	
+
+Supports automatic deployment of the Bitdefender agent via Asio policies on Windows, Linux and MacOS devices.
+
+
+
+
+Monitoring agent installation and update
+
+	
+
+Informs whether the Bitdefender agent deployment and update was successful or not.
+
+
+
+
+Automatic agent uninstall
+
+	
+
+Supports automatic uninstall of the Bitdefender agent via Asio policies.
+
+
+Ticketing	Creates ConnectWise Asio Service Tickets based on push notifications from the GravityZone protection modules.
+Prerequisites
+
+To integrate GravityZone with the ConnectWise Asio Platform (ITSupport Portal), you need to meet the following conditions:
+
+You have a GravityZone Partner account.
+
+You have an Asio platform account with Administrative rights.
+
+Configuring the Integration
+
+The integration relies on API Web Service to establish communication between GravityZone and the Asio platform. This is done through the GravityZone API key and the GravityZone access URL, which are available in GravityZone Control Center. Then, complete the rest of the configuration in the Asio platform.
+
+Getting the API key and the access URL
+
+To obtain the GravityZone API key and the GravityZone access URL, follow these steps:
+
+Log in to GravityZone Control Center using your Partner account credentials.
+Click the user icon  in the upper-right corner of the console and select My Account.
+Go to the API keys section and select an existing key or click Add to create a new one.
+Enter a name and enable the APIs that you want.
+
+
+Note: The integration works with the least possible number of APIs as follows:
+
+Companies API
+Licensing API
+Packages API
+Network API
+Policies API
+Quarantine API
+Event Push Service API
+
+Click Save. The API key is generated. To prevent the leaking of sensitive information, do not share or distribute your own generated API keys.
+
+In addition to the API key, the access URL is also necessary to configure the integration. Copy the access URL from the Control Center API section.
+
+Configuration Steps in the Asio Platform
+
+After you have the GravityZone API key and the access URL, the rest of the configuration takes place in the ConnectWise Asio platform.
+
+To set up the integration, follow these steps:
+
+Log in to the ConnectWise Asio™ platform.
+Navigate to the Integrations > Asio Integrations section.
+Click on the BitdefenderGravityZone Cloud Security for MSP product, and Integrate.
+
+
+In the configuration window, under Connection 1, add the API key in the GravityZone API key field and the GravityZone access URL in the GZ server field.
+Click Test Connection to validate the key.
+
+Optionally, to use the Bitdefender ticketing capabilities, select the Enable Ticketing checkbox to activate it.
+
+Select the checkbox Grant API Access to Bitdefender Cloud Security for MSP. Bitdefender Cloud Security for MSP accesses your data that is relevant for this Integration.
+
+Click Save and Proceed.
+
+Note: Although you can create more connections by clicking +Add Connection to correspond with multiple pairs of API keys and access URLs, we recommend configuring a single one for optimal operation.
+
+On the Site Mapping page, under BitdefenderGravityZone Cloud Security for MSP Bitdefender Cloud Security for MSP sites section, select an existing GravityZone company from the drop-down list. Otherwise, click the +Add new item option in the drop-down list to create a new company and provide a GravityZone company name.
+
+
+Click Save and Proceed.
+
+The integration is complete. Click Complete Setup.
+
+
+Bitdefender GravityZone installation package for ConnectWise Asio Integration
+
+When ConnectWise Asio Sites are mapped to new or existing GravityZone companies, the integration automatically generates a GravityZone installation package named CWSE_Connector_Default. This package is available only for GravityZone companies mapped through the ConnectWise Asio integration.
+
+The CWSE_Connector_Default installation package includes the following Bitdefender modules by default:
+
+Antimalware
+Advanced Threat Control
+Advanced Anti-Exploit
+Network Protection
+Content Control
+Antiphishing
+Web Traffic Scan
+Network Attack Defense
+
+Important: 
+
+The CWSE_Connector_Default package is created only after the ConnectWise Asio Site-to-GravityZone company mapping is successfully completed.
+You can create the CWSE_Connector_Default package in advance and customize the Bitdefender modules before deployment.
+The CWSE_Connector_Default name is mandatory. If this package is missing, a new one with the exact same name will be automatically created and used for Bitdefender agent deployment.
+Removing a GravityZone company from the ConnectWise Asio integration does not delete existing installation packages in GravityZone.
+You may need to modify the CWSE_Connector_Default package to include EDR Sensor if you are using that:
+
+Configuring Policies and Packages to install the Bitdefender Agent
+
+After connecting GravityZone to ConnectWise Asio, you need to configure policies and packages that allow automatic installation of the Bitdefender agents on devices (computers). The integration supports Bitdefender Endpoint Security Tools on Windows, Linux, and macOS computers.
+
+Configuring Policies
+
+You must configure a ConnectWise Asio policy to automatically install Bitdefender Endpoint Security Tools on devices. ConnectWise Asio policies should not be confused with GravityZone policies.
+
+To configure a policy in the Asio platform, follow these steps:
+
+Navigate to Endpoints > Policies and click Add Policy.
+
+
+On the New Policy page, configure your new Policy:
+
+Under Category, select Devices.
+
+Under Type, select Bitdefender Cloud Security auto.
+
+Enter a name for the new policy.
+
+In the right-side pane, enable Bitdefender Cloud Security Agent Installation.
+
+
+Click Save.
+
+Configuring Packages
+
+To configure the package for Bitdefender agents, follow these steps:
+
+Navigate to Endpoints > Packages and click Add Package button (or click on an existing package to add the policy and skip to step 3).
+On the New Package page, enter a name for this package.
+From the Devices category of the Policies section, drag and drop the new policy into the Package Builder section.
+
+Note: Verify that Default Package is deselected.
+
+Click Save.
+
+Assigning Packages
+
+By assigning the package to a site in Asio, you remotely install Bitdefender agents on the devices belonging to that site. Asio installation packages should not be confused with GravityZone installation packages.
+
+To assign a package, follow these steps:
+
+Navigate to Endpoints > Packages and go to the Sites tab.
+Select one or more sites and click Assign Package.
+
+
+
+In the confirmation window, click Assign then Update. Bitdefender agents starts to install on the computers in those sites.
+
+
+Note:
+
+After the Asio package is applied, the Bitdefender installation may take up to 30 minutes to begin. This delay is a known behavior of the ConnectWise Asio platform, observed during testing.
+If the Bitdefender deployment fails, the integration will automatically retry the installation for up to one hour, with a maximum of 10 retry attempts.
+Checking Deployment Status
+
+To check the deployment status of Bitdefender, follow these steps:
+
+In the Asio platform, navigate to Endpoints > Devices and filter by the Sites or Devices where you deployed Bitdefender.
+Go to the Integrations tab and select Bitdefender Cloud Security for MSP. The Deployment Status column will display the current installation status.
+
+In progress – The Bitdefender installation is still in progress.
+Success – The Bitdefender installation was completed successfully.
+Failed – The installation was unsuccessful.
+Click on the entry in the Deployment Status column to view additional information.
+
+
+Note:
+
+It can take up to 60 minutes for the deployment status to update.
+The Bitdefender Cloud Security for MSP tab will only be visible if at least one device has been selected for Bitdefender installation via Policies and Packages.
+Ticketing
+
+To enable the Bitdefender GravityZone ticketing capabilities, under Integrations > My Integrations select the Bitdefender Cloud Security for MSP integration and Update. Under Connection Setup, select the Enable Ticketing checkbox.
+
+Important: Partners who are not yet using the new Asio ticketing service, must migrate their instance to SSO to access the updated feature. For more information, follow the ConnectWise Asio Service Tickets KB.
+
+Note: If you are already using the Bitdefender - ConnectWise Asio integration, enabling the new Ticketing feature requires confirmation of your API key and new ConnectWise Asio® integration scopes. If your current API key is no longer accessible, you can generate a new one, making sure the APIs needed are selected. For details on generating the API key, refer to Configuring the integration.
+
+ Due to a known ConnectWise issue, the current workaround for regenerating integration scopes is as follows:
+
+After adding your API key, click Test Connection.
+Then, delete the API key you just added. The Regenerate action button will now become available.
+Click Regenerate. You will be presented with the Mapping screen.
+Continue and save the changes.
+
+The Bitdefender GravityZone integration creates ConnectWise Asio Service Tickets with specific priorities for the following Alerts:
+
+Endpoint Detection and Response - Bitdefender detects a phishing event based on a new Root Cause Analysis (RCA) displayed in the Incidents section in GravityZone.
+Low score (0-39) - Low priority.
+Medium score (40-75) - Medium priority.
+High score (76-100) - Emergency priority.
+Antimalware - Bitdefender generates this event when detecting malware on endpoints; Tickets are created with medium priority.
+Advanced Threat Control - Bitdefender detects and blocks potentially dangerous applications; Tickets are created with medium priority.
+Advanced Anti-Exploit - Bitdefender detects zero-day and advanced persistent threat activities in real time; Tickets are created with medium priority.
+Hyper Detect - Bitdefender detects advanced attacks and suspicious activities in the pre-execution stage; Tickets are created with medium priority.
+Ransomware Detection - Bitdefender generates this event when blocking a ransomware attack; Tickets are created with emergency priority.
+Firewall - Bitdefender blocks a port scan or application from accessing the network, according to the applied policy; Tickets are created with low priority.
+Antiphishing - Bitdefender detects a phishing attempt when accessing a webpage; Tickets are created with medium priority.
+Network Attack Defense - Bitdefender detects network attacks designed to gain access to the endpoints; Tickets are created with emergency priority.
+Web Traffic Scan - Bitdefender blocks user activity such as web browsing, according to the applied policy; Tickets are created with low priority.
+Sandbox Analyzer - Bitdefender detects a new threat among the submitted files to Sandbox Analyzer; Tickets are created with medium priority.
+Ticketing Aggregation
+
+If an open Asio ticket exists on the affected Asio device, match the computerId to a previous Bitdefender Alert:
+
+A new note is added to the existing ticket, without changing its status - If the affected computerId and Bitdefender Alert type are the same, the Asio ticket creation timestamp is <24 hours and has one of the following statuses: New/Open/InProgress/Scheduled/Waiting Response/ Assigned/Approval.
+A new Asio ticket is created with status NEW - If the Asio ticket creation timestamp is <24h and has one of the following statuses: Resolved/Closed.
+A new Asio ticket is created with status NEW - If the Asio ticket creation timestamp is >24h, regardless of its status.
+
+If an open Asio ticket exists on the affected ConnectWise Asio, but the Bitdefender Alert type is different, a new Asio ticket with the status New is created.
+
+Handling Installation Failures
+
+During installation, Bitdefender automatically attempts to uninstall any existing third-party security software. If the competitor software fails to uninstall, the Bitdefender installation will also fail. Other installation failures may occur. For more information, refer to this Bitdefender support document.
+
+If the installation fails, you can:
+
+Click on the Failed status in the Deployment Status column under the Integration tab on the Computers page.
+View the error code associated with the failure and check the Bitdefender support document for troubleshooting steps.
+
+Note: If you want to keep the existing third-party security software, you can log into the GravityZone console and disable the Remove Competitors option in the installation package. However, this is not recommended, as it may interfere with Bitdefender’s functionality.
+
+Uninstalling the Bitdefender Agents
+
+To uninstall the Bitdefender agents from devices, choose one of these methods:
+
+Remove the package from the site.
+Remove the policy from the package.
+Disable the Bitdefender Cloud Security Agent Installation option in the policy.
+Disable the Bitdefender Cloud Security Agent Installation option at the endpoint level in Settings.
+
+Note: 
+
+These methods are applicable when you want to uninstall Bitdefender Endpoint Security Tools for Windows and Linux. For Bitdefender Endpoint Security Tools, you can use the uninstall task in GravityZoneControl Center.
+These methods also prevent the installation of Bitdefender agents.
+Verifying and Troubleshooting Bitdefender Deployment in ConnectWise Asio
+
+Deploying Bitdefender through Asio requires proper configuration and verification. This guide outlines how to confirm a successful deployment, troubleshoot installation issues, and address common causes of failure.
+
+How to confirm that your ConnectWise Asio Package includes Bitdefender Cloud Security for MSP
+
+For Windows devices, you can locally verify if the bitdefender-bitdefender_cloud_security package has been applied by checking the following file:
+
+C:\Program Files (x86)\ITSPlatform\tmp\agent_packages.json
+
+Example entry in the file:
+
+"bitdefender-bitdefender_cloud_security": {    
+    "name": "bitdefender-bitdefender_cloud_security", 
+    "type": "package-vendor",    
+    "skipRestart": false,    
+    "operating_system": "windows",    
+    ...
+}
+Where to find more information if the Bitdefender installation fails
+
+If the Bitdefender deployment is unsuccessful, additional details about the failure can be found in the following log file:
+
+C:\Program Files (x86)\ITSPlatform\log\platform-installation-manager.log
+
+If the reason for the failure is still unclear, please contact Bitdefender Support and provide the following information:
+
+Your GravityZone Company ID
+
+Support Tool logs from the affected Windows devices
+
+The following local ConnectWise Asio Agent log files:
+
+C:\Program Files (x86)\ITSPlatform\tmp\agent_packages.json
+
+C:\Program Files (x86)\ITSPlatform\log\platform-installation-manager.log
+
+C:\Program Files (x86)\ITSPlatform\log\platform_agent_manager.log
+
+Common causes of Bitdefender deployment failures
+
+If Bitdefender fails to deploy through the Asio integration, check the following elements:
+
+The GravityZone API key used for the integration has all necessary API permissions enabled.
+The option Grant API Access to Bitdefender Cloud Security for MSP. Bitdefender Cloud Security for MSP will be able to access your data that is relevant for Integration is enabled in the Bitdefender Cloud Security for MSP integration settings.
+The ConnectWise Asio devices targeted for deployment meet the following criteria:
+They are part of a ConnectWise Asio Site that is mapped to a GravityZone company.
+They have an Asio Package assigned that includes an Asio policy with Bitdefender Cloud Security enabled.
+They do not have a competing security software that is protected with an uninstall password, preventing Bitdefender from removing it.
+A full list of incompatible software is available here.
+
+Note: For any kind of support related to the Integration, use the Bitdefender support channel.
+
+RMM Recommended AV Server Exclusion List Scalepad Lifecycle Manager and ConnectWise RMM Integration
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ScreenConnect with RMM
+This guide contains all relevant articles for using ScreenConnect with ConnectWise RMM.
+ConnectWise RMM Intune Integration
+Integration with Microsoft Intune allows multi-tenant management of customer end-points in ConnectWise RMM™. This solution has simplified the complex ...
+Scalepad Lifecycle Manager and ConnectWise RMM Integration
+Lifecycle Manager syncs your hardware assets from ConnectWise RMM via API. This article provides instructions on how to integrate ConnectWise RMM to L...
+Endpoint Protection
+This guide includes articles about ConnectWise RMM™ endpoint protection and managed antivirus products.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

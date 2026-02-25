@@ -1,0 +1,144 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Integrations to ConnectWise RMM   Configuring the ConnectWise–Auvik Integration: Legacy Method
+Configuring the ConnectWise–Auvik Integration: Legacy Method
+Last updated
+Oct 18, 2024
+Table of contents
+Overview
+Prerequisites
+1. Enable the Integration in the Asio™ Platform (IT Support Portal)
+Important Network Information to Add
+Billable Devices
+2. Add the Integration in the Auvik Portal
+3. Add a Notification Channel for ConnectWise in the Auvik Portal
+
+Important Note: The instructions below are only applicable for partners who previously enabled Command for Networks in their Asio™ Platform (ITSupport Portal) but did not perform the ConnectWise-Auvik integration. If you did not previously enable the Command for Networks in the Asio™ Platform (IT Support Portal), you should follow the process outlined in the Onboarding and Configuring the ConnectWise–Auvik Integration Guide.
+
+How can I tell if Command for Networks has already been enabled in my Asio™ Platform (IT Support Portal)?
+
+Click on the Admin tab and navigate to Products & Services → Command for Networks. If you see the Integrator TokenID field, this indicates that Command for Networks has already been enabled and that you should use the instructions below to perform the integration.
+
+Overview
+
+This document describes how to set up a Command for Networks integration in order to include network management data in the Asio™ Platform (IT Support Portal) and start receiving ConnectWise NOC support for your clients' networks.
+
+If you are an existing Auvik customer, follow the steps below to integrate your Auvik sites with the ConnectWise Asio™ Platform (IT Support Portal).
+
+The Command for Networks integration consists of the following basic steps:
+
+Enable the Integration in the Asio™ Platform (IT Support Portal).
+Add the Integration in the Auvik Portal.
+Add a Notification Channel for ConnectWise in the Auvik Portal.
+Prerequisites
+
+The Command for Networks integration assumes that you have already done the following. If not, click the links provided for details on completing the prerequisites before configuring the integration.
+
+You have accounts with both ConnectWise and Auvik.
+You have Super Admin access rights or above for the Asio™ Platform (IT Support Portal), and Admin privileges for the Auvik portal with access to all tenants.
+You have set up your Auvik portal and have deployed the Auvik collector on the networks you wish to monitor.
+You have set up your Asio™ Platform (IT Support Portal) and have installed at least one RMM desktop agent or server agent at the site with the network being monitored by Auvik.
+1. Enable the Integration in the Asio™ Platform (IT Support Portal)
+In the Asio™ Platform (IT Support Portal), go to Admin → Products & Services → Command for Networks. (If you haven't signed up for an Auvik account yet, follow the signup instructions and then come back to this page to configure your Asio™ Platform (IT Support Portal) integration.)
+Read and agree to the Addendum of the Master License Agreement. Then, click Enable Account.
+
+When the Integrator TokenID appears, click Copy Key and paste it to a safe location that you can access later. You will be required later to enter this key in the Auvik portal to add the integration. Once you have added the sites in the Auvik portal, they will be listed in the table on this page of the Asio™ Platform (IT Support Portal).
+
+At this point, you should ensure that you have added the required passwords and network information in the Asio™ Platform (IT Support Portal), as well as any necessary credentials for the corresponding site in the Auvik portal.
+
+Important Network Information to Add
+
+To help the NOC perform proactive troubleshooting, you should provide as much information as possible in the following Network Information fields:
+
+Firewall: Located at Network Info → Security → Firewall.
+Router information: Located at Network Info → Network → Router information.
+Switches: Located at Network Info → Network → Switches.
+Billable Devices
+
+Billable devices are:
+
+Routers
+Switches, including Layer 3, VoIP switches and switch stacks
+Firewalls
+Controllers
+Load balancers
+Packet processors
+
+Note that each switch identified in a stack counts as a separate billable device, a feature that will affect billing. More information about stackable switch support is available here. See Auvik Device Management for more information on managing and unmanaging devices.
+
+2. Add the Integration in the Auvik Portal
+In the Auvik portal, go to Integrations → Add Integration → ConnectWise.
+
+If you do not see the ConnectWise integration option, then you might not be in the root account level or you might not have appropriate access rights in the Auvik portal. For help, contact your Auvik administrator.
+
+Add the integration details as follows:
+Integration Name: Enter a unique integration name.
+URL: Ensure that the auto-populated URL matches the following (not accessible via a browser): https://services.itsupport247.net/ti...etService.svc/
+Integrator TokenID: Enter the API key that you copied earlier from the Asio™ Platform (IT Support Portal).
+Click Test Connection to validate the integration, then click Save to finish. If the connection fails, ensure that you have correctly enabled the integration in the Asio™ Platform (IT Support Portal) and have correctly entered the above integration details. If the issue persists, contact your ConnectWise account team.
+
+On the Integrations page, select the new integration to display all synced ConnectWise sites. The sites may take up to 20 minutes after the integration to appear.
+
+Map the ConnectWise sites to the corresponding Auvik Client. Do this one site at a time following this procedure:
+Select a site.
+Click Edit.
+From the drop-down list, select the Auvik client that corresponds to the ConnectWise site name.
+Click SAVE.
+
+ 
+
+You can update the site mapping on this page at any time by selecting the site and clicking Edit.
+
+Once all sites are mapped in the Auvik portal, they will begin to appear in Admin → Network Management by Auvik in the ConnectWiseAsio™ Platform (IT Support Portal).
+
+Integration complete
+
+3. Add a Notification Channel for ConnectWise in the Auvik Portal
+
+Once the Command for Networks integration is complete and all sites have been mapped, a notification channel for ConnectWise needs to be added in the Auvik portal in order for alerts to be synced with the ConnectWise system.
+
+Note: Be sure to perform Notification Channel setup at the multi-client level to ensure notifications are enabled for all client accounts.
+
+In the Auvik portal, go to Manage Alerts → Notification Channels → Add Notification Channel.
+
+Enter a channel Name and select ConnectWise from the Contact Method options, then click Save to finish.
+
+On the Manage Alerts page, select the new notification channel, click Associate with Alerts, select all available alerts, and click Save. ConnectWise can now generate alerts and tickets for all available conditions triggered in the Auvik portal. The ConnectWise NOC will review all Auvik alerts and either attempt to resolve the issue on your behalf and alert you (depending on the type of alert) or will generate a ticket assigned to you. Any alerts not selected here will not be generated or supported by ConnectWise if that condition is ever triggered.
+
+For more details on NOC-supported Auvik alerts, see Auvik Predefined Alerts and NOC Support.
+
+ 
+
+ 
+
+Scalepad Lifecycle Manager and ConnectWise RMM Integration Network Monitoring and Management
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ScreenConnect with RMM
+This guide contains all relevant articles for using ScreenConnect with ConnectWise RMM.
+ConnectWise RMM Intune Integration
+Integration with Microsoft Intune allows multi-tenant management of customer end-points in ConnectWise RMM™. This solution has simplified the complex ...
+Scalepad Lifecycle Manager and ConnectWise RMM Integration
+Lifecycle Manager syncs your hardware assets from ConnectWise RMM via API. This article provides instructions on how to integrate ConnectWise RMM to L...
+Endpoint Protection
+This guide includes articles about ConnectWise RMM™ endpoint protection and managed antivirus products.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

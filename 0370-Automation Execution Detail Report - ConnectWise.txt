@@ -1,0 +1,91 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Reports   Asio Reports   Automation Execution Reports   Automation Execution Detail Report
+Automation Execution Detail Report
+Last updated
+Sep 22, 2025
+Table of contents
+Overview
+User Access to Reports
+Automation Execution Detail Report Details
+Overview
+
+The Automation Execution Detail Report lists all the automations executed at an endpoint level.
+
+  To locate this page, navigate to Reports > Asio > Detailed Reports > Automation Execution > Automation Execution Detail Report.
+
+User Access to Reports
+
+Confirm user access and permissions to view this report. The following default roles have access to this report:
+
+Report	Manager	Technician	Office Staff	Sales	Client Site Manager
+Automation Execution Detail Report	No	Yes	Yes	Yes	Yes
+
+This additional step allows you to enable or disable access to specific reports for different user roles, giving you more control over which reports are accessible to each role.
+
+To control the visibility of endpoints on reports, you can manage site access for users. The visibility of endpoints on reports will be based on the user's permissions to sites. By controlling site access, you can determine which endpoints are visible to each user.
+
+Note: For users who have limited site access, the Automation Execution reports will show information about the sites they have/had access to previously based on the execution period selected in the report.
+
+Automation Execution Detail Report Details
+
+To generate the report:
+
+Navigate to Reports > Asio > Detailed Reports > Automation Execution > Automation Execution Detail Report
+In Display Report for, select the Execution Start Date and Execution End Date.
+Click Go. The Automation Execution Detail Report will be displayed. 
+
+The details that the report covers are:
+
+Name
+Friendly Name
+Company Name
+Company Friendly Name
+Site Name
+Site Friendly Name
+Task Name
+Task Description
+Task Type
+Task Frequency
+Task Status
+Failure Reason
+Execution Output
+Last Executed On
+Created By
+Created On
+Device Time Zone
+
+All of this information can be filtered or searched by using the tools at the top right of the report. You can also download the report as CSV.
+
+Note: This report will be refreshed every 8 hours.
+
+Automation Execution Reports Automation Execution Summary Report
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Automation Execution Summary Report
+Agent Reports
+Review the articles in this guide to learn more about Agent Reports in Asio Reports.
+Audit Reports
+Audit Reports provide a detailed record of remote access reports and Asio™ platform user logs. The Audit category contains the Remote Access Report an...
+Patches Reports
+Click the title of an article below to learn more about the Patch Assessment Report, Patch Compliance Report, and Patch Deployment Report in Asio.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

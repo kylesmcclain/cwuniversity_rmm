@@ -1,0 +1,80 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   RMM Tools   APIs   Asio Integration API
+Asio Integration API
+Last updated
+Dec 3, 2025
+Table of contents
+Overview
+Asio and RMM API Information
+Documentation
+Overview
+
+Managed Service Providers (MSPs) use a number of different tools and products to effectively monitor and manage their client's networks. Each of these products and tools have their own console, portal, or application where MSPs can monitor and manage them.
+
+Asio and RMM API Information
+ConnectWise Integration APIs are built to simplify the integration of any tool or product to the ConnectWise Asio® platform.
+ConnectWise RMM™ and the ConnectWise Asio® platform offer multiple REST APIs that can be used by third-party tools and products to integrate with ConnectWise RMM.
+Currently, APIs are available for Integration vendors to use, create, share, and review third-party product data into the ConnectWise Asio platform. For example,
+
+An antivirus (AV) product vendor can share the status of AV for each machine, whether it is infected or not, and when the last scan was performed on an endpoint.
+
+A backup product vendor may want to share the status of backups for each machine, the number of backups, and their size.
+
+Additionally, the REST APIs enable other products to:
+Authenticate and authorize themselves to integrate and communicate with the RMM Integration Platform.
+
+Get a list of MSPs' clients, sites, and endpoints.
+
+Get detailed data for the MSPs' endpoints.
+
+Post status and associated data for each managed endpoint, which is made visible for MSPs in the Asio platform for monitoring
+
+A sandbox environment is also available for vendors to familiarize themselves, build, and test integrations.
+Some prerequisites for vendors to start working with the sandbox environment:
+
+Complete the sign-up process to complete legal agreements and register the product vendor.
+
+After registration is complete, the vendor receives credentials to use the sandbox environment.
+
+Documentation
+
+This guide contains all relevant RMM Integration API articles. Click the title of an article below to learn more.
+
+All articles
+Authentication and Authorization
+Managed Devices Details APIs
+These APIs return details of your MSP network – Clients, Sites, and Endpoints.
+Product Status APIs
+Rate Limits
+
+ 
+
+APIs Authentication and Authorization
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Rate Limits
+Managed Devices Details APIs
+These APIs return details of your MSP network – Clients, Sites, and Endpoints.
+Product Status APIs
+Authentication and Authorization
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

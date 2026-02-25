@@ -1,0 +1,106 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Tickets   Ticket Queue
+Ticket Queue
+Last updated
+Jul 3, 2025
+Table of contents
+Overview
+Queue Types
+Queue Inboxes
+Overview
+
+Tickets are stored in queues. Queues are grouped together into different views. The major views are:
+
+My Queue: This view is for the user currently logged into the Asio™ platform (ITSupport Portal).
+Team Queue: This view is for all users assigned the same Escalation Template.
+Company Queue: This view is for all users created in your ITSupport portal.
+Back Office Queue: This view is for the NOC.
+Help Desk Service Queue: This view is for the Help Desk Service.
+
+Inside these views are fifteen inboxes.  Most of the inboxes are for the NOC to properly categorize tickets.  Of these inboxes, the ones you should keep an eye on are:
+
+New: New tickets assigned by the NOC to you to work on.
+Acknowledge: Assigning tickets to your acknowledge queue. This lets others on your team know that you have taken ownership to resolve this ticket.
+Approval Needed by Back Office: The NOC needs your permission to remote into a desktop or server.  They will ask for a date in time to perform the remote work. Configuring NOC Service Levels helps reduce the amount of tickets sent to this queue.
+Info needed / Work Assigned by Back Office: The NOC requires more information about the desktop or server. This could also indicate that a username and password is required for remote connection. Configuring the Password Vault will help reduce the amount of tickets sent to this queue.
+NOC Complete: The NOC sends tickets here that are considered complete from the NOC's viewpoint.  We recommend that you review these tickets to ensure work was completed fully and that your End User is happy with the solution.  From here, you can officially close out the ticket and decide whether or not to include the ticket in reports.
+Queue Types
+
+Queues are used to help sort tickets and provide ticket workflows.
+
+To access the ticketing queue, navigate to: Service Delivery > Tickets (Legacy) > Queue.
+
+Types of Queues: 
+
+My Queue: Tickets assigned to the individual logged into the Asio™ Platform (ITSupport Portal). This is available for all user roles.
+My Team Queue: This queue shows tickets that you are a part of. For example: If you are listed as a part of 5 escalation templates assigned to 10 sites, you will be able to see the tickets of these 10 sites here. This is only available to Admin and Super Admins.
+Back-Office Queue:  Tickets assigned to the NOC teams.
+Help Desk Service Queue: Tickets assigned to the Help Desk Service.
+Queue Inboxes
+
+A Queue Inbox is the container into which a ticket is forwarded when you assign a ticket status. Ticket Inbox types are as follows:
+
+Statuses definition:
+
+Acknowledge: The NOC or Help Desk Service uses this when we acknowledge a tickets been received on our end.
+
+Approval needed by backoffice: The NOC or Help Desk Service uses this status to request for approval from the partner to proceed further with any work.
+
+Approved: The partner can use this status for approving the requested changes or steps to work on the issue further which was requested by the NOC or Help Desk Service team as Approval needed/Info needed. The NOC or Help Desk Service team will never use this status.
+
+Closed: The NOC or Help Desk Service team primarily doesn't use this status; this needs to be used by the partner to close any tickets on our end. If requested by the partner, the NOC or Help Desk Service can also use this to close a ticket. Once closed the ticket cannot be reopened.
+
+Info Needed / Work Assigned by backoffice: The NOC or Help Desk Service uses this status to request information to work further. We also use this status to provide detailed analysis for an issue if the ticket was assigned to us.
+
+Interim Notification from backoffice: The NOC or Help Desk Service uses this status to provide an interim detail for the issue on which the NOC or Help Desk Service is continuing to work. The ticket remains with the respective teams and is not transferred to the MSP.
+
+New: This status can be used by both the NOC or Help Desk Service and Partner to send any new tickets.
+
+NOC Completed: The NOC or Help Desk Serviceuses this status when the issue has been resolved. The ticket will be assigned to the partner to review further. If the ticket is reassigned to the NOC or Help Desk Service, work will be continued on the same ticket.
+
+Not Approved / Further Info Needed: This status is used by the partner when they feel like the issue is not resolved or they need further information on the issue. The NOC or Help Desk Service team will never use this status.
+
+Pending: This status is used by the partner when they are working on the issue and do not want ticket to be worked by us further. However, when using this status, the ticket ideally should be retained with them. The NOC or Help Desk Service team will never use this status.
+
+Scheduled: This status is used by the NOC or Help Desk Service to schedule a ticket. The partner can use this to assign a ticket to The NOC or Help Desk Service with a timeframe when this needs to be worked upon. The ticket will be retained with The NOC or Help Desk Service teams.
+
+Task Missed / Not Completed: Partners can use this when the NOC or Help Desk Service might have missed notes or steps on the issue and they want us to reanalyze the issue. The NOC or Help Desk Service team will never use this status.
+
+Waiting Customer: This status is used by the partner when they are awaiting response from their end clients for an issue. The NOC or Help Desk Service team will never use this status.
+
+Next to each ticket container is a count of the number of tickets in the container.
+
+Tickets that are in your queue for more than 60 days without any updates are closed automatically by the system.
+
+Ticketing Reporting Customer Feedback (formerly SmileBack)
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Best Practices for Going Green
+Are you looking to impress a client with a solid green dashboard? Regardless of your reasons for wanting to go green, we will help you get there. But ...
+Service Plans and Ticket Lifecycles
+The lifecycle of a ticket depends on the subscribed service plan of the site generating an alert. Service plans and their respective ticket lifecycles...
+Create a Ticket
+To create a new ticket, click the Tickets tab in the Asio™ Platform (ITSupport Portal) and select New Ticket from the top of the navigation bar on the...
+Edit a Ticket
+To edit a ticket, browse to the ticket queue on the left navigation bar and select an appropriate container.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

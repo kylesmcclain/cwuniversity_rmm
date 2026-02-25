@@ -1,0 +1,91 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   RMM Tools   APIs   Devices API   Exposed API for Generate Token
+Exposed API for Generate Token
+Last updated
+Oct 14, 2025
+Table of contents
+Overview
+API Details
+Overview
+
+The Generate Token API gets a token for a given company and site location.
+
+API Details
+
+The following are the API details that are available within our developer portal for API integration.
+
+Method	API	Description	Parameter Required	Parameter Type	Content-Type
+
+
+POST
+
+	/api/platform/v1/device/token	Get a token for a given company and site location	Yes – ClientId and SiteId	
+
+string
+
+	application/json
+{
+"clientID": "<sample public client id>",
+"siteID": "<sample public site id>"
+}
+
+
+ 
+
+Request Field Descriptions:
+
+Field Name	Description	Type/Format	Example/Sample Value
+clientID	A unique identifier of a company	string	cxx6e8f2-13xx-4fxx-bfxx-fd23243xxxxx
+siteID	A unique identifier of a site	string	e771xxxx-fexx-42xx-a3xx-9678caf9xxxx
+
+ 
+
+Response Field Descriptions:
+
+Field Name
+
+	
+
+Description
+
+	
+
+Type/Format
+
+	
+
+Example/Sample value
+
+
+token	The token is unique per company and site location, used to map the device to the associated company and site.	string	4a7bxxxx-a9f6-4fxx-b2xx-0x50xxxd2203
+
+ 
+
+Device Summary API – Retrieve All Endpoint Devices Offboard/Uninstall Agent via API
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Retrieve Details of an Endpoint via API
+Retrieve Last Logged on User Information on an Endpoint via API
+Offboard/Uninstall Agent via API
+Device Summary API – Retrieve All Endpoint Devices
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

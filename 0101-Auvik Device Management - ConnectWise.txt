@@ -1,0 +1,113 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Command for Networks   Auvik Device Management
+Auvik Device Management
+Last updated
+Mar 9, 2021
+Table of contents
+Overview
+Adding a Device to Management
+Unmanaging Devices
+How to Unmanage a Device
+How to Delete a Device
+Identifying Devices in the Network Map
+Billable Devices
+Overview
+
+Refer to the sections in this document for instructions on how to:
+
+Add a device to management
+Unmanage a device (to stop monitoring and billing for a device)
+Delete a device (to stop monitoring and billing for a device and additional downstream devices)
+Refer to the Billable Devices section for a list of billable devices.
+Adding a Device to Management
+In the Auvik portal, click on Discovery in the side navigation bar.
+Click the Manage Devices tab.
+In the displayed list of devices, find the device you want to add to management. Click the check box at the beginning of a device row to select it.
+Click the Manage button.
+Confirm that the device should be added to management by clicking Manage.
+
+Unmanaging Devices
+
+Unmanaging a device in your Auvik portal:
+
+Stops monitoring for the device
+Removes the device from billing
+How to Unmanage a Device
+In the Auvik portal, click on Discovery in the side navigation bar.
+Click the Manage Devices tab.
+In the displayed list of devices, find the device you want to unmanage. Click the check box at the beginning of a device row to select it.
+Click the Unmanage button.
+Confirm that the device should no longer be managed by clicking Unmanage.
+
+How to Delete a Device
+
+Deleting a device in your Auvik portal removes the device, and any downstream network devices, from monitoring and billing.
+
+Downstream refers to devices positioned in the network chain below the device to be deleted. When deleting a device, you should ensure that you are not unintentionally pruning additional downstream devices or device subnets. Refer to the Identifying Devices in the Network Map section below for more details.
+
+Note: Deleting a device removes it from your list of managed devices and purges all the data associated with its IP address. Note, however, that if Auvik later discovers the same IP address on a subsequent network scan, the device reappears in your list of managed devices.
+
+To delete a device:
+
+In the Auvik portal, click on Discovery in the side navigation bar.
+Click the Manage Devices tab.
+In the displayed list of devices, find the device you want to delete. Click the check box at the beginning of a device row to select it.
+Click the Delete button.
+Confirm that the device should be deleted by clicking Delete.
+Identifying Devices in the Network Map
+
+You can use Auvik's network map to identify device IP addresses and verify a device's relative position in the network chain. This can be helpful for ensuring that downstream devices are not unintentionally removed when deleting a specific device.
+
+In the screenshot below, clicking on the Switch-12 icon populates the switch's IP address in Auvik's Dashboard/Device Details section.
+
+You can then copy and paste the device IP address into the Discovery/Manage Devices search field.
+
+In this example, clicking Delete would remove Switch-12 and the subnet of devices attached to it. To delete an individual device in the switch's subnet, click on a respective device icon in the site map, identify the device's IP address, and repeat this same procedure.
+
+Billable Devices
+
+These devices are billable devices:
+
+Routers
+Switches, including Layer 3, VoIP switches, and switch stacks
+Firewalls
+Controllers
+Load balancers
+Packet processors
+Command for Networks Service Levels Auvik TrafficInsights
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Onboarding and Configuring the ConnectWise–Auvik Integration
+Auvik Pre-Defined Alerts and NOC Support
+Command for Networks Service Levels
+Auvik TrafficInsights
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

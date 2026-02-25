@@ -1,0 +1,201 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Devices Page   Device Groups   Device Groups Management
+Device Groups Management
+Last updated
+Oct 27, 2025
+Table of contents
+Overview
+Preview the List of Device Groups
+Preview Device Group Details
+Create a New Dynamic Group
+Evaluation of Attributes
+Create a New Static Group
+Edit an Existing Device Group
+Duplicate (Clone) Existing Device Group
+Delete an Existing Device Group
+Overview
+
+Device groups are managed through a dedicated page in the ConnectWise Asio® platform called Device Groups.
+
+ To locate Device Groups, navigate to Endpoints > Groups.
+
+Preview the List of Device Groups
+
+To preview the list of Device Groups:
+
+Log in to ConnectWise Asio®.
+Navigate to Endpoints > Groups.
+The list of Device Groups accessible to you is displayed:
+
+Preview Device Group Details
+
+Navigate to Endpoints > Groups in Asio.
+
+Click on a specific Device Group from the list. The details of the device group are loaded in the details card located on the right side of the screen.
+
+In the details card, you can preview:
+
+Device Group name and description
+
+Count of devices matching Device Group criteria
+
+Creation/modification date and user
+
+Device Group criteria
+
+Create a New Dynamic Group
+
+Navigate to Endpoints > Groups.
+
+Click Add > Dynamic Group at the top of the Device Groups list.
+
+The New Dynamic Group page opens. Enter the following information:
+
+Group Name
+Category (optional)
+Description (optional)
+On the right side of the page, select and configure the dynamic group Criteria.
+
+Note: 
+
+Device Groups now supports the Category field for all existing and new Device Groups created. You will be presented with the Category option to select as a drop-down or create a new category for the Device Groups.
+The Category field will be visible on the side card, but it also supports filtering to make data easier to access.
+
+In the top right corner, click on Devices Meeting Criteria to quickly validate the list of devices matching the criteria.
+
+Click Save to save your newly created dynamic group.
+
+Once created, you can find this Device Group on the Device Groups page.
+
+Evaluation of Attributes
+
+Attributes are evaluated at the endpoint level, meaning that for each attribute used in creating or updating Dynamic Groups, the system calculates all eligible endpoints that meet each specific criterion. The Devices Meeting criteria are determined by the logical conditions (AND/OR) applied to the attributes when constructing the Dynamic group.
+
+Let's consider an example with the following conditions:
+
+Attribute 1: Physical Drives Partition Data Size Bytes > 500 GB
+Attribute 2: OS Installed Drive = C:
+
+Now, consider an endpoint with the following partitions:
+
+Partition C:: Size = 100 GB
+Partition D:: Size = 800 GB
+Partition E:: Size = 300 GB
+
+Based on these conditions, the evaluation occurs as follows:
+
+Condition 1: Physical Drives Partition Data Size Bytes > 500 GB (if any of the partition sizes is greater than 500 GB)
+
+Partition C:: Size = 100 GB (does not meet the condition)
+Partition D:: Size = 800 GB (meets the condition)
+Partition E:: Size = 300 GB (does not meet the condition)
+
+Condition 2: OS Installed Drive = C: (If any of the OS Installed drives has a name C)
+
+The operating system is installed on the C: drive (meets the condition)
+
+Considering both conditions, the endpoint satisfies the criteria because it meets the condition for Attribute 1 (Partition D:\ has a size of 800 GB, which is greater than 500 GB) and Attribute 2 (the operating system is installed on the C: drive).
+
+Therefore, in this example, the endpoint would be included in the dynamic group.
+
+Create a New Static Group
+
+Navigate to Endpoints > Groups.
+
+Click Add > Static Group at the top of the Device Groups list.
+
+The New Static Group page opens. Enter the following information:
+
+
+
+Group Name
+Category (optional)
+Description (optional)
+On the right side of the screen, select the devices to be part of the group.
+
+Note: 
+
+Device Groups now supports the Category field for all existing and new Device Groups created. You will be presented with the Category option to select as a drop-down or create a new category for the Device Groups.
+The Category field will be visible on the side card, but it also supports filtering to make data easier to access.
+
+Click Save to save your newly created Static Group.
+
+Once created, you can find this device group on the Device Groups page.
+
+Edit an Existing Device Group
+
+Navigate to Endpoints > Groups.
+
+Select the Device Group from the list that you intend to edit.
+
+In the Device Group details card, click Edit Group.
+
+
+Depending on the device group type, update the device group configuration on the page Edit Dynamic Group or Edit Static Group and click Save.
+
+Duplicate (Clone) Existing Device Group
+
+Navigate to Endpoints > Groups.
+
+Select the Device Group from the list that you intend to duplicate.
+
+In the Device Group details card, click Duplicate.
+
+
+
+In the New Dynamic Group, edit the details and click Save to save your copy of your Device Group.
+
+Delete an Existing Device Group
+
+Navigate to Endpoints > Groups.
+
+Select the Device Group from the list that you intend to delete.
+
+In the Device Group details card, click Delete.
+
+
+
+In the pop-up Confirm group delete, click Delete to confirm the deletion of the selected Device Group. If you attempt to delete a Device Group that is used in a policy group, you receive the following warning:
+
+
+If you click delete, the Device Group will be deleted, and the policy group will display an error message.
+
+Device Groups Dynamic Attributes Devices (Preview) Page
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Device Groups Dynamic Attributes
+Devices Overview
+The information on the Device list provides a high-level view of all sites or filtered sites and includes easy-to-view details for applicable endpoint...
+Device Details Screen
+Custom Fields
+Custom Fields are additional data points you can create in the ConnectWise Asio® platform to record information not collected by the agent or unavaila...
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

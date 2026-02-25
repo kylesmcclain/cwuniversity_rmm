@@ -1,0 +1,292 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Alerts   Intelligent Alerts   ConnectWise RMM Intelligent Alerts Monitoring Conditions
+ConnectWise RMM Intelligent Alerts Monitoring Conditions
+Last updated
+Dec 19, 2025
+Table of contents
+Overview
+Intelligent Alerts Monitoring Conditions
+Active Directory
+Active Directory Alerts
+Antivirus
+Antivirus Alerts
+Backup
+Backup Alerts
+Citrix
+Citrix Alerts
+Continuity247
+Continuity247 Alerts
+Desktop Health
+Desktop Health Alerts
+Desktop Operating System
+Desktop Operating System Alerts
+DHCP
+DHCP Alerts
+Disk Space
+Disk Space Alerts
+Email
+Email Alerts
+Exchange
+Exchange Alerts
+General (Up / Down / Reboot)
+General Alerts
+Hardware
+Hardware Alerts
+Hyper-V
+Hyper-V Alerts
+IIS
+IIS Alerts
+Network Management
+Network Management Alerts
+NOC Managed Desktops
+NOC Managed Desktops Alerts
+Patch Management
+Patch Management Alerts
+Performance
+Performance Alerts
+RMM Agent
+RMM Agent Alerts
+Security
+Security Alerts
+Sharepoint
+Sharepoint Alerts
+Skype for Business
+Skype for Business Alerts
+SQL Server
+SQL Server Alerts
+Terminal Server / RDS
+Terminal Server / RDS Alerts
+VMware
+VMware Alerts
+Volume Shadow Copy
+Volume Shadow Copy Alerts
+Windows Failover Cluster
+Windows Failover Cluster Alerts
+Windows Server
+Windows Server Alerts
+Rebranding Impact
+Overview
+
+The following are the ConnectWise RMM monitoring conditions, ordered by their Family name and Condition name.
+
+Note: Microsoft has renamed Azure Active Directory (Azure AD) to Microsoft Entra ID. For details on how this rebranding impacts the following conditions, please see Rebranding Impact section.  
+
+Intelligent Alerts Monitoring Conditions
+Active Directory
+Active Directory Alerts
+Antivirus
+Antivirus Alerts
+Backup
+Backup Alerts
+Citrix
+Citrix Alerts
+Continuity247
+Continuity247 Alerts
+Desktop Health
+Desktop Health Alerts
+Desktop Operating System
+Desktop Operating System Alerts
+DHCP
+DHCP Alerts
+Disk Space
+Disk Space Alerts
+Email
+Email Alerts
+Exchange
+Exchange Alerts
+General (Up / Down / Reboot)
+General Alerts
+Hardware
+Hardware Alerts
+Hyper-V
+Hyper-V Alerts
+IIS
+IIS Alerts
+Network Management
+Network Management Alerts
+NOC Managed Desktops
+NOC Managed Desktops Alerts
+Patch Management
+Patch Management Alerts
+Performance
+Performance Alerts
+RMM Agent
+RMM Agent Alerts
+Security
+Security Alerts
+Sharepoint
+Sharepoint Alerts
+Skype for Business
+Skype for Business Alerts
+SQL Server
+SQL Server Alerts
+Terminal Server / RDS
+Terminal Server / RDS Alerts
+VMware
+VMware Alerts
+Volume Shadow Copy
+Volume Shadow Copy Alerts
+Windows Failover Cluster
+Windows Failover Cluster Alerts
+Windows Server
+Windows Server Alerts
+Rebranding Impact
+
+Use this table as guidance for details on the rebranding of Azure Active Directory to Microsoft Entra ID:
+
+Sr. No.
+
+	
+
+Software Name
+
+	
+
+Display Name
+
+	
+
+Service Name
+
+	
+
+Under Monitoring
+
+	
+
+Comments
+
+
+
+
+1
+
+	
+
+DirSync
+
+	
+
+Windows Azure Active Directory Sync Service
+
+	
+
+MSOnlineSyncScheduler
+
+	
+
+Yes
+
+	
+
+Software deprecated in favor of 'Azure AD Connect'
+
+
+
+
+2
+
+	
+
+Azure AD Connect
+
+	
+
+Microsoft Azure AD Sync
+
+	
+
+ADSync
+
+	
+
+Yes
+
+	
+
+Software deprecated in favor of 'Microsoft Entra Connect'
+
+
+
+
+3
+
+	
+
+Microsoft Entra Connect
+
+	
+
+Microsoft Azure AD Sync
+
+	
+
+ADSync
+
+	
+
+Yes
+
+	Manage from on-premise: Cloud Sync
+
+
+Microsoft Azure AD Connect ProvisioningAgent
+
+	
+
+AADConnectProvisioningAgent
+
+	No, under development	Manage from the cloud: Connect Sync
+
+
+Microsoft Azure AD Connect Agent Updater
+
+	
+
+AzureADConnectAgentUpdater
+
+	
+
+No, under development
+
+	Manage from the cloud: Connect Sync
+Microsoft Entra Connect Health Agent	AzureADConnectHealthAgent	No, under development	Manage from the cloud: Connect Sync
+Intelligent Alerts Intelligent Alerts - Threshold definitions
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Intelligent Alerts - Threshold definitions
+Preview Alerts
+Custom Monitors
+Build your own alert monitors using the variety of monitor templates in ConnectWise RMM. Monitors use these templates to trigger alerts when issues ar...
+S.M.A.R.T Monitoring
+S.M.A.R.T. (Self-Monitoring Analysis and Reporting Technology) monitors a hard drive for predictive failures. Our agent automatically monitors the S.M...
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

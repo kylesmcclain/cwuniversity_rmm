@@ -1,0 +1,85 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Automation   Tasks   RMM Task Reporting
+RMM Task Reporting
+Last updated
+Jul 25, 2023
+Table of contents
+Overview
+Recent Task Panel
+Overview
+
+Tasks constitute any action committed on a resource by a partner, technician, or portal user with appropriate access. Tasks can be executed on-demand, on a recurring schedule, or at a later date.
+
+Recent Task Panel
+
+The second icon in the right menu of the Device list page opens the Recent Task Panel.
+
+Easily accessible and viewable, the panel shows all the latest actions and refreshes automatically every 30 seconds so data is always up-to-date.
+
+Task updates and counts are available for the following statuses:
+
+Running: Task is in process.
+Failure: Task was executing and failed for some reason/did not complete.
+Pending: Task is scheduled to run.
+Stopped: The user stopped the task from executing.
+Scheduled: Task created and will run at a defined time. (Select the task name to open the Device Detail page and see a complete list of devices and run dates/times.)
+
+
+Recent Task Panel features include:
+
+Scroll through recently loaded tasks and results filtered to display for the previous 24 hours, 48 hours, seven days, 30 days, 90 days, or by a custom timeframe (with a 90-day maximum).
+
+Use the Search function to perform a simple search by task on criteria including task name, run by, machine name, friendly name, site name, and status.
+Click Stop to stop the execution of a task pending on a device while other devices are executing the task.
+Sort task output by run time, run by, task name, status, or type to display the most critical need.
+
+Click a task in the Task Panel to show all devices applied to this task and display their status and results.
+Select the ellipses and click Edit to edit the resources, parameters, and schedule for a previously scheduled task, including tasks that have no scheduled future executions.
+
+Select Disable or Enable for all assigned devices to enable or disable all future runs of the task for either all targets in the list or for a single device. Select Postpone to postpone the next task execution for all assigned devices as well as for a specific device, and select Cancel to stop the next task execution if it has not started.
+
+Click the task name to Open the task data details. Use the ellipses next to the task name to Disable/Enable, Postpone, or Cancel the task or the task time ellipses to Disable/Enable, Export, Postpone, Edit, Stop, or Cancel the task. Tasks can be postponed in 30-minute, one-hour, three-hour, 24-hour, or in a custom time option.
+
+
+Tasks also can be viewed from the Device Details page under the Automation tab. Both History and Scheduled tasks appear with a date filter.
+
+Predefined System Variables Run Scripts as Current Logged In User
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Create and Schedule Script Type Tasks
+Create and schedule a script task.
+Running RMM Tasks
+How to run a task, create a custom script, or configure a task for the next agent check-in.
+Available Tasks
+Creating Tasks Using the Script Editor
+How to use Script Editor to create, customize, or edit scripts using parameters and system variables. The script editor supports native scripting lang...
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

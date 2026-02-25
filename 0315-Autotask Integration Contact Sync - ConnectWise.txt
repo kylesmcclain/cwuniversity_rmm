@@ -1,0 +1,89 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   PSA Integration   Autotask Integration Guide   Autotask Integration Contact Sync
+Autotask Integration Contact Sync
+Last updated
+Nov 28, 2024
+Table of contents
+Overview
+How It Works
+For Tickets You Create in Your Autotask System
+For Tickets Created by the Help Desk Service
+How to Activate Contact Sync
+Overview
+
+Contact sync is a feature that allows you to synchronize Autotask contacts with the ConnectWise Help Desk Service.
+
+Note: Turning on the Autotask contact sync functionality enables a one-way contact sync from Autotask to ConnectWise.
+
+Note: Prior to setting up contact sync, Autotask integration must be completed following the instructions in the Autotask Integration Setup Guide.
+
+How It Works
+
+With the contact sync activated, the following Autotask-contact to Help Desk Service-associations are enabled:
+
+For Tickets You Create in Your Autotask System
+Help Desk Service technicians can search for and locate Autotask contact information in the Help Desk Service system.
+Help Desk Service technicians can see the contact associated with a ticket and follow-up with the appropriate contact assigned in the Autotask ticket.
+
+For tickets without an associated contact created in Autotask and assigned to the Help Desk Service, a Help Desk Service technician can link the ticket to a contact. The ticket-to-contact association updates in the Autotask system.
+
+For Tickets Created by the Help Desk Service
+If a contact is created in the Help Desk Service system and an associated ticket is generated, contact information is displayed in the partner note and Autotask system notes.
+
+For Help Desk Service tickets where one of your Autotask contacts is linked, the associated Autotask ticket will reflect the linked contact.
+
+Important Notes
+
+Contact information is synchronized daily from your Autotask system to the Help Desk Service. Updates made to existing Autotask contact information (whether to update existing details or to add new details) are synced to the Help Desk Service system.
+If the contact associated with a ticket is updated by ConnectWise Help Desk Service technicians (i.e., a phone number change), the updated contact information will not be synced to Autotask. Instead, the update will be displayed in Autotask system notes; you must review and decide whether to make the update manually in Autotask. Partners need to ensure this info is up to date; ConnectWise will not update contact details in Autotask.
+If a contact is removed or de-activated from Autotask, the contact will also be removed from the Help Desk system and any associated tickets.
+If a de-activated contact is activated in your Autotask system, it will be synced to the Help Desk Service system as a new contact.
+If the contact associated with a ticket created in either system (Autotask or Help Desk Service) is changed, the updated contact information will sync to the ConnectWise Help Desk Service.
+Contact details will not be synchronized for accounts in your Autotask system that are mapped to non-Help Desk Service sites.
+
+Before turning on contact sync, be sure to review the ConnectWise contact info, ensure Autotask info is up-to-date, and remove the current Help Desk Service contacts stored at ConnectWise.
+
+When you turn on contact sync, all contacts from Autotask are created again in ConnectWise; therefore, unless current contacts are removed, the initial sync process may result in contact duplicates.
+
+A PSA Contact column on the Help Desk Service Service Client Profile page helps to distinguish between contacts created using the ConnectWise PSA™ integration and those created manually in the ConnectWise Asio™ platform.
+
+How to Activate Contact Sync
+In the Asio platform, navigate to Settings > Setup > RMM.
+Select a site and click the Help Desk tab.
+Expand the Client Profiles section.
+Select the Enable syncing with Autotask checkbox in the upper-right corner.
+
+When activated, the Enable syncing with Autotask box refreshes to display the date and time for the next Autotask sync.
+
+Note: If you have opted for Policy-based configuration for configuring RMM-PSA integration, please review the Policies documentation to know more.
+
+ 
+
+Autotask Asset Errors Knowledgebase Autotask Integration Error Messages
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Autotask Integration Setup Guide
+Autotask Integration Reporting on Synchronization Status
+Include User-Defined Fields in Configuration Items
+Autotask Integration Error Messages
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

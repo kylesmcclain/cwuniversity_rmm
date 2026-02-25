@@ -1,0 +1,261 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Reports   Security Reports   ConnectWise Endpoint Policy Management: Reports
+ConnectWise Endpoint Policy Management: Reports
+Last updated
+Jan 21, 2025
+Table of contents
+Overview
+Locate the Reports
+Generate a Report
+Video: View ConnectWise Endpoint Policy Management Reports
+Report Details: Profile and Protect Endpoint Report
+Cover Page
+Per-Profile Analysis
+Risk Score Trend
+Top 5 Systems of Greatest Risk
+Top 5 Categories with the Highest Number of Machines at Risk
+Category Risk Details
+Report Details: The Profile and Protect User Report
+Cover Page
+Per-Profile Analysis
+Risk Score Trend
+Top 5 User Accounts of Greatest Risk
+Top 5 Categories with the Highest Number of User Accounts at Risk
+Report Details: HIPAA Compliance Report
+Violations Range
+Endpoints and Users
+Summarized Compliance Information
+Jump from the Summary to Detailed Sections
+Detailed Data Section
+Report Details: Cyber Essentials Report
+Summarized Compliance Information
+Detailed Compliance Information
+Creating and Managing Exclusions
+Exclude Endpoints and User Accounts from Security Categories
+Overview
+
+This article provides information on the available reports for ConnectWise Endpoint Policy Management™. ConnectWise Endpoint Policy Management provides four reports in the Asio™ platform:
+
+Profile & Protect - Endpoint Report: Generate this report to view data and statistics for security compliance as it pertains to endpoint-assigned security profiles.
+Profile & Protect - User Report: Generate this report to view user account-based security data and statistics for the internally-applied Profile and Protect - User default profile.
+Profile & Protect HIPAA Compliance Report: Generate this report to demonstrate compliance with technically supportable aspects of the HIPAA Security Rule.
+
+Cyber Essentials Report: Provides an overview of the customer’s security posture per Cyber Essentials (UK) standards. Users can quickly identify action items and secure a customer’s environment, ensuing Cyber Essentials readiness and accelerating the Cyber Essentials certification process.
+
+Locate the Reports
+
+Navigate to Reports > Asio > Security. Expand the Security section and click on any of the reports.
+
+Generate a Report
+
+To generate a report:
+
+Navigate to Reports > Asio > Security.
+Select a security report from the page.
+Select a site.
+Click the Export to .doc button to generate the report and export it as a Microsoft Word document.
+Video: View ConnectWise Endpoint Policy Management Reports
+
+Report Details: Profile and Protect Endpoint Report
+Cover Page
+
+The cover page provides summary details of a site's overall security posture based on its active security profiles, including:
+
+Combined Average Risk Score trend for the previous 30 days that calculates risk scores for all devices and security profiles and tracks the daily risk score average.
+30 day change in average risk score that reports the trend in average security risk, based on active security profiles, for the last 30 days.
+Current Average Risk Score of all devices at the site.
+Current minimum / Current maximum risk score out of all devices at the site.
+
+Per-Profile Analysis
+
+For each active security profile at a site, the report provides the following data in an easy-to-read, graphical format.
+
+Risk Score Trend
+
+This section displays the average profile risk score of all machines, per-month, for up to the last year of available data.
+
+Current average risk score	The average risk score of all devices at the current time.
+Current minimum risk score	The lowest risk score of all devices at the current time.
+Current maximum risk score	The highest risk score of all devices at the current time.
+Top 5 Systems of Greatest Risk
+
+This section lists the five devices at the site currently assessed to be at highest risk, based on Risk Score and number of categories out of compliance.
+
+Risk Score	The current Risk Score for the respective machine.
+Device Type	The device type (server or desktop).
+Machine Name	The machine name.
+Categories at Risk	The specific profile categories found to be out-of-compliance on the respective machine.
+Top 5 Categories with the Highest Number of Machines at Risk
+
+This section displays the five profile categories requiring the most attention, based on the number of machines currently out of compliance. At-risk machines are color-separated into servers and desktops in the bar graph to the right.
+
+Category Risk Details
+
+This section provides a per-machine analysis by individual security category that includes each machine's current Risk Score and At risk / Not at risk reporting for each category.
+
+Risk Score	The current Risk Score for the respective machine.
+Device Type	The device type (server or desktop).
+Machine Name	The machine name.
+Category Risks	Of the Active categories in the security profile, at-risk categories are listed first, followed by those categories assessed as not at risk.
+
+ 
+
+Report Details: The Profile and Protect User Report
+Cover Page
+
+The cover page provides summary details of a site's overall security posture for user accounts, including:
+
+Combined Average Risk Score Summary for the previous 30 days that calculates risk scores for all user accounts and tracks the daily risk score average.
+30 day change in average risk score that reports the trend in average account security risk for the last 30 days
+Current Average Risk Score All User Accounts
+Current Minimum / Current Maximum Risk Score All User Accounts
+Combined Average Risk Score Trend
+
+Per-Profile Analysis
+
+For each active security profile at a site, the report provides the following data in easy-to-read, graphical format.
+
+Risk Score Trend
+
+This section displays the average profile risk score of all users, per-month, for up to the last year of available data.
+
+Current average risk score	The average risk score of all users at the current time.
+Current minimum risk score	The lowest risk score of all users at the current time.
+Current maximum risk score	The highest risk score of all users at the current time.
+Top 5 User Accounts of Greatest Risk
+
+This section lists the five user accounts currently assessed to be at the highest risk, based on Risk Score and number of user categories out of compliance.
+
+Risk Score	The current Risk Score for the respective account.
+Account Name	The account name.
+Categories at Risk	The specific profile categories found to be out-of-compliance for the respective user account.
+Top 5 Categories with the Highest Number of User Accounts at Risk
+
+This section lists the five user accounts that require the most attention, based on the number of account-based categories that are currently out of compliance. Categories are listed on the left next to a bar graph that displays the number of accounts at-risk for that category.
+
+Report Details: HIPAA Compliance Report
+
+The HIPAA Compliance Report provides technical support for administrative and technical safeguards in the HIPAA Security Rule, generating summary and detailed data to help you easily understand the vulnerabilities of an end-client environment in relation to the Security Rule of the HIPAA regulation.
+
+Violations Range
+
+The violations range function color-codes compliance violations from green to red according to severity. The higher the violation percentage, the greater the number of endpoints/user accounts found to be in violation of a HIPAA security requirement or individual compliance rule (Profile & Protect security category) at the time the report was generated.
+
+Endpoints and Users
+
+The Endpoint  and User  icons are used to indicate which violation percentages, compliance rules, and HIPAA requirements are applicable to endpoints, users, or both.
+
+Summarized Compliance Information
+
+The summarized compliance data appears at the top of the report. Summary compliance percentages for all endpoints and users are listed for each individual HIPAA requirement. Data is organized into three columns.
+
+Violations	Represented by a percentage and color-coded according to the relative number of endpoints/users in violation of the requirement compared to the total number of endpoints/users at the site.
+HIPAA Requirements	The specific HIPAA requirement to which the violation percentage applies.
+Requirement Descriptions	The description of the requirement as it appears in the HIPAA Security Rule.
+Jump from the Summary to Detailed Sections
+
+Use [Ctrl] + click inside a table row (on the percentage, requirement, or description) to jump from the Summary section to the Detailed section, where more granular data can be viewed.
+
+Detailed Data Section
+
+The Detailed Data section provides detailed reporting on compliance for security rules (Profile & Protect security categories) covered by a specific HIPAA requirement, the number of endpoints/users in violation of each rule, a list of entities found to be in violation, and a list of entities that have been excluded from compliance calculation.
+
+The Detailed section of the report contains the following data:
+
+A re-iteration of the summary compliance percentages for the respective HIPAA requirement.
+Compliance Rule: The profile compliance rule(s) (security categories) that apply to the respective HIPAA requirement.
+Violations: The number of entities (endpoints/users) in violation of a rule out of the total number of entities at the site (0 of 2, 4 of 7, etc.)
+Violating Entities: A list of endpoints and/or user accounts found to be in violation of the respective compliance rule at the time the report was generated.
+Excluded Entities: Endpoints or user accounts that were excluded from calculation are listed here.
+
+Report Details: Cyber Essentials Report
+
+The Cyber Essentials Report answers addressable questions about Cyber Essentials technical controls in a customer environment, providing an overview of a customer's security posture per Cyber Essentials standards. Users can quickly identify action items to secure a customer's environment, ensure Cyber Essentials readiness for a customer, and accelerate the Cyber Essentials certification process.
+
+Note: The Cyber Essentials Report is only relevant for UK standards and is only useful to partners who manage UK-located sites.
+
+Summarized Compliance Information
+
+The summarized compliance data appears at the top of the report. Summary information is listed for each individual Cyber Essentials requirement. Questions include color codes indicating if an answer is compliant (yes/green), not complaint (no/red), contains details included in notes (see notes/gray), or is inconclusive (yellow). Inconclusive results appear when not all entities can be evaluated, even if all evaluated entities comply.
+
+Tip: Use [Ctrl] + click or [Cmd] + click on a Yes or No response to jump from the Summary section to the Detailed section and to view more granular data.
+
+Question Number	The corresponding Cyber Essentials question number.
+Question	The corresponding Cyber Essentials question.
+Answer	The question answer is color-coded as defined below.
+Detailed Compliance Information
+
+The Detailed Data section provides detailed reporting for the various Cyber Essentials security categories covered in the compliance data summary. Each question is repeated in the detailed section with the answer and any applicable notes with compliance or violation details for endpoints and users.
+
+Tip: Use [Ctrl] + click or [Cmd] + click on a Yes or No response to jump from the Summary section to the Detailed section and to view more granular data.
+
+In addition to a re-iteration of the question and answer, Yes/No questions in the Detailed section of the report include:
+
+Compliance Rule: The profile compliance rule(s) (security categories) that apply to the respective Cyber Essentials requirement.
+Violations: The number of entities (endpoints/users) in violation of a rule out of the total number of entities at the site (0 of 2, 4 of 7, etc.)
+Violating Entities: A list of endpoints and/or user accounts found to be in violation of the respective compliance rule at the time the report was generated.
+Excluded Entities: If endpoints or user accounts were excluded from calculation, they will be listed here.
+Creating and Managing Exclusions
+
+Exclusions allow you to exclude endpoints and user accounts from the compliance calculations of specific security categories, which can be useful for excluding entities that might otherwise skew compliance data unnecessarily. For example, excluding desktops for which backups are never run from the Recent backup should be completed for endpoints category.
+
+Exclude Endpoints and User Accounts from Security Categories
+
+To exclude endpoints:
+
+Navigate to SECURITY > Profiles.
+Click Manage Exclusions.
+
+Select a site.
+
+Locate the security category and click on the corresponding Add link. Endpoint categories appear at the top of the list. Scroll down to view user-based security categories.
+
+Complete the following fields and selections:
+
+Exclusion Name: Name the exclusion for future reference.
+Select Endpoints or User Accounts to Be Excluded:
+To exclude an endpoint security category:
+Select All desktops or All servers. Selecting either of these options also excludes the category on any desktops/servers added in the future.
+Select Choose from below and search for an account or select one from the list of displayed accounts.
+To exclude a user security category:
+Select the Choose a specific user account option and select an account from the menu.
+Select Choose from below and search for an account or select one from the list of displayed accounts.
+Use the Search function to search for individual endpoints/user accounts or select them individually to exclude them.
+Reason: Enter a reason for the exclusion. This is useful for providing background reference to other internal users and for auditors who may review a HIPAA Compliance Report and will need to know why an exclusion was made.
+Click Save.
+
+After exclusions are saved, selected endpoints and user accounts will be excluded from calculations when the HIPAA Compliance or Cyber Essentials report is generated. Excluded entities will be listed in the Detailed Data section of the report for the compliance rules (security categories) to which they were applied.
+
+Note: Exclusions are only applicable to HIPAA Compliance and Cyber Essentials report data. Excluded entities will not be excluded from calculations for the Profile & Protect - Endpoint or Profile & Protect - User reports.
+
+ 
+
+Security Reports Risk Assessment Reports
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Risk Assessment Reports
+Click the title of an article below to learn more about risk assessment reports in Asio.
+Enable Dark Web Monitoring with Risk Assessment
+Generate and Download an Assessment
+Understanding Risk Assessment Reports
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

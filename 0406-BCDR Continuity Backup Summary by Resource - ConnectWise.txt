@@ -1,0 +1,130 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   RMM Reporting API   Reporting API REST Resources   BCDR Continuity Backup Summary by Resource
+BCDR Continuity Backup Summary by Resource
+Last updated
+Jul 8, 2025
+Table of contents
+Overview
+Endpoint and URI
+Method
+Request Body
+Response Body
+Parameter Descriptions for BCDR Continuity Backup Summary by Resource
+Source of Data in the Asio Platform
+Overview
+
+Summary of backup results for each protected resource during the given time period.
+
+Endpoint and URI
+
+https://itsapi.itsupport247.net/repo...atus/resources
+
+Method
+
+POST
+
+Request Body
+
+{
+
+"Month":4,
+
+"SiteCode":"AGTSolutions",
+
+"Year":2015,
+
+}
+
+Response Body
+
+{
+
+"backupSummary": [
+
+{
+
+"appliance": "SBM S2000",
+
+"backupInterval": "On Demand",
+
+"backupsPerDay": 0,
+
+"MachineId": 9223372036854775807,
+
+"name": "Intel-AMT1",
+
+"percentFailed": 0,
+
+"percentOther": 0,
+
+"percentSucceeded": 100
+
+},
+
+{
+
+...
+
+},
+
+{
+
+...
+
+}
+
+]
+
+"error": null
+
+}
+
+Parameter Descriptions for BCDR Continuity Backup Summary by Resource
+Parameter	Description
+"Month"	Requested month (numerical)
+"SiteCode"	Unique site code listed in Asio™ Platform (ITSupport Portal)
+"Year"	Requested year
+"appliance"	Appliance name
+"backupInterval"	Configured interval for backup
+"backupsPerDay"	Number of configured backups per day
+"MachineId"	Unique machine ID in ConnectWise database
+"name"	Device name
+"percentFailed"	Percent of failed backups in the month and year requested
+"percentOther"	Percent of backups neither failed nor succeeded in the month and year requested
+"percentSucceeded"	Percent of successful backups in the month and year requested
+Source of Data in the Asio Platform
+
+Reports > Asio > Executive Report > Recover Continuity Backup Data > Backup Status > Per Resource
+
+BCDR Continuity Backup Summary BCDR Continuity Protected Resources
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Agent Details
+Retrieves agent information for the authenticated partner and the specified site.
+Antivirus Summary
+Retrieves counts of machines having antivirus protection in the following states: Updated, Outdated, Not Installed, or Information Unavailable.
+Antivirus Version Summary
+Retrieves currently detected antivirus software and the definition version.
+BCDR Continuity Appliances
+Retrieves a list of Recover Continuity backup appliances provisioned at the given site.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

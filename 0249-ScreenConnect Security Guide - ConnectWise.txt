@@ -1,0 +1,489 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Integrations to ConnectWise RMM   ScreenConnect with RMM   ScreenConnect Security Guide
+ScreenConnect Security Guide
+Last updated
+Nov 10, 2021
+Table of contents
+Introduction
+ConnectWise Trust Center
+Shortcuts
+ScreenConnect Cloud
+Securing session traffic
+Compliances
+ScreenConnect Cloud Administrator account lockout
+Two-factor authentication required for super-admin account
+Pre-configured SSL certificate
+Security alert emails
+Whitelisting ScreenConnect Cloud IP addresses 
+ScreenConnect On-premises
+Securing session traffic
+Compliances
+Active Directory recommendations
+Hide ScreenConnect response headers
+Configuring SSL
+Outbound URLs
+ScreenConnect application security configurations
+Revoke user access 
+Controlling user permissions
+Use temporary host passes for one-time connections
+Two-factor authentication
+Blocking and restricting access to your ScreenConnect site
+Automatically force a host to disconnect from a session
+User authentication options
+Internal authentication
+External user authentication
+Create security alerts with Automations
+Logging and auditing
+Video or "extended" auditing
+Technician login auditing
+Consent to control
+Recommended extensions for security
+Security Toolkit
+Advanced Configuration Editor
+Report Manager or Report Generator
+ScreenConnect end-user security
+Security of session traffic
+Exiting ScreenConnect
+Default ScreenConnect application logos
+Windows
+macOS
+Linux
+iOS
+Android
+Report suspicious activity
+Introduction
+
+This guide provides a look at the security design and features of ScreenConnect™. 
+
+ConnectWise Trust Center
+
+For the latest security advisories on ScreenConnect, visit the ConnectWise Trust Center. Make sure to subscribe to the Security Bulletin RSS feed to receive security notices as soon as they’re posted.
+
+Shortcuts
+
+Select an option below to navigate to a specific section.
+
+ScreenConnect Cloud
+ScreenConnect On-premises
+ScreenConnect application security configurations
+ScreenConnect end-user security
+ScreenConnect Cloud
+Securing session traffic
+
+ScreenConnect is FIPS compliant but not FIPS certified. Our ScreenConnect Relay service is responsible for handling traffic to and from your ScreenConnect server. The ScreenConnect Relay service automatically encrypts session traffic with AES-256 block encryption and RSA is provided by the Microsoft RSA/Schannel Cryptographic Provider. These implementations of the AES-256 and RSA algorithms are FIPS compliant for ScreenConnect servers on Windows. For more information, see Microsoft's documentation on FIPS 140 Validation.
+
+Compliances
+
+ScreenConnect is SOC 3 compliant. For more information, please visit our Industry and Regulation Compliance page.
+
+ScreenConnect Cloud Administrator account lockout
+
+The cloud portal at https://cloud.screenconnect.com includes brute force protection for the ScreenConnect Cloud Administrator super-admin account. After eight incorrect password attempts within ten minutes, the account is locked for ten minutes.
+
+For your non-super-admin accounts, you can control account lockout options through the user sources on your Security page.
+
+Two-factor authentication required for super-admin account
+
+The ScreenConnect Cloud Administrator super-admin accounts are required to use two-factor authentication.
+
+By default, the ScreenConnect Cloud mail service sends one-time pass codes to the main email address for the cloud account. Cloud account administrators can also enable two-factor authentication using Google Authenticator or a similar app such as Microsoft Authenticator or Authy.
+
+Pre-configured SSL certificate
+
+Cloud instances are automatically secured with an SSL certificate and enabled with an HTTP-to-HTTPS redirect.
+
+Security alert emails
+
+Cloud administrators will receive security alerts when:
+
+A user logs into one of your cloud instances (e.g. https://myinstance.screenconnect.com) from an unfamiliar IP address 
+A user from an unfamiliar IP address logs into the cloud management portal (i.e. https://cloud.screenconnect.com) with your credentials 
+Whitelisting ScreenConnect Cloud IP addresses 
+
+Cloud instances do not have static IP addresses. Since we cannot guarantee that your cloud instance will use the same server IP address over its lifetime, we recommend whitelisting all IP addresses that are listed with this command:
+
+nslookup yourinstance.screenconnect.com instance-xxxxxx-relay.screenconnect.com
+
+
+Where yourinstance.screenconnect.com is your cloud instance URL and instance-xxxxxx-relay.screenconnect.com is your Relay Server URL. You can find your Relay Server URL by navigating to Administration > Status > External Accessibility Check.
+
+Tip: To receive notifications when your cloud instance changes IP address, sign into https://cloud.screenconnect.com. Navigate to the Profile page and edit Notification Settings.
+
+ScreenConnect On-premises
+
+This section details measures and features that a ScreenConnect administrator can perform to harden the security of the self-hosted on-premises server.
+
+Securing session traffic
+
+ScreenConnect is FIPS compliant but not FIPS certified. Our ScreenConnect Relay service is responsible for handling all client session traffic to and from your ScreenConnect server. The ScreenConnect Relay service automatically encrypts session traffic with AES-256 block encryption RSA provided by the Microsoft RSA/Schannel Cryptographic Provider. These implementations of the AES-256 and RSA algorithms are FIPS compliant for ScreenConnect servers on Windows. For more information, see Microsoft's documentation on FIPS 140 Validation.
+
+Compliances
+
+Administrators can configure the on-premises version to meet certain compliances. For more information, see our documentation on the following compliances:
+
+Payment Card Industry (PCI) Compliance
+Criminal Justice Information Services (CJIS) Security Policy
+Health Insurance Portability and Accountability Act (HIPAA)
+Active Directory recommendations
+
+If you’re using Active Directory (AD) as a user source, make sure your AD groups, including built-in groups like “Domain Admins”, do not have unnecessary administrator permissions.
+
+Hide ScreenConnect response headers
+
+On-premises servers can also hide the ScreenConnect response headers with a change to the registry. 
+
+Configuring SSL
+
+By default, the on-premises version of ScreenConnect does not include an SSL certificate or an HTTP->HTTPS redirect.
+
+To add a certificate to your on-premises installation, see our SSL certificate installation article.
+
+After installing a certificate, use the Security Toolkit extension to add an HTTP-to-HTTPS redirect.
+
+Outbound URLs
+
+The ScreenConnect server uses the following outbound URLs:
+
+URL	Description
+license.screenconnect.com	Required for using ScreenConnect.
+check.screenconnect.com	Allows ScreenConnect to conduct the tests on the Overview page. Optional if the administrator doesn’t use these tests or mind if they show a failing result.
+extension.screenconnect.com	Contains the Extension Marketplace. Only required if the administrator wants to download and update extensions.
+api.labtechsoftware.com	Only required if integrated with ConnectWise Automate.
+cwview.com	Only required if integrated with ScreenConnect View.
+
+ 
+
+ScreenConnect application security configurations
+
+The following section describes different options to enable and configure certain security features within ScreenConnect.
+
+Revoke user access 
+
+If you suspect an unauthorized user is in your ScreenConnect instance, you can immediately:
+
+Force all host passes to expire.
+Force all technicians to disconnect from their sessions.
+Force all technicians to log out of the instance.
+
+Learn more about revoking user access from the Security page.
+
+Controlling user permissions
+
+With our role-based security architecture, administrators can assign permissions for each different "user role" at a granular level. It is best practice to follow the security principle of least privilege and grant users the least amount of permissions necessary to complete their work.
+
+In conjunction with the session groups feature, you can restrict your users to access only certain machines. Learn more with these articles:
+
+Restrict a host to access a single remote machine
+Restrict access to remote machines by organization
+Use temporary host passes for one-time connections
+
+If you need to share access to a machine just once, use a host pass instead of creating a new account for your colleague or vendor. A host pass allows an outside vendor or user to connect a single session. You can set the permissions and the expiration time of the host pass to ensure that the technician only has the right amount of access for the right amount of time.
+
+Two-factor authentication
+
+As an additional security layer, ScreenConnect supports two-factor authentication for technicians' accounts. An administrator can set up any of the supported two-factor authentication providers for their users, including:
+
+Email
+Google Authenticator
+YubiKey
+Microsoft Authenticator
+LinOTP
+Duo Security "push" alerts
+
+These authentication methods can be mixed and matched amongst your users for further flexibility.
+
+Blocking and restricting access to your ScreenConnect site
+
+You can control access to the Host page, Administration page, or both pages by enabling the advanced settings in the Advanced Configuration Editor extension. Once you've installed the extension, open Administration > Advanced > Web Configuration > Page Settings. 
+
+Tip: Learn more about controlling access via IP addresses in this article: Restrict or block access by IP address. 
+
+Setting
+
+	
+
+Description
+
+
+
+
+Page Idle Timeout
+
+	
+
+Log out a user who idles on the Host page or Administration past a certain number of seconds.
+
+
+
+
+Minimum Authentication Factor Count
+
+	
+
+Determines the minimum number of authentication factors for the user to log into the Host and/or Administration page. 
+
+
+
+
+Block IP Addresses
+
+	
+
+Block IP addresses from the web interface. You can name multiple IP addresses in a comma-separated list, or you can specify a range of IP addresses by using CIDR notation.
+
+For more information see our article: Restrict or block access by IP Address .
+
+
+
+
+Restrict to IP Addresses
+
+	
+
+Allow only certain IP addresses to access the web interface. You can name multiple IP addresses in a comma-separated list, or you can specify a range of IP addresses by using CIDR notation. 
+
+See this article: Restrict or block access by IP Address
+
+
+
+
+Host Client Device Fingerprint Validation Level
+
+	
+
+Reject incoming connections if the IP address doesn't match the value in the ScreenConnect client's access token.
+
+ 
+
+Automatically force a host to disconnect from a session
+
+With the Advanced Configuration Editor extension, you can also edit these settings:
+
+Access Token Expire Seconds – Specifies the period before a Host will have to relaunch a session (Support, Access, or Meeting). Also determines how long a downloaded launcher file can be used to connect to a session.
+Should Revalidate Time Seconds – checkbox to automatically disconnect the Host from your sessions after Access Token Expire Seconds has expired.
+Input Idle Disconnect Time Seconds – Disconnect a host from a session if they have idled for a set number of seconds without keyboard or mouse input.
+
+
+See the Advanced Configuration Editor extension for more examples.
+
+User authentication options
+Internal authentication
+
+Internal authentication is useful if you want to manage your users from the Administration page as opposed to an external user source via SAML, OAuth2, LDAP, etc. If you are using internal authentication for your users, on the Security page you will also be able to manage security options such as:
+
+Password attempts
+Number of non-alphanumeric characters
+Password attempt window
+Password strength regular expression
+
+To protect your users, you are required to turn on two-factor authentication for all of your internal users.
+
+More information on these and other properties can be found on our page for internal forms authentication.
+
+External user authentication
+
+ScreenConnect supports external user authentication sources for common SSO providers through SAML, OAuth2, and OpenID Connect. You can also link ScreenConnect directly to your domain controller through the like LDAP or Active Directory (for on-premises ScreenConnect installations only). User roles are assigned within the external provider, and permissions for those roles are handled and assigned within ScreenConnect on the Security page.
+
+Create security alerts with Automations
+
+On the Automations page (formerly Triggers), you can create an automation that will automatically send an email or perform a web request if a security event happens.
+
+Logging and auditing
+
+ScreenConnect includes automatic logging ("auditing") as well as automatic video auditing ("extended auditing"). The server's SQLite database stores all logged session data, which you can query for custom reporting.
+
+Video or "extended" auditing
+
+Your server stores the videos from extended auditing in a proprietary format for smaller file sizes. Visit the Audit page to download your encoded (AVI) videos, or use an extension like the Session Capture Processor to schedule and download your videos to a separate location.
+
+Technician login auditing
+
+On the Audit page, you can also quickly filter the audit log for security events to monitor any unusual activity. Security events include:
+
+LoginAttempt
+LogoutAttempt
+ChangePasswordAttempt
+ResetPasswordAttempt
+
+Each of those events has a result from this list:
+
+Success
+ChangeablePasswordExpired
+UnchangeablePasswordExpired
+OneTimePasswordRequired
+OneTimePasswordInvalid
+OneTimePasswordProviderInvalid
+OneTimePasswordUserKeyInvalid
+UserNameInvalid
+PasswordInvalid
+LockedOut
+
+With the Report Generator extension, there is a default Security Events report that you can run that compiles all security event information for easy analysis.
+
+Consent to control
+
+If an end-user requests more agency as to when a technician can connect to their machine, a ScreenConnect administrator can enable a "consent-to-control" dialog box that will appear on the guest's side. When a technician tries to connect to the guest's machine, the end-user will first have to click Consent to Control before the technician can access the end user’s machine.
+
+The end-user can also force the consent prompt to appear the next time a technician tries to access their machine.
+
+Recommended extensions for security
+
+Add additional security features with these extensions.
+
+Security Toolkit
+
+The Security Toolkit extension contains additional security tools that can:
+
+Delete all queued commands and toolbox items.
+Prevent search engine indexing of your ScreenConnect site.
+Enable notifications for potentially suspicious activity.
+Advanced Configuration Editor
+
+The Advanced Configuration Editor allows an administrator to enable additional options to improve the security of their ScreenConnect instance.
+
+Consider editing:
+
+Page Idle Timeout
+Block IP Addresses
+Restrict to IP Addresses
+Allow Password Auto-Complete
+"Trust this device" Duration
+Response Headers
+Report Manager or Report Generator
+
+The Report Manager and Report Generator extensions are used to generate reports. The Report Manager extension includes pre-built reports to help you generate the information you need, while the Report Generator enables the user to build more complex reports.
+
+ScreenConnect end-user security
+
+Here are some ways to reassure end-users when a technician is using ScreenConnect to connect to their computer.
+
+Security of session traffic
+
+The ScreenConnect Relay service automatically encrypts session traffic with AES-256 block encryption and RSA provided by the Microsoft RSA/Schannel Cryptographic Provider. For more information, see Microsoft's documentation on FIPS 140 Validation.
+
+Exiting ScreenConnect
+Default ScreenConnect application logos
+
+ScreenConnect has used, or is currently using, these logos in desktop system trays and in app icons. 
+
+		  
+Second generation icon. Also available in white and black.	Third generation icon. Also available in white and black.	Current icons. Also available in white and black. 
+Windows
+
+Right-click on the icons in your system tray. When you see a menu with Open, Specify Proxy Server..., and Exit options, select Exit. 
+
+In cases where you do not have control over your machine or can't find a ScreenConnect icon, manually disconnect your machine from the internet ASAP and shut it down. You can also press Ctrl+Alt+Delete and attempt to use the Task Manager to end any ScreenConnect processes.
+
+If you have control, navigate to Control Panel > Programs > Uninstall a program and remove all ScreenConnect installations you see listed. If a session is still open, click “Ok” to continue.
+
+macOS
+
+If the ScreenConnect window is still open, you can do any of these:
+
+Click the red dot on the top left corner of the window to close it.
+Disconnect your machine from the internet.
+Press Command+Option+Esc to quit the application.
+
+ 
+
+To remove the ScreenConnect app file:
+
+Open Finder
+Click Applications
+Hold the Control keyboard button down and click the ScreenConnect icon.
+Select Move to Trash. You could also drag-and-drop the icon to the trash icon on your dock.
+Hold the Control button down, click the trash icon, and select Empty Trash. Enter your administrator password, if needed, to empty the trashcan.
+
+ 
+
+If you suspect ScreenConnect has been installed on your machine, you can manually remove the unattended client:
+
+Open a Terminal window.
+Run the following commands, one at a time, entering the Mac admin’s password if needed. These commands will remove ALL installed ScreenConnect Access agents on your machine:
+1
+	sudo rm -r /Applications/connectwisecontrol
+2
+	sudo rm -r /Library/LaunchDaemons/connectwisecontrol
+3
+	sudo rm -r /Library/LaunchAgents/connectwisecontrol
+4
+	sudo rm -r /opt/screenconnect
+5
+	sudo rm -r /Library/LaunchDaemons/screenconnect
+6
+	sudo rm -r /Library/LaunchAgents/screenconnect*
+Reboot the Mac to clear the running processes.
+Linux
+
+If the session window is still open, you can:
+
+Click the X on the top right corner of the window to close it, or:
+Force-kill the application by opening a terminal (Alt+F2), typing xkill, and then clicking on the session window.
+
+To stop all ScreenConnect processes and delete all ScreenConnect files, run these commands:
+
+1
+	sudo pkill -f screenconnect
+2
+	-rf /opt/screenconnect-*
+iOS
+
+The ScreenConnect iOS app is named either Control or ScreenConnect.
+
+To remove the app:
+
+Touch and hold the ScreenConnect app.
+Tap Remove App.
+In the confirmation dialog, tap Delete App.
+
+If you have a different version of iOS, see Apple's documentation on how to remove the app.
+
+Android
+
+The ScreenConnect iOS app is named either Control or ScreenConnect.
+
+To remove the app:
+
+Open the Google Play Store app.
+Tap the Profile icon.
+Tap Manage apps & Devices.
+Tap Manage
+Select the ScreenConnect or Control app.
+Tap Uninstall
+
+For additional assistance on removing apps, see the Android Help site.
+
+Report suspicious activity
+
+If you suspect someone is using ScreenConnect maliciously, please report suspicious behavior to our team to investigate.
+
+ 
+
+ScreenConnect Remote Support Troubleshooting Guide ScreenConnect System Requirements for RMM
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ScreenConnect Installation Status and Error Codes
+Enable or Disable Connection Consent for ScreenConnect
+ScreenConnect Dashboard for RMM
+ScreenConnect 1-Click for RMM
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

@@ -1,0 +1,77 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Reports   Asio Reports
+Asio Reports
+Last updated
+Sep 22, 2025
+Overview
+
+Click on the title of the article linked below and learn more about Asio Reports.
+
+Agent Reports
+Review the articles in this guide to learn more about Agent Reports in Asio Reports.
+Agent Report
+Agent Uninstall Report
+Network Devices Report
+Probe Devices Report
+RMM Scan Configuration Report
+Show all
+Audit Reports
+Audit Reports provide a detailed record of remote access reports and Asio™ platform user logs. The Audit category contains the Remote Access Report and the User Login Report.
+Remote Access Report
+User Login Report
+Technical Details Reports
+Technical Details reports generate technical information about systems under management. An individual report in the Technical Details section allows users to view details like system specs, installed software, disk space usage, warranty information, and more.
+Asset Change Report
+Disk Space Report
+Installed Software Change Report
+Installed Software Count Report
+Installed Software Report
+System Information Report
+Automation Execution Reports
+Review the articles in this guide to learn more about the Automation Execution Detail Report and the Automation Execution Summary Report.
+Automation Execution Detail Report
+Automation Execution Summary Report
+Executive Reports Modules
+Review this article to learn more about the modules you can use to create custom reports.
+Patches Reports
+Click the title of an article below to learn more about the Patch Assessment Report, Patch Compliance Report, and Patch Deployment Report in Asio.
+Patch Assessment Report
+Patch Compliance Report
+Patch Deployment Report
+Preventive Maintenance Reports
+The Endpoint Protection Report contains information regarding endpoint protection as well as computers without endpoint protection installed.
+Endpoint Protection Report
+
+  
+
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Agent Reports
+Review the articles in this guide to learn more about Agent Reports in Asio Reports.
+Automation Execution Reports
+Review the articles in this guide to learn more about the Automation Execution Detail Report and the Automation Execution Summary Report.
+Audit Reports
+Audit Reports provide a detailed record of remote access reports and Asio™ platform user logs. The Audit category contains the Remote Access Report an...
+Patches Reports
+Click the title of an article below to learn more about the Patch Assessment Report, Patch Compliance Report, and Patch Deployment Report in Asio.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

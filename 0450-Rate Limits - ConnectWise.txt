@@ -1,0 +1,189 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   RMM Tools   APIs   Asio Integration API   Rate Limits
+Rate Limits
+Last updated
+Jul 7, 2025
+Table of contents
+Overview
+Rate Limits
+API Endpoint – Get current rate limit 
+Request
+Headers 
+Response
+Headers 
+Body 
+Overview
+
+Rate limiting will restrict the number of API calls that can be made to the APIs (N requests per rate limit window per access token). 
+
+Rate Limits
+
+Rate limits are determined globally for the entire application and divided into 10-minute intervals. 
+
+HTTP headers are contextual, in order to understand where the application is at for a given rate limit: 
+
+Limit: the maximum number of requests allowed with a time period 
+
+Remaining: the number of remaining requests in the current time period 
+
+Reset: the Unix epoch timestamp of when the vendor’s quota is reset to full 
+
+If the application exceeds the rate limit for a given API endpoint, an error response returns: 429 Too Many Requests. 
+
+In that case, the application must wait until his quota resets before any additional calls to the APIs. All endpoints are divided into related groups (resource families) and Rate Limiting affects the whole group (resource family). Following are the groups: 
+
+Endpoint 
+
+	
+
+Resource family 
+
+	
+
+Limit 
+
+
+
+
+GET /clients/ 
+
+	
+
+partner-topology 
+
+	
+
+40 
+
+
+
+
+GET /clients/{clientID}/sites 
+
+	
+
+partner-topology 
+
+	
+
+40 
+
+
+
+
+GET /clients/{clientID}/sites/{siteID}/endpoints/{endpointID} 
+
+	
+
+partner-topology 
+
+	
+
+40 
+
+
+
+
+GET /clients/{clientID}/sites/{siteID}/endpoints 
+
+	
+
+endpoints 
+
+	
+
+40 
+
+
+
+
+POST /clients/{clientID}/sites/{siteID}/endpoints/{endpointID}/status 
+
+	
+
+statuses 
+
+	
+
+40 
+
+API Endpoint – Get current rate limit 
+Request
+
+Sandbox:GET https://openapi.sandbox.use1.cwcmddev.cwnet.io/v1/rate_limits
+
+Production:GET https://openapi.service.itsupport247.net/v1/rate_limits
+
+Headers 
+
+Authorization:Bearer i9OpjK8IBYYNbV9VGJo6APG224I 
+
+Response
+
+200 
+
+Headers 
+
+Content-Type:application/json 
+
+Body 
+
+{
+    "resources": {
+     "endpoints": {
+      "partner-client-site-endpoints": {
+      "limit": 200,
+      "remaining": 199,
+      "reset": 1551964890
+    },
+    "partner-client-site-endpoints-details": {
+      "limit": 200,
+      "remaining": 199,
+      "reset": 1551964890
+    },
+    "partner-client-site-summary": {
+     "limit": 200,
+     "remaining": 199,
+     "reset": 1551964890
+    }
+   },
+   "partner-topology": {
+     "partner-topology-sites": {
+      "limit": 100,
+      "remaining": 99,
+    "reset": 1551964890
+   }
+  }
+ }
+}
+
+Product Status APIs Automation API
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Managed Devices Details APIs
+These APIs return details of your MSP network – Clients, Sites, and Endpoints.
+Product Status APIs
+Authentication and Authorization
+Public Ticketing API
+ConnectWise's public ticketing API allows MSPs or PSA vendors to integrate with our two-way ticket synchronization system to create tickets, update ti...
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

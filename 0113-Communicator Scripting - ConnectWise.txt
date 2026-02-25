@@ -1,0 +1,66 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Communicator User Guide   Communicator Scripting
+Communicator Scripting
+Last updated
+Sep 30, 2024
+Table of contents
+Overview
+How to set up Communicator Scripting
+Overview
+
+The Communicator Scripts menu allows you to assign Scripts to the Communicator menu for the end-users to execute. The new menu option for Custom scripts is available in Policies.
+
+How to set up Communicator Scripting
+Navigate to Endpoints > Policies > Devices and select your communicator policy.
+Find the section for Custom Scripts.
+
+You can select any existing scripts to add here.
+
+Note: The Communicator policy supports only partner-created Scripts that do not contain parameters (one or more variables that a partner can define when scheduling the Script).
+
+The script name that is shown in the tray menu can be defined in the Policy with by editing the Friendly Name field to make it easier for the end-users to identify the action performed by the script.
+
+Once you have finished naming the scripts and your Policy is saved, the corresponding script is reflected on the Communicator tray under the Scripts menu.
+Only scripts that are available for the operating system will be shown. (Only macOS scripts are shown on macOS machines and only Windows scripts are shown on Windows machines.)
+ If the Script is deleted, the script will still show in the Communicator tray, but the end-user won't be able to execute it.
+To remove the deleted script from Communicator, you must update the Policy settings.
+
+ 
+
+Communicator Permissions Communicator Ticketing
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Communicator Configuration
+Communicator Assignment
+Communicator Default Menus
+Communicator Branding
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

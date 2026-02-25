@@ -1,0 +1,51 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Reports   Asio Reports   Audit Reports   User Login Report
+User Login Report
+Last updated
+Sep 22, 2025
+Table of contents
+Overview
+User Login Report Details
+Overview
+
+This report shows which users have logged in to the Asio platform and for how long.
+
+ To locate this screen, navigate to Reports > Asio > Detailed Reports > Audits > User Login Report.
+
+User Login Report Details
+
+The UserName or Email drop-down menu allows you to select All Users or individual users for a 60-day interval. Select the Deleted User(s) checkbox to view deleted users in your report. You can download the report by clicking the Export To Excel tab.
+
+Note: The date and time of the user logs report in the date and time on the user's local machine.
+
+Remote Access Report Technical Details Reports
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Remote Access Report
+Agent Reports
+Review the articles in this guide to learn more about Agent Reports in Asio Reports.
+Automation Execution Reports
+Review the articles in this guide to learn more about the Automation Execution Detail Report and the Automation Execution Summary Report.
+Patches Reports
+Click the title of an article below to learn more about the Patch Assessment Report, Patch Compliance Report, and Patch Deployment Report in Asio.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

@@ -1,0 +1,128 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   ConnectWise RMM Release Notes   RMM Release Notes Archive   ConnectWise RMM Update for December 2022
+ConnectWise RMM Update for December 2022
+Last updated
+Dec 22, 2022
+Table of contents
+Announcements
+Legacy Custom Report & Executive Report Deprecation notice for ConnectWise RMM
+Asset Monitor
+Duo MFA Vulnerability Fix
+ConnectWise RMM
+Agent and Platform
+Automation
+Intune Integration
+Portal
+Reporting
+Third-Party Patching
+Bug Fixes / Known Issues
+Announcements
+Legacy Custom Report & Executive Report Deprecation notice for ConnectWise RMM
+
+We are deprecating the Legacy custom report and Executive reports for ConnectWise RMM partners on January 6th, 2022.
+
+Asset Monitor
+
+We are adding a new capability for creating Asset monitors to generate alerts in the system when a value is updated in an asset. Based on the criteria defined for the monitor, we will trigger an alert and execute corresponding automation if defined. Please review the Asset Monitor article.
+
+Duo MFA Vulnerability Fix
+
+If you are using DUO MFA for your Asio authentication, the Secret key and Integration key have been visible to users and also shared with the client in plaintext. This posed a risk to your confidential information. We are fixing this on December 20th, 2022.
+
+We've added a checkbox that works the same as the click to edit password functionality on the Edit User screen.
+
+If Duo is already configured, the user can be saved without setting up Duo MFA. If Duo isn't configured and the checkbox is unchecked, the user is shown the error "Duo MFA not configured."
+
+ConnectWise RMM
+Agent and Platform
+
+Agent Update. An agent update, version 3.0.2, will be rolled out in phased manner starting December 16th. Global rollout will be completed within seven days.
+
+Support Agent on Ubuntu 22.04. The Linux agent on Ubuntu 22.04 will be supported from version 3.0.2.
+
+Automation
+
+Automation loops. Partner scripts can now loop through multiple values for a variable (usernames, drives, installed software, etc.) and perform an action for each value.
+
+New task for deploying Windows 10 22H2 Feature on endpoints. We've added a new task that allows you to deploy Windows 10 22H2 Feature updates using the 2.0 tasking. This gives you a faster and more reliable deployment.
+
+Intune Integration
+
+Alerts for MS Intune. Users will receive an alert when an endpoint managed in MS Intune moves to the Not Compliant State.
+
+Portal
+
+Improvement to the ticket page load time. We are removing unneeded sections on the tickets page which should help improve the page load time and response.
+
+Reporting
+
+Deprecation of legacy reports - The following legacy reports will be deprecated on January 14, 2023.
+
+Legacy Custom Report
+
+Legacy Executive Report
+
+IntelliMon Suspension Report
+
+Product Usage Report
+
+MAC Time machine backup Report
+
+Preventive Maintenance Report
+
+Help Desk Ticket Report (beta)
+
+Third-Party Patching
+
+New third party patching support. The following applications will be supported for Update and install using Application updates
+
+7-Zip
+
+Zoom
+
+Bug Fixes / Known Issues
+
+The following issues will be resolved with this month's release:
+
+Communicator UI: We are fixing the following issue on January 4th. In the Communicator Send Message Card, the Send/Cancel button and the close window icon were hidden. Users were unable to scroll up and down on 100% zoom level on the browser. This defect also impacted Calendar Format. This will require an Asio™ Platform (ITSupport Portal) configuration release.
+
+ 
+
+ConnectWise reserves the right to remove any enhancement or fix from this update if it does not pass quality assurance tests.
+
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ConnectWise RMM Update for April 2022
+ConnectWise RMM Update for March 2022
+ConnectWise RMM Update for February 2022
+ConnectWise RMM Update for January 2022
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

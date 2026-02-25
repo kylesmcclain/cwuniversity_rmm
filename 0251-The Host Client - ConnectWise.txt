@@ -1,0 +1,103 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Integrations to ConnectWise RMM   ScreenConnect with RMM   The Host Client
+The Host Client
+Last updated
+May 26, 2023
+Table of contents
+Introduction
+Host client toolbar
+Options menu (Windows)
+Enable Light Theme 
+Give Feedback
+Fullscreen When Maximized
+Beep On Connect
+Always On Top
+More host client information 
+Introduction
+
+The ScreenConnect™ host client launches when a technician connects to a remote device. From the host client, a host can interact with a remote machine. This guide will detail the features of the ScreenConnect host client. 
+
+Note: The host client has different implementations for different operating systems. See our article on the feature differences between clients.
+
+Host client toolbar
+
+From left to right, the host client menu items on the toolbar are:
+
+View
+Essentials
+Toolbox
+File Transfer
+Screen Capture
+Sound
+Participants
+Annotation
+Messages
+Helper
+Status
+
+Options menu (Windows)
+
+Click the menu icon on the host client for these options:
+
+Enable Light Theme
+Give Feedback
+Fullscreen When Maximized
+Beep On Connect
+Always On Top
+
+ 
+
+Enable Light Theme 
+
+Change between light and dark themes for the Windows host client. 
+
+Give Feedback
+
+Select Give Feedback to open a window with a small feedback form. 
+
+Fullscreen When Maximized
+
+Toggle whether the host client window hides the top menu bar when you click on the Maximize button.
+
+Beep On Connect
+
+When this option is enabled, a notification sound (usually the Windows default sound) will play when the guest connects to a session.
+
+Always On Top
+
+Choose whether to display the host client window above all other windows.
+
+More host client information 
+Article directory
+Topic hierarchy
+
+ 
+
+ScreenConnect System Requirements for RMM ConnectWise RMM Intune Integration
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ScreenConnect Installation Status and Error Codes
+Enable or Disable Connection Consent for ScreenConnect
+ScreenConnect Dashboard for RMM
+ScreenConnect 1-Click for RMM
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

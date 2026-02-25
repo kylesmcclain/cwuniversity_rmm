@@ -1,0 +1,66 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Integrations to ConnectWise RMM   ScreenConnect with RMM   ScreenConnect Installation Status and Error Codes
+ScreenConnect Installation Status and Error Codes
+Last updated
+May 26, 2023
+Table of contents
+Overview
+ScreenConnect Installation Statuses
+Installation Error Codes with Description and Troubleshooting
+Overview
+
+This page lists ScreenConnect installation statuses and error codes for the ScreenConnect integration for Command.
+
+ScreenConnect Installation Statuses
+ScreenConnect Statuses	Meaning
+ScreenConnect Installed	This status is shown for the endpoints for which ScreenConnect has been successfully installed.
+Repairing ScreenConnect	This status is shown for endpoints for which ScreenConnect installation process failed or the connectivity could not be verified. It happens because the downloaded file was blocked by antivirus or the file could not be downloaded because of Proxy settings. The system is trying to reinstall the control agent.
+Installing ScreenConnect	This status is shown for the endpoints for which ScreenConnect installation request has been triggered and installation process is in progress
+ScreenConnect Installation Pending	This status is shown for the endpoints that are intended to have ScreenConnect Installed but installation has not yet been attempted.
+Uninstalling ScreenConnect	This status is shown for the endpoints for which uninstallation request has been triggered and is in process.
+Installation Error Codes with Description and Troubleshooting
+ScreenConnect Installation Error	Error Code Details and Remediation Measures
+Installation failed	
+
+ScreenConnect MSI was downloaded successfully but installation failed. Please reach out to support staff for troubleshooting.
+
+OR
+
+The downloaded ScreenConnect Agent MSI file could not be copied to destination folder properly. Please try to download and install the Control Agent MSI file manually on target device. If the issue still persists, please reach out to support staff.
+
+
+Download blocked by antivirus	ScreenConnect MSI file was downloaded but Antivirus has blocked the downloaded file. Please check Antivirus flagging.
+Download blocked by proxy	ScreenConnect MSI Agent file could not be downloaded because of Proxy settings. Please check your proxy settings and Whitelist ConnectWise ScreenConnect URLs and firewall settings.
+External connection failure	External Connection could not be established to download the Control Agent Link file. Please Whitelist ConnectWise ScreenConnect URLs and update firewall settings as per ScreenConnect Documentation.
+Access denied	ScreenConnect Agent MSI file could not be downloaded properly. Please try to download and install the ScreenConnect Agent MSI file manually on target device. If the issue still persists, please reach out to support staff.
+Not enough disk space	There is not enough disk space to download and install the ScreenConnect application. Please remove Temp files to allow for successful ConnectWise  ScreenConnect download/installation.
+ConnectWise service internal error	A database error has occurred. If the installation retry process continues to fail, please contact support for troubleshooting.
+Installation in progress	ConnectWise ScreenConnect Agent Installation process is already in Progress. Please wait for some time till the current installation process is completed.
+ScreenConnect Login Authentication FAQ ScreenConnect Integration for ConnectWise RMM
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Enable or Disable Connection Consent for ScreenConnect
+ScreenConnect Dashboard for RMM
+ScreenConnect 1-Click for RMM
+ScreenConnect Integration for ConnectWise RMM
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

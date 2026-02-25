@@ -1,0 +1,60 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   PSA Integration   Autotask Integration Guide   Autotask Integration Error Messages
+Autotask Integration Error Messages
+Last updated
+Aug 14, 2024
+Table of contents
+Overview
+Overview
+
+Below is a list of error messages and reasons for failure.
+
+Error Message
+
+	
+
+Solution
+
+
+Autotask Username and/or Password is invalid	Autotask API integration requires valid Autotask user credentials in the ConnectWise Asio™ platform (ITSupport Portal). If the Asio credentials are not updated after making a change on the Autotask side, ticket synchronization will fail. Please work with the NOC if the problem persists after fixing the credentials on ConnectWise’s portal.
+Configuration Items have not been created	Create Configuration Items
+Default Site could not be created	Contact Support or select another Default Site for Tickets
+Not all Ticket Priorities have been mapped	Click the Map Ticket Priorities button and populate all drop downs
+Not all Ticket Statuses have been mapped	Click the Map Ticket Statuses button and populate all drop downs
+Product Categories have not been created	Create Product Categories
+Ticket Assign Queues have not been created	Create Ticket Assign Queues
+Ticket Sources have not been created	Create Ticket Sources
+User-Defined Fields have not been included.	
+
+Edit Configuration Item Types to include all User-Defined Fields.
+
+ 
+
+Autotask Integration Contact Sync Autotask Integration Reporting on Synchronization Status
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Autotask Integration Setup Guide
+Autotask Integration Contact Sync
+Autotask Integration Reporting on Synchronization Status
+Include User-Defined Fields in Configuration Items
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

@@ -1,0 +1,148 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Patching   OS Patching Best Practices
+OS Patching Best Practices
+Last updated
+Jan 8, 2026
+Table of contents
+Overview
+Package Best Practices
+Default Patching Policy Recommendation
+Schedule Portion of the Patch Policy
+Feature Updates
+Patching Catch-up 
+Extended Pending Reboot Detection
+Always Reboot Endpoint
+System Configuration 
+Reboot Windows:
+Micellanous Patching Best Practices
+Overview
+
+This article covers the best practices to employ for your Patching policies. Your company's needs may differ from these, but this is a good starting point for developing Patching Policies.
+
+Package Best Practices
+
+Packages should have the following policies:
+
+Desktop Patching
+Server Patching
+Communicator (if used)
+Remote Access (ScreenConnect)
+PSA Integration
+RMM Site Configuration
+
+Only one package can be assigned to each site.
+
+Default Patching Policy Recommendation
+Security Updates	Deploy only Partner or NOC approved for Security Patches
+Critical Updates	Deploy All
+Updates	Deploy All
+Feature Updates	Deploy All or Deploy only Partner Approved
+Drivers	Do not deploy
+Feature Packs	Do not deploy or Deploy only Partner Approved
+Update Rollups	Deploy All
+Tools	Do not deploy or Deploy only Partner Approved
+
+ 
+
+Security updates: The NOC tests security patches for seven days, and then either approves or blocks the updates. Zero-day vulnerabilities would be tested and reviewed within the same time window. To view the Security updates tested by the NOC, review the Patch Testing Reports article. 
+
+Critical Updates: Specifies a widely released fix for a specific problem that addresses a critical, non-security-related bug.
+
+Updates: Specifies a widely released fix for a specific problem. An update addresses a non-critical, non-security-related bug
+
+Feature updates: These need a 10-hour window, and a reboot needs to be scheduled; it is not an option. If machines are not online at the start of the feature update window, they will not be installed. We recommend starting during the day or during business hours to have the best success rate.
+
+Update Rollups: Specifies a tested, cumulative set of hotfixes, security updates, critical updates, and updates that are packaged together for easy deployment. An update rollup generally addresses a specific area, such as security or product components.
+
+Schedule Portion of the Patch Policy
+
+We suggest downloading and installing immediately, and then scheduling a reboot. This method ensures desktops are rebooted weekly and servers are rebooted monthly. One of the significant advantages of this approach is that it should not impact bandwidth at all. Immediate downloads are easier on bandwidth because they stagger downloads throughout the week, unlike a single scheduled window where downloads occur simultaneously across all devices.
+
+For modern operating systems, installing OS patches does not significantly affect end user productivity or experience as long as the system has been rebooted within approximately 30 days.
+
+Servers, although they should experience similar impacts as workstations in terms of bandwidth and server impact, are more sensitive. Hence, it makes sense to keep the installation and reboot within a specific window.
+
+Reboot schedule – start at 4 pm, before the end of the workday, to ensure that all patches get applied
+
+Desktop reboot weekly
+Servers reboot monthly
+
+Most MSP like performing all patching actions during a maintenance window to ensure that if something happens, they can address it outside of production hours.
+
+Tip: We recommend downloading and installing patches immediately. These are silent downloads and installs, and the end user will not be aware that patches are being downloaded or installed.
+
+ 
+
+Feature Updates
+
+The following needs to be scheduled:
+
+Deploy Feature Updates/OS Upgrades
+Needs a 10-hour scheduling window
+Reboot must be scheduled
+
+Note:
+
+If not scheduled, the Feature Update/OS Updates installation will fail.
+If a machine is offline at the start of the update window, even if it comes back online just five minutes into the feature update window, it will unfortunately fail and show as offline.
+To mitigate this issue, it is recommended to set the start time of the update window to a period when you are confident that the machines will be online.
+Additionally, please be aware that feature updates are only applied to machines that are at the end of support. If a machine is not on the latest version but is still within its support period, feature updates will not be triggered. It will not update the endpoint to the most current feature version.
+Patching Catch-up 
+
+We recommend turning Patching Catch-up on. This feature will deploy missing patches when the machines come online. If the endpoint is offline during your patching schedule and this feature is enabled, then it will download and install all the missing patches once the machine comes online. It will reboot only during the scheduled reboot time specified in the policy.
+
+Note: This option is only available when scheduling the installation. It’s recommended to enable this feature.
+
+Extended Pending Reboot Detection
+
+We recommend turning this setting off. The detection logic is designed to identify pending reboots for reasons other than patching. This feature will expand the detection logic to identify pending reboots for reasons other than patching, such as hardware changes, driver updates, and software installations or uninstallations. 
+
+Always Reboot Endpoint
+
+If this setting is toggled on, the endpoint will reboot even if the patch does not require a reboot.
+
+System Configuration 
+
+We recommend setting this to NO. This setting enables/disables the option for a Windows end user to click on Check for Updates. Setting this to NO prevents deployment of Blocked/Non-policy Patches due to user actions.
+
+Reboot Windows:
+
+Desktop reboots should be scheduled for the beginning or end of business hours. Scheduling these reboots after hours or in the middle of the night, when devices are asleep or turned off, may result in endpoints not being fully patched.
+
+We recommend that desktops be rebooted weekly, but at a minimum, they must be rebooted monthly.
+We recommend Servers to be rebooted monthly. This regular maintenance helps to keep everything up-to-date and functioning optimally.
+
+Note: Daytime patching yields the highest success rate for patching. More inconvenient for the end user, but it is the most secure option.
+
+Micellanous Patching Best Practices
+
+If a specific update fails to install on an endpoint when deployed via patch policies, it may indicate a localized issue on the device that interferes with the update. Administrators have the option to manually apply updates to machines using scripted patch deployment to ensure continuity during such an event.
+
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+OS Patching
+OS patching is a critical feature that helps to keep your managed endpoints up to date on the many security and non-security patches released every mo...
+Patch Testing
+Third-Party Patching
+Windows 11 Patch Assessment issue
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

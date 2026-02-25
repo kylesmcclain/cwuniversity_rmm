@@ -1,0 +1,112 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   RMM Tools   APIs   Devices API   Offboard/Uninstall Agent via API
+Offboard/Uninstall Agent via API
+Last updated
+Nov 4, 2025
+Table of contents
+Overview
+API Details
+Overview
+
+This API allows bulk uninstallation of agents from multiple endpoints. It is a part of the ConnectWise RMM Integration APIs.
+
+API Details
+
+The following are the API details that are available within our developer portal for API integration.
+
+Method	API	Description	Parameter Required	Parameter Type
+
+
+DELETE
+
+	/api/platform/v1/device/endpoints/uninstall	Uninstallation of multiple endpoints	
+
+No
+
+	
+
+Not Applicable
+
+
+
+
+ 
+
+Response Field Descriptions:
+
+Field Name
+
+	
+
+Description
+
+	
+
+Type/Format
+
+	
+
+Example/Sample value
+
+
+
+
+endpointID
+
+	
+
+A unique identifier of an endpoint
+
+	
+
+string
+
+	f4b2990c-075a-4132-967c-2fa3431e89df
+
+
+siteID
+
+	
+
+A unique identifier of a site
+
+ 
+
+	
+
+string
+
+	436f6d6d-616e-6420-4944-3a207a0a2a00
+uninstallStatus	Status of uninstallation	string	Success
+message	Message received as a response	string	Endpoint uninstalled successfully
+
+ 
+
+Exposed API for Generate Token Retrieve Details of an Endpoint via API
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Retrieve Details of an Endpoint via API
+Retrieve Last Logged on User Information on an Endpoint via API
+Exposed API for Generate Token
+Device Summary API – Retrieve All Endpoint Devices
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

@@ -1,0 +1,91 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Tech Advantage   Tech Advantage Reporting
+Tech Advantage Reporting
+Last updated
+Oct 1, 2024
+Table of contents
+Overview
+Scheduled Projects
+In Progress Locked
+Canceled
+Not Accepted
+Desktop Offline / Info Required
+Incomplete
+Completed
+NOC Completed
+History
+Search
+Overview
+
+From the Tech Advantage Dashboard (Settings > Account Administration > Products & Services > Tech Advantage), you can click on any of the individual project tabs to view project information and perform ticket maintenance. When you click on a project tab, the table reports the number of projects. This page contains descriptions of the different reporting categories. You can always click Details to read more about a specific project.
+
+Note: In some cases, the Status column for the specific project differs from the report category.
+
+Scheduled Projects
+
+Scheduled projects are projects that have been submitted but for which the NOC has not begun work. You can edit the project to make changes or cancel the project.
+
+In Progress Locked
+
+The NOC has begun working on the project. Changes cannot be made and the project cannot be canceled at this time.
+
+Canceled
+
+These are projects you have canceled. For Server Projects, no auto-cancellation is done.
+
+Not Accepted
+
+A Team Leader has decided that the NOC is unable to work on this project. This usually occurs because information is missing or a prerequisite is required for the project to be completed. No fees will be charged.
+
+Desktop Offline / Info Required
+
+The desktop was unreachable or more information is required by the NOC in order to complete the project. You have ten days to reschedule this project in another time slot. If you do not respond within ten days, the project is closed.
+
+Incomplete
+
+The NOC was not able to finish the project in the time specified. The reasons are included in the Details column. You can reassign the project to the NOC for them to try again during an available time slot. If you do not respond within ten days, the project is closed.
+
+Completed
+
+The NOC considers the project completed and is waiting for you to review the work. You have time to review the work before the project is considered NOC Completed. During this time, you can send the project back to the NOC if you believe more work needs to be completed. Once the project moves to NOC Completed, no additional work is done for this project and you will be invoiced.
+
+NOC Completed
+
+You have either noted that the NOC has successfully completed the project or your review time expired and the status defaulted to Work Completed. These projects will be invoiced to you.
+
+History
+
+You can view information on any project you have submitted under Tech Advantage.
+
+Search
+
+You can search for any project submitted under Tech Advantage.
+
+Tech Advantage Overview Tech Advantage Sample Project: Microsoft Exchange Setup
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Project List
+Desktop Projects
+Desktop Projects: Tips and Best Practices
+Server Projects
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

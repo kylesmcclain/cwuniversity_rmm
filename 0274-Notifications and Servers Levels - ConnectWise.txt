@@ -1,0 +1,86 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Notification Rules   Notifications and Servers Levels
+Notifications and Servers Levels
+Last updated
+Jul 8, 2025
+Table of contents
+Overview
+Multi-Site Notifications
+Site with enabled NOC Services
+Overview
+
+The Notifications you create must match the site's Service Options [NOC Services Enabled] and, for Help Desk Service Notifications, the Help Desk Service configuration in Settings > Setup > RMM > Sites Using RMM > [site name] > Product Options Tab. Notifications outside of ticket creation are only available for Partners that subscribe to NOC Services and Help Desk Services.
+
+The following Notification types are available (in Settings > Setup > RMM > Notification Rules):
+
+RMM 
+Help Desk  
+
+For details about our Help Desk Service services and how to activate Help Desk Service for your client sites, visit Help Desk in the Doc Center. 
+
+Multi-Site Notifications
+
+Notification Rules can be assigned across multiple sites, but only if the sites have the same Service Level. If you change the Service Level for a particular site, you will need to change the Notification Rule as well. 
+
+Site with enabled NOC Services
+
+The table below shows notification options for sites that have enabled NOC Services compared to those without. See NOC SOW for type of Alerts Supported.
+
+NOC Disabled	NOC Enabled
+Server / Internet Down
+Ticket Created	Call Immediately
+ 	
+
+Wait 30 mins and call (only if the condition persists) / if next time slot starts and permits to call 
+
+
+ 	
+
+Wait 2 hrs and call (only if the condition persists) / if next time slot starts and permits to call 
+
+
+ 	Call in the next time slot (only if the condition persists)
+ 	Ticket Only
+Critical Impact Alerts
+Ticket Created	Call Immediately - Do not work on the issue
+ 	Start documented fix, call immediately to inform
+ 	Wait 30 mins and call (only if the condition persists) / if next time slot starts and permits to call
+ 	Start documented fix and place a phone call if issue is not resolved in 2 hours / if next time slot starts and permits to call
+ 	Start documented fix and place a phone call in the next time slot if the issue is not resolved
+ 	Ticket Only
+Critical Non-Impact Alerts
+Ticket Created	Call Immediately - Do not work on the issue
+ 	Start documented fix, call immediately to inform
+ 	Start documented fix and place a phone call if issue is not resolved in 2 hours / if next time slot starts and permits to call
+ 	Start documented fix and place a phone call in the next time slot if the issue is not resolved
+ 	Ticket Only
+Others
+Ticket Created	Ticket Only
+Notification Rules Set Notification Rules
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Set Notification Rules
+Command for Networks
+Secure Information Store
+Tech Advantage
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

@@ -1,0 +1,694 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Network Monitoring and Management   Premier Network Monitoring
+Premier Network Monitoring
+Last updated
+Nov 3, 2025
+Table of contents
+Overview
+Activating Premier Network Monitoring
+Enable the Integration in the Marketplace
+Upgrade your Network monitoring Policy
+Name your policy.
+Downgrading to Basic Network Monitoring
+Downgrade the Policy Option
+Remove the Policy from a Package / Site option.
+Remove the Package from a Site
+Deploying the Network Probe
+Steps to deploy a Network Probe
+Multiple Probe Deployment
+Uninstalling a Network Probe 
+Network Device Credentials 
+Company and Site Provisioning 
+User Provisioning 
+User Permissions and Feature Summary 
+Asio Platform Permissions  
+Auvik Portal Permissions 
+Overview
+
+Premier Network Monitoring is an add-on product for RMM Pro and Premium packages, and is enabled at the site level. For an additional cost, you can upgrade your embedded Network Monitoring capabilities including:
+
+The Syslog feature enables faster troubleshooting by providing centralized access to system logs.
+
+Traffic Insights uses flow data to analyze IP traffic passing through devices. It builds an overview of network traffic flow and volume, and lets you see where network traffic is coming from and going to.
+
+Configuration backup comparison and history so you no longer need to guess what changed between configurations. Instantly bring back any previous configuration from the version history when needed (requires SSH). 
+
+60 out-of-the-box SNMP alerts to leverage our best practices recommendations and stay on top of network events (requires SNMP). 
+
+Real-time statistics for better tracking of bandwidth, utilization, and packets. 
+
+NorthStar troubleshooting tool that maps the path of a device to the internet (requires SNMP). 
+
+Important: Billing is not pro-rated. No matter when the feature is enabled during the monthly billing cycle, you will be billed for the entire month. The option must be disabled before the first day of the month to avoid being billed for the following month. Even if the feature is disabled mid-month, you will have access to use the features for the remainder of the month. 
+
+Activating Premier Network Monitoring
+Enable the Integration in the Marketplace
+In the Asio Platform, navigate to Integrations > My Integrations.
+Locate the Networking Management Upgrade tile and click the three dots icon and select Activate.
+
+On the next screen, click Integrate.
+
+The consent form will open. This is to remind you that this is paid upgrade. From the dropdown, select I agree and then click Save and Proceed.
+
+Click Complete Setup.
+
+Upgrade your Network monitoring Policy
+
+You must assign a new policy to sites that you wish to use Premier Network Monitoring on.
+
+In the Asio Platform, navigate to Endpoints > Policies.
+For the category field, select Sites.
+For the type, select Network Monitoring.
+Name your policy.
+Under Site type, select Premier Network Monitoring.
+Add your new policy to a package and assign it to the sites you want to upgrade. For information on how to do this, refer to the Packages Documentation.
+Downgrading to Basic Network Monitoring
+
+Important: You must change the policy back to Basic Network Monitoring, or remove the policy from a site or you will continue to be billed for Premier Network Monitoring. Removing the integration from the marketplace will not disable Premier Network Monitoring.
+
+We have three options to downgrade your Network Monitoring.
+
+Downgrade the Policy Option
+In the Asio Platform, navigate to Endpoints > Policies.
+Locate the policy with Premier Network Monitoring and click edit.
+Under Site type, select Basic Network Monitoring.
+Remove the Policy from a Package / Site option.
+In the Asio Platform, navigate to Endpoints > Packages.
+Locate the package that contains the Network Monitoring Policy and click edit.
+Remove the Network monitoring Policy from the package
+Remove the Package from a Site
+In the Asio Platform, navigate to Endpoints > Packages > Sites Tab.
+Locate the site you wish to remove the package from.
+Select the site and click Remove Assignment.
+
+Note: If you want to completely remove Premier Network Monitoring from your instance, follow the steps in the Downgrade the Policy Option, and then turn off the integration from the Marketplace page.
+
+Deploying the Network Probe
+
+If you have not yet deployed a probe on your Premier Network Monitoring sites, use the following steps to make sure that you can utilize network montioring.
+
+The first step to begin discovering devices is to designate at least one of your Site's RMM agents as the Network Probe.
+
+The Network probe is a service that uses several protocols to gather information about your network, such as topology details, configurations, and network statistics. The Network probe is configured to be associated with the Company and Site where the RMM agent is installed.
+
+When an RMM device is designated as a Network Probe, the Company and Site associated with that RMM agent are automatically created within Auvik.
+
+Steps to deploy a Network Probe
+Navigate to the Asio Platform > Endpoints > Devices.
+On the Devices page, select the Windows device that you want to be designated as the Network Probe for the site.
+Click on Manage > Network Probe.
+
+On the confirmation screen, click Confirm.
+
+You will receive a message when the Network Probe deployment is successfully initiated.
+
+The Network Probe deployment takes around ten minutes to complete on the endpoint.
+
+RMM Devices where the Network Probe is successfully installed and running shows under the Device Type.
+Multiple Probe Deployment
+
+A site can have multiple Network Probes to maximize coverage of all Networks and Devices. However, you can only create one Network Probe at a time. For sites where the Network Probe deployment is initiated for the first time, immediately adding another collector will fail as the Company or Site registration within Auvik is in progress. After this process is finished you can create another. 
+
+If you have multiple probes at a site, you will need to complete the following process:
+
+In the Asio Portal, navigate to Endpoints > Network. 
+In the top right corner of the page, click the Manage button.
+
+In the Auvik Portal, navigate to Admin > Auvik Collectors.
+Search for and select the probes you have created.
+
+Then click APPROVE.
+
+Uninstalling a Network Probe 
+To uninstall a network probe, navigate to the Asio Platform > Endpoints > Devices.
+On the Devices page, select the device that you want to remove the Network Probe from.
+Click on Manage > Network Probe.
+In the pop-up, uncheck the enable network probe box.
+Click Confirm.
+
+
+Note: When you remove a probe from a site in Asio, the probe entry will not be removed in the Auvik portal. This probe will show as disconnected, but will no longer be collecting any data. 
+
+Network Device Credentials 
+
+You must log in to the Auvik UI to provide device credentials. The Device credentials are needed to get complete details from the Network Devices.
+
+You can also see a prompt within the Auvik UI to add SNMP credentials when SNMP supported devices are discovered. Click on Manage Credentials to add SNMP credentials.
+
+You can directly add Credentials at a Partner, Company, or Site level from Admin > Discovery > Manage credentials.
+
+ 
+
+Company and Site Provisioning 
+
+You can start using the solution once the Account registration is completed. The provisioning and mapping of ConnectWise Companies (Called Multi-site in Auvik) and Connectwise Sites (Called Sites in Auvik) will happen automatically.
+
+The registration of the Companies and Sites is triggered when the User designates machines as a Network Probe on the Site. More details on Network Probe deployment can be found in the Network Management section.
+
+User Provisioning 
+
+When a CW RMM User is added to Asio and has permission to Network Devices, that user is also added to the network monitoring solution based on the following criteria:
+
+Primary Super Admin / Super Admin (by Default)
+Manager (based on permission)
+Technician (based on permission)
+
+The Permissions for Manager or Technician can be managed at a User or Role level from Settings > Account Administrations > Users.
+
+When a user is granted access to Network Devices, they will start to see the new Network Devices menu and login to Auvik from the hyperlinks of Network Devices.
+
+Each role within the Asio platform corresponds to a custom role in Auvik with pre-defined permissions.
+
+For example:
+
+The Super Admin or Manager role can modify Alert Threshold within Auvik.
+the Technician role can only view the values of the Alert Threshold within Auvik.
+
+Users are also viewable in the Auvik UI. However, users, roles, and authorizations can only be managed in the Asio platform.
+
+CW RMM Users are authenticated to the Auvik UI when the user clicks on a Device on the Network Devices page. Users can only access Auvik from the Asio Platform > Endpoints > Network. The authentication only works from the Asio platform; direct access to the Auvik Portal will fail.
+
+Important: Any user given permission to the Network Devices page will be able to log in to Auvik and see all of their Companies and Sites. We do not recommend giving Network Devices permission to a user with Limited site access.
+
+User Permissions and Feature Summary 
+Asio Platform Permissions  
+
+Asio Feature 
+
+	
+
+Super Admin 
+
+	
+
+Manager 
+
+	
+
+Technician 
+
+
+
+
+Network Devices Page 
+
+	
+
+YES 
+
+	
+
+Based on Permission 
+
+	
+
+Based on Permission 
+
+
+
+
+Probe Deployment 
+
+	
+
+YES 
+
+	
+
+No Access 
+
+	
+
+No Access 
+
+Auvik Portal Permissions 
+
+Auvik Feature
+
+	
+
+Super Admin
+
+	
+
+Manager
+
+	
+
+Technician
+
+
+
+
+Login Permission
+
+	
+
+YES
+
+	
+
+Based on Permission
+
+	
+
+Based on Permission
+
+
+
+
+Manage Devices
+
+	
+
+Full Access
+
+	
+
+Full Access
+
+	
+
+View Only
+
+
+
+
+Manage Network
+
+	
+
+Full Access
+
+	
+
+Full Access
+
+	
+
+View Only
+
+
+
+
+Manage Credentials
+
+	
+
+Full Access
+
+	
+
+Full Access
+
+	
+
+View Only
+
+
+
+
+Manage Cloud Controllers
+
+	
+
+Full Access
+
+	
+
+Full Access
+
+	
+
+View Only
+
+
+
+
+Discovery Settings
+
+	
+
+Full Access
+
+	
+
+Full Access
+
+	
+
+View Only
+
+
+
+
+Services
+
+	
+
+Full Access
+
+	
+
+Full Access
+
+	
+
+View Only
+
+
+
+
+Debug Details
+
+	
+
+Full Access
+
+	
+
+Full Access
+
+	
+
+Full Access
+
+
+
+
+Data Export
+
+	
+
+Full Access
+
+	
+
+Full Access
+
+	
+
+Full Access
+
+
+
+
+Alerts
+
+	
+
+Full Access
+
+	
+
+Full Access
+
+	
+
+View Only
+
+
+
+
+Manage Alerts
+
+	
+
+Full Access
+
+	
+
+Full Access
+
+	
+
+View Only
+
+
+
+
+Remote Tunnel
+
+	
+
+Full Access
+
+	
+
+Full Access
+
+	
+
+Full Access
+
+
+
+
+Remote Command
+
+	
+
+Full Access
+
+	
+
+Full Access
+
+	
+
+Full Access
+
+
+
+
+Remote Terminal
+
+	
+
+Full Access
+
+	
+
+Full Access
+
+	
+
+Full Access
+
+
+
+
+Remote Browser
+
+	
+
+Full Access
+
+	
+
+Full Access
+
+	
+
+Full Access
+
+
+
+
+Site Management
+
+	
+
+View Only
+
+	
+
+View Only
+
+	
+
+No Access
+
+
+
+
+User Management
+
+	
+
+View Only
+
+	
+
+View Only
+
+	
+
+No Access
+
+
+
+
+Collectors
+
+	
+
+Full Access
+
+	
+
+Full Access
+
+	
+
+No Access
+
+
+
+
+Organization Settings
+
+	
+
+Full Access
+
+	
+
+Full Access
+
+	
+
+No Access
+
+
+
+
+Notes
+
+	
+
+Full Access
+
+	
+
+Full Access
+
+	
+
+Full Access
+
+
+
+
+Reports
+
+	
+
+Full Access
+
+	
+
+Full Access
+
+	
+
+Full Access
+
+
+
+
+Audit Logs
+
+	
+
+Full Access
+
+	
+
+Full Access
+
+	
+
+Full Access
+
+
+
+
+Hardware Lifecycle
+
+	
+
+Full Access
+
+	
+
+Full Access
+
+	
+
+Full Access
+
+
+
+
+Billing
+
+	
+
+NO ACCESS
+
+
+
+
+Role Management
+
+	
+
+NO ACCESS
+
+
+
+
+Integrations
+
+	
+
+NO ACCESS
+
+
+
+
+API
+
+	
+
+NO ACCESS
+
+Network Monitoring Feature Comparison Premier Network Monitoring Features
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Premier Network Monitoring Features
+Network Monitoring FAQ
+Network Devices
+Network Monitoring Alerting
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

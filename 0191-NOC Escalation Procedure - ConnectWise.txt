@@ -1,0 +1,102 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Expert Services   ConnectWise Network Operations Center - NOC   NOC Escalation Procedure
+NOC Escalation Procedure
+Last updated
+Jul 18, 2023
+Table of contents
+Overview
+How to Contact the NOC
+The Asio™ Platform (ITSupport Portal) Support Page
+Escalating an Issue
+Requesting Immediate Support for a Major Incident
+Requesting More Senior Support
+Reporting Satisfaction and Dissatisfaction
+Engaging Your Account Team
+Overview
+
+Refer to the instructions on this page for contacting the NOC and requesting escalation of an issue.
+
+How to Contact the NOC
+The Asio™ Platform (ITSupport Portal) Support Page
+
+Click on Support in the upper-right corner of the Asio™ Platform (ITSupport Portal) to open a dedicated NOC Support page. Use the What can we help you with? drop-down menu and select one of the following support categories:
+
+Provided software (Agent, Portal, etc.)
+Patching, Webroot, Endpoint Protection
+Server issues (Exchange, Windows, VMware, etc.)
+BDR Backup and Disaster Recovery
+Escalate an existing NOC ticket
+
+NOC Support teams are available 24 hours a day. Your recommended contact option will vary depending on the support category selected. Three options for contacting the NOC include:
+
+Ticket (Create a ticket)
+Chat (Start a chat)
+Phone (Call us)
+Escalating an Issue
+
+Three primary reasons to use the escalation procedures include:
+
+To request immediate support for a major client-impacting problem such as a server or site outage or disaster recovery.
+To request the support of a more senior resource when a problem is not progressing toward resolution or when experiencing communication challenges with the technician(s) currently assigned.
+To report satisfaction or dissatisfaction with the handling of a specific incident or more general satisfaction/dissatisfaction with NOC service.
+Requesting Immediate Support for a Major Incident
+
+While the NOC may already be alerted to and possibly working on a problem, if your client is suffering from a major issue such as a server outage, contact the NOC to ensure they are aware of the issue and its urgency. This contact ensures the business impact is fully understood and ensures our technicians are mobilized as quickly as possible to assist.
+
+For cases that do not require disaster recovery assistance using BCDR, always call the NOC and choose the option to escalate the ticket. You can find this number on the Support page of the Asio™ Platform (ITSupport Portal) as described above.
+For cases requiring disaster recovery assistance, you can call the NOC at the same number and choose the BCDR team. Alternatively, you may open a chat by choosing your BCDR option from the Support page menu.
+
+In either case, inform the NOC of the urgency and client impact and the NOC will take steps to assign the required resources as quickly as possible.
+
+Requesting More Senior Support
+
+If you encounter a situation where the technicians assigned to a ticket are not making sufficient progress toward resolution, you may request an escalation.
+
+For critical, client-impacting issues where resolution is highly time-sensitive, contact the NOC by telephone and specifically request the case be escalated to the next level of management. The NOC will then identify the right resources to engage and ensure you are connected. In cases where a more senior individual is not available, the NOC will offer alternatives or collect your contact information and arrange a callback as soon as possible. Please note that if your issue is not highly time-sensitive, a callback may not occur until the next business day to accommodate senior resource shifts.
+
+If you are having difficulty communicating with a NOC technician with whom you are speaking or chatting, you may request to speak to a different technician or also request the next level of management.
+
+For non-urgent issues, you may escalate by updating the ticket or sending an email to the NOC. In either case, include the words Request for escalation at the beginning of the ticket entry or email, then state the reason for the escalation so the team clearly understands your concern. Your request will be acknowledged and the appropriate level of management will be engaged. Use the following email addresses:
+BCDR (Recover)/BDR: Recover@connectwise.com
+Server issues: SRT@connectwise.com
+
+If, after following the steps above, your issue is still not addressed in a timely manner, you may repeat the escalation process and request the NOC again escalate the issue to the next level of management. If you have escalated at least twice without an adequate response or resolution, you may involve your Account Team via email or telephone, although for less urgent issues, we recommend at least three escalations before engaging your Account Team. However, continue to include the NOC in all communications with your Account Team in case they are not available.
+
+For urgent issues, continue to escalate to higher levels of NOC management, keeping in mind that after each escalation, sufficient time (generally 4 – 8 hours) is required between each escalation to allow new resources to be engaged and work the problem. For non-urgent issues, your Account Team will take the next step and marshal the appropriate resources to address the problem.
+
+Reporting Satisfaction and Dissatisfaction
+
+We value your feedback and provide several ways for you to contribute feedback on our service. After each chat session and at the end of every ticket the NOC works on, you have the opportunity to complete a brief survey. NOC Management reviews every survey and, where appropriate, takes corrective action and often responds to your comments. You may also email the Service Request Team (SRT@connectwise.com) with any compliments or complaints about NOC service.
+
+Engaging Your Account Team
+
+To report dissatisfaction with a specific issue, we strongly encourage you to use one of the three approaches above. If, however, you are experiencing an ongoing pattern of service difficulties, we recommend you send an email addressed to both your Account Team and the NOC Service Request Team. Your Account Team will then collaborate with the NOC and your team to investigate the problems and develop a remediation plan.
+
+NOC Access Levels NOC Service Statement of Work
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+NOC Access Levels
+NOC Service Statement of Work
+Setting NOC Access Levels
+Enabling Automatic Credentials for Servers and Desktops
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

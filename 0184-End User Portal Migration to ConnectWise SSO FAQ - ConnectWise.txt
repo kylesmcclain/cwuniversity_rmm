@@ -1,0 +1,158 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   End User Portal   End User Portal Migration to ConnectWise SSO FAQ
+End User Portal Migration to ConnectWise SSO FAQ
+Last updated
+Oct 1, 2024
+Table of contents
+Overview
+Frequently Asked Questions
+Why are we making this change? 
+Who is impacted by this change? 
+When is this change happening? 
+How can I check if my users are migrated to SSO?
+What should I do if I find users unmarked in the Migrated to SSO column? 
+Will I see end users in ConnectWise Home User Management after migration to SSO? 
+What steps can I share with my clients/end users to log into the portal after migration? 
+Are there any changes in managing clients/end users? 
+What is changing in the End User Portal?
+How does this change impact my clients/end users? 
+How can end users reset their passwords?
+What about the legacy user management screens in Asio for creating users with the client end user role? 
+How will I know about end user migrations? 
+How do I log into the Client End User Portal via ConnectWise SSO?
+Who to contact if I have additional questions? 
+The purpose of this article is to provide you with answers to the most frequently asked questions about client migration (your end users) to ConnectWise single sign-on.
+Overview
+
+The purpose of this article is to provide you with answers to the most frequently asked questions about client migration (your end users) to ConnectWise single sign-on. 
+
+Frequently Asked Questions
+Why are we making this change? 
+
+As part of our ongoing commitment to a security-first culture and to enhance user experience, your clients will be gradually migrated to ConnectWise single sign-on (SSO) as the official login method for user.itsupport247.net. This migration ensures a unified login experience across all our services and applications. 
+
+Secure access to the ConnectWise products and solutions you know and trust is critical priority in everything we do. And as you may be aware, over the last few months, we have been making changes to user management and login to reduce security risks surrounding user data, improve partner experience, and streamline IT management and login processes. As such, our SSO will be the go-forward authentication method to access ConnectWise RMM, ConnectWise BCDR (formerly Recover), and ConnectWise Cybersecurity Management (formerly Fortify), as well as other ConnectWise products in the future. Part of this change also includes migrating your clients to ConnectWise SSO.
+
+Who is impacted by this change? 
+Partners - you and your end users are impacted by this change. We recommend that you inform your clients/end users of the generic, unbranded login experience. 
+Clients/End users - when they are migrated, they will experience the new de-branded login screen. 
+When is this change happening? 
+
+The client migration to ConnectWise SSO process will take place in multiple increments. We expect to start this process with the first batch of clients, beginning in March 2024, and anticipate that the process will be completed by May 2024 with the final batch of clients. Prior to your clients’ scheduled migration, we will provide advanced notice to you via email. Please note that this is an estimated timeline only. Should there be any unexpected technical issues with any client migration, we will notify you as soon as possible and provide a rescheduled timeline.    
+
+Important: We recommend that you inform your clients/end users about this upcoming change as soon as possible. 
+
+How can I check if my users are migrated to SSO?
+
+To check user migration status, in Asio navigate to Settings > Account Administration > Users > Manage Users. In the Manage Users table, find the Migrated to SSO column. If it is marked for a user, they have been migrated to SSO and should use SSO for login. If it is unmarked, the user is not yet on SSO and should not use SSO for login at this time.
+
+
+What should I do if I find users unmarked in the Migrated to SSO column? 
+
+Please review the FAQ for partners partially migrated to ConnectWise SSO documentation.
+
+Will I see end users in ConnectWise Home User Management after migration to SSO? 
+
+As part of the migrations to SSO, we are not moving these users in Home under User Management.  Clients and end users are still maintained from the Asio platform (ITSupport Portal). 
+
+However, if the end user was already present in SSO before, they may still appear there. In this case, to prevent any loss of access to other product roles assigned to them we are not concealing the user.
+
+What steps can I share with my clients/end users to log into the portal after migration? 
+Navigate to the End User Portal URL: user.itsupport247.net.
+Click the Log in with Single Sign-On button. 
+Enter your email and password. 
+Activate your email account if you receive a dialog prompt.
+Return to the End User Portal URL: user.itsupport247.net.
+Click the Log in with Single Sign-On button.
+Enter your email, password, and MFA code. 
+You are directed to the End User Portal after successful authentication. 
+Are there any changes in managing clients/end users? 
+
+No, there are no changes when adding, editing, enabling, disabling, deleting, or managing clients/end users. Clients and end users are still maintained from the Asio/ITSupport Portal. 
+
+Refer to this article for Access Rights and User Roles. 
+
+What is changing in the End User Portal?
+
+The change password feature has been removed from the Edit Profile section. 
+
+Clients/end users can now reset their passwords by using the Forgot Password option on the SSO login screen.
+
+
+How does this change impact my clients/end users? 
+
+After migration, clients and end users will need to click the Log in with Single Sign-On button to access the portal. 
+
+How can end users reset their passwords?
+
+Clients/end users can now reset their passwords by using the Forgot Password option on the SSO login screen. 
+
+
+Clients/end users will receive an email with a password reset link. This email will be sent from DoNotReply@Connectwise.com.
+
+What about the legacy user management screens in Asio for creating users with the client end user role? 
+
+There is no change in the user creation or user management processes for the client end user role. 
+
+Refer to Access Rights and User Roles for more information. 
+
+How will I know about end user migrations? 
+
+An email communication will be sent two weeks before the scheduled migration of your clients/end users. 
+
+How do I log into the Client End User Portal via ConnectWise SSO?
+
+Use the following steps to log in to the Client End User Portal (https://user.itsupport247.net).
+
+On the login screen that appears, click Log in with Single Sign-On. 
+
+You are redirected to a login screen. Enter your Email address and then click Next. 
+
+Enter your Password. 
+
+Click Login.
+Enter the MFA Code.
+
+Click Login. You are then redirected to the End User Portal. 
+Who to contact if I have additional questions? 
+
+If you require additional assistance with this change, you can submit a request to rmmsupport@connectwise.com.
+
+End User Portal Expert Services
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Command for Networks
+Secure Information Store
+Tech Advantage
+ConnectWise RMM Site Map
+Here is the list of all available ConnectWise RMM articles.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

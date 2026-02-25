@@ -1,0 +1,112 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Communicator User Guide   Communicator Messaging
+Communicator Messaging
+Last updated
+Dec 23, 2025
+Table of contents
+Overview
+Communicator Menu
+Notifications Historical List
+Send Message from the Device page
+Overview
+
+You can send messages to the end user from the ConnectWise Asio® platform in two ways: from the Devices page and from the Communicator menu. While creating the message, you can configure the scheduled date for the message to be sent, set the expiration date for the message, request a response from the end user, and configure predefined reply options. The sent message will be displayed on the end user's desktop in a pop-up window and stored in the Communicator Historical List.
+
+Communicator Menu
+
+The Communicator menu is located in the left navigation menu of the Asio platform.
+
+In the Communicator menu, you can:
+
+Send messages to the end user
+Review the following sent message details:
+text
+send date
+scheduled date
+expiration date
+the number of users who read the message
+reply provided by the end user
+Delete sent and scheduled messages
+
+Review the sent message details
+
+
+
+
+Delete message
+
+Send message
+
+While creating the message, you can select the recipient, configure the scheduled date, set the expiration date, request a response from the end user, and configure predefined reply options.
+
+
+
+
+When the message is sent, the end user sees it on the desktop in a pop-up window and in the historical list.
+
+Request the response from the end user:
+
+Free-flow text
+
+Static Options
+
+Notifications Historical List
+
+Right-clicking the tray icon opens the Notification Historical list, which keeps all messages you send to the end-user. 
+
+The Notification Historical list allows the end user to:
+
+Review messages
+
+Provide a reply to messages
+
+Review the replies they have sent.
+
+Note: A message will appear in the Historical list until its expiration date.
+
+Send Message from the Device page
+To send a Message from the Devices page, navigate to Endpoints > Devices > Select required endpoint > Manage > Send Message
+
+Type out your message, select your preferences, and click Send.
+
+The audit of messages sent via Communicator are also visible in the Centralized Audit Trail:
+
+ 
+
+Communicator Hidden Mode Communicator Permissions
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Communicator Configuration
+Communicator Assignment
+Communicator Default Menus
+Communicator Branding
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

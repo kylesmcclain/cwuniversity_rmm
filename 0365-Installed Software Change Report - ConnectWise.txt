@@ -1,0 +1,46 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Reports   Asio Reports   Technical Details Reports   Installed Software Change Report
+Installed Software Change Report
+Last updated
+Sep 22, 2025
+Table of contents
+Overview
+Installed Software Change Report Details
+Overview
+
+This report displays applications that have been installed or removed in a particular date range.
+
+ To locate this screen, navigate to Reports > Asio > Detailed Reports > Technical Details > Installed Software Change Report.
+
+Installed Software Change Report Details
+The date range must be from the past 12 months.
+The date range can be a maximum of 60 days or fewer.
+
+Disk Space Report Installed Software Count Report
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Asset Change Report
+Disk Space Report
+Installed Software Count Report
+Installed Software Report
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

@@ -1,0 +1,110 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   ConnectWise RMM Release Notes   RMM Release Notes Archive   ConnectWise RMM Update for November 2023
+ConnectWise RMM Update for November 2023
+Last updated
+Dec 11, 2023
+Table of contents
+Overview 
+Announcements 
+RMM Dashboard
+Cloud Monitoring
+UI Refresh - Communicator, OS Patching, Alert Management
+ConnectWise PSA - Integration via policies EA
+What's new in ConnectWise RMM?
+November 30, 2023
+Asio Neon Migration
+Cloud Monitoring
+Legacy Portal
+Patching
+November 28, 2023
+Ticketing / PSA Integration
+November 27, 2023
+Agent and Platform
+November 24, 2023
+Patching
+November 22, 2023
+Ticketing / PSA integration
+November 21, 2023
+Patching
+November 20, 2023
+Agent and Platform
+Overview 
+
+This page provides information on the latest enhancements and features for ConnectWise RMM.
+
+Announcements 
+RMM Dashboard
+
+We've released the ConnectWise RMM dashboard. The RMM dashboard provides a centralized view of all of your client's networks and devices, giving you real-time visibility into the performance and status of these systems. This allows you to quickly identify and resolve issues before they become major problems. For more information about this feature, visit the RMM Dashboard documentation. 
+
+Cloud Monitoring
+
+RMM Premium partners, you can now monitor your customers' Azure resource health and receive a ticket when any resource is anything but Available. For more information on this feature and setting it up, visit the Cloud Devices documentation.
+
+UI Refresh - Communicator, OS Patching, Alert Management
+
+As part of our ongoing efforts to provide a consistent UI experience across the platform, we have successfully refreshed the Communicator, OS Patching & Alert Management pages. With a uniform and consistent user interface, users will have a seamless and intuitive experience across the Communicator, OS Patching, and Alert Management pages. 
+
+Enhanced Filtering Capabilities - OS Patching 
+
+Users can now define their own date ranges for viewing data, instead of being limited to preset options, for OS Patching. This enhancement provides users with more control when managing and analyzing their data
+
+ConnectWise PSA - Integration via policies EA
+
+We are excited to announce that we will be adding an option for you to enable the ConnectWise PSA sync configurations that helps to define Tickets, Configuration items, and Notifications using policies. These policies can be included in your packages and applied to the sites using the package assignment option.
+
+There will be no migration performed for the existing configuration, but the policies will be in effect if they are assigned or applied to a site. You will initially have a toggle button to either enable or disable the policies based configuration and continue using the old method for now.
+
+We will stop supporting the older configuration method by December 15th.
+
+For more information, review the following articles:
+
+ConnectWise PSA - Policy Integration
+
+ConnectWise PSA - Policy Integration - FAQ
+
+What's new in ConnectWise RMM?
+November 30, 2023
+November 28, 2023
+November 27, 2023
+November 24, 2023
+November 22, 2023
+November 21, 2023
+November 20, 2023
+ConnectWise RMM Update for October 2023 ConnectWise RMM Update for December 2023
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ConnectWise RMM Update for January 2023
+ConnectWise RMM Update for February 2023
+ConnectWise RMM Update for March 2023
+ConnectWise RMM Update for April 2023
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

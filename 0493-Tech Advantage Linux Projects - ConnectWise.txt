@@ -1,0 +1,66 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Tech Advantage   Tech Advantage Linux Projects
+Tech Advantage Linux Projects
+Last updated
+Feb 9, 2021
+Table of contents
+Overview
+Supported Linux Distributions
+Linux Projects
+Overview
+
+Linux projects are undertaken as Custom Desktop or Server projects. To request a Linux project, send a project request to the Desktop Projects (DesktopProjects@connectwise.com) or Server Projects (ServerProjects@connectwise.com) team with your project requirements. A price quote will be provided once the team reviews the scope of your project.
+
+Supported Linux Distributions
+Ubuntu 8.04 or later
+Red Hat Enterprise Linux 5.3 or later
+CentOS 5 or later
+Fedora release 16 or later
+Linux Projects
+OS Installation and configuration (only if Lights Out Management available)
+RMM agent Installation
+LVM configuration
+File system configuration
+mdadm RAID arrays configuration
+Installation and configuration of below applications
+SAMBA
+DNS, DHCP, FTP
+Apache Web Server (LAMP)
+Apache Tomcat Application Server
+PostFix / Sendmail
+MySQL / MariaDB
+iSCSI target / iSCSI Server
+Server Hardening
+Performance Troubleshooting
+Standard Patches / Update Installation
+Grub / Grub 2 Troubleshooting (only if LOM access is available)
+VirtualBox
+ZFS configuration
+Server Projects Best Practices Tech Advantage Overview
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Project List
+Desktop Projects
+Desktop Projects: Tips and Best Practices
+Server Projects
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

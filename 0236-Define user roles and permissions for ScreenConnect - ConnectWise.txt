@@ -1,0 +1,72 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Integrations to ConnectWise RMM   ScreenConnect with RMM   Define user roles and permissions for ScreenConnect
+ Expand/collapse global location
+Define user roles and permissions for ScreenConnect
+Last updated
+Nov 10, 2021
+Table of contents
+Introduction
+Role-based security
+Recommended best practices
+What's next
+Introduction
+
+Role-based security allows ScreenConnect™ administrators to group users into roles for security purposes. This article will explain how to use role-based security to manage user permissions. 
+
+Role-based security
+
+Roles are defined inside the Security page. There are two default roles: Administrator and Host. Each role consists of specific permissions access different features within the software. For example, administrators can limit access to specific session groups, create different types of remote support sessions, access the Build Installer button, and much more.
+
+Recommended best practices
+
+Here are a few recommendations for creating a role-based security setup:
+
+When creating, editing, or cloning a role, click the Show Reference link to view a list of permissions and their definitions.
+Create a few roles with basic permissions to perform general operations. You can always edit a role to make the permissions more specific. 
+
+Always create a test role on test users to verify that the permissions behave as expected.
+
+Permissions are additive. If you have a machine in multiple groups, that machine will have all of the permissions of every group it belongs to. 
+
+Important: If you deselect the ViewSessionGroup permission, you will likely need to deselect every other permission in that session group for that role
+
+ 
+
+What's next
+
+On the Security page, create a new user role.
+
+ 
+
+Article directory
+
+ 
+
+False positive from antivirus software Enable or Disable Connection Consent for ScreenConnect
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ScreenConnect Installation Status and Error Codes
+Enable or Disable Connection Consent for ScreenConnect
+ScreenConnect Dashboard for RMM
+ScreenConnect 1-Click for RMM
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

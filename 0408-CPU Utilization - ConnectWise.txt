@@ -1,0 +1,130 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   RMM Reporting API   Reporting API REST Resources   CPU Utilization
+CPU Utilization
+Last updated
+Jul 9, 2025
+Table of contents
+Overview
+Endpoint and URI
+Method
+Request Body
+Response Body
+Parameter Descriptions for CPU Utilization
+Source of Data in the Asio Platform
+Overview
+
+Returns the monthly minimum, maximum, and average CPU utilization, as well as average daily CPU utilization for each server.
+
+Endpoint and URI
+
+https://itsapi.itsupport247.net/repo...erformance/cpu
+
+Method
+
+POST
+
+Request Body
+
+{
+
+"Month":4,
+
+"SiteCode":"AGTSolutions",
+
+"Year":2015,
+
+}
+
+Response Body
+
+{
+
+"cPUUtilizationSummary":[
+
+{
+
+"average": 46,
+
+"dailyAverages":[100,100,100,100,100,100,100,100,0,0,0,0,0,0,0,100,100,100,100,100,0,0,0,0,0,100,100,100,100,100],
+
+"friendlyName":"Windows Server 2008_1",
+
+"iPAddresses":"1.1.1.1",
+
+"MachineId": 9223372036854775807,
+
+"max":100,
+
+"min":0,
+
+"server":"WS2008_1"
+
+},
+
+{
+
+...
+
+},
+
+{
+
+...
+
+}
+
+]
+
+"error": null
+
+}
+
+Parameter Descriptions for CPU Utilization
+Parameter	Description
+"Month"	Requested month (numerical)
+"SiteCode"	Unique site code listed in Asio™ Platform (ITSupport Portal)
+"Year"	Requested year
+"average"	Average CPU utilization
+"dailyAverages"	Daily CPU averages
+"friendlyName"	Server friendly name in Asio™ Platform (ITSupport Portal)
+"iPAddresses"	Server IP address
+"MachineId"	Unique machine ID in ConnectWise database
+"max"	Maximum CPU utilization
+"min"	Minimum CPU utilization
+"server"	Server name
+Source of Data in the Asio Platform
+
+Reports > Asio > Executive Report > Server Data > Performance Analysis > CPU Utilization
+
+BCDR Continuity Protected Resources Daily Antivirus Status
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Agent Details
+Retrieves agent information for the authenticated partner and the specified site.
+Antivirus Summary
+Retrieves counts of machines having antivirus protection in the following states: Updated, Outdated, Not Installed, or Information Unavailable.
+Antivirus Version Summary
+Retrieves currently detected antivirus software and the definition version.
+BCDR Continuity Appliances
+Retrieves a list of Recover Continuity backup appliances provisioned at the given site.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

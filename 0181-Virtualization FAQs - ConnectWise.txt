@@ -1,0 +1,72 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Devices Page   HyperV and VMware Virtualization   Virtualization FAQs
+Virtualization FAQs
+Last updated
+Aug 19, 2024
+Overview
+
+This article answers frequently asked questions about Virtualization in the Asio™ platform.
+
+FAQ
+
+What is the Virtualization product offering?
+
+Why do I not see the Virtual Machines tab next to the Summary tab?
+
+Why do I see Virtual Machines = 0 on the Virtual Infrastructure card?
+
+Why do I see a subset of all managed virtual guests on the host, on the Virtual Machines tab?
+
+Why do I not see any cluster related information on the Virtual Infrastructure card?
+
+Why do I not see any cluster shared volume information under Storage section?
+
+Why do I see a subset of virtual guests on the host on the performance graph comparison drop-down?
+
+What do the drop-down options for machine name on Virtual Machines tab - Agent Name and VM Host Name indicate?
+
+Why do all virtual guests on host not have hyperlinks on their Agent Name/VM Host Name?
+
+Why do I see a lesser number of tabs/pages for VMware hosts on details page?
+
+Why do I have missing data for VMs in the Virtual Machines tab for a VMware host?
+
+HyperV and VMware Power Actions Other Devices Page
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+HyperV and VMware Power Actions
+Devices Overview
+The information on the Device list provides a high-level view of all sites or filtered sites and includes easy-to-view details for applicable endpoint...
+Device Details Screen
+Custom Fields
+Custom Fields are additional data points you can create in the ConnectWise Asio® platform to record information not collected by the agent or unavaila...
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

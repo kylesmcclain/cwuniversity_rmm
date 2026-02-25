@@ -1,0 +1,64 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Integrations to ConnectWise RMM   ScreenConnect with RMM   ScreenConnect Remote Support   ScreenConnect Remote Support Troubleshooting Guide
+ Expand/collapse global location
+ScreenConnect Remote Support Troubleshooting Guide
+Last updated
+Apr 11, 2025
+Table of contents
+Overview
+Troubleshooting Steps
+How do I resolve the Page Not Found error when trying to access ScreenConnect Remote Support through Asio?
+Overview
+
+This documentation includes troubleshooting steps for accessing the ScreenConnect® Remote Support functionality from the Asio™ platform.
+
+Troubleshooting Steps
+How do I resolve the Page Not Found error when trying to access ScreenConnect Remote Support through Asio?
+Verify if the user permissions have been granted on the following User Consent screen.
+
+
+
+Note: This consent prompt appears only if you are trying to access ScreenConnect portal for the first time via Asio. If you have already granted consent in the past, this screen will not be visible.
+
+Verify if the Allow Remote Control Access checkbox is selected for the user.
+
+
+Next, check if the SameSite Cookie Attribute setting from the ScreenConnect portal is set to None. Refer this documentation to learn more about how to access and enable the setting.
+
+
+Verify you have installed the Security Toolkit extension and whitelisted the Asio domain URLs as shown below. You can learn more about how to install the toolkit from this documentation.
+
+
+
+
+Users with limited access must initiate the Support Session from the left-navigation menu in Asio. Navigate to Endpoints > Remote Support to initiate the session. The following minimum permissions (ViewSessionGroup, JoinSession, and EditSession) should be applied to that user's role within the ScreenConnect portal. Refer this documentation to learn more about these ScreenConnect permissions.
+
+
+ScreenConnect Remote Support ScreenConnect Security Guide
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ScreenConnect Installation Status and Error Codes
+Enable or Disable Connection Consent for ScreenConnect
+ScreenConnect Dashboard for RMM
+ScreenConnect 1-Click for RMM
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

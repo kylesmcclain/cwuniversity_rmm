@@ -1,0 +1,127 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   RMM Reporting API   Reporting API REST Resources   Daily Server Utilization
+Daily Server Utilization
+Last updated
+Jul 9, 2025
+Table of contents
+Overview
+Endpoint and URI
+Method
+Request Body
+Response Body
+Parameter Descriptions for Daily Server Utilization
+Source of Data in the Asio Platform
+Overview
+
+Daily summary of the following server utilization metrics: CPU, memory, disk IO, disk space, and page file.
+
+Endpoint and URI
+
+https://itsapi.itsupport247.net/repo...lization/daily
+
+Method
+
+POST
+
+Request Body
+
+{
+
+"Month":4,
+
+"SiteCode":"AGTSolutions",
+
+"Year":2015,
+
+}
+
+Response Body
+
+{
+
+"dailyServerUtilization":[
+
+{
+
+"cPU":[0.78,1.94,0.64,0.71,1.11,0.62,0.48,2.36,2.06,0.43],
+
+"diskIO":[1.66,3.49,1.31,1.75,1.36,1.21,1.54,1.64,3.43,0.89],
+
+"diskUsage":[62.00,62.08,62.09,62.00,62.32,62.35,63.19,63.05,63.11,63.18],
+
+"MachineId": 9223372036854775807,
+
+"memory":[35.95,35.79,38.81,39.04,36.11,38.18,38.95,37.63,40.76,43.72],
+
+"pageFile":[8.81,8.84,8.96,8.95,5.25,4.86,5.38,8.10,10.16,11.00],
+
+"server":"WS2008_1"
+
+},
+
+{
+
+...
+
+},
+
+{
+
+...
+
+}
+
+]
+
+"error": null
+
+}
+
+Parameter Descriptions for Daily Server Utilization
+Parameter	Description
+"Month"	Requested month (numerical)
+"SiteCode"	Unique site code listed in Asio™ Platform (ITSupport Portal)
+"Year"	Requested year
+"cPU"	CPU usage for the resource for each day of the month
+"diskIO"	Disk IO latency for the resource for each day of the month
+"diskUsage"	Disk usage for the resource for each day of the month
+"MachineId"	Unique machine ID in ConnectWise database
+"memory"	Memory usage for the resource for each day of the month
+"pageFile"	PageFile usage for the resource for each day of the month
+"server"	Server name
+Source of Data in the Asio Platform
+
+Reports > Asio > Executive Report > Server Data > Performance By Server
+
+Daily Server Availability Devices
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Agent Details
+Retrieves agent information for the authenticated partner and the specified site.
+Antivirus Summary
+Retrieves counts of machines having antivirus protection in the following states: Updated, Outdated, Not Installed, or Information Unavailable.
+Antivirus Version Summary
+Retrieves currently detected antivirus software and the definition version.
+BCDR Continuity Appliances
+Retrieves a list of Recover Continuity backup appliances provisioned at the given site.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

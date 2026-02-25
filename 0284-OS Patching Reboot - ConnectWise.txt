@@ -1,0 +1,109 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Patching   OS Patching   OS Patching Reboot
+OS Patching Reboot
+Last updated
+Feb 3, 2025
+Table of contents
+Overview
+About OS Patching Reboot
+Pending Reboot Status
+OS Patching Tab
+Dashboard Widget
+Automated Patching Reboots
+Manual Patching Reboots
+Overview
+
+This article provides information about the OS Patching Reboot functionality in the Asio™ platform.
+
+About OS Patching Reboot
+
+Some OS patches require reboot to be fully applied on the endpoint. Rebooting after applying Patching is necessary for several reasons such as:
+
+System File Replacement: Many system files, including those related to the Windows kernel, are in use while the operating system is running. These files cannot be modified or replaced while in use. The reboot ensures that these files can be safely updated during the system's startup sequence, allowing new versions of critical components to be loaded.
+Registry Updates: Patches may change the Windows Registry, which controls many aspects of system behavior. Some changes may only take effect after a reboot, ensuring the system uses the latest settings.
+Restart of Services: Some patches may target system services or processes that can't be restarted individually while the system is running. A reboot ensures that all necessary services and processes restart with the new patches applied.
+Security: Many updates, especially security-related ones, address vulnerabilities in core system components. Without a reboot, the system may remain exposed to the vulnerabilities until the updates take effect.
+Pending Reboot Status
+
+As part of the RMM Agent’s Patch Assessment, it detects and flags endpoints which are pending reboot.
+
+OS Patching Tab
+
+To access the Patching tab, navigate to the Endpoints > Devices > Patching tab.
+
+Dashboard Widget
+
+To view more details of which patches are pending for reboot, you can navigate to the Device Details page > OS Patching tab:
+
+Endpoints may also be flagged as pending reboot based on certain registry keys found on the endpoints.These registry paths are used by Windows to manage and track pending reboots and file operations. Here’s a brief overview of each:
+
+SOFTWARE\Microsoft\Windows\CurrentVersion\Component Based Servicing\RebootPending 
+
+or
+
+SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Component Based Servicing\RebootPending:
+This key is used by the Component-Based Servicing (CBS) to indicate that a reboot is pending due to updates or component installations.
+SYSTEM\CurrentControlSet\Control\Session Manager\PendingFileRenameOperations:
+This key lists files that need to be renamed or deleted after a reboot. It is used when files are in use and cannot be modified immediately.
+
+These keys help Windows manage system stability and ensure that updates and file operations are completed correctly after a reboot.
+
+Automated Patching Reboots
+
+Endpoints may be configured to reboot automatically after patching by setting up the Patch Policy.
+
+To know more about how to set up the OS Patch Policies, review the OS Patching Policies documentation.
+
+Manual Patching Reboots
+
+Individual endpoints can be rebooted using on-demand deployment option from the Device details page by following these steps:
+
+Navigate to the Device Details > OS Patching tab.
+Select the device which you want to reboot and click on the Quick Patch Actions drop-down in the grid.
+Select Reboot Machine.
+
+
+The following message is displayed:
+
+
+
+Endpoints can also be rebooted by using the Task - Reboot machine option.
+
+Navigate to the Endpoints > Devices page.
+From the Quick Access Panel, click on the Filters icon.
+Expand the Conditions tab and select the Pending Reboot checkbox.
+
+
+You can see the filtered list of devices which are pending for reboot.
+Select the device which you want to reboot and click on the Run drop-down menu in the Toolbar.
+Search for the Reboot machine task and select it. The selected devices will be rebooted.
+
+
+OS Patching Policies OS Upgrades (Windows and Mac)
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+OS Patching Compliance
+OS Patching Getting Started Settings
+OS Patch Approvals
+OS Patch Exclusions
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

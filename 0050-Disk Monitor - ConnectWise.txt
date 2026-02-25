@@ -1,0 +1,126 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Alerts   Custom Monitors   Disk Monitor
+Disk Monitor
+Last updated
+Jul 22, 2025
+Table of contents
+Overview
+How to create a Disk Monitor
+List of Monitor Variables
+Overview
+
+Disk Monitors allow you to trigger an alert and create a ticket when the Disk Utilization on the endpoint is less than a certain threshold for a specified number of minutes. Disk Monitors can be applied on Windows, Linux and macOS endpoints
+
+How to create a Disk Monitor
+
+Navigate to  Endpoints > Alerts > Monitors.
+
+Click Add Monitor.
+
+Provide a Name for the new monitor. Optionally you can provide a Description of your new monitor.
+
+Select the Type as Disk from the drop-down.
+
+Select the Family and Severity.
+
+To enable the Mapper functionality, you need to turn on the toggle. To learn more about the Mapper functionality review this documentation.
+
+Under the Condition section:
+Disk(s): This allows you to select the Disk type that you want to monitor. The following options are available:
+OS Disk: This is the drive on which the Operating system is installed (Applies only for Windows endpoints).
+Define Disk(s): This is the letter of the other drive that should be added to monitoring (NON-OS disk for windows and drive names for Linux and MAC). You can add multiple drives as per your needs.
+VM Datastore: This is the VMWare Datastore name that should be added to the monitoring (applies only for VMware endpoints.)
+
+Note: To add multiple disks, add the drive letter with a colon and press Enter.
+
+Disk Utilization: Define the amount of available space that will trigger an alert. This is a Less-than value.
+Unit: Choose from the following units you want your monitor to use: 
+%: Allows you to define the free space value in percentage on the endpoint.
+MB: Allows you to define the free space value in MB on the endpoint.
+GB: Allows you to define the free space value in GB on the endpoint.
+Duration: Define the duration for which the disk utilization value should be evaluated.
+You can also select a custom Automation Task to be executed when the condition is met on the endpoint
+Ticket Update - Snooze: Duration for which the ticket updates should be ignored even when the issue persists/resurfaces on the drive.
+
+Note: 
+
+Ticket resolution threshold will override the Snooze and the ticket will be updated as NOC Completed. If the issue persists/resurfaces, a new ticket will be generated for the issue.
+If you have selected the Generate ticket with delay option for Disk Monitor, then it overrides the Ticket update - Snooze for configuration, and the ticket gets updated with ticket notes based on updates.   
+System will reflect only selective Automation tasks that do not need parameters. Refer these OOTB tasks which needs parameters. All Custom Scripts created will be available for selection.
+
+Under the Ticket Resolution section you can define if the ticket should be updated as Resolved once the issue no longer persists on an endpoint using the following criteria:
+
+Disk Utilization: Define the amount of available space that will resolve the ticket. This is a More-than value.
+Unit: Choose from the following units you want your monitor to use: 
+%: Allows you to define the free space value in percentage on the endpoint.
+MB: Allows you to define the free space value in MB on the endpoint.
+GB: Allows you to define the free space value in GB on the endpoint.
+Duration: Define the duration for which the disk utilization value should be evaluated.
+
+Note: We strongly recommend adding some buffer in the thresholds defined for the Ticket Condition and Resolution. Keeping the same value in both would result in multiple tickets getting created and closed in short duration.
+
+Under the Resources section, you can select the target endpoints on which the alerts should be triggered. You can select specific machines, Sites, or a Dynamic or a Static group.
+
+Click Save to create and apply the monitor to the targets.
+
+Note: Monitors will be triggered based on the configuration set/defined.
+
+List of Monitor Variables
+
+Here is a list of variables which you can use as per your requirement when creating your own customized ticket template:
+
+Monitor Type	Variable Name	Supported OS Type	Sample Data/Values	Variable Definition
+Generic
+ 	ObservedDate	
+
+Windows, MAC, Linux
+
+	
+
+"2020-09-02T15:35:42.969926103Z"
+
+	Time stamp when the issue was observed
+ 	MonitorDesc	Windows, MAC, Linux	Add local palmtech account and add it to the local administrators group	Description added on the portal while creating a monitor
+ 	MonitorName	Windows, MAC, Linux	Local PalmTech Account with Local Admin	Name of the monitor
+ 	MonitorSummary	Windows, MAC, Linux	(Run PowerShell script every 1 minute(s) AND Run PowerShell script every 1 minute(s))	Summary information for the monitor
+Disk
+ 	UsedSpace	Windows, MAC & Linux	1200	Current Used space in MB
+ 	AvailableSpace	Windows, MAC & Linux	200	Current available space in MB
+ 	DiskName	Windows, MAC & Linux	"C", "sda1"	Disk name to be monitored
+Device Availability Monitor Event Monitor
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Service Monitor
+Process Monitor
+Event Monitor
+CPU Monitor
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

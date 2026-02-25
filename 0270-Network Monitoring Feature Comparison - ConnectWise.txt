@@ -1,0 +1,88 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Network Monitoring and Management   Network Monitoring Feature Comparison
+Network Monitoring Feature Comparison
+Last updated
+Apr 3, 2025
+Table of contents
+Overview
+Feature Comparison Table
+Overview
+
+This page shows the different features available to the different levels of the ConnectWise Network Monitoring and Management™ Solution.
+
+Feature Comparison Table
+
+Feature
+
+
+ 	
+
+Basic Network Monitoring
+(Included in RMM Pro and Premium)
+
+	
+
+Advanced Network Monitoring
+(Add-on to RMM Pro and Premium)
+
+	
+
+Premier Network Monitoring
+(Add-on to RMM Pro and Premium)
+
+
+Automatic site creation	YES	YES	YES
+Automatic site mapping	YES	YES	YES
+Streamlined probe management	YES	YES	YES
+Automatic removal of network probe when agent uninstalled	YES	YES	YES
+Automated, Live Topology Mapping	YES	YES	YES
+Inventory (Networks, Subnets, and Interfaces)	YES	YES	YES
+Configuration Backup (SSH Required) Current Configuration Only	Current Configuration Only	YES	YES
+Configuration Backup Comparison and History	 	YES	YES
+Hypervisor Components	 	YES	YES
+Up/Down Monitoring and Alerting	YES	YES	YES
+New Device Discovered Alert	YES	YES	YES
+Out-of-the Box Alerts (SNMP Required)	 	YES	YES
+Remote Management and Audit Logs	YES	YES	YES
+Real-time Statistics (Bandwidth, Utilization, and Packets)	 	YES	YES
+Northstar feature (Maps the path of a device to the internet)	 	YES	YES
+VMWare Components	 	YES	YES
+Custom SNMP Pollers (Data Points in Auvik UI)	 	YES	YES
+Network Flow Monitoring & Analytics (S-Flow, J-Flow, NetFlow)	 	 	YES
+Application Visibility Powered by Machine Learning	 	 	YES
+GEO IP Tracking (Source and Destination Addresses)	 	 	YES
+Forensic Traffic Data	 	 	YES
+Centralized Syslog Collection	 	 	YES
+Syslog search, Filter & Export Capabilities	 	 	YES
+Custom Alerts	 	Roadmap item	Roadmap item
+
+ 
+
+Network Monitoring FAQ Premier Network Monitoring
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Network Monitoring FAQ
+Network Devices
+Network Monitoring Alerting
+Network Monitoring Getting Started
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

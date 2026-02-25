@@ -1,0 +1,238 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Patching   Third-Party Patching   Improved Third-Party Patching
+Improved Third-Party Patching
+Last updated
+Feb 10, 2026
+Table of contents
+Overview
+Intro to Third-Party Patching Video
+Assessment
+Improved Third-Party Patching Policy
+Create an Improved Third-Party Patching Policy
+Create a New Package with your Policy
+Approvals
+Approve the Applications you want to Patch
+Review the Approved Third-Party Patching Applications
+Disapprove an Application for Third-Party Patching
+On-Demand Installation
+Third-Party Patch Deployment Report
+FAQ
+What are the differences between Third-Party Patching and Improved Third-Party Patching?
+What solution is best for endpoints that are not Windows 10 or Windows 11?
+How do I find out which apps are covered?
+Which Third-Party patching issues can the ConnectWise support team resolve?
+What Permissions are needed for Third-Party Patching?
+Overview
+
+We've enhanced our third-party patching to support over 7000 applications. These patching features are utilized by creating a new Improved Third-Party Patching Policy, adding it to a package, and then assigning it to sites. After this policy is created, you can customize which applications you want to patch and view reporting for third-party patching. 
+
+Note: Users do not need to be logged on to the endpoint to push third-party patching updates.
+
+Important: This feature is only available for Windows 10 and Windows 11 endpoints at this time.
+
+Intro to Third-Party Patching Video
+
+Assessment
+
+The agent runs an assessment to inventory all installed, supported applications and their versions on an endpoint. For Third-Party Patching to function correctly and maintain up-to-date application versions, this assessment data must be recent. Assessments are run on endpoints as follows:
+
+Automatically every four hours.
+
+Automatically after the endpoint restarts.
+
+With Third-Party Patching, assessments run in the context of the logged-on user. Different logged-on users may have unique applications and versions installed. In some cases, the assessment data collected may be different from the Asset inventory collected by the RMM agent.
+
+Improved Third-Party Patching Policy
+
+To utilize Improved Third-Party patching on your sites, you must create a policy, add it to a package, and then assign it to your sites. 
+
+Note: Review the Policies and Packages documentation for more information.
+
+Create an Improved Third-Party Patching Policy
+
+Navigate to Endpoints > Policies and click Add Policy.
+
+Make sure that Devices is chosen for the Category.
+
+In the Type drop-down, choose Third-Party Patching
+
+Name the new policy.
+
+Switch Improved Third-Party Patching to On.
+
+For the Action Setting, select one of two options:
+
+Update All - This will update all of the ConnectWise-supported applications on your endpoints 
+
+Update Only Approved - This will only update the applications that you have approved in the Approvals section.
+
+Select the Schedule for your patching.
+Click Save.
+
+Create a New Package with your Policy
+
+Once your policy is created, you must add it to a package or create a new package to add it to. Once that package is created, you can apply it to sites where you want the Policy to be active.
+
+Navigate to Endpoints > Packages and click Add Package.
+
+Add the new policy to your package.
+
+Click Save.
+
+From the Packages page, click on the Sites tab
+
+Select all of the sites you want to assign your package to.
+
+Note: Review the Policies and Packages documentation for more information.
+
+Approvals
+
+Once your policy is active, you can customize which applications are updated by the Improved Third-Party Patching through the Third-Party Patching tab on the approvals page.
+
+Approve the Applications you want to Patch
+Navigate to Endpoints > Patches > Approvals.
+Click the Third-Party Patching Tab.
+Search and filter to find the third-party applications you want to approve for patching.
+Click the checkboxes for all applications you want to approve.
+Click Approve.
+
+A confirmation window will appear. Click the checkbox and click Confirm Approval.
+
+Review the Approved Third-Party Patching Applications
+
+Once you've approved applications, you can review them all on the Third-Party Patching Tab of the approvals page.
+
+Navigate to Endpoints > Patches > Approvals.
+Click the Third-party Patching tab.
+Sort the columns by Reviewed By, Reviewed Date, or Result.
+
+Reviewed By - Shows the user who approved or disapproved the patch
+Reviewed Date - Shows the date on which the patch was reviewed
+Result - Shows the outcome of the review
+You can also filter and search for the applications that you want to review.
+Disapprove an Application for Third-Party Patching
+
+Instead of blocking patches you don't want to update, you remove them from the approved list.
+
+Navigate to Endpoints > Patches > Approvals.
+Click the Third-Party Patching Tab.
+Search and filter to find the third-party applications you want to disapprove.
+Click the checkboxes for all applications you want to disapprove.
+Click Disapprove.
+
+A confirmation window will appear. Click the checkbox and click Confirm Disapproval.
+
+On-Demand Installation
+
+On-Demand installation is available from the Patch Approvals page to deploy a specific application on endpoints.
+
+Steps for on-demand installation of applications:
+
+Navigate to Endpoints > Patches > Approvals > Third Party Patching > All Applications.
+
+Select the application you want to install.
+Click Deploy.
+
+Select the Install Application option and click Next.
+
+Select Install Now or Schedule to schedule installation later. Click Next.
+
+If you choose Schedule, you can select local machine time or the required time zone when setting your deployment date and time. Click Next.
+
+Select the Devices or Sites.
+
+
+Note: Installation attempts deployment only on Windows Endpoints. Any other operating systems will fail automatically.
+
+Click Next. A window opens and asks you to confirm the deployment.
+Click Confirm for the selected deployments.
+
+To track the deployment status of the action, you can click the hyperlink on the acknowledgement screen or navigate to Automation > Scheduled Tasks to review the ‘TPP On demand deployment’ task(s) created.
+
+
+This process provides flexibility to deploy applications immediately or at a scheduled time while maintaining visibility into deployment progress and status.
+
+Third-Party Patch Deployment Report
+
+In addition to the improved third-party patching policy, we have a report showing the results of your third-party patching. 
+
+To generate the report:
+
+Navigate to Reports > Asio > Detailed Reports > Patches > Third-Party Patch Deployment Report.
+Select Company Name from the Company Name drop-down.
+Select Site Name from the Site Name drop-down.
+Click Show Results.
+
+
+
+The details that the report covers are:
+
+Name
+Friendly Name
+Device Type
+Company Name
+Company Friendly Name
+Site Name
+Site Friendly Name
+OS Type
+OS
+OS Version
+Application Name
+Application Version
+Status
+Execution Date
+Failure Reason
+Device Time Zone
+
+All of this information can be filtered or searched by using the tools at the top right of the report. You can also download the report as CSV.
+
+FAQ
+What are the differences between Third-Party Patching and Improved Third-Party Patching?
+Third-party patching is our default solution. Improved Third-party patching is our policy-based solution, providing access to over 7,000 applications for patching. For more information, review the Improved Third-Party Patching article.
+
+Note: This is only available for Windows 10 and Windows 11 endpoints.
+
+What solution is best for endpoints that are not Windows 10 or Windows 11?
+For any other machines, the original third-party patching solution can still be used. For more information, refer to the Third-Party Patching article.
+How do I find out which apps are covered?
+
+For Improved Third-Party Patching:
+
+Navigate to Endpoints > Patches > Approvals. Click the Third-Party Patching Tab. Here, you will find all of the apps that you can approve for your endpoints.
+Which Third-Party patching issues can the ConnectWise support team resolve?
+If you need support, the NOC can assist you in fixing the issue on a best-effort basis. Please leverage our ConnectWise Project Assistance Paid Service (formerly Tech Advantage) by reaching out to our Desktop Project team at projectassistance@connectwise.com.  If you experience issues with supported applications and our support team cannot assist you, please contact the application's provider for further assistance.
+What Permissions are needed for Third-Party Patching?
+
+Navigate to User & Application Settings > Application Roles > Asio Platform. The Third-Party Patching permissions are under Patch Approvals.
+
+ 
+
+Third-Party Patching Supported Third-Party Applications
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Supported Third-Party Applications
+OS Patching
+OS patching is a critical feature that helps to keep your managed endpoints up to date on the many security and non-security patches released every mo...
+Patch Testing
+Windows 11 Patch Assessment issue
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

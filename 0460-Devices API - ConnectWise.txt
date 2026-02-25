@@ -1,0 +1,50 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   RMM Tools   APIs   Devices API
+Devices API
+Last updated
+Nov 4, 2025
+Table of contents
+Overview
+Overview
+
+The Devices APIs retrieve different types of information related to a specific machine or machines belonging to a specific partner or site.
+
+Note: To access OpenAPI, follow the Authentication and Authorization process outlined here.
+
+The following APIs fall under this category:
+
+Topic hierarchy
+Agent Last Seen API
+Device Summary API – Retrieve All Endpoint Devices
+Exposed API for Generate Token
+Offboard/Uninstall Agent via API
+Retrieve Details of an Endpoint via API
+Retrieve Last Logged on User Information on an Endpoint via API
+Retrieve All Device Groups API Agent Last Seen API
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Retrieve Details of an Endpoint via API
+Retrieve Last Logged on User Information on an Endpoint via API
+Offboard/Uninstall Agent via API
+Exposed API for Generate Token
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

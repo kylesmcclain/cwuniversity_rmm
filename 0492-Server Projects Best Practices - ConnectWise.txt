@@ -1,0 +1,195 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Tech Advantage   Server Projects Best Practices
+Server Projects Best Practices
+Last updated
+Oct 1, 2024
+Table of contents
+Overview
+Server Project Prerequisites
+Tips and Best Practices for Ensuring a Successful Server Project
+Tip 1: Select the Best Fitting Project Type
+Project Types Available in the ITSupport Portal
+Tip 2: Order Your Project Well in Advance of the Date You Want the Work to Be Performed
+Server Project review and scheduling guidelines:
+Tip 3: Review the Project Statement of Work with Our Server Project Experts
+Tip 4: Ensure That All Server and LOM Credentials Are Up to Date in the Secure Information Store
+Tip 5: Provide Off-hours and Backup Contact Details
+Tip 6: Set Necessary Client Expectations Before Your Project Begins
+Tip 7: Monitor Ticket Updates While Your Project is In Progress
+TIP 8: Verify That the Project is Complete Before Client Business Hours Resume
+Additional Notes and Guidelines
+Upgrade a Site to Elite Servers to Take Advantage of the Lowest Project Cost
+Price Quotes for Custom Server Projects
+Selecting the Appropriate Number of Users/Devices for your Project
+Client Involvement in Your Server Project
+Concerns or Escalation Management
+Server Project Closure and Billing
+How to Mark a Server Project as Successfully Completed
+Project Billing
+Canceling or Rejecting a Project
+Contacting the Server Projects Team
+Overview
+
+Tips and best practices that help ensure successful completion of your projects by ConnectWise’s Server Projects Team.
+
+Server Project Prerequisites
+Any Tech Advantage Server Project site must contain at least one server with an RMM Server Agent installed.
+After installing the RMM Server Agent on a server, allow a minimum of four hours before ordering a Server Project on the ITSupport Portal.
+Tips and Best Practices for Ensuring a Successful Server Project
+Tip 1: Select the Best Fitting Project Type
+
+When you order your Tech Advantage Server Project, selecting the correct project type is important; it helps our Server Projects Team coordinate your project with the technicians whose expertise is the best match for the work you require. It also ensures you will be accurately invoiced.
+
+The most commonly-requested projects are available in the Project Type menu on the ITSupport Portal. If you do not see a project type that matches your need (for example: installing Windows on a physical server, file share/data migration, or Remote Desktop Services deployment), a Custom Server Project is typically the best bet. Contact our Server Projects Team (at ServerProjects@connectwise.com), and one of our Server Projects Experts will gladly review your project requirements and recommend a project type.
+
+Project Types Available in the ITSupport Portal
+Active Directory Migration
+Active Directory Setup
+BlackBerry Enterprise Server for Microsoft Exchange Migration
+BlackBerry Enterprise Server for Microsoft Exchange Setup
+Custom Server Project
+Exchange Server Migration
+Exchange Server Setup
+Office 365 Migration
+Physical to Virtual (P2V) Machine Conversion using VMware vCenter Converter
+Server Service Pack Installation
+Small Business Server Migration
+Small Business Server Setup
+VMware vCenter Server Setup
+Windows Operating System Installation or Hypervisor
+Windows Server Hyper-V Setup
+Windows Server Hyper-V with SCVMM Setup
+Tip 2: Order Your Project Well in Advance of the Date You Want the Work to Be Performed
+
+Ordering your Server Project well in advance is a recommended best practice. Allowing proper lead time helps ensure that:
+
+The Server Projects Team has sufficient time to review the project environment and prepare the Statement of Work (SOW).
+You have sufficient time to review the SOW internally then review it with the Server Projects Team and/or your client.
+The appropriate Server Projects Team experts (those server experts whose areas of expertise are the best fit for your project) can be scheduled for your project.
+Server Project review and scheduling guidelines:
+Before we can provide you with the detailed SOW for any project (provided the cost of the project has been approved), the Server Projects Team typically requires 3 to 4 days to review the project environment and related servers.
+Projects that require server downtime or multiple reboots during one or more phases of execution are scheduled for off-hours or during the weekend.
+Projects that involve new server implementation, such as Active Directory Setup, Exchange Server Setup, and Remote Desktop Services Deployment, do not typically impact a running production environment, and can generally be scheduled during normal business hours.
+Weekend projects are typically planned out at least a week in advance. Scheduling of server project experts for weekend projects is frozen on Wednesday.
+Submit your weekend project execution request no later than the end of Wednesday: If you have already reviewed and approved the project cost and SOW and you would like your project to be executed on a weekend, submitting your request no later than Wednesday of the same week helps minimize potential scheduling conflicts.
+Tip 3: Review the Project Statement of Work with Our Server Project Experts
+
+The Statement of Work (SOW) document our Server Projects Team creates is a comprehensive overview of your project, including step-by-step details of how the project work will be performed during the execution phase. Reviewing the SOW internally and with our Server Projects Team before your project begins helps ensure that:
+
+The work outlined in the SOW satisfies your project requirements.
+The SOW is updated to include any necessary corrections or clarifications.
+Accurate client expectations are set.
+Any specific client instructions necessary to execute the project can be relayed to you and communicated to the client.
+Tip 4: Ensure That All Server and LOM Credentials Are Up to Date in the Secure Information Store
+
+Because any server in the client project environment may need to be accessed during the project execution phase (or may need to be powered on in the event of a power failure at the site), it is crucial to verify that all server and Lights Out Management credentials are accurate and up to date in the ITSupport Portal's Secure Information Store. Outdated credentials could lead to unnecessary delays in completing your project.
+
+To add or update credentials, navigate to RMM Setup > Sites Using RMM and select the site. Then, click the Passwords tab and use the arrows to expand the Server Passwords and Lights Out Management Passwords sections.
+
+Tip 5: Provide Off-hours and Backup Contact Details
+
+As a general rule, we do not contact Partners outside normal business hours. In the course of executing your project, however, it may become necessary for one of our Server Project Experts to contact you during business off-hours if an emergency situation arises. To ensure that an appropriate contact can be reached in the event of an emergency, provide the following information before your project is scheduled to be executed:
+
+A mobile phone number for the primary partner contact.
+A mobile phone number for a backup partner contact (if the primary contact cannot be reached).
+Tip 6: Set Necessary Client Expectations Before Your Project Begins
+
+After reviewing and discussing the Statement of Work with our Server Projects Team, you must set project expectations with your client in advance of the scheduled project execution window, including:
+
+Communicating with your client regarding any expected downtime that may occur during the project execution phase.
+Ensuring your client has completed any action items necessary to execute the project. For example, providing a list of workstations mapped with user names and credentials and ensuring that client users leave machines powered on during the scheduled project execution window.
+Tip 7: Monitor Ticket Updates While Your Project is In Progress
+
+While your project is in progress, our Server Project Experts will update the project ticket with the current work status. Typically, because many partner's ticketing systems are not configured to generate email alerts when a ticket is updated, a Server Projects Expert will also reach out to you via email to keep you up to date on the current status of the project.
+
+While your project is in progress, you may also email the Server Projects Team (at ServerProjects@connectwise.com) to request a project status update. Typically, the Advance Technical Services Team (ATS@connectwise.com) is copied on email replies you receive.
+
+TIP 8: Verify That the Project is Complete Before Client Business Hours Resume
+
+The project Statement of Work review/approval process is designed to ensure the smoothest possible execution of your Server Project, but there is always the possibility that unexpected issues will arise. We strongly recommend that you actively monitor email/ticket updates from the Server Projects Team while your project is in progress, particularly if your project is being executed on a weekend. Verifying that the project has been completed to your satisfaction before client business hours resume, reduces the potential for unintended downtime at the client site.
+
+Additional Notes and Guidelines
+Upgrade a Site to Elite Servers to Take Advantage of the Lowest Project Cost
+
+Server Project pricing is discounted for sites on the Elite Servers plan (as compared to project pricing for the Essential Servers plan). Upgrading a site to Elite before you order a Server Project allows you to take advantage of the lowest cost for your project.
+
+Price Quotes for Custom Server Projects
+
+Though some Custom Server Projects have a fixed price (for example, Printer Migration and Remote Desktop Services (RDS) Deployment projects) or a standard hourly rate (Data/File Share Migration, Exchange Server Uninstallation), other custom projects may require a review of the project environment or server before a price quote can be provided. Once a quote has been provided, you need to approve the quote before the project Statement of Work can be provided.
+
+Selecting the Appropriate Number of Users/Devices for your Project
+
+As project cost is based on user and/or device quantity, it is important that you select the correct quantity/slab while submitting the project. During the project review phase, the Server Projects Team may advise you to adjust the number of users and/or devices selected when you ordered the project, based on the specific Project Type and other environment variables. This adjustment may not be applicable to all Project Types.
+
+Client Involvement in Your Server Project
+
+As a general rule and to ensure that sensitive project information (such as project hours and project cost) is always kept confidential, the Server Projects Team will not communicate directly with client site personnel to discuss project technical details. Similarly, when communicating with the Server Projects Team via email, we recommend you refrain from copying client site employees on any project-related correspondence. A recommended alternative is to communicate directly with client personnel, as needed, on a separate email thread.
+
+In certain situations (for example, if you feel strongly that a conference call involving you, the client, and one of our Server Project Experts is necessary to ensure a successful project), an exception can be made. In these situations, you should indicate (before the call occurs) whether our subject matter expert should represent a ConnectWise employee or an employee of your company.
+
+Concerns or Escalation Management
+
+To raise a concern or request escalation of an issue, contact the Server Projects Team at ServerProjects@connectwise.com. ServerProjects@connectwise.com is a distribution list that is monitored 24/7/365 by the NOC Team, Technical Leaders, and their respective management personnel, ensuring you will always receive timely responses to any project-related questions or escalation requests.
+
+Server Project Closure and Billing
+
+When your Server Project has been completed as per the previously agreed-upon Statement of Work, the following steps occur:
+
+The project ticket status changes to NOC Completed: One of our Server Projects Experts marks the Server Project ticket as NOC Completed.
+You have 15 days to review the project: During this time period, you can confirm the server project as Completed in the Tech Advantage section of the ITSupport Portal(which will trigger billing for the project), or raise any post-execution issues that you feel need to be addressed.
+After 15 days, the Project ticket status automatically changes to Closed, and billing is triggered.
+
+Important: A Server Project ticket can only be closed (designated as Successfully Completed) from the Tech Advantage section of the ITSupport Portal. If you update the project ticket status in your PSA system or via the Tickets tab on the ITSupport Portal, the status update is not successfully applied and the project will not be marked as Successfully Completed.
+
+How to Mark a Server Project as Successfully Completed
+Project Billing
+You confirm the project ticket status as Successfully Completed from the Tech Advantage section of the ITSupport Portal.
+15 days elapse after the project ticket status has been updated by the Server Projects Team to NOC Completed. After 15 days, the project ticket status will auto-update to Closed, indicating that the project has been successfully completed.
+
+Once billing is triggered, your Server Project charge will appear on the monthly invoice that corresponds to the date the project ticket status was updated to Closed. For example, if the project ticket status was updated to Closed on May 12, billing for your Server Project would appear on your May invoice.
+
+Canceling or Rejecting a Project
+
+If you need to cancel a project because it was incorrectly submitted or because our Server Projects Team has identified it as the incorrect project type based on your requirements, follow these steps:
+
+Navigate to Settings > Account Administration > Products & Services and select Tech Advantage in the Asio platform (ITSupport Portal).
+Click the Server Projects tab on the Tech Advantage dashboard.
+Click the project count number for the corresponding project row in the New Project column.
+Select the project, provide a reason for the rejection, and click Reject.
+
+If for some reason you are unable to reject the project, you may request that the Server Projects team reject the project on your behalf.
+
+Note: Because of the effort required to review your project environment and prepare the project Statement of Work, we strongly encourage you to order a server project only when you are certain that the project work will be performed.
+
+Contacting the Server Projects Team
+
+For Server Project questions (to inquire about a new project, about ordering a Server Project, or to request information about a project already ordered), contact the Server Projects Team at ServerProjects@connectwise.com.
+
+Server Projects Tech Advantage Linux Projects
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Project List
+Desktop Projects
+Desktop Projects: Tips and Best Practices
+Server Projects
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

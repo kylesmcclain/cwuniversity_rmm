@@ -1,0 +1,234 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Automation   Tasks
+Tasks
+Last updated
+Dec 31, 2025
+Table of contents
+Overview
+Tasks Page
+Field Descriptions
+Actions
+Add Button
+Script Editor
+Data Grid
+Pods
+Peek Panel
+Summary Card
+Information
+Scheduling
+Recent Tasks
+Permission Documentation
+API Documentation
+Tasks Documentation
+Overview
+
+The tasks feature offers you a comprehensive, customizable, and intuitive automation tool to reactively and proactively address issues on managed devices.
+
+Tasks constitute any action committed on a resource by a partner, technician, or portal user with appropriate access. Tasks can be executed on-demand, on a recurring schedule, or at a later date. Passwords and other required information must be provided at least once when using a pre-defined task template but then can be saved as a custom task.
+
+You can also run tasks in a specific sequence, adding if/then/else logic to streamline workflows, arrive at desired outcomes, and proactively and easily address issues.
+
+Tasks Page
+
+The Tasks page is located under Automation > Tasks in the left navigation menu of the ConnectWise Asio™ platform.
+
+Field Descriptions
+Name	Displays the name of the task. Click on the task to edit.
+Task Type	Displays whether the task is an action, script, or sequence.
+Category	Displays the category of the task. This is set by either you or RMM.
+
+ 
+
+Actions
+	Allows you to duplicate tasks.
+	Allows you to schedule tasks.
+	Allows you to edit tasks.
+
+Add Button
+
+You can click the Add button on the top-right of the Tasks page to run a script on a selected task.
+
+Bash Script	Create and set parameters for a Bash script.
+Batch Script	Create and set parameters for a Batch script.
+PowerShell Script	Create and set parameters for a PowerShell script.
+Script Editor	Create and edit a new script.
+
+Script Editor
+
+The Script Editor has been unified into a single tab to optimize the user experience and simplify the overall process. To learn more about creating tasks using the script editor, review the Script Editor documentation.
+
+The Save and Run option is now available for scripts created in the script editor. Clicking the Save and Run button not only saves the script but also redirects you to the Scheduled Tasks page to help you schedule the script.
+
+Data Grid
+
+The data grid helps you display, sort, filter, and manipulate large datasets with ease. Customize your view by rearranging and resizing columns to suit your needs.
+
+Data Grid Option	Description
+Search	Use the search bar to look for a specific item in the list.
+Show Filters	Filter the list by the fields in the grid.
+Manage Columns	Choose which columns of the grid you want to display.
+Manage View	Choose between the different views of the grid.
+Download as CSV	Download your list of datasets as a CSV file
+Pods
+
+We have introduced a graphic representation of the columns from the grid in the form of pods as shown below:
+
+You can click on the legend to disable/enable the respective category in the pie-chart/pod.
+
+Clicking on the Edit View button allows you to edit the page's layout, add more pods, edit existing ones, or even delete the pods.
+
+Clicking on the chart context menu gives you options to download the PNG/JPEG image of the pods as shown below:
+
+Peek Panel
+
+When you open any function in the Script Editor, the flyout opens in a peek panel layout as shown here:
+
+You can choose to display the peek panel in Central, Side, Bottom, or Full Page layout configuration.
+
+Summary Card
+
+Selecting a task opens the Summary card is located on the right of the screen. The Summary card is broken out into two sections, Information and Scheduling.
+
+Information
+
+The Information tab provides more information on a task including a description of the task, schedule details, the user that created it, and when it was initially created. On the top right side, you can choose to duplicate or schedule the task. Scripts labeled as an "Action" are provided to you by ConnectWise out-of-the-box.
+
+Clicking on a task and and selecting Script Preview allows you to see the actual code used as part of the task. Use the Copy button on the top-right next to the scroll bar to copy the code and modify it to your needs. Scripts may be specific to more than one OS type. For example, macOS, Linux, and Windows. Refer to the second screenshot for more.
+
+Scheduling
+
+The Scheduling tab displays the script at a quick glance and the parameters that the task is using.
+
+Recent Tasks
+
+The Recent Tasks page displays information for all different types of latest tasks. The Recent Tasks menu can be seen on the Devices page.
+
+The Tasks & Sequences is a filter applied for schedules (Last 24 hours/Last 48 hours/Custom). Under Results, the names of all tasks according to the applied filter are displayed. Beneath the name of the task, the time of creation and task status on devices are displayed.
+Besides the name of the task, a tag is added which gives additional information such as schedule type (nextagentcheckin, recurrent, onetime).
+A new status Waiting is added in the task description which refers to the task that is waiting for an endpoint to be online.
+
+Note: Waiting status is only applicable for nextagentcheckin task.
+
+Permission Documentation
+
+Permission for Asio > Automation > Tasks and Scheduled Tasks. Please refer to Tasks for more information.
+
+Application Role >
+
+	
+
+Super Admin
+
+	
+
+Manager
+
+	
+
+Technician
+
+	
+
+Office Staff
+
+	
+
+Sales
+
+	
+
+Client Site Manager
+
+
+AI Assist	Always ON	ON	ON	OFF	OFF	ON 
+Limited Access	Always OFF	OFF	OFF	OFF	OFF	ON
+
+
+Tasks
+
+
+View	Always ON	ON	ON	OFF	OFF	OFF
+Create	Always ON	ON	ON	OFF	OFF	OFF
+Update	Always ON	ON	ON	OFF	OFF	OFF
+Delete	Always ON	ON	ON	OFF	OFF	OFF
+
+
+Scheduled Task
+
+
+View	Always ON	ON	ON	OFF	OFF	OFF
+Create	Always ON	ON	ON	OFF	OFF	OFF
+Update	Always ON	ON	ON	OFF	OFF	OFF
+Delete	Always ON	ON	ON	OFF	OFF	OFF
+API Documentation
+
+For more information on Automation APIs, review these API docs:
+
+Retrieve Custom Templates API
+Retrieve Fusion Scripts API
+Retrieve Global Templates API
+Tasks Documentation
+
+Click the title of an article below to learn more about tasks in ConnectWise RMM.
+
+All articles
+Featured articles
+AI Assisted Scripting with the Script Editor
+Available Tasks
+Create and Schedule Script Type Tasks
+Create and schedule a script task.
+Create Suspension for Monitors and Alerts in Script Editor
+Create Ticket Using the Script Editor
+Creating Tasks Using the Script Editor
+How to use Script Editor to create, customize, or edit scripts using parameters and system variables. The script editor supports native scripting languages such as PowerShell and Bash.
+FAQ and Error Reporting
+Predefined System Variables
+RMM Task Reporting
+Running RMM Tasks
+How to run a task, create a custom script, or configure a task for the next agent check-in.
+Run Scripts as Current Logged In User
+Script Functions
+Script Sharing via User Roles
+Using a Custom Field in a PowerShell Script
+
+ 
+
+Details for Scheduled Task Triggers AI Assisted Scripting with the Script Editor
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Create and Schedule Script Type Tasks
+Create and schedule a script task.
+Running RMM Tasks
+How to run a task, create a custom script, or configure a task for the next agent check-in.
+Available Tasks
+RMM Task Reporting
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

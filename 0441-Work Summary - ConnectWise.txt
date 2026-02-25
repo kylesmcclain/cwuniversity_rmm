@@ -1,0 +1,128 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   RMM Reporting API   Reporting API REST Resources   Work Summary
+Work Summary
+Last updated
+Jul 8, 2025
+Table of contents
+Overview
+Endpoint and URI
+Method
+Request Body
+Response Body
+Parameter Descriptions for Work Summary
+Source of Data in Asio Platform
+Overview
+
+Returns a summary of work performed on all of your desktops and servers.
+
+Endpoint and URI
+
+https://itsapi.itsupport247.net/repo...on/worksummary
+
+Method
+
+POST
+
+Request Body
+
+{
+
+"Month":4,
+
+"SiteCode":"AGTSolutions",
+
+"Year":2015,
+
+}
+
+Response Body
+
+{
+
+"error": null,
+
+"workSummary": [
+
+{
+
+"date": "2016-01-01",
+
+"startDate": "2016-01-01",
+
+"endDate": "2016-01-02",
+
+"timeBlock": "30",
+
+"onSite": "n",
+
+"description": "Unable to connect to server.",
+
+"resolution": "Rebooted server."
+
+},
+
+{
+
+...
+
+},
+
+{
+
+...
+
+}
+
+]
+
+}
+
+Parameter Descriptions for Work Summary
+Parameter	Description
+"Month"	Requested month (numerical)
+"SiteCode"	Unique site code listed in Asio™ Platform (ITSupport Portal)
+"Year"	Requested year
+"ResourceType"	Desktop or server
+"date"	Ticket date
+"startDate"	Date when work on the ticket began
+"endDate"	Date when work on the ticket ended.
+"timeBlock"	The time block (in minutes) in which you bill your clients, if applicable.
+"onSite"	Whether or not the resource is on-site ("y" or "n")
+"description"	Description of the issue
+"resolution"	Description of the resolution
+Source of Data in Asio Platform
+
+Reports > Asio > Executive Report > Work Status > Summary of Work
+
+Warranty Summary RMM Tools
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Agent Details
+Retrieves agent information for the authenticated partner and the specified site.
+Antivirus Summary
+Retrieves counts of machines having antivirus protection in the following states: Updated, Outdated, Not Installed, or Information Unavailable.
+Antivirus Version Summary
+Retrieves currently detected antivirus software and the definition version.
+BCDR Continuity Appliances
+Retrieves a list of Recover Continuity backup appliances provisioned at the given site.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

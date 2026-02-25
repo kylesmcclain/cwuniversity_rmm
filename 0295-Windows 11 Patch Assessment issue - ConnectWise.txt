@@ -1,0 +1,79 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Patching   Windows 11 Patch Assessment issue
+Windows 11 Patch Assessment issue
+Last updated
+Aug 8, 2024
+Table of contents
+Overview
+Impact: 
+Mitigation: 
+Automated Fix:
+On-demand Fix:
+Overview
+
+The June 2024 cumulative patch for Windows 11 22H2 and 23H2 introduced a bug that affects the Windows Update Agent. This new version of Windows Update agent does not correctly utilize the IUpdateSearcher component. This component is utilized by the RMM agent and any other automation tools to get the list of Installed and Missing patches from the endpoint (Patch Assessment).  
+
+Any Windows 11 version 22H2 and 23H2 endpoints that installed the June 2024 cumulative update will be impacted by this. 
+
+Impact: 
+Since the component that RMM relies on for Assessment does not work, the endpoints either do not send a successful Assessment or send a partial assessment (for example only Drive updates) 
+Without the information coming from Assessment, the RMM agent will never be able to deploy any New patches on these endpoints. 
+Automatic Windows update is turned off by RMM agent to take control of patching the endpoints. Hence, these endpoints will not get any patches outside of the RMM agent 
+The endpoints are in a patching limbo state and are potentially vulnerable from July 2024 onwards 
+Mitigation: 
+
+On July 25th 2024, Microsoft released an update (KB5040527) to address the issue.
+
+Automated Fix:
+
+ConnectWise RMM will deploy the KB fix during the endpoint’s Patch Installation window which will force deploy the fix on the endpoint. As part of the fix deployment, the RMM agent will also flag the endpoint as pending reboot, the endpoint will reboot during its scheduled reboot window. 
+
+Note: Since endpoints will get fixed until a reboot is completed, we recommend setting the Reboot Schedule at a higher frequency to expedite the fix. Example: Every 1 day between 4 PM to 12 PM
+
+On-demand Fix:
+
+ConnectWise has also released the fix as a standalone task that can be run on impacted Windows 11 endpoints.
+
+Task name – Windows 11 Assessment Issue
+
+Endpoints must be rebooted to resolve the issue. The endpoints will reboot as per the patch policy's Reboot schedule. You may also manually trigger an on-demand reboot on the endpoints.
+
+Task Output:
+
+A Device group can be created for a targeted deployment on only Windows 11 23H2 and 22H2 endpoints.
+
+Criteria – OS Build Number
+Filter – 22631,22621
+
+ 
+
+ 
+
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+OS Patching
+OS patching is a critical feature that helps to keep your managed endpoints up to date on the many security and non-security patches released every mo...
+Patch Testing
+Third-Party Patching
+Patching Deployment Flow and Patching Catch-up Flow
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

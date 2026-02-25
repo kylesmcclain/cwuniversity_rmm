@@ -1,0 +1,108 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Automation   Tasks   Run Scripts as Current Logged In User
+Run Scripts as Current Logged In User
+Last updated
+Sep 9, 2025
+Table of contents
+Overview
+How to Run Scripts as a Current Logged-In User
+Run Scripts as Current Logged-In User Example
+Overview
+
+Run Scripts as Current Logged-In User functionality allows scripts to execute in the context of the user currently logged into the endpoint, enabling access to user-specific paths, settings, and permissions.
+
+This article explains how to run script-type tasks as a current logged-in user on the ConnectWise Asio® platform.
+
+How to Run Scripts as a Current Logged-In User
+
+You have the option to run script-type tasks as the current logged-in user, run scripts as the system, or both. To start with:
+
+Log in to Asio.
+Navigate to Automation > Tasks and create a new script. To learn how to create and run script-type tasks, refer to the documentation on Creating Tasks Using the Script Editor and Create and Schedule Script Type Tasks.
+In the Script Editor, when you add any function in a step (e.g., a PowerShell Script), you can see the option to run it as Current Logged In User or System:
+
+
+
+Note:
+
+Run as logged-in user is only available in the script editor.
+If you run a step as logged-in user and the user is not logged in at the time of execution, the step fails.
+If more than one user is logged in at the same time, it arranges users alphabetically based on username and runs it on the first user. We will work on an enhancement to make it run for all logged-in users in the future.
+Refer to the following configuration for script steps:
+Script Step Configuration	Task Output - Run As Value
+All steps set to Current Logged In User	Current Logged In User
+Mixed steps: some as Current Logged In User, some as System	Mixed
+All steps set to System	System
+
+
+
+
+Run Scripts as Current Logged-In User Example
+
+Let's look at an example for running scripts as a current logged in user to better understand this functionality:
+
+After logging in to Asio, navigate to Automation > Tasks.
+Create a new script.
+In the first step of the Script Editor, write the following PowerShell script, which basically displays a pop-up message on the user's machine when the user logs in. The pop-up message notifies the user that their machine is pending an OS update and tells them not to shut it down:
+
+Run the above step as the Current Logged In User.
+In the next step, write another PowerShell script that captures and displays the logged-in user's name:
+
+
+Run the above step also as the Current Logged In User.
+When the script runs, the following pop-up displays on the user's machine:
+
+In the output (Recent Tasks), where the script is run as the logged in user, the name of the user logged in to the system is displayed:
+
+
+The output is also visible on the Scheduled Tasks page in the History tab:
+
+
+Now, in the same script, add another step and run the PowerShell script in the System context:
+
+
+After running the script, you can view the following output, which shows the script ran as System and displays the system name:
+
+
+The output is also visible on the Scheduled Tasks page in the History tab:
+
+
+RMM Task Reporting Running RMM Tasks
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Create and Schedule Script Type Tasks
+Create and schedule a script task.
+Running RMM Tasks
+How to run a task, create a custom script, or configure a task for the next agent check-in.
+Available Tasks
+RMM Task Reporting
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

@@ -1,0 +1,63 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Integrations to ConnectWise RMM   ScreenConnect with RMM   ScreenConnect Dashboard for RMM
+ScreenConnect Dashboard for RMM
+Last updated
+Oct 1, 2024
+Table of contents
+Overview
+Prerequisites
+How to launch the ScreenConnect Dashboard
+Overview
+
+The ScreenConnect Dashboard allows hosts to initiate a chat with the end user and decide how to access the device with minimum interruption of the client. This also allows the Host to see whether the end-user is online to chat or idle (for the duration).
+
+Prerequisites
+The Endpoint must have the ScreenConnect Agent successfully installed.
+The Host must have Remote Access permissions enabled in their user profile,
+How to launch the ScreenConnect Dashboard
+Navigate to Endpoints > Devices.
+Hover over the  icon in the Log In column and select ScreenConnect Dashboard from the list.
+
+After you click on the ScreenConnect Dashboard, it triggers the SSO option and the Consent screen is displayed.
+
+Click Allow.
+The ScreenConnect Portal Access page opens in a new window. By default, the device through which ScreenConnect Dashboard was clicked is selected on this page and its General Tab is displayed.
+
+
+After you are on the ScreenConnect Access page, you can do the following activities:
+
+Check if a Guest is online or idle
+See who the Logged On User is
+Initiate Chat with the User by switching to the Messages Tab
+See how long an endpoint is idle
+View information about the machine and network address
+You can also view and add notes against the endpoint
+You can run any command on an endpoint or view the commands that were run on the endpoints
+ScreenConnect 1-Click for RMM ScreenConnect Login Authentication FAQ
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ScreenConnect Installation Status and Error Codes
+Enable or Disable Connection Consent for ScreenConnect
+ScreenConnect 1-Click for RMM
+ScreenConnect Integration for ConnectWise RMM
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

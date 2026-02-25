@@ -1,0 +1,66 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Integrations to ConnectWise RMM   ConnectWise RMM Intune Integration
+ConnectWise RMM Intune Integration
+Last updated
+Aug 7, 2025
+Table of contents
+Overview
+Requirements
+Intune Integration Documentation
+Overview
+
+Integration with Microsoft® Intune allows multi-tenant management of customer end-points in ConnectWise RMM™. This solution has simplified the complex and powerful MS Intune solution within RMM, making it intuitive and easy to use.
+
+Identify Intune managed devices in ConnectWise RMM
+Device Compliance at a Tenant and Device level
+Intune device compliance and configuration information on the Devices page and device level details
+Intune managed applications information on the Devices page
+Ability to sync Intune devices with MS Intune
+Multi-Tenant Device Compliance Policy Management for MS Intune Devices
+Multi-Tenant Device Configuration Profile Management for MS Intune Devices
+Alerts for critical events for MS Intune managed devices
+Requirements
+ConnectWise RMM Pro or Premium.
+Primary Admins and Primary Super Admins have access to initiate and configure integrations by default.
+Admins must assign Integrations permissions via an Application Role to enable access to configure the integration and view Intune on the Devices page. Refer to Application Roles to learn how to customize permissions and application roles and assign them to users in ConnectWise Home.
+To set up this integration in the Asio platform, navigate to Integrations > Asio Integrations > Network Management and select Microsoft Intune.
+Intune Integration Documentation
+
+Click the title of an article below to learn more about the ConnectWise RMM Intune integration.
+
+All articles
+Intune Integration Using your CSP Account
+View Intune Information in the Asio™ Platform (ITSupport Portal)
+
+​
+
+The Host Client Intune Integration Using your CSP Account
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Intune Integration Using your CSP Account
+View Intune Information in the Asio™ Platform (ITSupport Portal)
+ScreenConnect with RMM
+This guide contains all relevant articles for using ScreenConnect with ConnectWise RMM.
+Scalepad Lifecycle Manager and ConnectWise RMM Integration
+Lifecycle Manager syncs your hardware assets from ConnectWise RMM via API. This article provides instructions on how to integrate ConnectWise RMM to L...
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

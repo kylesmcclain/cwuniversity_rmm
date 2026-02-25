@@ -1,0 +1,127 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   RMM Reporting API   Reporting API REST Resources   Unsupported Antivirus
+Unsupported Antivirus
+Last updated
+Jul 8, 2025
+Table of contents
+Overview
+Endpoint and URI
+Method
+Request Body
+Response Body
+Parameter Descriptions for Unsupported Antivirus
+Source of Data in the ConnectWise Asio®
+Overview
+
+Returns a list of resources with unsupported antivirus software installed.
+
+Endpoint and URI
+
+https://itsapi.itsupport247.net/repo...us/unsupported
+
+Method
+
+POST
+
+Request Body
+
+{
+
+"Month":4,
+
+"SiteCode":"AGTSolutions",
+
+"Year":2015,
+
+"ResourceType":"desktop"
+
+}
+
+Response Body
+
+{
+
+"error":null,
+
+"unsupportedAntivirus":[
+
+{
+
+"antivirus":"Not Available",
+
+"friendlyName":"Mike's PC",
+
+"iPAddress":"10.2.43.3",
+
+"lastScanDate":"2015-01-29",
+
+"MachineId": 9223372036854775807,
+
+"resourceName":"Intel-AMT1"
+
+},
+
+{
+
+...
+
+},
+
+{
+
+...
+
+}
+
+]
+
+}
+
+Parameter Descriptions for Unsupported Antivirus
+Parameter	Description
+"Month"	Requested month (numerical)
+"SiteCode"	Unique site code listed in Asio™ Platform (ITSupport Portal)
+"Year"	Requested year
+"ResourceType"	Desktop or server
+"antivirus"	Antivirus status
+"friendlyName"	Machine friendly name in Asio™ Platform (ITSupport Portal)
+"iPAddress"	Machine IP address
+"lastScanDate"	Last antivirus scan date
+"MachineId"	Unique machine ID in ConnectWise database
+"resourceName"	Machine name in Asio™ Platform (ITSupport Portal)
+Source of Data in the ConnectWise Asio®
+
+Reports > Asio > Executive Report > Server Data / Desktop Data > Antivirus Definitions > Unsupported
+
+System Information Warranty Details
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Agent Details
+Retrieves agent information for the authenticated partner and the specified site.
+Antivirus Summary
+Retrieves counts of machines having antivirus protection in the following states: Updated, Outdated, Not Installed, or Information Unavailable.
+Antivirus Version Summary
+Retrieves currently detected antivirus software and the definition version.
+BCDR Continuity Appliances
+Retrieves a list of Recover Continuity backup appliances provisioned at the given site.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

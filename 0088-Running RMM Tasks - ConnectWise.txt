@@ -1,0 +1,148 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Automation   Tasks   Running RMM Tasks
+Running RMM Tasks
+Last updated
+Feb 6, 2026
+Table of contents
+Overview
+How to Run a Task
+Next Agent Check-in
+Deploy Tasks Using Custom Scripts
+Completed Tasks cannot be deactivated or deleted.
+Trigger Execution
+Overview
+
+Tasks represent a customizable, intuitive automation tool used to reactively and proactively address issues on managed devices in a partner ecosystem.
+
+How to Run a Task
+
+Tasks can be executed from the Devices list by using the Run drop-down in one of two ways:
+
+Select a specific endpoint or endpoints to execute the task on only those endpoints:
+
+
+Click on the Run menu and select the task you want to run on the selected endpoints.
+
+
+OR
+
+Click the Run menu and select the task you want to run.
+Select the site or all sites, device groups, or another subset of devices to run a task.
+
+Enter task parameters if required under Configure Setup. Any field marked with an asterisk is needed.
+
+Click Continue to Scheduling when complete.
+
+Note: You can also select to save the setup as a Custom Task or as a Custom Sequence to preset the data and associated description for future use. Saved Custom Tasks and Custom Sequences appear in the task selection menu under the Custom category or can be saved to newly created categories when saving tasks.
+
+Schedule the task or sequence.
+Run now: Runs immediately if the agent is online and connected to the data center.
+Run later: Set the date and time to run the task or sequence.
+Run recurringly: Include the start and end date and a recurring schedule (daily, weekly, monthly, etc.).
+Run on trigger: Select a trigger to create intelligence around when a Task or Sequence is executed. Available triggers include:
+The login and logout triggers, which both correlate with their respective end user behaviors.
+The system startup trigger, which can be used to add automation to an endpoint’s startup processes.
+
+Note: If you select First check-in as the trigger for your task to run on, the task shows the RUNNING status on all endpoints until you install a fresh agent on that site. When the fresh agent is installed, the task is executed on that particular endpoint, and the status will change for all endpoints.
+
+When running later, recurring, or on a trigger, be sure to schedule the specific time of the task or sequence on the machine in either its time zone or in another time zone.
+
+Note: For a task or sequence to run successfully, the device must be online. If the device is offline, the task returns a failed by timeout error and cannot be successfully executed until the device is online and the task is re-run.
+
+Next Agent Check-in
+
+You can schedule a task to run on an endpoint as soon as it comes back online (at any time in the future). This functionality is referred to as Next agent Check-In.
+
+Note: This feature is supported for Bash/Batch/PowerShell and script-type tasks.
+
+Navigate to Automation > Tasks or navigate to Devices > Endpoints > Run.
+Select the task you want to schedule.
+In the info card, click Schedule.
+Select Next Agent Check-In.
+
+
+Select the expiration time (Stop After).
+
+The default expiration time for this task type is one (1) hour.
+
+The maximum number of hours is 23.
+
+The maximum number of days is 89.
+
+Click Select Targets to designate the endpoint, group, site, or type.
+
+Click Run.
+
+Your Next Agent Check-In task is enabled until the expiration time has passed or the task has been executed on all endpoints.
+
+Note: Edit functionality is restricted for next agent check-in tasks.
+
+The Next Agent Check-In feature is accessible under the Run menu in the Schedule step.
+
+
+Deploy Tasks Using Custom Scripts
+
+For further adaptability, custom tasks also can be created using any available PowerShell or CMD scripts located near the bottom of the Run Task or Sequence drop-down.
+
+When creating a custom task, be sure to add a description to display in the task configuration window to provide additional information about the task for future use. In addition, you can click Save as Custom Task (Optional) to save to an existing task category or create a new category to use when saving the task.
+
+To prevent failures, help ensure the script is free of logical and syntax errors. When creating a PowerShell script, command line parameters must be nested within the script itself. Name the task and enter the Expected Time of Script Execution in seconds to forcibly terminate script execution if it exceeds the defined time limit. All scripts are executed in an elevated session by default.
+
+Here again, to save the task for use on other devices, select Save this setup as custom task, then continue to scheduling.
+
+Custom scripts saved as custom tasks now appear in the Custom task category and can be edited, reused, and run as needed.
+
+Completed Tasks cannot be deactivated or deleted.
+
+If you try to delete or deactivate a completed task that has schedules that have been executed earlier the task will not be deleted from UI. Instead, the following will occur:
+
+ All future schedules will be canceled for the task
+Only Tasks which has 0 schedules that have executed can be deleted from UI
+The task will be automatically removed from UI after 90 day
+Trigger Execution
+
+Keep in mind the following points regarding trigger execution while running RMM tasks:
+
+Users can schedule tasks on targets (endpoints, device groups, company, or site) based on triggers when scheduling a task.
+When that time arrives, the system activates the trigger task and sets all endpoints under the selected target to a RUNNING state, which remains active for the duration of the scheduled time window. If the trigger conditions are met for any endpoint during this period, the task is allowed to execute for that endpoint—provided it falls within the valid time range specified by the partner (startTimeFrame to endTimeFrame). At that point, a new instance is created for the endpoint, indicating that the task has been sent for execution.
+The overall task status will remain as "Running" on the schedule list page until the trigger end time is reached, as specified during task creation.
+Once the trigger criteria are completed, the task will be marked as either "Success," "Partial Fail," or "Failure" based on the overall runs recorded on the schedule task page.
+Run Scripts as Current Logged In User Script Functions
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Create and Schedule Script Type Tasks
+Create and schedule a script task.
+Available Tasks
+RMM Task Reporting
+Creating Tasks Using the Script Editor
+How to use Script Editor to create, customize, or edit scripts using parameters and system variables. The script editor supports native scripting lang...
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

@@ -1,0 +1,43 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Expert Services   Using the Chat Support Feature
+Using the Chat Support Feature
+Last updated
+Jan 15, 2025
+Table of contents
+No headers
+Log in to the Connectwise Security Support Portal.
+Once logged in, you are routed to the Home page. Click the Chat Feature in the bottom right-hand corner to initiate your chat session.
+
+
+You are asked if you are experiencing an emergency security incident, select Yes or No.
+
+
+You are then connected with a member of the ConnectWise security team who will assist you with your issue.
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Help Desk
+Expert Services Documentation Sitemap
+ConnectWise Network Operations Center - NOC
+SOC, NOC, and Help Desk Services Firewall Exclusions
+Review the recommended firewall exclusions required to enable the ConnectWise SOC, NOC and Help Desk.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

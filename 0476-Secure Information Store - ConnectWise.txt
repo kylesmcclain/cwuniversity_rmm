@@ -1,0 +1,56 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Secure Information Store
+Secure Information Store
+Last updated
+Mar 9, 2021
+Table of contents
+Overview
+Overview
+
+The Secure Information Store is a web-based vault designed to help you securely store and manage sensitive information.
+
+The Secure Information Store runs on an SQL Server database using 256-bit AES encryption at both the database and column level, the same technology used in banks, credit card processors, hospitals, and government agencies. This level of encryption, combined with Operating System and SQL Server security, creates an extremely secure environment. Additionally, the SQL Server is not directly accessible from the internet, which further minimizes the risk of vulnerability.
+
+ 
+
+Topics
+Security Whitepaper
+Secure Information Store Overview
+Passwords Tab
+The site-level Passwords tab area enables the creation and storage of passwords that allow the NOC and Help Desk to access client machines for troubleshooting and other support.
+Server and Desktop Passwords
+How to Change a Server Password
+Lights Out Management Passwords
+Pre-Defined and Custom Application Passwords
+Access Control Groups
+Custom Passwords and Properties
+Enabling Automatic Credentials for Servers and Desktops
+User Acceptance Test Security Whitepaper
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Security Whitepaper
+Secure Information Store Overview
+Passwords Tab
+The site-level Passwords tab area enables the creation and storage of passwords that allow the NOC and Help Desk to access client machines for trouble...
+Enabling Automatic Credentials for Servers and Desktops
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

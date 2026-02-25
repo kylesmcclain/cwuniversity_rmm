@@ -1,0 +1,65 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Getting Started with ConnectWise RMM   Configuring Reboot Schedules
+Configuring Reboot Schedules
+Last updated
+Oct 1, 2024
+Table of contents
+Overview
+Create a Reboot Schedule 
+Set NOC Access
+Overview
+
+Complete these steps to set up NOC access for your entire site or for specific resources. First, you'll need to create a reboot schedule. 
+
+Create a Reboot Schedule 
+Go to Settings > Setup > RMM > Reboot Schedules > New.
+Configure time blocks for the Reboot time tab (after-hours recommended). By scheduling reboot times as recommended here, the NOC can more efficiently work through issues for you while minimally impacting your productive work hours.
+
+Only one time block range can be configured and applied to days in the Reboot time tab. When you add a new time block to a schedule, it replaces any existing time blocks.
+
+Note: If you want your time block to span multiple days (For example, from 8pm of one day to 5pm of the next day), you must assign it to all days of the week. A time block range that spans from 8pm Thursday to 5pm Friday is not supported. However, a time block range of 8pm - 5pm assigned to all days of the week is supported.
+
+Set NOC Access
+
+To set NOC access for your entire site or specific resources:
+
+Go to Settings > Setup > RMM > Sites Using RMM > [site name] > NOC Access.
+Select to Enable or Disable NOC Services.
+Create Client Sites Creating Companies and Sites in the Asio Platform
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Creating Users
+Creating Notification Rules
+Create Client Sites
+Installing Asio Agents
+This article provides information and instructions about how to download and install an agent on your device.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

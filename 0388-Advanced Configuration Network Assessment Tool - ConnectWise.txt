@@ -1,0 +1,97 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   RMM - Network Assessment   Advanced Configuration Network Assessment Tool
+Advanced Configuration Network Assessment Tool
+Last updated
+Jul 10, 2025
+Table of contents
+Overview
+Enabling Remote Registry on target machines
+Create a new Inbound UDP Rule
+Create a new Inbound RPC Dynamic Ports Rule
+Overview
+
+The Data Collector makes use of multiple technologies/approaches for collecting information on the client network, including Remote Registry and Remote WMI, to gather system information (CPU, Memory, Disk space, etc.) and installed applications. This document provides the steps to configure the GPOs below that might be required for the Data Collector to function correctly:
+
+Enabling Remote Registry on target machines
+
+The Remote Registry service is set to Manual by default. In some cases, the site administrator might disable itch can lead to incomplete or failed data collection because the Data Collector may be unable to gather information. This issue can be resolved by enabling the Remote Registry on target machines or by applying a GPO on target machines to enable Remote Registry.
+
+To enable Remote Registry on a target machine:
+
+In Services, navigate to the Remote Registry service and change the start-up type to Automatic. Then, start the service.
+
+Enable Remote Registry using GPO: In GPMC, open the policy that applies to the desired computers and navigate to Computer Configuration > Policies > Windows Settings > Security Settings > System Services. Set the Remote Registry service start-up type to Automatic.
+
+Enable WMI on target machines: By default, the Windows Management Instrumentation service start-up type is set to Automatic. If the WMI service is found disabled on a network for any reason, follow the instructions in number 1 above and perform steps for the Windows Management Instrumentation service.
+Configure Inbound rules for TCP, UDP, and RPC Dynamic ports on target machines.
+Create a new Inbound TCP Rule by navigating to: Expand Policies > Security Settings > Windows Firewall with Advanced Security > Windows Firewall with Advanced Security > Inbound Rule.
+
+Select Port as the Rule Type, then click Next.
+
+On the Protocol and Ports page, select TCP for the question Does this rule apply to TCP or UDP? and Specific local Ports for the question Does this rule apply to all local ports or specific local ports? and enter the port number: 135, 139, 445.
+
+On the next page, select Allow the connection and click Next (Figure 6).
+
+Specify the profiles for which the rule will apply. By default, all profiles are selected (Figure 7).
+
+Give the policy a name and description (if desired) and click Finish (Figure 8).
+
+Create a new Inbound UDP Rule
+Click on New Rule (Figure 9).
+
+For the Rule Type, select Port. Then click Next (Figure 10).
+
+On the Protocol and Ports page (Figure 11), select UDP for the Does this rule apply to TCP or UDP? question and Specific local ports for Does this rule apply to all local ports or specific local ports. Enter the port number: 137,138. Then click Next.
+
+On the next page, select Allow the connection and click Next.
+
+Specify the profiles for which the rule will apply (Figure 13).
+
+Give the policy a name and click Finish (Figure 14).
+
+Create a new Inbound RPC Dynamic Ports Rule
+Click on New Rule (in blue, Figure 15).
+
+On the Rule Type page, set the rule type as Custom. Then click Next (Figure 16).
+
+On the Protocol and Ports page, make these selections and click Next (Figure 17):
+For Protocol Type, select TCP
+For Local Port, select RPC Dynamic Ports
+For Remote Port, select All Ports
+
+Enter any relevant IP addresses the rule should apply to. The default configuration is to allow all IP addresses (Figure 18). Then click Next.
+
+On the Action page, select Allow the connection and click Next (Figure 19).
+
+On the Profile page, select the profiles the rule will apply to (Domain, Private, and Public).
+
+On the Name page, give the policy a name and a description (optional) and click Finish (Figure 21).
+
+RMM - Network Assessment Client Connector Tool
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+PCI Compliance Module
+Network Data Collector
+Client Connector Tool
+HIPAA Compliance Module
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

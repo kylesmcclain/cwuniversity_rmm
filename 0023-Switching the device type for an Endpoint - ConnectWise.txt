@@ -1,0 +1,74 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Agents   Agent Management   Switching the device type for an Endpoint
+Switching the device type for an Endpoint
+Last updated
+Oct 14, 2025
+Table of contents
+Overview
+Switch a device type
+Overview
+
+The ConnectWise Asio® platform provides two different kinds of agents for Windows OS: one for Desktops and one for Servers. There is now a single Windows agent installer, allowing the endpoint or device type to be defined based on the operating system on which the agent is installed.
+
+With the latest release, you have the option to switch a device type and be able to use a desktop as a server and vice versa.
+
+Note:  This option is only available for Windows devices. This option will be supported only if the Endpoint has the latest update of the Agent version 3.0.5 or above.
+
+Switch a device type
+
+The option to switch a device type is available within the device details. Please follow the steps below to complete this action:
+
+Navigate to Endpoints > Devices.
+From the list of devices, search, filter, or scroll to find the device for which you want to change the device type. Click on the Device Name.
+You are taken to the Device Details page.
+
+In the Summary Tab, you can see the Device Type listed under Machine Specs. Click the switch type icon located in the Type row.
+
+Note: If the option is not visible to you, it is possible that you do not have the required permissions. Contact your administrator if you need access to this.
+
+When you click the Switch Type icon, a window will appear to confirm the action before you can proceed.
+
+After reading the details, click the Switch Endpoint button to confirm the switch.
+
+Note: It may take a few minutes for the update to be reflected across the entire portal. In the mean time, it is requested that you do not retry the action again.
+
+After the device type is switched successfully, you can also check the audit logs for the same in Centralised Audit Trail.
+
+Golden Image Support Agent Repair Utility
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Changing Proxy Settings
+Assign device to another site (Move Agent)
+Golden Image Support
+Asio Agent Requirements
+The article includes the currently supported operating systems for agent installations.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

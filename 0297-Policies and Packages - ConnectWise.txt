@@ -1,0 +1,221 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Policies and Packages
+Policies and Packages
+Last updated
+Dec 19, 2025
+Table of contents
+Overview
+Policies
+Policy List
+Packages
+Packages List
+Audit Tracking
+Documentation
+Overview
+
+Policies and Packages enable users to reduce redundant data entry by defining and cascading values for settings throughout the ConnectWise RMM hierarchy. Policies allow you to define values for settings. Packages allow you to gather and assign multiple policies. Packages can be assigned to accommodate differences between companies and sites.
+
+The hierarchy currently includes the following elements:
+
+Factory: Owned by ConnectWise to ensure all partners inherit a consistent value for each available setting. This level exists above the partner hierarchy.
+Default: The highest level of the partner hierarchy. Any value for a setting defined at this level will be inherited by all lower levels.
+Company: The second-highest level of partner hierarchy. Any value for a setting defined at this level is inherited by all lower levels and prevents inheritance from the Partner level.
+Site: Settings applied at the site level are inherited by all endpoints assigned to the site. 
+Policy Group: Policy groups allow policies to be applied to individual devices or groups of endpoints across the network. Policy settings assigned at this level are inherited by the selected group.
+Device: The lowest level of the partner hierarchy. Any value for a setting defined at this level will be considered an exception because it cannot be inherited.
+Policies
+
+Policies allow users to define values for settings.
+
+Policy List
+
+To view the list of existing policies on your instance, navigate to Endpoints > Policies & Packages > Policies tab.
+
+ 
+
+The Policies list consists of the following items:
+
+Field Name
+
+	
+
+Description
+
+
+
+
+Policy Name
+
+	
+
+User-defined name for the policy, up to 200 characters. Can be clicked to edit the policy.
+
+
+
+
+Type
+
+	
+
+Type of settings the policy contains, such as OS Patching.
+
+
+
+
+Last Modified
+
+	
+
+Date and time, based on the user's web browser time zone, the policy was last modified.
+
+
+
+
+Modified By
+
+	
+
+Name of the user who last modified the policy.
+
+
+
+
+Policy Settings
+
+	
+
+Displayed by clicking a policy. Displays the settings and values of the selected policy.
+
+
+
+
+Package Inclusions
+
+	
+
+Displayed by clicking a policy. Displays the number of packages the selected policy is a part of.
+
+
+
+
+Policy Group Assignments
+
+	
+
+Displays the number of policy groups the selected policy is part of.
+
+Important: Users can delete any policy that is not a part of a package.
+
+For more information on Policies, review the Policies article.
+
+Packages
+
+Packages allow users to group policies together for an assignment.
+
+Packages List
+
+To view the list of existing packages on your instance, navigate to Endpoints > Policies & Packages > Packages.
+
+ 
+
+The Packages List consists of the following items:
+
+Field Name
+
+	
+
+Description
+
+
+
+
+Name
+
+	
+
+User-defined name for the package, up to 200 characters. Can be clicked to edit the package.
+
+
+
+
+Last Modified
+
+	
+
+Date and time the package was last modified, based on the user's web browser time zone.
+
+
+
+
+Modified By
+
+	
+
+Name of the user who last modified the package.
+
+
+
+
+Sites
+
+	
+
+Number of Sites currently assigned the package. Displays a Site Name when only one Site is assigned.
+
+ 
+
+For more information on Packages, review the Packages article.
+
+Audit Tracking
+
+Audit Tracking for Packages (Created, Updated, and Deleted) and Policy Groups (Created, Updated, and Deleted) has been added, providing you with greater visibility and accountability across your environment. This can be accessed by navigating to Reports > Audit Trail.
+
+Documentation
+
+Click the title of an article below to learn more about policies, policy groups, and packages.
+
+All articles
+Featured articles
+Path
+Evolve Recommended - Best Practices for Policies and Packages
+Evolve Recommended - Communicator Policy
+Evolve Recommended - Network Monitoring Configurations
+Evolve Recommended - OS Patching Desktop Policy
+Evolve Recommended - OS Patching Server Policy
+Evolve Recommended - Remote Access Policy
+Evolve Recommended - RMM Site Configuration Policy
+Evolve Recommended - Third Party Patching Policy
+Policies
+Packages
+Policy Groups
+
+ 
+
+OS Patching Best Practices Evolve Recommended - Best Practices for Policies and Packages
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Packages
+Policy Groups
+Evolve Recommended - Best Practices for Policies and Packages
+Policies
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

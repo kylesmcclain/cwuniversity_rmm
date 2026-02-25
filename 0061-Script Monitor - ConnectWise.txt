@@ -1,0 +1,207 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Alerts   Custom Monitors   Script Monitor
+Script Monitor
+Last updated
+Jun 2, 2025
+Table of contents
+Overview
+Create a Script Monitor
+Generative AI Assist Toggle
+Run Script on an Event Trigger
+Ticket Resolution
+List of Monitor Variables
+Overview
+
+ConnectWise RMM™ Script Monitors allow you to configure a PowerShell or Bash script on a target endpoint and trigger an alert if there is a specific error in the output of script execution. Script Monitors can be applied on Windows, macOS, and Linux endpoints.  
+
+Create a Script Monitor
+Sign in to the Asio™ platform.
+Navigate to Endpoints > Alerts  > Monitors.
+Click Create Monitor.
+Provide a Name for the new monitor. Optionally, you can provide a Description of your new monitor.
+Select the Type as Script from the drop-down.
+Select the Family and Severity.
+
+To enable the Mapper functionality, you need to turn on the toggle. To learn more about the Mapper functionality review this documentation.
+
+In the Conditions section, configure the following fields to Run script on Schedule and run a specific script on the endpoint at a regular frequency:
+Repeat every: Enter the frequency at which the script should be executed.
+Unit: Select the unit for the duration. Units can be selected as Minutes, Hours, or Days.
+
+
+Script Language: Select the script language for execution on the endpoint.
+PowerShell: This can only be used on the Windows endpoints.
+Bash: This can only be used on the macOS and Linux endpoints.
+Note that the Use Generative AI Assist for script creation toggle is OFF by default. Refer to the section Generative AI Assist Toggle to learn the steps to follow when the toggle is switched ON.
+Script: Enter the Powershell or bash script here.
+Script Output: Enter the script output, which should be validated using the following options:
+Contains: Enter the expected keyword in the output to trigger an alert.
+Does not contain: Enter the keyword that should not be available in the output to trigger an alert.
+Equals: Enter the keyword that should be available in the output to trigger an alert.
+Does not equal: Enter the keyword that should not be available exactly in the output to trigger an alert.
+Logical Operators - Logical operators such as AND / OR can also be used for the conditional parameters where it is supported.
+Escalate ticket on script failure: Select if a script failure will escalate the ticket.
+You can also select a custom Automation Task to be executed when the condition is met on the endpoint.
+
+Note: System will reflect only selective Automation tasks that do not need parameters. Refer these OOTB tasks which needs parameters. All Custom Scripts created will be available for selection.
+
+
+
+
+Generative AI Assist Toggle
+
+This toggle option helps in script creation using Generative AI.
+
+When you switch ON the Use Generative AI Assist for script creation toggle, the following options on the screen will be visible:
+
+In the PowerShell Script textbox, enter a prompt for script creation. For example: Report SMART errors for disks as shown above.
+Click the Generate Script button, the script will be generated in the AI script/output textbox.
+You can click on the Download button to download the script to your system.
+You can also copy the script to the PowerShell Script Editor textbox by clicking on the Copy to Script Editor button.
+Select the checkbox to give your consent for using the AI generated script.
+
+Note:
+
+Before saving the script, make sure the checkbox is selected if you are using the AI assist toggle.
+This toggle is also present in the Ticket Resolution Pod and works in the same way as described above.
+Run Script on an Event Trigger
+
+Note: This can be applied only on Windows endpoints, and the script will be triggered for all event occurrences.
+
+Follow the steps above to create a new monitor.
+In the Conditions section, select Run script on an Event Trigger and select the specific Windows events for which you want to trigger the script.
+Event Log: Select the appropriate event log from the list. If you want to use a custom Event log, type the name in the Custom Event log field.
+Note: In the case of a custom event log, it should be the Channel Name from the event details. Please use the XML view to fetch the channel name of the Event Log name for event validations.
+Event ID: Enter the event IDs that you want to add to the monitor. You can add more than one event ID to the list, and they will be considered "OR" combinations.
+Level (Severity): Select the level or severity for the Event id defined. You can add multiple and they will be considered in "OR" combinations.
+Provider Name (Source): This allows you to define the provider name for the event which can be found in the event details field.
+Script Language: Select the script language to be used for execution on the endpoint. Powershell is the only option for Event Triggers.
+PowerShell: This can only be used on the Windows endpoints.
+Note that the Use Generative AI Assist for script creation toggle is OFF by default. Refer to the section Generative AI Assist Toggle to learn the steps to follow when the toggle is switched ON.
+Script: Enter the Powershell here.
+
+
+Script Output: Enter the script output, which should be validated using the following options:
+Contains: Enter the expected keyword in the output to trigger an alert.
+Does not contain: Enter the keyword that should not be available in the output for triggering an alert.
+Equals: Enter the keyword that should be available in the output to trigger an alert.
+Does not equal: Enter the keyword that should not be available exactly in the output to trigger an alert.
+Logical Operators - Logical operators such as AND / OR can also be used for the conditional parameters where it is supported..
+Select Escalate ticket on script failure if a script failure will escalate a ticket.
+
+
+You can also select a custom Automation Task to be executed when the condition is met on the endpoint.
+
+Note: 
+
+System will reflect only selective Automation tasks that do not need parameters. Refer these OOTB tasks which needs parameters. All Custom Scripts created will be available for selection.
+Monitors are triggered based on the defined configuration.​​
+Ticket Resolution
+Under the Ticket Resolution section, you can select Automatically resolve and define if the ticket should be updated as Resolved after the following criteria are met:
+Run same script as above: Select this option if you want to use the same script defined in the Conditions section.
+
+
+Select Define script and trigger if you want to use a different script for the condition resolution.
+Run script on schedule
+
+
+Schedule: Select this to run a specific script on the endpoint at a regular frequency.
+Repeat every: Enter the frequency that the script should be executed.
+Unit: Select unit for the duration. Units can be selected as Minutes, Hours, or Days.
+Script Language: Select the script language to be used for execution on the endpoint.
+PowerShell: This can only be used on the Windows endpoints.
+Bash: This can only be used on the macOS and Linux endpoints.
+Note that the Use Generative AI Assist for script creation toggle is OFF by default. Refer to the section Generative AI Assist Toggle to learn the steps to follow when the toggle is switched ON.
+Script: Enter the Powershell or bash script here.
+Script Output: Select the script output which should be validated using the following options:
+Contains: Enter the keyword that is expected in the output for triggering an alert.
+Does not contain: Enter the keyword which shouldn't be available in the output for triggering an alert.
+Equals: Enter the keyword which should be exactly available in the output for triggering an alert.
+Does not equal: Enter the keyword which should not available exactly in the output for triggering an alert.
+Select Run script on an Event Trigger if you want to use a different specific Windows event for the condition resolution.  
+
+Note: This can be applied only on Windows endpoints, and the script will be triggered for all event occurrences.
+
+Event Log: Select the appropriate event log from the list. If you want to use a custom Event log, type the name in the Custom Event log field.
+
+Note: In the case of a custom event log, it should be the Channel Name from the event details. Please use the XML view to fetch the channel name of the Event Log name for event validations.
+
+Event ID: Enter the event ID's that you would like to add to the monitor. You can add more than one event id in the list and they will be considered in "OR" combinations.
+Level (Severity): Select the level or severity for the Event id defined. You can add multiple and they will be considered in "OR" combinations.
+Provider Name (Source): This allows you to define the provider name for the event which can be found in the event details field.
+Script Language: Select the script language to be used for execution on the endpoint. Powershell is the only option for Event Triggers.
+PowerShell: This can only be used on the Windows endpoints.
+Note that the Use Generative AI Assist for script creation toggle is OFF by default. Refer to the section Generative AI Assist Toggle to learn the steps to follow when the toggle is switched ON.
+Script: Enter the Powershell here.
+Script Output: Select the script output which should be validated using the following options:
+Contains: Enter the keyword that is expected in the output for triggering an alert.
+Does not contain: Enter the keyword which shouldn't be available in the output for triggering an alert.
+Equals: Enter the keyword which should be exactly available in the output for triggering an alert.
+Does not equal: Enter the keyword which should not available exactly in the output for triggering an alert.
+You can also select a custom Automation Task to be executed when the condition is met on the endpoint.
+
+Note: System will reflect only selective Automation tasks that do not need parameters. Refer these OOTB tasks which needs parameters. All Custom Scripts created will be available for selection.
+
+Under the Resources section, you can select the target endpoints for triggering the alerts. You can select specific machines, Sites, Dynamic, or Static groups.
+
+Click Save to create and apply the monitor to the targets.
+
+List of Monitor Variables
+
+Here is a list of variables which you can use as per your requirement when creating your own customized ticket template:
+
+Monitor Type	Variable Name	Supported OS Type	Sample Data/Values	Variable Definition
+Generic
+ 	ObservedDate	
+
+Windows, MAC, Linux
+
+	
+
+"2020-09-02T15:35:42.969926103Z"
+
+	Time stamp when the issue was observed
+ 	MonitorDesc	Windows, MAC, Linux	Add local palmtech account and add it to the local administrators group	Description added on the portal while creating a monitor
+ 	MonitorName	Windows, MAC, Linux	Local PalmTech Account with Local Admin	Name of the monitor
+ 	MonitorSummary	Windows, MAC, Linux	(Run PowerShell script every 1 minute(s) AND Run PowerShell script every 1 minute(s))	Summary information for the monitor
+Script
+ 	ScriptLanguage	Windows, MAC & Linux	powershell	Language selected for script creation
+ 	ScriptOutput	Windows, MAC & Linux	Status StartType	 
+ 	Status	Windows, MAC & Linux	Success	Status for the Script execution
+Registry Monitor Service Monitor
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Service Monitor
+Process Monitor
+Event Monitor
+CPU Monitor
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

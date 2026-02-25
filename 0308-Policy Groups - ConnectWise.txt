@@ -1,0 +1,256 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Policies and Packages   Policy Groups
+Policy Groups
+Last updated
+Nov 17, 2025
+Table of contents
+Overview
+Policy Groups
+Create a New Policy Group
+Edit a Policy Group
+Remove Assignments from a Policy Group
+Delete a Policy Group
+Policy Group to Support Existing Device Groups
+Add Existing Device Group Button Functionality
+Create Policy Groups with Existing Device Group
+Impact of Deleting a Device Group Used in Policy Groups
+Policy Settings at Device Level
+Edit Policy Settings at the Device Level
+Policy Settings at Site Level
+ 
+Edit Policy Settings at the Site Level
+Overrides at Device Level
+Overrides at Site Level
+Overview
+
+This article includes details about policy groups for ConnectWise RMM™.
+
+Policies and Packages allow users to reduce redundant data entry by defining and cascading values for settings through our ConnectWise RMM™ hierarchy. The hierarchy currently includes the following elements:
+
+Factory: Owned by ConnectWise to ensure all partners inherit a consistent value for each available setting. This level exists above the partner hierarchy.
+Default: The highest level of the partner hierarchy. Any value for a setting defined at this level will be inherited by all lower levels.
+Site: The second-highest level of the partner hierarchy. Any value for a setting defined at this level will be inherited by all lower levels & prevent inheritance from the Partner level.
+Policy Group: The second-lowest level of the partner hierarchy. Any value for a setting defined at this level will be inherited by all lower levels & prevent inheritance from the Partner level.
+Device: This is the lowest level of the partner hierarchy. Any value for a setting defined at this level will be considered an exception because it cannot be inherited.
+
+Navigate to Endpoints > Packages > Assignments tab > Policy Groups tab to locate this screen.
+
+Policy Groups
+
+Policy Groups allow you to group your policies based on the Policy Type selected during Policy creation. Policy Groups do not use packages, and instead, you can create groups based on device criteria.
+
+Example: You can create a group for Windows Servers and can add additional groups underneath those.
+
+Create a New Policy Group
+
+Note: If a device is a part of multiple Policy Groups, it will inherit the Policy from the lowest level of the Policy Group.
+
+Note: It can potentially take up to 10 minutes for Policy Group updates to reflect on a Device's Settings tab.
+
+Navigate to Endpoints > Policies & Packages > Assignments tab and click the Policy Groups tab.
+Create a new Group category and click Add Group, or select an existing policy group category and click Add Group. 
+
+
+Add your Policy Group Name and provide a description of your Policy.
+
+
+Click Assign and add in the Policy you want to group. The selected Policy will appear under Assigned Policy.
+
+
+Under Devices Criteria click Add Criteria.
+
+
+Add Outer or Inner Blocks of criteria until you have all of the conditions you want to include in your group. Use the AND/OR operators to provide optional criteria.
+
+Click Save.
+ 
+
+Edit a Policy Group
+Navigate to Endpoints > Policies & Packages > Assignments > Policy Groups tab.
+Locate the Policy Group you want to edit and select it.
+Click on the pencil icon to bring up the edit window.
+
+
+Edit your group.
+
+Remove Assignments from a Policy Group
+Navigate to Endpoints > Policies & Packages > Assignments > Policy Groups tab.
+Locate the Policy Group you want to remove an assignment from and select it. Click the Remove Assignment icon.
+
+A Confirm Remove Assignments window opens. Select the assignments you want to remove, and click Remove Assignments.
+Delete a Policy Group
+
+Note: Follow the steps in Remove Assignments from a Policy Group first. You cannot delete a policy group if it has a policy assignment.
+
+Navigate to Endpoints > Policies & Packages > Assignments > Policy Groups tab.
+Locate the Policy Group you want to delete and select it.
+Click on the Delete icon.
+
+
+Click Delete to confirm. Your changes are automatically saved.
+
+
+Policy Group to Support Existing Device Groups
+
+Note: If you clicked on any root policy that does not have any policy group created inside it, you can see the option Add Existing Device Group on the right-hand information window, and can also click this option.
+
+You can use your existing device groups (Static, Dynamic, Predefined) while creating policy groups.
+
+Add Existing Device Group Button Functionality
+The Add Existing Device Group button is enabled only after you select a Policy Group.
+
+The Add Existing Device Group button always creates a parent group and does not support inheritance.
+If you have selected any group that is created using an existing device group, the Add group and the Add Existing Device Group buttons are then disabled. 
+
+You cannot make changes to policy groups that were created using the Add Group option.
+The Add Group button is enabled at the root policy.
+A group that is created using the Add Group option allows you to create a child group, and the Add Group button stays enabled while the Add Existing Device Group button is then disabled. 
+Create Policy Groups with Existing Device Group
+Navigate to Endpoints > Policies & Packages > Assignments > Policy Groups tab. 
+Click Add Existing Device Group. 
+
+Complete the Name and Description fields. The Name and Device Groups field is required. 
+
+Click Assign to select a policy.
+Select a Device Group from the list. The Device Groups list includes all the device groups that are available (Static, Dynamic, and Predefined). Any new device group created on the Devices Group page is reflected on the grid. 
+
+
+Click Save. The policy group is then created.
+After, you can see the Device Group label and name. The Device Group name that is displayed will be the one used while creating the Policy Group. 
+
+Impact of Deleting a Device Group Used in Policy Groups
+
+In Endpoints > Groups, if you attempt to delete a device group that is used in a policy group, the following warning displays:
+
+
+If you click Delete, the device group will be deleted, and the policy group will display an error message. Please select an existing device group or create a new policy group. The policy assigned to these endpoints will be revoked, and the devices meeting will show the endpoints as 0.
+
+Policy Settings at Device Level
+
+The Settings tab for a device allows users to see each setting and value applied to the device and make changes as needed.
+
+Field Name
+
+	
+
+Description
+
+
+Type	Type of settings the policy contains, such as OS Patching. Can be clicked to view and override values for policy's settings.
+Source	Where in the RMM hierarchy the policy was assigned that resulted in the device's inheritance.
+Package	Name of the package that contains the policy inherited by the device.
+
+ 
+
+Edit Policy Settings at the Device Level
+Navigate to Endpoints > Devices. Select a device, then click the Settings tab.
+
+Click the ^ (caret) icon in the Devices pod and select a device to view.
+Click Edit to make changes at the device level.
+
+
+ 
+
+Policy Settings at Site Level
+
+The Settings tab for a site allows users to see each setting and value applied to the site and make changes as needed. 
+
+Field Name
+
+	
+
+Description
+
+
+Type	Type of settings the policy contains, such as OS Patching. Can be clicked to view and override values for policy's settings.
+Source	Where in the RMM hierarchy the policy was assigned that resulted in the site's inheritance.
+Package	Name of the package that contains the policy inherited by the site.
+ 
+Edit Policy Settings at the Site Level
+To view Policy settings for a site, navigate to Clients > Companies.
+Select a Company, then select a Site from the Site List.
+
+Click the Settings tab.
+Select a Type from the Sites list and click Edit. 
+
+Make necessary changes and click Save.
+Overrides at Device Level
+Navigate to Endpoints > Devices.
+Select a device, then click the Settings tab.
+Click the ^ (caret) icon in the Devices pod and select a device to view and override setting values for the device.
+
+Each clicked row displays the following items:
+
+Field Name
+
+	
+
+Description
+
+
+Setting	Name of the setting inherited by the device from the policy.
+Value	Value of the setting inherited by the device from the policy. The pencil icon can be clicked to override the setting's value.
+Policy Name	Name of the policy inherited by the device that currently contains the setting value.
+Source	Where in the RMM hierarchy the policy was assigned that resulted in the device's inheritance.
+Overrides	Displays a red flag when the setting value for the device has been overridden and is Blank when the setting value for the device is inherited by a policy. Is Blank by default.
+
+
+
+
+Important: A red vertical line is displayed to the left of Source when one or more setting values have been overridden.
+
+Note: You can remove the overrides by clicking on the Remove Overrides button.
+
+Overrides at Site Level
+
+Navigate to Clients > Companies. Select a Company, then select a Site from the Site List and click the Settings tab.
+
+Users can click a row on the Settings tab of a site to view and override setting values for the site. Each clicked row displays the following items:
+
+Field Name
+
+	
+
+Description
+
+
+Setting	Name of the setting inherited by the site from the policy.
+Value	Value of the setting inherited by the site from the policy. The pencil icon can be clicked to override the setting's value.
+Policy	Name of the policy inherited by the site that currently contains the setting value.
+Source	Where in the RMM hierarchy the policy was assigned that resulted in the site;s inheritance.
+Overrides	Displays a red flag when the setting value for the site has been overridden and is Blank when the setting value for the site is inherited by a policy. Is Blank by default.
+
+Important: A red vertical line is displayed to the left of Source when one or more setting values have been overridden.
+
+Note: You can remove the overrides by clicking on the Remove Overrides button.
+
+ 
+
+Packages PSA Integration
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Packages
+Evolve Recommended - Best Practices for Policies and Packages
+Policies
+Command for Networks
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

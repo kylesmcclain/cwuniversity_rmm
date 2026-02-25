@@ -1,0 +1,135 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   RMM Reporting API   Reporting API REST Resources   BCDR Continuity Protected Resources
+BCDR Continuity Protected Resources
+Last updated
+Jul 8, 2025
+Table of contents
+Overview
+Endpoint and URI
+Method
+Request Body
+Response Body
+Parameter Descriptions for BCDR Continuity Protected Resources
+Source of Data in the Asio Platform 
+Overview
+
+Retrieves a list of resources being backed up by BCDR Continuity appliances at the given site.
+
+Endpoint and URI
+
+https://itsapi.itsupport247.net/repo...y247/resources
+
+Method
+
+POST
+
+Request Body
+
+{
+
+"Month":4,
+
+"SiteCode":"AGTSolutions",
+
+"Year":2015,
+
+}
+
+Response Body
+
+{
+
+"error": null,
+
+"resources": [
+
+{
+
+"appliance": "SBM S2000",
+
+"error": null,
+
+"lastBackupDate": "2015-03-14",
+
+"lastBackupStatus": "Successful",
+
+"lastOffsiteBackupDate": "2015-02-14",
+
+"localSpaceUsed": 28379425,
+
+"MachineId": 9223372036854775807,
+
+"name": "Intel-AMT1",
+
+"offsiteSpaceUsed": 4273492459,
+
+"volumes": "\/boot,\/,\/usr,\/var,\/tmp,\/home"
+
+},
+
+{
+
+...
+
+},
+
+{
+
+...
+
+}
+
+]
+
+}
+
+Parameter Descriptions for BCDR Continuity Protected Resources
+Parameter	Description
+"Month"	Requested month (numerical)
+"SiteCode"	Unique site code listed in Asio™ Platform (ITSupport Portal)
+"Year"	Requested year
+"appliance"	Appliance name
+"lastBackupDate"	Last date of backup
+"lastBackupStatus"	Last reported backup status
+"lastOffsiteBackupDate"	Last date of off-site backup
+"localSpaceUsed"	Local space used (in bytes)
+"MachineId"	Unique machine ID in ConnectWise database
+"name"	Machine name
+"offsiteSpaceUsed"	Off-site space used (in bytes)
+"volumes"	Protected volumes backed up by the appliance for the machine
+Source of Data in the Asio Platform 
+
+Reports > Asio > Executive Report > Recover Continuity Backup Data > Protected Resources
+
+BCDR Continuity Backup Summary by Resource CPU Utilization
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Agent Details
+Retrieves agent information for the authenticated partner and the specified site.
+Antivirus Summary
+Retrieves counts of machines having antivirus protection in the following states: Updated, Outdated, Not Installed, or Information Unavailable.
+Antivirus Version Summary
+Retrieves currently detected antivirus software and the definition version.
+BCDR Continuity Appliances
+Retrieves a list of Recover Continuity backup appliances provisioned at the given site.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

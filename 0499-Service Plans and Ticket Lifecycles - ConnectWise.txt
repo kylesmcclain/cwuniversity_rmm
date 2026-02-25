@@ -1,0 +1,75 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Tickets   Service Plans and Ticket Lifecycles
+Service Plans and Ticket Lifecycles
+Last updated
+Jul 3, 2025
+Table of contents
+Overview
+Essential Servers Ticket Lifecycle
+Elite Servers Ticket Lifecycle
+Desktops Ticket Lifecycle
+Alert and Ticket Lifecycle
+ 
+Overview
+
+The lifecycle of a ticket depends on the subscribed service plan of the site that generates an alert. Service plans and their respective ticket lifecycles include:
+
+Essential Servers Ticket Lifecycle
+Elite Servers Ticket Lifecycle
+Desktops Ticket Lifecycle
+Essential Servers Ticket Lifecycle
+A monitoring threshold is flagged in the agent system.
+A ticket is created by the monitoring system (and synchronized with the PSA if you are using any PSA ticketing).
+An email is sent to the appropriate users based on the configuration of the escalation template.
+A call is made (for critical issues) per the escalation template configuration.
+The ticket is updated and marked as NOC Completed if the monitoring agent identifies the issue as having been resolved (occasionally, the monitoring agent may have difficulty determining an issue's resolution status. In these cases, the ticket is closed manually).
+Elite Servers Ticket Lifecycle
+A monitoring threshold is flagged in the agent system.
+An alert is automatically generated in the agent system.
+The NOC determines if the alert is false or positive.
+If the alert is positive, an email is sent to the appropriate user in the respective escalation template.
+In addition, you can ask the NOC to complete the work even if the agent software has not raised an alert and generated a ticket. For example: you could generate a ticket for the NOC to troubleshoot performance on the Exchange Server even if the agent software has not alerted on this condition.
+A NOC engineer acknowledges the ticket.
+A NOC engineer troubleshoots the issue remotely.
+If the alert is resolved, the NOC engineer creates a ticket referencing the alert and assigns the ticket to you. This ticket is visible to you in the Company Queue under the NOC Completed ticket group. These tickets are provided for your reference. If you feel the issue is not resolved, you can assign the ticket back to the NOC.
+If the alert requires your attention or approval, the NOC engineer assigns the ticket to you. You can see the ticket in the Company Queue under the New ticket or Approval needed by backoffice or Info needed/work assigned by backoffice.
+You or your technician closes the ticket, depending on the scenario.
+Desktops Ticket Lifecycle
+A monitoring threshold is flagged if any of these three conditions occur: a failure during NOC auto-deployment, a failure during manual deployment from the Asio™ Platform by you, or an agent-observed endpoint protection definition that persists for three consecutive days.
+An alert is automatically generated in the agent system and you are notified.
+You are required to schedule jobs for alerts raised during off-hours desktop maintenance.
+The back-office remotely troubleshoots the issue during non-business hours and updates you with the work status.
+Alert and Ticket Lifecycle
+ 
+Best Practices for Going Green Create a Ticket
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Best Practices for Going Green
+Are you looking to impress a client with a solid green dashboard? Regardless of your reasons for wanting to go green, we will help you get there. But ...
+Create a Ticket
+To create a new ticket, click the Tickets tab in the Asio™ Platform (ITSupport Portal) and select New Ticket from the top of the navigation bar on the...
+Edit a Ticket
+To edit a ticket, browse to the ticket queue on the left navigation bar and select an appropriate container.
+Work Status Update
+A work status update is exactly what it implies: an update to a ticket's status.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

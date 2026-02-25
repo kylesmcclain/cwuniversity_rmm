@@ -1,0 +1,59 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Secure Information Store   Secure Information Store Overview
+Secure Information Store Overview
+Last updated
+Oct 1, 2024
+Table of contents
+Overview
+Overview
+
+A critical component in the partner onboarding process, the Secure Information Store allows:
+
+Secure transfer of server credentials to the NOC back office.
+Secure transfer of desktop credentials to the Help Desk.
+Secure storage of critical client information for access by onsite technicians.
+Secure storage of Lights Out Management credentials for remotely re-starting downed servers.
+Secure storage of Vault encryption pass-phrases for decrypting and troubleshooting Vault backups.
+
+Note: A primary function of the Secure Information Store is to provide a secure method for transferring administrator credentials to your respective NOC support teams. Secure storing eliminates managed service ticket delays that result from incorrect or non-existent credentials and also eliminates security risks that can occur when passwords are exchanged manually.
+
+The Secure Information Store can also store:
+
+Active Directory credentials
+Exchange credentials
+Custom Application credentials
+SQL credentials
+VMware/vCenter credentials
+Citrix/Terminal Server credentials
+
+To enter credentials and other login information into the Secure Information Store, use the site-level Passwords tab, or Password Vault, in Settings > Setup > RMM > RMM Setup > Sites Using RMM > [site name]. 
+
+Security Whitepaper Passwords Tab
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Security Whitepaper
+Passwords Tab
+The site-level Passwords tab area enables the creation and storage of passwords that allow the NOC and Help Desk to access client machines for trouble...
+Enabling Automatic Credentials for Servers and Desktops
+Server and Desktop Passwords
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

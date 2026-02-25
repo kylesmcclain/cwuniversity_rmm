@@ -1,0 +1,173 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   ConnectWise RMM Release Notes   ConnectWise RMM Update for August 2025
+ConnectWise RMM Update for August 2025
+Last updated
+Sep 4, 2025
+Table of contents
+Overview 
+Announcements
+ConnectWise Asio® Performance Enhancements
+What's new in ConnectWise RMM?
+August 27, 2025
+Agents
+August 25, 2025
+Issues Addressed
+August 21, 2025
+Endpoint Protection
+Agents
+PSA Integration
+Issues Addressed
+August 20, 2025
+Alerting
+August 18, 2025 
+Automation
+August 7, 2025
+Patching
+Issues Addressed
+August 2, 2025
+Issues Addressed
+Overview 
+
+This page provides information on the latest enhancements and features for ConnectWise RMM.
+
+Announcements
+ConnectWise Asio® Performance Enhancements
+
+Note: This will be released in the second week of September 2025.
+
+We’re changing the default data collection for the CPU, Memory, and Disk from managed endpoints to align with other solutions and bring uniformity in data collection and how the information is used for displaying on UI/Alerting processes.
+
+Previously, this data was captured every 3 minutes. Starting the second week of September 2025, the collection interval will be updated to every 5 minutes.
+
+There is no change to how performance data appears on the Device Details page.
+All metrics will continue to be displayed as they are today.
+
+Tip: If you have configured custom monitors for CPU, Disk, and Memory, we recommend reviewing and updating the Condition/Ticket resolution section to align with the new 5-minute interval for data collection from the endpoints.
+
+For any questions or assistance, reach out to your ConnectWise RMM support teams.
+
+What's new in ConnectWise RMM?
+Release Dates:	Relevant Modules:
+
+August 27, 2025
+August 25, 2025
+August 21, 2025
+August 20, 2025
+August 18, 2025
+August 7, 2025
+August 2, 2025
+	
+Agents
+Endpoint Protection
+Automation
+Patching
+August 27, 2025
+Agents
+
+Agent version 4.0.4 is now available for download.
+
+The RMM Agent now supports the latest version of Ubuntu - 25.04.
+
+With this release, we have optimized the Linux setup size and reduced it to ~20.5 MB.
+
+Note: Always use the latest version while installing Platform Agent to access new functionalities and ensure that they have the most up-to-date features. Make sure to update the GPO, MS Intune, or any other method used to install Agent.
+
+Known Issue	Description
+ISSUE-8184	Fixed an issue where agents were unable to communicate with the data center due to incorrect configuration.
+August 25, 2025
+Issues Addressed
+Known Issue	Description
+ISSUE-8665	Fixes an issue where download URLs used in custom tasks were incorrectly flagged as invalid during validation, preventing task execution.
+ISSUE-8429	Fixed an issue where servers failed to reboot as per patch policy.
+ISSUE-8753	Fixed an issue where tasks deleted from the portal appeared to be removed but were not actually deleted, causing them to reappear upon refresh.
+ISSUE-8645	Fixed an issue where attempting to edit certain tasks caused the page to go blank when accessing the Script Editor section, preventing users from making modifications.
+August 21, 2025
+Endpoint Protection
+
+We have added Carbon Black Antivirus to the identified list of Endpoint Protection.
+
+Agents
+We have improved the Agent's endpoint generation algorithm. The algorithm will not create a new endpoint ID if only a logical disk is changed/updated.
+PSA Integration
+
+Ticket status Sync changes
+
+During a Ticket sync, the system will not create any statuses on the Service Board if that service board is not configured in your Policy. In that case, the status sync will be skipped.
+A Ticket Status will only be created if a Ticket is in the Service Board, which has been configured in a PSA Policy. 
+
+We've introduced a new Report section.
+
+You will now see the failure count on the Ticket/Asset sync reporting.
+
+Hiding Billing sync section
+
+Existing partners who haven't opted for billing sync on the PSA integration wizard and newly onboarded partners won't be able to configure Billing sync from the PSA integration wizard.
+Issues Addressed
+Known Issue	Description
+ISSUE-8752	Fixed an issue where custom communicator icons were not appearing in the system tray.
+ 	Fixed an issue where partners were experiencing slowness in opening PSA integration reporting menu.
+August 20, 2025
+Alerting
+We have released enhanced complex monitors. With this update, complex monitor processing has been significantly improved to operate in near real-time. This means that any event observed on an endpoint will now be processed instantly.
+Fixed an issue where certain partners were not able to load the Monitor page.
+A new intelligent alert has been introduced to detect remote vSphere replication site disconnections. The Alert name is: “Remote vSphere Replication site is disconnected."
+Improved the alerting logic for alert: “Dell Server Monitoring - Virtual Disk or Enclosure redundancy has been degraded or lost.“
+Optimized alerting logic for alert: “Dell Server Monitoring - Predictive failure of a Disk“ and enabled calling for the alert.
+Updated ticket template for alert: “Security Notification - A user account is added to the Security group.“
+Introduced new preview alert: “Dell Server Monitoring - Unit or Sensor redundancy has been degraded or lost.“
+August 18, 2025 
+Automation
+Enhanced the Script Editor by adding the ability to run script steps in the Current Logged In User context. To learn more, review this documentation.
+August 7, 2025
+Patching
+Scheduled Reboots performed by OS patching on Windows OS now show a new message to users. This information is also available in the Windows Event log (Event ID 1074), allowing users to easily identify reboot events triggered by patching schedules. The following message is displayed:
+"The system is preparing for a scheduled reboot as part of patch deployment. Please save your work and close applications.”
+We updated the structure of Permission in Patching, specifically on the Patch Approvals page. These changes make user roles and access more consistent and easier to understand. Administrators now have greater control over which users can view, approve, or manage.
+Tip: For relevant documentation, check out the content on Patch Approvals.  
+Issues Addressed
+Known Issue	Description
+ISSUE-8632	Fixed an issue where users were unable to create a bash script using the Script Editor for Linux and MacOS.
+ISSUE-8599	Fixed an issue where users were unable to save modifications to existing scripts or newly duplicated scripts using the Script Editor.
+August 2, 2025
+Issues Addressed
+Known Issue	Description
+ISSUE-7265	
+
+Fixed an issue where partners were unable to delete companies on the Asio portal because of SNMP devices being present in the backend of those companies.
+
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ConnectWise RMM Latest Release Notes
+ConnectWise RMM Update for January 2024
+ConnectWise RMM Update for February 2024
+ConnectWise RMM Update for March 2024
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

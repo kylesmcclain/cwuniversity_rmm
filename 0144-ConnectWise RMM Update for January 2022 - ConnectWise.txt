@@ -1,0 +1,187 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   ConnectWise RMM Release Notes   RMM Release Notes Archive   ConnectWise RMM Update for January 2022
+ConnectWise RMM Update for January 2022
+Last updated
+Apr 28, 2022
+Table of contents
+Overview
+Announcements
+Complex Monitor
+Port Monitor
+Deprecation of the Legacy Partner defined alerts
+ConnectWise RMM
+Portal
+Device Groups
+Communicator
+Messaging Changes:
+Other Communicator changes:
+OS Patching
+PSA Integrations
+Monitoring
+Bug Fixes
+Overview
+
+Below is a summary of the new ConnectWise RMM features and updates released January 19th, 2022.
+
+Announcements
+Complex Monitor
+
+We are adding the capability for creating complex monitors using existing monitor options. Complex monitor will provide options to use more than one condition to generate an alert. Conditions can be combined in different combinations using operators in a user-friendly UI.
+
+This feature will be enabled on January 18th, 2022.
+
+Port Monitor
+
+We are adding the capability for the creating port monitors. Port monitor can provide options to define a local port on the endpoint to check their state and generate an alert for issues.
+
+This feature would be enabled on February 4th, 2022.
+
+Deprecation of the Legacy Partner defined alerts
+
+We will deprecate the legacy partner defined alerts from the portal as the corresponding functionality is developed as Custom monitors. The pages in the ITSupport Portal will be removed on April 1st, 2022.
+
+ConnectWise RMM
+Portal
+
+New agent version. An agent update, v 2.1.797, will be released starting January 28th.
+
+New Gateway features. This month we've added new features that give you more control over your gateway machines:
+
+You can now configure by selecting a device to act as Gateway in ITSupport portal.
+
+You now have the ability to disable an endpoint if acting as Gateway cache.
+
+You now have the ability to change the configuration if an endpoint is already acting as Gateway cache. This option will be available by selecting an endpoint then going to Manage > Gateway Cache. This will be released on February 7th.
+
+New S.M.A.R.T. (Self-Monitoring Analysis and Reporting Technology) features. We've added the SMART status for Windows devices in Device details. The Agent will now collect information related to the S.M.A.R.T. status, including having the ability to collect S.M.A.R.T. status for Hard disks (SMART enabled). SMART status will be located under Devices page > Inventory > Physical disk section, starting on February 3rd.
+
+A new version of the RMM Scanning Tool (7.3.4) will be released this month. The tool will be digitally signed with "ConnectWise LLC". This version only supports desktops running Windows 10 and above, as well as servers running Windows Server 2012 and above.
+
+Partners can now create new sites for Help Desk without having to enable the NOC Support against them. This can be updated or modified against the existing sites that were created as well. With this change if any issue cannot be resolved by the HD team such tickets will be escalated to the MSP instead of NOC.
+
+RSS feed branding. We have updated the RSS feeds which are released by the support team in an event of major issue/announcement to reflect as ConnectWise support instead of Continuum support
+
+Device Groups
+
+Improvement have been made in the follow components used to build group criteria to make the group creation experience improved and more consistent for users.
+
+Tree multiselect (with search)
+
+Drop-down multiselect (with search)
+
+Textbox multi-input
+
+Numbers multi-input
+
+Communicator
+Messaging Changes:
+
+You are now able to review the following details of the messages sent to the end-users:
+
+Text
+
+Sent, scheduled and expiration dates
+
+Recipients
+
+If the message is read by the endpoint
+
+If the end-users reply is enabled for the sent message
+
+You are now able to send a message that requires end-user's response and review the response on the portal.
+
+End-users will be able to provide response in the message notification window and historical list.
+
+Other Communicator changes:
+
+You can now configure a custom number (1-4) of child URL menus under the parent menu
+
+The End-user won't be able to see the sent message if the end-user was inactive and the message has been expired during this time.
+
+OS Patching
+
+macOS Assessments
+
+We will be introducing support for a mac assessment in the new OS patching. macOS machines will start showing patch compliance scores on machines where MAC patching is enabled under Desktop Policy.
+
+The Quick Patch Action will also allow for running On-Demand Assessment on MAC machines. Automated Patch deployments for MAC will be introduced in the upcoming release.
+
+PSA Integrations
+
+Branding alignment for products. Partners will now be able to see correct product names while trying to integrate the ConnectWise Manage PSA with ConnectWise Command/ConnectWise RMM.
+
+RMM Sites will be now referred as ConnectWise RMM Sites
+
+PSA will be referred as ConnectWise Manage
+
+Monitoring
+
+Complex and Port Monitors. See the announcements section for more information on these new monitors.
+
+Improvement to ICMP Monitor. We haved added additional functionality to the ICMP monitors in the system:
+
+Partner can now define in the monitor if they need to trigger an alert if the device is available or down
+
+Closing condition would be inverse selection of the generation criteria
+
+Interval for checking for the Closing condition can be defined with different value as generation criteria
+
+Quick Suspension. We have improved the quick suspension functionality to support generation of suspension rules as well as managing or editing the suspension rules in the system.
+
+Customized Permission for the IntelliMon Alerts. User permission can now be defined to create/update/delete IntelliMon Alerts & Automation in the system. User permissions can be applied to user type like Technician, Manager, Client Site Manager etc or individual users can also be provided with customized access rights for managing the IntelliMon Alerts & Automation.
+
+Bug Fixes
+
+The following issues will be resolved with this month's release:
+
+RMM: A bug that used to prevent Dell warranty details from being returned will be addressed this month.
+
+RMM: We have resolved an issue on the create new site page where the path for setting up a webroot account was incorrect.
+
+RMM: We have resolved an issue on the create new site page where some of the text regarding the ITGlue/Webroot configuration was not clearly visible.
+
+ 
+
+ 
+
+ConnectWise reserves the right to remove any enhancement or fix from this update if it does not pass quality assurance tests.
+
+ 
+
+RMM Release Notes Archive ConnectWise RMM Update for February 2022
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ConnectWise RMM Update for April 2022
+ConnectWise RMM Update for March 2022
+ConnectWise RMM Update for February 2022
+ConnectWise RMM Update for May 2022
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

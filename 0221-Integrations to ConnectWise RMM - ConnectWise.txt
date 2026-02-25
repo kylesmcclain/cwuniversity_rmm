@@ -1,0 +1,78 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Integrations to ConnectWise RMM
+Integrations to ConnectWise RMM
+Last updated
+Jun 11, 2025
+Table of contents
+Overview
+Overview
+
+Welcome to the ConnectWise RMM™ Integrations category! ConnectWise RMM offers a wide range of integrations designed to enhance your IT management capabilities and streamline your operations. In addition to ConnectWise applications available in the Asio® platform, RMM supports a variety of third-party integrations through the Marketplace.
+
+Click on the title of a guide or article below to learn more about RMM integrations.
+
+Webroot
+Webroot Endpoint Protection is included in our ConnectWise RMM™ desktop agent to help you protect your resources against viruses. (A fee is associated with using Webroot on server agents and non-RMM endpoints.) You can keep track of the number of endpoints from the Webroot dashboard and from the Asio platform dashboard.
+Getting Started with Webroot Endpoint Protection
+Webroot Activation Checklist
+Webroot Best Practices
+Webroot Billing
+Webroot Default Configurations
+Show all
+ScreenConnect with RMM
+This guide contains all relevant articles for using ScreenConnect with ConnectWise RMM.
+Administrating Roles, Permissions, and Session Groups Setup
+Advanced Configuration Editor
+Backstage Mode
+False positive from antivirus software
+Define user roles and permissions for ScreenConnect
+Show all
+ConnectWise RMM Intune Integration
+Integration with Microsoft Intune allows multi-tenant management of customer end-points in ConnectWise RMM™. This solution has simplified the complex and powerful MS Intune solution within RMM.
+Intune Integration Using your CSP Account
+View Intune Information in the Asio™ Platform (ITSupport Portal)
+Endpoint Protection
+This guide includes articles about ConnectWise RMM™ endpoint protection and managed antivirus products.
+Identified Antivirus Products
+Managed Antivirus Products
+Removing Viruses and Other Malware
+RMM Recommended AV Server Exclusion List
+Bitdefender Integration
+This guide describes how to configure and use the integration. Bitdefender GravityZone is a business security solution built from ground-up for virtualization and cloud to deliver security services to physical endpoints, virtual machines in public cloud, and Exchange mail servers.
+Scalepad Lifecycle Manager and ConnectWise RMM Integration
+Lifecycle Manager syncs your hardware assets from ConnectWise RMM via API. This article provides instructions on how to integrate ConnectWise RMM to Lifecycle Manager.
+
+  
+
+Using the Chat Support Feature Webroot
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ScreenConnect with RMM
+This guide contains all relevant articles for using ScreenConnect with ConnectWise RMM.
+ConnectWise RMM Intune Integration
+Integration with Microsoft Intune allows multi-tenant management of customer end-points in ConnectWise RMM™. This solution has simplified the complex ...
+Scalepad Lifecycle Manager and ConnectWise RMM Integration
+Lifecycle Manager syncs your hardware assets from ConnectWise RMM via API. This article provides instructions on how to integrate ConnectWise RMM to L...
+Endpoint Protection
+This guide includes articles about ConnectWise RMM™ endpoint protection and managed antivirus products.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

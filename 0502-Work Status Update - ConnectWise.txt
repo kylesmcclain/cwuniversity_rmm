@@ -1,0 +1,60 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Tickets   Work Status Update
+Work Status Update
+Last updated
+Jul 3, 2025
+Table of contents
+Overview
+View Ticket Status
+Overview
+
+A work status update is an update to a ticket's status. You can use this information to see when and how a ticket was updated.
+
+View Ticket Status
+
+To view the current status of a ticket, follow these steps:
+
+Click the Work Status Update tab.
+You can also view this as a report under Reports -> Executive Report -> Select Site -> Select Month -> Select Work Status. This report provides a summary of all closed tickets during a month.
+
+The Executive Report contains tickets for which the Executive Report flag has been set to Yes.
+
+
+In the Work Status Update window, from the Select Month drop-down menu, choose the month you want to run the report on.
+From the Site drop down menu, you can also filter by Site or leave as default All Sites.
+Click the Go button to generate a closed ticket list.
+You can collapse or expand the ticket summaries by clicking the  icon. The collapsed ticket listing shows: Site, Machine Name, Work Completion Date, Problem, Time Block, On Site, and Executive Report. The expanded ticket listing also shows: Ticket ID, Subject, Description, and Resolution.
+By clicking the Site, you open a Problem and Resolution window for that ticket. Here you can update the Problem, Resolution, Time Block, and Work Time fields as well as the Onsite and Executive Report radio button options.
+
+Edit a Ticket Close a Ticket
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Best Practices for Going Green
+Are you looking to impress a client with a solid green dashboard? Regardless of your reasons for wanting to go green, we will help you get there. But ...
+Service Plans and Ticket Lifecycles
+The lifecycle of a ticket depends on the subscribed service plan of the site generating an alert. Service plans and their respective ticket lifecycles...
+Create a Ticket
+To create a new ticket, click the Tickets tab in the Asio™ Platform (ITSupport Portal) and select New Ticket from the top of the navigation bar on the...
+Edit a Ticket
+To edit a ticket, browse to the ticket queue on the left navigation bar and select an appropriate container.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

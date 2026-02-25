@@ -1,0 +1,238 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Agents   Asio Agent Requirements   Firewall Exclusions
+Firewall Exclusions
+Last updated
+Dec 3, 2025
+Table of contents
+​Overview
+Data Center Exclusions (includes PSA Integration Exclusions)
+Ports
+Asio Platform Agent Exclusions
+
+​
+
+​Overview
+
+Below are recommended firewall exclusions for ConnectWise Asio® platform and RMM. Refer to Connectwise Public IP Addressess for more exclusions by product.
+
+Data Center Exclusions (includes PSA Integration Exclusions)
+
+IP Addresses
+
+North America
+
+	
+
+EU region
+
+	
+
+AU regionr
+
+
+
+
+34.235.68.88/32
+44.195.98.227/32
+52.5.231.75/32
+52.6.119.190
+
+	
+
+52.211.103.209/32
+54.220.251.226/32
+4.155.17.21/32
+
+	
+
+13.236.199.94
+13.55.107.127
+3.25.6.176
+
+Ports
+80 & 443 (outbound) TCP
+
+Note: The agent will first attempt to use the http (port 80) and in case it is not available then the agent will use https (port 443).
+
+Asio Platform Agent Exclusions
+https://*.itsupport247.net for North America region
+
+https://*.euplatform.connectwise.com for EU region
+
+https://*.auplatform.connectwise.com for AU region
+
+Non-Wildcard URLs (Enhanced Agent; hosted in AWS) for North America
+
+	
+
+Non-Wildcard URLs (Enhanced Agent; hosted in AWS) for EU
+
+	
+
+Non-Wildcard URLs (Enhanced Agent; hosted in AWS) for AU
+
+	
+
+Usage
+
+
+
+
+https://agent.service.itsupport247.net/
+
+	
+
+https://agent.service.euplatform.connectwise.com/
+
+	
+
+https://agent.service.auplatform.connectwise.com/
+
+	
+
+Agent 2.0 service used for communication
+
+
+
+
+https://agent-data.service.itsupport247.net/agent
+
+	
+
+https://agent-data.service.euplatform.connectwise.com /agent
+
+	
+
+https://agent-data.service.auplatform.connectwise.com/agent
+
+	
+
+Agent 2.0 service used for communication
+
+
+
+
+https://agent.service.itsupport247.net
+
+	
+
+https://agent.service.euplatform.connectwise.com
+
+	
+
+https://agent.service.auplatform.connectwise.com
+
+	
+
+Agent 2.0 service used for communication
+
+
+
+
+https://cdn.itsupport247.net/*
+
+	
+
+https://cdn.euplatform.connectwise.com/*
+
+	
+
+https://cdn.auplatform.connectwise.com/*
+
+	
+
+Agent 2.0 agent update using CloudFront
+
+
+
+
+https://update2.itsupport247.net
+
+	
+
+https://update2.euplatform.connectwise.com
+
+	
+
+https://update2.auplatform.connectwise.com
+
+	
+
+Download setups/updates
+
+
+
+
+https://agent-rollout.s3.us-east-1.amazonaws.com/
+
+	
+
+https://agent-eu-rollout.s3.eu-west-1.amazonaws.com/
+
+	
+
+https://agent-au-rollout.s3.ap-southeast-2.amazonaws.com/
+
+
+
+
+https://update3.itsupport247.net
+
+	
+
+https://update3.euplatform.connectwise.com
+
+	
+
+https://update3.auplatform.connectwise.com
+
+	
+
+Agent updates/configurations
+
+ 
+
+Note: For more information on how to configure browser and firewall settings, refer to this documentation.
+
+ 
+
+Asio Agent Requirements Cloud Services
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Uninstalling an Agent
+This guide includes the steps required to uninstall an agent from a desktop or server in RMM or Asio via the Devices page.
+Cloud Services
+Agent Tamper Protection
+Agents on Windows devices utilize tamper protection to restrict users from stopping the agent core services.
+Download and Install Agents
+This article provides information and instructions about downloading and installing an agent on your device with Windows, macOS, or Linux.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

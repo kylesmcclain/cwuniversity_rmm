@@ -1,0 +1,121 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   RMM Reporting API   Reporting API REST Resources   Server Utilization
+Server Utilization
+Last updated
+Jul 8, 2025
+Table of contents
+Overview
+Endpoint and URI
+Method
+Request Body
+Response Body
+Parameter Descriptions for Server Utilization
+Source of Data in the Asio Platform
+Overview
+
+Retrieves average server utilization data for a given month.
+
+Endpoint and URI
+
+https://itsapi.itsupport247.net/repo...ization/server
+
+Method
+
+POST
+
+Request Body
+
+{
+
+"Month":4,
+
+"SiteCode":"AGTSolutions",
+
+"Year":2015,
+
+}
+
+Response Body
+
+{
+
+"error":null,
+
+"serverUtilization":[
+
+{
+
+"cPU":83.21,
+
+"diskSpace":73.00,
+
+"MachineId": 9223372036854775807,
+
+"memory":67.56,
+
+"server":"WS2008_1"
+
+},
+
+{
+
+...
+
+},
+
+{
+
+...
+
+}
+
+]
+
+}
+
+Parameter Descriptions for Server Utilization
+Parameter	Description
+"Month"	Requested month (numerical)
+"SiteCode"	Unique site code listed in Asio™ Platform (ITSupport Portal)
+"Year"	Requested year
+"cPU"	Server CPU usage for the month
+"diskSpace"	Server disk space usage for the month
+"MachineId"	Unique machine ID in ConnectWise database
+"memory"	Server memory usage for the month
+"server"	Server name in Asio™ Platform (ITSupport Portal)
+Source of Data in the Asio Platform
+
+Reports >  Asio > Executive Report > Server Data > Utilization > Per Server
+
+Server Availability Monthly Averages Service Requests by Month
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Agent Details
+Retrieves agent information for the authenticated partner and the specified site.
+Antivirus Summary
+Retrieves counts of machines having antivirus protection in the following states: Updated, Outdated, Not Installed, or Information Unavailable.
+Antivirus Version Summary
+Retrieves currently detected antivirus software and the definition version.
+BCDR Continuity Appliances
+Retrieves a list of Recover Continuity backup appliances provisioned at the given site.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

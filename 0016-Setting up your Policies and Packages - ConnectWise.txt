@@ -1,0 +1,258 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Getting Started with ConnectWise RMM   Setting up your Policies and Packages
+Setting up your Policies and Packages
+Last updated
+Jan 23, 2026
+Table of contents
+Overview
+RMM Site Configuration Policy
+Setting up an RMM Site Configuration policy:
+Remote Access Policy
+Desktop Patching Policy
+Server Patching Policy
+Communicator Policy
+Add Policies to a Package
+Package to Site Assignment 
+Helpful Links
+Overview
+
+Policies and Packages are used to set up many features of your ConnectWise RMM and Asio™ platform at multiple hierarchical levels. The following Policies are the recommended basic configuration to get your agents deployed.
+
+RMM Site Configuration Policy - Site-level settings which can be enabled via policies.
+Remote Access Policy - Enables remote access for troubleshooting and support.
+Desktop Patching Policy -  Automates patching process to keep desktop devices updated and secure.
+Server Patching Policy -  Automates patching process to keep desktop devices updated and secure.
+Communicator Policy - Facilitates efficient communication between teams.
+
+Policies and Packages can be used for third-party agent install.
+
+After you set up your policies, you will include them in Packages and assign them to your sites.
+
+RMM Site Configuration Policy
+
+RMM Site Configuration Settings are site-level settings that can be enabled via policies. Upon enabling this setting, the platform agent will start installing all the components related to RMM services and capabilities. The following RMM functionalities and more are available once this policy is enabled and applied to a site:
+
+Performance Data Collection
+Remote Access (ScreenConnect deployment/capabilities)
+Automation
+OS Patching
+Communicator
+Important information in In-console reports
+Third-party Patching
+Event Monitoring
+File System
+Optional features like enabling NOC/Helpdesk service
+
+Note: Once this policy is enabled, you do not have to perform any additional installation steps. Based on the policies, the platform agent will evaluate and install the required components automatically and transform into an RMM Agent.
+
+Setting up an RMM Site Configuration policy:
+
+This policy is required to enable the RMM Services on a particular site. To create an RMM Site Configuration policy, 
+
+Navigate to Endpoints > Policies & Packages > Policies.
+Click Add Policy.
+When the new policy page loads, In the Left section of the page, you should see the below fields.
+Change the Category field from Devices to Sites. 
+
+
+In the Type dropdown, select RMM Site Configuration and give your policy a Name of your choice.
+
+
+Under the settings for your RMM Site Configuration policy, enable and disable the configurations and settings you require.
+
+To enable RMM for a site via this policy, update the Enable RMM Services toggle to the Enabled state. 
+
+On enabling RMM for a site, you will get the option to enable NOC Services for RMM. You can choose to enable the NOC Services or keep it disabled.
+
+Note: RMM NOC Services are paid add-ons. If you enable these services, they will be charged to you in your monthly invoice. For details on NOC Services, please review the NOC Services documentation.
+
+Another key field for enabling RMM on a site is the Notification Rule. This rule defines how ConnectWise RMM and NOC will communicate with the partner.
+Click Save.
+Remote Access Policy
+
+To enable ScreenConnect for remotely viewing your clients' computers:
+
+Navigate to Endpoints > Policies & Packages > Policies.
+
+Click Add Policy.
+
+
+Fill out the appropriate fields:
+
+Category: Devices
+Type: Remote Access
+Name: Type your name for the policy
+
+
+Under the Remote Access Settings, enable the settings that you want.
+
+
+
+Click Save.
+
+Desktop Patching Policy
+
+Your OS Patching Policies control how patches and updates are delivered to your sites.
+
+Navigate to Endpoints > Policies & Packages > Policies and click Add.
+Choose OS Patching Desktop.
+Name the new Policy.
+Switch the OS Patching Automation to ON.
+Select the Patch Classifications you want to automate using Policies. You have three options you can choose from:
+Do not deploy
+Deploy all
+Deploy only Partner or NOC Approved
+
+After you have finished selecting your settings, click Save.
+
+Note: Review the Policies and Packages page for more information.
+
+Note: If you select a scheduled time for any settings, the window must be a minimum of four hours for installation and one hour for reboot. The time displayed will always be local time.
+
+Server Patching Policy
+
+Your OS Patching Policies control how patches and updates are delivered to your sites.
+
+Navigate to Endpoints > Policies & Packages > Policies and click Add Policy.
+Select Devices from the Category drop-down.
+Select OS Patching Server from the Type drop-down.
+Name the new policy.
+Switch the OS Patching Automation to ON.
+
+Select the Patch Classifications you want to automate using Policies. You have three options you can choose from:
+
+Do not deploy
+Deploy all
+Deploy only Partner or NOC Approved
+Click Save.
+
+
+
+Note: If you select a scheduled time for any settings, the window must be a minimum of four hours for installation and one hour for reboot. The time displayed will always be local time.
+
+Note: Review the Policies and Packages page for more information.
+
+Communicator Policy
+
+Enabling the Communicator via Policies allows you to synchronize news feeds, send instant messages, and integrate scripts to provide your clients with resources to fix problems on demand. Clients can access your Communicator via a taskbar menu deployed to any Windows or Mac desktop running the RMM desktop agent.
+
+Navigate to Endpoints > Policies & Packages > Policies and click Add.
+
+Complete the appropriate fields:
+
+Category: Devices
+Type: Communicator
+Name: Type your name for the policy
+Switch the Communicator Enabled/Disabled to Yes.
+Choose your settings based on your preferences. The following image is a sample of the Communicator setup.
+
+Click Save.
+Add Policies to a Package
+
+After you've created your Policies, you need to group them in a Package so you can assign them to your sites.
+
+Navigate to Endpoints > Policies & Packages > Packages.
+Click the Add button. The following screen appears.
+
+
+Input the appropriate information for the package:
+
+Field Name
+
+	
+
+Description
+
+
+
+
+Name
+
+	
+
+A user-defined name for the package, up to 200 characters.
+
+
+
+
+Default Package
+
+	
+
+Defines whether the package is assigned to the partner level of the RMM hierarchy. This is Off by default. If a package is assigned as default it will be inherited by all lower levels.
+
+
+
+
+Package Builder
+
+	
+Defines which policies the package includes.
+Add a policy to the package by dragging and dropping a policy from the Policy List to the Package Builder.
+Remove a policy from the package by clicking the delete icon displayed to the left of the Policy Name in the Package Builder.
+
+Important: Each package can only contain one (1) policy of each type. Attempting to add a second policy of the same type to the Package Builder replaces the current policy of that type.
+
+Important: Each package must contain at least one (1) policy.
+
+Drag your getting started policies into the building blocks section.
+Click Save when you are finished. To edit an existing package, select the one you want to edit on the Package List page.
+Package to Site Assignment 
+Assign a package to Site(s): Each Policy included in a Site Assigned Package will be automatically inherited by all Devices under the Site, including ones added in the future.
+Navigate to Endpoints > Policies & Packages > Assignment > Sites tab
+Check the box for each selected Site
+Click Assign Package
+Click the Name of the Package
+Click Assign
+Remove a package from a Site(s): Removing a package from a Site will revert all Devices under the Site that are not assigned an Override to their inherited values.
+Navigate to Endpoints > Packages > Sites tab
+Check the box for each selected Site
+Click Remove Assignment
+Click OK
+
+Important: A site can only be assigned one (1) package. Assigning a second package to a site will replace the site's current package.
+
+Helpful Links
+Policies and Packages
+ScreenConnect Integration Guide
+Third-Party Patching
+
+ 
+ScreenConnect Integration with ConnectWise RMM Agents
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Creating Users
+Creating Notification Rules
+Create Client Sites
+Installing Asio Agents
+This article provides information and instructions about how to download and install an agent on your device.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

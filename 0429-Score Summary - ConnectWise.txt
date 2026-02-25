@@ -1,0 +1,144 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   RMM Reporting API   Reporting API REST Resources   Score Summary
+Score Summary
+Last updated
+Jul 8, 2025
+Table of contents
+Overview
+Endpoint and URI
+Method
+Request Body
+Response Body
+Parameter Descriptions for Score Summary*
+Source of Data in the Asio Platform
+Overview
+
+Returns various scoring metrics for a given site.
+
+Endpoint and URI
+
+https://itsapi.itsupport247.net/repo.../summary/score
+
+Method
+
+POST
+
+Request Body
+
+{
+
+"Month":4,
+
+"SiteCode":"AGTSolutions",
+
+"Year":2015,
+
+}
+
+Response Body
+
+{
+
+"error":null,
+
+"scores":[
+
+{
+
+"desktopAntivirus":21,
+
+"desktopDiskSpace":93,
+
+"desktopMalware":80,
+
+"desktopPatch":100,
+
+"desktopTempFile":-1,
+
+"desktopWarranty":-1,
+
+"overall":69,
+
+"serverAntivirus":64,
+
+"serverAvailability":59,
+
+"serverCpuUtilization":100,
+
+"serverDiskUtilization":100,
+
+"serverMemoryUtilization":100,
+
+"serverPatch":50,
+
+"serverWarranty":10
+
+}
+
+]
+
+}
+
+Parameter Descriptions for Score Summary*
+Parameter	Description
+"Month"	Requested month (numerical)
+"SiteCode"	Unique site code listed in Asio™ Platform (ITSupport Portal)
+"Year"	Requested year
+"desktopAntivirus"	
+
+These metrics contribute to the overall score provided in Executive Reports. Each metric score ranges from 0 to 100, which may be percentages for utilization metrics or points for non-utilization metrics. The metrics are in turn used to rank and color code corresponding areas of machine health (Antivirus, Disk Space, etc.), ranging from "Upgrade Needed" (red) to "Excellent" (green).
+
+For a detailed description of these metrics and calculations, see the "Explanation of Charts" section at the bottom of any Executive Report, as well as the Executive Reports page.
+
+Note: A value of -1 for any metric indicates that the metric is not applicable at the given site. For example, sites without servers would return a -1 for all server-related metrics.
+
+
+"desktopDiskSpace"
+"desktopMalware"
+"desktopPatch"
+"desktopTempFile"
+"desktopWarranty"
+"overall"
+"serverAntivirus"
+"serverAvailability"
+"serverCpuUtilization"
+"serverDiskUtilization"
+"serverMemoryUtilization
+"serverPatch"
+"serverWarranty"
+Source of Data in the Asio Platform
+
+Reports >  Asio > Executive Report > Summary > Overall Score
+
+BCDR Continuity Appliances Server Availability Monthly Averages
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Agent Details
+Retrieves agent information for the authenticated partner and the specified site.
+Antivirus Summary
+Retrieves counts of machines having antivirus protection in the following states: Updated, Outdated, Not Installed, or Information Unavailable.
+Antivirus Version Summary
+Retrieves currently detected antivirus software and the definition version.
+BCDR Continuity Appliances
+Retrieves a list of Recover Continuity backup appliances provisioned at the given site.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

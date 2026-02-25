@@ -1,0 +1,120 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Agents   Agent Tamper Protection
+Agent Tamper Protection
+Last updated
+May 15, 2025
+Table of contents
+Overview
+Tamper Protection
+Technician Commands
+Agent Core
+To stop the service:
+"C:\Program Files (x86)\ITSPlatform\agentcore\platform-agent-core.exe" "C:\Program Files (x86)\ITSPlatform\config\platform_agent_core_cfg.json" "C:\Program Files (x86)\ITSPlatform\log\platform_agent_core.log" stopservice
+To disable the service:
+To enable the service:
+Agent Manager:
+To stop the service:
+To disable the service:
+To enable the Agent Manager service
+Overview
+
+The Agent has the core services and processes that control the entire agent. If the service is stopped or disabled, the agent will stop processing data from the endpoint, resulting in disabled monitoring. This feature makes the agent tamper-proof, so you can safely rely on the fact that the agent will be working and running on the endpoint and raising issues if observed.
+
+Upon installation, the RMM agent will restrict end users from stopping Agent core services.
+
+Note: 
+
+This feature is only available for Windows agents.
+Additionally, you can use the Agent Repair Utility, which helps identify the malfunctioning components of the RMM agent and also repairs them.
+Tamper Protection
+
+Users will not be able to perform any of the following actions:
+
+The Agent service cannot be stopped from the user interface or Services.msc or from Task Manager.
+
+The Agent service cannot be disabled from any user interface or services.msc or from Task Manager.
+
+The settings of the service properties are disabled to perform any action as shown in the screenshot.
+
+ITSplatform will not be visible in the Add/Remove programs list of Windows.
+
+Agent service stop and disable action should be allowed only by the command line explicitly.
+
+Technician Commands
+
+A technician can use the command line to stop and disable the service, if required during any troubleshooting process.
+
+Agent Core
+To stop the service:
+"C:\Program Files (x86)\ITSPlatform\agentcore\platform-agent-core.exe" "C:\Program Files (x86)\ITSPlatform\config\platform_agent_core_cfg.json" "C:\Program Files (x86)\ITSPlatform\log\platform_agent_core.log" stopservice
+To disable the service:
+
+"C:\Program Files (x86)\ITSPlatform\agentcore\platform-agent-core.exe" "C:\Program Files (x86)\ITSPlatform\config\platform_agent_core_cfg.json" "C:\Program Files (x86)\ITSPlatform\log\platform_agent_core.log" disableservice
+
+To enable the service:
+
+"C:\Program Files (x86)\ITSPlatform\agentcore\platform-agent-core.exe" "C:\Program Files (x86)\ITSPlatform\config\platform_agent_core_cfg.json" "C:\Program Files (x86)\ITSPlatform\log\platform_agent_core.log" enableservice
+
+Agent Manager:
+To stop the service:
+
+"C:\Program Files (x86)\ITSPlatform\agentmanager\platform-agent-manager.exe" stopservice "C:\Program Files (x86)\ITSPlatform\log\platform_agent_manager.log" "C:\Program Files (x86)\ITSPlatform\config\platform_agent_core_cfg.json"
+
+To disable the service:
+
+"C:\Program Files (x86)\ITSPlatform\agentmanager\platform-agent-manager.exe" disableservice "C:\Program Files (x86)\ITSPlatform\log\platform_agent_manager.log" "C:\Program Files (x86)\ITSPlatform\config\platform_agent_core_cfg.json"
+
+To enable the Agent Manager service
+
+"C:\Program Files (x86)\ITSPlatform\agentmanager\platform-agent-manager.exe" enableservice "C:\Program Files (x86)\ITSPlatform\log\platform_agent_manager.log" "C:\Program Files (x86)\ITSPlatform\config\platform_agent_core_cfg.json"
+
+ 
+
+Note: To uninstall the Agent, it's always recommended to uninstall from the Asio platform.
+
+If the Agent needs to be removed manually, from the endpoint, follow this command line parameter.
+
+"C:\Program Files (x86)\ITSPlatform\agentcore\platform-agent-core.exe" "C:\Program Files (x86)\ITSPlatform\config\platform_agent_core_cfg.json" "C:\Program Files (x86)\ITSPlatformSetupLogs\platform_agent_core.log" uninstallagent
+
+ 
+
+Agent Self-Heal Asio Agent Requirements
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Asio Agent Requirements
+The article includes the currently supported operating systems for agent installations.
+Uninstalling an Agent
+This guide includes the steps required to uninstall an agent from a desktop or server in RMM or Asio via the Devices page.
+Cloud Services
+Download and Install Agents
+This article provides information and instructions about downloading and installing an agent on your device with Windows, macOS, or Linux.
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

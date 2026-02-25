@@ -1,0 +1,1000 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Alerts   Custom Monitors
+Custom Monitors
+Last updated
+Dec 23, 2025
+Table of contents
+Overview
+User Access
+Manage Custom Monitors
+All Endpoint Monitoring Conditions
+Download a Visualization
+Company and Site Monitoring
+Endpoint Monitoring Conditions
+Column Descriptions
+View Options
+Monitor Compatibility
+Configuration and Output
+Automation Tasks
+Custom Monitors Mapper
+Enable the Mapper
+Mapper Field Descriptions
+Monitor Output
+Alert Created as a Trigger in Asio Workflows
+Trigger Details
+Use Case
+Monitor Types 
+Overview
+
+ConnectWise RMM® allows you to create custom alert monitors using a variety of available monitor templates. Monitors use these templates to trigger alerts when issues are identified based on various values that are collected from the endpoint. These alerts are generated in near real-time to notify of problems observed.
+
+Please refer to these different types of Custom Monitors for more detailed information about each monitor.
+
+Note: Custom Monitors are available in ACR for partners to import or export. Monitors will get exported or imported to ACR without target and Associated Automation. For more information, review the ConnectWise Community Exchange article.
+
+User Access
+
+Refer to Application Roles for more information about adding alert monitor permissions to a custom application role. The following default roles have access to the monitor screen for viewing the existing monitors or creating a new monitor:
+
+ 
+
+	
+
+Primary Super Admin
+
+	
+
+Super Admin
+
+	
+
+Manager
+
+	
+
+Technician
+
+	
+
+Office Staff
+
+	
+
+Sales
+
+	
+
+Client Site Manager
+
+
+
+
+Create
+
+	
+
+Enabled by Default
+
+	
+
+Enabled by Default
+
+	
+
+Enabled by Default
+
+	
+
+Enabled by Default
+
+	
+
+Disabled by Default
+
+	
+
+Disabled by Default
+
+	
+
+Enabled by Default
+
+
+
+
+Update
+
+	
+
+Enabled by Default
+
+	
+
+Enabled by Default
+
+	
+
+Enabled by Default
+
+	
+
+Enabled by Default
+
+	
+
+Disabled by Default
+
+	
+
+Disabled by Default
+
+	
+
+Enabled by Default
+
+
+
+
+Read
+
+	
+
+Enabled by Default
+
+	
+
+Enabled by Default
+
+	
+
+Enabled by Default
+
+	
+
+Enabled by Default
+
+	
+
+Disabled by Default
+
+	
+
+Disabled by Default
+
+	
+
+Enabled by Default
+
+
+
+
+Delete
+
+	
+
+Enabled by Default
+
+	
+
+Enabled by Default
+
+	
+
+Enabled by Default
+
+	
+
+Enabled by Default
+
+	
+
+Disabled by Default
+
+	
+
+Disabled by Default
+
+	
+
+Enabled by Default
+
+
+
+
+Device Groups
+
+	
+
+Enabled by Default
+
+	
+
+Enabled by Default
+
+	
+
+Disabled by Default
+
+	
+
+Disabled by Default
+
+	
+
+Disabled by Default
+
+	
+
+Disabled by Default
+
+	
+
+Disabled by Default
+
+
+
+
+All Eligible Endpoints
+
+	
+
+Enabled by Default
+
+	
+
+Enabled by Default
+
+	
+
+Disabled by Default
+
+	
+
+Disabled by Default
+
+	
+
+Disabled by Default
+
+	
+
+Disabled by Default
+
+	
+
+Disabled by Default
+
+Manage Custom Monitors
+
+The Monitors page provides centralized visibility and control over monitoring conditions across endpoints, companies, and sites. You can access this feature from multiple areas of the platform, each offering a different scope of visibility.
+
+Note: The displayed alert data is context-sensitive based on the navigation path. However, automations, mappings, and monitor output settings are global; changes made in Edit Monitor apply across all applicable endpoints and devices.
+
+Scope
+
+	
+
+Path
+
+
+
+
+All endpoint monitoring
+
+	
+
+Endpoints > Alerts > Monitors
+
+
+
+
+Company and site monitoring
+
+	
+
+Clients > Companies > [select a company] > Monitoring > Custom Monitors
+
+
+
+
+Endpoint monitoring
+
+	
+
+Endpoints > Devices > [select a device] > Monitoring > Custom Monitors
+
+All Endpoint Monitoring Conditions
+
+Note: The monitoring conditions available on this page are determined by your ConnectWise RMM product package (Core, Standard, Premium).
+
+ Navigate to Endpoints > Alerts > Monitors to access this view.
+
+This tab provides a unified list of all custom monitors. It serves as the central hub for managing alert logic, routing, and automation. To learn more, refer to the Descriptions sections below.
+
+Click the custom monitor name to customize alert actions, such as automation or ticket generation.
+Changes made in Edit Monitor apply across all applicable endpoints and devices.
+
+Download a Visualization
+Navigate to Endpoints > Alerts > Monitors.
+Click the Actions icon.
+
+Select your preferred file type from the drop-down.
+Company and Site Monitoring
+
+After the agent is installed for a device associated with an Asio company, you can navigate to the company detail page and manage the custom monitors for all endpoints within the company. To learn more, refer to the different custom monitor types.
+
+ Navigate to Clients > Companies > [select a company] > Monitoring > Custom Monitors to access this view.
+
+To manage at the site level, first select a company and then select the site. From the site detail page, click Monitoring > Custom Monitors.
+Click the monitor name to customize alert actions, such as automation or ticket generation.
+Changes made in Edit Monitor apply across all applicable endpoints and devices.
+From this view, you can also manage Intelligent Alerts and Suspension for the company level.
+
+Endpoint Monitoring Conditions
+
+After the agent is installed on a device, you can access a detailed view of custom monitors specific to that endpoint. To learn more, refer to the Descriptions sections below.
+
+ Navigate to Endpoints > Devices > Device Detail > Monitoring > Custom Monitors to view this page.
+
+This page provides a highly targeted view of alerting behavior and automation for the selected endpoint. Technicians and users with access to Custom Monitors can:
+
+Review the active monitors assigned to the endpoint. 
+Customize alert behavior for the endpoint.
+Assign automation tasks to streamline remediation.
+Suspend alerts during maintenance or exception periods.
+
+Column Descriptions
+
+Descriptions for Monitors apply to all levels (e.g., company, device, all endpoints).
+
+Column
+
+	
+
+Description
+
+
+
+
+Name
+
+	
+
+This is the condition or issue that triggers an alert notification when the agent detects a problem on the endpoint. Click to edit mapping, automation, monitor output, or view monitoring condition details. 
+
+
+
+
+Type
+
+	
+
+This is the type of Custom Monitor
+
+
+
+
+Family
+
+	
+
+Logical grouping of the different types of issues for categorization.
+
+
+
+
+Status
+
+	
+
+Status of the Custom Monitor. For example, Enabled or Disabled
+
+
+
+
+Severity
+
+	
+
+Predefined severity level of the condition representing the severity of the issue.
+
+
+
+
+Last 7 Days Alert Trend
+
+	
+
+Visual trend of monitor activity. Hover for open/closed counts. 
+
+🟩 No alert
+🟦 Closed same day
+🟥 Open >1 day
+
+The alerts and ticket count will depend on the monitor output you choose. Even if you select the 'Do not generate ticket' status, you will not receive tickets for that condition. However, you will still be able to see the count in this column.
+
+
+
+
+Actions 
+
+	
+
+An icon for copying the monitor.
+
+View Options
+
+Option
+
+	
+
+Description
+
+
+
+
+Search
+
+	
+
+Search by condition name, family, or severity.
+
+
+
+
+Filter
+
+	
+
+Apply filters by severity, family, or configurable conditions.
+
+
+
+
+Columns
+
+	
+
+Show/hide columns based on preference.
+
+
+
+
+View
+
+	
+
+Adjust row height (Standard, Compact, Comfortable).
+
+
+
+
+Export
+
+	
+
+Download visible conditions as CSV.
+
+Note: This feature enables you to export filtered data. Clear all filters if you need to export all alert conditions.
+
+
+
+
+Edit View
+
+	
+
+Customize layout and pod visibility.
+
+
+
+
+Export Charts
+
+	
+
+Click the Actions icon next to the visualization pods to export the chart as a JPEG or PNG file.
+
+Monitor Compatibility
+
+Monitor Type
+
+	
+
+Sub-Type
+
+	
+
+Compatibility
+
+
+
+
+Service
+
+	
+
+ 
+
+	
+
+Windows, MAC & Linux
+
+
+
+
+Process
+
+	
+
+ 
+
+	
+
+Windows, MAC & Linux
+
+
+
+
+Event
+
+	
+
+ 
+
+	
+
+Windows
+
+
+
+
+Performance
+
+	
+
+CPU
+
+	
+
+Windows, MAC & Linux
+
+
+
+
+Memory
+
+
+
+
+Disk
+
+
+
+
+Registry
+
+	
+
+ 
+
+	
+
+Windows
+
+
+
+
+Application
+
+	
+
+ 
+
+	
+
+Windows, MAC & Linux
+
+
+
+
+File System
+
+	
+
+ 
+
+	
+
+Windows, Linux
+
+
+
+
+Script
+
+	
+
+Schedule
+
+	
+
+Windows, MAC & Linux
+
+
+
+
+Event Trigger
+
+	
+
+Windows
+
+
+
+
+Complex Monitor
+
+	
+
+ 
+
+	
+
+Windows, MAC & Linux
+
+
+
+
+Network Devices
+
+	
+
+ICMP
+
+	
+
+ICMP Supported Devices
+
+
+
+
+Local Port
+
+	
+
+Windows, MAC & Linux
+
+
+
+
+Performance Counter
+
+	
+
+Windows Application
+
+	
+
+Windows
+
+
+
+
+HyperV
+
+
+
+
+Windows
+
+
+
+
+Device Down
+
+	
+
+ 
+
+	
+
+Windows, MAC & Linux
+
+
+
+
+VMWare
+
+	
+
+State
+
+	
+
+VMWare Esxi 5.5 and above
+
+
+
+
+Snapshot
+
+
+
+
+Snapshot Size
+
+
+
+
+CPU
+
+
+
+
+Memory
+
+
+
+
+Datastore
+
+
+
+
+Hyper-V
+
+	
+
+State
+
+	
+
+Windows
+
+
+
+
+Snapshot
+
+
+
+
+Snapshot Size
+
+
+
+
+CPU
+
+
+
+
+Memory
+
+
+
+
+Disk
+
+Configuration and Output
+
+Each monitor can be configured according to the endpoint type. You can set up automated tasks within the Edit Monitor window. Changes made in Edit Monitor apply to all applicable endpoints and devices.
+
+Automation Tasks
+
+Follow the steps below to configure an automation task for a custom monitor:
+
+Navigate to Endpoints > Alerts > Monitors.
+Click the monitor name in the Monitors list view.
+
+In the Automation pod, click Add Automation.
+
+Search for and select the task you want to enable for this condition. If you do not have an automation for this condition yet, you can create one in Automation > Tasks and then return here to select it. Please note the following about automations:
+The list of available automations is populated based on your permissions.
+Users with permissions to create automation tasks can save the automation for the monitoring condition.
+The system displays automation tasks that do not require parameters. Please refer to these out-of-the-box (OOTB) automation tasks for parameterized scripts. All custom scripts/tasks created are available for selection.
+
+Click Select.
+Custom Monitors Mapper
+
+Important: This feature is only applicable to partners using ConnectWise PSA with Policies.
+
+The mapper functionality allows you to associate each Custom Monitor with specific attributes such as Service Board, Type, Sub-Type, and Item. This mapping enables differentiated handling of custom monitors.
+
+Enable the Mapper
+
+Note: This functionality requires Custom Monitors > Mapper permissions. Refer to the Monitors permission comparison for more information.
+
+By default, the Mapper toggle is turned off. To activate it:
+
+Switch the Mapper toggle on. 
+Select the values from the drop-down. These selections override the PSA policy configuration. 
+
+Mapper Field Descriptions
+
+This feature is applicable only for partners using ConnectWise PSA with Policies.
+
+Field
+
+	
+
+Description
+
+
+
+
+Service Board
+
+	
+
+Set the service board to which the ticket is routed upon creation.
+
+
+
+
+Type, Sub-Type, Item
+
+	
+
+Type → Sub-Type → Item: These fields are interdependent.
+
+Selecting a Type filters the available Sub-Types.
+
+Selecting a Sub-Type filters the available Items.
+
+Example: Choosing Tier 1 as the Type shows Sub-Types associated with Tier 1 only.
+
+
+
+
+Priority
+
+	
+
+Override the system's default ticket priority.
+
+
+
+
+Creation Status
+
+	
+
+Override the system's default creation status.
+
+
+
+
+Closure Status
+
+	
+
+Select one of the predefined statuses created by the RMM-PSA integration.
+
+Please note that only statuses marked as Closed appear in the drop-down menu.
+
+ 
+
+Monitor Output
+
+The Monitor Output functionality enables you to control the ticket generation behavior for custom monitors.
+
+To select your ticket preference:
+
+Navigate to Endpoints > Alerts > Monitors.
+Click on the monitor from the list that you want to turn ticket generation on/off for.
+In the Monitor Output section, click the Monitor Output drop-down.
+
+Select from the following options:
+Generate Ticket: A ticket is created immediately when the alert condition set for the Custom Monitor is met.
+Generate Ticket with Delay: A ticket is created after a specified delay (5-60 minutes). If the issue is resolved before the delay expires, no ticket is generated.
+Do Not Generate Ticket: No ticket is created, but the alert and any associated automations are still executed.
+
+Note:
+
+The Generate Ticket with Delay option is available for conditions with a closing condition. For other conditions, only the options Generate Ticket and Do not Generate Ticket are visible. In case of alert threshold conditions, the Monitor Output value applies to all the thresholds configured.
+If you have selected the Generate ticket with delay option, then it overrides the Ticket update - Snooze for configuration, and the ticket gets updated with ticket notes based on updates.
+Alert Created as a Trigger in Asio Workflows
+
+You can configure workflows in ConnectWise Asio® to trigger when an Alert is created for selected monitor types or individual monitors. This gives you more control over how alerts are handled and allows you to define actions that follow alert generation.
+
+The trigger supports both broad and specific configurations:
+
+Select a Monitor Type (e.g., Disk, Event) to apply the workflow across all monitors of that type.
+Or choose Individual Monitors for more targeted workflows.
+
+This setup enables you to link alert generation to various actions, such as notifications or integrations, based on your operational preferences.
+
+Trigger Details
+Trigger Name: Alert Created
+Available for:
+Monitor Types: Disk, Event, Application, Device Availability, Service
+Individual Monitors: Specific monitors can be selected for above mentioned types
+
+When this trigger is used, the workflow executes whenever an alert is generated for the selected monitor type or individual monitor.
+
+If a Monitor type is selected, the workflow applies to all monitors under that type.
+If Individual monitors are selected, the workflow only applies to that monitor.
+Use Case
+
+You can create a workflow with an alert generated as a trigger and associate other notification channels instead of tickets.
+
+For example, you can associate an email notification with an alert trigger, and when the workflow is triggered, you receive an email for alert generation.
+
+In the Asio workflow screen, from the Trigger side-panel, you need to select Alerts and click Continue, as shown here:
+
+On the next screen, you have the option to select from the available monitor types or from the individual monitor options.
+
+Note: This functionality is supported on all monitor types except Complex Monitor.
+
+Monitor Types 
+All articles
+Featured articles
+Application Monitor
+Application Monitors allow you to trigger an alert and create a ticket for applications that you want to be monitored on the endpoint. Application Monitor can be applied on Windows, Linux, and macOS endpoints.
+Asset Monitor
+Asset monitors allow you to set monitoring for the values of attributes from a target endpoint.
+Complex Monitor
+CPU Monitor
+Custom Field Monitor
+Device Availability Monitor
+Disk Monitor
+Event Monitor
+File System Monitor
+Hyper-V Monitor
+ICMP Monitor
+Internal Control Message Protocol (ICMP) Monitors allow you to define the device-to-website connectivity from a target endpoint.
+Integration Field Monitor
+Memory Monitor
+Performance Counter Monitor
+Port Monitor
+Process Monitor
+Registry Monitor
+ConnectWise RMM™ Registry Monitors allow you to define registry data from a target endpoint to trigger an alert and create a ticket. They can be applied to Windows endpoints only.
+Script Monitor
+Service Monitor
+Custom Monitors: Service Exclusion List
+SNMP Monitor
+SNMP Monitors allow you to define the device availability and other data presented on the endpoint. Before creating a monitor, you will need to register devices. Please review the Other Devices Page documentation for more information.
+VMware Monitor
+
+ 
+
+Alerts Application Monitor
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Service Monitor
+Process Monitor
+Event Monitor
+CPU Monitor
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

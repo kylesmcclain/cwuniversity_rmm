@@ -1,0 +1,931 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Expert Services   SOC, NOC, and Help Desk Services Firewall Exclusions
+SOC, NOC, and Help Desk Services Firewall Exclusions
+Last updated
+May 5, 2025
+Table of contents
+Overview
+SOC, NOC, and Help Desk Services Firewall Exclusions
+NOC and SOC Services
+Help Desk Services  
+ConnectWise Netskope Dedicated IP Range
+ 
+Overview
+
+ConnectWise® solutions and services utilize multiple IP addresses to ensure our Partner Support team can connect to your solution and provide you with the support you need. To ensure all IP addresses are up to date, please review the recommended firewall exclusions required to enable the ConnectWise ConnectWise SOC Services, ConnectWise NOC Services, and Help Desk included in this article. Refer to ConnectWise Public IP Addresses for a list of all public IP addresses used for ConnectWise products and services.
+
+SOC, NOC, and Help Desk Services Firewall Exclusions
+
+Below are the firewall exclusions required to enable the ConnectWise SOC, NOC, and Help Desk Services:
+
+NOC and SOC Services
+
+NOC and SOC Firewall Exclusions
+
+
+
+
+14.141.10.216/29
+
+
+
+
+125.22.49.112/28
+
+
+
+
+136.233.252.64/29
+
+
+
+
+49.248.136.112/29
+
+
+
+
+14.98.146.40/29
+
+
+
+
+106.51.250.64/29
+
+
+
+
+38.32.203.8/29
+
+
+
+
+208.38.129.0/28
+
+
+
+
+199.120.80.176/28
+
+
+
+
+166.166.228.36/24
+
+Help Desk Services  
+
+Note: The IP range beginning with 24.206.x.x is no longer required and can be removed.
+
+Help Desk IP Firewall Exclusions
+
+
+
+
+96.81.108.124/29
+
+
+
+
+203.190.71.221/29
+
+
+
+
+203.190.71.229/28
+
+
+
+
+72.23.47.54/29
+
+
+
+
+204.124.219.0/24
+
+
+
+
+8.25.14.0/24
+
+
+
+
+38.142.226.96/24
+
+
+
+
+58.69.30.112/29
+
+
+
+
+113.19.1.160/29
+
+ConnectWise Netskope Dedicated IP Range
+
+Important: To ensure optimal access, please add all provided IP addresses in the Netskope Table to the Allow List, regardless of their location.
+
+Region/Netskope POP
+
+	
+
+IP Address
+
+
+
+
+USA
+
+
+
+
+Los Angeles, CA
+
+	
+
+24.206.66.122
+
+
+
+
+Los Angeles, CA
+
+	
+
+24.206.66.123
+
+
+
+
+Miami, FL
+
+	
+
+24.206.68.48
+
+
+
+
+Miami, FL
+
+	
+
+24.206.68.49
+
+
+
+
+Los Angeles, CA
+
+	
+
+24.206.69.58
+
+
+
+
+Los Angeles, CA
+
+	
+
+24.206.69.59
+
+
+
+
+Atlanta, GA
+
+	
+
+24.206.70.193
+
+
+
+
+Atlanta, GA
+
+	
+
+24.206.70.194
+
+
+
+
+Seattle, WA
+
+	
+
+24.206.71.122
+
+
+
+
+Seattle, WA
+
+	
+
+24.206.71.123
+
+
+
+
+San Francisco, CA
+
+	
+
+24.206.73.132
+
+
+
+
+San Francisco, CA
+
+	
+
+24.206.73.133
+
+
+
+
+Sterling, VA
+
+	
+
+24.206.76.56
+
+
+
+
+Sterling, VA
+
+	
+
+24.206.76.57
+
+
+
+
+Denver, CO
+
+	
+
+24.206.77.123
+
+
+
+
+Denver, CO
+
+	
+
+24.206.77.124
+
+
+
+
+New York City, NY
+
+	
+
+24.206.78.124
+
+
+
+
+New York City, NY
+
+	
+
+24.206.78.125
+
+
+
+
+Chicago, IL
+
+	
+
+24.206.79.65
+
+
+
+
+Chicago, IL
+
+	
+
+24.206.79.66
+
+
+
+
+Dallas, TX
+
+	
+
+24.206.80.131
+
+
+
+
+Dallas, TX
+
+	
+
+24.206.80.132
+
+
+
+
+New York City, NY
+
+	
+
+24.206.82.131
+
+
+
+
+New York City, NY
+
+	
+
+24.206.82.132
+
+
+
+
+Chicago, IL
+
+	
+
+24.206.84.143
+
+
+
+
+Chicago, IL
+
+	
+
+24.206.84.144
+
+
+
+
+Somerville, MA
+
+	
+
+24.206.88.62
+
+
+
+
+Somerville, MA
+
+	
+
+24.206.88.63
+
+
+
+
+Reston, VA
+
+	
+
+24.206.89.60
+
+
+
+
+Reston, VA
+
+	
+
+24.206.89.61
+
+
+
+
+Miami, FL
+
+	
+
+24.206.91.36
+
+
+
+
+Miami, FL
+
+	
+
+24.206.91.37
+
+
+
+
+India
+
+
+
+
+Chennai, IN
+
+	
+
+24.239.131.38
+
+
+
+
+Chennai, IN
+
+	
+
+24.239.131.39
+
+
+
+
+New Delhi, IN
+
+	
+
+24.239.134.38
+
+
+
+
+New Delhi, IN
+
+	
+
+24.239.134.39
+
+
+
+
+Mumbai, IN
+
+	
+
+24.239.140.38
+
+
+
+
+Mumbai, IN
+
+	
+
+24.239.140.39
+
+
+
+
+Mumbai, IN
+
+	
+
+158.95.47.60
+
+
+
+
+Mumbai, IN
+
+	
+
+158.95.47.61
+
+
+
+
+Hyderabad, IN
+
+	
+
+24.239.142.24
+
+
+
+
+West Bengal, IN
+
+	
+
+24.239.146.22
+
+
+
+
+West Bengal, IN
+
+	
+
+24.239.146.23
+
+
+
+
+EU
+
+
+
+
+Amsterdam, NL
+
+	
+
+158.95.12.66
+
+
+
+
+Amsterdam, NL
+
+	
+
+158.95.12.67
+
+
+
+
+Manchester, UK
+
+	
+
+24.206.100.88
+
+
+
+
+Manchester, UK
+
+	
+
+24.206.100.89
+
+
+
+
+London, UK
+
+	
+
+24.206.111.82
+
+
+
+
+London, UK
+
+	
+
+24.206.111.83
+
+
+
+
+London, UK
+
+	
+
+24.206.97.105
+
+
+
+
+London, UK
+
+	
+
+24.206.97.106
+
+
+
+
+Australia
+
+
+
+
+Sydney, AU
+
+	
+
+24.239.128.111
+
+
+
+
+Sydney, AU
+
+	
+
+24.239.128.112
+
+
+
+
+Melbourne, AU
+
+	
+
+24.239.133.100
+
+
+
+
+Melbourne, AU
+
+	
+
+24.239.133.101
+
+
+
+
+Perth, AU
+
+	
+
+24.239.137.100
+
+
+
+
+Perth, AU
+
+	
+
+24.239.137.101
+
+
+
+
+Brisbane, AU
+
+	
+
+24.239.138.100
+
+
+
+
+Brisbane, AU
+
+	
+
+24.239.138.101
+
+
+
+
+Philippines
+
+
+
+
+Phoenix, AZ
+
+	
+
+24.206.72.118
+
+
+
+
+Phoenix, AZ
+
+	
+
+24.206.72.119
+
+
+
+
+Metro Manila, PH
+
+	
+
+24.239.145.82
+
+
+
+
+Metro Manila, PH
+
+	
+
+24.239.145.83
+
+
+
+
+Hong Kong
+
+
+
+
+Hong Kong, HK
+
+	
+
+24.239.135.80
+
+
+
+
+Hong Kong, HK
+
+	
+
+24.239.135.81
+
+
+
+
+Singapore
+
+
+
+
+Singapore, SG
+
+	
+
+24.239.129.83
+
+
+
+
+Singapore, SG
+
+	
+
+24.239.129.84
+
+
+
+
+Gulf
+
+
+
+
+Riyadh, SA
+
+	
+
+162.10.210.246
+
+
+
+
+Riyadh, SA
+
+	
+
+162.10.210.247
+
+
+
+
+Dubai, AE
+
+	
+
+162.10.222.228
+
+
+
+
+Dubai, AE
+
+	
+
+162.10.222.229
+
+
+
+
+Taiwan
+
+
+
+
+Taipei, TW
+
+	
+
+24.239.144.83
+
+
+
+
+Taipei, TW
+
+	
+
+24.239.144.84
+
+
+
+
+Canada
+
+
+
+
+Montreal, CA
+
+	
+
+24.206.75.87
+
+
+
+
+Montreal, CA
+
+	
+
+24.206.75.88
+
+
+
+
+Toronto, CA
+
+	
+
+24.206.65.90
+
+
+
+
+Toronto, CA
+
+	
+
+24.206.65.91
+
+
+
+
+Dubai
+
+
+
+
+Dubai, AE
+
+	
+
+162.10.222.228
+
+
+
+
+Dubai, AE
+
+	
+
+162.10.222.229
+
+ 
+
+ 
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Help Desk
+Using the Chat Support Feature
+Expert Services Documentation Sitemap
+ConnectWise Network Operations Center - NOC
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

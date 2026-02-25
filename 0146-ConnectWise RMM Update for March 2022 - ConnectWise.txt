@@ -1,0 +1,166 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   ConnectWise RMM Release Notes   RMM Release Notes Archive   ConnectWise RMM Update for March 2022
+ConnectWise RMM Update for March 2022
+Last updated
+Apr 29, 2022
+Table of contents
+Overview
+Announcements
+ConnectWise RMM
+Intune Integration
+Patching
+Communicator
+Virtualization
+Monitoring
+Bug Fixes
+Overview
+
+Below is a summary of the new ConnectWise RMM features and updates released in March, 2022.
+
+Announcements
+
+Virtualization - Adding new devices for VMWare Monitoring
+
+We have added a simplified and unified process to add, modify, or remove the VMWare Esxi and Vcenter devices under monitoring. This should help in quickly adding devices for monitoring and simplifying the overall process. 
+
+This will be available in production in thelast week of March.
+
+Virtualization - Deprecation of legacy process for adding VMWare Monitoring
+
+With the new capabilities for VMWare Host and  VCenter monitoring added to Devices page, we will be deprecating the legacy Virtualization Monitoring solution. The existing configurations setup you have set up for VMWare will be accessible from the new section under the Devices page. Migration of existing VMWare endpoints will be completed from the backend before deprecation of legacy page and section.
+
+Pages will be non accessible for all users in thelast week of March.
+
+VMWare Monitoring Alert Improvements
+
+The VMWare monitoring will now use the enhanced agent for better monitoring and alerting of issues detected on the VMWare Esxi host devices. Alerts will be generated in near real time providing robust monitoring of VMWare infrastructure.
+
+VMWare & Hyper-V State for Host & Guest monitor
+
+We ware adding a new capability for adding VMWare and HyperV both host and guest machines for the state monitors in the system. Based on the configuration, an alert will trigger based on the monitor. 
+
+Hyper-V replication monitor
+
+We are adding a new capability for the monitoring of Hyper-V replication state against the guest machines under monitoring. Based on the configurations, an alert will be triggered for the endpoint for alert generation.
+
+ConnectWise RMM
+Intune Integration
+
+We have added the ability to setup a secure working connection between ConnectWise RMM and tenants managed in MS Intune by leveraging the existing Extensibility framework in ConnectWise RMM. This is a one time secure setup per tenant that enables integration of MS Intune tenants with the RMM. This is available as ofMarch 22, 2022.
+
+We have add key device and compliance information for MS Intune managed devices on the Integration page on Devices Summary page.This page will provide actionable information (identify out of compliance devices in Intune) for partner technicians to log in to MS Intune and take necessary corrective measures for devices that are out of compliance. This is available as ofMarch 22, 2022.
+
+For more information, review the Intune Integration documentation.
+
+Patching
+
+OS Patching permissions. Separate permissions for OS patching have now been made available underAdmin>Users. The new permissions will allow you to manage Patching feature permissions for your users.
+
+Improved patch Deployment success rate.We have improved success rate of Patch Deployments by auto-resolving a few common deployment errors
+
+Communicator
+
+Technicians can now send Messages to end-users from the Communicator Page on the Portal. The messages can be sent from the Add button on the page.
+
+Virtualization
+
+VMWare Host monitoring capability added to the 2.0 architecture.This capability in 1.0 will be deprecated along with release. This is a unified view that will allow addition and removal of probe machines (Windows machines only) for monitoring VMWare Hosts. This change will be made at the end of March.
+
+VMWare VCenter Host monitoring capability to the 2.0 architecture. This capability in 1.0 will be deprecated along with release. This is a unified view that will allow addition and removal of probe machines (Windows machines only) for monitoring VMWare hosts managed via VCenters. This change will be made at the end of March.
+
+Monitoring
+
+We are improving the existing VMWare monitoring conditions to use the new VMWare 2.0 infrastructure for triggering alerts in the system.This change will improve the alerting for the following monitoring conditions:
+
+VMWare CPU Utilization
+VMWare Memory Utilization
+VMWare Datastore alerts
+VMWare Hardware sensors
+VMWare host service monitoring
+VMWare critical and Non-Critical events
+
+Display suspension data against Custom Monitors. We are extending the monitoring feature to display the active suspension records configured against the custom monitors. This will display the information below the card upon selecting the monitor.
+
+New icon for adding monitors for Service, Process, and Applications. We will now display an icon on the Device details page for partners to select the Service, Process, or Application to add them to monitoring as a Custom Monitor against the endpoint.
+
+Service:
+
+Process:
+
+ 
+
+Application:
+
+Suspension Feature - Start Now. We are now allowing partners to select the option ofStart Now while creating a new suspension rule from the IntelliMon Suspension create screen. This will reduce the effort for creating a suspension rule in the system that needs to be effective immediately. 
+
+Suspension Inclusion for Complex Monitors. We are extending the suspension functionality to include the complex monitors while creating a new suspension rule.
+
+Multiple suspension rule deletion from Suspension listing page.Now you can select multiple suspension rules in the system and delete them at once. 
+
+Suspension rules can select all monitor types.Now you can select all the monitor types for creating a new suspension rule in the system.
+
+Quick Suspend: You can select Custom monitors to be included in suspension. We are adding an option on the Quick suspend screen to include custom monitors in the system so that the suspension will also stop the custom monitors from creating any new tickets in the system. 
+
+Note: We will create a separate custom monitor suspension rule based on the selection.
+
+We've added a bell icon for endpoints if all monitoring conditions are suspended. We will now display a bell icon if we identify that the endpoint is configured for a suspension against all the IntelliMon monitoring conditions. This indicator will identify endpoints that will not generate any IntelliMon monitoring alerts.
+
+You can now filter endpoints with suspension for all endpoints on Devices page.You can now filter and display only those endpoints that have IntelliMon monitoring conditions suspended. This filter will identify the endpoints that are suspended and will not create IntelliMon Alerts will be generated.
+
+Bug Fixes
+
+The following issues will be resolved with this month's release:
+
+Fixed an issue where changes in user role was not displayed accurately at User Management.
+
+Fixed an issue wherein Webroot Endpoint Protection was not displayed accurately.
+
+Resolved IBM MaaS360 integration breakage affecting Mobile Device Management.
+
+Fixed an issue wherein assets were not syncing to Autotask.
+
+ 
+
+ 
+
+ConnectWise reserves the right to remove any enhancement or fix from this update if it does not pass quality assurance tests.
+
+ 
+
+ConnectWise RMM Update for February 2022 ConnectWise RMM Update for April 2022
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ConnectWise RMM Update for April 2022
+ConnectWise RMM Update for February 2022
+ConnectWise RMM Update for January 2022
+ConnectWise RMM Update for May 2022
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

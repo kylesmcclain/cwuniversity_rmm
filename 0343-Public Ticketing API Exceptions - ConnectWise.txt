@@ -1,0 +1,85 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   PSA Integration   PSA Public Ticketing API   Public Ticketing API Exceptions
+Public Ticketing API Exceptions
+Last updated
+Apr 25, 2023
+Table of contents
+No headers
+Error Code	Error Description
+100001	Invalid Integrator User
+100002	Invalid Member or Member disabled
+100003	UserID not provided. Access denied.
+100004	Password not provided. Access denied.
+100005	Token ID not provided. Access denied.
+100006	Authentication failed for the given UserID. Access denied.
+100007	Authentication failed. Access denied.
+100011	Empty or blank request
+110001	TicketId is mandatory
+110002	Invalid TicketId
+110003	TicketNote is mandatory and should not be blank
+110004	Ticket TypeId is mandatory
+110005	Invalid Ticket TypeId
+110006	Provided ticket TypeId is reserved with ConnectWise system. System does not create ticket with ticket type <ticket type name>. Supported ticket types include: ServiceRequest, ProductSupport, InternalTask.
+110007	System does not create ticket with ticket type InternalTask and AssignTo NOC / Help Desk Service
+110008	Ticket StatusId is mandatory
+110009	Invalid Ticket StatusId
+110010	Invalid request. System does not create new ticket with Closed status.
+110011	Ticket already closed
+110012	Ticket is in closed state and cannot be reopened
+110013	Provided Ticket StatusId is reserved with ConnectWise system hence system cannot create ticket
+110014	Ticket is associated with Server Project & cannot be updated with provided statusid
+110015	Ticket AssignTo is mandatory and should be NOC, Service Desk, or MSP
+110016	Invalid ticket AssignTo. Adhoc ticket cannot be assigned to HelpDesk@ITSupport247.net.
+110017	Invalid ticket AssignTo. To assign a ticket to Help Desk Service, site must be subscribed to Help Desk Service.
+110018	Invalid AssignToUserId
+110019	Provided AssignToUserId is not authorized for provided SiteId
+110020	Invalid Ticket CategoryId
+110021	Invalid request. Provide either CategoryID or CategoryName.
+110022	Ticket PriorityId is mandatory
+110023	Invalid Ticket PriorityId
+110024	Invalid ReferenceTicketId. ReferenceTicketId should be numeric, comma separated, and exist in ConnectWise.
+110025	Invalid ReferenceTicketId
+110026	ScheduleStartDateTime is mandatory when ticket status is Scheduled
+110027	ScheduleEndDateTime is mandatory when status is Scheduled
+110028	ScheduleEndDateTime should be greater than or equal to ScheduleStartDateTime
+110029	Ticket Subject is mandatory
+110030	Ticket Description is mandatory
+110031	Device Id not available or uninstalled
+110032	Invalid request. Provide either DeviceID or DeviceName.
+110033	Invalid SiteId or site is disabled
+110034	Provided SiteId is not associated with this ticket
+110040	Invalid request. Provide either SiteID or SiteCode.
+110041	Invalid request. The field PSATicketID must be a string with a maximum length of 25.
+
+ 
+
+Getting Started with the Public Ticketing API Public Ticketing API Integration Process
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Public Ticketing API Integration Process
+View an overview of the process for integrating with ConnectWise's two-way ticketing system using our public ticketing API.
+Getting Started with the Public Ticketing API
+Public Ticketing API Operations
+Below are the operations supported in ConnectWise's public ticketing API.
+Public Ticketing API User Acceptance Test
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

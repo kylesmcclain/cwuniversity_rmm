@@ -1,0 +1,75 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   ConnectWise RMM Release Notes   ConnectWise RMM Update for February 2025
+ConnectWise RMM Update for February 2025
+Last updated
+Apr 3, 2025
+Table of contents
+Overview 
+What's new in ConnectWise RMM?
+February 28, 2025
+Issues Addressed
+February 27, 2025
+Agent
+Automation
+Issues Addressed
+February 20, 2025
+Alerting
+Issues Addressed
+February 17, 2025
+Updated NOC Service Statement of Work
+February 11, 2025
+Issues Addressed
+February 10, 2025
+Issues Addressed
+February 6, 2025
+Asio
+SentinelOne Integration Update
+Overview 
+
+This page provides information on the latest enhancements and features for ConnectWise RMM.
+
+What's new in ConnectWise RMM?
+February 28, 2025
+February 27, 2025
+February 20, 2025
+February 17, 2025
+February 11, 2025
+February 10, 2025
+February 6, 2025
+ConnectWise RMM Update for January 2025 ConnectWise RMM Update for March 2025
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ConnectWise RMM Update for January 2025
+ConnectWise RMM Update for March 2025
+ConnectWise RMM Latest Release Notes
+ConnectWise RMM Update for January 2024
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

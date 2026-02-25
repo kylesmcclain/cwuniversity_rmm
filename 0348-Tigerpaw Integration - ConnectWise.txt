@@ -1,0 +1,69 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   PSA Integration   Tigerpaw Integration
+Tigerpaw Integration
+Last updated
+Jan 8, 2025
+Table of contents
+Overview
+Features
+Install Tigerpaw API and API Users Tool
+Set up Tigerpaw for RMM
+Overview
+
+Tigerpaw is a comprehensive business automation software solution that is available to IT service providers. Integration with ConnectWise establishes two-way communication between Tigerpaw and remote monitoring and management (RMM) applications via the PSA integration option in the Asio™ platform, creating service orders and ensuring the Tigerpaw business suite displays current asset information.
+
+Note: The integration applies to ConnectWise service tickets, not ConnectWise alerts. Not all ConnectWise alerts create a ConnectWise service ticket. This process ensures critical events in ConnectWise are given the most attention. If you currently manage tickets in ConnectWise PSA, you MUST close or reassign all open tickets before enabling the Tigerpaw PSA integration.  
+
+Based on your ConnectWise service care level, the integrator can assign service orders/tickets to the ConnectWise Network Operations Center (NOC) or to the ConnectWise Help Desk Service, both send information back to the Tigerpaw business suite.
+
+Note: 
+
+Enabling a PSA integration disables email notifications through Notification Rules.
+Tigerpaw integration is not available in EU and AU.
+Features
+Create Tigerpaw service orders from ConnectWise service tickets.
+Update the RMM ticket when the Tigerpaw service order updates. (For example, changing a Tigerpaw service order updates multiple fields on the corresponding ConnectWise ticket, such as ticket status and technician assignment.)
+View and maintain a customer’s managed assets on the asset items window.
+Discover assets from the RMM to ensure managed assets are up-to-date in the Tigerpaw business suite.
+Create, manage, and bill recurring agreements based on real-time asset information from RMM.
+Install Tigerpaw API and API Users Tool
+
+This integration uses the Tigerpaw API which utilizes an API user profile, this is set up in the Tigerpaw API Users Utility and can be configured with support from the third-party documentation or technical support. Save your token and API keys to a text file to complete the rest of the setup in RMM.
+
+Set up Tigerpaw for RMM
+
+Locate the setup for this integration in Settings > Account Administration > Integration > PSA Integration.
+
+Open the Choose PSA to integrate drop-down menu on the PSA Integration page.
+Select Other Authorized Users.
+Note the API token and your credentials in a text file and complete the required fields.
+Click Activate.
+PSA Synchronization Dashboard Reports
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ConnectWise PSA (Manage) Integration
+ConnectWise RMM features the ability to integrate with the ConnectWise PSA system to sync tickets, assets, configuration items, billing data, and cont...
+Autotask Integration Guide
+Accelo Integration Guide
+PSA Synchronization Dashboard
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

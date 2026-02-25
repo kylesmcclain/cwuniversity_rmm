@@ -1,0 +1,50 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   RMM - Network Assessment
+RMM - Network Assessment
+Last updated
+Jul 10, 2025
+Overview
+
+The Network Assessment tool helps gather information on the machines, software, and user accounts of any IT Network infrastructure. It is composed of the Network Data Collector and the Report Builder. The noninvasive tool provides assets for lead generation; brandable reports are created quickly, and users have unlimited use of the tool when purchased. The following graphic outlines the assessment process, while the topics in this chapter provide more detail.
+
+Network Assessment is provided in partnership with the Network Detective by RapidFire Tools, Inc. For additional descriptions and instructions beyond what is included in this chapter, see RapidFire's Network_Detective_User_Guide.pdf. 
+
+All articles
+Featured articles
+Advanced Configuration Network Assessment Tool
+Client Connector Tool
+Exchange Assessment Tool
+HIPAA Compliance Module
+Network Data Collector
+Network Detective XP Migration Readiness Analysis Report
+PCI Compliance Module
+Security Assessment Tool
+SQL Server Assessment Tool
+Understanding Risk Assessment Reports Advanced Configuration Network Assessment Tool
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+PCI Compliance Module
+Network Data Collector
+Advanced Configuration Network Assessment Tool
+Client Connector Tool
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

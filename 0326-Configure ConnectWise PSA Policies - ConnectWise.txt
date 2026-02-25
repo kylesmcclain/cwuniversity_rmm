@@ -1,0 +1,189 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   PSA Integration   ConnectWise PSA (Manage) Integration   Configure ConnectWise PSA Policies
+Configure ConnectWise PSA Policies
+Last updated
+Nov 4, 2025
+Table of contents
+Overview
+Steps to Configure ConnectWise PSA Policies
+Step 1: Create ConnectWise PSA Policies
+PSA Policies Configuration Details
+Step 2: Assign the PSA policies to packages
+Overview
+
+PSA Policies define how Tickets, Configuration items, Contacts, and Notifications sync from RMM to ConnectWise PSA or vice-versa.
+
+View this training video for more information: PSA | How to Create Integration Policies
+
+Steps to Configure ConnectWise PSA Policies
+
+The following are the steps to configure PSA policies: 
+
+Create ConnectWise PSA policies.
+Assign the PSA policies to packages.
+Step 1: Create ConnectWise PSA Policies
+Navigate to Endpoints > Policies. Click Add Policy.
+
+
+Open the Category drop-down and select Sites.
+
+
+Open the Type drop-down menu and select ConnectWise PSA Integration.
+Enter a meaningful name for your PSA Policy.
+
+
+Use the table below to configure the ConnectWise PSA Integration Settings.
+
+
+PSA Policies Configuration Details
+
+Policy Attribute
+
+	
+
+Details
+
+	
+
+Policy Fields
+
+
+
+
+Ticket Sync Configurations
+
+	
+Turn this toggle ON to display various Ticket Sync Configuration options.
+Service Board mapping for ConnectWise RMM:
+Select the service board that should be used to push tickets created by RMM.
+Select the Ticket Notes section, which should be used to sync ticket information.
+Service Board mapping for ConnectWise Help Desk:
+Select the service board that should be used to push tickets created by HelpDesk.
+Select the Ticket Notes section that should be used for syncing ticket information.
+Turn the ConnectWise Communicator toggle ON to display various Ticket Sync Configuration options for Communicator.
+Select the service board that should be used to push tickets created by Communicator.
+Select the Ticket Notes section that should be used for syncing ticket information.
+
+Note: If the Connectwise Communicator toggle is ON, tickets will sync to the configured service board. If the toggle is OFF, tickets will sync to the Connectwise RMM service board.
+
+Stop ticket sync from ConnectWise PSA to RMM:
+
+Select this option if you do not want to sync notes added in PSA with RMM. This option disables new ticket creation and updates from PSA, excluding closed ticket status changes.
+
+If a PSA ticket is updated with a status marked as “Closed,” the integration will close the Asio ticket as well.
+
+Tickets created by RMM will still be synced/pushed in PSA.
+
+Priority Mappings
+ConnectWise PSA to RMM ticket priority mapping
+Set and Define the priority mapping between PSA and RMM (ConnectWise PSA → RMM)
+ConnectWise RMM to PSA ticket priority mapping
+Set and Define the priority mapping between RMM and PSA (RMM → ConnectWise PSA)
+If the policy configuration is set to the off position, the tickets from RMM or vice versa cannot work. Those tickets are visible on the PSA Integration reporting page under the Ticket Report section.
+	
+
+
+Asset Sync Configurations
+
+	
+If the policy configuration is kept off, then Asset/Configuration items from RMM will not be pushed in ConnectWise PSA.
+Turn this toggle ON to enable various Asset Sync Configuration options:
+Prevent Device Duplication
+This option allows the user to select options that should be validated by the integration before creating a new device in ConnectWise PSA.
+
+Note: The Configuration item deduplication feature will not create a duplicate entry, and the same device/configuration item will get reactivated if the agent is reinstalled.
+
+Managed Server
+Turn this toggle ON to enable the sync of Server configuration items from RMM to PSA.
+Choose the fields that should be pushed from RMM to PSA.
+Managed Workstation/Desktop
+Turning this toggle ON enables the sync of Workstation/Desktop configurations from RMM to PSA.
+Choose the fields that should be pushed from RMM to PSA.
+Backup Devices (Recover Appliances)
+Turn this toggle ON to enable the sync of Recover Appliances configurations from RMM to PSA.
+Choose the fields that should be synced from RMM to PSA.
+
+Network Devices
+
+Turning this toggle ON pushes the Network Devices configuration items from RMM to PSA
+Choose the fields that should be pushed from RMM to PSA
+
+Note:
+
+To learn more about Asset Sync, review the Asset Sync documentation. 
+This feature is available in PSA Policy for RMM Premium and Pro partners under the Configuration Item Sync Configurations section.
+	
+
+
+Billing Sync Configurations
+
+	
+If the policy configuration is off, VMWare and Hyper-V host device items from RMM do not sync to ConnectWise PSA.
+Turning this toggle ON enables the VMWare and Hyper-V host devices from RMM to be synced in ConnectWise PSA.
+
+ 
+
+	
+
+ 
+
+
+
+
+Contact Sync Configurations
+
+	
+If the policy configuration is off, contacts from ConnectWise PSA mapped to the sites do not sync with RMM.
+Turning this configuration ON syncs the contacts created/updated under the corresponding sites in PSA to RMM. 
+
+Note: Contacts created in RMM will not be synced to ConnectWise PSA.
+
+	
+
+
+Notification Configurations
+
+	
+If the policy configuration is kept off, no email notification will be sent for any PSA Sync failures.
+Turning this configuration ON will allow the partner user to select the contacts who should be notified of sync failures.
+	
+Step 2: Assign the PSA policies to packages
+
+After the PSA policy is created, you need to include the ConnectWise PSA policy in a Package to be applied to the sites.
+
+Navigate to Endpoints > Packages.
+Select the existing package you want to add this policy to (click on the Package name) or click the Edit button.
+Expand the Sites section.
+Drag the newly created ConnectWise PSA Policy from Available Policies to the package builder.
+Click Save.
+
+Note: To block ticket sync between RMM and PSA, create a PSA Policy with ticket sync in the OFF position and assign it to the appropriate sites. On the sites where the ticket sync policy applies in the OFF state, ticket sync will not occur between RMM and PSA.
+
+Asset Sync ConnectWise PSA - Billing Sync Error Codes Knowledgebase
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ConnectWise PSA (Manage) Integration Setup Process
+ConnectWise PSA - Policies Integration - FAQ
+ConnectWise PSA - Tech Efficiency Devices Pod
+ConnectWise PSA (Manage) REST API Integration Troubleshooting
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

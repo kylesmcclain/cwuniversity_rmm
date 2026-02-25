@@ -1,0 +1,82 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   RMM Tools   APIs   Public Ticketing API   Getting Started with the Public Ticketing API
+Getting Started with the Public Ticketing API
+Last updated
+Dec 5, 2025
+Table of contents
+Overview
+Prerequisites
+Authentication
+Callback Mechanism
+API Documentation
+Ticket Source
+Ticket Types
+Overview
+
+Below are prerequisites and other ticketing API basics to review before configuring your API operations.
+
+Prerequisites
+Must have a Super Admin account in the Asio™ platform.
+Enable the PSA Integration option per the PSA system used. PSA Integration enablement options are available in the Asio platform by navigating to Settings > Account Administration > Integration > PSA Integration.
+Authentication
+
+To enable the Asio platform to properly and safely authenticate API calls, make sure that the Integrator User and Callback details are up-to-date in the PSA Integration.
+
+Callback Mechanism
+
+A callback is a programming practice of transmitting data to another program. An Asio ticketing API callback occurs when any create or update action is dispatched on a ticket object in Asio.
+
+Use the Callback URL field in the PSA Integration page to specify a standard or custom callback URL. When the callback in Asio is triggered, the Ticket ID and the Action will be added to the URL by GET/Post method, as follows:
+
+action = <new/update>
+NOCTicketID = <numeric value of NOC Ticket ID>
+NOCTicketNotesID = <numeric value of NOC Ticket Notes ID, if added in Ticket Object>
+API Documentation
+
+Refer to the Developer Portal for the API Scopes Swagger File: 
+
+Sign in - Developer Network
+Navigate to the ConnectWise Asio APIs
+Ticket Source
+
+ConnectWise tickets are generated in the following ways:
+
+Automatically by RMM agent
+By ConnectWise NOC or Help Desk Services technicians
+By MSPs via public ticketing API
+By MSPs directly from ITSupport Portal
+Ticket Types
+
+ConnectWise tickets can be:
+
+Resource-specific
+Site-specific
+Adhoc, created by the MSP and not necessarily affiliated with any ConnectWise site or resource
+Example Public Ticketing API Operations User Acceptance Test
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+API Integration Process
+API Operations
+API Exceptions
+User Acceptance Test
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

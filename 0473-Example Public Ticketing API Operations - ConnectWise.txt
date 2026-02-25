@@ -1,0 +1,345 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   RMM Tools   APIs   Public Ticketing API   Example Public Ticketing API Operations
+Example Public Ticketing API Operations
+Last updated
+Jul 7, 2025
+Table of contents
+Overview
+Example 1: CreateTicket
+Request Body
+Success Response Body
+Error Response Body
+Example 2: GetTicketPriorities
+Request Body
+Success Response Body
+Error Response Body
+Overview
+
+Below are two examples of ticketing API operations with data included.
+
+Example 1: CreateTicket
+
+This example shows the request and response body of the CreateTicket operation. This operation accepts the “Ticket” object and returns the “TicketResponse” object.
+
+The TicketResponse object has two properties:
+
+<Results>: If operation succeeded, API will return the “Ticket” object here.
+<Error>: If operation failed, API will return an error code and error message here. For the full list of error codes and descriptions, see Public Ticketing API Exceptions.
+Request Body
+
+<soapenv:Envelope xmlns:soapenv="http://www.w3.org/2003/05/soap-envelope" xmlns:v1="http://www.continuum.net/its/v1_0">
+
+<soapenv:Header>
+
+<UserID xmlns="TicketService">Testintegrator1</UserID>
+
+<Password xmlns="TicketService">XXXX</Password>
+
+<TokenID xmlns="TicketService">53H48H48H48H49H55H50H56</TokenID>
+
+</soapenv:Header>
+
+<soapenv:Body>
+
+<v1:CreateTicket>
+
+<v1:request>
+
+<v1:SiteID>50016263</v1:SiteID>
+
+<v1:TypeID>10</v1:TypeID>
+
+<v1:Subject>Test Ticket created by DN</v1:Subject>
+
+<v1:Description>Ticket Description Value</v1:Description>
+
+<v1:StatusID>101</v1:StatusID>
+
+<!--<v1:AssignTo>NOCTeam</v1:AssignTo> -->
+
+<v1:PriorityID>1</v1:PriorityID>
+
+<v1:TicketNotes>
+
+<v1:NoteDescription>Test Note 1 Value</v1:NoteDescription>
+
+</v1:TicketNotes>
+
+</v1:request>
+
+</v1:CreateTicket>
+
+</soapenv:Body>
+
+</soapenv:Envelope>
+
+Success Response Body
+
+<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">
+
+<s:Header>
+
+<a:Action s:mustUnderstand="1">http://www.continuum.net/its/v1_0/IT...TicketResponse</a:Action>
+
+<a:RelatesTo>uuid:9793ed6f-821b-4b84-bd92-87a6d9a0fd3a</a:RelatesTo>
+
+</s:Header>
+
+<s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+<CreateTicketResponse xmlns="http://www.continuum.net/its/v1_0">
+
+<CreateTicketResult>
+
+<Results>
+
+<Id>201502120000155</Id>
+
+<SiteID>50016263</SiteID>
+
+<DeviceID>0</DeviceID>
+
+<DeviceName/>
+
+<CategoryID>0</CategoryID>
+
+<CategoryName/>
+
+<TypeID>10</TypeID>
+
+<Subject>Test Ticket created by DN</Subject>
+
+<Description>Ticket Description Value</Description>
+
+<StatusID>101</StatusID>
+
+<AssignTo>NOCTeam</AssignTo>
+
+<AssignToUserID>0</AssignToUserID>
+
+<PriorityID>1</PriorityID>
+
+<ReferenceTicketID/>
+
+<ScheduleStartDateTime>0001-01-01T00:00:00</ScheduleStartDateTime>
+
+<ScheduleEndDateTime>0001-01-01T00:00:00</ScheduleEndDateTime>
+
+<CreatedOn>2015-02-12T23:08:56.727</CreatedOn>
+
+<TicketNotes>
+
+<Id>64941</Id>
+
+<TicketID>201502120000155</TicketID>
+
+<NoteDescription>Test Note 1 Value</NoteDescription>
+
+<CreatedOn>2015-02-12T23:08:56.763</CreatedOn>
+
+<CreatedByGroup>System</CreatedByGroup>
+
+<CreatedByUserID>0</CreatedByUserID>
+
+</TicketNotes>
+
+<CreatedByGroup>System</CreatedByGroup>
+
+<CreatedByUserID>0</CreatedByUserID>
+
+<LastUpdatedByGroup>System</LastUpdatedByGroup>
+
+<LastUpdatedByUserID>0</LastUpdatedByUserID>
+
+<LastUpdatedOn>2015-02-12T23:08:56.727</LastUpdatedOn>
+
+<SiteCode>PSADTTM3-Site1</SiteCode>
+
+<DeviceFriendlyName/>
+
+</Results>
+
+</CreateTicketResult>
+
+</CreateTicketResponse>
+
+</s:Body>
+
+</s:Envelope>
+
+Error Response Body
+
+<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">
+
+<s:Header>
+
+<a:Action s:mustUnderstand="1"> http://www.continuum.net/its/v1_0/IT...TicketResponse</a:Action>
+
+<a:RelatesTo>uuid:33bde0d6-82a0-454b-9741-9aec74902b1a</a:RelatesTo>
+
+</s:Header>
+
+<s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+<CreateTicketResponse xmlns="http://www.continuum.net/its/v1_0">
+
+<CreateTicketResult>
+
+<Error>
+
+<code>90001</code>
+
+<message>Ticket AssignTo is mandatory and should be one of the NOC Team / Help Desk Services / MSP.</message>
+
+</Error>
+
+</CreateTicketResult>
+
+</CreateTicketResponse>
+
+</s:Body>
+
+</s:Envelope>
+
+Example 2: GetTicketPriorities
+
+This example shows the request and response body of the GetTicketPriorities operation. This operation returns the “TicketPriorityResponse” object.
+
+The TicketPriorityResponse object has two properties:
+
+<Results>: If operation succeeded, API will return the “TicketPriority” object here.
+<Error>: If operation failed, API will return an error code and error message here. For the full list of error codes and descriptions, see Public Ticketing API Exceptions.
+Request Body
+
+<soapenv:Envelope xmlns:soapenv="http://www.w3.org/2003/05/soap-envelope" xmlns:v1="http://www.continuum.net/its/v1_0">
+
+<soapenv:Header>
+
+<UserID xmlns="TicketService">Testintegrator1</UserID>
+
+<Password xmlns="TicketService">XXXX</Password>
+
+<TokenID xmlns="TicketService">53H48H48H48H49H55H50H56</TokenID>
+
+</soapenv:Header>
+
+<soapenv:Body>
+
+<v1:GetTicketPriorities/>
+
+</soapenv:Body>
+
+</soapenv:Envelope>
+
+Success Response Body
+
+<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">
+
+<s:Header>
+
+<a:Action s:mustUnderstand="1">http://www.continuum.net/its/v1_0/IT...ritiesResponse</a:Action>
+
+<a:RelatesTo>uuid:8aa6442f-ad05-496f-beda-452edb3eb03f</a:RelatesTo>
+
+</s:Header>
+
+<s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+<GetTicketPrioritiesResponse xmlns="http://www.continuum.net/its/v1_0">
+
+<GetTicketPrioritiesResult>
+
+<Results>
+
+<Id>1</Id>
+
+<Name>Emergency</Name>
+
+</Results>
+
+<Results>
+
+<Id>3</Id>
+
+<Name>Low</Name>
+
+</Results>
+
+<Results>
+
+<Id>2</Id>
+
+<Name>Medium</Name>
+
+</Results>
+
+</GetTicketPrioritiesResult>
+
+</GetTicketPrioritiesResponse>
+
+</s:Body>
+
+</s:Envelope>
+
+Error Response Body
+
+<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">
+
+<s:Header>
+
+<a:Action s:mustUnderstand="1"> http://www.continuum.net/its/v1_0/IT...cketPriorities</a:Action>
+
+<a:RelatesTo>uuid:33bde0d6-82a0-454b-9741-9aec74902b1a</a:RelatesTo>
+
+</s:Header>
+
+<s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+<GetTicketPriorities xmlns="http://www.continuum.net/its/v1_0">
+
+<GetTicketPrioritiesResult>
+
+<Error>
+
+<code>110022</code>
+
+<message>Ticket PriorityId is mandatory</message>
+
+</Error>
+
+</GetTicketPrioritiesResult>
+
+</GetTicketPrioritiesResponse>
+
+</s:Body>
+
+</s:Envelope>
+
+API Operations Getting Started with the Public Ticketing API
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+API Integration Process
+Getting Started with the Public Ticketing API
+API Operations
+API Exceptions
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

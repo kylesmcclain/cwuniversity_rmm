@@ -1,0 +1,83 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   PSA Integration   ConnectWise PSA (Manage) Integration   ConnectWise PSA - Billing Sync Error Codes Knowledgebase
+ Expand/collapse global location
+ConnectWise PSA - Billing Sync Error Codes Knowledgebase
+Last updated
+Aug 15, 2024
+Table of contents
+Billing Sync Error Codes
+Billing Sync Error Codes
+Generic Error	Summary Error	Error Details and Steps for Correction
+
+
+Invalid username or password.
+
+OR
+
+Your password has expired.
+
+OR
+
+The user account has been locked.
+
+	
+
+Error code: 1000
+
+Details: API Account/Member used for the integration is inactive/deleted/doesn't have permissions to perform this activity
+
+	
+
+This error indicates that the API member used for the integration is no longer active or is deleted or doesn't have necessary permissions to perform the transaction.
+
+Impact:
+
+API member is used for executing all transactions in ConnectWise PSA:
+
+Create/fetch/update tickets information once they are updated in ConnectWise RMM.
+Create/update configuration items in Autotask PSA.
+Fetch contact information when they are created/updated/deleted in Autotask PSA.
+Create/update the agreements for the additions count for endpoints.
+
+Troubleshooting steps:
+
+Validate the API member used for the integration is active. Refer the documentation for API keys: ConnectWise PSA (Manage) Integration Setup Process - ConnectWise .
+In case the API member is inactive/deleted, refer the following ConnectWise PSA documentation to create a new member: Details Tab - API Members.
+
+After the necessary permissions are provided, try resyncing the billing data from the PSA Integration section to force resync.
+
+In case the issue persists, contact the PSA Support team for assistance via online chat session. Follow these steps to initiate a chat session:
+
+Log in to the ConnectWise Asio™ platform.
+Click Support (Top-right)
+Select option PSA Support
+Select next option ConnectWise PSA
+Configure ConnectWise PSA Policies ConnectWise PSA - Policies Integration - FAQ
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ConnectWise PSA (Manage) Integration Setup Process
+Configure ConnectWise PSA Policies
+PSA Policies define how tickets, configuration items, Contacts, and Notifications sync from RMM to ConnectWise PSA or vice-versa.
+ConnectWise PSA - Policies Integration - FAQ
+ConnectWise PSA - Tech Efficiency Devices Pod
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

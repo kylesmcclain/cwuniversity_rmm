@@ -1,0 +1,117 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Patching   OS Patching   OS Patching FAQs
+OS Patching FAQs
+Last updated
+Oct 14, 2025
+Table of contents
+Why are some patches reviewed by the NOC? Can I change these?
+Why does the OS Patching Compliance page no longer display Policy Names?
+What are some features that are not currently available in OS Patching?
+How do I prevent a specific patch on a site or endpoint?
+Why are some updates visible on my endpoint but not in the platform against my device?
+Why don’t all updates show up in the Windows Update history interface?
+Why is my patching assessment failing with an error on Microsoft Server 2008?
+Can I get the OS to a specific version with this solution?
+Which is the preferred method to perform feature updates, tasking or policy?
+How do I identify and handle failures without tickets?
+Do feature updates support Gateway?
+What kind of interruptions will the end user face during feature update deployment?
+Why can't I approve patches for Mac devices?
+Why can't I exclude Mac patches?
+Why am I unable to select the checkbox by a specific patch so that I can use the "Deploy Missing OS Patches" button?
+Why are some patches reviewed by the NOC? Can I change these?
+
+The NOC has tested all patches listed as Security updates. You can change these if you wish. 
+
+Note: Partner approval takes priority over NOC approval.
+
+Why does the OS Patching Compliance page no longer display Policy Names?
+
+Policy Names are a legacy feature, and are no longer needed for automation. This is a quick way to determine if you have automation set up on an endpoint.
+
+What are some features that are not currently available in OS Patching?
+
+Approving/blocking patches on specific Company, Site, or endpoints is not possible as of now from the Patch approvals page. They can only be excluded. For more information, review the Patch Exclusions documentation.
+
+OS Patching is not supported for Linux endpoints.
+
+How do I prevent a specific patch on a site or endpoint?
+
+You can create a patch exclusion rule by navigating to Endpoints > Patches > Exclusions and click Add Exclusion. You can exclude a patch by Patch Name or a KB Number of the patch. For more information, review the Patch Exclusions documentation.
+
+Why are some updates visible on my endpoint but not in the platform against my device?
+
+We do not show optional updates in UI and we do not consider them in the compliance score calculation. Usually, these updates include updates for third-party products and device drivers (printers, cameras, network adapters, etc.).
+
+Why don’t all updates show up in the Windows Update history interface?
+
+The Windows Update user interface only records updates that are processed directly through Microsoft’s official update channels. However, RMM tools often bypass the native Windows Update service by deploying updates through alternative methods. As a result, these externally pushed changes are not registered in the system’s Windows Update history log, making them invisible to the standard UI.
+
+Why is my patching assessment failing with an error on Microsoft Server 2008?
+
+Assessments on Windows Server 2008 (non-R2) will continue to fail since Microsoft has a block to prevent Windows Update API from getting data unless the server is running on an extended license. The RMM agent cannot run assessments if Windows Update API is blocked from getting data.
+
+Can I get the OS to a specific version with this solution?
+
+No. Currently, this method gets the machine from the end-of-support OS version to the supported OS version as offered by Microsoft. Tasking is recommended to get to a specific version.
+
+Which is the preferred method to perform feature updates, tasking or policy?
+
+Both approaches have their own use cases. The policy approach targets end-of-support OS versions that are eligible for an upgrade and does so automatically in a hands-off approach. Tasking is a hands-on approach to getting to a specific version.
+
+How do I identify and handle failures without tickets?
+
+You can refer to your BrightGauge reports to view patch failures.
+
+BrightGauge Report Name: OS Patching
+
+Report Section: Patch Failures and Patch Failure by Classification:
+
+Do feature updates support Gateway?
+
+No, Gateway is not supported with feature updates.
+
+What kind of interruptions will the end user face during feature update deployment?
+
+The feature update download and installation happens completely in the background with no interruption to the user. For finalization, the machine needs to reboot a few times. This can take up to 15-30 minutes on average to complete depending on the configuration of the machine.
+
+Why can't I approve patches for Mac devices?
+
+Currently, we do not support patch approvals for Mac Devices.
+
+Why can't I exclude Mac patches?
+
+Currently, we do not support patch exclusion for Mac Devices.
+
+Why am I unable to select the checkbox by a specific patch so that I can use the "Deploy Missing OS Patches" button?
+
+Currently, we do not allow the use of the Deploy Missing OS Patches button for patches categorized as Upgrade. Please use the prebuilt feature update task or enable the feature update in the patching policy.
+
+OS Patching Error Codes OS Patching Policies
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+OS Patching Compliance
+OS Patching Getting Started Settings
+OS Patch Approvals
+OS Patch Exclusions
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

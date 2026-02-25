@@ -1,0 +1,132 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   PSA Integration   ConnectWise PSA (Manage) Integration   ConnectWise PSA (Manage) REST API Integration Troubleshooting
+ Expand/collapse global location
+ConnectWise PSA (Manage) REST API Integration Troubleshooting
+Last updated
+Oct 1, 2024
+Table of contents
+Overview
+Troubleshooting 
+How do I resync tickets that failed to sync with ConnectWise PSA?
+How do I resync assets (configuration items) that failed to sync with ConnectWise PSA?
+How do I refresh the system to show a new company or site added in ConnectWise PSA during the integration steps?
+How do I resolve the following error for configuration items that failed to be created in ConnectWise PSA?
+How do I resolve the following error I see for ticket sync from RMM to ConnectWise PSA?
+How do I resolve the following error I see for ticket sync from RMM to ConnectWise PSA?
+How do I resolve the following error I see for the asset sync from RMM to ConnectWise PSA?
+How do I resolve the following error I see for Billing sync from RMM to ConnectWise PSA?
+How do I resolve the following error I see for Billing sync from RMM to ConnectWise PSA?
+How do I resolve the following error I see for Billing sync from RMM to ConnectWise PSA?
+How do I resolve the following error I see for Billing sync from RMM to ConnectWise?
+Can ConnectWise assist in configuring my PSA Integration with ConnectWise PSA?
+Overview
+
+This documentation includes troubleshooting steps for the ConnectWise PSA REST API integration. 
+
+Troubleshooting 
+How do I resync tickets that failed to sync with ConnectWise PSA?
+
+In the ConnectWise Asio™ platform (ITSupport Portal), go to Settings > Account Administration > Integrations > PSA Integration, click on Integration Settings, and complete the PSA Integration wizard again. The system then initiates all pending ticket updates in the next 15 minutes.
+
+How do I resync assets (configuration items) that failed to sync with ConnectWise PSA?
+
+In the Asio platform, go to Settings > Account Administration > Integrations > PSA Integration, click on Integration Settings, and complete the PSA Integration wizard again. The system then initiates all pending asset updates with ConnectWise PSA.
+
+How do I refresh the system to show a new company or site added in ConnectWise PSA during the integration steps?
+
+Navigate to Settings > Account Administration > Sites > Sites. Click the Previous arrow icon, then click the Next arrow icon so that the RMM system can retrieve the latest Company/Sites information from ConnectWise PSA.
+
+How do I resolve the following error for configuration items that failed to be created in ConnectWise PSA?
+
+Could not resolve OSType '' to CW device type.
+
+This error indicates that the RMM Data Center has not received the asset inventory details and cannot sync the device details in ConnectWise PSA as a result.
+
+To resolve the issue, ensure that the machine is online and communicating with the Data Center. If the machine is online for a long time but the data is still not available in the Asio platform, this indicates an issue with fetching the data from the machine and posting it to our Data Center.
+
+For help, contact the Product Support Team in the Asio platform. Click on Support (top-right corner) and then click Chat Now or Create Case.
+
+How do I resolve the following error I see for ticket sync from RMM to ConnectWise PSA?
+
+Error: Ticket object is invalid Inner Exception: Error 0: The team/id field is required.
+
+This error indicates that the Service Board that is configured for the ticket creation process does not have a Team created for the board.
+
+To resolve the issue, create a Team on the Service Board associated with the ConnectWise NOC Services™ or ConnectWise Help Desk Services™.
+
+How do I resolve the following error I see for ticket sync from RMM to ConnectWise PSA?
+
+The ticket object is invalid Inner Exception :Error 0:The Estimated Start Date cannot be after the Due Date.
+
+This error is only applicable to ConnectWise PSA version 2017.3 and has been resolved if you upgrade to at least ConnectWise PSA version 2017.4. If you are unable to upgrade your ConnectWise PSA version, you should set the Estimated Start Date prior to the Due Date in the ticket to prevent sync errors.
+
+How do I resolve the following error I see for the asset sync from RMM to ConnectWise PSA?
+
+Configuration object is invalid Details: Error 1: Remote or/and Management links can only be updated for system flag config types
+
+This error indicates that a Managed Workstation or Managed Server configuration type has been manually added in ConnectWise PSA (in System > Setup Tables > Configuration), which conflicts with the API when it attempts to create new sites.
+
+To resolve the issue, rename these configuration types in ConnectWise PSA and then complete the PSA Integration wizard again in Asio (in Settings > Account Administartion > Integration > PSA Integration). The system then re-attempts to sync the devices.
+
+How do I resolve the following error I see for Billing sync from RMM to ConnectWise PSA?
+
+Additional object is invalid Details: Error 1: Since this period has already been invoiced there will not be an invoice generated for additional products for this period. Please prorate the agreement or update the start date to on or after the Next Invoice Date.
+
+This error indicates that you have generated an invoice for a future month. This feature is not currently supported by the ConnectWise PSA REST API.
+
+How do I resolve the following error I see for Billing sync from RMM to ConnectWise PSA?
+
+No active agreement found for configured AgreementType
+
+This error indicates that there is no Active Agreement found under the ConnectWise PSA Company to sync the Additions count for devices. You must ensure that there is an Active Agreement mapped to the RMM system to update information.
+
+How do I resolve the following error I see for Billing sync from RMM to ConnectWise PSA?
+
+Multiple agreement Additions found
+
+This error indicates that there is more than one product with the same name available for the ConnectWise PSA Company. As a result, the information is not getting synced. You must ensure that there is only one product with a unique name assigned.
+
+How do I resolve the following error I see for Billing sync from RMM to ConnectWise?
+
+Multiple agreements found for configured AgreementType
+
+This error indicates that there is more than one agreement with the same name available for the company. As a result, the information is not getting synced. You must ensure that there is only one  agreement with a unique name assigned.
+
+Can ConnectWise assist in configuring my PSA Integration with ConnectWise PSA?
+
+Yes, we offer assistance in setting up your PSA integration at no additional cost.
+
+Contact the PSA Support Team via:
+
+Chat: Use the Support link on the Asio platform
+Email: PSASupport@connectwise.com
+Phone: 914-219-1881
+ConnectWise PSA (Manage) Integration Setup Process ConnectWise PSA Asset Error Code Knowledgebase
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ConnectWise PSA (Manage) Integration Setup Process
+Configure ConnectWise PSA Policies
+PSA Policies define how tickets, configuration items, Contacts, and Notifications sync from RMM to ConnectWise PSA or vice-versa.
+ConnectWise PSA - Policies Integration - FAQ
+ConnectWise PSA - Tech Efficiency Devices Pod
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

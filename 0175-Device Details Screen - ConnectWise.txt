@@ -1,0 +1,143 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Devices Page   Device Details Screen
+Device Details Screen
+Last updated
+Nov 4, 2025
+Table of contents
+Overview 
+Summary
+Tickets
+Automation
+OS Patching
+Monitoring
+Settings
+Applications
+Inventory
+Processes
+Services
+Notes
+Custom Fields
+Integrations
+Overview 
+
+To locate this screen, navigate to Endpoints > Devices in the Asio platform.
+
+From the Devices list, click a specific resource to open the Device Details page.
+
+A banner at the top shows the resource name and indicates if the device is online or offline.
+Total tickets currently open for the device will be reflected.
+The banner below includes a link for users to Run a task. (Visit Tasks Overview for more details.)
+An export option is also available, enabling users to directly export device details to collect or share a technical summary for a specific device.
+Finally, if ScreenConnect® is enabled for this resource, a button appears for remote access.
+
+Below the banners, a taskbar appears with tabs for various endpoint details: Summary, Tickets, Automation, OS Patching, Monitoring, Settings, Applications, Inventory, Processes, Services, Notes, Custom Fields, and Integrations.
+
+Summary
+
+The Summary tab displays machine specifications and details, IP addresses, drive capacity information, and shows recent metrics and tickets in the same view. Users can modify the time period to display ticket details from one hour to 14 days.
+
+Tickets
+
+The Tickets tab displays all ticket information for the device, including ticket ID, priority, escalation category, subject, status, created on details, as well as an overview and notes.
+
+Automation
+
+The Automation tab provides a complete view of past (history) or future (scheduled) automated activities occurring on a device. Tasks and third-party updates currently appear.
+
+
+OS Patching
+
+The OS Patching > Policy Patches tab provides a complete view of patch data received from the endpoint and a compliance score based on the Patch Policy configuration. If no policy has been assigned, a compliance score is not calculated, and all actions are available in the OS Patching > Non Policy tab. The device status must be Online for Quick Patch Actions.
+
+
+Monitoring
+
+The Monitoring tab provides a summary view of all the custom monitors and Intelligent alerts applicable per endpoint. You can view Monitors, Suspension, and Intelligent Alerts for the endpoint on this tab. Three tabs are available:
+
+Custom Monitors – Displays all the effective or applicable monitors created by users on this target endpoint.
+
+Suspensions—Displays all the effective or applicable suspension rules against Intelligent Alerts and monitors applied to the target endpoint. You can apply suspensions to targeted resources such as companies, sites, or devices. If no suspensions have been created or used, no data will be on this page.
+
+Intelligent Alerts – Displays all the effective or applicable Intelligent alerts available out of the box and applied to the target endpoint.
+
+Settings
+
+The Settings tab includes the application settings for capabilities such as RPA Plugin, third-party integrations, and remote access. Select a Type and click Edit to update configurations.
+
+
+Applications
+
+Displays all installed applications on the device, with publisher, version, and installed date details.
+
+Tip: To learn more about Applications, visit Actions - Device Details Screen.
+
+Inventory
+
+Displays details for the specific resource, including Bios/baseboard, hardware processor, logical drives, logical memory, physical disks, peripherals, network, user accounts, and shares.
+
+Processes
+
+Shows all processes running on the device in real-time and includes name, CPU and Memory usage details, disk space, and network info available in 30-minute increments.
+
+Note: The data refresh rate is approximately every 5-10 seconds.
+
+Tip: To learn more about Processes, visit Actions - Device Details Screen.
+
+Services
+
+Shows a list of all services currently operating on the device, including status, startup type, and executable path.
+
+Tip: To learn more about Services, visit Actions - Device Details Screen.
+
+Notes
+
+The Notes tab displays all device, site, or global notes for the selected endpoint. Created and updated by details are also included, and users can create, edit, and delete notes directly from this page to share information with internal teams and the NOC.
+
+Custom Fields
+
+Displays all the custom fields created at the endpoint level and the current value for each custom field for the endpoint. You can click on the pencil icon to edit the value for an endpoint's custom field.
+
+
+Integrations
+
+Displays all the details received from integrations for the endpoint.
+
+Custom Fields Device Groups
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Devices Overview
+The information on the Device list provides a high-level view of all sites or filtered sites and includes easy-to-view details for applicable endpoint...
+Custom Fields
+Custom Fields are additional data points you can create in the ConnectWise Asio® platform to record information not collected by the agent or unavaila...
+Device Groups
+HyperV and VMware Virtualization
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

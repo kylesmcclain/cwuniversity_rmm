@@ -1,0 +1,164 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   Command for Networks   Command for Networks Service Levels
+Command for Networks Service Levels
+Last updated
+Oct 18, 2024
+Table of contents
+Overview
+The Service Levels
+How These Changes Affect Your Existing Auvik Client Sites
+Upgrading Existing Essential Sites
+What Does an Account Default Service Level Feature mean?
+Changing the Site Service Level
+How to Change a Site's Service Level
+Who Can Edit Auvik Service Levels: User Access
+Notes About Service Level Changes
+The Account Default Service Level
+How to Change the Default Service Level
+Billing
+Frequently Asked Questions
+Can I have different Auvik sites on different Auvik service levels?
+If I change the service level from Elite to Essential, can I change it back to Elite later?
+Can I have one service level for Command for Networks and a different service level for RMM?
+Is there a limit to the number of switches that can be made to the Auvik Site plan?
+Overview
+
+Important: This is a legacy solution that ConnectWise no longer offers.
+
+With the December 2018 product release, we enhanced our Command for Networks integration onboarding experience for new partners.
+
+New accounts are created in Auvik through product trial set up, while account integration occurs in the ITSupport Portal.
+New accounts receive all Auvik alerts through ConnectWise (previously known as the Essential level of service).
+
+Note: Partners who set up Command for Networks prior to the December 2018 release are not affected by this change; both client sites configured for NOC-monitored alert troubleshooting (Elite) as well as client sites managed by internal teams (Essential) remain at those respective service levels.
+
+This document:
+
+Details the service levels and describe their functionality.
+Details the service level behavior for currently-mapped Auvik client sites.
+Describes the default service level behavior assigned at the account level and explains how to edit.
+Details billing behavior based on the assigned service level.
+The Service Levels
+
+Command for Networks has two service levels:
+
+Essential: For sites on the Essential service level, alerts are managed by your internal team. An auto-ticket is created and assigned to you when any Auvik alerts are generated. Tickets are then updated based on information received from Auvik for the condition.
+Elite (legacy only): For sites on the Elite service level, the NOC monitors and troubleshoots predefined Auvik alerts for network devices on client sites mapped between the ConnectWise and Auvik portals.
+
+A Service Level column in the Command for Networks site table is shown only to partners with at least one Command for Networks Elite client site to make it easy to view and edit a site's assigned service level.
+
+How These Changes Affect Your Existing Auvik Client Sites
+Upgrading Existing Essential Sites
+
+Partners with one or more client sites on the Command for Networks Elite service level as of the December 2018 release continue to have an option to change service level for those client sites; contact ConnectWise support if a change from Essential is required.
+
+Partners signing up for Command for Networks after the December 2018 release have only one level of service (Essential), which does not require options for change.
+
+What Does an Account Default Service Level Feature mean?
+
+Partners enabling Command for Networks prior to December 2018 had more than one service level option. Account Default Service Level is a feature that allows those partners to designate a service level and apply it automatically when they map new client sites. See the Account Default Service Level section of this document for more information on editing the Service Level setting.
+
+Changing the Site Service Level
+How to Change a Site's Service Level
+
+Note: The option to switch a site’s service level is only available for sites activated prior to December 2018 and assigned the Elite service level.
+
+In the ITSupport Portal:
+
+Navigate to Admin > Products & Services > Command for Networks.
+Locate a site in the table. In the corresponding site row, click the icon.
+Select the Elite or Essential service level for the site in the Service Level field of the Edit Client window.
+
+Click Save.
+Who Can Edit Auvik Service Levels: User Access
+
+Users in the following roles are able to edit a site's assigned service level on the Command for Networks site table:
+
+Primary Super Admin
+Super Admin
+Manager
+
+Users in roles below Manager can view a site's service level but cannot change it.
+
+Notes About Service Level Changes
+
+When changing a site's service level, the following conditions apply:
+
+Billing: For any month where a site runs on both the Elite and Essential service plans, the applicable device billing rate is Elite. Therefore, you may want to follow the timing guidelines below for changing service levels to maximize service delivery versus cost. These suggestions are specific to billing; if your goal is to enable your internal team to begin investigating alerts, the timing of the switch is only dependent on the availability of your internal technicians.
+Elite to Essential: Since the site is billed at the Elite rate, changing the service level at the end of the month gives you more days to leverage the NOC for monitoring and troubleshooting.
+Essential to Elite: Changing the service level at the beginning of the month gives you more days to leverage NOC services.
+Alerts/Tickets: When a change in service level occurs, open alerts/tickets remain in the same service domain. For example, if you change a site from Essential to Elite, any open tickets assigned to you before the service level change must be resolved by you; these tickets are not re-assigned to the NOC, though you can manually assign them to the NOC if you want the NOC to investigate further. Conversely, any alerts being worked by the NOC when an Elite site is changed to Essential continue to be worked by the NOC. Alerts generated after the service level changes are handled according to the active service level.
+The Account Default Service Level
+
+Account Default Service Level is a feature that allows you to designate a service level and apply it automatically when you map new client sites. Beginning with the December 2018 product release, Essential is the system-assigned default service level for all new Command for Networks accounts.
+
+If you activated prior to December 2018 and have the Elite service level of care, edit the default service level using the Integration Settings feature described below.
+
+How to Change the Default Service Level
+Navigate to the Command for Networks page in the ITSupport Portal.
+Click Integration Settings.
+Locate the Default Service Level field in the Integration Settings window and select the desired service level.
+Click Save.
+
+When you map a new client site to the ITSupport Portal, this default service level automatically applies.
+
+When you change the default service level, all client sites mapped from that point forward inherit that service level. Changing the default service level does not change the service level for sites already created.
+
+Billing
+
+The billable device rate differs between the Elite and Essential service levels. 
+
+Frequently Asked Questions
+Can I have different Auvik sites on different Auvik service levels?
+
+Partners who signed up for Command for Networks prior to December 2018 can assign each client site its own service level. Partners signing up for Command for Networks after the December 2018 release have one level of service across all sites.
+
+If I change the service level from Elite to Essential, can I change it back to Elite later?
+
+Yes. Refer to the Changing Service Levels section of this document for more information on applicable billing and handling of open alerts.
+
+Can I have one service level for Command for Networks and a different service level for RMM?
+
+Yes. Your ability to assign a Command for Networks service level is not restricted by the assigned RMM service level. If a site's RMM service level is Elite, for example, the site can be assigned a Command for Networks service level of Essential.
+
+Is there a limit to the number of switches that can be made to the Auvik Site plan?
+
+No. Unlimited switches can be made for the site, but the applicable billing is per the higher-priced plan used during the month.
+
+Auvik Pre-Defined Alerts and NOC Support Auvik Device Management
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Onboarding and Configuring the ConnectWise–Auvik Integration
+Auvik Pre-Defined Alerts and NOC Support
+Auvik Device Management
+Auvik TrafficInsights
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

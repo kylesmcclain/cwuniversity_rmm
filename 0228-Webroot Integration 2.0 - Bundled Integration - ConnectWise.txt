@@ -1,0 +1,186 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Integrations to ConnectWise RMM   Webroot   Webroot Integration 2.0 - Bundled Integration
+Webroot Integration 2.0 - Bundled Integration
+Last updated
+Feb 5, 2025
+Table of contents
+Overview
+Features of Webroot Integration 2.0
+Prerequisites
+For RMM Solution
+Supported Operating Systems
+For Webroot Integration
+Enabled Webroot Account
+Step 1: Set Up Your Webroot Account
+Step 2: Configuring Webroot Integration in Asio Platform
+Enabling the Integration
+Product Setup
+Site Mapping and New Webroot Site Creation
+Step 3: Defining Webroot Installation Policies in Asio Platform
+Step 4: Webroot Information on Devices Page in Asio Platform
+Overview
+
+Webroot SecureAnywhere® Business Endpoint Protection is an anti-virus product used by a majority of MSPs. Webroot uses cloud data centers to instantly protect users from every new threat it finds. You can manage your Webroot configuration from the Webroot Site Mapping section in the Integrations menu. You can track Webroot endpoints on the Devices page by filtering the Integration on Webroot EPP in the Asio™ Platform (ITSupport Portal).
+
+To enable Webroot SecureAnywhere® Business Endpoint Protection for RMM and non-RMM sites, a fee is associated with using Webroot Endpoint Protection from ConnectWise. Reach out to your Account Team for pricing details.
+
+Note: This page is for partners whose Webroot license is purchased/managed via ConnectWise. If your Webroot license is not purchased/managed via ConnectWise, refer to Webroot Integration 2.0 - Non-Bundled Integration
+
+Features of Webroot Integration 2.0
+
+The following are some of the features of the new Webroot integration:
+
+The Webroot product will have an integration-based configuration.
+Webroot deployment will be through policies and packages.
+Partners will have the ability to override the configuration at the endpoint level.
+Data received from Webroot will be stored in custom attributes which can be reused at multiple areas.
+A detailed view of additional data will be available on the Devices page under the Integrations dropdown.
+Prerequisites
+For RMM Solution
+Supported Operating Systems
+
+To see the list of operating systems supported by RMM, review the RMM Agent Prerequisites.
+
+For Webroot Integration
+
+To see the list of operating systems supported by Webroot, review the Webroot System Requirements.
+
+Enabled Webroot Account
+
+If Webroot is not activated, follow the process outlined in Step 1. If you already have completed the onboarding process for Webroot, skip to Step 3.
+
+Step 1: Set Up Your Webroot Account
+
+In the Asio Platform (ITSupport Portal), navigate to Settings > Webroot License.
+
+Complete the required fields, ensure that you entered the correct email address and click Submit. You will be shown the following Success page:
+
+
+Check your inbox for an email message asking you to validate your email address. For more help on completing the Webroot registration process, refer to Webroot documentation on Create Your Webroot Account > Using the registration email sent by Webroot.
+
+Enter your information as required, then log in to the Webroot console at https://my.webrootanywhere.com.
+Enter your Security Code (which was created when you signed up for the account) as specified by the dialog and click Log in.
+
+Step 2: Configuring Webroot Integration in Asio Platform
+Enabling the Integration
+Once onboarding is complete and API request access is enabled, navigate to the Integrations page via the Left Navigation menu.
+The Webroot EPP with bundle card will be inactive. Click the slider on the card to enable it. 
+
+Product Setup
+The checkbox for requesting API access to Webroot should be enabled by default. If not, enable the checkbox.
+
+
+Click Test Connection. Ensure connection has been established successfully. In case the integration is being configured for the first time by the logged in user, then an email will be sent to the portal administrator/ to the email address entered while setting up the Webroot account in Step 1.
+
+
+
+Note:
+
+Open the email sent from the Asio Platform and use the given link to accept the API access. If the email was not received, check your Spam folder and confirm that the email address is correct.
+Once the request is accepted by clicking on the provided link in the email, a new partner Super Admin (WRAdmin (APIOnly) user) will be added to the GSM console. This user will have access to the GSM console but not the Webroot sites, as by default, no access is granted to the WRAdmin user. The user needs to select ADMIN access for themselves in order for the integration to work.
+
+
+If you have not received an email, it is likely that the email address needs to be updated or you need to contact the portal administrator whose email address is used for Webroot license management.
+Click Proceed.
+Site Mapping and New Webroot Site Creation
+If the Auto-mapper/Find Matches functionality is enabled for you, you can use it to auto-map Asio sites to existing Webroot sites. To know more about the auto-mapper functionality and how it works, review the Integration Setup Automapping.
+
+Note: Although the auto-mapper function will show the best mapping combinations, you will have to verify whether the mapping is correct or not.
+
+This section allows mapping Asio Platform Company Site or Asio Platform sites to Webroot sites. If there are any existing Webroot sites, they can be selected from the dropdown. 
+A new Webroot site can be created using the Add New Site option in the same dropdown.
+
+
+Enter the name for the new Webroot site in the textbox. 
+Click Save And Proceed.
+
+Mapped Devices column shows the number of devices currently having Webroot installed on them out of the total number of devices present on that site in the Webroot console.
+
+Note: The logic for mapped devices is X/Y where:
+
+X - # of RMM endpoints linked to Asio site on which Webroot is installed
+Y – Total # of RMM endpoints linked to Asio site
+OR
+Y – # of Webroot installed endpoints linked to that Webroot site
+
+Once the site mappings are configured, the filters on top left can be used to verify the mapped or unmapped sites. 
+
+
+Click Save And Proceed. Before proceeding, the page will show a confirmation banner displaying the number of mapped and unmapped sites. 
+
+
+Click Continue on the banner.
+The following page will be shown once the setup is completed successfully. 
+
+
+You have completed all the steps required for enabling the Webroot Integration 2.0. You can proceed to deploy Webroot on the endpoints with the help of Policies and Packages as explained in the subsequent steps.
+
+Warning: Disabling the integration will lead to deletion of all your Webroot related information within Asio. It will also deactivate the Webroot license and Webroot sites in the Webroot console. Please exercise caution while disabling the integration.
+
+Step 3: Defining Webroot Installation Policies in Asio Platform
+Once Webroot is configured, navigate to Endpoints > Policies to add new policy settings for Webroot installation.
+On the Policies page, click Add Policy. For Webroot integration, select Devices in the Category dropdown. 
+In the Type dropdown, select Webroot Integration. 
+Enter a name for the policy as shown below:
+
+
+As shown above, on the right side, the Webroot Integration Settings will be shown in a disabled state. The settings are:
+Install Webroot Windows for Servers - If enabled, Webroot will be installed on all the Windows server endpoints at that particular site on which this policy is applied. This setting will not remove any device level overrides previously defined.
+Install Webroot Windows for Desktop - If enabled, Webroot will be installed on all the Windows desktop endpoints at that particular site on which this policy is applied. This setting will not remove any device level overrides previously defined.
+Install Webroot for Mac - If enabled, Webroot will be installed on all the Mac endpoints at that particular site on which this policy is applied. This setting will not remove any device level overrides previously defined.
+You can use this policy to assign Webroot to sites/endpoints using packages/policies and set up overrides. Review Policies and Packages documentation to learn how do that.
+Step 4: Webroot Information on Devices Page in Asio Platform
+
+After Webroot has been successfully installed, view the data on the Devices Summary page.
+
+Note: Post Webroot agent deployment and installation, it takes at least an hour for all Webroot endpoints and their information to appear on the Devices page.
+
+On the Devices page, the Webroot endpoints can be identified via the Endpoint Protection column which shows the value Webroot for those endpoints. 
+
+To view complete information related to Webroot endpoints, click the Integrations dropdown on Devices page and select Webroot EPP with Bundle. 
+
+On the subsequent page, the following columns will be visible: 
+
+
+Deployment Status - Displays the deployment status of Webroot application on the machine.
+Expiration Date - Displays the expiration date of the current license.
+Days Remaining - Shows the number of days remaining for license to expire.
+Version - Displays the current version of Webroot agent installed on the endpoint.
+Protection Enabled - Displays whether the Webroot Protection is enabled on the machine or not. 
+Last Scan - Displays when the last scan was performed on the endpoint.
+Attention Required - Displays whether the anti-virus requires attention on the endpoint.
+Infected - Displays whether endpoint is infected by viruses or not.
+Threat Score - Displays the threat score of the machine.
+Active Threats - Shows the number of active threats present on the machine.
+Site Key Code - Displays the Site GSM Key Code to which the endpoint is mapped.
+
+Note: It is mandatory for the endpoints to have MAC Address and Hostname. This information is internally used to verify the connection with Webroot Unity API to fetch correct information. If either of this information is not available on the endpoint, information will not be available on Devices page for Webroot EPP.
+
+Webroot Default Configurations Webroot Integration 2.0 – Non-bundled Integration
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Getting Started with Webroot Endpoint Protection
+Webroot Activation Checklist
+Webroot Best Practices
+Webroot Billing
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

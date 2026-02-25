@@ -1,0 +1,122 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+Home
+Implementation
+Support
+Resources
+My Learning
+Documentation
+Consulting
+Community
+What's New
+ ConnectWise RMM   ConnectWise RMM Release Notes   ConnectWise RMM Update for October 2024
+ConnectWise RMM Update for October 2024
+Last updated
+Sep 4, 2025
+Table of contents
+Overview 
+Announcements
+Enabling Reason for Remote Access via Policies
+Upgrading sites to have RMM Product & Capabilities
+RMM Agent now supports:
+What's new in ConnectWise RMM?
+October 29th, 2024
+PSA Integration / Ticketing
+October 28th, 2024
+Patching
+Policies and Packages
+October 25th, 2024
+Alerting
+Issues Addressed
+October 24th, 2024
+Automation
+Alerting
+PSA Integration
+Issues Addressed
+October 22nd, 2024
+Webroot Integration 2.0
+Issues Addressed
+October 21st, 2024
+Agent
+October 18th, 2024
+Alerting
+Patching
+October 17th, 2024
+Asio
+Devices Page
+ScreenConnect Integration
+October 16th, 2024
+Patching
+October 7th, 2024
+PSA Integration
+Issues Addressed
+October 4th, 2024
+Agent
+Automation
+Device Groups
+October 1st, 2024
+Device Groups
+Overview 
+
+This page provides information on the latest enhancements and features for ConnectWise RMM.
+
+Announcements
+Enabling Reason for Remote Access via Policies
+
+We are developing a new way to enable users to enter the reason for taking remote access of a machine. Once this setting is enabled via policies and packages, the user will be prompted to enter the reason for taking remote access on every endpoint where this policy is effective.
+
+Please review the ScreenConnect Join Reason Integration documentation for more information.
+
+Upgrading sites to have RMM Product & Capabilities
+
+Staying consistent with our Platform-first approach, we will now have our RMM agent tightly coupled with the RMM Enablement policy. Upon enabling this policy, the Platform Agent will be upgraded to RMM agent having all the existing RMM Product & Capabilities.
+
+For more information, review the RMM Site Enablement documentation.
+
+Note: These changes will be rolled out in a phased manner in the upcoming months.
+
+RMM Agent now supports:
+Windows on ARM processors
+Snapdragon processors
+
+We now officially support ARM-based processors which are used in Microsoft Surface devices.
+
+What's new in ConnectWise RMM?
+October 29th, 2024
+October 28th, 2024
+October 25th, 2024
+October 24th, 2024
+October 22nd, 2024
+October 21st, 2024
+October 18th, 2024
+October 17th, 2024
+October 16th, 2024
+October 7th, 2024
+October 4th, 2024
+October 1st, 2024
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+ConnectWise RMM Update for January 2024
+ConnectWise RMM Update for February 2024
+ConnectWise RMM Update for March 2024
+ConnectWise RMM Update for April 2024
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.

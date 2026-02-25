@@ -1,0 +1,317 @@
+Skip to main content
+
+ 
+
+ConnectWise University
+Welcome back Kyle
+ ConnectWise RMM   Expert Services   Expert Services Release Notes
+Expert Services Release Notes
+Last updated
+Jan 16, 2026
+January 2026
+
+New Guide – Configuring DUO TOTP for Help Desk Services User Administration
+
+We have published a new guide that walks you through configuring a DUO Time-based One-Time Password (TOTP) account specifically for Help Desk Services (HDS). This configuration enables HDS to securely perform user administration tasks in DUO on behalf of your organization.
+
+Why this matters
+Partners can now rely on a standardized, documented process for setting up DUO access for HDS. This helps:
+
+Ensure secure and compliant DUO user administration by HDS.
+Reduce onboarding time when enabling HDS to support DUO.
+Minimize configuration errors and support delays.
+
+What’s included in the guide
+The documentation covers:
+
+Prerequisites to enable DUO user administration by HDS.
+Step‑by‑step instructions to configure a DUO TOTP account for HDS.
+Recommended settings and considerations for security and access control.
+How to validate that HDS can successfully manage users in DUO.
+
+Access the guide here: Help Desk Services - DUO User Administration
+
+December 2024
+
+Help Desk Services Partner Line Chat will be Temporarily Offline
+
+From December 15th, 2024 12:00 AM EST to December 17th, 2024 12:00 AM EST, Our Help Desk Services Partner Line Chat, NOC Service Partner Chat and our BCDR Service Partner Chat will be offline as we transition to a new platform.
+
+During this period, if you require assistance with the Help Desk Service, please reach out to our Partner Care Team
+
+ExpertServicesHelpDesk@connectwise.com
++1 (855) 342-8432 (Toll-Free)
++1 (628) 210-7510 (Local)
+
+For NOC and BCDR requests, open a ticket through the portal or call **(+1) 914-219-1881** and selecting the appropriate team
+
+We apologize for any inconvenience this may cause and appreciate your understanding as we work to enhance our services for you. Thank you for your continued partnership.
+
+October 2024
+
+Updated NOC Service Statement of Work
+
+This month we've updated our NOC Service Statement of Work to include the following changes:
+
+For In Scope Services, we added new OS Upgrade and Future Update Deployment sections under Patch Management incident type/activity.
+For In Scope Services, under Hardware/Firmware Issues, we added details under three new bullet point.
+Updated all Azure references to Entra and Azure AD references to Entra ID.
+Under Hardware/Firmware Issues – Microsoft Entra, we added the need for MSPs to update the role configuration to be able to restart the service.
+
+For out-of-scope services, we added:
+
+Network monitoring is an escalate only for Auvik
+Desktop patching
+Work against custom/partner-created monitoring
+Patch troubleshooting before the patch is approved by SRT
+Under additional resources we added a link to NOC-supported monitoring conditions.
+Under How to Contact the NOC. we added direct links to Expert Services Asio Support Section and removed the option to use NOC IM or Slack.
+September 2024
+
+Enforcement of Multi-Factor Authentication Update
+
+Microsoft will be enforcing MFA on all administration accounts in Office 365 and Azure on October 15th. We are requesting that you reach out to the Help Desk Services team to set up your MFA before the deadline.
+
+Please refer to the Custom Passwords and Properties article on ConnectWise University that will guide you on how to configure MFA on Office 365 Help Desk Accounts. This will allow our Help Desk and NOC Services to continue to access servers/MFA protected endpoints that support a shared secret key.
+
+May 2024
+Revisions made to the Help Desk Best Practices document on the University.
+Added an additional document and example to the University on User Onboarding and Termination.
+April 2024
+
+Revisions to Help Desk Service Statement of Work
+
+On April 1st, we updated the Help Desk Service Statement of Work. Changes include:
+
+VIP Service has been renamed to Priority Connect.
+Description of after hours and weekends services updated to include 24 hour coverage for Saturday and Sunday. 
+Clarification on Help Desk Service policy for non recognized contacts: Per the August 2023 release notes, due to security best practices, Help Desk Service cannot support contacts that we are not able to validate.
+A list of the email filters/blocks used to prevent SPAM or systematic loops between the Help Desk Service systems and partner systems.
+Clarified that US Voice service offering has Chat as a service and Chat is offered from any ConnectWise location.
+Updated links to documentation within ConnectWise University. 
+Email response time updated from "70% of email and PSA tickets are answered in 12 hours or less" to "70% of email and PSA tickets are answered in 2 hours or less."
+November 2023
+
+Retiring NOC Chat (NOC Instant Messaging) from the Asio Platform
+
+In a continuing effort to evolve our platform, we are retiring functionality that is no longer being used by our partners. Partners using our legacy slack connector to communicate with the NOC will not longer be able to do so after 11/20/2023. If you are impacted, please transition to the support chat under the support menu found top right section of Asio site.
+ 
+
+Voice Survey Comments
+Starting in November, the Help Desk Service will provide MSP's Clients the option to leave a comment as part of the post phone interaction survey. This information will be used to help improve our service and coach technicians.
+
+October 2023
+
+Firewall Exclusions update
+We've added a Global IP address category to the SOC, NOC, and Help Desk Services Firewall Exclusions.
+
+Voice Surveys - VM's
+After an MSP Client completes a survey and rated the interaction with a 3 or less, they will now have the option to add a voice comment. The voice comment will be used to better understand the negative rating and to provide directed training opportunities to Help Desk Service Technicians.
+
+New IP Address for Clark Office
+
+To enhance our Help Desk Service, we are currently upgrading the network for our Clark office in the Philippines. As part of this upgrade, we kindly request our partners who have previously manually enabled specific IP addresses to enable ConnectWise Help Desk services to make a simple adjustment.
+
+The new secondary IP address that will be required for accessing the ConnectWise Help Desk services is 122.53.81.56/29. We understand the importance of a smooth transition, and we have compiled a full list of the updated IP addresses needed to enable services for your convenience. This change will go live on October 20th, 2023.
+
+You can find the complete list of these IPs in the SOC, NOC, and Help Desk Services Firewall Exclusions.
+
+August 2023
+
+Important Security Mandated Process Change - Effective Immediately
+
+We are committed to prioritizing the security and privacy of our valued clients. As part of our ongoing efforts to enhance data protection, we have implemented a significant security process change that is effective immediately.
+
+What has changed?
+
+Our Help Desk Service will no longer be able to assist End Clients unless the Partner and Site combination is recognized and confirmed when speaking to an End User from an unrecognized number or chat.
+
+Why the change?
+
+Previously, our Help Desk Technicians aimed to provide technical support and create a smooth client experience by attempting to match a user to a site and generating a ticket associated with that site. Unfortunately, this process had an unintended consequence; there was a potential security concern where end client user data could be shared with Partners who were not subscribed to the help desk service or associated with the Client seeking assistance.
+
+What does this mean for you?
+
+When reaching out to our Help Desk Service for technical support, our technicians will need to verify the Partner, Client, and Site combination associated with your Help Desk Service subscription. This is done by communicating through Chat by installing the RMM agent, or through the phone by ensuring that the client contact data has been provided to ConnectWise through the Asio Platform.
+
+Why is this important?
+
+By implementing this security measure, we aim to prevent any potential security breaches and protect your Personally Identifiable Information (PII). Your safety and confidentiality are paramount to us, and this change reinforces our commitment to maintaining the highest standards of security.
+
+We understand that change can sometimes be an adjustment, but we assure you that this measure is for the benefit of your data and privacy. Our support team is available to guide you through this process and address any questions or concerns you may have.
+
+Thank you for your continued trust in our services. Your security and your clients' security is our top priority, and we are dedicated to delivering a safe and secure experience for all our clients.
+
+Updated Statement of Work
+
+This month we've updated our Statement of Work to include VIP Service Help. We also further clarified that Telephone (Voice) and Live Chat Sessions are the interactions that can be excluded from our US Based Technician Team.
+
+Improved Client Call Back Experience
+
+Based on Partner Feedback, the help desk service is changing when a client will be called back upon request.
+
+When an end Client leaves a call back time (within a ticket, SMS or through our IVR), the time zone will be based on the user's site location instead of Eastern Time. The site time zone is set within the Asio Platform.
+
+SMS Automated Approvals
+
+Help Desk Services is introducing a new SMS-based approval system to enhance the end user experience and simplify the approval process. This update aligns with industry best practices for privacy and security.
+
+Features:
+
+SMS-based Approvals: The approval process will now be conducted through SMS, leveraging the phones associated with the approver's contact details in RMM Setup > Help Desk tab > Security-related requests.
+
+Alternate Calling Method: If the approver's phone type is not identified as mobile (determined using Twilio), Help Desk Services will proceed to call the approver for approvals.
+
+Mobile Device Approval: For mobile devices, an SMS containing a URL will be sent to the approver. Clicking on the URL will redirect the approver to the approval details with options to approve or deny the request.
+
+Timeout Mechanism: In case of no response within 5 minutes, the Help Desk Technician will notify the end user that they are waiting for approval and conclude the interaction.
+
+Reminder Notifications: After 30 minutes of initial notification, a reminder will be sent to the approvers to prompt timely responses.
+
+Ticket Escalation: If no response is received from the approvers within 24 hours, the ticket will be automatically escalated to the Partner for resolution.
+
+Priority Handling: In cases where different approvers provide varying responses, Help Desk Services will prioritize servicing the approval request first.
+
+Benefits:
+
+Improved User Experience: The SMS-based approval system provides a user-friendly and efficient way for approvers to respond to requests.
+
+Streamlined Approval Process: The integration simplifies the approval process, ensuring faster resolution of critical tasks.
+
+Enhanced Security and Privacy: Leveraging industry best practices, the system maintains a high standard of security and privacy for approval-related communications.
+
+Release Date: This feature was release as Early Access in June 23, and will be released for General availability on August 24th, 2023.
+
+Note: Please ensure that the contact details of approvers are up-to-date in the RMM Setup > Help Desk tab > Security-related requests to facilitate seamless SMS approvals.
+
+July 2023
+
+New IP for the Clark site in the Philippines
+
+To enhance our Help Desk Service, we are currently upgrading the network for our Clark office in the Philippines. As part of this upgrade, we kindly request that if you have previously manually enabled specific IP addresses to enable ConnectWise Help Desk services to make a simple adjustment.
+The new IP address that will be required for accessing the ConnectWise Help Desk services is 58.69.30.112/29. We understand the importance of a smooth transition, and we have compiled a full list of the updated IPs needed to enable services for your convenience. This change will go live on August 10th, 2023.
+
+You can find the complete list of these IPs in the SOC, NOC, and Help Desk Services Firewall Exclusions.
+
+June 2023
+
+Automated SPAM Deflection
+
+The Help Desk Service is implementing a Automation Bot that will review incoming emails from the Partner's and Client's domain, that turn into work for technicians in the form of a ticket and close if determined to be SPAM. Before this change, the Help Desk Service reaches out manually to each partner to attempt to eliminate the generation of the email into the help desk service. This process is time consuming for both the Partner and the ConnectWise Help Desk Service.
+
+Starting on July 1st, Tickets created under this process will be closed and pushed to both the Help Desk Service Ticketing System and to the Partner's PSA in a closed status. This will allow ConnectWise and the Partner to periodically review and change the workflow behind the generation of SPAM emails and take action to remove them from the Auto-closure process or to make changes to prevent the emails from being generated.
+
+December 2022
+
+In an effort to continually improve ConnectWise security posture, the Help Desk Service will no longer process emails from unknown domains. If an email is received from a domain that does not match the domain registered through the Asio Platform an automated response will be generated instructing Clients to call or chat with the Help Desk. Client email domains are set by navigating to RMM Setup > Sites Using RMM > Site Name > Help Desk Tab.
+
+This will help us protect you, your clients by following industry security best practices. It will also improve our efficiency by reducing the number of spam emails received and allow us to devote more resources to valid tickets.
+
+October 2022
+
+The Help Desk Service has been piloting a new process that allows your clients to perform specific actions from a link in email. These actions consist of closing the ticket if help is no longer needed to requesting a call back ASAP or at a scheduled time. Feedback from the pilot group has been positive and we're rolling out this feature to all Partners.
+
+Please note, we are removing the HelpDesk Ticket Report (BETA) from the Asio™ Platform (ITSupport Portal). For a better reporting experience please access the same via BrightGauge instance. This will be done for both Command and CW RMM partners.
+
+September 2022
+
+A new line has been added for non US partners to contact the help desk partner support channel. This number is +162821075
+
+We fixed a system issue that prevented email notifications based on notification preferences set by Partners to be triggered based for Companies and Sites without ConnectWise NOC Services. With this release, email notifications will be triggered irrespective to the Company Site subscribing to NOC Services. Please note, this does not impact Partners using Command RMM.
+
+August 2022
+
+We're making additional improvements to our white-labeling process to increase our match between the phone and chat interaction and the site messages that Partners can customize on the Asio Portal. Help Desk Service Technicians will see a measurable improvement in the site message being displayed before initiating the interaction with the end client. This will result in a better end client experience.
+
+Help Desk Statement of Work update. This month we published the following changes to the Help Desk Statement of Work:
+
+Apple no longer publishes a list of supported MAC OS versions. ConnectWise will support the OS versions listed within the In Scope Service Section
+
+SLO section now includes tickets opened and received by the Help Desk through email or through the PSA sync
+
+Fixed the format for international numbers and added call in numbers for end users from Taiwan, India, France, and Netherlands.
+
+For more information, review the Help Desk Services Statement of Work.
+
+NOC Services has identified an issue with tickets that are older and untouched over 30 days. The NOC service standard process is, once a ticket is assigned to the partner for review and follow-up, if the ticket is not updated or closed by the Partner, the NOC service delivery team will close it after 30 days of inactivity. This automated process has not functioned correctly since 10/1/2021.
+
+On 8/22/2022, ConnectWise will close NOC initiated tickets that have been assigned to the Partner that have not been updated within the prior 30 days. Do to the volume of the bulk update, the bulk update will not impact any existing process as tickets are being closed past the original planned date. Testing for this update confirmed that no email communication were triggered nor did the change impact PSA status.
+
+The primary impact will be on ITS Portal Ticketing status and custom reporting pulled within Partner systems or through ConnectWise reporting tools. If a Partner elects to pull a report of closed tickets after the bulk update, this number will be higher than past trends.
+
+July 2022
+
+Help Desk and Product Support Team - Enhanced Internal Communication. We've revised internal flows to simultaneously create a ticket/work order with our Product Support Team and the SOC when a Help Desk Service Technician determines they need help from that particular team. This will initiate a work item for the impacted teams while the Help Desk Technician is interacting with the Partner's client. Escalation rates, resolution time and customer satisfaction should see a positive impact.
+
+June 2022
+
+Phone Survey. We are adding the option for End Users to participate in a phone survey after the call ends. This is the same survey we currently offer through chat. This important data point will give ConnectWise a more complete picture of how the Help Desk Service is performing. It will allow ConnectWise to focus on corrections and improvements that are specific to the phone channel. The survey data will be rolled up into one channel, a future enhancement will allow us to report the results out separately to our Partners.
+
+Satisfaction Survey will now open in a new tab or window. We fixed a defect where the chat window customer satisfaction survey would take over an existing web page/tab for the end user. Going forward the survey will open in a new window or tab.
+
+Enhanced messaging for partners communicating with Help Desk Leads outside of business hours. We will now update partners on office hours in real-time.
+
+We enhanced how we communicate passwords with end-users to make it more secure. This will allow technicians to communicate passwords (usually needed during password resets or user credential creation) without having to speak or email the password.
+
+GreyLabel Link Enahncements. We've enhanced SMS approvals and chat experience by providing a short grey-label link so that partners and end users do not have to see extended weblinks in chats or SMS. Though previously secure, long web links caused partners and end users to hesitate before clicking. This enhancement will result in faster approvals by partners and better contact rates for end-users.
+
+Customer Phone Enhancements. We've fixed an issue with the phone number format eliminating invalid characters, including country codes, coming from contacts submitted by partners. This bug prevented the Help Desk Service from reaching end users in a timely manner, and at times not being able to reach them at all. By enhancing our system to look at the format and adjust it for technicians, it will significantly improve our contact rates through the phone
+
+We've changed the outboard email fonts. Partner feedback showed that our outbound email with ticket information was at times hard to read due to the various fonts used by each user's personal font preference. Emails now will reformat fonts when possible to provide a better visual experience.
+
+We enhanced the way country codes are interpreted when being submitted to the Help Desk due to the various local formats. This enhancement will allow ConnectWise Help Desk Service to reformat the country code to improve contact rates when calling end users.
+
+We've enhanced the way we currently recognize the Help Desk Entitlement when Partners sign up for the Help Desk Service through the portal. This will allow the Help Desk Service to recognize the entitlement faster and eliminate delays between sign up and site activation.
+
+April 2022
+
+Auto-PSA New Contact Sync.As an ongoing effort to improve our PSA Sync Service and ultimately improve end user experience by reducing the time they are interacting with the Help Desk Service, the Help Desk continues to make additions and improvements to the PSA Sync Service that updates data between the Help Desk Service and the Partner's PSA. This particular improvement allows Help Desk system to send a message back to the PSA when a contact is not found and needs to be added. The message will look like:
+
+The contact for John Doe may not exist in your PSA. You may want to update your contacts.
+Name: John Doe
+Email: John.Doe@fake.com
+Phone: 2015551234
+
+Added MacOS Automation. As an ongoing effort to improve our Ticket Resolution time and improve end user experience by reducing the time they are interacting with the Help Desk Service, the Help Desk continues to make additions and improvements to the automations we can run against end points. This particular improvement allows Help Desk Technicians to run our standard automations against Mac endpoints.
+
+ShortLink for AdHoc Support. When the Help Desk is unable to remote into an End User's machine directly due to the agent missing or an error, the help desk will now use ConnectWise Control to access the endpoint, as we've always done, but this time by sending the end user a short link. This will improve the experience and improve clickthrough by the end user.
+
+T2 Consults - Automations and Specifics. The Help Desk Service internal escalation process is being improved by allowing Tier 2 technicians real time visibility into the time a Tier 1 has spent interacting with an end user. Tier 2 technicians will now be able to interact with the Tier 1 technicians and if they feel it's appropriate will take over the interaction. Internal processes require that this is done via a warm transfer.
+
+Escalation Further Information Needed Confirmation. The ConnectWise Help Desk Service continually analyzes data to asses areas to improve for our escalation rate SLO. We are adding a process to ask the technician to verify another area that may have partner documentation before escalating the ticket back to the partner. We believe this will reduce our partner escalation rate.
+
+Escalation Reason Prompts. The ConnectWise Help Desk Service continually analyzes data to asses areas to improve for our escalation rate SLO. We are adding a process to ask the technician to validate the escalation notes before pushing the ticket back to the partner. This will also allow us to report back to the partner and recommend improvements to reduce the escalation rate SLO.
+
+Restart Computer - Standalone Quick Automation. As an ongoing effort to improve our Ticket Resolution time and improve end user experience by reducing the time they are interacting with the Help Desk Service, the Help Desk continues to make additions and improvements to the automations we can run against end points. This particular improvement allows Help Desk Technicians to run an automation to reboot the user's endpoint.
+
+Twilio SMS - End User Authorization. When required the Help Desk Service will now ask the user to authenticate by providing us with a six digit randomly generated code that is sent to the SMS number that is provided by the partner through the contact list. If there is no end user number, and the Help Desk service can not verify the user's identity, the ticket will be escalated back to the partner.
+
+Teams bot - Autobot Updates. As an ongoing effort to improve our Ticket Resolution time and improve end user experience by reducing the time they are interacting with the Help Desk Service, the Help Desk continues to make additions and improvements to the automations we can run against end points. This particular improvement allows Help Desk Technicians to receive Automation run status through teams as well as directly through our system. This is especially important when the automation runs for an extended period of time, it will allow our technicians to be alerted to the next steps with the ticket ultimately improving the resolution rate.
+
+Tickets with no response will be closed after 7 days. The Help Desk Service process to close a ticket is being changed to close the ticket after a period of 7 days if the status is awaiting partner response. This will allow the Help Desk Service to focus on tickets that are higher priority and allow the partner to review tickets that were closed due to inactivity.
+
+White Label improvement - You can now use different phone numbers. The Help Desk Service continues to improve our white label feature set by now recognizing phone numbers that have been added and purchased by the partner that do now wish to use the generic Help Desk Service number.
+
+User Onboarding and Termination SOC, NOC, and Help Desk Services Firewall Exclusions
+Was this article helpful?
+Yes
+No
+Leave feedback
+Recommended articles
+Help Desk
+Using the Chat Support Feature
+Expert Services Documentation Sitemap
+ConnectWise Network Operations Center - NOC
+ 
+
+ConnectWise.com
+
+University Help
+
+Contact Us
+
+Live Chat
+
+     
+
+© ConnectWise. All Rights Reserved.
